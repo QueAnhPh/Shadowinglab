@@ -331,13 +331,22 @@ const MIC_SVG = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" str
 function closeMic() { $("#micModal").hidden = true; }
 $("#micModal").addEventListener("click", e => { if (e.target.id === "micModal") closeMic(); });
 function fixSteps(kind) {
-  if (kind === "dictation") return `<ol><li>Mở <b>Cài đặt</b> trên iPhone.</li><li>Vào <b>Cài đặt chung → Bàn phím</b>.</li><li>Bật <b>Bật Đọc chính tả</b> (Enable Dictation).</li><li>Quay lại trang này, bấm <b>Thử lại</b>.</li></ol>`;
+  if (kind === "dictation") return `<ol><li>Mở link bằng <b>Safari</b> (không mở trong Zalo, Chrome hay Messenger).</li><li><b>Cài đặt → Cài đặt chung → Bàn phím</b>: bật <b>Bật Đọc chính tả</b>.</li><li><b>Cài đặt → Thời gian sử dụng → Giới hạn nội dung & quyền riêng tư → Ứng dụng được phép</b>: bật <b>Siri & Đọc chính tả</b> (nếu mục này đang bật giới hạn).</li><li>Tắt Safari hẳn rồi mở lại trang, bấm <b>Bấm để nói</b>.</li></ol>`;
   if (isIOS) return `<ol><li>Bấm nút <b>aA</b> (hoặc biểu tượng trang) bên trái thanh địa chỉ Safari.</li><li>Chọn <b>Cài đặt trang web</b>.</li><li>Ở <b>Micrô</b>, chọn <b>Cho phép</b>.</li><li>Bấm <b>Thử lại</b>.</li></ol><p class="muted">Vẫn không được: vào <b>Cài đặt → Safari → Micrô</b>, chọn <b>Cho phép</b>.</p>`;
   if (isAndroid) return `<ol><li>Bấm biểu tượng <b>ổ khóa</b> (hoặc dấu ⓘ) bên trái thanh địa chỉ Chrome.</li><li>Chọn <b>Quyền</b> (Permissions) → <b>Micrô</b>.</li><li>Chọn <b>Cho phép</b>.</li><li>Bấm <b>Thử lại</b>.</li></ol><p class="muted">Vẫn không được: vào <b>Cài đặt điện thoại → Ứng dụng → Chrome → Quyền → Micrô → Cho phép</b>.</p>`;
   return `<ol><li>Bấm biểu tượng ổ khóa bên trái thanh địa chỉ.</li><li>Cho phép <b>Micro</b> cho trang này.</li><li>Bấm <b>Thử lại</b>.</li></ol>`;
 }
 function showMic(mode, onGo) {
   const sheet = $("#micSheet");
+  if (mode === "ready" || mode === "safari") {
+    sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
+      <h3 id="micTitle">${mode === "ready" ? "Micro đã bật" : "Mở bằng Safari"}</h3>
+      <p>${mode === "ready" ? "Giờ em bấm <b>Bấm để nói</b> lại và đọc câu nha." : "Trên iPhone, chỉ <b>Safari</b> chấm giọng được. Bấm nút chia sẻ hoặc dấu ⋯, chọn <b>Mở trong Safari</b>, hoặc copy link dán vào Safari."}</p>
+      <div class="row"><button class="primary" id="micLater">Đã hiểu</button></div>`;
+    $("#micModal").hidden = false;
+    $("#micLater").addEventListener("click", closeMic);
+    return;
+  }
   if (mode === "ask") {
     sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
       <h3 id="micTitle">Cho phép dùng micro</h3>
@@ -346,36 +355,33 @@ function showMic(mode, onGo) {
       <div class="row"><button class="primary" id="micGo">Bật micro</button><button id="micLater">Để sau</button></div>`;
   } else {
     sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
-      <h3 id="micTitle">${mode === "dictation" ? "Cần bật Đọc chính tả" : "Micro đang bị chặn"}</h3>
-      <p>${mode === "dictation" ? "iPhone cần bật Đọc chính tả thì web mới nghe được giọng." : "Trình duyệt đang chặn micro cho trang này. Mở lại như sau:"}</p>
+      <h3 id="micTitle">${mode === "dictation" ? "iPhone chưa cho nhận giọng nói" : "Micro đang bị chặn"}</h3>
+      <p>${mode === "dictation" ? "Kiểm tra lần lượt các mục dưới:" : "Trình duyệt đang chặn micro cho trang này. Mở lại như sau:"}</p>
       ${fixSteps(mode)}
       <div class="row"><button class="primary" id="micGo">Thử lại</button><button id="micLater">Đóng</button></div>`;
   }
   $("#micModal").hidden = false;
   $("#micLater").addEventListener("click", closeMic);
   $("#micGo").addEventListener("click", async () => {
+    if (mode === "dictation") { closeMic(); return; }
     if (mode !== "ask") { closeMic(); location.reload(); return; }
     try {
       const s = await navigator.mediaDevices.getUserMedia({ audio: true });
       s.getTracks().forEach(t => t.stop());
-      store.set("micOK", true); closeMic(); onGo && onGo();
+      store.set("micOK", true); showMic("ready");
     } catch (e) { showMic("blocked"); }
   });
 }
-async function micReady() {
-  if (store.get("micOK", false)) return true;
-  try {
-    if (navigator.permissions && navigator.permissions.query) {
-      const st = await navigator.permissions.query({ name: "microphone" });
-      if (st.state === "granted") { store.set("micOK", true); return true; }
-      if (st.state === "denied") { showMic("blocked"); return false; }
-    }
-  } catch {}
-  return false;
-}
-async function listen(L, i, card, btn) {
+/* check the mic permission in the background so the tap itself can start recognition right away (Safari requires it) */
+try {
+  if (navigator.permissions && navigator.permissions.query)
+    navigator.permissions.query({ name: "microphone" }).then(st => { if (st.state === "granted") store.set("micOK", true); }).catch(() => {});
+} catch {}
+const otherIOSBrowser = isIOS && /CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(navigator.userAgent);
+function listen(L, i, card, btn) {
   if (rec) { rec.stop(); return; }
-  if (!(await micReady())) { if ($("#micModal").hidden) showMic("ask", () => listen(L, i, card, btn)); return; }
+  if (otherIOSBrowser) { showMic("safari"); return; }
+  if (!store.get("micOK", false)) { showMic("ask"); return; }
   player.pause();
   const live = card.querySelector(".live"), res = card.querySelector(".result");
   const chunks = parseSentence(L.sentences[i].text);
@@ -395,7 +401,11 @@ async function listen(L, i, card, btn) {
     if (ev.error === "not-allowed" || ev.error === "service-not-allowed") {
       store.set("micOK", false);
       live.textContent = "Micro chưa được bật.";
-      showMic(ev.error === "service-not-allowed" && isIOS ? "dictation" : "blocked");
+      if (ev.error === "service-not-allowed" && isIOS) {
+        const n = store.get("snaCount", 0) + 1; store.set("snaCount", n);
+        if (n < 2) { store.set("micOK", true); live.textContent = "Em bấm Bấm để nói thêm 1 lần nữa nha."; return; }
+        showMic("dictation");
+      } else showMic("blocked");
       return;
     }
     const msg = {
@@ -409,6 +419,7 @@ async function listen(L, i, card, btn) {
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
     const top = finals ? finals.map(a => a[0]).join(" ") : interim;
     if (!top.trim()) return;
+    store.set("snaCount", 0);
     live.textContent = "";
     grade(L, i, card, chunks, exp, top, finals || [[interim]]);
   };
