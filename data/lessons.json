@@ -1,0 +1,736 @@
+{
+ "students": [
+  {
+   "id": "duc",
+   "name": "Đức"
+  },
+  {
+   "id": "thu",
+   "name": "Thư"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "s1-duc",
+   "session": 1,
+   "title": "Bản tham khảo của Đức",
+   "subtitle": "Buổi 1 · My weekend, viết lại",
+   "for": [
+    "duc"
+   ],
+   "video": "media/s1-duc.mp4",
+   "sentences": [
+    {
+     "text": "On 'weekends, / I 'don't have much 'free time. //",
+     "start": 132.13,
+     "end": 135.88,
+     "chunks": [
+      [
+       3.16,
+       4.5
+      ],
+      [
+       6.44,
+       8.41
+      ]
+     ]
+    },
+    {
+     "text": "On 'Saturdays, / I have ==classes== / from 'early 'morning / until the 'evening. //",
+     "start": 135.88,
+     "end": 142.27,
+     "chunks": [
+      [
+       11.38,
+       12.83
+      ],
+      [
+       14.88,
+       16.3
+      ],
+      [
+       18.33,
+       19.7
+      ],
+      [
+       21.67,
+       23.2
+      ]
+     ]
+    },
+    {
+     "text": "On 'Sunday 'mornings, / I ++'wake ‿ up++ 'early / and 'go to the 'gym. //",
+     "start": 142.27,
+     "end": 147.51,
+     "chunks": [
+      [
+       25.72,
+       27.45
+      ],
+      [
+       29.79,
+       31.25
+      ],
+      [
+       33.32,
+       34.95
+      ]
+     ]
+    },
+    {
+     "text": "'After that, / I 'usually ++have 'breakfast++ / with my 'family. //",
+     "start": 147.51,
+     "end": 152.43,
+     "chunks": [
+      [
+       37.58,
+       38.74
+      ],
+      [
+       40.5,
+       42.35
+      ],
+      [
+       44.8,
+       46.17
+      ]
+     ]
+    },
+    {
+     "text": "Then I ++'head to 'campus++ / to ++'run ex'periments++ with my pro'fessor / for my ==thesis==. //",
+     "start": 152.43,
+     "end": 158.6,
+     "chunks": [
+      [
+       48.54,
+       50.29
+      ],
+      [
+       52.65,
+       55.26
+      ],
+      [
+       58.47,
+       59.93
+      ]
+     ]
+    },
+    {
+     "text": "In the 'evening, / I ++'squeeze ‿ in++ about 'four 'hours / to ++'hang ‿ out with++ my 'girlfriend. //",
+     "start": 158.6,
+     "end": 164.69,
+     "chunks": [
+      [
+       62.39,
+       63.7
+      ],
+      [
+       65.6,
+       67.85
+      ],
+      [
+       70.69,
+       72.97
+      ]
+     ]
+    },
+    {
+     "text": "To be 'honest, / it's the 'best 'part of my 'week, / because I can 'finally 'see her / ++after a 'long 'week++ / and !!re'charge my 'batteries!!. //",
+     "start": 164.69,
+     "end": 174.07,
+     "chunks": [
+      [
+       76.25,
+       77.59
+      ],
+      [
+       79.52,
+       81.47
+      ],
+      [
+       84.01,
+       86.13
+      ],
+      [
+       88.86,
+       90.46
+      ],
+      [
+       92.66,
+       94.6
+      ]
+     ]
+    },
+    {
+     "text": "'Sometimes / I 'feel like / I 'don't have e'nough 'time / to do ==everything== I 'want, //",
+     "start": 174.07,
+     "end": 180.67,
+     "chunks": [
+      [
+       97.54,
+       98.67
+      ],
+      [
+       100.41,
+       101.62
+      ],
+      [
+       103.43,
+       105.12
+      ],
+      [
+       107.41,
+       109.46
+      ]
+     ]
+    },
+    {
+     "text": "but it 'teaches me / how to ++'manage my 'time++ / and ++'let 'go of++ 'things / that 'aren't im'portant. //",
+     "start": 180.67,
+     "end": 187.37,
+     "chunks": [
+      [
+       112.51,
+       113.97
+      ],
+      [
+       116.03,
+       117.74
+      ],
+      [
+       120.05,
+       121.64
+      ],
+      [
+       123.82,
+       125.4
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s1-thu",
+   "session": 1,
+   "title": "Bản tham khảo của Thư",
+   "subtitle": "Buổi 1 · Tả tranh A Sunday in the park",
+   "for": [
+    "thu"
+   ],
+   "video": "media/s1-thu.mp4",
+   "sentences": [
+    {
+     "text": "On a 'sunny 'Sunday 'morning, / I'm ++'spending 'quality time++ with my 'family / in the 'park. //",
+     "start": 108.73,
+     "end": 114.41,
+     "chunks": [
+      [
+       2.97,
+       4.66
+      ],
+      [
+       6.95,
+       9.41
+      ],
+      [
+       12.46,
+       13.53
+      ]
+     ]
+    },
+    {
+     "text": "'Sunday is my 'only ++'day 'off++ / from my ==internship==, / so I 'come here 'every 'weekend. //",
+     "start": 114.41,
+     "end": 120.33,
+     "chunks": [
+      [
+       15.59,
+       17.43
+      ],
+      [
+       19.88,
+       21.28
+      ],
+      [
+       23.29,
+       25.41
+      ]
+     ]
+    },
+    {
+     "text": "On the 'left, / there's an ==ice cream cart==, / and some 'people are ++'standing ‿ in 'line++. //",
+     "start": 120.33,
+     "end": 125.76,
+     "chunks": [
+      [
+       28.52,
+       29.58
+      ],
+      [
+       31.23,
+       32.87
+      ],
+      [
+       35.12,
+       37.27
+      ]
+     ]
+    },
+    {
+     "text": "Be'hind the 'cart, / a 'boy is ++'flying a 'kite++. //",
+     "start": 125.76,
+     "end": 129.14,
+     "chunks": [
+      [
+       40.42,
+       41.71
+      ],
+      [
+       43.59,
+       45.17
+      ]
+     ]
+    },
+    {
+     "text": "'Next to him, / a 'girl is 'sitting ‿ on a 'bench / under a 'tree / and 'reading a 'book. //",
+     "start": 129.14,
+     "end": 135.12,
+     "chunks": [
+      [
+       47.75,
+       48.89
+      ],
+      [
+       50.63,
+       52.29
+      ],
+      [
+       54.56,
+       55.67
+      ],
+      [
+       57.37,
+       58.65
+      ]
+     ]
+    },
+    {
+     "text": "In the 'middle, / my 'family is 'sitting ‿ on a 'picnic 'blanket / and en'joying ‿ a 'picnic. //",
+     "start": 135.12,
+     "end": 140.81,
+     "chunks": [
+      [
+       60.93,
+       61.95
+      ],
+      [
+       63.58,
+       66.33
+      ],
+      [
+       69.69,
+       71.31
+      ]
+     ]
+    },
+    {
+     "text": "Be'hind us, / 'two 'boys are 'playing 'badminton. //",
+     "start": 140.81,
+     "end": 144.25,
+     "chunks": [
+      [
+       73.93,
+       75.0
+      ],
+      [
+       76.66,
+       78.57
+      ]
+     ]
+    },
+    {
+     "text": "On the 'right, / a 'man is 'riding a 'bicycle. //",
+     "start": 144.25,
+     "end": 147.68,
+     "chunks": [
+      [
+       81.47,
+       82.51
+      ],
+      [
+       84.16,
+       86.0
+      ]
+     ]
+    },
+    {
+     "text": "I 'feel 'really 'happy, / because 'time with my 'family / 'helps me !!re'charge my 'batteries!! / for the 'week ‿ a'head. //",
+     "start": 147.68,
+     "end": 154.75,
+     "chunks": [
+      [
+       88.83,
+       90.4
+      ],
+      [
+       92.56,
+       94.27
+      ],
+      [
+       96.59,
+       98.59
+      ],
+      [
+       101.2,
+       102.46
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s1-my-weekend",
+   "session": 1,
+   "title": "My weekend",
+   "subtitle": "Buổi 1 · Đoạn shadowing trên lớp",
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "video": "media/s1-my-weekend.mp4",
+   "sentences": [
+    {
+     "text": "On 'weekends, / I 'don't have much 'free time. //",
+     "start": 84.1,
+     "end": 87.54,
+     "chunks": [
+      [
+       2.97,
+       4.19
+      ],
+      [
+       6.01,
+       7.74
+      ]
+     ]
+    },
+    {
+     "text": "I have 'extra 'classes / on 'Saturday 'mornings, / and a 'lot ‿ of 'homework. //",
+     "start": 87.54,
+     "end": 92.75,
+     "chunks": [
+      [
+       10.48,
+       12.15
+      ],
+      [
+       14.42,
+       15.91
+      ],
+      [
+       18.0,
+       19.42
+      ]
+     ]
+    },
+    {
+     "text": "But on 'Sunday, / I 'try to ++'sleep ‿ in++ / until about 'nine. //",
+     "start": 92.75,
+     "end": 97.21,
+     "chunks": [
+      [
+       21.84,
+       22.97
+      ],
+      [
+       24.71,
+       26.06
+      ],
+      [
+       28.02,
+       29.38
+      ]
+     ]
+    },
+    {
+     "text": "In the after'noon, / I ++'squeeze ‿ in++ an ‿ 'hour / to ++'hang ‿ out with++ my 'friends. //",
+     "start": 97.21,
+     "end": 102.3,
+     "chunks": [
+      [
+       31.74,
+       32.98
+      ],
+      [
+       34.82,
+       36.28
+      ],
+      [
+       38.34,
+       40.12
+      ]
+     ]
+    },
+    {
+     "text": "++To be 'honest++, / it's the 'best 'part of my 'week, / because I can 'finally re'lax. //",
+     "start": 102.3,
+     "end": 107.76,
+     "chunks": [
+      [
+       42.9,
+       44.05
+      ],
+      [
+       45.81,
+       47.48
+      ],
+      [
+       49.74,
+       51.8
+      ]
+     ]
+    },
+    {
+     "text": "In the 'evening, / I ++'catch ‿ up ‿ on++ my 'homework, / but 'sometimes / I ++'put ‿ it ‿ 'off++ / until 'late at 'night. //",
+     "start": 107.76,
+     "end": 114.81,
+     "chunks": [
+      [
+       54.86,
+       55.95
+      ],
+      [
+       57.64,
+       59.3
+      ],
+      [
+       61.56,
+       62.73
+      ],
+      [
+       64.5,
+       65.54
+      ],
+      [
+       67.17,
+       68.54
+      ]
+     ]
+    },
+    {
+     "text": "I 'know / it's a ==bad 'habit==, / but I'm ++'working ‿ on ‿ it++. //",
+     "start": 114.81,
+     "end": 118.96,
+     "chunks": [
+      [
+       70.92,
+       71.7
+      ],
+      [
+       73.07,
+       74.39
+      ],
+      [
+       76.31,
+       77.71
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "ipa": {
+  "a": "eɪ",
+  "about": "əˈbaʊt",
+  "after": "ˈæftɚ",
+  "afternoon": "ˌæftɚˈnun",
+  "ahead": "əˈhɛd",
+  "an": "æn",
+  "and": "ænd",
+  "are": "ɑr",
+  "aren't": "ˌɑrnt",
+  "at": "æt",
+  "bad": "ˈbæd",
+  "badminton": "ˈbædmɪntən",
+  "batteries": "ˈbætɚiz",
+  "be": "bi",
+  "because": "bəˈkʌz",
+  "behind": "bəˈhaɪnd",
+  "bench": "ˈbɛntʃ",
+  "best": "bɛst",
+  "bicycle": "ˈbaɪsɪkəl",
+  "blanket": "ˈblæŋkət",
+  "book": "ˈbʊk",
+  "boy": "ˈbɔɪ",
+  "boys": "ˈbɔɪz",
+  "breakfast": "ˈbrɛkfəst",
+  "but": "ˌbʌt",
+  "campus": "ˈkæmpəs",
+  "can": "kæn",
+  "cart": "kɑrt",
+  "catch": "kætʃ",
+  "classes": "ˈklæsɪz",
+  "come": "ˈkʌm",
+  "cream": "ˈkrim",
+  "day": "ˈdeɪ",
+  "do": "ˈdu",
+  "don't": "ˈdoʊnt",
+  "early": "ˈɝli",
+  "enjoying": "ɛnˈdʒɔɪɪŋ",
+  "enough": "ɪˈnʌf",
+  "evening": "ˈivnɪŋ",
+  "every": "ˈɛvɚi",
+  "everything": "ˈɛvriθɪŋ",
+  "experiments": "ɪkˈspɛrəmənts",
+  "extra": "ˈɛkstrə",
+  "family": "ˈfæməli",
+  "feel": "ˈfil",
+  "finally": "ˈfaɪnəli",
+  "flying": "ˈflaɪɪŋ",
+  "for": "fɔr",
+  "four": "ˈfɔr",
+  "free": "fri",
+  "friends": "ˈfrɛndz",
+  "from": "frʌm",
+  "girl": "ˈɡɝl",
+  "girlfriend": "ˈɡɝlfrɛnd",
+  "go": "ˌɡoʊ",
+  "gym": "dʒɪm",
+  "habit": "ˈhæbɪt",
+  "hang": "ˈhæŋ",
+  "happy": "ˈhæpi",
+  "have": "hæv",
+  "head": "ˈhɛd",
+  "helps": "ˈhɛlps",
+  "her": "hɝ",
+  "here": "ˈhɪr",
+  "him": "ˌhɪm",
+  "homework": "ˈhoʊmwɝk",
+  "honest": "ˈɑnɪst",
+  "hour": "ˈaʊɚ",
+  "hours": "ˈaʊɚz",
+  "how": "ˌhaʊ",
+  "i": "ˈaɪ",
+  "i'm": "ˌaɪm",
+  "ice": "ˈaɪs",
+  "important": "ɪmˈpɔrtənt",
+  "in": "ɪn",
+  "internship": "ˈɪntɝnʃɪp",
+  "is": "ɪz",
+  "it": "ɪt",
+  "it's": "ɪts",
+  "kite": "kaɪt",
+  "know": "ˈnoʊ",
+  "late": "leɪt",
+  "left": "lɛft",
+  "let": "ˈlɛt",
+  "like": "ˈlaɪk",
+  "line": "ˈlaɪn",
+  "long": "ˈlɔŋ",
+  "lot": "lɑt",
+  "man": "ˈmæn",
+  "manage": "ˈmænɪdʒ",
+  "me": "ˌmi",
+  "middle": "ˈmɪdəl",
+  "morning": "ˈmɔrnɪŋ",
+  "mornings": "ˈmɔrnɪŋz",
+  "much": "ˈmʌtʃ",
+  "my": "maɪ",
+  "next": "ˈnɛkst",
+  "night": "ˈnaɪt",
+  "nine": "ˈnaɪn",
+  "of": "ʌv",
+  "off": "ˈɔf",
+  "on": "ˌɔn",
+  "only": "ˈoʊnli",
+  "out": "ˈaʊt",
+  "park": "ˈpɑrk",
+  "part": "ˈpɑrt",
+  "people": "ˈpipəl",
+  "picnic": "ˈpɪkˌnɪk",
+  "playing": "ˈpleɪɪŋ",
+  "professor": "prəˈfɛsɚ",
+  "put": "pʊt",
+  "quality": "ˈkwɑləti",
+  "reading": "ˈridɪŋ",
+  "really": "ˈriəli",
+  "recharge": "riˈtʃɑrdʒ",
+  "relax": "rɪˈlæks",
+  "riding": "ˈraɪdɪŋ",
+  "right": "raɪt",
+  "run": "ˈrʌn",
+  "saturday": "ˈsætɚˌdeɪ",
+  "saturdays": "ˈsætɚdeɪz",
+  "see": "ˈsi",
+  "sitting": "ˈsɪtɪŋ",
+  "sleep": "ˈslip",
+  "so": "ˌsoʊ",
+  "some": "ˌsʌm",
+  "sometimes": "ˈsʌmtaɪmz",
+  "spending": "ˈspɛndɪŋ",
+  "squeeze": "skwiz",
+  "standing": "ˈstændɪŋ",
+  "sunday": "ˈsʌnˌdeɪ",
+  "sunny": "ˈsʌni",
+  "teaches": "ˈtitʃɪz",
+  "that": "ðæt",
+  "the": "ði",
+  "then": "ˈðɛn",
+  "there's": "ðɛrz",
+  "thesis": "ˈθisɪs",
+  "things": "ˈθɪŋz",
+  "time": "ˈtaɪm",
+  "to": "tu",
+  "tree": "ˈtri",
+  "try": "ˈtraɪ",
+  "two": "ˈtu",
+  "under": "ˈʌndɚ",
+  "until": "ˌʌnˈtɪl",
+  "up": "ˌʌp",
+  "us": "ˌʌs",
+  "usually": "ˈjuʒəwəli",
+  "wake": "ˈweɪk",
+  "want": "ˈwɑnt",
+  "week": "wik",
+  "weekend": "ˈwikɛnd",
+  "weekends": "ˈwikɛndz",
+  "with": "wɪð",
+  "working": "ˈwɝkɪŋ"
+ },
+ "tips": {
+  "classes": "Đuôi -es đọc thành âm /ɪz/: cla-sɪz, 2 âm tiết.",
+  "catch": "Kết thúc bằng âm \"ch\" /tʃ/, chu môi ra. Đừng đọc thành cast.",
+  "sometimes": "Nhớ âm /z/ ở cuối.",
+  "week": "Kéo dài âm \"i\" và giữ âm /k/ cuối, không thì nghe thành quick hoặc wish.",
+  "late": "Đọc \"lây-t\", khác light \"lai-t\".",
+  "working": "Tròn môi cho /w/, cong lưỡi cho /ɝ/.",
+  "free": "Có âm /r/ ngay sau /f/.",
+  "gym": "Âm \"i\" ngắn, ngậm môi lại cho /m/ ở cuối.",
+  "breakfast": "Nhấn âm đầu BREAK, đọc rõ /br/.",
+  "best": "Giữ âm /st/ ở cuối. Đọc thành bad là ngược nghĩa.",
+  "hours": "Âm h câm. Nhớ âm /z/ ở cuối.",
+  "hour": "Âm h câm: an hour đọc nối thành a-nau-ơ.",
+  "weekends": "Không có a phía trước. Cuối từ là /dz/.",
+  "extra": "Đọc rõ cụm /kstr/.",
+  "lot": "Không có âm /s/: lot of đọc nối lɑ-təv.",
+  "homework": "Nhớ âm /h/ đầu và /k/ cuối.",
+  "squeeze": "Đọc rõ /skw/ và âm /z/ cuối.",
+  "relax": "Nhấn âm 2 LAX, đọc rõ /ks/ cuối.",
+  "put": "Âm /p/ bật hơi, không phải /b/. Put it off đọc pu-đi-off.",
+  "left": "Kết thúc bằng /ft/, cắn nhẹ môi dưới cho /f/.",
+  "cart": "Nhớ âm /t/ cuối, thiếu là thành car.",
+  "playing": "Đọc rõ /pl/ ở đầu.",
+  "badminton": "Nhấn âm đầu BAD.",
+  "right": "Âm cuối là /t/, không phải /s/.",
+  "riding": "Đạp xe là rai-đinh. Ri-đinh là reading (đọc sách).",
+  "reading": "Đọc sách là ri-đinh. Rai-đinh là riding (đạp xe).",
+  "sitting": "Âm /s/ đầu: đặt lưỡi sau răng, thổi hơi ra âm \"xì\".",
+  "teaches": "Chủ ngữ it thì động từ thêm -es, đọc /ɪz/.",
+  "experiments": "Nhấn âm 2 PE, nhớ /ts/ ở cuối.",
+  "recharge": "Nhấn âm 2 CHARGE, cuối là /dʒ/.",
+  "honest": "Âm h câm: ɑ-nɪst.",
+  "enjoying": "Đuôi -ing đọc rõ.",
+  "mornings": "Nhớ âm /z/ ở cuối.",
+  "saturdays": "Nhớ âm /z/ ở cuối."
+ }
+}

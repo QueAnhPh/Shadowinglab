@@ -1,0 +1,169 @@
+[
+ {
+  "text": "On a 'sunny 'Sunday 'morning, / I'm ++'spending 'quality time++ with my 'family / in the 'park. //",
+  "start": 108.73,
+  "end": 114.41,
+  "chunks": [
+   [
+    2.97,
+    4.66
+   ],
+   [
+    6.95,
+    9.41
+   ],
+   [
+    12.46,
+    13.53
+   ]
+  ]
+ },
+ {
+  "text": "'Sunday is my 'only ++'day 'off++ / from my ==internship==, / so I 'come here 'every 'weekend. //",
+  "start": 114.41,
+  "end": 120.33,
+  "chunks": [
+   [
+    15.59,
+    17.43
+   ],
+   [
+    19.88,
+    21.28
+   ],
+   [
+    23.29,
+    25.41
+   ]
+  ]
+ },
+ {
+  "text": "On the 'left, / there's an ==ice cream cart==, / and some 'people are ++'standing ‿ in 'line++. //",
+  "start": 120.33,
+  "end": 125.76,
+  "chunks": [
+   [
+    28.52,
+    29.58
+   ],
+   [
+    31.23,
+    32.87
+   ],
+   [
+    35.12,
+    37.27
+   ]
+  ]
+ },
+ {
+  "text": "Be'hind the 'cart, / a 'boy is ++'flying a 'kite++. //",
+  "start": 125.76,
+  "end": 129.14,
+  "chunks": [
+   [
+    40.42,
+    41.71
+   ],
+   [
+    43.59,
+    45.17
+   ]
+  ]
+ },
+ {
+  "text": "'Next to him, / a 'girl is 'sitting ‿ on a 'bench / under a 'tree / and 'reading a 'book. //",
+  "start": 129.14,
+  "end": 135.12,
+  "chunks": [
+   [
+    47.75,
+    48.89
+   ],
+   [
+    50.63,
+    52.29
+   ],
+   [
+    54.56,
+    55.67
+   ],
+   [
+    57.37,
+    58.65
+   ]
+  ]
+ },
+ {
+  "text": "In the 'middle, / my 'family is 'sitting ‿ on a 'picnic 'blanket / and en'joying ‿ a 'picnic. //",
+  "start": 135.12,
+  "end": 140.81,
+  "chunks": [
+   [
+    60.93,
+    61.95
+   ],
+   [
+    63.58,
+    66.33
+   ],
+   [
+    69.69,
+    71.31
+   ]
+  ]
+ },
+ {
+  "text": "Be'hind us, / 'two 'boys are 'playing 'badminton. //",
+  "start": 140.81,
+  "end": 144.25,
+  "chunks": [
+   [
+    73.93,
+    75.0
+   ],
+   [
+    76.66,
+    78.57
+   ]
+  ]
+ },
+ {
+  "text": "On the 'right, / a 'man is 'riding a 'bicycle. //",
+  "start": 144.25,
+  "end": 147.68,
+  "chunks": [
+   [
+    81.47,
+    82.51
+   ],
+   [
+    84.16,
+    86.0
+   ]
+  ]
+ },
+ {
+  "text": "I 'feel 'really 'happy, / because 'time with my 'family / 'helps me !!re'charge my 'batteries!! / for the 'week ‿ a'head. //",
+  "start": 147.68,
+  "end": 154.75,
+  "chunks": [
+   [
+    88.83,
+    90.4
+   ],
+   [
+    92.56,
+    94.27
+   ],
+   [
+    96.59,
+    98.59
+   ],
+   [
+    101.2,
+    102.46
+   ]
+  ]
+ }
+]

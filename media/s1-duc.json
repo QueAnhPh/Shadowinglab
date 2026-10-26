@@ -1,0 +1,189 @@
+[
+ {
+  "text": "On 'weekends, / I 'don't have much 'free time. //",
+  "start": 132.13,
+  "end": 135.88,
+  "chunks": [
+   [
+    3.16,
+    4.5
+   ],
+   [
+    6.44,
+    8.41
+   ]
+  ]
+ },
+ {
+  "text": "On 'Saturdays, / I have ==classes== / from 'early 'morning / until the 'evening. //",
+  "start": 135.88,
+  "end": 142.27,
+  "chunks": [
+   [
+    11.38,
+    12.83
+   ],
+   [
+    14.88,
+    16.3
+   ],
+   [
+    18.33,
+    19.7
+   ],
+   [
+    21.67,
+    23.2
+   ]
+  ]
+ },
+ {
+  "text": "On 'Sunday 'mornings, / I ++'wake ‿ up++ 'early / and 'go to the 'gym. //",
+  "start": 142.27,
+  "end": 147.51,
+  "chunks": [
+   [
+    25.72,
+    27.45
+   ],
+   [
+    29.79,
+    31.25
+   ],
+   [
+    33.32,
+    34.95
+   ]
+  ]
+ },
+ {
+  "text": "'After that, / I 'usually ++have 'breakfast++ / with my 'family. //",
+  "start": 147.51,
+  "end": 152.43,
+  "chunks": [
+   [
+    37.58,
+    38.74
+   ],
+   [
+    40.5,
+    42.35
+   ],
+   [
+    44.8,
+    46.17
+   ]
+  ]
+ },
+ {
+  "text": "Then I ++'head to 'campus++ / to ++'run ex'periments++ with my pro'fessor / for my ==thesis==. //",
+  "start": 152.43,
+  "end": 158.6,
+  "chunks": [
+   [
+    48.54,
+    50.29
+   ],
+   [
+    52.65,
+    55.26
+   ],
+   [
+    58.47,
+    59.93
+   ]
+  ]
+ },
+ {
+  "text": "In the 'evening, / I ++'squeeze ‿ in++ about 'four 'hours / to ++'hang ‿ out with++ my 'girlfriend. //",
+  "start": 158.6,
+  "end": 164.69,
+  "chunks": [
+   [
+    62.39,
+    63.7
+   ],
+   [
+    65.6,
+    67.85
+   ],
+   [
+    70.69,
+    72.97
+   ]
+  ]
+ },
+ {
+  "text": "To be 'honest, / it's the 'best 'part of my 'week, / because I can 'finally 'see her / ++after a 'long 'week++ / and !!re'charge my 'batteries!!. //",
+  "start": 164.69,
+  "end": 174.07,
+  "chunks": [
+   [
+    76.25,
+    77.59
+   ],
+   [
+    79.52,
+    81.47
+   ],
+   [
+    84.01,
+    86.13
+   ],
+   [
+    88.86,
+    90.46
+   ],
+   [
+    92.66,
+    94.6
+   ]
+  ]
+ },
+ {
+  "text": "'Sometimes / I 'feel like / I 'don't have e'nough 'time / to do ==everything== I 'want, //",
+  "start": 174.07,
+  "end": 180.67,
+  "chunks": [
+   [
+    97.54,
+    98.67
+   ],
+   [
+    100.41,
+    101.62
+   ],
+   [
+    103.43,
+    105.12
+   ],
+   [
+    107.41,
+    109.46
+   ]
+  ]
+ },
+ {
+  "text": "but it 'teaches me / how to ++'manage my 'time++ / and ++'let 'go of++ 'things / that 'aren't im'portant. //",
+  "start": 180.67,
+  "end": 187.37,
+  "chunks": [
+   [
+    112.51,
+    113.97
+   ],
+   [
+    116.03,
+    117.74
+   ],
+   [
+    120.05,
+    121.64
+   ],
+   [
+    123.82,
+    125.4
+   ]
+  ]
+ }
+]
