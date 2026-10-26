@@ -376,16 +376,19 @@ async function listenWhisper(L, i, card, btn) {
   const chunks = parseSentence(L.sentences[i].text);
   const exp = chunks.flat().map(w => w.key);
   loadWhisper();
-  let stream, ctx;
+  /* create and resume the audio context inside the tap: Safari only allows it during the gesture */
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  const resumed = ctx.resume().catch(() => {});
+  let stream;
   try {
     stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
   } catch (e) {
     window.__lastErr = (e && e.name) || "mic";
+    try { ctx.close(); } catch {}
     showMic("blocked"); return;
   }
   store.set("micOK", true);
-  ctx = new (window.AudioContext || window.webkitAudioContext)();
-  try { await ctx.resume(); } catch {}
+  await resumed;
   const src = ctx.createMediaStreamSource(stream), proc = ctx.createScriptProcessor(4096, 1, 1);
   const bufs = []; let spoke = false, quietMs = 0, totalMs = 0, done = false;
   const session = { stop: () => finish(true) };
@@ -402,6 +405,9 @@ async function listenWhisper(L, i, card, btn) {
     if ((spoke && quietMs > 1600) || totalMs > 20000 || (!spoke && totalMs > 7000)) finish(spoke);
   };
   src.connect(proc); proc.connect(ctx.destination);
+  setTimeout(() => {   // no audio arriving (context still suspended): stop instead of hanging
+    if (!done && totalMs === 0) { finish(false); live.textContent = "Micro chưa gửi âm thanh. Em bấm Bấm để nói lại nha."; }
+  }, 2500);
   async function finish(keep) {
     if (done) return; done = true;
     if (rec === session) rec = null;
