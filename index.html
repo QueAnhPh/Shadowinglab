@@ -331,7 +331,7 @@ const MIC_SVG = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" str
 function closeMic() { $("#micModal").hidden = true; }
 $("#micModal").addEventListener("click", e => { if (e.target.id === "micModal") closeMic(); });
 function fixSteps(kind) {
-  if (kind === "dictation") return `<ol><li>Mở link bằng <b>Safari</b> (không mở trong Zalo, Chrome hay Messenger).</li><li><b>Cài đặt → Cài đặt chung → Bàn phím</b>: bật <b>Bật Đọc chính tả</b>.</li><li><b>Cài đặt → Thời gian sử dụng → Giới hạn nội dung & quyền riêng tư → Ứng dụng được phép</b>: bật <b>Siri & Đọc chính tả</b> (nếu mục này đang bật giới hạn).</li><li>Tắt Safari hẳn rồi mở lại trang, bấm <b>Bấm để nói</b>.</li></ol>`;
+  if (kind === "dictation") return `<ol><li><b>Cài đặt → Siri</b>: bật <b>Nhấn nút sườn để dùng Siri</b> (hoặc <b>Nghe "Hey Siri"</b>). Safari cần Siri bật thì mới nhận giọng nói.</li><li><b>Cài đặt → Cài đặt chung → Bàn phím</b>: bật <b>Bật Đọc chính tả</b>.</li><li>Cũng trong <b>Bàn phím → Bàn phím</b>: phải có bàn phím <b>English</b>. Chưa có thì bấm <b>Thêm bàn phím mới → English (US)</b>.</li><li><b>Cài đặt → Thời gian sử dụng → Giới hạn nội dung & quyền riêng tư</b>: nếu đang bật, vào <b>Ứng dụng được phép</b> và bật <b>Siri & Đọc chính tả</b>.</li><li>Vuốt tắt hẳn Safari, mở lại trang rồi bấm <b>Bấm để nói</b>.</li></ol>`;
   if (isIOS) return `<ol><li>Bấm nút <b>aA</b> (hoặc biểu tượng trang) bên trái thanh địa chỉ Safari.</li><li>Chọn <b>Cài đặt trang web</b>.</li><li>Ở <b>Micrô</b>, chọn <b>Cho phép</b>.</li><li>Bấm <b>Thử lại</b>.</li></ol><p class="muted">Vẫn không được: vào <b>Cài đặt → Safari → Micrô</b>, chọn <b>Cho phép</b>.</p>`;
   if (isAndroid) return `<ol><li>Bấm biểu tượng <b>ổ khóa</b> (hoặc dấu ⓘ) bên trái thanh địa chỉ Chrome.</li><li>Chọn <b>Quyền</b> (Permissions) → <b>Micrô</b>.</li><li>Chọn <b>Cho phép</b>.</li><li>Bấm <b>Thử lại</b>.</li></ol><p class="muted">Vẫn không được: vào <b>Cài đặt điện thoại → Ứng dụng → Chrome → Quyền → Micrô → Cho phép</b>.</p>`;
   return `<ol><li>Bấm biểu tượng ổ khóa bên trái thanh địa chỉ.</li><li>Cho phép <b>Micro</b> cho trang này.</li><li>Bấm <b>Thử lại</b>.</li></ol>`;
@@ -357,7 +357,7 @@ function showMic(mode, onGo) {
     sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
       <h3 id="micTitle">${mode === "dictation" ? "iPhone chưa cho nhận giọng nói" : "Micro đang bị chặn"}</h3>
       <p>${mode === "dictation" ? "Kiểm tra lần lượt các mục dưới:" : "Trình duyệt đang chặn micro cho trang này. Mở lại như sau:"}</p>
-      ${fixSteps(mode)}
+      ${fixSteps(mode)}${window.__lastErr ? `<p class="muted">Mã lỗi: ${esc(window.__lastErr)}</p>` : ""}
       <div class="row"><button class="primary" id="micGo">Thử lại</button><button id="micLater">Đóng</button></div>`;
   }
   $("#micModal").hidden = false;
@@ -402,7 +402,7 @@ function listen(L, i, card, btn) {
     if (errored) return;
     const top = finals ? finals.map(a => a[0]).join(" ") : interim;
     if (!top.trim()) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
-    store.set("snaCount", 0);
+    window.__sna = 0;
     live.textContent = "";
     grade(L, i, card, chunks, exp, top, finals || [[interim]]);
   };
@@ -419,11 +419,12 @@ function listen(L, i, card, btn) {
   };
   r.onerror = ev => {
     if (ev.error === "aborted") return;
+    window.__lastErr = ev.error + (ev.message ? " · " + ev.message : "");
     if (ev.error === "not-allowed" || ev.error === "service-not-allowed") {
       errored = true; store.set("micOK", false);
       live.textContent = "Micro chưa được bật.";
       if (ev.error === "service-not-allowed" && isIOS) {
-        const n = store.get("snaCount", 0) + 1; store.set("snaCount", n);
+        const n = (window.__sna = (window.__sna || 0) + 1);
         if (n < 2) { store.set("micOK", true); live.textContent = "Em bấm Bấm để nói thêm 1 lần nữa nha."; }
         else showMic("dictation");
       } else showMic("blocked");
