@@ -104,6 +104,17 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .pulse{animation:pulse 1.2s ease-in-out infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--bad) 30%,transparent)}}
+.modal{position:fixed;inset:0;z-index:20;background:rgba(10,16,28,.55);display:grid;place-items:end center;
+  padding:16px max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.sheet{background:var(--surface);color:var(--ink);border-radius:18px;max-width:520px;width:100%;padding:22px 20px;display:grid;gap:14px;
+  box-shadow:0 18px 50px rgba(0,0,0,.3);max-height:90vh;overflow:auto}
+@media (min-width:600px){.modal{place-items:center}}
+.sheet h3{margin:0;font-size:19px}
+.sheet p{margin:0;font-size:15px}
+.sheet ol{margin:0;padding-left:22px;display:grid;gap:8px;font-size:15px}
+.mic-ic{width:56px;height:56px;border-radius:50%;background:var(--amber);display:grid;place-items:center}
+.sheet .row{display:flex;gap:8px;flex-wrap:wrap}
+.sheet .row button{flex:1 1 auto}
 </style>
 </head>
 <body>
@@ -113,6 +124,7 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 </div></header>
 <main class="wrap" id="app"><p class="muted">Đang tải bài…</p></main>
 <audio id="player" preload="auto" playsinline></audio>
+<div class="modal" id="micModal" hidden role="dialog" aria-modal="true" aria-labelledby="micTitle"><div class="sheet" id="micSheet"></div></div>
 
 <script>
 "use strict";
@@ -313,8 +325,57 @@ player.addEventListener("timeupdate", () => {
 });
 
 let rec = null;
-function listen(L, i, card, btn) {
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isAndroid = /Android/i.test(navigator.userAgent);
+const MIC_SVG = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg>';
+function closeMic() { $("#micModal").hidden = true; }
+$("#micModal").addEventListener("click", e => { if (e.target.id === "micModal") closeMic(); });
+function fixSteps(kind) {
+  if (kind === "dictation") return `<ol><li>Mở <b>Cài đặt</b> trên iPhone.</li><li>Vào <b>Cài đặt chung → Bàn phím</b>.</li><li>Bật <b>Bật Đọc chính tả</b> (Enable Dictation).</li><li>Quay lại trang này, bấm <b>Thử lại</b>.</li></ol>`;
+  if (isIOS) return `<ol><li>Bấm nút <b>aA</b> (hoặc biểu tượng trang) bên trái thanh địa chỉ Safari.</li><li>Chọn <b>Cài đặt trang web</b>.</li><li>Ở <b>Micrô</b>, chọn <b>Cho phép</b>.</li><li>Bấm <b>Thử lại</b>.</li></ol><p class="muted">Vẫn không được: vào <b>Cài đặt → Safari → Micrô</b>, chọn <b>Cho phép</b>.</p>`;
+  if (isAndroid) return `<ol><li>Bấm biểu tượng <b>ổ khóa</b> (hoặc dấu ⓘ) bên trái thanh địa chỉ Chrome.</li><li>Chọn <b>Quyền</b> (Permissions) → <b>Micrô</b>.</li><li>Chọn <b>Cho phép</b>.</li><li>Bấm <b>Thử lại</b>.</li></ol><p class="muted">Vẫn không được: vào <b>Cài đặt điện thoại → Ứng dụng → Chrome → Quyền → Micrô → Cho phép</b>.</p>`;
+  return `<ol><li>Bấm biểu tượng ổ khóa bên trái thanh địa chỉ.</li><li>Cho phép <b>Micro</b> cho trang này.</li><li>Bấm <b>Thử lại</b>.</li></ol>`;
+}
+function showMic(mode, onGo) {
+  const sheet = $("#micSheet");
+  if (mode === "ask") {
+    sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
+      <h3 id="micTitle">Cho phép dùng micro</h3>
+      <p>Để chấm phát âm, web cần nghe em nói. Bấm <b>Bật micro</b>, rồi chọn <b>Cho phép</b> ở cửa sổ trình duyệt hiện ra.</p>
+      <p class="muted">Chỉ cần làm 1 lần. Web không lưu giọng nói của em.</p>
+      <div class="row"><button class="primary" id="micGo">Bật micro</button><button id="micLater">Để sau</button></div>`;
+  } else {
+    sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
+      <h3 id="micTitle">${mode === "dictation" ? "Cần bật Đọc chính tả" : "Micro đang bị chặn"}</h3>
+      <p>${mode === "dictation" ? "iPhone cần bật Đọc chính tả thì web mới nghe được giọng." : "Trình duyệt đang chặn micro cho trang này. Mở lại như sau:"}</p>
+      ${fixSteps(mode)}
+      <div class="row"><button class="primary" id="micGo">Thử lại</button><button id="micLater">Đóng</button></div>`;
+  }
+  $("#micModal").hidden = false;
+  $("#micLater").addEventListener("click", closeMic);
+  $("#micGo").addEventListener("click", async () => {
+    if (mode !== "ask") { closeMic(); location.reload(); return; }
+    try {
+      const s = await navigator.mediaDevices.getUserMedia({ audio: true });
+      s.getTracks().forEach(t => t.stop());
+      store.set("micOK", true); closeMic(); onGo && onGo();
+    } catch (e) { showMic("blocked"); }
+  });
+}
+async function micReady() {
+  if (store.get("micOK", false)) return true;
+  try {
+    if (navigator.permissions && navigator.permissions.query) {
+      const st = await navigator.permissions.query({ name: "microphone" });
+      if (st.state === "granted") { store.set("micOK", true); return true; }
+      if (st.state === "denied") { showMic("blocked"); return false; }
+    }
+  } catch {}
+  return false;
+}
+async function listen(L, i, card, btn) {
   if (rec) { rec.stop(); return; }
+  if (!(await micReady())) { if ($("#micModal").hidden) showMic("ask", () => listen(L, i, card, btn)); return; }
   player.pause();
   const live = card.querySelector(".live"), res = card.querySelector(".result");
   const chunks = parseSentence(L.sentences[i].text);
@@ -331,8 +392,13 @@ function listen(L, i, card, btn) {
     if (last.isFinal) finals = Array.from(ev.results).map(r => Array.from(r).map(a => a.transcript));
   };
   rec.onerror = ev => {
-    const msg = { "not-allowed": "Chưa cho phép micro. Mở cài đặt trình duyệt, cho phép micro cho trang này rồi thử lại.",
-      "service-not-allowed": "Chưa cho phép micro. Mở cài đặt trình duyệt, cho phép micro cho trang này rồi thử lại.",
+    if (ev.error === "not-allowed" || ev.error === "service-not-allowed") {
+      store.set("micOK", false);
+      live.textContent = "Micro chưa được bật.";
+      showMic(ev.error === "service-not-allowed" && isIOS ? "dictation" : "blocked");
+      return;
+    }
+    const msg = {
       "no-speech": "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn.",
       "audio-capture": "Không tìm thấy micro trên máy này.",
       "network": "Mất mạng nên chưa chấm được. Kiểm tra mạng rồi thử lại." }[ev.error] || "Chưa chấm được, em thử lại nha.";
