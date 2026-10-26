@@ -126,6 +126,21 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 <audio id="player" preload="auto" playsinline></audio>
 <div class="modal" id="micModal" hidden role="dialog" aria-modal="true" aria-labelledby="micTitle"><div class="sheet" id="micSheet"></div></div>
 
+<script type="module">
+import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.5";
+env.allowLocalModels = false;
+let asrP = null;
+window.Whisper = {
+  load(onProgress) {
+    if (!asrP) asrP = pipeline("automatic-speech-recognition", "Xenova/whisper-tiny.en",
+      { dtype: "q8", device: "wasm", progress_callback: p => onProgress && onProgress(p) })
+      .catch(e => { asrP = null; throw e; });
+    return asrP;
+  },
+  async transcribe(f32) { const asr = await this.load(); const out = await asr(f32); return (out && out.text || "").trim(); }
+};
+window.dispatchEvent(new Event("whisper-ready"));
+</script>
 <script>
 "use strict";
 const $ = (s, el = document) => el.querySelector(s);
@@ -234,7 +249,7 @@ function lessonProgress(L) {
 
 function banner() {
   if (inZalo) return `<div class="notice"><b>Đang mở trong Zalo.</b> Zalo không cho dùng micro. Bấm dấu ⋯ góc trên, chọn <b>Mở bằng trình duyệt</b> (Chrome hoặc Safari).</div>`;
-  if (!SR) return `<div class="notice"><b>Trình duyệt này chưa chấm giọng được.</b> Em vẫn nghe mẫu được. Muốn chấm, mở link bằng <b>Chrome</b> (Android) hoặc <b>Safari</b> (iPhone).</div>`;
+  if (useWhisper()) return `<div class="notice" id="engineNote"><b>Bộ chấm giọng</b> <span id="engineStatus">chưa tải. Lần đầu bấm nói, máy tải khoảng 40MB (nên dùng wifi). Những lần sau mở là dùng được ngay.</span></div>`;
   return "";
 }
 
@@ -294,13 +309,14 @@ function viewLesson(L) {
         <div class="sent">${renderSentenceHTML(parseSentence(s.text))}</div>
         <div class="actions">
           <button class="listen">Nghe mẫu</button>
-          <button class="primary speak" ${SR && !inZalo ? "" : "disabled"}>Bấm để nói</button>
+          <button class="primary speak" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>Bấm để nói</button>
         </div>
         <div class="live" aria-live="polite"></div>
         <div class="result" hidden></div>
       </section>`).join("")}
     <p class="foot">Máy nghe đôi khi tự đoán giúp em, nên chữ xanh chưa chắc đã chuẩn 100%. Chữ đỏ thì chắc chắn cần sửa.</p>`;
   $("#backBtn").addEventListener("click", () => { location.hash = ""; });
+  if (useWhisper() && store.get("whisperLoaded", false)) loadWhisper();
   player.src = L.video;
   $("#app").querySelectorAll(".card").forEach(card => {
     const i = +card.dataset.i, S = L.sentences[i];
@@ -325,6 +341,101 @@ player.addEventListener("timeupdate", () => {
 });
 
 let rec = null;
+/* engine: browser speech recognition (Android/desktop Chrome) or on-device Whisper (iPhone, or fallback) */
+function useWhisper() { return !SR || /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) || store.get("engine", "") === "whisper"; }
+let whisperState = "idle";
+function setEngineStatus(t) { const el = document.getElementById("engineStatus"); if (el) el.textContent = t; }
+function loadWhisper() {
+  if (whisperState === "ready" || whisperState === "loading") return;
+  if (!window.Whisper) { window.addEventListener("whisper-ready", loadWhisper, { once: true }); return; }
+  whisperState = "loading";
+  const files = {};
+  setEngineStatus("đang tải…");
+  window.Whisper.load(p => {
+    if (p.status === "progress" && p.total) {
+      files[p.file] = [p.loaded, p.total];
+      const v = Object.values(files), got = v.reduce((a, x) => a + x[0], 0), tot = v.reduce((a, x) => a + x[1], 0);
+      setEngineStatus(`đang tải ${Math.round(got / tot * 100)}%`);
+    }
+  }).then(() => { whisperState = "ready"; store.set("whisperLoaded", true); setEngineStatus("sẵn sàng."); })
+    .catch(() => { whisperState = "error"; setEngineStatus("tải chưa được. Kiểm tra mạng rồi tải lại trang."); });
+}
+function resample(chunks, rate) {
+  const n = chunks.reduce((a, c) => a + c.length, 0), src = new Float32Array(n);
+  let o = 0; for (const c of chunks) { src.set(c, o); o += c.length; }
+  if (rate === 16000) return src;
+  const ratio = rate / 16000, out = new Float32Array(Math.floor(n / ratio));
+  for (let k = 0; k < out.length; k++) {
+    const x = k * ratio, a = Math.floor(x), b = Math.min(a + 1, n - 1), f = x - a;
+    out[k] = src[a] * (1 - f) + src[b] * f;
+  }
+  return out;
+}
+async function listenWhisper(L, i, card, btn) {
+  const live = card.querySelector(".live");
+  const chunks = parseSentence(L.sentences[i].text);
+  const exp = chunks.flat().map(w => w.key);
+  loadWhisper();
+  /* create and resume the audio context inside the tap: Safari only allows it during the gesture */
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  const resumed = ctx.resume().catch(() => {});
+  let stream;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
+  } catch (e) {
+    window.__lastErr = (e && e.name) || "mic";
+    try { ctx.close(); } catch {}
+    showMic("blocked"); return;
+  }
+  store.set("micOK", true);
+  await resumed;
+  const src = ctx.createMediaStreamSource(stream), proc = ctx.createScriptProcessor(4096, 1, 1);
+  const bufs = []; let spoke = false, quietMs = 0, totalMs = 0, done = false;
+  const session = { stop: () => finish(true) };
+  rec = session;
+  btn.textContent = "Đang nghe… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
+  live.textContent = "Nói cả câu nha.";
+  proc.onaudioprocess = e => {
+    if (done) return;
+    const d = e.inputBuffer.getChannelData(0); bufs.push(new Float32Array(d));
+    let sum = 0; for (let k = 0; k < d.length; k += 4) sum += d[k] * d[k];
+    const rms = Math.sqrt(sum / (d.length / 4)), ms = d.length / ctx.sampleRate * 1000;
+    totalMs += ms;
+    if (rms > 0.02) { spoke = true; quietMs = 0; } else if (spoke) quietMs += ms;
+    if ((spoke && quietMs > 1600) || totalMs > 20000 || (!spoke && totalMs > 7000)) finish(spoke);
+  };
+  src.connect(proc); proc.connect(ctx.destination);
+  setTimeout(() => {   // no audio arriving (context still suspended): stop instead of hanging
+    if (!done && totalMs === 0) { finish(false); live.textContent = "Micro chưa gửi âm thanh. Em bấm Bấm để nói lại nha."; }
+  }, 2500);
+  async function finish(keep) {
+    if (done) return; done = true;
+    if (rec === session) rec = null;
+    try { proc.disconnect(); src.disconnect(); } catch {}
+    stream.getTracks().forEach(t => t.stop());
+    const rate = ctx.sampleRate; try { ctx.close(); } catch {}
+    btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
+    if (!keep || !spoke) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
+    const audio = resample(bufs, rate);
+    btn.disabled = true;
+    live.textContent = whisperState === "ready" ? "Đang chấm…" : "Đang tải bộ chấm giọng, chờ chút nha…";
+    try {
+      const text = await window.Whisper.transcribe(audio);
+      live.textContent = "";
+      if (!text) { live.textContent = "Máy chưa nghe rõ. Em đọc lại to hơn nha."; return; }
+      grade(L, i, card, chunks, exp, text, [[text]]);
+    } catch (e) {
+      live.textContent = "Chưa chấm được. Kiểm tra mạng rồi thử lại.";
+    } finally { btn.disabled = false; }
+  }
+}
+window.__testWhisper = async (url, sentenceIndex = 0) => {   // self-test hook: transcribe an audio file instead of the mic
+  const buf = await (await fetch(url)).arrayBuffer();
+  const ac = new (window.AudioContext || window.webkitAudioContext)();
+  const dec = await ac.decodeAudioData(buf);
+  const t = await window.Whisper.transcribe(resample([dec.getChannelData(0)], dec.sampleRate));
+  return t;
+};
 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 const isAndroid = /Android/i.test(navigator.userAgent);
 const MIC_SVG = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg>';
@@ -380,6 +491,7 @@ try {
 const otherIOSBrowser = isIOS && /CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(navigator.userAgent);
 function listen(L, i, card, btn) {
   if (rec) { rec._finish ? rec._finish() : rec.stop(); return; }
+  if (useWhisper()) { listenWhisper(L, i, card, btn); return; }
   if (otherIOSBrowser) { showMic("safari"); return; }
   if (!store.get("micOK", false)) { showMic("ask"); return; }
   player.pause();
@@ -423,7 +535,12 @@ function listen(L, i, card, btn) {
     if (ev.error === "not-allowed" || ev.error === "service-not-allowed") {
       errored = true; store.set("micOK", false);
       live.textContent = "Micro chưa được bật.";
-      if (ev.error === "service-not-allowed" && isIOS) {
+      if (ev.error === "service-not-allowed") {
+        store.set("engine", "whisper"); store.set("micOK", true); errored = true;
+        live.textContent = "Đã chuyển sang bộ chấm giọng trên máy. Em bấm Bấm để nói lại nha.";
+        finish(); route(); return;
+      }
+      if (false) {
         const n = (window.__sna = (window.__sna || 0) + 1);
         if (n < 2) { store.set("micOK", true); live.textContent = "Em bấm Bấm để nói thêm 1 lần nữa nha."; }
         else showMic("dictation");
