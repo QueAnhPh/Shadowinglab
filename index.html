@@ -379,51 +379,64 @@ try {
 } catch {}
 const otherIOSBrowser = isIOS && /CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(navigator.userAgent);
 function listen(L, i, card, btn) {
-  if (rec) { rec.stop(); return; }
+  if (rec) { rec._finish ? rec._finish() : rec.stop(); return; }
   if (otherIOSBrowser) { showMic("safari"); return; }
   if (!store.get("micOK", false)) { showMic("ask"); return; }
   player.pause();
   const live = card.querySelector(".live"), res = card.querySelector(".result");
   const chunks = parseSentence(L.sentences[i].text);
   const exp = chunks.flat().map(w => w.key);
-  rec = new SR();
-  rec.lang = "en-US"; rec.interimResults = true; rec.maxAlternatives = 5; rec.continuous = false;
-  let finals = null, interim = "";
+  const r = new SR();
+  rec = r;
+  r.lang = "en-US"; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
+  let finals = null, interim = "", done = false, silenceT = null, capT = null, errored = false;
   btn.textContent = "Đang nghe… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
   live.textContent = "Nói cả câu nha.";
-  rec.onresult = ev => {
-    interim = Array.from(ev.results).map(r => r[0].transcript).join(" ");
-    live.textContent = interim;
-    const last = ev.results[ev.results.length - 1];
-    if (last.isFinal) finals = Array.from(ev.results).map(r => Array.from(r).map(a => a.transcript));
-  };
-  rec.onerror = ev => {
-    if (ev.error === "not-allowed" || ev.error === "service-not-allowed") {
-      store.set("micOK", false);
-      live.textContent = "Micro chưa được bật.";
-      if (ev.error === "service-not-allowed" && isIOS) {
-        const n = store.get("snaCount", 0) + 1; store.set("snaCount", n);
-        if (n < 2) { store.set("micOK", true); live.textContent = "Em bấm Bấm để nói thêm 1 lần nữa nha."; return; }
-        showMic("dictation");
-      } else showMic("blocked");
-      return;
-    }
-    const msg = {
-      "no-speech": "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn.",
-      "audio-capture": "Không tìm thấy micro trên máy này.",
-      "network": "Mất mạng nên chưa chấm được. Kiểm tra mạng rồi thử lại." }[ev.error] || "Chưa chấm được, em thử lại nha.";
-    live.textContent = msg;
-  };
-  rec.onend = () => {
-    rec = null;
+  /* finish once, whether Safari fires onend or not */
+  const finish = () => {
+    if (done) return; done = true;
+    clearTimeout(silenceT); clearTimeout(capT);
+    if (rec === r) rec = null;
+    try { r.onresult = r.onerror = r.onend = null; r.abort(); } catch {}
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
+    if (errored) return;
     const top = finals ? finals.map(a => a[0]).join(" ") : interim;
-    if (!top.trim()) return;
+    if (!top.trim()) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
     store.set("snaCount", 0);
     live.textContent = "";
     grade(L, i, card, chunks, exp, top, finals || [[interim]]);
   };
-  try { rec.start(); } catch { rec = null; live.textContent = "Chưa bật được micro, em thử lại nha."; }
+  r._finish = () => { try { r.stop(); } catch {} setTimeout(finish, 900); };
+  capT = setTimeout(r._finish, 20000);                       // hard cap 20 s
+  r.onresult = ev => {
+    interim = Array.from(ev.results).map(x => x[0].transcript).join(" ");
+    live.textContent = interim;
+    finals = Array.from(ev.results).map(x => Array.from(x).map(a => a.transcript));
+    const last = ev.results[ev.results.length - 1];
+    clearTimeout(silenceT);
+    if (last.isFinal) silenceT = setTimeout(finish, 400);
+    else silenceT = setTimeout(r._finish, 2000);              // ngừng nói ~2 s thì tự chốt
+  };
+  r.onerror = ev => {
+    if (ev.error === "aborted") return;
+    if (ev.error === "not-allowed" || ev.error === "service-not-allowed") {
+      errored = true; store.set("micOK", false);
+      live.textContent = "Micro chưa được bật.";
+      if (ev.error === "service-not-allowed" && isIOS) {
+        const n = store.get("snaCount", 0) + 1; store.set("snaCount", n);
+        if (n < 2) { store.set("micOK", true); live.textContent = "Em bấm Bấm để nói thêm 1 lần nữa nha."; }
+        else showMic("dictation");
+      } else showMic("blocked");
+      finish(); return;
+    }
+    if (ev.error === "no-speech") { finish(); return; }
+    const msg = { "audio-capture": "Không tìm thấy micro trên máy này.",
+      "network": "Mất mạng nên chưa chấm được. Kiểm tra mạng rồi thử lại." }[ev.error] || "Chưa chấm được, em thử lại nha.";
+    if (!interim) { errored = true; live.textContent = msg; }
+    finish();
+  };
+  r.onend = finish;
+  try { r.start(); } catch { rec = null; done = true; btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary"); live.textContent = "Chưa bật được micro, em thử lại nha."; }
 }
 
 function grade(L, i, card, chunks, exp, top, alts) {
