@@ -14,7 +14,7 @@
   --bg:#f3f5f8; --surface:#ffffff; --ink:#14213d; --muted:#5b6678; --line:#dde2ea;
   --accent:#1f4e79; --head:#1f4e79; --amber:#f2b705; --amber-ink:#14213d;
   --ok:#17834f; --ok-bg:#dff3e8; --near:#b45f06; --near-bg:#fdebd3; --bad:#c62839; --bad-bg:#fbe1e4; --miss:#8a94a6;
-  --hl-y:#ffec78; --hl-g:#96f0aa; --hl-b:#82dcf0; --sep:#c87828;
+  --hl-y:#ffec78; --hl-g:#96f0aa; --hl-b:#82dcf0; --sep:#c87828; --other:#eef1f6;
   --f-ui:"Lexend",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-ipa:"Noto Sans","Segoe UI","Lucida Sans Unicode",sans-serif;
   color-scheme:light;
@@ -23,12 +23,12 @@
   --bg:#0f1624; --surface:#172133; --ink:#e8edf5; --muted:#9aa6b8; --line:#2a3750;
   --accent:#7fb2e5; --head:#1b2c47; --amber:#f2b705; --amber-ink:#14213d;
   --ok:#4cd38c; --ok-bg:#16382a; --near:#f0a14a; --near-bg:#3d2a12; --bad:#ff6b7a; --bad-bg:#43181f; --miss:#6f7b8f;
-  --hl-y:#6b5c10; --hl-g:#1f5a32; --hl-b:#16566a; --sep:#e0a060; color-scheme:dark}}
+  --hl-y:#6b5c10; --hl-g:#1f5a32; --hl-b:#16566a; --sep:#e0a060; --other:#1b2638; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0f1624; --surface:#172133; --ink:#e8edf5; --muted:#9aa6b8; --line:#2a3750;
   --accent:#7fb2e5; --head:#1b2c47; --amber:#f2b705; --amber-ink:#14213d;
   --ok:#4cd38c; --ok-bg:#16382a; --near:#f0a14a; --near-bg:#3d2a12; --bad:#ff6b7a; --bad-bg:#43181f; --miss:#6f7b8f;
-  --hl-y:#6b5c10; --hl-g:#1f5a32; --hl-b:#16566a; --sep:#e0a060; color-scheme:dark}
+  --hl-y:#6b5c10; --hl-g:#1f5a32; --hl-b:#16566a; --sep:#e0a060; --other:#1b2638; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
@@ -53,6 +53,24 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 /* student picker */
 .pick{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .pick button{min-height:96px;font-size:22px;font-weight:600}
+/* homework groups + deadline */
+.hw{display:grid;gap:10px}
+.hw-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;border-bottom:2px solid var(--line);padding-bottom:6px}
+.hw-head h3{margin:0;font-size:17px;font-weight:600;text-wrap:balance}
+.hw-head h3 .dl{font-weight:400;color:var(--muted)}
+.hw-note{font-size:14px;color:var(--muted);margin:0}
+.due{display:inline-flex;align-items:center;border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;background:var(--ok-bg);color:var(--ok);white-space:nowrap}
+.due.soon{background:var(--near-bg);color:var(--near)}
+.due.over{background:var(--bad-bg);color:var(--bad)}
+.deadline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;border-radius:14px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--amber)}
+.deadline .t{min-width:0;flex:1 1 220px}
+.deadline .t b{display:block;font-weight:600}
+.deadline .t span{font-size:14px;color:var(--muted)}
+.deadline .big{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1;text-align:right}
+.deadline .big small{display:block;font-size:12px;font-weight:500;color:var(--muted)}
+.deadline.soon{border-left-color:var(--near)} .deadline.soon .big{color:var(--near)}
+.deadline.over{border-left-color:var(--bad)} .deadline.over .big{color:var(--bad)}
+.role{display:inline-block;font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;background:var(--hl-y);color:var(--ink);margin-left:4px}
 /* lesson list */
 .lessons{display:grid;gap:10px}
 .lesson{display:flex;gap:14px;align-items:center;text-align:left;width:100%;padding:14px 16px}
@@ -73,6 +91,11 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px}
 .card .n{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:flex;justify-content:space-between;gap:8px}
 .card .best{font-variant-numeric:tabular-nums}
+.card.other{background:var(--other);padding:12px 16px;gap:8px}
+.card.other .sent{font-size:16px;line-height:1.7;color:var(--muted)}
+.card.other .actions button{flex:0 0 auto;min-height:38px;padding:6px 14px;font-size:14px}
+.who{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--sep);text-transform:none}
+.card.mine .who{color:var(--accent)}
 .sent{font-size:20px;line-height:1.9;word-break:normal;overflow-wrap:anywhere}
 .chunk{border-radius:6px;cursor:pointer;padding:2px 0}
 .chunk:hover{background:color-mix(in srgb,var(--amber) 18%,transparent)}
@@ -104,7 +127,7 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 .hiddenSent{color:var(--muted);font-size:15px;font-style:italic}
 .okmsg{font-size:14.5px;color:var(--ok)}
 .foot{font-size:12.5px;color:var(--muted);text-align:center;padding-top:8px}
-.back{background:none;border:none;color:var(--accent);padding:0;min-height:0;font-weight:500}
+.back{background:none;border:none;color:var(--accent);padding:0;min-height:0;font-weight:500;justify-self:start}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .pulse{animation:pulse 1.2s ease-in-out infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--bad) 30%,transparent)}}
@@ -159,6 +182,35 @@ let DATA = null, student = store.get("student", null);
 const player = $("#player");
 let stopAt = null, playingEl = null;
 
+/* ---------- homework + deadline ---------- */
+const WD = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+const MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+function parseDay(iso) { const [y, m, d] = iso.split("-").map(Number); return new Date(y, m - 1, d); }
+function fmtDeadline(iso) { const d = parseDay(iso); return `${WD[d.getDay()]} ${d.getDate()} ${MO[d.getMonth()]} ${d.getFullYear()}`; }
+function daysLeft(iso) {
+  const now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.round((parseDay(iso) - today) / 86400000);
+}
+function dueInfo(iso) {
+  const n = daysLeft(iso);
+  if (n > 1) return { cls: n <= 2 ? "soon" : "", chip: `Còn ${n} ngày`, big: String(n), sub: "ngày còn lại" };
+  if (n === 1) return { cls: "soon", chip: "Còn 1 ngày", big: "1", sub: "ngày còn lại · hạn là ngày mai" };
+  if (n === 0) return { cls: "soon", chip: "Hạn nộp hôm nay", big: "0", sub: "hôm nay là hạn nộp" };
+  return { cls: "over", chip: `Quá hạn ${-n} ngày`, big: String(-n), sub: "ngày quá hạn" };
+}
+function hwTitle(H) { return `${H.title} – Deadline ${fmtDeadline(H.deadline)}`; }
+function homeworkOf(L) { return (DATA.homework || []).find(H => H.lessons.includes(L.id)); }
+function myRole(L) { return L.roles ? L.roles[student] || null : null; }
+function isMine(L, s) { const r = myRole(L); return !r || !s.speaker || s.speaker === r; }
+function deadlineBox(L) {
+  const H = homeworkOf(L);
+  if (!H) return "";
+  const d = dueInfo(H.deadline);
+  return `<div class="deadline ${d.cls}" role="status">
+    <div class="t"><b>${esc(hwTitle(H))}</b><span>${esc(H.note || "")}</span></div>
+    <div class="big">${esc(d.big)}<small>${esc(d.sub)}</small></div></div>`;
+}
+
 /* ---------- text helpers ---------- */
 const NUM = {"0":"zero","1":"one","2":"two","3":"three","4":"four","5":"five","6":"six","7":"seven","8":"eight","9":"nine","10":"ten","12":"twelve"};
 function normWord(w) {
@@ -181,7 +233,9 @@ function parseSentence(text) {
       for (const raw of tok.split(/\s+/).filter(Boolean)) {
         if (raw === "‿") { if (words.length) words[words.length - 1].link = true; continue; }
         if (/^[.,!?;:]+$/.test(raw) && words.length) { words[words.length - 1].raw += raw; continue; }
-        words.push({ raw, hl, key: normWord(speechWord(raw)) });
+        /* hyphenated words (forty-two, B-R-Y-A-N-T, binge-watch) are graded part by part, shown joined by "-" */
+        const pieces = raw.replace(/\.{3}/g, "").split(/(?<=[A-Za-z])-(?=[A-Za-z])/);
+        pieces.forEach((pc, pi) => words.push({ raw: pc + (pi < pieces.length - 1 ? "-" : ""), hl, key: normWord(speechWord(pc)), joinNext: pi < pieces.length - 1 }));
       }
     }
     chunks.push(words);
@@ -199,8 +253,27 @@ function lev(a, b) {
 }
 function sim(a, b) { return a === b ? 1 : 1 - lev(a, b) / Math.max(a.length, b.length, 1); }
 /* expand recognizer output to words comparable with the expected keys */
+/* numbers the recognizer (or the student) writes as digits, spelled out the way the sentence says them */
+const ONES = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+const TENS = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
+function cardinal(n) {
+  if (n < 20) return [ONES[n]];
+  if (n < 100) return n % 10 ? [TENS[Math.floor(n / 10)], ONES[n % 10]] : [TENS[n / 10]];
+  if (n < 1000) return [ONES[Math.floor(n / 100)], "hundred", ...(n % 100 ? cardinal(n % 100) : [])];
+  return null;
+}
+let EXPECT = new Set();
+function spellNumber(d) {
+  const digits = [...d].map(c => ONES[+c]);
+  const ohs = [...d].map(c => c === "0" ? "oh" : ONES[+c]);
+  const card = d.length <= 3 && d[0] !== "0" ? cardinal(+d) : null;
+  const score = ws => ws.filter(w => EXPECT.has(w)).length;
+  return [card, ohs, digits].filter(Boolean).sort((a, b) => score(b) - score(a))[0];
+}
 function heardWords(transcript) {
-  return transcript.replace(/-/g, " ").split(/\s+/).map(normWord).filter(Boolean);
+  return transcript.replace(/(\d+):(\d\d)/g, "$1 $2").replace(/-/g, " ").replace(/\$/g, "").split(/\s+/)
+    .flatMap(w => { const d = w.replace(/[^0-9]/g, ""); return d && d === w.replace(/[.,!?;:]/g, "") ? spellNumber(d) : [w]; })
+    .map(normWord).filter(Boolean);
 }
 function align(exp, got) { // returns per-expected index: {heard|null}
   const m = exp.length, n = got.length, INF = 1e9;
@@ -247,8 +320,9 @@ $("#switchBtn").addEventListener("click", () => { student = null; store.set("stu
 
 function lessonProgress(L) {
   const best = store.get(`best:${student}:${L.id}`, {});
-  const done = L.sentences.filter((_, i) => (best[i] || 0) >= 80).length;
-  return Math.round(done / L.sentences.length * 100);
+  const mine = L.sentences.map((s, i) => [s, i]).filter(([s]) => isMine(L, s));
+  const done = mine.filter(([, i]) => (best[i] || 0) >= 80).length;
+  return mine.length ? Math.round(done / mine.length * 100) : 0;
 }
 
 function banner() {
@@ -267,16 +341,29 @@ function viewPick() {
   }));
 }
 
+function lessonButton(L) {
+  const p = lessonProgress(L), r = myRole(L);
+  const n = L.sentences.filter(s => isMine(L, s)).length;
+  return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
+    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Listening · nghe chép" : "Speaking · shadowing"} · ${esc(L.subtitle)} · ${n} câu</span></span></button>`;
+}
 function viewList() {
-  const mine = DATA.lessons.filter(L => L.for.includes(student)).sort((a, b) => b.session - a.session);
+  const mine = DATA.lessons.filter(L => L.for.includes(student));
+  const hws = (DATA.homework || []).map(H => ({ H, ls: mine.filter(L => H.lessons.includes(L.id)) })).filter(x => x.ls.length)
+    .sort((a, b) => a.H.deadline.localeCompare(b.H.deadline) || a.H.title.localeCompare(b.H.title));
+  const inHw = new Set(hws.flatMap(x => x.ls.map(L => L.id)));
+  const rest = mine.filter(L => !inHw.has(L.id)).sort((a, b) => b.session - a.session);
   $("#app").innerHTML = `${banner()}
     <h2>Bài luyện</h2>
     <p class="muted">Mỗi câu: nghe mẫu, bấm nói, xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
-    <div class="lessons">${mine.map(L => {
-      const p = lessonProgress(L);
-      return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
-        <span class="t"><b>${esc(L.title)}</b><span>${L.type === "dictation" ? "Listening · nghe chép" : "Speaking · shadowing"} · ${esc(L.subtitle)} · ${L.sentences.length} câu</span></span></button>`;
-    }).join("")}</div>
+    ${hws.map(({ H, ls }) => {
+      const d = dueInfo(H.deadline);
+      return `<section class="hw" aria-label="${esc(hwTitle(H))}">
+        <div class="hw-head"><h3>${esc(H.title)} <span class="dl">– Deadline ${esc(fmtDeadline(H.deadline))}</span></h3><span class="due ${d.cls}">${esc(d.chip)}</span></div>
+        ${H.note ? `<p class="hw-note">${esc(H.note)}</p>` : ""}
+        <div class="lessons">${ls.map(lessonButton).join("")}</div></section>`;
+    }).join("")}
+    ${rest.length ? `<section class="hw">${hws.length ? `<div class="hw-head"><h3>Bài luyện thêm</h3></div>` : ""}<div class="lessons">${rest.map(lessonButton).join("")}</div></section>` : ""}
     <p class="foot">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
   $("#app").querySelectorAll(".lesson").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
 }
@@ -287,8 +374,8 @@ function renderSentenceHTML(chunks, statuses) {
     const inner = ws.map(w => {
       const st = statuses ? statuses[k] : null; k++;
       const cls = ["w", w.hl && !st ? "h" + w.hl : "", st ? st.cls : ""].join(" ");
-      return `<span class="${cls}">${esc(w.raw)}</span>${w.link ? ' <span class="sepm">‿</span>' : ""}`;
-    }).join(" ");
+      return `<span class="${cls}">${esc(w.raw)}</span>${w.link ? ' <span class="sepm">‿</span>' : ""}${w.joinNext ? "" : " "}`;
+    }).join("").trim();
     const sep = ci < chunks.length - 1 ? "/" : "//";
     return `<span class="chunk" data-c="${ci}">${inner}</span> <span class="sepm">${sep}</span>`;
   }).join(" ");
@@ -297,10 +384,12 @@ function renderSentenceHTML(chunks, statuses) {
 function viewLesson(L) {
   if (L.type === "dictation") return viewDictation(L);
   const best = store.get(`best:${student}:${L.id}`, {});
+  const role = myRole(L);
+  const mineIdx = L.sentences.map((s, i) => isMine(L, s) ? i : -1).filter(i => i >= 0);
   $("#app").innerHTML = `${banner()}
     <button class="back" id="backBtn">← Danh sách bài</button>
     <h2>${esc(L.title)}</h2>
-    <p class="muted">${esc(L.subtitle)}. Bấm vào một cụm chữ để nghe riêng cụm đó.</p>
+    <p class="muted">${esc(L.subtitle)}. Bấm vào một cụm chữ để nghe riêng cụm đó.${role ? ` Em nói phần <b>${esc(role)}</b>; câu của người kia chỉ cần nghe.` : ""}</p>
     <div class="legend">
       <span><i class="sw" style="background:var(--hl-y)"></i>từ vựng hay</span>
       <span><i class="sw" style="background:var(--hl-g)"></i>phrasal verb, collocation</span>
@@ -308,9 +397,18 @@ function viewLesson(L) {
       <span>/ ngừng ngắn · // ngừng dài · ' nhấn âm · ‿ nối âm</span>
     </div>
     <details class="video"><summary>Xem video shadowing cả bài</summary><video src="${esc(L.video)}" controls playsinline preload="metadata"></video></details>
-    ${L.sentences.map((s, i) => `
-      <section class="card" data-i="${i}">
-        <div class="n"><span>Câu ${i + 1}/${L.sentences.length}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : ""}</span></div>
+    ${deadlineBox(L)}
+    ${L.sentences.map((s, i) => {
+      const head = s.speaker ? `<span class="who">${esc(s.speaker)}</span>` : "";
+      if (!isMine(L, s)) return `
+      <section class="card other" data-i="${i}">
+        <div class="n">${head}<span>Nghe</span></div>
+        <div class="sent">${renderSentenceHTML(parseSentence(s.text))}</div>
+        <div class="actions"><button class="listen">Nghe ${esc(s.speaker || "mẫu")}</button></div>
+      </section>`;
+      return `
+      <section class="card${s.speaker ? " mine" : ""}" data-i="${i}">
+        <div class="n"><span>${head ? head + " · " : ""}Câu ${mineIdx.indexOf(i) + 1}/${mineIdx.length}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : ""}</span></div>
         ${s.label ? `<span class="tag">${esc(s.label)}</span>` : ""}
         <div class="sent">${renderSentenceHTML(parseSentence(s.text))}</div>
         <div class="actions">
@@ -319,7 +417,8 @@ function viewLesson(L) {
         </div>
         <div class="live" aria-live="polite"></div>
         <div class="result" hidden></div>
-      </section>`).join("")}
+      </section>`;
+    }).join("")}
     <p class="foot">Máy nghe đôi khi tự đoán giúp em, nên chữ xanh chưa chắc đã chuẩn 100%. Chữ đỏ thì chắc chắn cần sửa.</p>`;
   $("#backBtn").addEventListener("click", () => { location.hash = ""; });
   if (useWhisper() && store.get("whisperLoaded", false)) loadWhisper();
@@ -330,7 +429,8 @@ function viewLesson(L) {
     card.querySelectorAll(".chunk").forEach(ch => ch.addEventListener("click", () => {
       const span = S.chunks[+ch.dataset.c]; if (span) playSpan(span[0], span[1], ch);
     }));
-    card.querySelector(".speak").addEventListener("click", e => listen(L, i, card, e.currentTarget));
+    const sp = card.querySelector(".speak");
+    if (sp) sp.addEventListener("click", e => listen(L, i, card, e.currentTarget));
   });
 }
 
@@ -341,6 +441,7 @@ function viewDictation(L) {
     <button class="back" id="backBtn">← Danh sách bài</button>
     <h2>${esc(L.title)}</h2>
     <p class="muted">${esc(L.subtitle)}. Nghe từng câu (nghe lại bao nhiêu lần cũng được), gõ lại đúng những gì em nghe, rồi bấm <b>Kiểm tra</b>.</p>
+    ${deadlineBox(L)}
     ${L.sentences.map((s, i) => `
       <section class="card" data-i="${i}">
         <div class="n"><span>Câu ${i + 1}/${L.sentences.length}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : ""}</span></div>
@@ -376,6 +477,7 @@ function gradeDictation(L, i, card) {
   const typed = card.querySelector(".dict").value.trim();
   if (!typed) { card.querySelector(".dict").focus(); return; }
   const chunks = parseSentence(L.sentences[i].text), raws = chunks.flat(), exp = raws.map(w => w.key);
+  EXPECT = new Set(exp);
   const map = align(exp, heardWords(typed));
   const statuses = exp.map((e, k) => map[k] === e ? { cls: "ok" } : map[k] == null ? { cls: "miss" } : { cls: "bad", heard: map[k] });
   const score = Math.round(statuses.filter(x => x.cls === "ok").length / exp.length * 100);
@@ -628,6 +730,7 @@ function listen(L, i, card, btn) {
 }
 
 function grade(L, i, card, chunks, exp, top, alts) {
+  EXPECT = new Set(exp);
   const got = heardWords(top);
   const map = align(exp, got);
   const altWords = new Set(alts.flat().flatMap(heardWords));

@@ -1,0 +1,1170 @@
+[
+ {
+  "text": "Good morning, / Lakeview Community Center. //",
+  "start": 570.48,
+  "end": 573.76,
+  "chunks": [
+   [
+    2.8,
+    3.79
+   ],
+   [
+    5.39,
+    7.12
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Linda speaking. / How can I help you? //",
+  "start": 573.76,
+  "end": 576.84,
+  "chunks": [
+   [
+    9.84,
+    11.08
+   ],
+   [
+    12.91,
+    14.2
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Hi. //",
+  "start": 576.84,
+  "end": 578.14,
+  "chunks": [
+   [
+    16.5,
+    17.28
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I'm calling about the weekend activities / for young professionals. //",
+  "start": 578.14,
+  "end": 582.94,
+  "chunks": [
+   [
+    19.06,
+    21.71
+   ],
+   [
+    24.95,
+    26.72
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I saw your poster / at the coffee shop / near my office. //",
+  "start": 582.94,
+  "end": 587.79,
+  "chunks": [
+   [
+    29.48,
+    31.03
+   ],
+   [
+    33.18,
+    34.67
+   ],
+   [
+    36.76,
+    38.29
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Great. //",
+  "start": 587.79,
+  "end": 589.08,
+  "chunks": [
+   [
+    40.82,
+    41.63
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Are you thinking of joining? //",
+  "start": 589.08,
+  "end": 591.04,
+  "chunks": [
+   [
+    43.43,
+    45.01
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Yes. //",
+  "start": 591.04,
+  "end": 592.44,
+  "chunks": [
+   [
+    47.59,
+    48.49
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I graduated in June, / and I've just started my first job, / so I don't have much free time anymore. //",
+  "start": 592.44,
+  "end": 599.56,
+  "chunks": [
+   [
+    50.39,
+    52.29
+   ],
+   [
+    54.79,
+    57.12
+   ],
+   [
+    60.04,
+    62.64
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I'd like to find something fun / to do on the weekend. //",
+  "start": 599.56,
+  "end": 603.74,
+  "chunks": [
+   [
+    66.23,
+    68.2
+   ],
+   [
+    70.77,
+    72.6
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "No problem. //",
+  "start": 603.74,
+  "end": 605.31,
+  "chunks": [
+   [
+    75.43,
+    76.49
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Let me take a few details. //",
+  "start": 605.31,
+  "end": 607.71,
+  "chunks": [
+   [
+    78.55,
+    80.35
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "What's your name? //",
+  "start": 607.71,
+  "end": 609.24,
+  "chunks": [
+   [
+    83.16,
+    84.23
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "It's Ryan Bryant. //",
+  "start": 609.24,
+  "end": 611.24,
+  "chunks": [
+   [
+    86.29,
+    87.84
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Can you spell your last name for me? //",
+  "start": 611.24,
+  "end": 613.56,
+  "chunks": [
+   [
+    90.38,
+    92.29
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Sure. //",
+  "start": 613.56,
+  "end": 614.9,
+  "chunks": [
+   [
+    95.2,
+    96.06
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "It's B-R-Y-A-N-T. //",
+  "start": 614.9,
+  "end": 617.92,
+  "chunks": [
+   [
+    97.92,
+    100.67
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "B-R-Y-A-N-T. //",
+  "start": 617.92,
+  "end": 620.56,
+  "chunks": [
+   [
+    104.43,
+    106.72
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Thanks. //",
+  "start": 620.56,
+  "end": 621.92,
+  "chunks": [
+   [
+    110.01,
+    110.85
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "And what do you do, Ryan? //",
+  "start": 621.92,
+  "end": 624.31,
+  "chunks": [
+   [
+    112.69,
+    114.69
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "I did an internship in marketing last year, / but now I'm a junior accountant / at a small company downtown. //",
+  "start": 624.31,
+  "end": 632.12,
+  "chunks": [
+   [
+    117.7,
+    120.95
+   ],
+   [
+    124.8,
+    126.87
+   ],
+   [
+    129.54,
+    131.79
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "And what's your address? //",
+  "start": 632.12,
+  "end": 633.88,
+  "chunks": [
+   [
+    135.04,
+    136.39
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "It's twenty-four... sorry, no, / forty-two Maple Street. //",
+  "start": 633.88,
+  "end": 638.21,
+  "chunks": [
+   [
+    138.74,
+    140.77
+   ],
+   [
+    143.4,
+    145.32
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I only moved into a small apartment there / last month. //",
+  "start": 638.21,
+  "end": 642.76,
+  "chunks": [
+   [
+    148.24,
+    151.14
+   ],
+   [
+    154.65,
+    155.91
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I share the kitchen and the living room / with two roommates. //",
+  "start": 642.76,
+  "end": 647.12,
+  "chunks": [
+   [
+    158.18,
+    160.66
+   ],
+   [
+    163.73,
+    165.24
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Forty-two Maple Street. //",
+  "start": 647.12,
+  "end": 649.18,
+  "chunks": [
+   [
+    167.75,
+    169.4
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "That's just a ten-minute walk from here. //",
+  "start": 649.18,
+  "end": 651.88,
+  "chunks": [
+   [
+    172.05,
+    174.32
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "And can I have a phone number? //",
+  "start": 651.88,
+  "end": 654.16,
+  "chunks": [
+   [
+    177.58,
+    179.39
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Sure. //",
+  "start": 654.16,
+  "end": 655.5,
+  "chunks": [
+   [
+    182.2,
+    183.05
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "It's five-five-five, / oh-one-six-four. //",
+  "start": 655.5,
+  "end": 659.32,
+  "chunks": [
+   [
+    184.91,
+    186.66
+   ],
+   [
+    189.0,
+    190.58
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Five-five-five, / oh-one-four-six. //",
+  "start": 659.32,
+  "end": 662.57,
+  "chunks": [
+   [
+    193.16,
+    194.5
+   ],
+   [
+    196.44,
+    197.84
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "No, sorry. //",
+  "start": 662.57,
+  "end": 664.26,
+  "chunks": [
+   [
+    200.24,
+    201.46
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Oh-one-six-four. //",
+  "start": 664.26,
+  "end": 666.3,
+  "chunks": [
+   [
+    203.68,
+    205.25
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Got it. //",
+  "start": 666.3,
+  "end": 667.66,
+  "chunks": [
+   [
+    207.83,
+    208.67
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "So, which days are you usually free? //",
+  "start": 667.66,
+  "end": 670.18,
+  "chunks": [
+   [
+    210.52,
+    212.65
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Well, / I have a hectic schedule at the moment. //",
+  "start": 670.18,
+  "end": 674.01,
+  "chunks": [
+   [
+    215.79,
+    216.6
+   ],
+   [
+    218.0,
+    220.54
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I'm snowed under with work / from Monday to Friday. //",
+  "start": 674.01,
+  "end": 678.01,
+  "chunks": [
+   [
+    224.08,
+    225.76
+   ],
+   [
+    228.04,
+    230.04
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I usually get up at six / and I never get home before seven. //",
+  "start": 678.01,
+  "end": 682.94,
+  "chunks": [
+   [
+    233.04,
+    234.98
+   ],
+   [
+    237.52,
+    240.15
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "And on Saturdays, / I do the laundry and do the shopping, / so Sunday is really my only day off. //",
+  "start": 682.94,
+  "end": 690.13,
+  "chunks": [
+   [
+    243.77,
+    245.34
+   ],
+   [
+    247.51,
+    249.97
+   ],
+   [
+    253.03,
+    255.82
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I see. //",
+  "start": 690.13,
+  "end": 691.52,
+  "chunks": [
+   [
+    259.6,
+    260.49
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "And can I ask / why you'd like to join? //",
+  "start": 691.52,
+  "end": 694.7,
+  "chunks": [
+   [
+    262.39,
+    263.7
+   ],
+   [
+    265.61,
+    266.97
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "To be honest, / I used to sleep in / and binge-watch TV series all weekend, / but it didn't really help. //",
+  "start": 694.7,
+  "end": 702.6,
+  "chunks": [
+   [
+    269.33,
+    270.66
+   ],
+   [
+    272.6,
+    274.13
+   ],
+   [
+    276.27,
+    279.16
+   ],
+   [
+    282.66,
+    284.42
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I just need something / to help me unwind / after a long week. //",
+  "start": 702.6,
+  "end": 708.05,
+  "chunks": [
+   [
+    287.17,
+    288.81
+   ],
+   [
+    291.05,
+    292.65
+   ],
+   [
+    294.84,
+    296.48
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "That's what most of our members say. //",
+  "start": 708.05,
+  "end": 710.45,
+  "chunks": [
+   [
+    299.11,
+    301.09
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "So, / we have a few activities on Sundays / that might suit you. //",
+  "start": 710.45,
+  "end": 715.2,
+  "chunks": [
+   [
+    304.07,
+    304.79
+   ],
+   [
+    306.11,
+    308.34
+   ],
+   [
+    311.16,
+    312.37
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "The first one is Social Badminton. //",
+  "start": 715.2,
+  "end": 717.96,
+  "chunks": [
+   [
+    314.59,
+    316.94
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Oh, / I played badminton a lot in college, / but I'm not very good at it. //",
+  "start": 717.96,
+  "end": 723.68,
+  "chunks": [
+   [
+    320.29,
+    321.03
+   ],
+   [
+    322.37,
+    325.07
+   ],
+   [
+    328.36,
+    330.2
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I never win! //",
+  "start": 723.68,
+  "end": 725.51,
+  "chunks": [
+   [
+    333.04,
+    334.37
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "What time does it start? //",
+  "start": 725.51,
+  "end": 727.69,
+  "chunks": [
+   [
+    336.71,
+    338.45
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "It used to start at nine o'clock, / but lots of people wanted to sleep in, / so now it starts at half past nine / and finishes at a quarter to twelve. //",
+  "start": 727.69,
+  "end": 736.85,
+  "chunks": [
+   [
+    341.2,
+    343.2
+   ],
+   [
+    345.79,
+    348.15
+   ],
+   [
+    351.12,
+    353.23
+   ],
+   [
+    355.94,
+    358.43
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "And don't worry, / we play for fun. //",
+  "start": 736.85,
+  "end": 739.84,
+  "chunks": [
+   [
+    361.92,
+    363.06
+   ],
+   [
+    364.81,
+    366.08
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Nobody keeps score, / and you don't have to beat anyone. //",
+  "start": 739.84,
+  "end": 743.59,
+  "chunks": [
+   [
+    368.36,
+    369.79
+   ],
+   [
+    371.82,
+    373.64
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "That's good to hear. //",
+  "start": 743.59,
+  "end": 745.48,
+  "chunks": [
+   [
+    376.45,
+    377.92
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Do I need to bring anything? //",
+  "start": 745.48,
+  "end": 747.96,
+  "chunks": [
+   [
+    380.4,
+    382.54
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "We provide the shuttlecocks, / but you need to bring your own racket. //",
+  "start": 747.96,
+  "end": 752.26,
+  "chunks": [
+   [
+    385.68,
+    387.45
+   ],
+   [
+    389.82,
+    391.78
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "That's fine. //",
+  "start": 752.26,
+  "end": 753.88,
+  "chunks": [
+   [
+    394.73,
+    395.92
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I still have one somewhere. //",
+  "start": 753.88,
+  "end": 756.26,
+  "chunks": [
+   [
+    398.11,
+    400.15
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "The second activity is our Picnic and Kite Day. //",
+  "start": 756.26,
+  "end": 759.75,
+  "chunks": [
+   [
+    403.18,
+    406.33
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "It's on the last Sunday of every month. //",
+  "start": 759.75,
+  "end": 762.47,
+  "chunks": [
+   [
+    410.48,
+    412.72
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "People just hang out, / have a picnic, / play volleyball / and fly kites. //",
+  "start": 762.47,
+  "end": 768.0,
+  "chunks": [
+   [
+    415.96,
+    417.36
+   ],
+   [
+    419.36,
+    420.51
+   ],
+   [
+    422.26,
+    423.3
+   ],
+   [
+    424.94,
+    426.16
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Where do you meet? //",
+  "start": 768.0,
+  "end": 769.74,
+  "chunks": [
+   [
+    428.38,
+    429.66
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "It's in Riverside Park. //",
+  "start": 769.74,
+  "end": 771.74,
+  "chunks": [
+   [
+    431.95,
+    433.54
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Not at the main entrance, though, / because the parking lot there is always full. //",
+  "start": 771.74,
+  "end": 776.95,
+  "chunks": [
+   [
+    436.14,
+    438.45
+   ],
+   [
+    441.36,
+    444.03
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "We usually meet next to the lake. //",
+  "start": 776.95,
+  "end": 779.34,
+  "chunks": [
+   [
+    447.69,
+    449.63
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "And how much does it cost? //",
+  "start": 779.34,
+  "end": 781.63,
+  "chunks": [
+   [
+    452.58,
+    454.43
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Members pay a monthly fee / that covers everything. //",
+  "start": 781.63,
+  "end": 785.43,
+  "chunks": [
+   [
+    457.28,
+    459.16
+   ],
+   [
+    461.64,
+    463.15
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "For the general public, / it's forty-five dollars a month, / but young professionals under twenty-five / only pay thirty-five. //",
+  "start": 785.43,
+  "end": 793.48,
+  "chunks": [
+   [
+    465.66,
+    467.15
+   ],
+   [
+    469.24,
+    471.25
+   ],
+   [
+    473.86,
+    476.36
+   ],
+   [
+    479.46,
+    480.97
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "Great. //",
+  "start": 793.48,
+  "end": 794.87,
+  "chunks": [
+   [
+    483.48,
+    484.37
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I'm twenty-three. //",
+  "start": 794.87,
+  "end": 796.75,
+  "chunks": [
+   [
+    486.26,
+    487.73
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Then you can have the lower price. //",
+  "start": 796.75,
+  "end": 799.08,
+  "chunks": [
+   [
+    490.2,
+    492.13
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "For the picnic, / we bring a basket of sandwiches / and some bottles of water, / but please bring a blanket to sit on. //",
+  "start": 799.08,
+  "end": 806.53,
+  "chunks": [
+   [
+    495.06,
+    496.22
+   ],
+   [
+    497.97,
+    499.98
+   ],
+   [
+    502.59,
+    504.23
+   ],
+   [
+    506.46,
+    508.67
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "OK. //",
+  "start": 806.53,
+  "end": 807.97,
+  "chunks": [
+   [
+    511.88,
+    512.89
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "And is there anything else? //",
+  "start": 807.97,
+  "end": 810.33,
+  "chunks": [
+   [
+    514.89,
+    516.81
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "There's also a walking group. //",
+  "start": 810.33,
+  "end": 812.53,
+  "chunks": [
+   [
+    519.72,
+    521.48
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "They go hiking in the hills / every Sunday afternoon. //",
+  "start": 812.53,
+  "end": 816.37,
+  "chunks": [
+   [
+    524.23,
+    525.89
+   ],
+   [
+    528.16,
+    529.8
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "It's hard work, / but it's really fun. //",
+  "start": 816.37,
+  "end": 819.4,
+  "chunks": [
+   [
+    532.45,
+    533.6
+   ],
+   [
+    535.36,
+    536.7
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "That sounds nice. //",
+  "start": 819.4,
+  "end": 821.29,
+  "chunks": [
+   [
+    539.05,
+    540.5
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "I think I'll try badminton first / and squeeze in the picnic / at the end of the month. //",
+  "start": 821.29,
+  "end": 827.44,
+  "chunks": [
+   [
+    542.95,
+    545.23
+   ],
+   [
+    548.11,
+    549.79
+   ],
+   [
+    552.07,
+    553.72
+   ]
+  ],
+  "speaker": "Ryan"
+ },
+ {
+  "text": "Perfect. //",
+  "start": 827.44,
+  "end": 828.82,
+  "chunks": [
+   [
+    556.36,
+    557.27
+   ]
+  ],
+  "speaker": "Linda"
+ },
+ {
+  "text": "It's a great way / to recharge your batteries. //",
+  "start": 828.82,
+  "end": 832.22,
+  "chunks": [
+   [
+    559.17,
+    560.33
+   ],
+   [
+    562.09,
+    563.8
+   ]
+  ],
+  "speaker": "Linda"
+ }
+]
