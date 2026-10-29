@@ -71,6 +71,9 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .deadline.soon{border-left-color:var(--near)} .deadline.soon .big{color:var(--near)}
 .deadline.over{border-left-color:var(--bad)} .deadline.over .big{color:var(--bad)}
 .role{display:inline-block;font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;background:var(--hl-y);color:var(--ink);margin-left:4px}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;font-weight:600;font-size:16px;background:var(--surface);border:1px solid var(--line)}
+details.nolog summary{cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
+details.nolog .pick{margin-top:8px}
 /* homework alert, Speaking/Listening tabs, session folders */
 .alert{display:grid;gap:8px;background:var(--near-bg);border:1px solid var(--line);border-left:5px solid var(--near);border-radius:14px;padding:14px}
 .alert h2{margin:0 0 2px;font-size:17px}
@@ -176,6 +179,7 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 <audio id="player" preload="auto" playsinline></audio>
 <div class="modal" id="micModal" hidden role="dialog" aria-modal="true" aria-labelledby="micTitle"><div class="sheet" id="micSheet"></div></div>
 
+<script type="module" src="cloud.js"></script>
 <script type="module">
 import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.5";
 env.allowLocalModels = false;
@@ -333,13 +337,59 @@ function diagnose(exp, heard) {
   return `Máy nghe thành “${heard}”.`;
 }
 
+/* ---------- cloud: Google sign-in + progress saved online (cloud.js) ---------- */
+const cloudOn = () => !!(window.Cloud && window.Cloud.enabled);
+const cloudUser = () => cloudOn() ? window.Cloud.user : null;
+function syncBest(lessonId, best) { if (cloudUser()) window.Cloud.saveBest(lessonId, best); }
+function studentForEmail(email) {
+  email = (email || "").toLowerCase();
+  const s = DATA.students.find(x => (x.emails || []).some(e => e.toLowerCase() === email));
+  return s ? s.id : null;
+}
+/* keep the higher score per sentence from this device and from the account, then save both */
+function mergeBest(cloudBest) {
+  const out = {};
+  for (const L of DATA.lessons) {
+    if (!L.for.includes(student)) continue;
+    const key = `best:${student}:${L.id}`, local = store.get(key, {}), remote = (cloudBest || {})[L.id] || {};
+    const m = { ...remote };
+    for (const [i, v] of Object.entries(local)) if (m[i] == null || v > m[i]) m[i] = v;
+    if (Object.keys(m).length) { store.set(key, m); if (JSON.stringify(m) !== JSON.stringify(remote)) out[L.id] = m; }
+  }
+  return out;
+}
+let cloudNote = "";
+function onCloud(user, profile) {
+  if (!DATA) return;
+  cloudNote = "";
+  if (user && profile && profile._error) {
+    cloudNote = profile._error.includes("permission") ? `Gmail ${user.email} chưa được cô cho vào lớp. Em đăng xuất rồi đăng nhập bằng Gmail đã gửi cho cô nha.` : "Chưa tải được tiến độ trên mạng. Kiểm tra mạng rồi tải lại trang.";
+  } else if (user && profile) {
+    const id = profile.student || studentForEmail(user.email);
+    if (id && DATA.students.some(s => s.id === id)) {
+      student = id; store.set("student", student);
+      const changed = mergeBest(profile.best);
+      const patch = {};
+      if (profile.student !== id) patch.student = id;
+      if (Object.keys(changed).length) patch.best = changed;
+      if (Object.keys(patch).length) window.Cloud.save(patch).catch(e => console.error(e));
+    } else { student = null; }
+  }
+  route();
+}
+window.addEventListener("cloud-ready", () => { if (cloudOn()) window.Cloud.onChange(onCloud); });
+
 /* ---------- views ---------- */
 function setWho() {
-  const s = DATA.students.find(x => x.id === student);
-  $("#who").textContent = s ? "Học viên: " + s.name : "";
-  $("#switchBtn").hidden = !s;
+  const s = DATA.students.find(x => x.id === student), u = cloudUser();
+  $("#who").textContent = s ? "Học viên: " + s.name + (u ? " · đã lưu online" : "") : (u ? u.email : "");
+  $("#switchBtn").hidden = !s && !u;
+  $("#switchBtn").textContent = u ? "Đăng xuất" : "Đổi tên";
 }
-$("#switchBtn").addEventListener("click", () => { student = null; store.set("student", null); route(); });
+$("#switchBtn").addEventListener("click", async () => {
+  if (cloudUser()) { await window.Cloud.flush(); await window.Cloud.signOut(); }
+  student = null; store.set("student", null); location.hash = ""; route();
+});
 
 function lessonProgress(L) {
   const best = store.get(`best:${student}:${L.id}`, {});
@@ -355,12 +405,30 @@ function banner() {
 }
 
 function viewPick() {
-  $("#app").innerHTML = `
-    <h2>Em là ai?</h2>
-    <p class="muted">Chọn tên để xem bài luyện của em. Kết quả luyện lưu trên máy này.</p>
-    <div class="pick">${DATA.students.map(s => `<button data-id="${s.id}">${esc(s.name)}</button>`).join("")}</div>`;
+  const u = cloudUser();
+  const google = `<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.7 13.2l7.8 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg>`;
+  $("#app").innerHTML = `${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}
+    ${cloudOn() && !u ? `
+    <h2>Đăng nhập để lưu tiến độ</h2>
+    <p class="muted">Đăng nhập bằng Gmail thì em mở máy nào cũng thấy mình đã luyện câu nào, xong homework nào.</p>
+    <button class="gbtn" id="gSignIn">${google}<span>Đăng nhập bằng Google</span></button>
+    <p class="muted" id="gErr" hidden></p>
+    <details class="nolog"><summary>Dùng không đăng nhập (chỉ lưu trên máy này)</summary>
+      <div class="pick">${DATA.students.map(s => `<button data-id="${s.id}">${esc(s.name)}</button>`).join("")}</div></details>` : `
+    <h2>${u ? `Chào ${esc(u.displayName || u.email)}! Em là ai?` : "Em là ai?"}</h2>
+    <p class="muted">${u ? "Chọn tên 1 lần, lần sau đăng nhập web tự nhận ra em." : "Chọn tên để xem bài luyện của em. Kết quả luyện lưu trên máy này."}</p>
+    <div class="pick">${DATA.students.map(s => `<button data-id="${s.id}">${esc(s.name)}</button>`).join("")}</div>`}`;
+  const g = $("#gSignIn");
+  if (g) g.addEventListener("click", async () => {
+    g.disabled = true;
+    try { await window.Cloud.signIn(); }
+    catch (e) { const el = $("#gErr"); el.hidden = false; el.textContent = "Chưa đăng nhập được (" + (e.code || e.message) + "). Mở web bằng Chrome hoặc Safari rồi thử lại."; }
+    finally { g.disabled = false; }
+  });
   $("#app").querySelectorAll(".pick button").forEach(b => b.addEventListener("click", () => {
-    student = b.dataset.id; store.set("student", student); location.hash = ""; route();
+    student = b.dataset.id; store.set("student", student); location.hash = "";
+    if (cloudUser()) { const changed = mergeBest((window.Cloud.profile || {}).best); window.Cloud.save({ student, best: changed }).catch(e => console.error(e)); }
+    route();
   }));
 }
 
@@ -542,7 +610,7 @@ function gradeDictation(L, i, card) {
   const statuses = exp.map((e, k) => map[k] === e ? { cls: "ok" } : map[k] == null ? { cls: "miss" } : { cls: "bad", heard: map[k] });
   const score = Math.round(statuses.filter(x => x.cls === "ok").length / exp.length * 100);
   const key = `best:${student}:${L.id}`, best = store.get(key, {});
-  if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
+  if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); syncBest(L.id, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
   const sent = card.querySelector(".sent");
   sent.classList.remove("hiddenSent");
   sent.innerHTML = renderSentenceHTML(chunks, statuses);
@@ -803,7 +871,7 @@ function grade(L, i, card, chunks, exp, top, alts) {
   });
   const score = Math.round(statuses.reduce((s, x) => s + (x.cls === "ok" ? 1 : x.cls === "near" ? 0.5 : 0), 0) / exp.length * 100);
   const key = `best:${student}:${L.id}`, best = store.get(key, {});
-  if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
+  if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); syncBest(L.id, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
   card.querySelector(".sent").innerHTML = renderSentenceHTML(chunks, statuses);
   card.querySelectorAll(".chunk").forEach(ch => ch.addEventListener("click", () => {
     const span = L.sentences[i].chunks[+ch.dataset.c]; if (span) playSpan(span[0], span[1], ch);
