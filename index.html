@@ -71,6 +71,29 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .deadline.soon{border-left-color:var(--near)} .deadline.soon .big{color:var(--near)}
 .deadline.over{border-left-color:var(--bad)} .deadline.over .big{color:var(--bad)}
 .role{display:inline-block;font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;background:var(--hl-y);color:var(--ink);margin-left:4px}
+/* homework alert, Speaking/Listening tabs, session folders */
+.alert{display:grid;gap:8px;background:var(--near-bg);border:1px solid var(--line);border-left:5px solid var(--near);border-radius:14px;padding:14px}
+.alert h2{margin:0 0 2px;font-size:17px}
+.alert-row{display:flex;align-items:center;gap:10px;text-align:left;width:100%;padding:10px 12px;background:var(--surface)}
+.alert-row .t{flex:1;min-width:0}
+.alert-row .t b{display:block;font-weight:600;font-size:15px}
+.alert-row .t span{font-size:13px;color:var(--muted)}
+.alert-row.over{border-color:var(--bad)}
+.allclear{border-radius:12px;padding:12px 14px;font-size:14px;background:var(--ok-bg);color:var(--ok);font-weight:500}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--line);border-radius:12px;padding:4px}
+.tab{border:none;background:transparent;font-weight:600;min-height:42px;color:var(--muted)}
+.tab.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.dot{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:999px;background:var(--bad);color:#fff;font-size:12px;padding:0 6px;margin-left:4px}
+.folder{display:grid;gap:10px}
+details.sess{background:var(--surface);border:1px solid var(--line);border-radius:14px}
+details.sess summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;cursor:pointer;list-style:none}
+details.sess summary::-webkit-details-marker{display:none}
+details.sess summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+details.sess[open] summary::before{transform:rotate(90deg)}
+.sname{font-weight:600;flex:1}
+.smeta{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+details.sess .lessons{padding:0 10px 10px}
+.lesson .chips{display:block;margin-top:4px}
 /* lesson list */
 .lessons{display:grid;gap:10px}
 .lesson{display:flex;gap:14px;align-items:center;text-align:left;width:100%;padding:14px 16px}
@@ -341,31 +364,68 @@ function viewPick() {
   }));
 }
 
+function skillOf(L) {
+  if (L.skill) return L.skill;
+  const H = homeworkOf(L);
+  if (H && H.skill) return H.skill;
+  return L.type === "dictation" ? "Listening" : "Speaking";
+}
 function lessonButton(L) {
-  const p = lessonProgress(L), r = myRole(L);
+  const p = lessonProgress(L), r = myRole(L), H = homeworkOf(L);
   const n = L.sentences.filter(s => isMine(L, s)).length;
+  const hwChip = H ? (() => { const d = dueInfo(H.deadline); return `<span class="due ${p >= 100 ? "" : d.cls}">${p >= 100 ? "Đã xong" : "Homework · " + esc(d.chip)}</span>`; })() : "";
   return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
-    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Listening · nghe chép" : "Speaking · shadowing"} · ${esc(L.subtitle)} · ${n} câu</span></span></button>`;
+    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Nghe chép" : "Shadowing"} · ${n} câu</span>${hwChip ? `<span class="chips">${hwChip}</span>` : ""}</span></button>`;
+}
+/* homework still to do: not finished, deadline not passed more than 7 days ago */
+function pendingHomework(mine) {
+  const today = daysLeft;
+  return (DATA.homework || []).map(H => {
+    const ls = mine.filter(L => H.lessons.includes(L.id));
+    const p = ls.length ? Math.round(ls.reduce((a, L) => a + lessonProgress(L), 0) / ls.length) : 0;
+    return { H, ls, p, n: today(H.deadline) };
+  }).filter(x => x.ls.length && x.p < 100 && x.n >= -7).sort((a, b) => a.n - b.n);
 }
 function viewList() {
   const mine = DATA.lessons.filter(L => L.for.includes(student));
-  const hws = (DATA.homework || []).map(H => ({ H, ls: mine.filter(L => H.lessons.includes(L.id)) })).filter(x => x.ls.length)
-    .sort((a, b) => a.H.deadline.localeCompare(b.H.deadline) || a.H.title.localeCompare(b.H.title));
-  const inHw = new Set(hws.flatMap(x => x.ls.map(L => L.id)));
-  const rest = mine.filter(L => !inHw.has(L.id)).sort((a, b) => b.session - a.session);
+  const todo = pendingHomework(mine);
+  const tab = ["Speaking", "Listening"].includes(store.get("tab", "")) ? store.get("tab", "") : "Speaking";
+  const open = store.get("openSessions", {});
+  const folder = skill => {
+    const ls = mine.filter(L => skillOf(L) === skill);
+    const sessions = [...new Set(ls.map(L => L.session))].sort((a, b) => b - a);
+    if (!sessions.length) return `<p class="muted">Chưa có bài ${skill} nào.</p>`;
+    return sessions.map((n, k) => {
+      const inS = ls.filter(L => L.session === n).sort((a, b) => (homeworkOf(b) ? 1 : 0) - (homeworkOf(a) ? 1 : 0));
+      const dueHere = todo.filter(x => x.ls.some(L => inS.includes(L)));
+      const key = skill + n, isOpen = open[key] != null ? open[key] : (k === 0 || dueHere.length > 0);
+      return `<details class="sess" data-key="${key}" ${isOpen ? "open" : ""}>
+        <summary><span class="sname">Buổi ${n}</span><span class="smeta">${inS.length} bài${dueHere.length ? ` · <span class="due ${dueInfo(dueHere[0].H.deadline).cls}">Có homework</span>` : ""}</span></summary>
+        <div class="lessons">${inS.map(lessonButton).join("")}</div></details>`;
+    }).join("");
+  };
+  const count = skill => todo.filter(x => (x.H.skill || skillOf(x.ls[0])) === skill).length;
   $("#app").innerHTML = `${banner()}
-    <h2>Bài luyện</h2>
-    <p class="muted">Mỗi câu: nghe mẫu, bấm nói, xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
-    ${hws.map(({ H, ls }) => {
-      const d = dueInfo(H.deadline);
-      return `<section class="hw" aria-label="${esc(hwTitle(H))}">
-        <div class="hw-head"><h3>${esc(H.title)} <span class="dl">– Deadline ${esc(fmtDeadline(H.deadline))}</span></h3><span class="due ${d.cls}">${esc(d.chip)}</span></div>
-        ${H.note ? `<p class="hw-note">${esc(H.note)}</p>` : ""}
-        <div class="lessons">${ls.map(lessonButton).join("")}</div></section>`;
-    }).join("")}
-    ${rest.length ? `<section class="hw">${hws.length ? `<div class="hw-head"><h3>Bài luyện thêm</h3></div>` : ""}<div class="lessons">${rest.map(lessonButton).join("")}</div></section>` : ""}
+    ${todo.length ? `<section class="alert" aria-label="Bài tập về nhà">
+      <h2>Bài tập về nhà cần làm</h2>
+      ${todo.map(({ H, ls, p }) => {
+        const d = dueInfo(H.deadline);
+        return `<button class="alert-row ${d.cls}" data-id="${ls[0].id}">
+          <span class="t"><b>${esc(H.title)}</b><span>Deadline ${esc(fmtDeadline(H.deadline))} · đã làm ${p}%</span></span>
+          <span class="due ${d.cls}">${esc(d.chip)}</span></button>`;
+      }).join("")}
+    </section>` : `<div class="allclear">Em đã làm xong hết bài tập về nhà. Luyện thêm bài cũ bên dưới nha.</div>`}
+    <div class="tabs" role="tablist">
+      ${["Speaking", "Listening"].map(t => `<button role="tab" class="tab${t === tab ? " on" : ""}" data-tab="${t}" aria-selected="${t === tab}">${t}${count(t) ? ` <span class="dot">${count(t)}</span>` : ""}</button>`).join("")}
+    </div>
+    <div class="folder">${folder(tab)}</div>
+    <p class="muted">Mỗi câu: nghe mẫu, bấm nói (hoặc gõ lại với bài nghe chép), xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
     <p class="foot">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
-  $("#app").querySelectorAll(".lesson").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
+  $("#app").querySelectorAll(".lesson, .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
+  $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); viewList(); }));
+  $("#app").querySelectorAll("details.sess").forEach(d => d.addEventListener("toggle", () => {
+    const o = store.get("openSessions", {}); o[d.dataset.key] = d.open; store.set("openSessions", o);
+  }));
 }
 
 function renderSentenceHTML(chunks, statuses) {

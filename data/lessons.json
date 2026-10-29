@@ -38,12 +38,13 @@
    "id": "hw-s2-final-sounds",
    "session": 2,
    "title": "Âm cuối – 21 âm",
-   "subtitle": "Speaking buổi 2 · Đọc từ 3 lần + câu luyện",
+   "subtitle": "Đọc từ 3 lần + câu luyện",
    "for": [
     "duc",
     "thu"
    ],
    "video": "media/hw-s2-final-sounds.mp4",
+   "skill": "Speaking",
    "sentences": [
     {
      "text": "laptoP / laptoP / laptoP / I work on my laptoP. //",
@@ -555,7 +556,7 @@
    "id": "hw-l1-part1",
    "session": 1,
    "title": "Hội thoại Part 1 – Lakeview Community Center",
-   "subtitle": "Listening buổi 1 · Shadowing theo vai",
+   "subtitle": "Shadowing theo vai",
    "for": [
     "duc",
     "thu"
@@ -565,6 +566,7 @@
     "thu": "Linda",
     "duc": "Ryan"
    },
+   "skill": "Listening",
    "sentences": [
     {
      "text": "Good morning, / Lakeview Community Center. //",
@@ -1745,6 +1747,7 @@
     "duc"
    ],
    "video": "media/s1-duc.mp4",
+   "skill": "Speaking",
    "sentences": [
     {
      "text": "On 'weekends, / I 'don't have much 'free time. //",
@@ -1944,6 +1947,7 @@
     "thu"
    ],
    "video": "media/s1-thu.mp4",
+   "skill": "Speaking",
    "sentences": [
     {
      "text": "On a 'sunny 'Sunday 'morning, / I'm ++'spending 'quality time++ with my 'family / in the 'park. //",
@@ -2124,6 +2128,7 @@
     "thu"
    ],
    "video": "media/s1-my-weekend.mp4",
+   "skill": "Speaking",
    "sentences": [
     {
      "text": "On 'weekends, / I 'don't have much 'free time. //",
