@@ -35,6 +35,12 @@ const Cloud = {
     clearTimeout(this._timer);
     this._timer = setTimeout(() => this.flush(), 1500);
   },
+  /* teachers only (Firestore rules refuse everyone else): every user's progress document */
+  async listUsers() {
+    const { collection, getDocs } = this._fs;
+    const snap = await getDocs(collection(this._db, "users"));
+    return snap.docs.map(d => { const x = d.data(); return { uid: d.id, ...x, updatedAt: x.updatedAt && x.updatedAt.toDate ? x.updatedAt.toDate() : null }; });
+  },
   async flush() {
     const p = this._pending; this._pending = {};
     if (!Object.keys(p).length || !this.user) return;

@@ -72,6 +72,20 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .deadline.over{border-left-color:var(--bad)} .deadline.over .big{color:var(--bad)}
 .role{display:inline-block;font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;background:var(--hl-y);color:var(--ink);margin-left:4px}
 .gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;font-weight:600;font-size:16px;background:var(--surface);border:1px solid var(--line)}
+.tcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:8px}
+.tcard h3{margin:0;font-size:16px}
+.tscroll{overflow-x:auto}
+.ttable{border-collapse:collapse;width:100%;font-size:14px}
+.ttable th,.ttable td{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.ttable th{font-size:12px;color:var(--muted);font-weight:600;border-top:none}
+.ttable td:not(:first-child),.ttable th:not(:first-child){text-align:center;width:22%}
+.tpct{display:inline-block;min-width:52px;text-align:center;border-radius:999px;padding:3px 8px;font-weight:700;font-variant-numeric:tabular-nums;font-size:13px}
+.tpct.ok{background:var(--ok-bg);color:var(--ok)} .tpct.mid{background:var(--near-bg);color:var(--near)} .tpct.zero{background:var(--line);color:var(--muted)} .tpct.late{background:var(--bad-bg);color:var(--bad)}
+.tlist{display:grid;gap:8px;padding:0 12px 12px}
+.trow{display:flex;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:8px}
+.trow .t{flex:1;min-width:0;display:grid;gap:2px}
+.trow .t span{font-size:13px;color:var(--muted)}
+.trow .weak{color:var(--near)!important}
 .logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
 .logincard p{margin:0;font-size:14.5px}
 details.nolog summary{cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
@@ -361,9 +375,16 @@ function mergeBest(cloudBest) {
   return out;
 }
 let cloudNote = "";
-function onCloud(user, profile) {
+let TEACH = null;   // null = not a teacher; [] or rows = teacher view data
+async function checkTeacher(user) {
+  try { TEACH = await window.Cloud.listUsers(); return true; }
+  catch (e) { TEACH = null; return false; }
+}
+async function onCloud(user, profile) {
   if (!DATA) return;
   cloudNote = "";
+  TEACH = null;
+  if (user && await checkTeacher(user)) { route(); return; }
   if (user && profile && profile._error) {
     cloudNote = profile._error.includes("permission") ? `Gmail ${user.email} chưa được cô cho vào lớp. Em đăng xuất rồi đăng nhập bằng Gmail đã gửi cho cô nha.` : "Chưa tải được tiến độ trên mạng. Kiểm tra mạng rồi tải lại trang.";
   } else if (user && profile) {
@@ -384,12 +405,14 @@ window.addEventListener("cloud-ready", () => { if (cloudOn()) window.Cloud.onCha
 /* ---------- views ---------- */
 function setWho() {
   const s = DATA.students.find(x => x.id === student), u = cloudUser();
+  if (TEACH && u) { $("#who").textContent = "Giáo viên · " + u.email; $("#switchBtn").hidden = false; $("#switchBtn").textContent = "Đăng xuất"; return; }
   $("#who").textContent = s ? "Học viên: " + s.name + (u ? " · đã lưu online" : "") : (u ? u.email : "");
   $("#switchBtn").hidden = !s && !u;
   $("#switchBtn").textContent = u ? "Đăng xuất" : "Đổi tên";
 }
 $("#switchBtn").addEventListener("click", async () => {
   if (cloudUser()) { await window.Cloud.flush(); await window.Cloud.signOut(); }
+  TEACH = null;
   student = null; store.set("student", null); location.hash = ""; route();
 });
 
@@ -903,8 +926,72 @@ function grade(L, i, card, chunks, exp, top, alts) {
     }).join("")}</ul>` : `<p class="okmsg">Đọc đủ và đúng hết các từ.</p>`}`;
 }
 
+/* ---------- teacher view: every student's progress ---------- */
+function progressOf(L, sid, best) {
+  const role = L.roles ? L.roles[sid] : null;
+  const idx = L.sentences.map((s, i) => (!role || !s.speaker || s.speaker === role) ? i : -1).filter(i => i >= 0);
+  const done = idx.filter(i => (best[i] || 0) >= 80);
+  const tried = idx.filter(i => best[i] != null);
+  const weak = idx.filter(i => best[i] != null && best[i] < 80);
+  return { idx, done, tried, weak, pct: idx.length ? Math.round(done.length / idx.length * 100) : 0 };
+}
+function ago(d) {
+  if (!d) return "chưa luyện";
+  const m = Math.round((Date.now() - d.getTime()) / 60000);
+  if (m < 60) return m <= 1 ? "vừa xong" : `${m} phút trước`;
+  const h = Math.round(m / 60); if (h < 24) return `${h} giờ trước`;
+  const days = Math.round(h / 24); return `${days} ngày trước`;
+}
+let teachOpen = null;
+function viewTeacher() {
+  /* one row per student: merge every account that chose that student (best score per sentence) */
+  const rows = DATA.students.map(s => {
+    const docs = TEACH.filter(u => u.student === s.id);
+    const best = {};
+    for (const u of docs) for (const [lid, b] of Object.entries(u.best || {})) {
+      best[lid] = best[lid] || {};
+      for (const [i, v] of Object.entries(b)) if (best[lid][i] == null || v > best[lid][i]) best[lid][i] = v;
+    }
+    const last = docs.map(u => u.updatedAt).filter(Boolean).sort((a, b) => b - a)[0] || null;
+    return { s, docs, best, last };
+  });
+  const unknown = TEACH.filter(u => (!u.student || !DATA.students.some(s => s.id === u.student)) && Object.keys(u.best || {}).length);
+  const hws = (DATA.homework || []).slice().sort((a, b) => a.deadline.localeCompare(b.deadline));
+  const lessonsFor = sid => DATA.lessons.filter(L => L.for.includes(sid));
+  const cell = (pct, cls) => `<span class="tpct ${cls || (pct >= 100 ? "ok" : pct > 0 ? "mid" : "zero")}">${pct}%</span>`;
+  $("#app").innerHTML = `
+    <h2>Tiến độ của lớp</h2>
+    <p class="muted">Điểm tốt nhất từng câu; câu đạt từ 80% tính là xong. Dữ liệu chỉ có khi học sinh đăng nhập Gmail lúc luyện.</p>
+    <div class="actions"><button id="tReload">Tải lại</button></div>
+    ${hws.length ? `<section class="tcard"><h3>Homework</h3><div class="tscroll"><table class="ttable">
+      <thead><tr><th>Bài</th>${rows.map(r => `<th>${esc(r.s.name)}</th>`).join("")}</tr></thead>
+      <tbody>${hws.map(H => {
+        const d = dueInfo(H.deadline);
+        return `<tr><td><b>${esc(H.title)}</b><br><span class="muted">Deadline ${esc(fmtDeadline(H.deadline))} · <span class="due ${d.cls}">${esc(d.chip)}</span></span></td>
+        ${rows.map(r => {
+          const ls = DATA.lessons.filter(L => H.lessons.includes(L.id) && L.for.includes(r.s.id));
+          if (!ls.length) return `<td class="muted">–</td>`;
+          const pct = Math.round(ls.reduce((a, L) => a + progressOf(L, r.s.id, r.best[L.id] || {}).pct, 0) / ls.length);
+          return `<td>${cell(pct, pct < 100 && d.cls === "over" ? "late" : "")}</td>`;
+        }).join("")}</tr>`;
+      }).join("")}</tbody></table></div></section>` : ""}
+    ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
+      <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
+      <div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
+        const p = progressOf(L, r.s.id, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[r.s.id] : null;
+        return `<div class="trow">
+          <div class="t"><b>${esc(L.title)}</b><span>${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""}${H ? " · homework" : ""} · đã thử ${p.tried.length}/${p.idx.length} câu</span>
+          ${p.weak.length ? `<span class="weak">Chưa đạt 80%: ${p.weak.slice(0, 12).map(i => "câu " + (p.idx.indexOf(i) + 1) + " (" + r.best[L.id][i] + "%)").join(", ")}${p.weak.length > 12 ? "…" : ""}</span>` : ""}</div>
+          ${cell(p.pct)}</div>`;
+      }).join("")}</div></details>`).join("")}
+    ${unknown.length ? `<p class="muted">Tài khoản đã đăng nhập nhưng chưa chọn tên: ${esc(unknown.map(u => u.email).join(", "))}</p>` : ""}`;
+  $("#tReload").addEventListener("click", async e => { e.currentTarget.disabled = true; await checkTeacher(cloudUser()); route(); });
+  $("#app").querySelectorAll("details.tstu").forEach(d => d.addEventListener("toggle", () => { if (d.open) teachOpen = d.dataset.sid; }));
+}
+
 function route() {
   if (!DATA) return;
+  if (TEACH) { setWho(); return viewTeacher(); }
   if (!DATA.students.some(s => s.id === student)) { student = null; setWho(); return viewPick(); }
   setWho();
   const id = location.hash.slice(1);
