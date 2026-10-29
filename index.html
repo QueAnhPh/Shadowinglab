@@ -98,6 +98,10 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 .fixes .word{font-weight:600;font-size:16px}
 .ipa{font-family:var(--f-ipa);color:var(--accent);font-weight:500}
 .fixes .tip{color:var(--muted)}
+.tag{display:inline-block;justify-self:start;font-size:12px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:999px;padding:2px 10px;margin-bottom:2px}
+.dict{width:100%;font-family:inherit;font-size:17px;line-height:1.5;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);resize:vertical;min-height:72px}
+.dict:focus-visible{outline:3px solid var(--amber);outline-offset:1px}
+.hiddenSent{color:var(--muted);font-size:15px;font-style:italic}
 .okmsg{font-size:14.5px;color:var(--ok)}
 .foot{font-size:12.5px;color:var(--muted);text-align:center;padding-top:8px}
 .back{background:none;border:none;color:var(--accent);padding:0;min-height:0;font-weight:500}
@@ -271,7 +275,7 @@ function viewList() {
     <div class="lessons">${mine.map(L => {
       const p = lessonProgress(L);
       return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
-        <span class="t"><b>${esc(L.title)}</b><span>${esc(L.subtitle)} · ${L.sentences.length} câu</span></span></button>`;
+        <span class="t"><b>${esc(L.title)}</b><span>${L.type === "dictation" ? "Listening · nghe chép" : "Speaking · shadowing"} · ${esc(L.subtitle)} · ${L.sentences.length} câu</span></span></button>`;
     }).join("")}</div>
     <p class="foot">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
   $("#app").querySelectorAll(".lesson").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
@@ -291,6 +295,7 @@ function renderSentenceHTML(chunks, statuses) {
 }
 
 function viewLesson(L) {
+  if (L.type === "dictation") return viewDictation(L);
   const best = store.get(`best:${student}:${L.id}`, {});
   $("#app").innerHTML = `${banner()}
     <button class="back" id="backBtn">← Danh sách bài</button>
@@ -306,6 +311,7 @@ function viewLesson(L) {
     ${L.sentences.map((s, i) => `
       <section class="card" data-i="${i}">
         <div class="n"><span>Câu ${i + 1}/${L.sentences.length}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : ""}</span></div>
+        ${s.label ? `<span class="tag">${esc(s.label)}</span>` : ""}
         <div class="sent">${renderSentenceHTML(parseSentence(s.text))}</div>
         <div class="actions">
           <button class="listen">Nghe mẫu</button>
@@ -326,6 +332,70 @@ function viewLesson(L) {
     }));
     card.querySelector(".speak").addEventListener("click", e => listen(L, i, card, e.currentTarget));
   });
+}
+
+/* ---------- Listening: nghe chép (dictation) ---------- */
+function viewDictation(L) {
+  const best = store.get(`best:${student}:${L.id}`, {});
+  $("#app").innerHTML = `
+    <button class="back" id="backBtn">← Danh sách bài</button>
+    <h2>${esc(L.title)}</h2>
+    <p class="muted">${esc(L.subtitle)}. Nghe từng câu (nghe lại bao nhiêu lần cũng được), gõ lại đúng những gì em nghe, rồi bấm <b>Kiểm tra</b>.</p>
+    ${L.sentences.map((s, i) => `
+      <section class="card" data-i="${i}">
+        <div class="n"><span>Câu ${i + 1}/${L.sentences.length}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : ""}</span></div>
+        ${s.label ? `<span class="tag">${esc(s.label)}</span>` : ""}
+        <div class="sent hiddenSent">Câu được ẩn cho tới khi em kiểm tra.</div>
+        <div class="actions"><button class="listen">Nghe</button><button class="slow">Nghe chậm từng cụm</button></div>
+        <textarea class="dict" id="dict-${L.id}-${i}" rows="2" placeholder="Gõ câu em nghe được…" autocapitalize="off" autocomplete="off" spellcheck="false"></textarea>
+        <div class="actions"><button class="primary check">Kiểm tra</button></div>
+        <div class="result" hidden></div>
+      </section>`).join("")}
+    <p class="foot">Không cần gõ dấu câu hay chữ hoa. Chữ đỏ là từ em nghe sai, chữ xám là từ em bỏ sót.</p>`;
+  $("#backBtn").addEventListener("click", () => { location.hash = ""; });
+  player.src = L.video;
+  $("#app").querySelectorAll(".card").forEach(card => {
+    const i = +card.dataset.i, S = L.sentences[i];
+    card.querySelector(".listen").addEventListener("click", e => playSpan(S.start, S.end, e.currentTarget));
+    card.querySelector(".slow").addEventListener("click", e => playChunks(S.chunks, e.currentTarget));
+    card.querySelector(".check").addEventListener("click", () => gradeDictation(L, i, card));
+  });
+}
+function playChunks(spans, el) {
+  if (!spans || !spans.length) return;
+  let k = 0;
+  const next = () => {
+    if (k >= spans.length) { player.removeEventListener("pause", onPause); return; }
+    const [a, b] = spans[k++]; playSpan(a, b, el);
+  };
+  const onPause = () => { if (stopAt == null) setTimeout(next, 700); };
+  player.addEventListener("pause", onPause);
+  next();
+}
+function gradeDictation(L, i, card) {
+  const typed = card.querySelector(".dict").value.trim();
+  if (!typed) { card.querySelector(".dict").focus(); return; }
+  const chunks = parseSentence(L.sentences[i].text), raws = chunks.flat(), exp = raws.map(w => w.key);
+  const map = align(exp, heardWords(typed));
+  const statuses = exp.map((e, k) => map[k] === e ? { cls: "ok" } : map[k] == null ? { cls: "miss" } : { cls: "bad", heard: map[k] });
+  const score = Math.round(statuses.filter(x => x.cls === "ok").length / exp.length * 100);
+  const key = `best:${student}:${L.id}`, best = store.get(key, {});
+  if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
+  const sent = card.querySelector(".sent");
+  sent.classList.remove("hiddenSent");
+  sent.innerHTML = renderSentenceHTML(chunks, statuses);
+  const seen = new Set();
+  const fixes = statuses.map((st, k) => ({ st, w: exp[k], raw: raws[k].raw })).filter(x => x.st.cls !== "ok" && !seen.has(x.w) && seen.add(x.w));
+  const res = card.querySelector(".result"); res.hidden = false;
+  const verdict = score >= 90 ? "Nghe tốt. Qua câu tiếp theo được." : score >= 80 ? "Đạt. Nghe lại mấy từ dưới rồi qua câu sau." : "Chưa đạt 80%. Nghe lại câu này rồi gõ lại.";
+  res.innerHTML = `
+    <div class="score"><b style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--near)" : "var(--bad)"}">${score}%</b><span>${verdict}</span></div>
+    ${fixes.length ? `<ul class="fixes">${fixes.map(f => {
+      const ipa = DATA.ipa[f.w], tip = DATA.tips[f.w];
+      const kind = f.st.cls === "miss" ? (FUNC.has(f.w) ? `Em bỏ sót từ nhỏ “${f.w}”. Từ nhỏ đọc lướt, nghe kỹ chỗ nối âm.` : `Em bỏ sót “${f.w}”.`) : `Em nghe thành “${f.st.heard}”.`;
+      return `<li class="k-${f.st.cls}"><span class="word">${esc(speechWord(f.raw).replace(/[.,!?;:]+$/, ""))}${ipa ? ` <span class="ipa">/${esc(ipa)}/</span>` : ""}</span>
+        <span>${esc(kind)}</span>${tip ? `<span class="tip">${esc(tip)}</span>` : ""}</li>`;
+    }).join("")}</ul>` : `<p class="okmsg">Nghe đúng hết các từ.</p>`}`;
 }
 
 function playSpan(a, b, el) {
