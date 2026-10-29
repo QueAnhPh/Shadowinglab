@@ -72,6 +72,8 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .deadline.over{border-left-color:var(--bad)} .deadline.over .big{color:var(--bad)}
 .role{display:inline-block;font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;background:var(--hl-y);color:var(--ink);margin-left:4px}
 .gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;font-weight:600;font-size:16px;background:var(--surface);border:1px solid var(--line)}
+.logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.logincard p{margin:0;font-size:14.5px}
 details.nolog summary{cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
 details.nolog .pick{margin-top:8px}
 /* homework alert, Speaking/Listening tabs, session folders */
@@ -404,9 +406,18 @@ function banner() {
   return "";
 }
 
+const GOOGLE_SVG = `<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.7 13.2l7.8 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg>`;
+function wireSignIn() {
+  const g = $("#gSignIn");
+  if (g) g.addEventListener("click", async () => {
+    g.disabled = true;
+    try { await window.Cloud.signIn(); }
+    catch (e) { const el = $("#gErr"); el.hidden = false; el.textContent = "Chưa đăng nhập được (" + (e.code || e.message) + "). Mở web bằng Chrome hoặc Safari rồi thử lại."; }
+    finally { g.disabled = false; }
+  });
+}
 function viewPick() {
-  const u = cloudUser();
-  const google = `<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.7 13.2l7.8 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg>`;
+  const u = cloudUser(), google = GOOGLE_SVG;
   $("#app").innerHTML = `${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}
     ${cloudOn() && !u ? `
     <h2>Đăng nhập để lưu tiến độ</h2>
@@ -418,13 +429,7 @@ function viewPick() {
     <h2>${u ? `Chào ${esc(u.displayName || u.email)}! Em là ai?` : "Em là ai?"}</h2>
     <p class="muted">${u ? "Chọn tên 1 lần, lần sau đăng nhập web tự nhận ra em." : "Chọn tên để xem bài luyện của em. Kết quả luyện lưu trên máy này."}</p>
     <div class="pick">${DATA.students.map(s => `<button data-id="${s.id}">${esc(s.name)}</button>`).join("")}</div>`}`;
-  const g = $("#gSignIn");
-  if (g) g.addEventListener("click", async () => {
-    g.disabled = true;
-    try { await window.Cloud.signIn(); }
-    catch (e) { const el = $("#gErr"); el.hidden = false; el.textContent = "Chưa đăng nhập được (" + (e.code || e.message) + "). Mở web bằng Chrome hoặc Safari rồi thử lại."; }
-    finally { g.disabled = false; }
-  });
+  wireSignIn();
   $("#app").querySelectorAll(".pick button").forEach(b => b.addEventListener("click", () => {
     student = b.dataset.id; store.set("student", student); location.hash = "";
     if (cloudUser()) { const changed = mergeBest((window.Cloud.profile || {}).best); window.Cloud.save({ student, best: changed }).catch(e => console.error(e)); }
@@ -473,7 +478,11 @@ function viewList() {
     }).join("");
   };
   const count = skill => todo.filter(x => (x.H.skill || skillOf(x.ls[0])) === skill).length;
-  $("#app").innerHTML = `${banner()}
+  const loginCard = cloudOn() && !cloudUser() ? `<section class="logincard">
+      <p><b>Đăng nhập Gmail để lưu tiến độ online.</b> Đổi máy không mất bài đã luyện; phần đã luyện trên máy này cũng được giữ lại.</p>
+      <button class="gbtn" id="gSignIn">${GOOGLE_SVG}<span>Đăng nhập bằng Google</span></button>
+      <p class="muted" id="gErr" hidden></p></section>` : "";
+  $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}
     ${todo.length ? `<section class="alert" aria-label="Bài tập về nhà">
       <h2>Bài tập về nhà cần làm</h2>
       ${todo.map(({ H, ls, p }) => {
@@ -489,6 +498,7 @@ function viewList() {
     <div class="folder">${folder(tab)}</div>
     <p class="muted">Mỗi câu: nghe mẫu, bấm nói (hoặc gõ lại với bài nghe chép), xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
     <p class="foot">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
+  wireSignIn();
   $("#app").querySelectorAll(".lesson, .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
   $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); viewList(); }));
   $("#app").querySelectorAll("details.sess").forEach(d => d.addEventListener("toggle", () => {
