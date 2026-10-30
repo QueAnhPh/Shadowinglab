@@ -275,11 +275,48 @@ details.sess .lesson{box-shadow:none;background:var(--other)}
 details.cmp summary{font-weight:800}
 .take{background:var(--other);border-radius:16px;padding:10px 12px}
 .ttable th,.ttable td{border-top-color:var(--line)}
+.intro{display:grid;gap:18px;background:var(--surface);border-radius:26px;padding:20px;box-shadow:var(--shadow)}
+.intro-top{display:flex;justify-content:space-between;align-items:center}
+.linkbtn{background:none;border:none;box-shadow:none;color:var(--accent);min-height:0;padding:4px 6px;font-weight:700}
+.intro-head{display:flex;align-items:center;gap:14px}
+.intro-head img{width:92px;flex:none;transform:rotate(-5deg)}
+.intro-head h2{margin:0}
+.mock{background:var(--bg);border-radius:20px;padding:14px;display:grid;gap:10px;pointer-events:none;user-select:none}
+.mock .card{box-shadow:var(--shadow)}
+.mock .tab,.mock .btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:999px;font-weight:700;min-height:40px;padding:6px 14px}
+.mock .tabs{display:grid}
+.mock .tab.on{background:var(--surface)}
+.mock .btn{border:1.5px solid var(--line);background:var(--surface);flex:1}
+.mock .btn.primary{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.mock .btn.sm{flex:none;min-height:30px;font-size:13px;padding:2px 10px}
+.mock .alert-row{display:flex;gap:10px;align-items:center;background:var(--surface);padding:10px 12px}
+.mock .alert-row .t{flex:1;display:grid}
+.mock .alert-row .t span{font-size:13px;color:var(--muted)}
+.mock .lesson{display:flex;gap:12px;align-items:center}
+.mock .lesson .t{display:grid}
+.mock .lesson .t span{font-size:13px;color:var(--muted)}
+.sess-mock{background:var(--surface);border-radius:18px;padding:12px;display:grid;gap:10px;box-shadow:var(--shadow)}
+.sess-h{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-disp);font-size:18px}
+.mock-hero{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mock-hero span{background:var(--surface);border-radius:18px;padding:16px 6px;text-align:center;font-family:var(--f-disp);font-size:19px;box-shadow:var(--shadow)}
+.cmp-mock{display:grid;gap:8px;color:var(--accent)}
+.cmp-mock .take{color:var(--ink)}
+.cmp-mock .up{color:var(--ok)}
+.intro-text{margin:0;padding-left:20px;display:grid;gap:8px;font-size:16.5px}
+.intro-text .w{padding:0 4px}
+.dots{display:flex;justify-content:center;gap:8px}
+.dots .d{width:10px;height:10px;min-height:0;padding:0;border-radius:50%;border:none;background:var(--line);box-shadow:none}
+.dots .d.on{background:var(--accent);width:26px;border-radius:999px}
+.intro-nav{display:flex;justify-content:space-between;gap:10px}
+.intro-nav button{flex:0 1 auto}
+.intro-nav .primary{flex:1;max-width:260px;margin-left:auto}
+#helpBtn{padding:6px 10px;font-size:15px}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
   <h1><img class="logo" src="stickers/cup-cat.svg" alt=""><span>SpeakBack<small id="who"></small></span></h1>
+  <button class="ghost" id="helpBtn" aria-label="Hướng dẫn">❓</button>
   <button class="ghost" id="switchBtn" hidden>Đổi tên</button>
 </div></header>
 <main class="wrap" id="app"><p class="muted">Đang tải bài…</p></main>
@@ -1226,8 +1263,65 @@ async function viewTeacherLesson(sid, L) {
   });
 }
 
+/* ---------- intro tour: one screen per part of the site, shown before first use ---------- */
+const INTRO = [
+  { sticker: "wink", title: "Chào em! Đây là SpeakBack 👋",
+    text: ["Web luyện nói tiếng Anh của lớp mình.", "Em <b>nghe mẫu</b>, <b>nói theo</b>, máy <b>chấm từng từ</b> và chỉ chỗ cần sửa.", "Mỗi tuần chị đưa bài tập về nhà lên đây."],
+    mock: `<div class="mock-hero"><span>🎧 Nghe</span><span>🗣️ Nói</span><span>✅ Chấm</span></div>` },
+  { sticker: "paw", title: "🔐 Đăng nhập Gmail một lần",
+    text: ["Bấm <b>Đăng nhập bằng Google</b> rồi chọn tên mình một lần.", "Mở máy nào cũng thấy lại bài đã luyện, không bị mất.", "Chỉ em và chị xem được tiến độ của em."],
+    mock: `<div class="logincard"><p>🔐 <b>Đăng nhập Gmail để lưu tiến độ online.</b></p><button class="gbtn" tabindex="-1">${GOOGLE_SVG}<span>Đăng nhập bằng Google</span></button></div>` },
+  { sticker: "wave", title: "⏰ Bài tập về nhà cần làm",
+    text: ["Khung cam ở đầu trang: bài nào chưa xong, hạn nộp khi nào, còn mấy ngày.", "<span class='due'>Còn 6 ngày</span> thoải mái · <span class='due soon'>Còn 1 ngày</span> gấp rồi · <span class='due over'>Quá hạn</span>", "Làm xong 100% là bài tự biến khỏi khung."],
+    mock: `<section class="alert" style="margin-top:0"><h2 style="padding-right:0">⏰ Bài tập về nhà cần làm</h2>
+      <div class="alert-row"><span class="t"><b>Homework Speaking buổi 2</b><span>Deadline Thurs 5 Nov 2026 · đã làm 40%</span></span><span class="due">Còn 6 ngày</span></div></section>` },
+  { sticker: "coffee", title: "📚 Bài chia theo kỹ năng và buổi",
+    text: ["Chọn tab <b>🗣️ Speaking</b> hoặc <b>🎧 Listening</b>. Số đỏ = số homework chưa làm.", "Mỗi <b>Buổi</b> là một folder; buổi mới nhất nằm trên cùng.", "Vòng tròn cho biết em đã xong bao nhiêu % bài đó."],
+    mock: `<div class="tabs"><span class="tab on">🗣️ Speaking <span class="dot">1</span></span><span class="tab">🎧 Listening</span></div>
+      <div class="sess-mock"><div class="sess-h"><b>📚 Buổi 2</b><span class="due">Có homework</span></div>
+      <div class="lesson"><span class="ring" style="--p:40"><i>40%</i></span><span class="t"><b>Âm cuối – 21 âm</b><span>Shadowing · 21 câu</span></span></div></div>` },
+  { sticker: "cup-cat", title: "🗣️ Luyện từng câu",
+    text: ["Bấm <b>Nghe mẫu</b>, rồi <b>Bấm để nói</b> và đọc cả câu.", "Bấm vào một cụm chữ để nghe riêng cụm đó.", "<b>/</b> ngừng ngắn · <b>//</b> ngừng dài · <b>‿</b> nối âm. Bài hội thoại: em chỉ nói phần vai của mình."],
+    mock: `<div class="card"><div class="n"><span>Câu 1/21 · /p/</span><span>Tốt nhất: 85%</span></div>
+      <div class="sent">laptoP <span class="sepm">/</span> I work on my laptoP. <span class="sepm">//</span></div>
+      <div class="actions"><span class="btn">Nghe mẫu</span><span class="btn primary">Bấm để nói</span></div></div>` },
+  { sticker: "wink", title: "✅ Máy chấm từng từ",
+    text: ["<span class='w ok'>xanh</span> đúng · <span class='w near'>cam</span> nghe chưa rõ · <span class='w bad'>đỏ</span> sai · <span class='w miss'>xám</span> bỏ sót", "Dưới điểm có mẹo sửa từng từ sai, kèm phát âm IPA.", "Đạt <b>80%</b> là xong câu đó. Mèo sẽ cổ vũ em 🐱"],
+    mock: `<div class="card"><div class="sent"><span class="w ok">laptop</span> <span class="w ok">I</span> <span class="w ok">work</span> <span class="w ok">on</span> <span class="w ok">my</span> <span class="w bad">laptop.</span></div>
+      <div class="cheer"><img src="stickers/wink.svg" alt=""><div class="score"><b style="color:var(--ok)">85%</b><span>👍 Đạt rồi! Sửa nốt mấy từ dưới là xịn.</span></div></div></div>` },
+  { sticker: "sleep", title: "🔁 So sánh lần đầu và lần gần nhất",
+    text: ["Web giữ <b>lần nói đầu tiên</b> và <b>lần gần nhất</b> của mỗi câu.", "Bấm <b>▶ Nghe giọng em</b> để nghe lại và thấy mình tiến bộ bao nhiêu."],
+    mock: `<div class="card"><div class="cmp-mock"><b>▾ So sánh: lần đầu 63% → gần nhất 100% <span class="up">▲ 37</span></b>
+      <div class="take"><div class="take-h"><b>Lần đầu</b><span>63%</span><span class="btn sm">▶ Nghe giọng em</span></div><div class="sent small"><span class="w bad">laptoP</span> <span class="sepm">/</span> <span class="w ok">I work on my</span> <span class="w bad">laptoP.</span></div></div>
+      <div class="take"><div class="take-h"><b>Gần nhất</b><span>100%</span><span class="btn sm">▶ Nghe giọng em</span></div><div class="sent small"><span class="w ok">laptoP</span> <span class="sepm">/</span> <span class="w ok">I work on my laptoP.</span></div></div></div></div>` },
+  { sticker: "paw", title: "💡 Mẹo nhỏ trước khi bắt đầu",
+    text: ["Mở bằng <b>Chrome</b> (Android) hoặc <b>Safari</b> (iPhone), <b>không mở trong Zalo</b> vì Zalo chặn micro.", "Lần đầu web hỏi micro thì chọn <b>Cho phép</b>.", "Ngồi chỗ yên tĩnh, nói rõ và gần điện thoại.", "Nộp bài ghi âm cho chị qua Zalo như cũ."],
+    mock: `` },
+];
+let introStep = 0;
+function viewIntro() {
+  const k = Math.max(0, Math.min(introStep, INTRO.length - 1)), I = INTRO[k], last = k === INTRO.length - 1;
+  $("#app").innerHTML = `<section class="intro" aria-roledescription="hướng dẫn">
+    <div class="intro-top"><span class="muted">Hướng dẫn · ${k + 1}/${INTRO.length}</span><button class="linkbtn" id="introSkip">Bỏ qua</button></div>
+    <div class="intro-head"><img src="stickers/${I.sticker}.svg" alt=""><h2>${I.title}</h2></div>
+    ${I.mock ? `<div class="mock" aria-hidden="true">${I.mock}</div>` : ""}
+    <ul class="intro-text">${I.text.map(t => `<li>${t}</li>`).join("")}</ul>
+    <div class="dots">${INTRO.map((_, j) => `<button class="d${j === k ? " on" : ""}" data-j="${j}" aria-label="Bước ${j + 1}"></button>`).join("")}</div>
+    <div class="intro-nav">${k ? `<button id="introBack">← Trước</button>` : `<span></span>`}<button class="primary" id="introNext">${last ? "Bắt đầu luyện 🚀" : "Tiếp →"}</button></div>
+  </section>`;
+  const done = () => { store.set("introSeen", true); introStep = 0; route(); window.scrollTo(0, 0); };
+  $("#introSkip").addEventListener("click", done);
+  $("#introNext").addEventListener("click", () => { if (last) done(); else { introStep = k + 1; viewIntro(); } });
+  const b = $("#introBack"); if (b) b.addEventListener("click", () => { introStep = k - 1; viewIntro(); });
+  $("#app").querySelectorAll(".dots .d").forEach(d => d.addEventListener("click", () => { introStep = +d.dataset.j; viewIntro(); }));
+  window.scrollTo(0, 0);
+}
+$("#helpBtn").addEventListener("click", () => { introStep = 0; store.set("introSeen", false); if (location.hash) location.hash = ""; route(); });
+
 function route() {
   if (!DATA) return;
+  if (!TEACH && !store.get("introSeen", false)) { setWho(); $("#helpBtn").hidden = true; return viewIntro(); }
+  $("#helpBtn").hidden = false;
   if (TEACH) {
     setWho();
     const m = location.hash.match(/^#teach~([^~]+)~(.+)$/);
