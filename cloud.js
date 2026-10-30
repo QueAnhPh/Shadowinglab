@@ -41,6 +41,18 @@ const Cloud = {
     const snap = await getDocs(collection(this._db, "users"));
     return snap.docs.map(d => { const x = d.data(); return { uid: d.id, ...x, updatedAt: x.updatedAt && x.updatedAt.toDate ? x.updatedAt.toDate() : null }; });
   },
+  /* first / latest spoken take of a sentence: users/{uid}/takes/{lessonId}~{i}~{first|last} */
+  async saveTake(id, data) {
+    if (!this.user) return;
+    const { doc, setDoc } = this._fs;
+    await setDoc(doc(this._db, "users", this.user.uid, "takes", id), data);
+  },
+  async loadTakes(lessonId) {
+    if (!this.user) return [];
+    const { collection, getDocs, query, where } = this._fs;
+    const snap = await getDocs(query(collection(this._db, "users", this.user.uid, "takes"), where("lesson", "==", lessonId)));
+    return snap.docs.map(d => d.data());
+  },
   async flush() {
     const p = this._pending; this._pending = {};
     if (!Object.keys(p).length || !this.user) return;

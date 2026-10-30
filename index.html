@@ -86,6 +86,14 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .trow .t{flex:1;min-width:0;display:grid;gap:2px}
 .trow .t span{font-size:13px;color:var(--muted)}
 .trow .weak{color:var(--near)!important}
+details.cmp{border-top:1px dashed var(--line);padding-top:10px}
+details.cmp summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--accent)}
+details.cmp .up{color:var(--ok)} details.cmp .down{color:var(--bad)}
+.take{display:grid;gap:4px;margin-top:10px}
+.take-h{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13.5px}
+.take-h span{color:var(--muted)}
+.playtake{min-height:34px;padding:4px 12px;font-size:13.5px}
+.sent.small{font-size:16px;line-height:1.7}
 .logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
 .logincard p{margin:0;font-size:14.5px}
 details.nolog summary{cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
@@ -578,12 +586,14 @@ function viewLesson(L) {
         </div>
         <div class="live" aria-live="polite"></div>
         <div class="result" hidden></div>
+        <details class="cmp" hidden></details>
       </section>`;
     }).join("")}
     <p class="foot">Máy nghe đôi khi tự đoán giúp em, nên chữ xanh chưa chắc đã chuẩn 100%. Chữ đỏ thì chắc chắn cần sửa.</p>`;
   $("#backBtn").addEventListener("click", () => { location.hash = ""; });
   if (useWhisper() && store.get("whisperLoaded", false)) loadWhisper();
   player.src = L.video;
+  loadTakes(L);
   $("#app").querySelectorAll(".card").forEach(card => {
     const i = +card.dataset.i, S = L.sentences[i];
     card.querySelector(".listen").addEventListener("click", e => playSpan(S.start, S.end, e.currentTarget));
@@ -592,6 +602,7 @@ function viewLesson(L) {
     }));
     const sp = card.querySelector(".speak");
     if (sp) sp.addEventListener("click", e => listen(L, i, card, e.currentTarget));
+    renderCompare(L, i, card);
   });
 }
 
@@ -721,6 +732,7 @@ async function listenWhisper(L, i, card, btn) {
     showMic("blocked"); return;
   }
   store.set("micOK", true);
+  const clip = startClip(stream);
   await resumed;
   const src = ctx.createMediaStreamSource(stream), proc = ctx.createScriptProcessor(4096, 1, 1);
   const bufs = []; let spoke = false, quietMs = 0, totalMs = 0, done = false;
@@ -745,7 +757,8 @@ async function listenWhisper(L, i, card, btn) {
     if (done) return; done = true;
     if (rec === session) rec = null;
     try { proc.disconnect(); src.disconnect(); } catch {}
-    stream.getTracks().forEach(t => t.stop());
+    const clipP = clip ? clip.stop() : Promise.resolve(null);
+    clipP.finally(() => stream.getTracks().forEach(t => t.stop()));
     const rate = ctx.sampleRate; try { ctx.close(); } catch {}
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
     if (!keep || !spoke) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
@@ -756,7 +769,7 @@ async function listenWhisper(L, i, card, btn) {
       const text = await window.Whisper.transcribe(audio);
       live.textContent = "";
       if (!text) { live.textContent = "Máy chưa nghe rõ. Em đọc lại to hơn nha."; return; }
-      grade(L, i, card, chunks, exp, text, [[text]]);
+      grade(L, i, card, chunks, exp, text, [[text]], clipP);
     } catch (e) {
       live.textContent = "Chưa chấm được. Kiểm tra mạng rồi thử lại.";
     } finally { btn.disabled = false; }
@@ -795,7 +808,7 @@ function showMic(mode, onGo) {
     sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
       <h3 id="micTitle">Cho phép dùng micro</h3>
       <p>Để chấm phát âm, web cần nghe em nói. Bấm <b>Bật micro</b>, rồi chọn <b>Cho phép</b> ở cửa sổ trình duyệt hiện ra.</p>
-      <p class="muted">Chỉ cần làm 1 lần. Web không lưu giọng nói của em.</p>
+      <p class="muted">Chỉ cần làm 1 lần. Web giữ lại ghi âm lần nói đầu và lần gần nhất của từng câu để em so sánh; khi đăng nhập thì chỉ em và giáo viên nghe được.</p>
       <div class="row"><button class="primary" id="micGo">Bật micro</button><button id="micLater">Để sau</button></div>`;
   } else {
     sheet.innerHTML = `<div class="mic-ic">${MIC_SVG}</div>
@@ -835,6 +848,12 @@ function listen(L, i, card, btn) {
   rec = r;
   r.lang = "en-US"; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
   let finals = null, interim = "", done = false, silenceT = null, capT = null, errored = false;
+  let clip = null, clipStream = null, clipTried = !store.get("noClipSR", false);
+  const stopClip = () => {
+    const p = clip ? clip.stop() : Promise.resolve(null);
+    p.finally(() => { if (clipStream) clipStream.getTracks().forEach(t => t.stop()); });
+    return p;
+  };
   btn.textContent = "Đang nghe… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
   live.textContent = "Nói cả câu nha.";
   /* finish once, whether Safari fires onend or not */
@@ -843,13 +862,14 @@ function listen(L, i, card, btn) {
     clearTimeout(silenceT); clearTimeout(capT);
     if (rec === r) rec = null;
     try { r.onresult = r.onerror = r.onend = null; r.abort(); } catch {}
+    const clipP = stopClip();
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
     if (errored) return;
     const top = finals ? finals.map(a => a[0]).join(" ") : interim;
     if (!top.trim()) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
     window.__sna = 0;
     live.textContent = "";
-    grade(L, i, card, chunks, exp, top, finals || [[interim]]);
+    grade(L, i, card, chunks, exp, top, finals || [[interim]], clipP);
   };
   r._finish = () => { try { r.stop(); } catch {} setTimeout(finish, 900); };
   capT = setTimeout(r._finish, 20000);                       // hard cap 20 s
@@ -881,16 +901,106 @@ function listen(L, i, card, btn) {
       finish(); return;
     }
     if (ev.error === "no-speech") { finish(); return; }
+    if (ev.error === "audio-capture" && clipTried) {   /* this phone cannot record and recognize at once: stop recording from now on */
+      store.set("noClipSR", true); errored = true; live.textContent = "Em bấm Bấm để nói lại nha."; finish(); return;
+    }
     const msg = { "audio-capture": "Không tìm thấy micro trên máy này.",
       "network": "Mất mạng nên chưa chấm được. Kiểm tra mạng rồi thử lại." }[ev.error] || "Chưa chấm được, em thử lại nha.";
     if (!interim) { errored = true; live.textContent = msg; }
     finish();
   };
   r.onend = finish;
-  try { r.start(); } catch { rec = null; done = true; btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary"); live.textContent = "Chưa bật được micro, em thử lại nha."; }
+  try {
+    r.start();
+    if (clipTried && navigator.mediaDevices) navigator.mediaDevices.getUserMedia({ audio: true }).then(st => {
+      if (done) { st.getTracks().forEach(t => t.stop()); return; }
+      clipStream = st; clip = startClip(st);
+    }).catch(() => {});
+  } catch { rec = null; done = true; btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary"); live.textContent = "Chưa bật được micro, em thử lại nha."; }
 }
 
-function grade(L, i, card, chunks, exp, top, alts) {
+/* ---------- first vs latest take of each sentence ---------- */
+const CLIPS = {};   // "<lessonId>:<i>" -> { first: dataURL, last: dataURL }
+const ST_CODE = { o: "ok", n: "near", m: "miss", b: "bad" };
+const takesKey = L => `takes:${student}:${L.id}`;
+const getTakes = L => store.get(takesKey(L), {});
+function blobToDataURL(blob) {
+  return new Promise(res => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.onerror = () => res(null); fr.readAsDataURL(blob); });
+}
+/* record what the mic hears in parallel with the speech recognizer; stop() resolves to a Blob or null */
+function startClip(stream) {
+  try {
+    if (!window.MediaRecorder) return null;
+    const mime = ["audio/webm;codecs=opus", "audio/mp4", "audio/webm", "audio/ogg;codecs=opus"].find(t => MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(t));
+    const mr = new MediaRecorder(stream, mime ? { mimeType: mime, audioBitsPerSecond: 24000 } : { audioBitsPerSecond: 24000 });
+    const parts = [];
+    mr.ondataavailable = e => { if (e.data && e.data.size) parts.push(e.data); };
+    mr.start();
+    return { stop: () => new Promise(res => {
+      if (mr.state === "inactive") return res(parts.length ? new Blob(parts, { type: mr.mimeType }) : null);
+      mr.onstop = () => res(parts.length ? new Blob(parts, { type: mr.mimeType }) : null);
+      try { mr.stop(); } catch { res(null); }
+    }) };
+  } catch { return null; }
+}
+function fmtWhen(ms) { const d = new Date(ms); return `${d.getDate()}/${d.getMonth() + 1} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; }
+function renderCompare(L, i, card) {
+  const box = card.querySelector(".cmp");
+  if (!box) return;
+  const cur = getTakes(L)[i];
+  if (!cur || !cur.first) { box.hidden = true; return; }
+  const mem = CLIPS[L.id + ":" + i] || {}, chunks = parseSentence(L.sentences[i].text), n = chunks.flat().length;
+  const row = (label, t, url, kind) => {
+    const st = t.st && t.st.length === n ? [...t.st].map(c => ({ cls: ST_CODE[c] || "bad" })) : null;
+    return `<div class="take"><div class="take-h"><b>${label}</b><span>${t.s}% · ${fmtWhen(t.at)}</span>
+      ${url ? `<button class="playtake" data-kind="${kind}">▶ Nghe giọng em</button>` : `<span class="muted">không có ghi âm</span>`}</div>
+      <div class="sent small">${renderSentenceHTML(chunks, st)}</div></div>`;
+  };
+  const same = cur.first.at === cur.last.at, diff = cur.last.s - cur.first.s;
+  const wasOpen = box.open;
+  box.hidden = false;
+  box.innerHTML = `<summary>${same ? `Lần nói đầu: ${cur.first.s}%` : `So sánh: lần đầu ${cur.first.s}% → gần nhất ${cur.last.s}% <span class="${diff >= 0 ? "up" : "down"}">${diff >= 0 ? "▲" : "▼"} ${Math.abs(diff)}</span>`}</summary>
+    ${row("Lần đầu", cur.first, mem.first, "first")}${same ? "" : row("Gần nhất", cur.last, mem.last, "last")}`;
+  box.open = wasOpen;
+  box.querySelectorAll(".playtake").forEach(b => b.addEventListener("click", () => {
+    try { player.pause(); const a = new Audio(mem[b.dataset.kind]); a.play().catch(() => {}); } catch {}
+  }));
+}
+async function recordTake(L, i, card, score, top, statuses, clipP) {
+  const t = { s: score, h: top, st: statuses.map(x => x.cls[0]).join(""), at: Date.now() };
+  const all = getTakes(L), cur = all[i] || {}, isFirst = !cur.first;
+  if (isFirst) cur.first = t;
+  cur.last = t; all[i] = cur; store.set(takesKey(L), all);
+  const mem = CLIPS[L.id + ":" + i] || (CLIPS[L.id + ":" + i] = {});
+  if (!isFirst) mem.last = null;
+  renderCompare(L, i, card);
+  const blob = clipP ? await clipP.catch(() => null) : null;
+  const url = blob && blob.size > 0 && blob.size < 700000 ? await blobToDataURL(blob) : null;
+  if (url) { if (isFirst) mem.first = url; mem.last = url; renderCompare(L, i, card); }
+  if (cloudUser()) {
+    const base = { lesson: L.id, i, ...t, audio: url || "" };
+    const jobs = [window.Cloud.saveTake(`${L.id}~${i}~last`, { ...base, kind: "last" })];
+    if (isFirst) jobs.push(window.Cloud.saveTake(`${L.id}~${i}~first`, { ...base, kind: "first" }));
+    Promise.all(jobs).catch(e => console.error("take save failed", e));
+  }
+}
+/* on opening a lesson: bring back the takes saved with the account (other devices) */
+function loadTakes(L) {
+  if (!cloudUser()) return;
+  window.Cloud.loadTakes(L.id).then(rows => {
+    if (!rows.length) return;
+    const all = getTakes(L);
+    for (const r of rows) {
+      const cur = all[r.i] || (all[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at };
+      const keep = r.kind === "first" ? (!cur.first || t.at <= cur.first.at) : (!cur.last || t.at >= cur.last.at);
+      if (keep) { cur[r.kind] = t; if (r.audio) (CLIPS[L.id + ":" + r.i] || (CLIPS[L.id + ":" + r.i] = {}))[r.kind] = r.audio; }
+    }
+    store.set(takesKey(L), all);
+    $("#app").querySelectorAll(".card[data-i]").forEach(c => renderCompare(L, +c.dataset.i, c));
+  }).catch(e => console.error("take load failed", e));
+}
+
+function grade(L, i, card, chunks, exp, top, alts, clipP) {
   EXPECT = new Set(exp);
   const got = heardWords(top);
   const map = align(exp, got);
@@ -906,6 +1016,7 @@ function grade(L, i, card, chunks, exp, top, alts) {
   const key = `best:${student}:${L.id}`, best = store.get(key, {});
   if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); syncBest(L.id, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
   card.querySelector(".sent").innerHTML = renderSentenceHTML(chunks, statuses);
+  recordTake(L, i, card, score, top, statuses, clipP);
   card.querySelectorAll(".chunk").forEach(ch => ch.addEventListener("click", () => {
     const span = L.sentences[i].chunks[+ch.dataset.c]; if (span) playSpan(span[0], span[1], ch);
   }));
