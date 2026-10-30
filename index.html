@@ -699,7 +699,8 @@ function viewLesson(L) {
   if (useWhisper() && store.get("whisperLoaded", false)) loadWhisper();
   player.src = L.video;
   loadTakes(L);
-  startTour("lesson");
+  if (!store.get("tour:lesson", false)) startTour("lesson");
+  else if (L.roles && $(".card.other")) startTour("dialog");
   $("#app").querySelectorAll(".card").forEach(card => {
     const i = +card.dataset.i, S = L.sentences[i];
     card.querySelector(".listen").addEventListener("click", e => playSpan(S.start, S.end, e.currentTarget));
@@ -1266,11 +1267,16 @@ const TOURS = {
     { sel: ".card.other", text: "👂 Bài hội thoại: câu của bạn kia chỉ cần nghe." },
     { sel: "#helpBtn", text: "❓ Bấm đây để xem lại hướng dẫn." },
   ],
+  dialog: [
+    { sel: ".card:not(.other) .speak", text: "🎭 Bài hội thoại: em chỉ nói câu của vai mình (thẻ có nút Bấm để nói)." },
+    { sel: ".card.other", text: "👂 Thẻ xám là câu của bạn kia, em chỉ cần nghe để bắt nhịp." },
+  ],
 };
 let tourState = null;
 function endTour() {
   if (!tourState) return;
   store.set("tour:" + tourState.name, true);
+  if (tourState.name === "lesson" && $(".card.other")) store.set("tour:dialog", true);
   window.removeEventListener("resize", placeTour); window.removeEventListener("scroll", placeTour, true);
   document.querySelectorAll(".tour-spot,.tour-pop").forEach(e => e.remove());
   tourState = null;
