@@ -45,6 +45,7 @@
    ],
    "video": "media/hw-s2-final-sounds.mp4",
    "skill": "Speaking",
+   "topic": "Âm cuối (Final sounds)",
    "sentences": [
     {
      "text": "laptoP / laptoP / laptoP / I work on my laptoP. //",
@@ -567,6 +568,7 @@
     "duc": "Ryan"
    },
    "skill": "Listening",
+   "topic": "Lakeview Community Center",
    "sentences": [
     {
      "text": "Good morning, / Lakeview Community Center. //",
@@ -1748,6 +1750,7 @@
    ],
    "video": "media/s1-duc.mp4",
    "skill": "Speaking",
+   "topic": "My weekend",
    "sentences": [
     {
      "text": "On 'weekends, / I 'don't have much 'free time. //",
@@ -1948,6 +1951,7 @@
    ],
    "video": "media/s1-thu.mp4",
    "skill": "Speaking",
+   "topic": "A Sunday in the park",
    "sentences": [
     {
      "text": "On a 'sunny 'Sunday 'morning, / I'm ++'spending 'quality time++ with my 'family / in the 'park. //",
@@ -2129,6 +2133,7 @@
    ],
    "video": "media/s1-my-weekend.mp4",
    "skill": "Speaking",
+   "topic": "My weekend",
    "sentences": [
     {
      "text": "On 'weekends, / I 'don't have much 'free time. //",

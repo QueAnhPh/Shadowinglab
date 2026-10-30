@@ -122,6 +122,8 @@ details.sess[open] summary::before{transform:rotate(90deg)}
 .sname{font-weight:600;flex:1}
 .smeta{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
 details.sess .lessons{padding:0 10px 10px}
+.topic{display:grid;gap:8px}
+.tname{margin:4px 2px 0;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.02em}
 .lesson .chips{display:block;margin-top:4px}
 /* lesson list */
 .lessons{display:grid;gap:10px}
@@ -569,6 +571,12 @@ function skillOf(L) {
   if (H && H.skill) return H.skill;
   return L.type === "dictation" ? "Listening" : "Speaking";
 }
+/* lessons of one session grouped by the topic of their text, in first-appearance order */
+function topicsOf(ls) {
+  const m = new Map();
+  ls.forEach(L => { const t = L.topic || L.title; if (!m.has(t)) m.set(t, []); m.get(t).push(L); });
+  return [...m];
+}
 function lessonButton(L) {
   const p = lessonProgress(L), r = myRole(L), H = homeworkOf(L);
   const n = L.sentences.filter(s => isMine(L, s)).length;
@@ -600,7 +608,7 @@ function viewList() {
       const key = skill + n, isOpen = open[key] != null ? open[key] : (k === 0 || dueHere.length > 0);
       return `<details class="sess" data-key="${key}" ${isOpen ? "open" : ""}>
         <summary><span class="sname">📚 Buổi ${n}</span><span class="smeta">${inS.length} bài${dueHere.length ? ` · <span class="due ${dueInfo(dueHere[0].H.deadline).cls}">Có homework</span>` : ""}</span></summary>
-        <div class="lessons">${inS.map(lessonButton).join("")}</div></details>`;
+        <div class="lessons">${topicsOf(inS).map(([t, g]) => `<div class="topic"><p class="tname">📖 ${esc(t)}</p>${g.map(lessonButton).join("")}</div>`).join("")}</div></details>`;
     }).join("");
   };
   const count = skill => todo.filter(x => (x.H.skill || skillOf(x.ls[0])) === skill).length;
@@ -1246,7 +1254,7 @@ const TOURS = {
     { sel: ".logincard", text: "🔐 Đăng nhập Gmail 1 lần để lưu tiến độ, đổi máy không mất bài." },
     { sel: ".alert", text: "⏰ Bài tập về nhà chưa xong và số ngày còn lại tới hạn nộp." },
     { sel: ".tabs", text: "🗣️ / 🎧 Chọn Speaking hoặc Listening. Số đỏ = homework chưa làm." },
-    { sel: "details.sess", text: "📚 Mỗi buổi là một folder. Bấm để mở hoặc đóng." },
+    { sel: "details.sess", text: "📚 Mỗi buổi là một folder, bên trong chia theo chủ đề bài. Bấm để mở hoặc đóng." },
     { sel: ".lesson", text: "▶️ Bấm vào bài để bắt đầu luyện. Vòng tròn là % đã xong." },
     { sel: "#helpBtn", text: "❓ Quên cách dùng thì bấm đây để xem lại hướng dẫn." },
   ],
