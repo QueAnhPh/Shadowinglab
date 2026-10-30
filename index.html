@@ -514,7 +514,7 @@ async function onCloud(user, profile) {
   TEACH = null;
   if (user && await checkTeacher(user)) { route(); return; }
   if (user && profile && profile._error) {
-    cloudNote = profile._error.includes("permission") ? `Gmail ${user.email} chưa được cô cho vào lớp. Em đăng xuất rồi đăng nhập bằng Gmail đã gửi cho cô nha.` : "Chưa tải được tiến độ trên mạng. Kiểm tra mạng rồi tải lại trang.";
+    cloudNote = profile._error.includes("permission") ? `Gmail ${user.email} chưa được chị cho vào lớp. Em đăng xuất rồi đăng nhập bằng Gmail đã gửi cho chị nha.` : "Chưa tải được tiến độ trên mạng. Kiểm tra mạng rồi tải lại trang.";
   } else if (user && profile) {
     const id = profile.student || studentForEmail(user.email);
     if (id && DATA.students.some(s => s.id === id)) {
