@@ -670,6 +670,7 @@ function viewLesson(L) {
       <span><i class="sw" style="background:var(--hl-b)"></i>idiom</span>
       <span>/ ngừng ngắn · // ngừng dài · ' nhấn âm · ‿ nối âm</span>
     </div>
+    ${L.theory ? `<details class="video theory" ${lessonProgress(L) ? "" : "open"}><summary>📘 Xem lý thuyết trước: ${esc(L.theoryTitle || "video bài học")}</summary><video src="${esc(L.theory)}" controls playsinline preload="metadata"></video></details>` : ""}
     <details class="video"><summary>Xem video shadowing cả bài</summary><video src="${esc(L.video)}" controls playsinline preload="metadata"></video></details>
     ${deadlineBox(L)}
     ${L.sentences.map((s, i) => {
