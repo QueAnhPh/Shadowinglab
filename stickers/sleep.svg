@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 550 390" role="img" aria-label="Mèo cuộn tròn ngủ"><style>
+.cut{fill:#fff;stroke:#fff;stroke-width:44;stroke-linejoin:round;stroke-linecap:round;filter:drop-shadow(0 8px 10px rgba(64,36,14,.28))}
+.cutlimb{fill:none;stroke:#fff;stroke-width:86;stroke-linecap:round}
+.cutline{fill:none;stroke:#fff;stroke-width:52;stroke-linecap:round;stroke-linejoin:round}
+.art{fill:#F7F1E6;stroke:#2B1E14;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.ln{fill:none;stroke:#2B1E14;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.dot{fill:#2B1E14;stroke:none}
+.coffee{fill:#3E2A1E;stroke:none}
+.hole{fill:#fff;stroke:#2B1E14;stroke-width:9}
+.limbo{fill:none;stroke:#2B1E14;stroke-width:40;stroke-linecap:round}
+.limbi{fill:none;stroke:#F7F1E6;stroke-width:22;stroke-linecap:round}
+</style><defs>
+<path id="s3-body" d="M60 222 Q50 122 172 102 Q302 86 382 142 Q432 182 402 240 Q362 272 232 272 Q92 272 60 222 Z"></path>
+<path id="s3-tail" d="M398 236 Q420 290 320 282 Q262 278 236 262"></path>
+<path id="s3-head" d="M92 202 Q82 152 106 126 L112 76 L152 112 Q167 108 182 112 L218 76 L222 126 Q242 152 234 202 Q227 247 163 250 Q99 247 92 202 Z"></path>
+<path id="s3-z" d="M262 52 H290 L262 80 H290 M308 22 H326 L308 40 H326"></path>
+</defs>
+<g class="cut"><use href="#s3-body"></use><use href="#s3-tail" class="cutlimb"></use><use href="#s3-head"></use><use href="#s3-z" class="cutline"></use></g>
+<use href="#s3-body" class="art"></use>
+<path class="ln" d="M300 110 Q294 130 306 148 M336 122 Q330 140 342 156"></path>
+<use href="#s3-tail" class="limbo"></use>
+<use href="#s3-tail" class="limbi"></use>
+<use href="#s3-head" class="art"></use>
+<path class="ln" d="M124 98 L128 122 M200 98 L196 122"></path>
+<path class="ln" d="M128 180 Q140 190 152 180 M174 180 Q186 190 198 180"></path>
+<path class="dot" d="M156 198 H170 L163 206 Z"></path>
+<path class="ln" d="M154 216 Q163 223 172 216"></path>
+<use href="#s3-z" class="ln"></use></svg>

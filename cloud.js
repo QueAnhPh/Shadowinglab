@@ -47,6 +47,12 @@ const Cloud = {
     const { doc, setDoc } = this._fs;
     await setDoc(doc(this._db, "users", this.user.uid, "takes", id), data);
   },
+  /* teachers: takes of any student account */
+  async loadTakesOf(uid, lessonId) {
+    const { collection, getDocs, query, where } = this._fs;
+    const snap = await getDocs(query(collection(this._db, "users", uid, "takes"), where("lesson", "==", lessonId)));
+    return snap.docs.map(d => d.data());
+  },
   async loadTakes(lessonId) {
     if (!this.user) return [];
     const { collection, getDocs, query, where } = this._fs;

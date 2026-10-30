@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 620 650" role="img" aria-label="Mèo ngâm mình trong tách cà phê"><style>
+.cut{fill:#fff;stroke:#fff;stroke-width:44;stroke-linejoin:round;stroke-linecap:round;filter:drop-shadow(0 8px 10px rgba(64,36,14,.28))}
+.cutlimb{fill:none;stroke:#fff;stroke-width:86;stroke-linecap:round}
+.cutline{fill:none;stroke:#fff;stroke-width:52;stroke-linecap:round;stroke-linejoin:round}
+.art{fill:#F7F1E6;stroke:#2B1E14;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.ln{fill:none;stroke:#2B1E14;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.dot{fill:#2B1E14;stroke:none}
+.coffee{fill:#3E2A1E;stroke:none}
+.hole{fill:#fff;stroke:#2B1E14;stroke-width:9}
+.limbo{fill:none;stroke:#2B1E14;stroke-width:40;stroke-linecap:round}
+.limbi{fill:none;stroke:#F7F1E6;stroke-width:22;stroke-linecap:round}
+</style><defs>
+<path id="s1-head" d="M170 200 Q160 135 186 98 L196 42 L240 84 Q260 79 280 84 L324 42 L334 98 Q360 135 350 200 Q344 255 260 258 Q176 255 170 200 Z"></path>
+<path id="s1-body" d="M182 350 L180 280 Q182 240 220 236 H300 Q338 240 340 280 L338 350 Z"></path>
+<ellipse id="s1-rim" cx="260" cy="300" rx="200" ry="42"></ellipse>
+<path id="s1-cup" d="M60 300 Q62 468 172 522 H348 Q458 468 460 300 A200 42 0 0 1 60 300 Z"></path>
+<circle id="s1-handle" cx="478" cy="392" r="52"></circle>
+<ellipse id="s1-pawl" cx="214" cy="302" rx="30" ry="20"></ellipse>
+<ellipse id="s1-pawr" cx="306" cy="302" rx="30" ry="20"></ellipse>
+</defs>
+<g class="cut">
+<use href="#s1-handle"></use><use href="#s1-rim"></use><use href="#s1-cup"></use><use href="#s1-body"></use><use href="#s1-head"></use><use href="#s1-pawl"></use><use href="#s1-pawr"></use>
+</g>
+<use href="#s1-handle" class="art"></use>
+<circle cx="478" cy="392" r="22" class="hole"></circle>
+<use href="#s1-rim" class="art"></use>
+<ellipse cx="260" cy="302" rx="176" ry="30" class="coffee"></ellipse>
+<use href="#s1-body" class="art"></use>
+<use href="#s1-cup" class="art"></use>
+<use href="#s1-pawl" class="art"></use>
+<use href="#s1-pawr" class="art"></use>
+<path class="ln" d="M204 292 V304 M224 292 V304 M296 292 V304 M316 292 V304"></path>
+<use href="#s1-head" class="art"></use>
+<path class="ln" d="M208 70 L214 98 M312 70 L306 98"></path>
+<circle class="dot" cx="232" cy="172" r="8"></circle>
+<circle class="dot" cx="288" cy="172" r="8"></circle>
+<path class="dot" d="M251 188 H269 L260 198 Z"></path>
+<path class="ln" d="M244 206 Q252 216 260 206 Q268 216 276 206"></path>
+<path class="ln" d="M196 192 L160 186 M198 208 L162 214 M324 192 L360 186 M322 208 L358 214"></path></svg>

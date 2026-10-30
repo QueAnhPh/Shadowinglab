@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 560 650" role="img" aria-label="Mèo vẫy tay, cầm ly cà phê"><style>
+.cut{fill:#fff;stroke:#fff;stroke-width:44;stroke-linejoin:round;stroke-linecap:round;filter:drop-shadow(0 8px 10px rgba(64,36,14,.28))}
+.cutlimb{fill:none;stroke:#fff;stroke-width:86;stroke-linecap:round}
+.cutline{fill:none;stroke:#fff;stroke-width:52;stroke-linecap:round;stroke-linejoin:round}
+.art{fill:#F7F1E6;stroke:#2B1E14;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.ln{fill:none;stroke:#2B1E14;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.dot{fill:#2B1E14;stroke:none}
+.coffee{fill:#3E2A1E;stroke:none}
+.hole{fill:#fff;stroke:#2B1E14;stroke-width:9}
+.limbo{fill:none;stroke:#2B1E14;stroke-width:40;stroke-linecap:round}
+.limbi{fill:none;stroke:#F7F1E6;stroke-width:22;stroke-linecap:round}
+</style><defs>
+<path id="s4-body" d="M110 532 L114 362 Q120 282 200 268 H300 Q380 282 386 362 L390 532 Z"></path>
+<path id="s4-arm" d="M156 332 Q98 302 100 230"></path>
+<circle id="s4-paw" cx="100" cy="208" r="34"></circle>
+<path id="s4-glass" d="M300 352 H378 L368 458 H310 Z"></path>
+<ellipse id="s4-hold" cx="304" cy="418" rx="36" ry="27"></ellipse>
+<path id="s4-head" d="M150 205 Q140 135 170 100 L178 30 L235 82 Q250 78 265 82 L322 30 L330 100 Q360 135 350 205 Q340 280 250 285 Q160 280 150 205 Z"></path>
+</defs>
+<g class="cut"><use href="#s4-body"></use><use href="#s4-arm" class="cutlimb"></use><use href="#s4-paw"></use><use href="#s4-glass"></use><use href="#s4-hold"></use><use href="#s4-head"></use></g>
+<use href="#s4-body" class="art"></use>
+<path class="ln" d="M250 468 V532"></path>
+<use href="#s4-arm" class="limbo"></use>
+<use href="#s4-arm" class="limbi"></use>
+<use href="#s4-paw" class="art"></use>
+<path class="ln" d="M86 188 V202 M100 182 V198 M114 188 V202"></path>
+<use href="#s4-glass" class="art"></use>
+<path class="coffee" d="M304 394 H374 L368 458 H310 Z"></path>
+<use href="#s4-glass" class="ln"></use>
+<use href="#s4-hold" class="art"></use>
+<path class="ln" d="M290 410 Q304 405 318 410 M290 426 Q304 421 318 426"></path>
+<use href="#s4-head" class="art"></use>
+<path class="ln" d="M190 62 L196 96 M310 62 L304 96"></path>
+<path class="ln" d="M208 186 Q222 172 236 186 M264 186 Q278 172 292 186"></path>
+<path class="dot" d="M241 200 H259 L250 209 Z"></path>
+<path class="art" d="M234 220 Q250 244 266 220 Z"></path>
+<path class="ln" d="M176 212 L136 204 M178 228 L138 236 M324 212 L364 204 M322 228 L362 236"></path></svg>

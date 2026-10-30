@@ -7,7 +7,7 @@
 <meta name="description" content="Luyện shadowing tiếng Anh, chấm phát âm từng từ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Noto+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&family=Noto+Sans:wght@400;500&display=swap">
 <style>
 /* Layout: one narrow column (max 680px), phone-first; sticky top bar; each sentence is a practice card. */
 :root{
@@ -82,7 +82,9 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .tpct{display:inline-block;min-width:52px;text-align:center;border-radius:999px;padding:3px 8px;font-weight:700;font-variant-numeric:tabular-nums;font-size:13px}
 .tpct.ok{background:var(--ok-bg);color:var(--ok)} .tpct.mid{background:var(--near-bg);color:var(--near)} .tpct.zero{background:var(--line);color:var(--muted)} .tpct.late{background:var(--bad-bg);color:var(--bad)}
 .tlist{display:grid;gap:8px;padding:0 12px 12px}
-.trow{display:flex;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:8px}
+.trow{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:none;border-top:1px solid var(--line);border-radius:0;background:none;box-shadow:none;padding:10px 4px;min-height:0;font-weight:400}
+.trow:hover{background:var(--other)}
+.chev{font-size:22px;color:var(--muted);font-weight:700}
 .trow .t{flex:1;min-width:0;display:grid;gap:2px}
 .trow .t span{font-size:13px;color:var(--muted)}
 .trow .weak{color:var(--near)!important}
@@ -192,11 +194,91 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 .mic-ic{width:56px;height:56px;border-radius:50%;background:var(--amber);display:grid;place-items:center}
 .sheet .row{display:flex;gap:8px;flex-wrap:wrap}
 .sheet .row button{flex:1 1 auto}
+
+/* ===== Latte theme: warm coffee palette matching the cat stickers; airy cards, fewer hard borders ===== */
+:root{
+  --bg:#FBF5EC; --surface:#FFFDF9; --ink:#2B1E14; --muted:#7A6453; --line:#EEE3D4;
+  --accent:#8A5A35; --head:#6B4428; --amber:#F2B43C; --amber-ink:#2B1E14;
+  --ok:#2E7D4F; --ok-bg:#E3F3E8; --near:#B5650F; --near-bg:#FCEBD2; --bad:#C2413A; --bad-bg:#FBE3DF; --miss:#9A8B7D;
+  --sep:#C2733A; --other:#F6EEE3; --soft:#F4E9DA; --shadow:0 2px 0 rgba(107,68,40,.06),0 8px 24px rgba(107,68,40,.07);
+  --f-ui:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-disp:"Baloo 2","Nunito",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1C1511; --surface:#271E18; --ink:#F4EBDD; --muted:#BBA894; --line:#3A2E25;
+  --accent:#E3B07E; --head:#2E2018; --amber:#F2B43C; --amber-ink:#2B1E14;
+  --ok:#6FD39A; --ok-bg:#1D3527; --near:#F0A65A; --near-bg:#3B2914; --bad:#FF8A80; --bad-bg:#43201C; --miss:#8E7F72;
+  --sep:#E0A060; --other:#211913; --soft:#30251D; --shadow:0 2px 0 rgba(0,0,0,.2),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1C1511; --surface:#271E18; --ink:#F4EBDD; --muted:#BBA894; --line:#3A2E25;
+  --accent:#E3B07E; --head:#2E2018; --amber:#F2B43C; --amber-ink:#2B1E14;
+  --ok:#6FD39A; --ok-bg:#1D3527; --near:#F0A65A; --near-bg:#3B2914; --bad:#FF8A80; --bad-bg:#43201C; --miss:#8E7F72;
+  --sep:#E0A060; --other:#211913; --soft:#30251D; --shadow:0 2px 0 rgba(0,0,0,.2),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}
+body{font-size:16.5px;line-height:1.6}
+main{padding-block:24px 64px;gap:22px}
+h2{font-family:var(--f-disp);font-size:24px;line-height:1.25;font-weight:700;margin:4px 0 0}
+h3{font-family:var(--f-disp)}
+.muted{font-size:15px}
+header.top{background:var(--head)}
+header.top .wrap{padding-block:10px}
+header.top h1{font-family:var(--f-disp);font-size:22px;font-weight:800;display:flex;align-items:center;gap:10px}
+header.top h1 .logo{width:40px;height:40px;flex:none}
+header.top h1 small{font-family:var(--f-ui);font-size:12.5px;font-weight:600;opacity:.85}
+button{border-radius:999px;border:1.5px solid var(--line);font-weight:700;padding:10px 18px}
+button.primary{box-shadow:0 3px 0 #C98A1C}
+button.primary:active{transform:translateY(2px);box-shadow:0 1px 0 #C98A1C}
+button.ghost{border-color:rgba(255,255,255,.45);font-weight:700}
+.notice{border:none;border-radius:16px;padding:14px 16px}
+.card,.lesson,details.sess,details.video,.tcard,.logincard,.deadline,.alert-row{border:none;box-shadow:var(--shadow)}
+.card{border-radius:22px;padding:20px;gap:14px}
+.card.other{box-shadow:none;background:var(--other)}
+.lesson{border-radius:18px;padding:14px 16px;background:var(--surface)}
+.ring{width:52px;height:52px}
+.ring i{width:42px;height:42px;font-size:13px}
+.lessons{gap:12px}
+.pick button{border-radius:22px;min-height:120px;font-family:var(--f-disp);font-size:26px;box-shadow:var(--shadow);border:none;display:grid;place-items:center;gap:4px}
+.pick button span{font-size:30px;line-height:1}
+.tabs{background:var(--soft);border-radius:999px;padding:5px}
+.tab{border-radius:999px;font-size:16px}
+.tab.on{box-shadow:var(--shadow)}
+details.sess{border-radius:20px}
+details.sess summary{padding:14px 18px}
+.sname{font-family:var(--f-disp);font-size:19px}
+details.sess .lessons{padding:0 12px 14px}
+details.sess .lesson{box-shadow:none;background:var(--other)}
+.alert{border:none;border-radius:22px;padding:18px;position:relative;background:var(--near-bg);gap:10px}
+.alert h2{font-size:20px;padding-right:96px}
+.alert .sticker{position:absolute;right:10px;top:-14px;width:96px;transform:rotate(6deg)}
+.alert-row{border-radius:16px}
+.allclear{display:flex;align-items:center;gap:14px;border-radius:22px;padding:14px 18px;font-size:16px}
+.allclear img{width:84px;flex:none}
+.deadline{border-left:none;border-radius:20px;background:var(--soft)}
+.deadline.soon{background:var(--near-bg)} .deadline.over{background:var(--bad-bg)}
+.deadline .big{font-family:var(--f-disp);font-size:34px}
+.due{font-weight:800}
+.sent{font-size:21px}
+.result{border-top:2px dashed var(--line);padding-top:14px}
+.cheer{display:flex;align-items:center;gap:12px}
+.cheer img{width:76px;flex:none;transform:rotate(-4deg)}
+.cheer .score b{font-family:var(--f-disp);font-size:34px}
+.fixes li{border:none;border-left:5px solid var(--bad);background:var(--other);border-radius:14px}
+.logincard{border-radius:22px;padding:18px;grid-template-columns:1fr;position:relative}
+.logincard .sticker{position:absolute;right:12px;top:-12px;width:58px;transform:rotate(12deg)}
+.logincard p{padding-right:56px}
+.gbtn{border-radius:999px}
+.pickhero{display:flex;align-items:center;gap:14px}
+.pickhero img{width:110px;flex:none}
+.foot{display:flex;align-items:center;justify-content:center;gap:8px}
+.foot img{width:28px}
+.tcard{border-radius:22px;padding:18px}
+details.cmp summary{font-weight:800}
+.take{background:var(--other);border-radius:16px;padding:10px 12px}
+.ttable th,.ttable td{border-top-color:var(--line)}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <h1>SpeakBack<small id="who"></small></h1>
+  <h1><img class="logo" src="stickers/cup-cat.svg" alt=""><span>SpeakBack<small id="who"></small></span></h1>
   <button class="ghost" id="switchBtn" hidden>Đổi tên</button>
 </div></header>
 <main class="wrap" id="app"><p class="muted">Đang tải bài…</p></main>
@@ -258,7 +340,7 @@ function deadlineBox(L) {
   if (!H) return "";
   const d = dueInfo(H.deadline);
   return `<div class="deadline ${d.cls}" role="status">
-    <div class="t"><b>${esc(hwTitle(H))}</b><span>${esc(H.note || "")}</span></div>
+    <div class="t"><b>⏰ ${esc(hwTitle(H))}</b><span>${esc(H.note || "")}</span></div>
     <div class="big">${esc(d.big)}<small>${esc(d.sub)}</small></div></div>`;
 }
 
@@ -451,15 +533,15 @@ function viewPick() {
   const u = cloudUser(), google = GOOGLE_SVG;
   $("#app").innerHTML = `${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}
     ${cloudOn() && !u ? `
-    <h2>Đăng nhập để lưu tiến độ</h2>
+    <div class="pickhero"><img src="stickers/wink.svg" alt=""><h2>Chào em! 👋 Đăng nhập để lưu tiến độ nha</h2></div>
     <p class="muted">Đăng nhập bằng Gmail thì em mở máy nào cũng thấy mình đã luyện câu nào, xong homework nào.</p>
     <button class="gbtn" id="gSignIn">${google}<span>Đăng nhập bằng Google</span></button>
     <p class="muted" id="gErr" hidden></p>
     <details class="nolog"><summary>Dùng không đăng nhập (chỉ lưu trên máy này)</summary>
       <div class="pick">${DATA.students.map(s => `<button data-id="${s.id}">${esc(s.name)}</button>`).join("")}</div></details>` : `
-    <h2>${u ? `Chào ${esc(u.displayName || u.email)}! Em là ai?` : "Em là ai?"}</h2>
+    <div class="pickhero"><img src="stickers/wink.svg" alt=""><h2>${u ? `Chào ${esc(u.displayName || u.email)}! 👋 Em là ai?` : "Chào em! 👋 Em là ai?"}</h2></div>
     <p class="muted">${u ? "Chọn tên 1 lần, lần sau đăng nhập web tự nhận ra em." : "Chọn tên để xem bài luyện của em. Kết quả luyện lưu trên máy này."}</p>
-    <div class="pick">${DATA.students.map(s => `<button data-id="${s.id}">${esc(s.name)}</button>`).join("")}</div>`}`;
+    <div class="pick">${DATA.students.map((s, k) => `<button data-id="${s.id}"><span>${["🐱", "🐯", "🦊", "🐼"][k % 4]}</span>${esc(s.name)}</button>`).join("")}</div>`}`;
   wireSignIn();
   $("#app").querySelectorAll(".pick button").forEach(b => b.addEventListener("click", () => {
     student = b.dataset.id; store.set("student", student); location.hash = "";
@@ -477,7 +559,7 @@ function skillOf(L) {
 function lessonButton(L) {
   const p = lessonProgress(L), r = myRole(L), H = homeworkOf(L);
   const n = L.sentences.filter(s => isMine(L, s)).length;
-  const hwChip = H ? (() => { const d = dueInfo(H.deadline); return `<span class="due ${p >= 100 ? "" : d.cls}">${p >= 100 ? "Đã xong" : "Homework · " + esc(d.chip)}</span>`; })() : "";
+  const hwChip = H ? (() => { const d = dueInfo(H.deadline); return `<span class="due ${p >= 100 ? "" : d.cls}">${p >= 100 ? "✅ Đã xong" : "📝 Homework · " + esc(d.chip)}</span>`; })() : "";
   return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
     <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Nghe chép" : "Shadowing"} · ${n} câu</span>${hwChip ? `<span class="chips">${hwChip}</span>` : ""}</span></button>`;
 }
@@ -504,31 +586,32 @@ function viewList() {
       const dueHere = todo.filter(x => x.ls.some(L => inS.includes(L)));
       const key = skill + n, isOpen = open[key] != null ? open[key] : (k === 0 || dueHere.length > 0);
       return `<details class="sess" data-key="${key}" ${isOpen ? "open" : ""}>
-        <summary><span class="sname">Buổi ${n}</span><span class="smeta">${inS.length} bài${dueHere.length ? ` · <span class="due ${dueInfo(dueHere[0].H.deadline).cls}">Có homework</span>` : ""}</span></summary>
+        <summary><span class="sname">📚 Buổi ${n}</span><span class="smeta">${inS.length} bài${dueHere.length ? ` · <span class="due ${dueInfo(dueHere[0].H.deadline).cls}">Có homework</span>` : ""}</span></summary>
         <div class="lessons">${inS.map(lessonButton).join("")}</div></details>`;
     }).join("");
   };
   const count = skill => todo.filter(x => (x.H.skill || skillOf(x.ls[0])) === skill).length;
-  const loginCard = cloudOn() && !cloudUser() ? `<section class="logincard">
-      <p><b>Đăng nhập Gmail để lưu tiến độ online.</b> Đổi máy không mất bài đã luyện; phần đã luyện trên máy này cũng được giữ lại.</p>
+  const loginCard = cloudOn() && !cloudUser() ? `<section class="logincard"><img class="sticker" src="stickers/paw.svg" alt="">
+      <p>🔐 <b>Đăng nhập Gmail để lưu tiến độ online.</b> Đổi máy không mất bài đã luyện; phần đã luyện trên máy này cũng được giữ lại.</p>
       <button class="gbtn" id="gSignIn">${GOOGLE_SVG}<span>Đăng nhập bằng Google</span></button>
       <p class="muted" id="gErr" hidden></p></section>` : "";
   $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}
     ${todo.length ? `<section class="alert" aria-label="Bài tập về nhà">
-      <h2>Bài tập về nhà cần làm</h2>
+      <img class="sticker" src="stickers/wave.svg" alt="">
+      <h2>⏰ Bài tập về nhà cần làm</h2>
       ${todo.map(({ H, ls, p }) => {
         const d = dueInfo(H.deadline);
         return `<button class="alert-row ${d.cls}" data-id="${ls[0].id}">
           <span class="t"><b>${esc(H.title)}</b><span>Deadline ${esc(fmtDeadline(H.deadline))} · đã làm ${p}%</span></span>
           <span class="due ${d.cls}">${esc(d.chip)}</span></button>`;
       }).join("")}
-    </section>` : `<div class="allclear">Em đã làm xong hết bài tập về nhà. Luyện thêm bài cũ bên dưới nha.</div>`}
+    </section>` : `<div class="allclear"><img src="stickers/sleep.svg" alt=""><span>🎉 Em làm xong hết bài tập về nhà rồi! Luyện thêm bài cũ bên dưới cho nhớ lâu nha.</span></div>`}
     <div class="tabs" role="tablist">
-      ${["Speaking", "Listening"].map(t => `<button role="tab" class="tab${t === tab ? " on" : ""}" data-tab="${t}" aria-selected="${t === tab}">${t}${count(t) ? ` <span class="dot">${count(t)}</span>` : ""}</button>`).join("")}
+      ${["Speaking", "Listening"].map(t => `<button role="tab" class="tab${t === tab ? " on" : ""}" data-tab="${t}" aria-selected="${t === tab}">${t === "Speaking" ? "🗣️" : "🎧"} ${t}${count(t) ? ` <span class="dot">${count(t)}</span>` : ""}</button>`).join("")}
     </div>
     <div class="folder">${folder(tab)}</div>
     <p class="muted">Mỗi câu: nghe mẫu, bấm nói (hoặc gõ lại với bài nghe chép), xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
-    <p class="foot">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
+    <p class="foot"><img src="stickers/paw.svg" alt="">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
   wireSignIn();
   $("#app").querySelectorAll(".lesson, .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
   $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); viewList(); }));
@@ -944,16 +1027,16 @@ function startClip(stream) {
   } catch { return null; }
 }
 function fmtWhen(ms) { const d = new Date(ms); return `${d.getDate()}/${d.getMonth() + 1} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; }
-function renderCompare(L, i, card) {
+function renderCompare(L, i, card, given, voice) {
   const box = card.querySelector(".cmp");
   if (!box) return;
-  const cur = getTakes(L)[i];
+  const cur = given || getTakes(L)[i];
   if (!cur || !cur.first) { box.hidden = true; return; }
   const mem = CLIPS[L.id + ":" + i] || {}, chunks = parseSentence(L.sentences[i].text), n = chunks.flat().length;
   const row = (label, t, url, kind) => {
     const st = t.st && t.st.length === n ? [...t.st].map(c => ({ cls: ST_CODE[c] || "bad" })) : null;
     return `<div class="take"><div class="take-h"><b>${label}</b><span>${t.s}% · ${fmtWhen(t.at)}</span>
-      ${url ? `<button class="playtake" data-kind="${kind}">▶ Nghe giọng em</button>` : `<span class="muted">không có ghi âm</span>`}</div>
+      ${url ? `<button class="playtake" data-kind="${kind}">▶ ${voice || "Nghe giọng em"}</button>` : `<span class="muted">không có ghi âm</span>`}</div>
       <div class="sent small">${renderSentenceHTML(chunks, st)}</div></div>`;
   };
   const same = cur.first.at === cur.last.at, diff = cur.last.s - cur.first.s;
@@ -1025,9 +1108,10 @@ function grade(L, i, card, chunks, exp, top, alts, clipP) {
   const fixes = statuses.map((st, k) => ({ st, w: exp[k], raw: raws[k].raw })).filter(x => x.st.cls !== "ok" && !seen.has(x.w) && seen.add(x.w));
   const res = card.querySelector(".result");
   res.hidden = false;
-  const verdict = score >= 90 ? "Câu này ổn. Qua câu tiếp theo được." : score >= 80 ? "Đạt. Sửa nốt mấy từ dưới rồi qua câu sau." : "Chưa đạt 80%. Sửa các từ dưới rồi nói lại câu này.";
+  const verdict = score >= 90 ? "Giỏi quá! Qua câu tiếp theo được rồi." : score >= 80 ? "Đạt rồi! Sửa nốt mấy từ dưới là xịn." : score >= 50 ? "Gần được rồi. Sửa các từ dưới rồi nói lại nha." : "Từ từ thôi. Bấm Nghe mẫu, rồi nói lại chậm và rõ nha.";
   res.innerHTML = `
-    <div class="score"><b style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--near)" : "var(--bad)"}">${score}%</b><span>${verdict}</span></div>
+    <div class="cheer"><img src="stickers/${score >= 90 ? "wave" : score >= 80 ? "wink" : score >= 50 ? "cup-cat" : "sleep"}.svg" alt="">
+      <div class="score"><b style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--near)" : "var(--bad)"}">${score}%</b><span>${score >= 90 ? "🎉 " : score >= 80 ? "👍 " : score >= 50 ? "☕ " : "💪 "}${verdict}</span></div></div>
     <div class="heard">Máy nghe được: “${esc(top)}”</div>
     ${fixes.length ? `<ul class="fixes">${fixes.map(f => {
       const ipa = DATA.ipa[f.w], tip = DATA.tips[f.w];
@@ -1071,7 +1155,7 @@ function viewTeacher() {
   const lessonsFor = sid => DATA.lessons.filter(L => L.for.includes(sid));
   const cell = (pct, cls) => `<span class="tpct ${cls || (pct >= 100 ? "ok" : pct > 0 ? "mid" : "zero")}">${pct}%</span>`;
   $("#app").innerHTML = `
-    <h2>Tiến độ của lớp</h2>
+    <h2>👩‍🏫 Tiến độ của lớp</h2>
     <p class="muted">Điểm tốt nhất từng câu; câu đạt từ 80% tính là xong. Dữ liệu chỉ có khi học sinh đăng nhập Gmail lúc luyện.</p>
     <div class="actions"><button id="tReload">Tải lại</button></div>
     ${hws.length ? `<section class="tcard"><h3>Homework</h3><div class="tscroll"><table class="ttable">
@@ -1090,19 +1174,66 @@ function viewTeacher() {
       <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
       <div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
         const p = progressOf(L, r.s.id, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[r.s.id] : null;
-        return `<div class="trow">
+        return `<button class="trow" data-go="teach~${r.s.id}~${L.id}">
           <div class="t"><b>${esc(L.title)}</b><span>${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""}${H ? " · homework" : ""} · đã thử ${p.tried.length}/${p.idx.length} câu</span>
           ${p.weak.length ? `<span class="weak">Chưa đạt 80%: ${p.weak.slice(0, 12).map(i => "câu " + (p.idx.indexOf(i) + 1) + " (" + r.best[L.id][i] + "%)").join(", ")}${p.weak.length > 12 ? "…" : ""}</span>` : ""}</div>
-          ${cell(p.pct)}</div>`;
+          ${cell(p.pct)}<span class="chev" aria-hidden="true">›</span></button>`;
       }).join("")}</div></details>`).join("")}
     ${unknown.length ? `<p class="muted">Tài khoản đã đăng nhập nhưng chưa chọn tên: ${esc(unknown.map(u => u.email).join(", "))}</p>` : ""}`;
   $("#tReload").addEventListener("click", async e => { e.currentTarget.disabled = true; await checkTeacher(cloudUser()); route(); });
   $("#app").querySelectorAll("details.tstu").forEach(d => d.addEventListener("toggle", () => { if (d.open) teachOpen = d.dataset.sid; }));
+  $("#app").querySelectorAll(".trow[data-go]").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
+}
+/* teacher: one student's lesson, sentence by sentence, with first / latest takes and recordings */
+async function viewTeacherLesson(sid, L) {
+  const S = DATA.students.find(x => x.id === sid);
+  const docs = TEACH.filter(u => u.student === sid);
+  const best = {};
+  for (const u of docs) for (const [i, v] of Object.entries((u.best || {})[L.id] || {})) if (best[i] == null || v > best[i]) best[i] = v;
+  const p = progressOf(L, sid, best), role = L.roles ? L.roles[sid] : null;
+  $("#app").innerHTML = `<button class="back" id="backBtn">← Tiến độ của lớp</button>
+    <h2>${esc(S.name)} · ${esc(L.title)}</h2>
+    <p class="muted">${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""} · xong ${p.done.length}/${p.idx.length} câu · đã thử ${p.tried.length} câu</p>
+    <details class="video"><summary>🎬 Video mẫu cả bài</summary><video src="${esc(L.video)}" controls playsinline preload="metadata"></video></details>
+    <p class="muted" id="tLoading">Đang tải các lần nói…</p>
+    ${p.idx.map((i, k) => `<section class="card" data-i="${i}">
+      <div class="n"><span>Câu ${k + 1}/${p.idx.length}${L.sentences[i].label ? " · " + esc(L.sentences[i].label) : ""}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : "Chưa thử"}</span></div>
+      <div class="sent small">${renderSentenceHTML(parseSentence(L.sentences[i].text))}</div>
+      <div class="actions"><button class="listen">Nghe mẫu</button></div>
+      <details class="cmp" hidden></details></section>`).join("")}`;
+  $("#backBtn").addEventListener("click", () => { teachOpen = sid; location.hash = ""; });
+  player.src = L.video;
+  $("#app").querySelectorAll(".card").forEach(c => { const S2 = L.sentences[+c.dataset.i]; c.querySelector(".listen").addEventListener("click", e => playSpan(S2.start, S2.end, e.currentTarget)); });
+  /* takes from every account of this student: earliest "first", latest "last" */
+  const takes = {};
+  try {
+    for (const u of docs) for (const r of await window.Cloud.loadTakesOf(u.uid, L.id)) {
+      const cur = takes[r.i] || (takes[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at, audio: r.audio };
+      if (r.kind === "first" ? (!cur.first || t.at < cur.first.at) : (!cur.last || t.at > cur.last.at)) cur[r.kind] = t;
+    }
+  } catch (e) { console.error(e); }
+  if (location.hash !== `#teach~${sid}~${L.id}`) return;
+  const ld = $("#tLoading");
+  if (ld) ld.textContent = Object.keys(takes).length ? "" : "Chưa có lần nói nào được lưu (học sinh cần đăng nhập Gmail lúc luyện).";
+  $("#app").querySelectorAll(".card[data-i]").forEach(c => {
+    const i = +c.dataset.i, cur = takes[i];
+    if (!cur) return;
+    const first = cur.first || cur.last, last = cur.last || cur.first;
+    CLIPS[L.id + ":" + i] = { first: first.audio, last: last.audio };
+    renderCompare(L, i, c, { first, last }, "Nghe ghi âm");
+    c.querySelector(".cmp").open = true;
+  });
 }
 
 function route() {
   if (!DATA) return;
-  if (TEACH) { setWho(); return viewTeacher(); }
+  if (TEACH) {
+    setWho();
+    const m = location.hash.match(/^#teach~([^~]+)~(.+)$/);
+    const T = m && DATA.lessons.find(x => x.id === m[2]);
+    if (T && DATA.students.some(s => s.id === m[1])) { window.scrollTo(0, 0); return viewTeacherLesson(m[1], T); }
+    return viewTeacher();
+  }
   if (!DATA.students.some(s => s.id === student)) { student = null; setWho(); return viewPick(); }
   setWho();
   const id = location.hash.slice(1);
