@@ -164,6 +164,10 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 .actions{display:flex;flex-wrap:wrap;gap:8px}
 .actions button{flex:1 1 auto}
 .live{font-size:15px;color:var(--muted);min-height:1.5em}
+.card.free .q{font-weight:600}
+.card.free .hint{margin:0;font-size:14px}
+.card.free .hint b{font-weight:600}
+.card.free .are{margin:0;font-size:13px;color:var(--muted)}
 .result{display:grid;gap:10px;border-top:1px dashed var(--line);padding-top:12px}
 .score{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .score b{font-size:28px;font-variant-numeric:tabular-nums}
@@ -582,7 +586,7 @@ function lessonButton(L) {
   const n = L.sentences.filter(s => isMine(L, s)).length;
   const hwChip = H ? (() => { const d = dueInfo(H.deadline); return `<span class="due ${p >= 100 ? "" : d.cls}">${p >= 100 ? "✅ Đã xong" : "📝 Homework · " + esc(d.chip)}</span>`; })() : "";
   return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
-    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Nghe chép" : "Shadowing"} · ${n} câu</span>${hwChip ? `<span class="chips">${hwChip}</span>` : ""}</span></button>`;
+    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Nghe chép" : L.sentences.some(s => s.free) ? "Luyện nói + tự trả lời" : "Shadowing"} · ${n} câu</span>${hwChip ? `<span class="chips">${hwChip}</span>` : ""}</span></button>`;
 }
 /* homework still to do: not finished, deadline not passed more than 7 days ago */
 function pendingHomework(mine) {
@@ -632,7 +636,7 @@ function viewList() {
     </div>
     <div class="folder">${folder(tab)}</div>
     <p class="muted">Mỗi câu: nghe mẫu, bấm nói (hoặc gõ lại với bài nghe chép), xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
-    <p class="foot"><img src="stickers/paw.svg" alt="">Nộp bài ghi âm cho chị qua Zalo như cũ nha.</p>`;
+    <p class="foot"><img src="stickers/paw.svg" alt="">Chị chấm bài ngay trên web, em không cần gửi Zalo. Khi nào cần gửi Zalo chị sẽ nhắn em nha.</p>`;
   wireSignIn();
   $("#app").querySelectorAll(".lesson, .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
   startTour("list");
@@ -675,6 +679,17 @@ function viewLesson(L) {
     ${deadlineBox(L)}
     ${L.sentences.map((s, i) => {
       const head = s.speaker ? `<span class="who">${esc(s.speaker)}</span>` : "";
+      if (s.free) return `
+      <section class="card free" data-i="${i}">
+        <div class="n"><span>Câu ${mineIdx.indexOf(i) + 1}/${mineIdx.length}</span><span class="best">${best[i] != null ? "Đã ghi âm" : ""}</span></div>
+        ${s.label ? `<span class="tag">${esc(s.label)}</span>` : ""}
+        <div class="sent q">❓ ${esc(s.q)}</div>
+        ${s.hint ? `<p class="hint">💡 Dùng ít nhất 2 từ/cụm: <b>${esc(s.hint)}</b></p>` : ""}
+        <p class="are">A.R.E.: Answer → Reason → Example · 3–4 câu · 20–30 giây</p>
+        <div class="actions"><button class="primary recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm câu trả lời</button></div>
+        <div class="live" aria-live="polite"></div>
+        <details class="cmp" hidden></details>
+      </section>`;
       if (!isMine(L, s)) return `
       <section class="card other" data-i="${i}">
         <div class="n">${head}<span>Nghe</span></div>
@@ -704,6 +719,7 @@ function viewLesson(L) {
   else if (L.roles && $(".card.other")) startTour("dialog");
   $("#app").querySelectorAll(".card").forEach(card => {
     const i = +card.dataset.i, S = L.sentences[i];
+    if (S.free) { card.querySelector(".recfree").addEventListener("click", e => recordFree(L, i, card, e.currentTarget)); renderCompare(L, i, card); return; }
     card.querySelector(".listen").addEventListener("click", e => playSpan(S.start, S.end, e.currentTarget));
     card.querySelectorAll(".chunk").forEach(ch => ch.addEventListener("click", () => {
       const span = S.chunks[+ch.dataset.c]; if (span) playSpan(span[0], span[1], ch);
@@ -1052,11 +1068,57 @@ function startClip(stream) {
   } catch { return null; }
 }
 function fmtWhen(ms) { const d = new Date(ms); return `${d.getDate()}/${d.getMonth() + 1} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; }
+/* free answer (no model sentence): record up to 90 s, no scoring; the recording is what the teacher listens to */
+async function recordFree(L, i, card, btn) {
+  if (rec) { rec._finish ? rec._finish() : rec.stop(); return; }
+  if (otherIOSBrowser) { showMic("safari"); return; }
+  player.pause();
+  const live = card.querySelector(".live");
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } }); }
+  catch (e) { window.__lastErr = (e && e.name) || "mic"; showMic("blocked"); return; }
+  store.set("micOK", true);
+  const clip = startClip(stream);
+  if (!clip) { stream.getTracks().forEach(t => t.stop()); live.textContent = "Máy này chưa ghi âm được. Em mở bằng Chrome hoặc Safari bản mới nha."; return; }
+  const t0 = Date.now();
+  btn.textContent = "⏺ Đang ghi… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
+  const tick = setInterval(() => { live.textContent = `Đang ghi ${Math.round((Date.now() - t0) / 1000)} giây · nói 20–30 giây rồi bấm dừng.`; }, 500);
+  const session = { done: false, stop: async () => {
+    if (session.done) return; session.done = true;
+    clearInterval(tick); clearTimeout(cap);
+    if (rec === session) rec = null;
+    const blob = await clip.stop().catch(() => null);
+    stream.getTracks().forEach(t => t.stop());
+    btn.textContent = "🎙 Ghi âm lại"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
+    const sec = Math.round((Date.now() - t0) / 1000);
+    if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
+    live.textContent = `Đã lưu bài nói ${sec} giây.` + (cloudUser() ? " Chị sẽ nghe và nhận xét trên web." : " Em đăng nhập Gmail thì chị mới nghe được bài này nha.");
+    const key = `best:${student}:${L.id}`, best = store.get(key, {});
+    best[i] = 100; store.set(key, best); syncBest(L.id, best);
+    card.querySelector(".best").textContent = "Đã ghi âm";
+    recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));
+  } };
+  const cap = setTimeout(() => session.stop(), 90000);
+  rec = session;
+}
 function renderCompare(L, i, card, given, voice) {
   const box = card.querySelector(".cmp");
   if (!box) return;
   const cur = given || getTakes(L)[i];
   if (!cur || !cur.first) { box.hidden = true; return; }
+  if (L.sentences[i].free) {
+    const mem = CLIPS[L.id + ":" + i] || {}, same = cur.first.at === cur.last.at;
+    const row = (label, t, url, kind) => `<div class="take"><div class="take-h"><b>${label}</b><span>${esc(t.h || "")} · ${fmtWhen(t.at)}</span>
+      ${url ? `<button class="playtake" data-kind="${kind}">▶ ${voice || "Nghe giọng em"}</button>` : `<span class="muted">không có ghi âm</span>`}</div></div>`;
+    const wasOpen = box.open;
+    box.hidden = false;
+    box.innerHTML = `<summary>${same ? "Đã ghi âm 1 lần" : "Bài nói lần đầu và lần gần nhất"}</summary>${row("Lần đầu", cur.first, mem.first, "first")}${same ? "" : row("Gần nhất", cur.last, mem.last, "last")}`;
+    box.open = wasOpen;
+    box.querySelectorAll(".playtake").forEach(b => b.addEventListener("click", () => {
+      try { player.pause(); const a = new Audio(mem[b.dataset.kind]); a.play().catch(() => {}); } catch {}
+    }));
+    return;
+  }
   const mem = CLIPS[L.id + ":" + i] || {}, chunks = parseSentence(L.sentences[i].text), n = chunks.flat().length;
   const row = (label, t, url, kind) => {
     const st = t.st && t.st.length === n ? [...t.st].map(c => ({ cls: ST_CODE[c] || "bad" })) : null;
@@ -1221,14 +1283,18 @@ async function viewTeacherLesson(sid, L) {
     <p class="muted">${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""} · xong ${p.done.length}/${p.idx.length} câu · đã thử ${p.tried.length} câu</p>
     <details class="video"><summary>🎬 Video mẫu cả bài</summary><video src="${esc(L.video)}" controls playsinline preload="metadata"></video></details>
     <p class="muted" id="tLoading">Đang tải các lần nói…</p>
-    ${p.idx.map((i, k) => `<section class="card" data-i="${i}">
+    ${p.idx.map((i, k) => L.sentences[i].free ? `<section class="card free" data-i="${i}">
+      <div class="n"><span>Câu ${k + 1}/${p.idx.length}${L.sentences[i].label ? " · " + esc(L.sentences[i].label) : ""}</span><span class="best">${best[i] != null ? "Đã ghi âm" : "Chưa ghi âm"}</span></div>
+      <div class="sent q small">❓ ${esc(L.sentences[i].q)}</div>
+      ${L.sentences[i].hint ? `<p class="hint">💡 ${esc(L.sentences[i].hint)}</p>` : ""}
+      <details class="cmp" hidden></details></section>` : `<section class="card" data-i="${i}">
       <div class="n"><span>Câu ${k + 1}/${p.idx.length}${L.sentences[i].label ? " · " + esc(L.sentences[i].label) : ""}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : "Chưa thử"}</span></div>
       <div class="sent small">${renderSentenceHTML(parseSentence(L.sentences[i].text))}</div>
       <div class="actions"><button class="listen">Nghe mẫu</button></div>
       <details class="cmp" hidden></details></section>`).join("")}`;
   $("#backBtn").addEventListener("click", () => { teachOpen = sid; location.hash = ""; });
   player.src = L.video;
-  $("#app").querySelectorAll(".card").forEach(c => { const S2 = L.sentences[+c.dataset.i]; c.querySelector(".listen").addEventListener("click", e => playSpan(S2.start, S2.end, e.currentTarget)); });
+  $("#app").querySelectorAll(".card").forEach(c => { const S2 = L.sentences[+c.dataset.i]; if (!S2.free) c.querySelector(".listen").addEventListener("click", e => playSpan(S2.start, S2.end, e.currentTarget)); });
   /* takes from every account of this student: earliest "first", latest "last" */
   const takes = {};
   try {
@@ -1266,6 +1332,7 @@ const TOURS = {
     { sel: ".card:not(.other) .listen", text: "🎧 Nghe mẫu cả câu trước." },
     { sel: ".card:not(.other) .speak", text: "🗣️ Bấm rồi đọc cả câu. Máy chấm từng từ: xanh đúng, đỏ sai. Đạt 80% là xong câu." },
     { sel: ".card.other", text: "👂 Bài hội thoại: câu của bạn kia chỉ cần nghe." },
+    { sel: ".card.free .recfree", text: "🎙 Câu tự trả lời: bấm ghi âm, nói 20–30 giây, bấm lần nữa để dừng. Chị nghe bài trên web." },
     { sel: "#helpBtn", text: "❓ Bấm đây để xem lại hướng dẫn." },
   ],
   dialog: [

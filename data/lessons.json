@@ -7,6 +7,10 @@
   {
    "id": "thu",
    "name": "Thư"
+  },
+  {
+   "id": "vananh",
+   "name": "Vân Anh"
   }
  ],
  "homework": [
@@ -30,6 +34,19 @@
    "note": "Shadowing hội thoại Part 1: Thư nói phần Linda, Đức nói phần Ryan.",
    "lessons": [
     "hw-l1-part1"
+   ]
+  },
+  {
+   "id": "hw-va-speaking-1",
+   "skill": "Speaking",
+   "session": 1,
+   "title": "Homework Speaking buổi 1",
+   "deadline": "2026-11-05",
+   "note": "3 bài: Âm cuối · Part 1 (nói lại câu mẫu + tự trả lời 3 câu) · Shadowing My senior year.",
+   "lessons": [
+    "va1-final-sounds",
+    "va1-part1",
+    "va1-shadowing"
    ]
   }
  ],
@@ -2271,6 +2288,909 @@
       [
        76.31,
        77.71
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "va1-final-sounds",
+   "session": 1,
+   "title": "Âm cuối – 21 âm",
+   "subtitle": "Đọc từ 3 lần + câu luyện",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/hw-s2-final-sounds.mp4",
+   "skill": "Speaking",
+   "topic": "Âm cuối (Final sounds)",
+   "theory": "media/hw-s2-final-sounds-theory.mp4",
+   "theoryTitle": "cách đặt môi, răng, lưỡi cho 21 âm cuối",
+   "sentences": [
+    {
+     "text": "laptoP / laptoP / laptoP / I work on my laptoP. //",
+     "start": 226.92,
+     "end": 232.0,
+     "chunks": [
+      [
+       2.8,
+       3.71
+      ],
+      [
+       5.21,
+       6.12
+      ],
+      [
+       7.63,
+       8.53
+      ],
+      [
+       10.04,
+       11.61
+      ]
+     ],
+     "label": "1 · /p/"
+    },
+    {
+     "text": "joB / joB / joB / She loves her new joB. //",
+     "start": 232.0,
+     "end": 236.27,
+     "chunks": [
+      [
+       14.17,
+       14.87
+      ],
+      [
+       16.17,
+       16.87
+      ],
+      [
+       18.17,
+       18.87
+      ],
+      [
+       20.16,
+       21.58
+      ]
+     ],
+     "label": "2 · /b/"
+    },
+    {
+     "text": "drafT / drafT / drafT / Please read my first drafT. //",
+     "start": 236.27,
+     "end": 241.05,
+     "chunks": [
+      [
+       23.99,
+       24.74
+      ],
+      [
+       26.1,
+       26.85
+      ],
+      [
+       28.2,
+       28.96
+      ],
+      [
+       30.31,
+       32.04
+      ]
+     ],
+     "label": "3 · /t/"
+    },
+    {
+     "text": "paiD / paiD / paiD / This internship is paiD. //",
+     "start": 241.05,
+     "end": 245.65,
+     "chunks": [
+      [
+       34.77,
+       35.49
+      ],
+      [
+       36.81,
+       37.54
+      ],
+      [
+       38.87,
+       39.6
+      ],
+      [
+       40.92,
+       42.65
+      ]
+     ],
+     "label": "4 · /d/"
+    },
+    {
+     "text": "desK / desK / desK / I sit at my desK. //",
+     "start": 245.65,
+     "end": 250.06,
+     "chunks": [
+      [
+       45.37,
+       46.14
+      ],
+      [
+       47.5,
+       48.27
+      ],
+      [
+       49.63,
+       50.4
+      ],
+      [
+       51.76,
+       53.11
+      ]
+     ],
+     "label": "5 · /k/"
+    },
+    {
+     "text": "biG / biG / biG / The company is biG. //",
+     "start": 250.06,
+     "end": 254.27,
+     "chunks": [
+      [
+       55.46,
+       56.12
+      ],
+      [
+       57.39,
+       58.05
+      ],
+      [
+       59.32,
+       59.98
+      ],
+      [
+       61.24,
+       62.64
+      ]
+     ],
+     "label": "6 · /g/"
+    },
+    {
+     "text": "staFF / staFF / staFF / Say hi to the staFF. //",
+     "start": 254.27,
+     "end": 258.72,
+     "chunks": [
+      [
+       65.03,
+       65.78
+      ],
+      [
+       67.13,
+       67.88
+      ],
+      [
+       69.23,
+       69.98
+      ],
+      [
+       71.33,
+       72.72
+      ]
+     ],
+     "label": "7 · /f/"
+    },
+    {
+     "text": "leaVE / leaVE / leaVE / It's time to leaVE. //",
+     "start": 258.72,
+     "end": 263.15,
+     "chunks": [
+      [
+       75.11,
+       75.84
+      ],
+      [
+       77.17,
+       77.89
+      ],
+      [
+       79.22,
+       79.95
+      ],
+      [
+       81.28,
+       82.61
+      ]
+     ],
+     "label": "8 · /v/"
+    },
+    {
+     "text": "monTH / monTH / monTH / I start next monTH. //",
+     "start": 263.15,
+     "end": 267.46,
+     "chunks": [
+      [
+       84.94,
+       85.64
+      ],
+      [
+       86.94,
+       87.65
+      ],
+      [
+       88.95,
+       89.65
+      ],
+      [
+       90.96,
+       92.45
+      ]
+     ],
+     "label": "9 · /θ/"
+    },
+    {
+     "text": "smooTH / smooTH / smooTH / The interview was smooTH. //",
+     "start": 267.46,
+     "end": 271.99,
+     "chunks": [
+      [
+       94.95,
+       95.69
+      ],
+      [
+       97.03,
+       97.77
+      ],
+      [
+       99.11,
+       99.85
+      ],
+      [
+       101.19,
+       102.79
+      ]
+     ],
+     "label": "10 · /ð/"
+    },
+    {
+     "text": "boSS / boSS / boSS / This is my boSS. //",
+     "start": 271.99,
+     "end": 276.36,
+     "chunks": [
+      [
+       105.38,
+       106.13
+      ],
+      [
+       107.48,
+       108.24
+      ],
+      [
+       109.59,
+       110.34
+      ],
+      [
+       111.69,
+       112.97
+      ]
+     ],
+     "label": "11 · /s/"
+    },
+    {
+     "text": "planS / planS / planS / We changed our planS. //",
+     "start": 276.36,
+     "end": 281.21,
+     "chunks": [
+      [
+       115.24,
+       116.06
+      ],
+      [
+       117.47,
+       118.29
+      ],
+      [
+       119.7,
+       120.52
+      ],
+      [
+       121.94,
+       123.38
+      ]
+     ],
+     "label": "12 · /z/"
+    },
+    {
+     "text": "finiSH / finiSH / finiSH / I have a lot to finiSH. //",
+     "start": 281.21,
+     "end": 285.95,
+     "chunks": [
+      [
+       125.83,
+       126.63
+      ],
+      [
+       128.02,
+       128.82
+      ],
+      [
+       130.21,
+       131.01
+      ],
+      [
+       132.4,
+       134.01
+      ]
+     ],
+     "label": "13 · /ʃ/"
+    },
+    {
+     "text": "prestiGE / prestiGE / prestiGE / The job has prestiGE. //",
+     "start": 285.95,
+     "end": 290.91,
+     "chunks": [
+      [
+       136.63,
+       137.49
+      ],
+      [
+       138.95,
+       139.81
+      ],
+      [
+       141.26,
+       142.12
+      ],
+      [
+       143.58,
+       145.21
+      ]
+     ],
+     "label": "14 · /ʒ/"
+    },
+    {
+     "text": "researCH / researCH / researCH / I love my researCH. //",
+     "start": 290.91,
+     "end": 295.94,
+     "chunks": [
+      [
+       147.83,
+       148.81
+      ],
+      [
+       150.38,
+       151.36
+      ],
+      [
+       152.93,
+       153.91
+      ],
+      [
+       155.48,
+       156.99
+      ]
+     ],
+     "label": "15 · /tʃ/"
+    },
+    {
+     "text": "manaGE / manaGE / manaGE / It's hard to manaGE. //",
+     "start": 295.94,
+     "end": 300.74,
+     "chunks": [
+      [
+       159.5,
+       160.43
+      ],
+      [
+       161.97,
+       162.91
+      ],
+      [
+       164.45,
+       165.39
+      ],
+      [
+       166.93,
+       168.3
+      ]
+     ],
+     "label": "16 · /dʒ/"
+    },
+    {
+     "text": "teaM / teaM / teaM / Welcome to the teaM. //",
+     "start": 300.74,
+     "end": 305.24,
+     "chunks": [
+      [
+       170.68,
+       171.44
+      ],
+      [
+       172.79,
+       173.55
+      ],
+      [
+       174.9,
+       175.65
+      ],
+      [
+       177.01,
+       178.56
+      ]
+     ],
+     "label": "17 · /m/"
+    },
+    {
+     "text": "interN / interN / interN / I'm a new interN. //",
+     "start": 305.24,
+     "end": 309.95,
+     "chunks": [
+      [
+       181.11,
+       181.96
+      ],
+      [
+       183.4,
+       184.25
+      ],
+      [
+       185.69,
+       186.53
+      ],
+      [
+       187.98,
+       189.31
+      ]
+     ],
+     "label": "18 · /n/"
+    },
+    {
+     "text": "meetiNG / meetiNG / meetiNG / I'm late for the meetiNG. //",
+     "start": 309.95,
+     "end": 314.65,
+     "chunks": [
+      [
+       191.64,
+       192.44
+      ],
+      [
+       193.84,
+       194.64
+      ],
+      [
+       196.04,
+       196.84
+      ],
+      [
+       198.24,
+       199.7
+      ]
+     ],
+     "label": "19 · /ŋ/"
+    },
+    {
+     "text": "emaiL / emaiL / emaiL / Please check your emaiL. //",
+     "start": 314.65,
+     "end": 319.2,
+     "chunks": [
+      [
+       202.17,
+       202.98
+      ],
+      [
+       204.38,
+       205.18
+      ],
+      [
+       206.58,
+       207.38
+      ],
+      [
+       208.78,
+       210.24
+      ]
+     ],
+     "label": "20 · /l/"
+    },
+    {
+     "text": "careeR / careeR / careeR / I want a good careeR. //",
+     "start": 319.2,
+     "end": 323.61,
+     "chunks": [
+      [
+       212.7,
+       213.45
+      ],
+      [
+       214.81,
+       215.56
+      ],
+      [
+       216.91,
+       217.66
+      ],
+      [
+       219.01,
+       220.47
+      ]
+     ],
+     "label": "21 · /r/"
+    }
+   ]
+  },
+  {
+   "id": "va1-part1",
+   "session": 1,
+   "title": "Part 1 – Studies & School life",
+   "subtitle": "Nói lại câu mẫu Q1–Q5, rồi tự trả lời Q6–Q8 (có ghi âm)",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/va1-part1.mp4",
+   "skill": "Speaking",
+   "topic": "Studies & School life",
+   "sentences": [
+    {
+     "label": "Q1 · Work or studies",
+     "text": "I'm a 'student. / I'm in my 'senior year / of high 'school, // so right 'now, / I !!have a 'lot ‿ on my 'plate!!. //",
+     "start": 0.65,
+     "end": 7.08,
+     "chunks": [
+      [
+       0.8,
+       1.71
+      ],
+      [
+       2.01,
+       3.17
+      ],
+      [
+       3.47,
+       5.03
+      ],
+      [
+       5.33,
+       6.83
+      ]
+     ]
+    },
+    {
+     "label": "Q1 · Work or studies",
+     "text": "For 'instance, / I have 'extra classes / almost every 'evening, // and on 'weekends / I ++take a 'mock test++ / so I don't ++fall be'hind++. //",
+     "start": 7.78,
+     "end": 15.84,
+     "chunks": [
+      [
+       7.93,
+       8.81
+      ],
+      [
+       9.11,
+       10.52
+      ],
+      [
+       10.82,
+       12.53
+      ],
+      [
+       12.83,
+       13.98
+      ],
+      [
+       14.28,
+       15.59
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "I'd say 'math, / hands 'down. // Anything with 'numbers / is !!right ‿ up my 'alley!!. //",
+     "start": 16.54,
+     "end": 21.45,
+     "chunks": [
+      [
+       16.69,
+       17.58
+      ],
+      [
+       17.88,
+       19.79
+      ],
+      [
+       20.09,
+       21.2
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "And once I !!get the 'hang ‿ of!! / a new 'formula, / it really 'sticks. //",
+     "start": 22.15,
+     "end": 26.46,
+     "chunks": [
+      [
+       22.3,
+       23.67
+      ],
+      [
+       23.97,
+       24.91
+      ],
+      [
+       25.21,
+       26.21
+      ]
+     ]
+    },
+    {
+     "label": "Q3 · Difficult subject",
+     "text": "'Physics, / for 'sure. // It has ++a steep 'learning curve++, / and if I miss even 'one class, / I ++fall be'hind++ / pretty 'quickly. //",
+     "start": 27.16,
+     "end": 35.03,
+     "chunks": [
+      [
+       27.31,
+       27.99
+      ],
+      [
+       28.29,
+       30.34
+      ],
+      [
+       30.64,
+       32.29
+      ],
+      [
+       32.59,
+       33.58
+      ],
+      [
+       33.88,
+       34.78
+      ]
+     ]
+    },
+    {
+     "label": "Q4 · Preparing for exams",
+     "text": "To be 'honest, / I used to ++'cram for++ tests / the night be'fore, // but it always left me / ++stressed ‿ 'out++. //",
+     "start": 35.73,
+     "end": 42.4,
+     "chunks": [
+      [
+       35.88,
+       36.78
+      ],
+      [
+       37.08,
+       38.62
+      ],
+      [
+       38.92,
+       41.0
+      ],
+      [
+       41.3,
+       42.15
+      ]
+     ]
+    },
+    {
+     "label": "Q4 · Preparing for exams",
+     "text": "These 'days, / I ++take a 'mock test++ / every 'Saturday, // so I can ++keep ‿ 'up with++ everything. //",
+     "start": 43.1,
+     "end": 48.85,
+     "chunks": [
+      [
+       43.25,
+       44.09
+      ],
+      [
+       44.39,
+       45.55
+      ],
+      [
+       45.85,
+       48.6
+      ]
+     ]
+    },
+    {
+     "label": "Q5 · Alone or with others",
+     "text": "I'd say I pre'fer / studying a'lone, / mainly because it helps me ++stay 'focused++. //",
+     "start": 49.55,
+     "end": 54.96,
+     "chunks": [
+      [
+       49.7,
+       50.84
+      ],
+      [
+       51.14,
+       52.18
+      ],
+      [
+       52.48,
+       54.71
+      ]
+     ]
+    },
+    {
+     "label": "Q5 · Alone or with others",
+     "text": "But before a ==high-'stakes== exam, / I ++join a 'study group++, // because explaining things to 'friends / helps me ++re'tain infor'mation++. //",
+     "start": 55.66,
+     "end": 63.39,
+     "chunks": [
+      [
+       55.81,
+       57.61
+      ],
+      [
+       57.91,
+       61.2
+      ],
+      [
+       61.5,
+       63.14
+      ]
+     ]
+    },
+    {
+     "free": true,
+     "label": "Q6 · Tự trả lời",
+     "q": "How has your school life changed since you started senior year?",
+     "hint": "have a lot on my plate · a high-stakes exam · college admissions · keep up with · burn out"
+    },
+    {
+     "free": true,
+     "label": "Q7 · Tự trả lời",
+     "q": "What do you want to major in at university?",
+     "hint": "major in · career prospects · a stepping stone to · keep my options open · follow in sb's footsteps"
+    },
+    {
+     "free": true,
+     "label": "Q8 · Tự trả lời",
+     "q": "Do you think English will be important in your future career?",
+     "hint": "career prospects · broaden my horizons · win a scholarship · a well-paid job · pick up"
+    }
+   ]
+  },
+  {
+   "id": "va1-shadowing",
+   "session": 1,
+   "title": "Shadowing – My senior year",
+   "subtitle": "Đoạn shadowing trên lớp, luyện 3 lần/ngày",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/va1-shadowing.mp4",
+   "skill": "Speaking",
+   "topic": "Studies & School life",
+   "sentences": [
+    {
+     "text": "Right 'now, / I'm in my 'senior year of high school, //",
+     "start": 0.65,
+     "end": 3.81,
+     "chunks": [
+      [
+       0.8,
+       1.5
+      ],
+      [
+       1.8,
+       3.56
+      ]
+     ]
+    },
+    {
+     "text": "so to be 'honest, / I !!have a 'lot ‿ on my plate!!. //",
+     "start": 4.51,
+     "end": 7.75,
+     "chunks": [
+      [
+       4.66,
+       5.7
+      ],
+      [
+       6.0,
+       7.5
+      ]
+     ]
+    },
+    {
+     "text": "Besides 'regular classes, / I go to 'extra classes / almost every 'evening, //",
+     "start": 8.45,
+     "end": 13.86,
+     "chunks": [
+      [
+       8.6,
+       10.18
+      ],
+      [
+       10.48,
+       12.0
+      ],
+      [
+       12.3,
+       13.61
+      ]
+     ]
+    },
+    {
+     "text": "and I'm also preparing for I-E-L-T-S, / because it's !!a 'stepping stone!! / to a good uni'versity. //",
+     "start": 14.56,
+     "end": 20.85,
+     "chunks": [
+      [
+       14.71,
+       17.21
+      ],
+      [
+       17.51,
+       18.94
+      ],
+      [
+       19.24,
+       20.6
+      ]
+     ]
+    },
+    {
+     "text": "I used to ++'cram++ / the night before every 'test, / but it always left me / ++stressed ‿ 'out++. //",
+     "start": 21.55,
+     "end": 27.64,
+     "chunks": [
+      [
+       21.7,
+       22.79
+      ],
+      [
+       23.09,
+       24.72
+      ],
+      [
+       25.02,
+       26.24
+      ],
+      [
+       26.54,
+       27.39
+      ]
+     ]
+    },
+    {
+     "text": "These 'days, / I try to re'view a little / every 'day, / so I don't ++fall be'hind++. //",
+     "start": 28.34,
+     "end": 33.94,
+     "chunks": [
+      [
+       28.49,
+       29.33
+      ],
+      [
+       29.63,
+       30.99
+      ],
+      [
+       31.29,
+       32.08
+      ],
+      [
+       32.38,
+       33.69
+      ]
+     ]
+    },
+    {
+     "text": "I'm hoping to ++'major ‿ in++ / international 'business, // mainly because the ++ca'reer prospects++ / are really 'promising. //",
+     "start": 34.64,
+     "end": 41.24,
+     "chunks": [
+      [
+       34.79,
+       36.09
+      ],
+      [
+       36.39,
+       39.58
+      ],
+      [
+       39.88,
+       40.99
       ]
      ]
     }
