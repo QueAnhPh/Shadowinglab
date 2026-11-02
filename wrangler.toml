@@ -1,0 +1,8 @@
+# Cloudflare Pages config. Lý do có file này: Claude API không nhận yêu cầu từ máy chủ Hồng Kông (nơi Cloudflare chạy cho HS ở VN),
+# nên phần /api/feedback phải chạy ở Mỹ. Secret ANTHROPIC_API_KEY vẫn đặt trong dashboard, không ghi ở đây.
+name = "speakback"
+pages_build_output_dir = "."
+compatibility_date = "2026-10-26"
+
+[placement]
+region = "aws:us-east-1"
