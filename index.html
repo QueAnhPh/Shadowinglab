@@ -348,7 +348,16 @@ window.Whisper = {
       .catch(e => { asrP = null; throw e; });
     return asrP;
   },
-  async transcribe(f32) { const asr = await this.load(); const out = await asr(f32); return (out && out.text || "").trim(); }
+  async transcribe(f32) { const asr = await this.load(); const out = await asr(f32); return (out && out.text || "").trim(); },
+  /* longer free answers: bigger model, 30 s windows */
+  _long: null,
+  async transcribeLong(f32, onProgress) {
+    if (!this._long) this._long = pipeline("automatic-speech-recognition", "Xenova/whisper-base.en",
+      { dtype: "q8", device: "wasm", progress_callback: p => onProgress && onProgress(p) }).catch(e => { this._long = null; throw e; });
+    const asr = await this._long;
+    const out = await asr(f32, { chunk_length_s: 30, stride_length_s: 5 });
+    return (out && out.text || "").trim();
+  }
 };
 window.dispatchEvent(new Event("whisper-ready"));
 </script>
@@ -1172,12 +1181,18 @@ async function recordFree(L, i, card, btn) {
 }
 /* ---------- submit a free answer + teacher feedback (DATA.feedback[sid][lessonId][i]) ---------- */
 const subKey = L => `sub:${student}:${L.id}`;
-function feedbackOf(sid, lid, i) { return (((DATA.feedback || {})[sid] || {})[lid] || {})[i] || null; }
+function feedbackOf(sid, lid, i) {
+  const t = (((DATA.feedback || {})[sid] || {})[lid] || {})[i];
+  if (t) return t;                                    // approved by the teacher
+  if (sid !== student) return null;
+  return (store.get(`fb:${sid}:${lid}`, {}) || {})[i] || null;   // instant feedback from the machine
+}
 function feedbackHTML(sid, lid, i) {
   const f = feedbackOf(sid, lid, i);
   if (!f) return "";
   const li = (a, cls, icon) => (a || []).map(t => `<li class="${cls}">${icon} ${esc(t)}</li>`).join("");
-  return `<div class="fb"><h4>📝 Nhận xét của chị${f.date ? ` · ${esc(f.date)}` : ""}${f.band ? ` · ước lượng band ${esc(f.band)}` : ""}</h4>
+  return `<div class="fb"><h4>${f.auto ? "🤖 Nhận xét nhanh" : "📝 Nhận xét của chị"}${f.date ? ` · ${esc(f.date)}` : ""}${f.band ? ` · ước lượng band ${esc(f.band)}` : ""}</h4>
+    ${f.auto ? `<p class="muted">Máy chấm theo 4 tiêu chí IELTS từ bản chép lời của em; chị sẽ xem lại. Phát âm thì chị nghe trực tiếp.</p>` : ""}
     ${f.said ? `<p class="said">Em đã nói: “${esc(f.said)}”</p>` : ""}
     ${(f.good || []).length ? `<ul>${li(f.good, "good", "👍")}</ul>` : ""}
     ${(f.fix || []).length ? `<ul>${f.fix.map(x => `<li class="weak fix">🔧 ${esc(x.err)} → <b>${esc(x.fix)}</b>${x.why ? ` <span class="muted">(${esc(x.why)})</span>` : ""}</li>`).join("")}</ul>` : ""}
@@ -1209,9 +1224,38 @@ async function submitFree(L, i, card, btn) {
   try {
     await window.Cloud.saveTake(`${L.id}~${i}~sub`, { lesson: L.id, i, kind: "sub", at: Date.now(), took: cur.last.at, h: cur.last.h || "", s: 100, st: "", audio: mem.last });
     const subs = store.get(subKey(L), {}); subs[i] = Date.now(); store.set(subKey(L), subs);
-    live.textContent = "Đã nộp! Chị sẽ chấm theo tiêu chí IELTS và để nhận xét ngay trong câu này.";
-  } catch (e) { live.textContent = "Chưa nộp được. Kiểm tra mạng rồi bấm Nộp lại nha."; }
+    live.textContent = "Đã nộp! Máy đang nghe bài của em để nhận xét…";
+    subStatus(L, i, card);
+    await autoFeedback(L, i, card, mem.last, subs[i]);
+  } catch (e) { console.error(e); live.textContent = "Chưa nộp được. Kiểm tra mạng rồi bấm Nộp lại nha."; }
   finally { btn.disabled = false; subStatus(L, i, card); }
+}
+async function autoFeedback(L, i, card, dataURL, subAt) {
+  const live = card.querySelector(".live"), S = L.sentences[i];
+  try {
+    const buf = await (await fetch(dataURL)).arrayBuffer();
+    const ac = new (window.AudioContext || window.webkitAudioContext)();
+    const dec = await ac.decodeAudioData(buf); try { ac.close(); } catch {}
+    const f32 = resample([dec.getChannelData(0)], dec.sampleRate);
+    const files = {};
+    const text = await window.Whisper.transcribeLong(f32, p => {
+      if (p.status === "progress" && p.total) { files[p.file] = [p.loaded, p.total];
+        const v = Object.values(files), got = v.reduce((a, x) => a + x[0], 0), tot = v.reduce((a, x) => a + x[1], 0);
+        live.textContent = `Đang tải bộ nghe giọng (lần đầu, khoảng 80MB) ${Math.round(got / tot * 100)}%…`; }
+    });
+    live.textContent = "Máy đang chấm theo 4 tiêu chí…";
+    const idToken = await window.Cloud.user.getIdToken();
+    const r = await fetch("/api/feedback", { method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ idToken, sid: student, lesson: L.id, i, part: S.part || (/part\s*([23])/i.exec(S.label || "") ? "Part " + /part\s*([23])/i.exec(S.label)[1] : "Part 1"), q: S.q, hint: S.hint || "", transcript: text, seconds: Math.round(dec.duration) }) });
+    const fb = await r.json();
+    if (!r.ok) { live.textContent = (fb && fb.error) || "Chưa nhận xét được, chị sẽ chấm sau nha."; return; }
+    const d = new Date(); fb.date = `${d.getDate()}/${d.getMonth() + 1}`; fb.sub = subAt;
+    const all = store.get(`fb:${student}:${L.id}`, {}); all[i] = fb; store.set(`fb:${student}:${L.id}`, all);
+    window.Cloud.saveTake(`${L.id}~${i}~fb`, { lesson: L.id, i, kind: "fb", at: Date.now(), s: 0, st: "", h: "", audio: "", fb }).catch(e => console.error(e));
+    live.textContent = "Xong! Đọc nhận xét bên dưới. Muốn sửa thì ghi âm lại rồi nộp lại nha.";
+    const old = card.querySelector(".fb"); if (old) old.remove();
+    card.insertAdjacentHTML("beforeend", feedbackHTML(student, L.id, i));
+  } catch (e) { console.error(e); live.textContent = "Đã nộp. Máy chưa nhận xét được lúc này, chị sẽ chấm sau nha."; }
 }
 /* words the recognizer marked wrong in the latest take of each sentence (this device + takes synced from the account) */
 function wordReport(sid) {
@@ -1295,6 +1339,7 @@ function loadTakes(L) {
     const all = getTakes(L);
     for (const r of rows) {
       if (r.kind === "sub") { const subs = store.get(subKey(L), {}); if (!subs[r.i] || r.at > subs[r.i]) { subs[r.i] = r.at; store.set(subKey(L), subs); } continue; }
+      if (r.kind === "fb") { const fbs = store.get(`fb:${student}:${L.id}`, {}); if (!fbs[r.i] || (r.fb && r.fb.sub >= (fbs[r.i].sub || 0))) { fbs[r.i] = r.fb; store.set(`fb:${student}:${L.id}`, fbs); } continue; }
       const cur = all[r.i] || (all[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at };
       const keep = r.kind === "first" ? (!cur.first || t.at <= cur.first.at) : (!cur.last || t.at >= cur.last.at);
       if (keep) { cur[r.kind] = t; if (r.audio) (CLIPS[L.id + ":" + r.i] || (CLIPS[L.id + ":" + r.i] = {}))[r.kind] = r.audio; }
@@ -1410,22 +1455,24 @@ function viewTeacher() {
 /* teacher: every submitted free answer; download the ungraded ones as one JSON file for grading */
 async function loadSubs(rows) {
   const box = $("#tsubs"); if (!box) return;
-  const items = [];
+  const items = [], autoFb = {};
   try {
     for (const r of rows) for (const L of DATA.lessons.filter(x => x.for.includes(r.s.id) && x.sentences.some(z => z.free)))
       for (const u of r.docs) for (const t of await window.Cloud.loadTakesOf(u.uid, L.id)) {
+        if (t.kind === "fb") { autoFb[`${r.s.id}~${L.id}~${t.i}`] = t.fb; continue; }
         if (t.kind !== "sub") continue;
         const S = L.sentences[t.i] || {}, f = feedbackOf(r.s.id, L.id, t.i);
         items.push({ sid: r.s.id, name: r.s.name, lesson: L.id, lessonTitle: L.title, session: L.session, i: t.i, label: S.label || "", q: S.q || "", hint: S.hint || "", at: t.at, graded: !!(f && f.sub && f.sub >= t.at), audio: t.audio });
       }
   } catch (e) { console.error(e); }
   if (!$("#tsubs")) return;
+  items.forEach(x => { const a = autoFb[`${x.sid}~${x.lesson}~${x.i}`]; if (a && a.sub >= x.at) x.auto = a; });
   items.sort((a, b) => a.graded - b.graded || b.at - a.at);
   const todo = items.filter(x => !x.graded);
   box.innerHTML = `<h3>📥 Bài nộp (câu tự trả lời)</h3>
-    ${items.length ? `<p class="muted">${todo.length} bài chờ chấm · ${items.length - todo.length} bài đã có nhận xét. Tải file về rồi nhắn Claude “chấm bài nộp”.</p>
+    ${items.length ? `<p class="muted">${todo.length} bài chờ duyệt · ${items.length - todo.length} bài đã duyệt. Bé đã có nhận xét nhanh của máy ngay khi nộp; tải file về rồi nhắn Claude “duyệt bài nộp” để chị xem lại và cập nhật tiến độ.</p>
       ${todo.length ? `<div class="actions"><button class="primary" id="tDl">⬇️ Tải ${todo.length} bài chờ chấm</button></div>` : ""}
-      <div class="tsub">${items.map(x => `<div class="row"><span><b>${esc(x.name)}</b> · ${esc(x.label || ("Câu " + (x.i + 1)))} · ${esc(x.lessonTitle)}</span><span>${x.graded ? "✅ đã chấm" : "⏳ " + fmtWhen(x.at)}</span></div>`).join("")}</div>`
+      <div class="tsub">${items.map(x => `<div class="row"><span><b>${esc(x.name)}</b> · ${esc(x.label || ("Câu " + (x.i + 1)))} · ${esc(x.lessonTitle)}</span><span>${x.graded ? "✅ đã duyệt" : (x.auto ? `🤖 máy: ${esc(x.auto.band || "?")} · chờ duyệt` : "⏳ " + fmtWhen(x.at))}</span></div>`).join("")}</div>`
     : `<p class="muted">Chưa có bài nộp nào.</p>`}`;
   const dl = $("#tDl");
   if (dl) dl.addEventListener("click", () => {
@@ -1463,7 +1510,7 @@ async function viewTeacherLesson(sid, L) {
   const takes = {};
   try {
     for (const u of docs) for (const r of await window.Cloud.loadTakesOf(u.uid, L.id)) {
-      if (r.kind === "sub") continue;
+      if (r.kind === "sub" || r.kind === "fb") continue;
       const cur = takes[r.i] || (takes[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at, audio: r.audio };
       if (r.kind === "first" ? (!cur.first || t.at < cur.first.at) : (!cur.last || t.at > cur.last.at)) cur[r.kind] = t;
     }
