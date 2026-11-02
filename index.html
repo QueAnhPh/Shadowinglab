@@ -108,6 +108,24 @@ p.small{font-size:13px;margin:6px 0 0}
 .notes label{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin:6px 0}
 .notes input{flex:1 1 220px;min-width:0;font:inherit;padding:6px 8px;border-radius:8px;border:1px solid var(--line,#ccc);background:transparent;color:inherit}
 .notes .prep{margin-top:6px}
+.ginst{font-weight:700;margin:4px 0 8px}.ghead{text-align:center;margin:6px 0 10px}
+.gform{border:1px solid var(--line,#ccc);border-radius:10px;padding:10px 12px;line-height:2.3}
+.gsub{margin:10px 0 2px}.grow{margin:4px 0}
+.gap{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px;vertical-align:middle}
+.gap .qn{display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:6px;background:var(--ink,#333);color:var(--bg,#fff);font-size:13px}
+.gin{width:130px;font:inherit;padding:2px 6px;border:none;border-bottom:2px solid currentColor;background:transparent;color:inherit}
+.gin.ok{border-color:var(--ok,#2e7d32);color:var(--ok,#2e7d32)}.gin.bad{border-color:var(--bad,#c62828);color:var(--bad,#c62828);text-decoration:line-through}
+.gfix{color:var(--ok,#2e7d32);font-weight:700;font-size:14px}
+.forms{display:inline-flex;gap:4px;line-height:1.2}
+.fo{font-size:12px;padding:3px 8px;border-radius:999px}
+.fo.on{outline:2px solid var(--accent,#7a4b2a);font-weight:700}
+.fo.right{background:rgba(46,125,50,.15);font-weight:700}.fo.wrong{background:rgba(198,40,40,.15);text-decoration:line-through}
+.gctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}.gaudio{width:100%}
+.gres{width:100%;border-collapse:collapse;font-size:14px}.gres td,.gres th{border-bottom:1px solid var(--line,#ddd);padding:4px 6px;text-align:left}
+.gres .good{color:var(--ok,#2e7d32)}.gres .weak{color:var(--bad,#c62828)}
+.ansb{background:rgba(255,213,79,.45);padding:0 2px;border-radius:3px}
+.kwm{background:rgba(100,181,246,.35);color:inherit;padding:0 2px;border-radius:3px}
+.gtr p{margin:6px 0;line-height:1.6}.gtr .sp{opacity:.75}
 .lesson.locked{opacity:.55}
 .logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
 .logincard p{margin:0;font-size:14.5px}
@@ -631,7 +649,7 @@ function skillOf(L) {
   if (L.skill) return L.skill;
   const H = homeworkOf(L);
   if (H && H.skill) return H.skill;
-  return L.type === "dictation" ? "Listening" : "Speaking";
+  return L.type === "dictation" || L.type === "gap" ? "Listening" : "Speaking";
 }
 /* lessons of one session grouped by the topic of their text, in first-appearance order */
 function topicsOf(ls) {
@@ -649,7 +667,7 @@ function lessonButton(L) {
   const n = L.sentences.filter(s => isMine(L, s)).length;
   const hwChip = H ? (() => { const d = dueInfo(H.deadline); return `<span class="due ${p >= 100 ? "" : d.cls}">${p >= 100 ? "✅ Đã xong" : "📝 Homework · " + esc(d.chip)}</span>`; })() : "";
   return `<button class="lesson" data-id="${L.id}"><span class="ring" style="--p:${p}"><i>${p}%</i></span>
-    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Nghe chép" : L.sentences.some(s => s.free) ? "Luyện nói + tự trả lời" : "Shadowing"} · ${n} câu</span>${hwChip ? `<span class="chips">${hwChip}</span>` : ""}</span></button>`;
+    <span class="t"><b>${esc(L.title)}${r ? `<span class="role">Em nói phần ${esc(r)}</span>` : ""}</b><span>${L.type === "dictation" ? "Nghe chép" : L.type === "gap" ? "Nghe điền từ (IELTS)" : L.sentences.some(s => s.free) ? "Luyện nói + tự trả lời" : "Shadowing"} · ${n} câu</span>${hwChip ? `<span class="chips">${hwChip}</span>` : ""}</span></button>`;
 }
 /* homework still to do: not finished, deadline not passed more than 7 days ago */
 function pendingHomework(mine) {
@@ -829,6 +847,7 @@ function notesText(L, S, i) {
 function viewLesson(L) {
   if (lockedUntil(L)) { location.hash = ""; return; }
   if (L.type === "dictation") return viewDictation(L);
+  if (L.type === "gap") return viewGap(L);
   const best = store.get(`best:${student}:${L.id}`, {});
   const role = myRole(L);
   const mineIdx = L.sentences.map((s, i) => isMine(L, s) ? i : -1).filter(i => i >= 0);
@@ -905,6 +924,136 @@ function viewLesson(L) {
     if (sp) sp.addEventListener("click", e => listen(L, i, card, e.currentTarget));
     renderCompare(L, i, card);
   });
+}
+
+/* ---------- Listening: nghe điền từ kiểu IELTS (type "gap") ----------
+   Lesson: { type:"gap", audio, part, prep (giây đọc đề), instructions, heading, strategy[],
+     rows:[ "text với {n} là ô trống", "## tiêu đề nhỏ" ],
+     qs:{ n:{ ans:[...đáp án chấp nhận], form:[đúng, sai] (2 dạng từ, thứ tự hiển thị trộn theo n), kw:"từ khóa câu hỏi" } },
+     transcript:[ { sp:"Woman", t:"…**khúc đáp án**… [[paraphrase của từ khóa]] …" } ] }
+   Mỗi câu = 1 "sentence" ảo để tiến độ / màn giáo viên dùng chung (best[i] = 100 nếu đúng). */
+function prepGap(d) {
+  for (const L of d.lessons) if (L.type === "gap") L.sentences = Object.keys(L.qs).map(n => ({ gap: true, n }));
+}
+const gapKey = L => `gap:${student}:${L.id}`;
+const normAns = t => String(t || "").toLowerCase().replace(/[’']/g, "'").replace(/[.,;:!?"]/g, "").replace(/\s+/g, " ").trim();
+function gapOk(q, v) { const x = normAns(v); return !!x && q.ans.some(a => normAns(a) === x); }
+function formOpts(q, n) { return (+n) % 2 ? [q.form[0], q.form[1]] : [q.form[1], q.form[0]]; }
+function hlTranscript(t) {
+  return esc(t).replace(/\*\*(.+?)\*\*/g, "<b class=\"ansb\">$1</b>").replace(/\[\[(.+?)\]\]/g, "<mark class=\"kwm\">$1</mark>");
+}
+function gapRowsHTML(L, st, done) {
+  return L.rows.map(r => {
+    if (r.startsWith("## ")) return `<h4 class="gsub">${esc(r.slice(3))}</h4>`;
+    const html = esc(r).replace(/\[\[(.+?)\]\]/g, "<mark class=\"kwm\">$1</mark>").replace(/\{(\d+)\}/g, (m, n) => {
+      const q = L.qs[n]; if (!q) return m;
+      const v = (st.a || {})[n] || "", f = (st.f || {})[n];
+      const ok = done ? gapOk(q, v) : null;
+      const opts = formOpts(q, n);
+      return `<span class="gap"><b class="qn">${n}</b><input class="gin ${done ? (ok ? "ok" : "bad") : ""}" data-n="${n}" value="${esc(v)}" ${done ? "disabled" : ""} autocomplete="off" autocapitalize="off" spellcheck="false">${done && !ok ? `<span class="gfix">✔ ${esc(q.ans[0])}</span>` : ""}
+        <span class="forms" data-n="${n}">${opts.map(o => `<button class="fo ${f === o ? "on" : ""} ${done ? (o === q.form[0] ? "right" : f === o ? "wrong" : "") : ""}" data-v="${esc(o)}" ${done ? "disabled" : ""}>${esc(o)}</button>`).join("")}</span></span>`;
+    });
+    return `<div class="grow">${html}</div>`;
+  }).join("");
+}
+function viewGap(L) {
+  const st = store.get(gapKey(L), {}), done = !!st.done;
+  const nq = Object.keys(L.qs).length;
+  $("#app").innerHTML = `${banner()}
+    <button class="back" id="backBtn">← Danh sách bài</button>
+    <h2>${esc(L.title)}</h2>
+    <p class="muted">${esc(L.subtitle || "")}</p>
+    ${deadlineBox(L)}
+    ${(L.strategy || []).length ? `<details class="strat" ${done ? "" : "open"}><summary>📘 Cách làm dạng bài này</summary><ol>${L.strategy.map(t => `<li>${t}</li>`).join("")}</ol></details>` : ""}
+    <section class="card gapcard">
+      <div class="n"><span>${esc(L.part || "Listening")} · ${nq} câu</span><span class="best">${done ? `Điểm: ${st.score}/${nq}` : ""}</span></div>
+      <p class="ginst">${esc(L.instructions || "Write ONE WORD AND/OR A NUMBER for each answer.")}</p>
+      ${L.heading ? `<h3 class="ghead">${esc(L.heading)}</h3>` : ""}
+      <div class="gform">${gapRowsHTML(L, st, done)}</div>
+      <p class="muted small">Dưới mỗi ô: chọn <b>dạng từ</b> cần điền (làm trong lúc đọc đề, trước khi nghe).</p>
+      <div class="gctl">
+        ${done ? `<audio src="${esc(L.audio)}" controls preload="metadata" class="gaudio"></audio>
+          <button id="gRedo">🔁 Làm lại từ đầu</button>`
+        : `<button class="primary" id="gStart">▶ Bắt đầu: ${L.prep || 30} giây đọc đề</button>
+          <button class="primary" id="gSubmit" hidden>📤 Nộp bài</button>`}
+      </div>
+      <div class="live" aria-live="polite"></div>
+    </section>
+    ${done ? gapResultHTML(L, st) : ""}`;
+  $("#backBtn").addEventListener("click", () => { location.hash = ""; });
+  const save = () => store.set(gapKey(L), st);
+  if (!done) {
+    $("#app").querySelectorAll(".gin").forEach(inp => inp.addEventListener("input", () => { (st.a = st.a || {})[inp.dataset.n] = inp.value; save(); }));
+    $("#app").querySelectorAll(".forms .fo").forEach(b => b.addEventListener("click", () => {
+      const n = b.parentElement.dataset.n; (st.f = st.f || {})[n] = b.dataset.v; save();
+      b.parentElement.querySelectorAll(".fo").forEach(x => x.classList.toggle("on", x === b));
+    }));
+    const live = $("#app").querySelector(".live"), start = $("#gStart"), sub = $("#gSubmit");
+    const audio = new Audio(L.audio);
+    start.addEventListener("click", () => {
+      start.disabled = true; sub.hidden = false;
+      let left = L.prep || 30;
+      const tick = () => { start.textContent = `📖 Đọc đề · còn ${left} giây (bấm để nghe luôn)`; };
+      tick(); start.disabled = false;
+      const t = setInterval(() => { left--; tick(); if (left <= 0) go(); }, 1000);
+      const go = () => {
+        clearInterval(t); start.disabled = true; start.textContent = "🎧 Đang phát (chỉ nghe 1 lần như thi thật)…";
+        audio.play().catch(() => { live.textContent = "Máy chưa phát được audio. Bấm lại nha."; start.disabled = false; });
+      };
+      start.onclick = go;
+      audio.onended = () => { start.textContent = "✅ Hết audio. Kiểm tra chính tả, số ít/số nhiều rồi bấm Nộp bài."; live.textContent = ""; };
+    }, { once: true });
+    sub.addEventListener("click", () => {
+      const miss = Object.keys(L.qs).filter(n => !(st.f || {})[n]).length;
+      if (miss && !confirm(`Còn ${miss} câu chưa chọn dạng từ. Vẫn nộp?`)) return;
+      try { audio.pause(); } catch {}
+      gradeGap(L, st); save(); viewGap(L); window.scrollTo(0, 0);
+    });
+  } else {
+    $("#gRedo").addEventListener("click", () => { store.set(gapKey(L), { a: {}, f: {} }); viewGap(L); });
+  }
+}
+function gradeGap(L, st) {
+  const best = store.get(`best:${student}:${L.id}`, {});
+  let score = 0, formsOk = 0;
+  Object.keys(L.qs).forEach((n, i) => {
+    const q = L.qs[n], ok = gapOk(q, (st.a || {})[n]);
+    if (ok) score++;
+    if ((st.f || {})[n] === q.form[0]) formsOk++;
+    best[i] = Math.max(best[i] || 0, ok ? 100 : 0);
+  });
+  st.done = true; st.score = score; st.formsOk = formsOk; st.at = Date.now();
+  st.tries = (st.tries || 0) + 1; if (st.tries === 1) st.first = score;
+  store.set(`best:${student}:${L.id}`, best); syncBest(L.id, best);
+  if (cloudUser()) window.Cloud.saveTake(`${L.id}~0~gap`, { lesson: L.id, i: 0, kind: "gap", at: st.at, s: score, st: "", h: "", audio: "", a: st.a || {}, f: st.f || {}, first: st.first, tries: st.tries }).catch(e => console.error(e));
+}
+function gapResultHTML(L, st) {
+  const nq = Object.keys(L.qs).length;
+  const rows = Object.keys(L.qs).map(n => {
+    const q = L.qs[n], v = (st.a || {})[n] || "", ok = gapOk(q, v), fk = (st.f || {})[n] === q.form[0];
+    return `<tr><td>${n}</td><td class="${ok ? "good" : "weak"}">${ok ? "✔" : "✘"} ${esc(v || "—")}</td><td><b>${esc(q.ans.join(" / "))}</b></td><td class="${fk ? "good" : "weak"}">${fk ? "✔ " + esc(q.form[0]) : `✘ ${(st.f || {})[n] ? "em chọn " + esc(st.f[n]) : "chưa chọn"} → <b>${esc(q.form[0])}</b>`}</td></tr>`;
+  }).join("");
+  return `<section class="card">
+    <h3>Kết quả: ${st.score}/${nq} câu đúng · dạng từ đúng ${st.formsOk}/${nq}${st.tries > 1 ? ` · lần đầu ${st.first}/${nq}` : ""}</h3>
+    <table class="gres"><tr><th>#</th><th>Em điền</th><th>Đáp án</th><th>Dạng từ</th></tr>${rows}</table>
+    <p class="muted small">Sai chính tả hoặc sai số ít/số nhiều là mất điểm. Đáp án chấp nhận nhiều cách viết thì cách nhau bằng " / ".</p>
+  </section>
+  <section class="card">
+    <h3>📜 Transcript</h3>
+    <p class="muted small"><b class="ansb">In đậm</b> = khúc chứa đáp án · <mark class="kwm">tô màu</mark> = từ khóa trong câu hỏi và chỗ bài nói lại bằng từ khác (paraphrase).</p>
+    <div class="gtr">${(L.transcript || []).map(x => `<p>${x.sp ? `<b class="sp">${esc(x.sp)}:</b> ` : ""}${hlTranscript(x.t)}</p>`).join("")}</div>
+  </section>`;
+}
+async function viewTeacherGap(sid, L, S) {
+  const docs = TEACH.filter(u => u.student === sid);
+  $("#app").innerHTML = `<button class="back" id="backBtn">← Tiến độ của lớp</button><h2>${esc(S.name)} · ${esc(L.title)}</h2><p class="muted" id="tLoading">Đang tải bài làm…</p><div id="gT"></div>`;
+  $("#backBtn").addEventListener("click", () => { location.hash = ""; });
+  let r = null;
+  for (const u of docs) for (const t of await window.Cloud.loadTakesOf(u.uid, L.id)) if (t.kind === "gap" && (!r || t.at > r.at)) r = t;
+  $("#tLoading").remove();
+  if (!r) { $("#gT").innerHTML = `<p class="muted">Chưa làm bài.</p>`; return; }
+  const st = { a: r.a, f: r.f, score: r.s, formsOk: Object.keys(L.qs).filter(n => (r.f || {})[n] === L.qs[n].form[0]).length, first: r.first, tries: r.tries, done: true };
+  $("#gT").innerHTML = `<p class="muted">Nộp ${fmtWhen(r.at)} · làm ${r.tries || 1} lần</p>` + gapResultHTML(L, st);
 }
 
 /* ---------- Listening: nghe chép (dictation) ---------- */
@@ -1400,7 +1549,7 @@ async function autoFeedback(L, i, card, dataURL, subAt) {
 /* words the recognizer marked wrong in the latest take of each sentence (this device + takes synced from the account) */
 function wordReport(sid) {
   const weak = new Map(), fixed = new Map();
-  for (const L of DATA.lessons.filter(x => x.for.includes(sid) && x.type !== "dictation")) {
+  for (const L of DATA.lessons.filter(x => x.for.includes(sid) && x.type !== "dictation" && x.type !== "gap")) {
     const all = store.get(`takes:${sid}:${L.id}`, {});
     for (const [i, t] of Object.entries(all)) {
       const S = L.sentences[i]; if (!S || S.free || !t.last) continue;
@@ -1628,6 +1777,7 @@ async function loadSubs(rows) {
 /* teacher: one student's lesson, sentence by sentence, with first / latest takes and recordings */
 async function viewTeacherLesson(sid, L) {
   const S = DATA.students.find(x => x.id === sid);
+  if (L.type === "gap") return viewTeacherGap(sid, L, S);
   const docs = TEACH.filter(u => u.student === sid);
   const best = {};
   for (const u of docs) for (const [i, v] of Object.entries((u.best || {})[L.id] || {})) if (best[i] == null || v > best[i]) best[i] = v;
@@ -1653,7 +1803,7 @@ async function viewTeacherLesson(sid, L) {
   const takes = {};
   try {
     for (const u of docs) for (const r of await window.Cloud.loadTakesOf(u.uid, L.id)) {
-      if (r.kind === "sub" || r.kind === "fb" || r.kind === "note" || r.kind === "quota") continue;
+      if (r.kind === "sub" || r.kind === "fb" || r.kind === "note" || r.kind === "quota" || r.kind === "gap") continue;
       const cur = takes[r.i] || (takes[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at, audio: r.audio };
       if (r.kind === "first" ? (!cur.first || t.at < cur.first.at) : (!cur.last || t.at > cur.last.at)) cur[r.kind] = t;
     }
@@ -1770,7 +1920,7 @@ function route() {
   if (L) { viewLesson(L); window.scrollTo(0, 0); } else viewList();
 }
 window.addEventListener("hashchange", route);
-fetch("data/lessons.json", { cache: "no-cache" }).then(r => r.json()).then(d => { DATA = d; route(); })
+fetch("data/lessons.json", { cache: "no-cache" }).then(r => r.json()).then(d => { DATA = d; prepGap(d); route(); })
   .catch(() => { $("#app").innerHTML = `<div class="notice"><b>Chưa tải được bài.</b> Kiểm tra mạng rồi tải lại trang.</div>`; });
 </script>
 </body>
