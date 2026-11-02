@@ -1,3 +1,4 @@
+// speakback-claude relay
 /* Chuyển tiếp POST /v1/messages tới Claude API từ máy chủ Mỹ. Chỉ dùng cho nhận xét nhanh SpeakBack (functions/api/feedback.js). */
 export default {
   async fetch(req) {
