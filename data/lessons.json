@@ -2,11 +2,17 @@
  "students": [
   {
    "id": "duc",
-   "name": "Đức"
+   "name": "Đức",
+   "emails": [
+    "duongtriduc0@gmail.com"
+   ]
   },
   {
    "id": "thu",
-   "name": "Thư"
+   "name": "Thư",
+   "emails": [
+    "ntmt2125@gmail.com"
+   ]
   },
   {
    "id": "vananh",
