@@ -127,6 +127,10 @@ p.small{font-size:13px;margin:6px 0 0}
 .kwm{background:rgba(100,181,246,.35);color:inherit;padding:0 2px;border-radius:3px}
 .gtr p{margin:6px 0;line-height:1.6}.gtr .sp{opacity:.75}
 .lesson.locked{opacity:.55}
+.donebox{margin:16px 0;border-radius:12px;background:rgba(127,127,127,.08);padding:8px 12px;filter:grayscale(1);opacity:.75}
+.donebox>summary{cursor:pointer;font-weight:700}
+.donegrp{margin:8px 0 4px}.donegrp>summary{cursor:pointer;font-weight:600}
+.dnum{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--ink,#333);color:var(--bg,#fff);font-size:12px;margin:0 4px}
 .logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
 .logincard p{margin:0;font-size:14.5px}
 details.nolog summary{cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
@@ -707,15 +711,28 @@ function profileCard(sid, open) {
       <span class="more">Xem tiêu chí chấm, điểm mạnh và điểm cần sửa ›</span></summary>
     <div class="pbody">${(C.intro || []).map(t => `<p class="note">${esc(t)}</p>`).join("")}${skill("speaking")}${skill("listening")}</div></details>`;
 }
+/* finished = marked by the teacher, every question of a listening test answered, or every sentence ≥ 80% / every free answer submitted */
+function isDone(L) {
+  if (markedDone(student, L)) return true;
+  if (L.type === "gap") { const b = store.get(`best:${student}:${L.id}`, {}); return !!store.get(gapKey(L), {}).done || Object.keys(b).length >= L.sentences.length; }
+  return lessonProgress(L) >= 100;
+}
+function doneBox(mine) {
+  const by = sk => mine.filter(L => skillOf(L) === sk && isDone(L) && !lockedUntil(L));
+  const sp = by("Speaking"), li = by("Listening");
+  if (!sp.length && !li.length) return "";
+  const grp = (icon, name, ls) => ls.length ? `<details class="donegrp"><summary>${icon} ${name} <span class="dnum">${ls.length}</span> accomplished</summary><div class="lessons">${ls.map(lessonButton).join("")}</div></details>` : "";
+  return `<details class="donebox"><summary>✅ Đã làm <span class="muted">(bấm để xem lại, luyện thêm)</span></summary>${grp("🗣️", "Speaking", sp)}${grp("🎧", "Listening", li)}</details>`;
+}
 function viewList() {
   const mine = DATA.lessons.filter(L => L.for.includes(student));
   const todo = pendingHomework(mine);
   const tab = ["Speaking", "Listening"].includes(store.get("tab", "")) ? store.get("tab", "") : "Speaking";
   const open = store.get("openSessions", {});
   const folder = skill => {
-    const ls = mine.filter(L => skillOf(L) === skill);
+    const ls = mine.filter(L => skillOf(L) === skill && !isDone(L));
     const sessions = [...new Set(ls.map(L => L.session))].sort((a, b) => b - a);
-    if (!sessions.length) return `<p class="muted">Chưa có bài ${skill} nào.</p>`;
+    if (!sessions.length) return `<p class="muted">Không còn bài ${skill} nào cần làm. 🎉</p>`;
     return sessions.map((n, k) => {
       const inS = ls.filter(L => L.session === n).sort((a, b) => (homeworkOf(b) ? 1 : 0) - (homeworkOf(a) ? 1 : 0));
       const dueHere = todo.filter(x => x.ls.some(L => inS.includes(L)));
@@ -745,10 +762,11 @@ function viewList() {
       ${["Speaking", "Listening"].map(t => `<button role="tab" class="tab${t === tab ? " on" : ""}" data-tab="${t}" aria-selected="${t === tab}">${t === "Speaking" ? "🗣️" : "🎧"} ${t}${count(t) ? ` <span class="dot">${count(t)}</span>` : ""}</button>`).join("")}
     </div>
     <div class="folder">${folder(tab)}</div>
+    ${doneBox(mine)}
     <p class="muted">Mỗi câu: nghe mẫu, bấm nói (hoặc gõ lại với bài nghe chép), xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
     <p class="foot"><img src="stickers/paw.svg" alt="">Chị chấm bài ngay trên web, em không cần gửi Zalo. Khi nào cần gửi Zalo chị sẽ nhắn em nha.</p>`;
   wireSignIn();
-  $("#app").querySelectorAll(".lesson, .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
+  $("#app").querySelectorAll(".lesson:not(.locked), .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
   $("#app").querySelectorAll(".autow button").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
   startTour("list");
   $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); viewList(); }));
@@ -1420,9 +1438,7 @@ async function recordFree(L, i, card, btn, forSubmit) {
     const sec = Math.round((Date.now() - t0) / 1000);
     if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
     live.textContent = forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Sẵn sàng thì bấm 📤 Ghi âm nộp bài.`;
-    const key = `best:${student}:${L.id}`, best = store.get(key, {});
-    best[i] = 100; store.set(key, best); syncBest(L.id, best);
-    card.querySelector(".best").textContent = "Đã ghi âm";
+    card.querySelector(".best").textContent = forSubmit ? "Đã nộp" : "Đã ghi thử";
     await recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));
     if (forSubmit) await submitFree(L, i, card, btn, sec);
     subStatus(L, i, card);
@@ -1503,6 +1519,7 @@ async function submitFree(L, i, card, btn, sec) {
   try {
     await window.Cloud.saveTake(`${L.id}~${i}~sub`, { lesson: L.id, i, kind: "sub", at: Date.now(), took: cur.last.at, h: cur.last.h || "", s: 100, st: "", audio: mem.last });
     const subs = store.get(subKey(L), {}); subs[i] = Date.now(); store.set(subKey(L), subs);
+    const bk = `best:${student}:${L.id}`, best = store.get(bk, {}); best[i] = 100; store.set(bk, best); syncBest(L.id, best);
     live.textContent = "Đã nộp! Máy đang nghe bài của em để nhận xét…";
     subStatus(L, i, card);
     await autoFeedback(L, i, card, mem.last, subs[i]);
