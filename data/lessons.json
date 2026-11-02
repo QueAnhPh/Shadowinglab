@@ -45,7 +45,7 @@
    "session": 1,
    "title": "Homework Speaking buổi 1",
    "deadline": "2026-11-07",
-   "note": "3 bài: Âm cuối · Part 1 (nói lại câu mẫu + tự trả lời 3 câu) · Shadowing My senior year.",
+   "note": "3 bài: Âm cuối · Part 1 (nói lại câu trả lời của em + tự trả lời Q6–Q8) · Shadowing My senior year.",
    "lessons": [
     "va1-final-sounds",
     "va1-part1",
@@ -2820,7 +2820,7 @@
    "id": "va1-part1",
    "session": 1,
    "title": "Part 1 – Studies & School life",
-   "subtitle": "Nói lại câu mẫu Q1–Q5, rồi tự trả lời Q6–Q8 (có ghi âm)",
+   "subtitle": "Nói lại câu trả lời của em (bản đã sửa) Q1–Q5, rồi tự trả lời Q6–Q8 (có ghi âm)",
    "for": [
     "vananh"
    ],
@@ -2830,205 +2830,285 @@
    "sentences": [
     {
      "label": "Q1 · Work or studies",
-     "text": "I'm a 'student. / I'm in my 'senior year / of high 'school, // so right 'now, / I !!have a 'lot ‿ on my 'plate!!. //",
+     "text": "'Currently, / I'm a 'senior / at Thu Duc High 'School. //",
      "start": 0.65,
-     "end": 7.08,
+     "end": 4.81,
      "chunks": [
       [
        0.8,
-       1.71
+       1.65
       ],
       [
-       2.01,
-       3.17
+       1.95,
+       2.86
       ],
       [
-       3.47,
-       5.03
-      ],
-      [
-       5.33,
-       6.83
+       3.16,
+       4.56
       ]
      ]
     },
     {
      "label": "Q1 · Work or studies",
-     "text": "For 'instance, / I have 'extra classes / almost every 'evening, // and on 'weekends / I ++take a 'mock test++ / so I don't ++fall be'hind++. //",
-     "start": 7.78,
-     "end": 15.84,
+     "text": "Since this is my 'last year, / I have a 'lot of 'homework. //",
+     "start": 5.51,
+     "end": 9.26,
      "chunks": [
       [
-       7.93,
-       8.81
+       5.66,
+       7.27
       ],
       [
-       9.11,
-       10.52
+       7.57,
+       9.01
+      ]
+     ]
+    },
+    {
+     "label": "Q1 · Work or studies",
+     "text": "To be more spe'cific, / I have 'extra classes / almost every 'evening, // so I !!have a 'lot ‿ on my 'plate!!. //",
+     "start": 9.96,
+     "end": 17.31,
+     "chunks": [
+      [
+       10.11,
+       11.39
       ],
       [
-       10.82,
-       12.53
+       11.69,
+       13.23
       ],
       [
-       12.83,
-       13.98
+       13.53,
+       14.97
       ],
       [
-       14.28,
-       15.59
+       15.27,
+       17.06
       ]
      ]
     },
     {
      "label": "Q2 · Favorite subject",
-     "text": "I'd say 'math, / hands 'down. // Anything with 'numbers / is !!right ‿ up my 'alley!!. //",
-     "start": 16.54,
-     "end": 21.45,
+     "text": "To be 'honest, / I enjoy bi'ology the 'most / because I want to be'come a 'dentist. //",
+     "start": 18.01,
+     "end": 23.67,
      "chunks": [
       [
-       16.69,
-       17.58
+       18.16,
+       19.18
       ],
       [
-       17.88,
-       19.79
+       19.48,
+       21.15
       ],
       [
-       20.09,
-       21.2
+       21.45,
+       23.42
       ]
      ]
     },
     {
      "label": "Q2 · Favorite subject",
-     "text": "And once I !!get the 'hang ‿ of!! / a new 'formula, / it really 'sticks. //",
-     "start": 22.15,
-     "end": 26.46,
+     "text": "So this subject is ==com'pulsory== for me. //",
+     "start": 24.37,
+     "end": 27.01,
      "chunks": [
       [
-       22.3,
-       23.67
+       24.52,
+       26.76
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "Also, / my teacher ex'plains things / in a way that is 'easy to ==compre'hend==. //",
+     "start": 27.71,
+     "end": 33.35,
+     "chunks": [
+      [
+       27.86,
+       28.64
       ],
       [
-       23.97,
-       24.91
+       28.94,
+       30.59
       ],
       [
-       25.21,
-       26.21
+       30.89,
+       33.1
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "That's the 'reason why / bi'ology is !!my cup of 'tea!!. //",
+     "start": 34.05,
+     "end": 37.8,
+     "chunks": [
+      [
+       34.2,
+       35.52
+      ],
+      [
+       35.82,
+       37.55
       ]
      ]
     },
     {
      "label": "Q3 · Difficult subject",
-     "text": "'Physics, / for 'sure. // It has ++a steep 'learning curve++, / and if I miss even 'one class, / I ++fall be'hind++ / pretty 'quickly. //",
-     "start": 27.16,
-     "end": 35.03,
+     "text": "Defi'nitely, / I find 'math and 'chemistry / 'difficult. //",
+     "start": 38.5,
+     "end": 42.95,
      "chunks": [
       [
-       27.31,
-       27.99
+       38.65,
+       39.54
       ],
       [
-       28.29,
-       30.34
+       39.84,
+       41.5
       ],
       [
-       30.64,
-       32.29
+       41.8,
+       42.7
+      ]
+     ]
+    },
+    {
+     "label": "Q3 · Difficult subject",
+     "text": "The reason is that I ++'struggle with++ the 'homework, // and the class dis'cussions / are a bit !!'over my head!!. //",
+     "start": 43.65,
+     "end": 50.0,
+     "chunks": [
+      [
+       43.8,
+       46.4
       ],
       [
-       32.59,
-       33.58
+       46.7,
+       48.13
       ],
       [
-       33.88,
-       34.78
+       48.43,
+       49.75
+      ]
+     ]
+    },
+    {
+     "label": "Q3 · Difficult subject",
+     "text": "That's why I take 'extra classes / every 'evening // to re'view my 'lessons. //",
+     "start": 50.7,
+     "end": 56.26,
+     "chunks": [
+      [
+       50.85,
+       52.98
+      ],
+      [
+       53.28,
+       54.27
+      ],
+      [
+       54.57,
+       56.01
       ]
      ]
     },
     {
      "label": "Q4 · Preparing for exams",
-     "text": "To be 'honest, / I used to ++'cram for++ tests / the night be'fore, // but it always left me / ++stressed ‿ 'out++. //",
-     "start": 35.73,
-     "end": 42.4,
+     "text": "Per'sonally, / I usually re'view my 'notes / with my 'friends, // either on Google 'Meet / or at a 'coffee shop. //",
+     "start": 56.96,
+     "end": 64.81,
      "chunks": [
       [
-       35.88,
-       36.78
+       57.11,
+       58.0
       ],
       [
-       37.08,
-       38.62
+       58.3,
+       59.96
       ],
       [
-       38.92,
-       41.0
+       60.26,
+       61.33
       ],
       [
-       41.3,
-       42.15
+       61.63,
+       62.98
+      ],
+      [
+       63.28,
+       64.56
       ]
      ]
     },
     {
      "label": "Q4 · Preparing for exams",
-     "text": "These 'days, / I ++take a 'mock test++ / every 'Saturday, // so I can ++keep ‿ 'up with++ everything. //",
-     "start": 43.1,
-     "end": 48.85,
+     "text": "We look for ==past exam 'papers== on'line, // because they help us ++re'member the main i'deas++. //",
+     "start": 65.51,
+     "end": 71.14,
      "chunks": [
       [
-       43.25,
-       44.09
+       65.66,
+       68.03
       ],
       [
-       44.39,
-       45.55
-      ],
-      [
-       45.85,
-       48.6
+       68.33,
+       70.89
       ]
      ]
     },
     {
      "label": "Q5 · Alone or with others",
-     "text": "I'd say I pre'fer / studying a'lone, / mainly because it helps me ++stay 'focused++. //",
-     "start": 49.55,
-     "end": 54.96,
+     "text": "It de'pends on the 'subject. // For 'math, / 'chemistry / or bi'ology, / I prefer studying with 'friends. //",
+     "start": 71.84,
+     "end": 79.42,
      "chunks": [
       [
-       49.7,
-       50.84
+       71.99,
+       73.53
       ],
       [
-       51.14,
-       52.18
+       73.83,
+       74.65
       ],
       [
-       52.48,
-       54.71
+       74.95,
+       75.78
+      ],
+      [
+       76.08,
+       77.01
+      ],
+      [
+       77.31,
+       79.17
       ]
      ]
     },
     {
      "label": "Q5 · Alone or with others",
-     "text": "But before a ==high-'stakes== exam, / I ++join a 'study group++, // because explaining things to 'friends / helps me ++re'tain infor'mation++. //",
-     "start": 55.66,
-     "end": 63.39,
+     "text": "On the 'other hand, / for 'history or 'literature, // I'd rather study a'lone / !!at my own 'pace!!. //",
+     "start": 80.12,
+     "end": 86.63,
      "chunks": [
       [
-       55.81,
-       57.61
+       80.27,
+       81.43
       ],
       [
-       57.91,
-       61.2
+       81.73,
+       83.35
       ],
       [
-       61.5,
-       63.14
+       83.65,
+       84.94
+      ],
+      [
+       85.24,
+       86.38
       ]
      ]
     },
@@ -3042,7 +3122,7 @@
      "free": true,
      "label": "Q7 · Tự trả lời",
      "q": "What do you want to major in at university?",
-     "hint": "major in · career prospects · a stepping stone to · keep my options open · follow in sb's footsteps"
+     "hint": "major in (dentistry) · career prospects · a stepping stone to · follow in sb's footsteps · a well-paid job"
     },
     {
      "free": true,
@@ -3067,133 +3147,137 @@
     {
      "text": "Right 'now, / I'm in my 'senior year of high school, //",
      "start": 0.65,
-     "end": 3.81,
+     "end": 4.08,
      "chunks": [
       [
        0.8,
-       1.5
+       1.64
       ],
       [
-       1.8,
-       3.56
+       1.94,
+       3.83
       ]
      ]
     },
     {
      "text": "so to be 'honest, / I !!have a 'lot ‿ on my plate!!. //",
-     "start": 4.51,
-     "end": 7.75,
+     "start": 4.78,
+     "end": 8.25,
      "chunks": [
       [
-       4.66,
-       5.7
+       4.93,
+       6.08
       ],
       [
-       6.0,
-       7.5
+       6.38,
+       8.0
       ]
      ]
     },
     {
      "text": "Besides 'regular classes, / I go to 'extra classes / almost every 'evening, //",
-     "start": 8.45,
-     "end": 13.86,
+     "start": 8.95,
+     "end": 14.74,
      "chunks": [
       [
-       8.6,
-       10.18
+       9.1,
+       10.81
       ],
       [
-       10.48,
-       12.0
+       11.11,
+       12.75
       ],
       [
-       12.3,
-       13.61
+       13.05,
+       14.49
       ]
      ]
     },
     {
      "text": "and I'm also preparing for I-E-L-T-S, / because it's !!a 'stepping stone!! / to a good uni'versity. //",
-     "start": 14.56,
-     "end": 20.85,
+     "start": 15.44,
+     "end": 22.1,
      "chunks": [
       [
-       14.71,
-       17.21
+       15.59,
+       18.21
       ],
       [
-       17.51,
-       18.94
+       18.51,
+       20.07
       ],
       [
-       19.24,
-       20.6
+       20.37,
+       21.85
       ]
      ]
     },
     {
      "text": "I used to ++'cram++ / the night before every 'test, / but it always left me / ++stressed ‿ 'out++. //",
-     "start": 21.55,
-     "end": 27.64,
+     "start": 22.8,
+     "end": 29.36,
      "chunks": [
       [
-       21.7,
-       22.79
+       22.95,
+       24.15
       ],
       [
-       23.09,
-       24.72
+       24.45,
+       26.2
       ],
       [
-       25.02,
-       26.24
+       26.5,
+       27.84
       ],
       [
-       26.54,
-       27.39
+       28.14,
+       29.11
       ]
      ]
     },
     {
      "text": "These 'days, / I try to re'view a little / every 'day, / so I don't ++fall be'hind++. //",
-     "start": 28.34,
-     "end": 33.94,
+     "start": 30.06,
+     "end": 36.16,
      "chunks": [
       [
-       28.49,
-       29.33
+       30.21,
+       31.18
       ],
       [
-       29.63,
-       30.99
+       31.48,
+       32.97
       ],
       [
-       31.29,
-       32.08
+       33.27,
+       34.18
       ],
       [
-       32.38,
-       33.69
+       34.48,
+       35.91
       ]
      ]
     },
     {
      "text": "I'm hoping to ++'major ‿ in++ / international 'business, // mainly because the ++ca'reer prospects++ / are really 'promising. //",
-     "start": 34.64,
-     "end": 41.24,
+     "start": 36.86,
+     "end": 44.35,
      "chunks": [
       [
-       34.79,
-       36.09
+       37.01,
+       38.43
       ],
       [
-       36.39,
-       39.58
+       38.73,
+       40.17
       ],
       [
-       39.88,
-       40.99
+       40.47,
+       42.57
+      ],
+      [
+       42.87,
+       44.1
       ]
      ]
     }
