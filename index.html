@@ -567,7 +567,10 @@ $("#switchBtn").addEventListener("click", async () => {
   student = null; store.set("student", null); location.hash = ""; route();
 });
 
+/* lessons the teacher marked as finished (students[].done in lessons.json), e.g. done in class or sent another way */
+function markedDone(sid, L) { const S = DATA.students.find(x => x.id === sid); return !!(S && (S.done || []).includes(L.id)); }
 function lessonProgress(L) {
+  if (markedDone(student, L)) return 100;
   const best = store.get(`best:${student}:${L.id}`, {});
   const mine = L.sentences.map((s, i) => [s, i]).filter(([s]) => isMine(L, s));
   const done = mine.filter(([, i]) => (best[i] || 0) >= 80).length;
@@ -1408,6 +1411,7 @@ function progressOf(L, sid, best) {
   const done = idx.filter(i => (best[i] || 0) >= 80);
   const tried = idx.filter(i => best[i] != null);
   const weak = idx.filter(i => best[i] != null && best[i] < 80);
+  if (markedDone(sid, L)) return { idx, done: idx, tried: idx, weak: [], pct: 100, marked: true };
   return { idx, done, tried, weak, pct: idx.length ? Math.round(done.length / idx.length * 100) : 0 };
 }
 function ago(d) {
