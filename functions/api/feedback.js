@@ -10,14 +10,14 @@
 
    Chặn lố budget (credit trả trước 5 USD, Sonnet 5.5 ≈ 0.011 USD / lần chấm):
      - chỉ nhận thẻ có "free": true của bài giao cho đúng HS đó; câu hỏi lấy từ lessons.json, không lấy từ trình duyệt
-     - mỗi câu tối đa PER_CARD lần chấm, mỗi HS tối đa PER_WEEK lần / tuần (3 câu Part 1 Thứ Hai–Tư × 3) (đếm ở Firestore users/{uid}/takes/_aiquota)
+     - mỗi câu tối đa PER_CARD lần chấm, mỗi HS tối đa PER_WEEK lần / tuần (5 câu × 3) (đếm ở Firestore users/{uid}/takes/_aiquota)
      - bản chép lời tối đa 2500 ký tự, trả lời tối đa 1200 token
    POST { idToken, lesson, i, transcript, seconds } → feedback JSON + quota { card, cardMax, week, weekMax }
    Needs the Cloudflare Pages secret ANTHROPIC_API_KEY. */
 const PROJECT = "speakback-522aa";
 const TEACHERS = ["phqa8899@gmail.com"];
 const MODEL = "claude-sonnet-5-5";
-const PER_CARD = 3, PER_WEEK = 9, TEACHER_WEEK = 10;   // 9 = 3 câu Part 1 (Thứ Hai–Tư) × 3 lần nộp
+const PER_CARD = 3, PER_WEEK = 15, TEACHER_WEEK = 10;   // 15 = 5 câu/tuần (T2: 2 câu Part 1 · T3: 1 Part 2 · T4: 2 Part 3) × 3 lần nộp
 const FS = "https://firestore.googleapis.com/v1/projects/" + PROJECT + "/databases/(default)/documents";
 const JWK_URL = "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";
 
@@ -67,6 +67,7 @@ Quy tắc:
 - fix: tối đa 3 lỗi quan trọng nhất (ưu tiên sai nghĩa > ngữ pháp lặp lại > từ chưa tự nhiên). err = cụm em nói, fix = cụm đúng (tiếng Anh – Mỹ), why = lý do ngắn bằng tiếng Việt, có tên tiêu chí (LR/GRA/FC).
 - tips: 1–2 cách khắc phục làm được ngay.
 - better: bản nâng cấp GIỮ Ý của em, cao hơn trình độ hiện tại 0.5–1 band, tiếng Anh – Mỹ, độ dài theo phần thi (Part 1: 3–4 câu; Part 2: 8–12 câu; Part 3: 4–6 câu).
+- Nếu có DÀN Ý em ghi trước (A.R.E. / cue card / A.R.E.A.): trong tips có 1 ý nhận xét em có triển khai đủ các phần của dàn ý không (thiếu phần nào, phần nào quá ngắn).
 - redo: 1 câu nhắc em ghi âm lại phần nào (hoặc "" nếu bài đã tốt).
 - Nếu bản chép quá ngắn, lạc đề hoặc không phải tiếng Anh: band "", good [], fix [], tips nhắc em nói lại đúng yêu cầu.
 Chỉ trả về JSON hợp lệ, không markdown: {"band":"5.5","good":[...],"fix":[{"err":"","fix":"","why":""}],"tips":[...],"better":"","redo":""}`;
@@ -101,7 +102,9 @@ export async function onRequestPost({ request, env }) {
   const user_msg = `Học sinh: ${S ? S.name : "giáo viên thử"}. Trình độ: ${level || "chưa rõ"}.
 Phần thi: ${part}. Câu hỏi: ${String(C.q || "").slice(0, 600)}
 Từ gợi ý nên dùng: ${String(C.hint || "").slice(0, 400)}
-Thời lượng ghi âm: ${Number(req.seconds) || "?"} giây.
+Thời lượng ghi âm: ${Number(req.seconds) || "?"} giây.${C.cue ? `
+Cue card: ${C.cue.join("; ")}${C.explain ? "; and " + C.explain : ""}` : ""}
+Dàn ý em ghi trước khi nói: ${String(req.notes || "").slice(0, 900) || "(không ghi)"}
 Bản chép lời: """${transcript}"""`;
   // gọi qua relay ở Mỹ (service binding CLAUDE → Worker speakback-claude); chưa có binding thì gọi thẳng
   const send = env.CLAUDE ? (u, o) => env.CLAUDE.fetch("https://relay/v1/messages", o) : (u, o) => fetch(u, o);

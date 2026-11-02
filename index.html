@@ -97,6 +97,17 @@ details.cmp .up{color:var(--ok)} details.cmp .down{color:var(--bad)}
 .playtake{min-height:34px;padding:4px 12px;font-size:13.5px}
 .sent.small{font-size:16px;line-height:1.7}
 p.small{font-size:13px;margin:6px 0 0}
+.cue{border:2px solid var(--line,#ccc);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--card2,rgba(127,127,127,.06))}
+.cue p{margin:6px 0 2px}.cue ul{margin:0;padding-left:20px}
+.strat,.notes{margin:8px 0;border:1px dashed var(--line,#ccc);border-radius:10px;padding:6px 10px}
+.strat summary,.notes summary{cursor:pointer;font-weight:600}
+.strat ol{padding-left:20px;margin:6px 0}
+.demo{background:var(--card2,rgba(127,127,127,.06));border-radius:8px;padding:8px 10px;font-size:14px}
+.notes label span{display:inline-block;min-width:7em;font-weight:600;font-size:13px;opacity:.8}
+.demo .k{display:block;font-weight:600;font-size:12px;opacity:.75;margin-top:4px}
+.notes label{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin:6px 0}
+.notes input{flex:1 1 220px;min-width:0;font:inherit;padding:6px 8px;border-radius:8px;border:1px solid var(--line,#ccc);background:transparent;color:inherit}
+.notes .prep{margin-top:6px}
 .lesson.locked{opacity:.55}
 .logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
 .logincard p{margin:0;font-size:14.5px}
@@ -741,6 +752,80 @@ function renderSentenceHTML(chunks, statuses) {
   }).join(" ");
 }
 
+/* ---------- speaking strategy: guide + demo notes + note boxes (Part 1 A.R.E. · Part 2 cue card · Part 3 A.R.E.A.) ---------- */
+function partOf(S) { const m = /part\s*([123])/i.exec(S.part || S.label || ""); return m ? +m[1] : 1; }
+const STRAT = {
+  1: { name: "Part 1 · A.R.E.", time: "3–4 câu · 20–30 giây",
+    steps: ["<b>A – Answer:</b> trả lời thẳng câu hỏi trong 1 câu, dùng lại từ khóa của câu hỏi bằng từ khác (paraphrase).",
+            "<b>R – Reason:</b> 1 câu giải thích vì sao (because / since / the main reason is…).",
+            "<b>E – Example:</b> 1–2 câu ví dụ cụ thể của chính em (lúc nào, ở đâu, với ai). Có thể thêm 1 câu cảm nghĩ.",
+            "Mỗi câu dùng ≥ 1 từ trong gợi ý. Ghi <b>từ khóa</b>, không viết cả bài: thi thật Part 1 không có giấy nháp."],
+    fields: [["A", "Answer – trả lời thẳng"], ["R", "Reason – vì sao"], ["E", "Example – ví dụ của em"]],
+    demo: { q: "Do you like getting up early?", notes: { A: "not a morning person · on weekdays have to", R: "school starts 7am · sleep late reviewing", E: "Saturday · sleep in till 9 · recharge" } } },
+  2: { name: "Part 2 · Cue card", time: "1 phút chuẩn bị · nói 1'30–2'",
+    steps: ["<b>1 phút chuẩn bị:</b> gạch từ khóa trên cue card, ghi 2–4 từ khóa cho mỗi gợi ý. Thi thật được giữ giấy ghi chú khi nói.",
+            "<b>Mở bài (1 câu):</b> I'm going to talk about… / I'd like to describe…",
+            "<b>Thân bài:</b> đi lần lượt từng gợi ý trên card; đề trải nghiệm thì kể theo <b>STAR</b> (Situation → Task → Action → Result).",
+            "<b>Kết (dòng 'and explain…'):</b> 2–3 câu cảm nghĩ, bài học. Đây là chỗ ăn điểm, đừng bỏ.",
+            "Nói đủ 1'30–2'. Hết ý thì thêm chi tiết: ai, ở đâu, cảm giác thế nào."],
+    demo: { q: "Describe a teacher who has influenced you.", notes: { open: "my 10th-grade chemistry teacher", "Who the teacher was": "Ms. Lan · strict but caring", "What he/she taught you": "chemistry · lab skills · ask why", "How he/she taught": "real-life examples · small groups", explain: "fell in love with science · now aim for a medical major" } } },
+  3: { name: "Part 3 · A.R.E.A.", time: "4–6 câu · 30–45 giây",
+    steps: ["<b>A – Answer:</b> nêu quan điểm rõ ràng (I'd say… / It depends on…).",
+            "<b>R – Reason:</b> lý do chung cho cả xã hội, không chỉ bản thân em (mostly because… / this is largely due to…).",
+            "<b>E – Example:</b> ví dụ ở Việt Nam, ở trường, trên báo, hoặc so sánh xưa – nay.",
+            "<b>A – Alternative / Answer again:</b> nhìn mặt kia (On the other hand…) rồi chốt lại ý của em (So overall…).",
+            "Ghi từ khóa; thi thật Part 3 không có giấy nháp."],
+    fields: [["A1", "Answer – quan điểm"], ["R", "Reason – lý do chung"], ["E", "Example – ví dụ"], ["A2", "Alternative – mặt kia + chốt ý"]],
+    demo: { q: "Is it better to study at home or at a library?", notes: { A1: "depends on the person · mostly library", R: "fewer distractions · quiet · focus longer", E: "my friends · phone at home · library 3 hours straight", A2: "home saves travel time · but overall library" } } },
+};
+function noteFields(S) {
+  const p = partOf(S);
+  if (p !== 2) return STRAT[p].fields;
+  return [["open", "Mở bài – em sẽ nói về gì"], ...(S.cue || []).map(c => [c, c]), ["explain", S.explain ? "Kết – " + S.explain : "Kết – cảm nghĩ, vì sao"]];
+}
+function cueHTML(S) {
+  return `<div class="cue"><b>${esc(S.q)}</b>${(S.cue || []).length ? `<p>You should say:</p><ul>${S.cue.map(c => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}${S.explain ? `<p>and ${esc(S.explain)}.</p>` : ""}</div>`;
+}
+function stratHTML(L, S) {
+  const p = partOf(S), G = STRAT[p], D = S.demo || G.demo;
+  const dFields = p === 2 ? [["open", "Mở bài"], ...Object.keys(D.notes).filter(k => k !== "open" && k !== "explain").map(k => [k, k]), ["explain", "Kết"]] : G.fields;
+  return `<details class="strat"><summary>📘 Cách trả lời ${esc(G.name)} · ${esc(G.time)}</summary>
+    <ol>${G.steps.map(t => `<li>${t}</li>`).join("")}</ol>
+    <p class="muted">Làm mẫu cách ghi chú (câu khác, chỉ là từ khóa, không phải bài mẫu):</p>
+    <div class="demo"><b>❓ ${esc(D.q)}</b>${dFields.map(([k, lab]) => D.notes[k] ? `<div><span class="k">${esc(lab)}</span> ${esc(D.notes[k])}</div>` : "").join("")}</div>
+    <p class="muted">Đến lượt em: ghi từ khóa vào ô bên dưới, tập nói bằng 🎙 Ghi âm thử cho đến khi trôi chảy.</p></details>`;
+}
+const notesKey = L => `notes:${student}:${L.id}`;
+function notesHTML(L, S, i) {
+  const n = (store.get(notesKey(L), {})[i]) || {}, p = partOf(S);
+  return `<details class="notes" open><summary>📝 Ghi chú của em ${p === 2 ? "(như giấy nháp khi thi)" : "(từ khóa hoặc câu ngắn)"}</summary>
+    ${noteFields(S).map(([k, lab]) => `<label><span>${esc(lab)}</span><input data-k="${esc(k)}" value="${esc(n[k] || "")}" placeholder="từ khóa / câu ngắn…" autocomplete="off"></label>`).join("")}
+    ${p === 2 ? `<button class="prep">⏱ Bắt đầu 1 phút chuẩn bị</button>` : ""}</details>`;
+}
+let noteTimer = null;
+function wireNotes(L, i, card) {
+  card.querySelectorAll(".notes input").forEach(inp => inp.addEventListener("input", () => {
+    const all = store.get(notesKey(L), {}), n = all[i] || {};
+    n[inp.dataset.k] = inp.value.slice(0, 200); all[i] = n; store.set(notesKey(L), all);
+    clearTimeout(noteTimer);
+    noteTimer = setTimeout(() => { if (cloudUser()) window.Cloud.saveTake(`${L.id}~${i}~note`, { lesson: L.id, i, kind: "note", at: Date.now(), s: 0, st: "", h: "", audio: "", notes: n }).catch(e => console.error(e)); }, 1500);
+  }));
+  const prep = card.querySelector(".prep");
+  if (prep) prep.addEventListener("click", () => {
+    if (prep._t) { clearInterval(prep._t); prep._t = null; prep.textContent = "⏱ Bắt đầu 1 phút chuẩn bị"; return; }
+    let left = 60; const live = card.querySelector(".live");
+    prep.textContent = "⏱ 60 giây · bấm để dừng";
+    prep._t = setInterval(() => {
+      left--; prep.textContent = `⏱ ${left} giây · bấm để dừng`;
+      if (left <= 0) { clearInterval(prep._t); prep._t = null; prep.textContent = "⏱ Bắt đầu 1 phút chuẩn bị"; live.textContent = "Hết 1 phút! Bắt đầu nói ngay (🎙 Ghi âm thử hoặc 📤 Ghi âm nộp bài), nói 1'30–2'."; }
+    }, 1000);
+  });
+}
+function notesText(L, S, i) {
+  const n = (store.get(notesKey(L), {})[i]) || {};
+  return noteFields(S).map(([k, lab]) => n[k] ? `${lab}: ${n[k]}` : "").filter(Boolean).join(" | ").slice(0, 900);
+}
+
 function viewLesson(L) {
   if (lockedUntil(L)) { location.hash = ""; return; }
   if (L.type === "dictation") return viewDictation(L);
@@ -758,7 +843,7 @@ function viewLesson(L) {
       <span>/ ngừng ngắn · // ngừng dài · ' nhấn âm · ‿ nối âm</span>
     </div>
     ${L.theory ? `<details class="video theory" ${lessonProgress(L) ? "" : "open"}><summary>📘 Xem lý thuyết trước: ${esc(L.theoryTitle || "video bài học")}</summary><video src="${esc(L.theory)}" controls playsinline preload="metadata"></video></details>` : ""}
-    <details class="video"><summary>Xem video shadowing cả bài</summary><video src="${esc(L.video)}" controls playsinline preload="metadata"></video></details>
+    ${L.video ? `<details class="video"><summary>Xem video shadowing cả bài</summary><video src="${esc(L.video)}" controls playsinline preload="metadata"></video></details>` : ""}
     ${deadlineBox(L)}
     ${L.sentences.map((s, i) => {
       const head = s.speaker ? `<span class="who">${esc(s.speaker)}</span>` : "";
@@ -766,9 +851,10 @@ function viewLesson(L) {
       <section class="card free" data-i="${i}">
         <div class="n"><span>Câu ${mineIdx.indexOf(i) + 1}/${mineIdx.length}</span><span class="best">${best[i] != null ? "Đã ghi âm" : ""}</span></div>
         ${s.label ? `<span class="tag">${esc(s.label)}</span>` : ""}
-        <div class="sent q">❓ ${esc(s.q)}</div>
+        ${partOf(s) === 2 ? cueHTML(s) : `<div class="sent q">❓ ${esc(s.q)}</div>`}
         ${s.hint ? `<p class="hint">💡 Dùng ít nhất 2 từ/cụm: <b>${esc(s.hint)}</b></p>` : ""}
-        <p class="are">A.R.E.: Answer → Reason → Example · 3–4 câu · 20–30 giây</p>
+        ${stratHTML(L, s)}
+        ${notesHTML(L, s, i)}
         <div class="actions"><button class="recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm thử</button><button class="primary submit" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>📤 Ghi âm nộp bài</button></div>
         <p class="muted small">🎙 <b>Ghi âm thử</b>: tập thoải mái, không chấm, không tính lượt. 📤 <b>Ghi âm nộp bài</b>: máy chấm theo 4 tiêu chí và lưu kết quả, tối đa 3 lần mỗi câu.</p>
         <div class="live" aria-live="polite"></div>
@@ -799,7 +885,7 @@ function viewLesson(L) {
     <p class="foot">Máy nghe đôi khi tự đoán giúp em, nên chữ xanh chưa chắc đã chuẩn 100%. Chữ đỏ thì chắc chắn cần sửa.</p>`;
   $("#backBtn").addEventListener("click", () => { location.hash = ""; });
   if (useWhisper() && store.get("whisperLoaded", false)) loadWhisper();
-  player.src = L.video;
+  if (L.video) player.src = L.video;
   loadTakes(L);
   if (!store.get("tour:lesson", false)) startTour("lesson");
   else if (L.roles && $(".card.other")) startTour("dialog");
@@ -808,6 +894,7 @@ function viewLesson(L) {
     if (S.free) {
       card.querySelector(".recfree").addEventListener("click", e => recordFree(L, i, card, e.currentTarget));
       card.querySelector(".submit").addEventListener("click", e => confirmSubmit(L, i, card, e.currentTarget));
+      wireNotes(L, i, card);
       renderCompare(L, i, card); subStatus(L, i, card); return;
     }
     card.querySelector(".listen").addEventListener("click", e => playSpan(S.start, S.end, e.currentTarget));
@@ -1173,7 +1260,7 @@ async function recordFree(L, i, card, btn, forSubmit) {
   const t0 = Date.now();
   const label0 = btn.textContent, wasPrimary = btn.classList.contains("primary");
   btn.textContent = forSubmit ? "⏺ Đang ghi bài nộp… bấm để dừng" : "⏺ Đang ghi… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
-  const tick = setInterval(() => { live.textContent = `Đang ghi ${Math.round((Date.now() - t0) / 1000)} giây · nói 20–30 giây rồi bấm dừng.`; }, 500);
+  const tick = setInterval(() => { live.textContent = `Đang ghi ${Math.round((Date.now() - t0) / 1000)} giây · ${partOf(L.sentences[i]) === 2 ? "nói 1'30–2'" : partOf(L.sentences[i]) === 3 ? "nói 30–45 giây" : "nói 20–30 giây"} rồi bấm dừng.`; }, 500);
   const session = { done: false, stop: async () => {
     if (session.done) return; session.done = true;
     clearInterval(tick); clearTimeout(cap);
@@ -1191,7 +1278,10 @@ async function recordFree(L, i, card, btn, forSubmit) {
     if (forSubmit) await submitFree(L, i, card, btn, sec);
     subStatus(L, i, card);
   } };
-  const cap = setTimeout(() => session.stop(), 90000);
+  const P = partOf(L.sentences[i]), capSec = P === 2 ? 130 : 90;
+  const nb = card.querySelector(".notes");
+  if (forSubmit && P !== 2 && nb) { nb.open = false; live.textContent = "Thi thật Part " + P + " không có giấy nháp, nên ghi chú đã gập lại. Nói đi em!"; }
+  const cap = setTimeout(() => session.stop(), capSec * 1000);
   rec = session;
 }
 /* ---------- submit a free answer + teacher feedback (DATA.feedback[sid][lessonId][i]) ---------- */
@@ -1245,7 +1335,7 @@ function confirmSubmit(L, i, card, btn) {
   const C = (DATA.criteria || {}).speaking || [];
   $("#micSheet").innerHTML = `<div class="mic-ic">📤</div>
     <h3 id="micTitle">Nộp bài và nhận nhận xét?</h3>
-    <p>Bấm <b>Bắt đầu ghi âm nộp</b>, nói câu trả lời (20–30 giây, A.R.E.), rồi bấm dừng. Máy sẽ chấm và lưu kết quả cho chị xem.</p>
+    <p>Bấm <b>Bắt đầu ghi âm nộp</b>, nói câu trả lời (${[, "20–30 giây, A.R.E.", "1'30–2', theo cue card", "30–45 giây, A.R.E.A."][partOf(L.sentences[i])]}), rồi bấm dừng. Máy sẽ chấm và lưu kết quả cho chị xem.${partOf(L.sentences[i]) !== 2 ? " Ghi chú sẽ gập lại như thi thật." : ""}</p>
     <p><b>Nhận xét theo 4 tiêu chí IELTS:</b></p>
     <ul>${C.length ? C.map(c => `<li><b>${esc(c.name)}</b>: ${esc(c.what)}</li>`).join("") : "<li>Fluency & Coherence</li><li>Lexical Resource</li><li>Grammatical Range & Accuracy</li><li>Pronunciation</li>"}</ul>
     <p class="muted">Kèm band ước lượng, điểm mạnh, tối đa 3 lỗi cần sửa, cách khắc phục và bản nâng cấp để luyện. Phát âm thì chị nghe trực tiếp.</p>
@@ -1271,7 +1361,7 @@ async function submitFree(L, i, card, btn, sec) {
   finally { btn.disabled = false; subStatus(L, i, card); }
 }
 /* ⚠ CHỖ DUY NHẤT GỌI /api/feedback (dùng API key, tốn tiền). Chỉ cho thẻ tự trả lời "free": true, sau khi HS bấm Nộp.
-   Giới hạn: mỗi câu 3 lần nộp, mỗi HS 9 lần/tuần (3 câu Part 1 Thứ Hai–Tư × 3; server đếm). 🎙 Ghi âm thử KHÔNG tốn lượt. */
+   Giới hạn: mỗi câu 3 lần nộp, mỗi HS 15 lần/tuần (5 câu × 3; server đếm). 🎙 Ghi âm thử KHÔNG tốn lượt. */
 const quotaKey = () => `aiq:${student}`;
 function saveQuota(L, i, q) { const all = store.get(quotaKey(), {}); all[`${L.id}~${i}`] = q; all._week = q; store.set(quotaKey(), all); }
 function quotaText(L, i) {
@@ -1295,7 +1385,7 @@ async function autoFeedback(L, i, card, dataURL, subAt) {
     live.textContent = "Máy đang chấm theo 4 tiêu chí…";
     const idToken = await window.Cloud.user.getIdToken();
     const r = await fetch("/api/feedback", { method: "POST", headers: { "content-type": "application/json" },
-      body: JSON.stringify({ idToken, lesson: L.id, i, transcript: text, seconds: Math.round(dec.duration) }) });
+      body: JSON.stringify({ idToken, lesson: L.id, i, transcript: text, seconds: Math.round(dec.duration), notes: notesText(L, S, i) }) });
     const fb = await r.json();
     if (fb && fb.quota) saveQuota(L, i, fb.quota);
     if (!r.ok) { live.textContent = (fb && fb.error) || "Chưa nhận xét được, chị sẽ chấm sau nha."; subStatus(L, i, card); return; }
@@ -1388,6 +1478,8 @@ function loadTakes(L) {
     if (!rows.length) return;
     const all = getTakes(L);
     for (const r of rows) {
+      if (r.kind === "note") { const all = store.get(notesKey(L), {}); if (!all[r.i] || !Object.values(all[r.i]).some(Boolean)) { all[r.i] = r.notes || {}; store.set(notesKey(L), all); const inp = document.querySelectorAll(`.card[data-i="${r.i}"] .notes input`); inp.forEach(x => { if (!x.value) x.value = (r.notes || {})[x.dataset.k] || ""; }); } continue; }
+      if (r.kind === "quota") continue;
       if (r.kind === "sub") { const subs = store.get(subKey(L), {}); if (!subs[r.i] || r.at > subs[r.i]) { subs[r.i] = r.at; store.set(subKey(L), subs); } continue; }
       if (r.kind === "fb") { const fbs = store.get(`fb:${student}:${L.id}`, {}); if (!fbs[r.i] || (r.fb && r.fb.sub >= (fbs[r.i].sub || 0))) { fbs[r.i] = r.fb; store.set(`fb:${student}:${L.id}`, fbs); } continue; }
       const cur = all[r.i] || (all[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at };
@@ -1561,7 +1653,7 @@ async function viewTeacherLesson(sid, L) {
   const takes = {};
   try {
     for (const u of docs) for (const r of await window.Cloud.loadTakesOf(u.uid, L.id)) {
-      if (r.kind === "sub" || r.kind === "fb") continue;
+      if (r.kind === "sub" || r.kind === "fb" || r.kind === "note" || r.kind === "quota") continue;
       const cur = takes[r.i] || (takes[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at, audio: r.audio };
       if (r.kind === "first" ? (!cur.first || t.at < cur.first.at) : (!cur.last || t.at > cur.last.at)) cur[r.kind] = t;
     }
