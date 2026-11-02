@@ -17,3 +17,5 @@ Mở bằng Chrome (Android) hoặc Safari (iPhone).
 | 📝 Nhận xét giáo viên đã duyệt | Không | Đọc từ `data/lessons.json` |
 
 Giới hạn để không lố budget (credit trả trước): mỗi câu **3 lượt** máy chấm, mỗi HS **9 lượt/tuần** (3 câu Part 1 Thứ Hai–Tư × 3 lần nộp) (mở lại Thứ Hai, giờ VN), giáo viên thử **10 lượt/tuần**. Hết lượt thì bài vẫn được nộp, giáo viên chấm tay. Đổi số ở đầu `functions/api/feedback.js` (`PER_CARD`, `PER_WEEK`).
+
+Đường đi: trình duyệt (Whisper chép lời) → `/api/feedback` (Pages, ở Hồng Kông với HS ở VN) → service binding `CLAUDE` → Worker `speakback-claude` (`claude-relay/`, cố định ở Mỹ vì Claude API chặn máy chủ Hồng Kông) → Claude API. Key chỉ nằm trong secret `ANTHROPIC_API_KEY` của Pages.
