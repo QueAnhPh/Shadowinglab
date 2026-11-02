@@ -103,7 +103,9 @@ Phần thi: ${part}. Câu hỏi: ${String(C.q || "").slice(0, 600)}
 Từ gợi ý nên dùng: ${String(C.hint || "").slice(0, 400)}
 Thời lượng ghi âm: ${Number(req.seconds) || "?"} giây.
 Bản chép lời: """${transcript}"""`;
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
+  // gọi qua relay ở Mỹ (service binding CLAUDE → Worker speakback-claude); chưa có binding thì gọi thẳng
+  const send = env.CLAUDE ? (u, o) => env.CLAUDE.fetch("https://relay/v1/messages", o) : (u, o) => fetch(u, o);
+  const r = await send("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
     body: JSON.stringify({ model: env.FEEDBACK_MODEL || MODEL, max_tokens: 1200, system: SYSTEM, messages: [{ role: "user", content: user_msg }] }),

@@ -1,0 +1,10 @@
+# Relay nhỏ chạy ở Mỹ: /api/feedback (Pages, chạy ở Hồng Kông với HS ở VN) gọi Claude qua đây vì Claude API chặn máy chủ Hồng Kông.
+# Không giữ key: key do Pages gửi kèm. Không có địa chỉ công khai (workers_dev = false), chỉ gọi qua service binding CLAUDE.
+name = "speakback-claude"
+main = "index.js"
+compatibility_date = "2026-10-26"
+workers_dev = false
+preview_urls = false
+
+[placement]
+region = "aws:us-east-1"
