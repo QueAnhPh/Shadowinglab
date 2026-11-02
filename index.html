@@ -108,6 +108,25 @@ details.nolog .pick{margin-top:8px}
 .alert-row .t b{display:block;font-weight:600;font-size:15px}
 .alert-row .t span{font-size:13px;color:var(--muted)}
 .alert-row.over{border-color:var(--bad)}
+.profile{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:0}
+.profile>summary{padding:16px 18px;cursor:pointer;list-style:none;display:grid;gap:6px}
+.profile>summary::-webkit-details-marker{display:none}
+.profile>summary h2{margin:0;font-size:18px}
+.profile .lvl{font-size:14px;color:var(--muted)}
+.profile .focus{margin:0;padding-left:20px;font-size:15px}
+.profile .focus li{margin:2px 0}
+.profile .more{font-size:13px;color:var(--accent);font-weight:600}
+.profile[open] .more{display:none}
+.profile .pbody{padding:0 18px 16px;display:grid;gap:12px}
+.profile .skill h3{margin:6px 0 4px;font-size:16px}
+.crit{border:1px solid var(--line);border-radius:14px;padding:10px 12px;display:grid;gap:4px}
+.crit b{font-size:15px}
+.crit .what{font-size:13px;color:var(--muted)}
+.crit .pl{margin:0;padding-left:18px;font-size:14px}
+.crit .pl li{margin:1px 0}
+.crit .good{color:var(--ok)}
+.crit .weak{color:var(--bad)}
+.profile .note{font-size:13px;color:var(--muted)}
 .allclear{border-radius:12px;padding:12px 14px;font-size:14px;background:var(--ok-bg);color:var(--ok);font-weight:500}
 .tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--line);border-radius:12px;padding:4px}
 .tab{border:none;background:transparent;font-weight:600;min-height:42px;color:var(--muted)}
@@ -597,6 +616,28 @@ function pendingHomework(mine) {
     return { H, ls, p, n: today(H.deadline) };
   }).filter(x => x.ls.length && x.p < 100 && x.n >= -7).sort((a, b) => a.n - b.n);
 }
+/* level card: IELTS criteria + this student's strengths / weaknesses / focus (data in lessons.json: criteria + students[].profile) */
+function profileCard(sid, open) {
+  const C = DATA.criteria, S = DATA.students.find(x => x.id === sid);
+  if (!C || !S) return "";
+  const P = S.profile || {};
+  const skill = k => {
+    const crit = (C[k] || []).map(c => {
+      const m = ((P[k] || {}).by || {})[c.id] || {};
+      const li = (arr, cls, icon) => (arr || []).map(t => `<li class="${cls}">${icon} ${esc(t)}</li>`).join("");
+      const body = li(m.good, "good", "👍") + li(m.weak, "weak", "🔧");
+      return `<div class="crit"><b>${esc(c.name)}</b><span class="what">${esc(c.what)}</span>${body ? `<ul class="pl">${body}</ul>` : ""}</div>`;
+    }).join("");
+    const note = (P[k] || {}).note;
+    return `<div class="skill"><h3>${k === "speaking" ? "🗣️ Speaking" : "🎧 Listening"}</h3>${note ? `<p class="note">${esc(note)}</p>` : ""}${crit}</div>`;
+  };
+  return `<details class="profile" ${open ? "open" : ""}>
+    <summary><h2>📊 Em đang ở đâu</h2>
+      ${P.level ? `<span class="lvl">${esc(P.level)}${P.updated ? ` · cập nhật ${esc(P.updated)}` : ""}</span>` : ""}
+      ${(P.focus || []).length ? `<b>🎯 Tuần này tập trung:</b><ol class="focus">${P.focus.map(f => `<li>${esc(f)}</li>`).join("")}</ol>` : ""}
+      <span class="more">Xem tiêu chí chấm, điểm mạnh và điểm cần sửa ›</span></summary>
+    <div class="pbody">${(C.intro || []).map(t => `<p class="note">${esc(t)}</p>`).join("")}${skill("speaking")}${skill("listening")}</div></details>`;
+}
 function viewList() {
   const mine = DATA.lessons.filter(L => L.for.includes(student));
   const todo = pendingHomework(mine);
@@ -620,7 +661,7 @@ function viewList() {
       <p>🔐 <b>Đăng nhập Gmail để lưu tiến độ online.</b> Đổi máy không mất bài đã luyện; phần đã luyện trên máy này cũng được giữ lại.</p>
       <button class="gbtn" id="gSignIn">${GOOGLE_SVG}<span>Đăng nhập bằng Google</span></button>
       <p class="muted" id="gErr" hidden></p></section>` : "";
-  $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}
+  $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}${profileCard(student, false)}
     ${todo.length ? `<section class="alert" aria-label="Bài tập về nhà">
       <img class="sticker" src="stickers/wave.svg" alt="">
       <h2>⏰ Bài tập về nhà cần làm</h2>
@@ -1259,7 +1300,7 @@ function viewTeacher() {
       }).join("")}</tbody></table></div></section>` : ""}
     ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
       <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
-      <div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
+      ${profileCard(r.s.id, false)}<div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
         const p = progressOf(L, r.s.id, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[r.s.id] : null;
         return `<button class="trow" data-go="teach~${r.s.id}~${L.id}">
           <div class="t"><b>${esc(L.title)}</b><span>${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""}${H ? " · homework" : ""} · đã thử ${p.tried.length}/${p.idx.length} câu</span>
@@ -1320,6 +1361,7 @@ async function viewTeacherLesson(sid, L) {
 const TOURS = {
   list: [
     { sel: ".logincard", text: "🔐 Đăng nhập Gmail 1 lần để lưu tiến độ, đổi máy không mất bài." },
+    { sel: ".profile", text: "📊 Tiêu chí chấm IELTS, điểm mạnh của em và chỗ cần sửa. Bấm để xem chi tiết." },
     { sel: ".alert", text: "⏰ Bài tập về nhà chưa xong và số ngày còn lại tới hạn nộp." },
     { sel: ".tabs", text: "🗣️ / 🎧 Chọn Speaking hoặc Listening. Số đỏ = homework chưa làm." },
     { sel: "details.sess", text: "📚 Mỗi buổi là một folder, bên trong chia theo chủ đề bài. Bấm để mở hoặc đóng." },

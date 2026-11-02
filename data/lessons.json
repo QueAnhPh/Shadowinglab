@@ -13,7 +13,63 @@
    "name": "Vân Anh",
    "emails": [
     "nguyenngocvananh031209@gmail.com"
-   ]
+   ],
+   "profile": {
+    "updated": "2/11/2026",
+    "level": "Hiện tại khoảng band 5.0 · mục tiêu 6.0–6.5 (thi 2/2027)",
+    "focus": [
+     "Âm cuối /p/ /b/ /ʃ/ /r/ và /v/ /z/: laptop, job, finish, career, love, loves.",
+     "Chia động từ: I study (không nói I'm study), he teaches; homework không đếm được.",
+     "Dùng từ chắc nghĩa: 1 cụm hay mà đúng (over my head, at my own pace) tốt hơn 3 từ khó mà sai."
+    ],
+    "speaking": {
+     "by": {
+      "fc": {
+       "good": [
+        "Câu trả lời nào cũng có lý do và ví dụ, nói được 3–4 câu như yêu cầu Part 1.",
+        "Đã biết mở đầu bằng To be honest, The reason is that, That's why."
+       ],
+       "weak": [
+        "Dùng 2 từ nối cho 1 ý: Since…, so… → chỉ giữ 1.",
+        "Câu bị thiếu: Based on the subject → It depends on the subject."
+       ]
+      },
+      "lr": {
+       "good": [
+        "Dám dùng từ nâng cao: compulsory, comprehend, struggle with, my cup of tea.",
+        "Có ý riêng rõ ràng về ngành học (muốn làm nha sĩ) → dễ phát triển câu trả lời."
+       ],
+       "weak": [
+        "Dịch từ tiếng Việt nên sai nghĩa: acknowledge (thừa nhận) ≠ knowledge (kiến thức); the ground why → the reason why.",
+        "Cụm chưa tự nhiên: walk on my own pace → at my own pace; I will enjoy accompany → I prefer studying with friends."
+       ]
+      },
+      "gra": {
+       "good": [
+        "Đã dùng câu phức với because, since, that's why."
+       ],
+       "weak": [
+        "Chia động từ: I'm study → I study; he teach → he teaches.",
+        "Số ít/số nhiều: these homework → this homework; those subject → those subjects."
+       ]
+      },
+      "p": {
+       "good": [
+        "Phần lớn 21 âm cuối đã đọc được: buổi 1 chỉ 4/21 âm trong bảng cần sửa."
+       ],
+       "weak": [
+        "Âm cuối /p/ laptop, /b/ job, /ʃ/ finish, /r/ career: khép môi / chu môi / cong lưỡi rồi giữ âm.",
+        "/v/ /z/ cuối: love, loves (cổ rung).",
+        "Nối âm và đọc lướt: work‿on, check‿your, did you → \"đi-dziu\", need to → \"nít-tơ\"."
+       ]
+      }
+     }
+    },
+    "listening": {
+     "note": "Chưa có bài Listening. Chị sẽ đánh giá sau bài nghe đầu tiên.",
+     "by": {}
+    }
+   }
   }
  ],
  "homework": [
@@ -3136,7 +3192,7 @@
    "id": "va1-shadowing",
    "session": 1,
    "title": "Shadowing – My senior year",
-   "subtitle": "Đoạn shadowing trên lớp, luyện 3 lần/ngày",
+   "subtitle": "Đoạn về chính em (lớp 12, muốn học nha khoa), luyện 3 lần/ngày",
    "for": [
     "vananh"
    ],
@@ -3145,9 +3201,9 @@
    "topic": "Studies & School life",
    "sentences": [
     {
-     "text": "Right 'now, / I'm in my 'senior year of high school, //",
+     "text": "Right 'now, / I'm a 'senior at Thu Duc High 'School, // so to be 'honest, / I !!have a 'lot ‿ on my 'plate!!. //",
      "start": 0.65,
-     "end": 4.08,
+     "end": 7.51,
      "chunks": [
       [
        0.8,
@@ -3155,129 +3211,126 @@
       ],
       [
        1.94,
-       3.83
+       3.89
+      ],
+      [
+       4.19,
+       5.34
+      ],
+      [
+       5.64,
+       7.26
       ]
      ]
     },
     {
-     "text": "so to be 'honest, / I !!have a 'lot ‿ on my plate!!. //",
-     "start": 4.78,
-     "end": 8.25,
+     "text": "Be'sides 'regular classes, / I go to 'extra classes / almost every 'evening, // especially for 'math and 'chemistry. //",
+     "start": 8.21,
+     "end": 16.27,
      "chunks": [
       [
-       4.93,
-       6.08
+       8.36,
+       10.07
       ],
       [
-       6.38,
-       8.0
+       10.37,
+       12.01
+      ],
+      [
+       12.31,
+       13.75
+      ],
+      [
+       14.05,
+       16.02
       ]
      ]
     },
     {
-     "text": "Besides 'regular classes, / I go to 'extra classes / almost every 'evening, //",
-     "start": 8.95,
-     "end": 14.74,
+     "text": "I'm also pre'paring for I-E-L-T-S, / because it's !!a 'stepping stone!! / to a top 'medical school. //",
+     "start": 16.97,
+     "end": 23.56,
      "chunks": [
       [
-       9.1,
-       10.81
+       17.12,
+       19.61
       ],
       [
-       11.11,
-       12.75
+       19.91,
+       21.47
       ],
       [
-       13.05,
-       14.49
-      ]
-     ]
-    },
-    {
-     "text": "and I'm also preparing for I-E-L-T-S, / because it's !!a 'stepping stone!! / to a good uni'versity. //",
-     "start": 15.44,
-     "end": 22.1,
-     "chunks": [
-      [
-       15.59,
-       18.21
-      ],
-      [
-       18.51,
-       20.07
-      ],
-      [
-       20.37,
-       21.85
+       21.77,
+       23.31
       ]
      ]
     },
     {
      "text": "I used to ++'cram++ / the night before every 'test, / but it always left me / ++stressed ‿ 'out++. //",
-     "start": 22.8,
-     "end": 29.36,
+     "start": 24.26,
+     "end": 30.81,
      "chunks": [
       [
-       22.95,
-       24.15
+       24.41,
+       25.61
       ],
       [
-       24.45,
-       26.2
+       25.91,
+       27.67
       ],
       [
-       26.5,
-       27.84
+       27.97,
+       29.3
       ],
       [
-       28.14,
-       29.11
+       29.6,
+       30.56
       ]
      ]
     },
     {
-     "text": "These 'days, / I try to re'view a little / every 'day, / so I don't ++fall be'hind++. //",
-     "start": 30.06,
-     "end": 36.16,
+     "text": "These 'days, / I re'view a little / every 'day, / so I don't ++fall be'hind++. //",
+     "start": 31.51,
+     "end": 37.28,
      "chunks": [
       [
-       30.21,
-       31.18
+       31.66,
+       32.64
       ],
       [
-       31.48,
-       32.97
+       32.94,
+       34.08
       ],
       [
-       33.27,
-       34.18
+       34.38,
+       35.3
       ],
       [
-       34.48,
-       35.91
+       35.6,
+       37.03
       ]
      ]
     },
     {
-     "text": "I'm hoping to ++'major ‿ in++ / international 'business, // mainly because the ++ca'reer prospects++ / are really 'promising. //",
-     "start": 36.86,
-     "end": 44.35,
+     "text": "I'm hoping to ++'major ‿ in++ / =='dentistry==, // mainly because the ++ca'reer prospects++ / are really 'promising. //",
+     "start": 37.98,
+     "end": 44.97,
      "chunks": [
       [
-       37.01,
-       38.43
+       38.13,
+       39.55
       ],
       [
-       38.73,
-       40.17
+       39.85,
+       40.79
       ],
       [
-       40.47,
-       42.57
+       41.09,
+       43.19
       ],
       [
-       42.87,
-       44.1
+       43.49,
+       44.72
       ]
      ]
     }
@@ -3740,5 +3793,55 @@
   "meeting": "Âm cuối /ŋ/: như \"ng\" trong làng, không thêm \"k\".",
   "email": "Âm cuối /l/: đầu lưỡi chạm gờ sau răng trên, giữ yên. Không đọc thành \"meo\".",
   "career": "Âm cuối /r/: cong đầu lưỡi lên, không chạm đâu cả. Nhấn âm 2 REER."
+ },
+ "criteria": {
+  "intro": [
+   "IELTS Speaking chấm 4 tiêu chí, mỗi tiêu chí 25%. Listening chấm theo số câu đúng trên 40 câu.",
+   "👍 = điểm mạnh em đang có · 🔧 = chỗ cần sửa. Chị cập nhật sau mỗi buổi."
+  ],
+  "speaking": [
+   {
+    "id": "fc",
+    "name": "Fluency & Coherence – Trôi chảy, mạch lạc",
+    "what": "Nói dài không ngập ngừng nhiều, ý nối với nhau rõ ràng (A.R.E.: Answer → Reason → Example), dùng từ nối đúng chỗ."
+   },
+   {
+    "id": "lr",
+    "name": "Lexical Resource – Vốn từ",
+    "what": "Dùng từ đúng nghĩa, đúng ngữ cảnh; có collocation, phrasal verb, idiom; diễn đạt lại được khi bí từ."
+   },
+   {
+    "id": "gra",
+    "name": "Grammatical Range & Accuracy – Ngữ pháp",
+    "what": "Có cả câu đơn và câu phức; chia động từ, số ít/số nhiều, thì đúng; càng nhiều câu không lỗi càng cao điểm."
+   },
+   {
+    "id": "p",
+    "name": "Pronunciation – Phát âm",
+    "what": "Người nghe hiểu dễ dàng: đủ âm cuối, nhấn âm đúng, nối âm, ngắt cụm và ngữ điệu tự nhiên."
+   }
+  ],
+  "listening": [
+   {
+    "id": "score",
+    "name": "Số câu đúng → band",
+    "what": "40 câu, mỗi câu 1 điểm. Tham khảo: khoảng 23/40 ≈ 6.0 · 26/40 ≈ 6.5 · 30/40 ≈ 7.0."
+   },
+   {
+    "id": "key",
+    "name": "Bắt keyword & paraphrase",
+    "what": "Đáp án hiếm khi lặp nguyên từ trong câu hỏi; phải nhận ra cách nói khác (paraphrase) của cùng ý."
+   },
+   {
+    "id": "spell",
+    "name": "Chính tả, số, tên riêng",
+    "what": "Viết sai chính tả hoặc sai số ít/số nhiều là mất điểm; nghe đúng số, ngày tháng, tên được đánh vần."
+   },
+   {
+    "id": "trap",
+    "name": "Bẫy đổi ý (distractor)",
+    "what": "Người nói hay nói một đáp án rồi sửa lại; phải nghe đến hết ý mới chọn."
+   }
+  ]
  }
 }
