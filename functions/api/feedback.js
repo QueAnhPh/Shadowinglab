@@ -108,7 +108,11 @@ Bản chép lời: """${transcript}"""`;
     headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
     body: JSON.stringify({ model: env.FEEDBACK_MODEL || MODEL, max_tokens: 1200, system: SYSTEM, messages: [{ role: "user", content: user_msg }] }),
   });
-  if (!r.ok) return json({ error: r.status === 400 && (await r.text()).includes("credit") ? "Máy chấm tạm hết lượt của lớp, chị sẽ chấm tay nha." : "Máy nhận xét đang bận, em thử lại sau ít phút nha.", detail: r.status }, 502);
+  if (!r.ok) {
+    const t = await r.text();
+    let why = ""; try { why = (JSON.parse(t).error || {}).message || ""; } catch {}
+    return json({ error: /credit|balance/i.test(t) ? "Máy chấm tạm hết lượt của lớp, chị sẽ chấm tay nha." : "Máy nhận xét đang bận, em thử lại sau ít phút nha.", detail: r.status, why: why.slice(0, 300) }, 502);
+  }
   const out = await r.json();
   const text = (out.content || []).map(c => c.text || "").join("");
   let fb;
