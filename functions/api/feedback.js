@@ -10,14 +10,14 @@
 
    Chặn lố budget (credit trả trước 5 USD, Sonnet 5.5 ≈ 0.011 USD / lần chấm):
      - chỉ nhận thẻ có "free": true của bài giao cho đúng HS đó; câu hỏi lấy từ lessons.json, không lấy từ trình duyệt
-     - mỗi câu tối đa PER_CARD lần chấm, mỗi HS tối đa PER_WEEK lần / tuần (đếm ở Firestore users/{uid}/takes/_aiquota)
+     - mỗi câu tối đa PER_CARD lần chấm, mỗi HS tối đa PER_WEEK lần / tuần (3 câu Part 1 Thứ Hai–Tư × 3) (đếm ở Firestore users/{uid}/takes/_aiquota)
      - bản chép lời tối đa 2500 ký tự, trả lời tối đa 1200 token
    POST { idToken, lesson, i, transcript, seconds } → feedback JSON + quota { card, cardMax, week, weekMax }
    Needs the Cloudflare Pages secret ANTHROPIC_API_KEY. */
 const PROJECT = "speakback-522aa";
 const TEACHERS = ["phqa8899@gmail.com"];
 const MODEL = "claude-sonnet-5-5";
-const PER_CARD = 3, PER_WEEK = 15, TEACHER_WEEK = 10;
+const PER_CARD = 3, PER_WEEK = 9, TEACHER_WEEK = 10;   // 9 = 3 câu Part 1 (Thứ Hai–Tư) × 3 lần nộp
 const FS = "https://firestore.googleapis.com/v1/projects/" + PROJECT + "/databases/(default)/documents";
 const JWK_URL = "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";
 

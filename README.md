@@ -16,4 +16,4 @@ Mở bằng Chrome (Android) hoặc Safari (iPhone).
 | Khung "Em đang ở đâu", màn giáo viên, tải bài nộp | Không | Trình duyệt + Firestore |
 | 📝 Nhận xét giáo viên đã duyệt | Không | Đọc từ `data/lessons.json` |
 
-Giới hạn để không lố budget (credit trả trước): mỗi câu **3 lượt** máy chấm, mỗi HS **15 lượt/tuần** (mở lại Thứ Hai, giờ VN), giáo viên thử **10 lượt/tuần**. Hết lượt thì bài vẫn được nộp, giáo viên chấm tay. Đổi số ở đầu `functions/api/feedback.js` (`PER_CARD`, `PER_WEEK`).
+Giới hạn để không lố budget (credit trả trước): mỗi câu **3 lượt** máy chấm, mỗi HS **9 lượt/tuần** (3 câu Part 1 Thứ Hai–Tư × 3 lần nộp) (mở lại Thứ Hai, giờ VN), giáo viên thử **10 lượt/tuần**. Hết lượt thì bài vẫn được nộp, giáo viên chấm tay. Đổi số ở đầu `functions/api/feedback.js` (`PER_CARD`, `PER_WEEK`).

@@ -96,6 +96,8 @@ details.cmp .up{color:var(--ok)} details.cmp .down{color:var(--bad)}
 .take-h span{color:var(--muted)}
 .playtake{min-height:34px;padding:4px 12px;font-size:13.5px}
 .sent.small{font-size:16px;line-height:1.7}
+p.small{font-size:13px;margin:6px 0 0}
+.lesson.locked{opacity:.55}
 .logincard{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
 .logincard p{margin:0;font-size:14.5px}
 details.nolog summary{cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
@@ -626,7 +628,12 @@ function topicsOf(ls) {
   ls.forEach(L => { const t = L.topic || L.title; if (!m.has(t)) m.set(t, []); m.get(t).push(L); });
   return [...m];
 }
+/* daily homework: a lesson with "opens": "YYYY-MM-DD" stays locked until that day */
+const VI_WD = ["Chủ nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+function lockedUntil(L) { if (!L.opens || TEACH || daysLeft(L.opens) <= 0) return ""; const d = parseDay(L.opens); return `${VI_WD[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}`; }
 function lessonButton(L) {
+  const lock = lockedUntil(L);
+  if (lock) return `<button class="lesson locked" disabled><span class="ring" style="--p:0"><i>🔒</i></span><span class="t"><b>${esc(L.title)}</b><span>Mở vào ${esc(lock)}</span></span></button>`;
   const p = lessonProgress(L), r = myRole(L), H = homeworkOf(L);
   const n = L.sentences.filter(s => isMine(L, s)).length;
   const hwChip = H ? (() => { const d = dueInfo(H.deadline); return `<span class="due ${p >= 100 ? "" : d.cls}">${p >= 100 ? "✅ Đã xong" : "📝 Homework · " + esc(d.chip)}</span>`; })() : "";
@@ -735,6 +742,7 @@ function renderSentenceHTML(chunks, statuses) {
 }
 
 function viewLesson(L) {
+  if (lockedUntil(L)) { location.hash = ""; return; }
   if (L.type === "dictation") return viewDictation(L);
   const best = store.get(`best:${student}:${L.id}`, {});
   const role = myRole(L);
@@ -761,7 +769,8 @@ function viewLesson(L) {
         <div class="sent q">❓ ${esc(s.q)}</div>
         ${s.hint ? `<p class="hint">💡 Dùng ít nhất 2 từ/cụm: <b>${esc(s.hint)}</b></p>` : ""}
         <p class="are">A.R.E.: Answer → Reason → Example · 3–4 câu · 20–30 giây</p>
-        <div class="actions"><button class="primary recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm câu trả lời</button><button class="submit" hidden>📤 Nộp bài này</button></div>
+        <div class="actions"><button class="recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm thử</button><button class="primary submit" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>📤 Ghi âm nộp bài</button></div>
+        <p class="muted small">🎙 <b>Ghi âm thử</b>: tập thoải mái, không chấm, không tính lượt. 📤 <b>Ghi âm nộp bài</b>: máy chấm theo 4 tiêu chí và lưu kết quả, tối đa 3 lần mỗi câu.</p>
         <div class="live" aria-live="polite"></div>
         <p class="subst" hidden></p>
         <details class="cmp" hidden></details>
@@ -798,7 +807,7 @@ function viewLesson(L) {
     const i = +card.dataset.i, S = L.sentences[i];
     if (S.free) {
       card.querySelector(".recfree").addEventListener("click", e => recordFree(L, i, card, e.currentTarget));
-      card.querySelector(".submit").addEventListener("click", e => submitFree(L, i, card, e.currentTarget));
+      card.querySelector(".submit").addEventListener("click", e => confirmSubmit(L, i, card, e.currentTarget));
       renderCompare(L, i, card); subStatus(L, i, card); return;
     }
     card.querySelector(".listen").addEventListener("click", e => playSpan(S.start, S.end, e.currentTarget));
@@ -1150,7 +1159,7 @@ function startClip(stream) {
 }
 function fmtWhen(ms) { const d = new Date(ms); return `${d.getDate()}/${d.getMonth() + 1} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; }
 /* free answer (no model sentence): record up to 90 s, no scoring; the recording is what the teacher listens to */
-async function recordFree(L, i, card, btn) {
+async function recordFree(L, i, card, btn, forSubmit) {
   if (rec) { rec._finish ? rec._finish() : rec.stop(); return; }
   if (otherIOSBrowser) { showMic("safari"); return; }
   player.pause();
@@ -1162,7 +1171,8 @@ async function recordFree(L, i, card, btn) {
   const clip = startClip(stream);
   if (!clip) { stream.getTracks().forEach(t => t.stop()); live.textContent = "Máy này chưa ghi âm được. Em mở bằng Chrome hoặc Safari bản mới nha."; return; }
   const t0 = Date.now();
-  btn.textContent = "⏺ Đang ghi… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
+  const label0 = btn.textContent, wasPrimary = btn.classList.contains("primary");
+  btn.textContent = forSubmit ? "⏺ Đang ghi bài nộp… bấm để dừng" : "⏺ Đang ghi… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
   const tick = setInterval(() => { live.textContent = `Đang ghi ${Math.round((Date.now() - t0) / 1000)} giây · nói 20–30 giây rồi bấm dừng.`; }, 500);
   const session = { done: false, stop: async () => {
     if (session.done) return; session.done = true;
@@ -1170,14 +1180,15 @@ async function recordFree(L, i, card, btn) {
     if (rec === session) rec = null;
     const blob = await clip.stop().catch(() => null);
     stream.getTracks().forEach(t => t.stop());
-    btn.textContent = "🎙 Ghi âm lại"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
+    btn.textContent = forSubmit ? label0 : "🎙 Ghi âm thử lại"; btn.classList.remove("rec", "pulse"); if (wasPrimary) btn.classList.add("primary");
     const sec = Math.round((Date.now() - t0) / 1000);
     if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
-    live.textContent = `Đã lưu bài nói ${sec} giây. Nghe lại ở dưới; ưng rồi thì bấm 📤 Nộp bài này, chưa ưng thì ghi lại bao nhiêu lần cũng được.`;
+    live.textContent = forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Sẵn sàng thì bấm 📤 Ghi âm nộp bài.`;
     const key = `best:${student}:${L.id}`, best = store.get(key, {});
     best[i] = 100; store.set(key, best); syncBest(L.id, best);
     card.querySelector(".best").textContent = "Đã ghi âm";
     await recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));
+    if (forSubmit) await submitFree(L, i, card, btn, sec);
     subStatus(L, i, card);
   } };
   const cap = setTimeout(() => session.stop(), 90000);
@@ -1209,9 +1220,8 @@ function subStatus(L, i, card) {
   if (!btn || !st) return;
   const cur = getTakes(L)[i], subs = store.get(subKey(L), {}), sub = subs[i], f = feedbackOf(student, L.id, i);
   const mem = CLIPS[L.id + ":" + i] || {};
-  const hasNew = cur && cur.last && (!sub || cur.last.at > sub);
-  btn.hidden = !(hasNew && mem.last);
-  btn.textContent = sub ? "📤 Nộp lại bản mới" : "📤 Nộp bài này";
+  const left = attemptsLeft(L, i);
+  if (!rec) { btn.textContent = left ? `📤 Ghi âm nộp bài · còn ${left}/3` : "✅ Đã nộp đủ 3 lần"; btn.disabled = !left; }
   let qn = card.querySelector(".quota");
   if (!qn) { qn = document.createElement("p"); qn.className = "quota muted"; st.after(qn); }
   qn.textContent = quotaText(L, i);
@@ -1219,10 +1229,33 @@ function subStatus(L, i, card) {
   if (sub) {
     const graded = f && f.sub && f.sub >= sub;
     st.className = "subst" + (graded ? "" : " wait");
-    st.textContent = graded ? `✅ Đã nộp ${fmtWhen(sub)} · chị đã nhận xét bên dưới.` : `📤 Đã nộp ${fmtWhen(sub)} · chờ chị chấm.`;
+    st.textContent = graded ? `✅ Đã nộp ${fmtWhen(sub)} · nhận xét ở bên dưới.` : `📤 Đã nộp ${fmtWhen(sub)} · chờ nhận xét.`;
   }
 }
-async function submitFree(L, i, card, btn) {
+function attemptsLeft(L, i) {
+  const all = store.get(quotaKey(), {}), q = all[`${L.id}~${i}`];
+  return q ? Math.max(0, q.cardMax - q.card) : 3;
+}
+/* pop-up before a graded recording: what gets graded, how many tries are left */
+function confirmSubmit(L, i, card, btn) {
+  if (rec) { rec._finish ? rec._finish() : rec.stop(); return; }
+  const live = card.querySelector(".live"), left = attemptsLeft(L, i);
+  if (!cloudUser()) { live.textContent = "Em đăng nhập Gmail (ở trang chính) thì mới nộp bài cho chị được nha."; return; }
+  if (!left) { live.textContent = "Câu này em đã nộp đủ 3 lần. Xem nhận xét bên dưới và tập lại bằng 🎙 Ghi âm thử nha."; return; }
+  const C = (DATA.criteria || {}).speaking || [];
+  $("#micSheet").innerHTML = `<div class="mic-ic">📤</div>
+    <h3 id="micTitle">Nộp bài và nhận nhận xét?</h3>
+    <p>Bấm <b>Bắt đầu ghi âm nộp</b>, nói câu trả lời (20–30 giây, A.R.E.), rồi bấm dừng. Máy sẽ chấm và lưu kết quả cho chị xem.</p>
+    <p><b>Nhận xét theo 4 tiêu chí IELTS:</b></p>
+    <ul>${C.length ? C.map(c => `<li><b>${esc(c.name)}</b>: ${esc(c.what)}</li>`).join("") : "<li>Fluency & Coherence</li><li>Lexical Resource</li><li>Grammatical Range & Accuracy</li><li>Pronunciation</li>"}</ul>
+    <p class="muted">Kèm band ước lượng, điểm mạnh, tối đa 3 lỗi cần sửa, cách khắc phục và bản nâng cấp để luyện. Phát âm thì chị nghe trực tiếp.</p>
+    <p><b>Câu này còn ${left}/3 lần nộp.</b> Chưa chắc thì bấm Để sau và tập bằng 🎙 Ghi âm thử trước.</p>
+    <div class="row"><button class="primary" id="micGo">🎙 Bắt đầu ghi âm nộp</button><button id="micLater">Để sau</button></div>`;
+  $("#micModal").hidden = false;
+  $("#micLater").addEventListener("click", closeMic);
+  $("#micGo").addEventListener("click", () => { closeMic(); recordFree(L, i, card, btn, true); });
+}
+async function submitFree(L, i, card, btn, sec) {
   const live = card.querySelector(".live");
   if (!cloudUser()) { live.textContent = "Em đăng nhập Gmail (ở trang chính) thì mới nộp bài cho chị được nha."; return; }
   const cur = getTakes(L)[i], mem = CLIPS[L.id + ":" + i] || {};
@@ -1238,13 +1271,13 @@ async function submitFree(L, i, card, btn) {
   finally { btn.disabled = false; subStatus(L, i, card); }
 }
 /* ⚠ CHỖ DUY NHẤT GỌI /api/feedback (dùng API key, tốn tiền). Chỉ cho thẻ tự trả lời "free": true, sau khi HS bấm Nộp.
-   Giới hạn: mỗi câu 3 lượt máy chấm, mỗi HS 15 lượt/tuần (server đếm). Ghi âm lại thì KHÔNG tốn lượt. */
+   Giới hạn: mỗi câu 3 lần nộp, mỗi HS 9 lần/tuần (3 câu Part 1 Thứ Hai–Tư × 3; server đếm). 🎙 Ghi âm thử KHÔNG tốn lượt. */
 const quotaKey = () => `aiq:${student}`;
 function saveQuota(L, i, q) { const all = store.get(quotaKey(), {}); all[`${L.id}~${i}`] = q; all._week = q; store.set(quotaKey(), all); }
 function quotaText(L, i) {
   const all = store.get(quotaKey(), {}), q = all[`${L.id}~${i}`], w = all._week;
   const card = q ? Math.max(0, q.cardMax - q.card) : 3;
-  return `🤖 Câu này còn ${card}/3 lượt máy chấm${w ? ` · tuần này còn ${Math.max(0, w.weekMax - w.week)}/${w.weekMax}` : ""}. Ghi âm lại thoải mái, chỉ bấm Nộp mới tính lượt.`;
+  return `🤖 Còn ${card}/3 lần nộp cho câu này${w ? ` · tuần này còn ${Math.max(0, w.weekMax - w.week)}/${w.weekMax}` : ""}. Ghi âm thử không tính lượt.`;
 }
 async function autoFeedback(L, i, card, dataURL, subAt) {
   const live = card.querySelector(".live"), S = L.sentences[i];
