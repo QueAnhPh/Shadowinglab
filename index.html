@@ -127,6 +127,23 @@ p.small{font-size:13px;margin:6px 0 0}
 .kwm{background:rgba(100,181,246,.35);color:inherit;padding:0 2px;border-radius:3px}
 .gtr p{margin:6px 0;line-height:1.6}.gtr .sp{opacity:.75}
 .lesson.locked{opacity:.55}
+.today{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:16px 18px;display:grid;gap:10px;border-top:5px solid var(--accent,#e8a33d)}
+.today h2{margin:0;font-size:19px}.today .done-msg{margin:0;font-size:16px}
+.tbig{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;width:100%;text-align:left;padding:16px;border-radius:16px;background:var(--near-bg);border:2px solid var(--near);font-size:16px}
+.tbig .cta{font-weight:700;color:var(--near)}
+.tk{font-size:12px;font-weight:700;white-space:nowrap;opacity:.8}
+.week{display:grid;gap:8px}.week h3,.owe h3{margin:4px 0 0;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.day{display:grid;justify-items:center;gap:1px;padding:6px 0;border-radius:12px;background:var(--surface);font-size:12px;line-height:1.25;min-width:0}
+.day b{font-size:13px}.day i{font-style:normal;font-size:15px}.day small{font-size:10px;min-height:12px}
+.day.off{opacity:.35}.day.lock{opacity:.55}.day.ok{background:rgba(46,125,50,.12)}.day.now{outline:2px solid var(--near)}.day.late{background:rgba(198,40,40,.10)}
+.owe{display:grid;gap:6px}
+.trow{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:10px 12px;background:var(--surface);border-radius:14px}
+.trow .t{flex:1;min-width:0}.trow .t b{display:block;font-weight:600;font-size:15px}.trow .t span{font-size:13px;color:var(--muted)}
+.trow .go{font-size:20px;opacity:.5}.trow.over,.trow.late{border-left:4px solid var(--bad)}
+.library{margin:6px 0;border-radius:14px;background:var(--surface);padding:8px 12px}
+.library>summary{cursor:pointer;font-weight:700}
+.library .tabs{margin:10px 0}
 .donebox{margin:16px 0;border-radius:12px;background:rgba(127,127,127,.08);padding:8px 12px;filter:grayscale(1);opacity:.75}
 .donebox>summary{cursor:pointer;font-weight:700}
 .donegrp{margin:8px 0 4px}.donegrp>summary{cursor:pointer;font-weight:600}
@@ -707,9 +724,8 @@ function profileCard(sid, open) {
   return `<details class="profile" ${open ? "open" : ""}>
     <summary><h2>📊 Em đang ở đâu</h2>
       ${P.level ? `<span class="lvl">${esc(P.level)}${P.updated ? ` · cập nhật ${esc(P.updated)}` : ""}</span>` : ""}
-      ${(P.focus || []).length ? `<b>🎯 Tuần này tập trung:</b><ol class="focus">${P.focus.map(f => `<li>${esc(f)}</li>`).join("")}</ol>` : ""}
-      <span class="more">Xem tiêu chí chấm, điểm mạnh và điểm cần sửa ›</span></summary>
-    <div class="pbody">${(C.intro || []).map(t => `<p class="note">${esc(t)}</p>`).join("")}${skill("speaking")}${skill("listening")}</div></details>`;
+      <span class="more">${(P.focus || []).length ? "🎯 3 việc cần tập trung · " : ""}tiêu chí chấm, điểm mạnh, điểm cần sửa ›</span></summary>
+    <div class="pbody">${(P.focus || []).length ? `<b>🎯 Tuần này tập trung:</b><ol class="focus">${P.focus.map(f => `<li>${esc(f)}</li>`).join("")}</ol>` : ""}${(C.intro || []).map(t => `<p class="note">${esc(t)}</p>`).join("")}${skill("speaking")}${skill("listening")}</div></details>`;
 }
 /* finished = marked by the teacher, every question of a listening test answered, or every sentence ≥ 80% / every free answer submitted */
 function isDone(L) {
@@ -724,55 +740,80 @@ function doneBox(mine) {
   const grp = (icon, name, ls) => ls.length ? `<details class="donegrp"><summary>${icon} ${name} <span class="dnum">${ls.length}</span> accomplished</summary><div class="lessons">${ls.map(lessonButton).join("")}</div></details>` : "";
   return `<details class="donebox"><summary>✅ Đã làm <span class="muted">(bấm để xem lại, luyện thêm)</span></summary>${grp("🗣️", "Speaking", sp)}${grp("🎧", "Listening", li)}</details>`;
 }
+/* ---------- student home: Hôm nay → Tuần này → Còn phải làm → Kho bài → Đã làm ---------- */
+function isoDay(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
+const WD_SHORT = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
+function kindOf(L) { return L.type === "gap" ? "🎧 Nghe" : L.type === "dictation" ? "🎧 Nghe chép" : "🗣️ Nói"; }
+function todoRow(L, note, cls) {
+  return `<button class="trow ${cls || ""}" data-id="${L.id}"><span class="tk">${kindOf(L)}</span><span class="t"><b>${esc(L.title)}</b>${note ? `<span>${note}</span>` : ""}</span><span class="go">›</span></button>`;
+}
 function viewList() {
   const mine = DATA.lessons.filter(L => L.for.includes(student));
-  const todo = pendingHomework(mine);
+  const now = new Date(), today = isoDay(now);
+  const mon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
+  const days = [...Array(7)].map((_, k) => { const d = new Date(mon); d.setDate(mon.getDate() + k); return d; });
+  const week = mine.filter(L => L.opens && L.opens >= isoDay(days[0]) && L.opens <= isoDay(days[6]));
+  const inWeek = new Set(week.map(L => L.id));
+  const todayLs = week.filter(L => L.opens === today);
+  const lateWeek = week.filter(L => L.opens < today && !isDone(L));
+  const oldHw = pendingHomework(mine.filter(L => !inWeek.has(L.id) && !lockedUntil(L)));
+  const oweIds = new Set([...lateWeek.map(L => L.id), ...oldHw.flatMap(x => x.ls.filter(L => !isDone(L)).map(L => L.id))]);
+  // today card
+  const todayHTML = (() => {
+    const head = `<h2>📅 Hôm nay · ${VI_WD[now.getDay()]} ${now.getDate()}/${now.getMonth() + 1}</h2>`;
+    if (todayLs.length) {
+      const left = todayLs.filter(L => !isDone(L));
+      return `<section class="today">${head}${left.length ? `<p class="muted">${left.length === todayLs.length ? "Bài của hôm nay:" : "Còn bài này nữa là xong hôm nay:"}</p>${left.map(L => `<button class="tbig" data-id="${L.id}"><span class="tk">${kindOf(L)}</span><b>${esc(L.title)}</b><span class="cta">Bắt đầu ›</span></button>`).join("")}`
+        : `<p class="done-msg">🎉 Xong bài hôm nay rồi! ${lateWeek.length || oweIds.size ? "Còn vài bài cũ ở dưới nha." : "Nghỉ ngơi hoặc luyện thêm trong Kho bài."}</p>`}</section>`;
+    }
+    if (now.getDay() === 0) return `<section class="today">${head}<p class="done-msg">😴 Chủ nhật nghỉ. Thứ Hai có bài mới nha.</p></section>`;
+    return `<section class="today">${head}<p class="done-msg">${oweIds.size ? "Hôm nay không có bài mới. Làm nốt bài còn nợ ở dưới nha." : "Hôm nay không có bài mới. 🎉"}</p></section>`;
+  })();
+  // week strip
+  const weekHTML = week.length ? `<section class="week"><h3>Tuần này</h3><div class="days">${days.map(d => {
+      const iso = isoDay(d), ls = week.filter(L => L.opens === iso);
+      if (!ls.length) return `<div class="day off"><b>${WD_SHORT[d.getDay()]}</b><span>${d.getDate()}/${d.getMonth() + 1}</span><i>—</i></div>`;
+      const done = ls.every(isDone), locked = iso > today, isToday = iso === today;
+      const icon = done ? "✅" : locked ? "🔒" : isToday ? "▶️" : "⚠️";
+      const first = ls.find(L => !isDone(L)) || ls[0];
+      return `<button class="day ${done ? "ok" : locked ? "lock" : isToday ? "now" : "late"}" ${locked ? "disabled" : `data-id="${first.id}"`} title="${esc(ls.map(L => L.title).join(" · "))}"><b>${WD_SHORT[d.getDay()]}</b><span>${d.getDate()}/${d.getMonth() + 1}</span><i>${icon}</i><small>${ls.map(L => L.type === "gap" ? "🎧" : "🗣️").join("")}</small></button>`;
+    }).join("")}</div><p class="muted small">✅ xong · ▶️ hôm nay · ⚠️ chưa làm · 🔒 chưa mở</p></section>` : "";
+  // still owed
+  const oweHTML = oweIds.size ? `<section class="owe"><h3>⏰ Còn phải làm</h3>
+    ${lateWeek.map(L => todoRow(L, `Bài ${VI_WD[parseDay(L.opens).getDay()]} · tuần này`, "late")).join("")}
+    ${oldHw.map(({ H, ls }) => ls.filter(L => !isDone(L)).map(L => { const d = dueInfo(H.deadline); return todoRow(L, `${esc(H.title)} · <span class="due ${d.cls}">${esc(d.chip)}</span>`, d.cls); }).join("")).join("")}
+  </section>` : "";
+  // library: everything else that is open and not done
+  const lib = mine.filter(L => !inWeek.has(L.id) && !oweIds.has(L.id) && !lockedUntil(L) && !isDone(L));
   const tab = ["Speaking", "Listening"].includes(store.get("tab", "")) ? store.get("tab", "") : "Speaking";
-  const open = store.get("openSessions", {});
   const folder = skill => {
-    const ls = mine.filter(L => skillOf(L) === skill && !isDone(L));
+    const ls = lib.filter(L => skillOf(L) === skill);
     const sessions = [...new Set(ls.map(L => L.session))].sort((a, b) => b - a);
-    if (!sessions.length) return `<p class="muted">Không còn bài ${skill} nào cần làm. 🎉</p>`;
-    return sessions.map((n, k) => {
-      const inS = ls.filter(L => L.session === n).sort((a, b) => (homeworkOf(b) ? 1 : 0) - (homeworkOf(a) ? 1 : 0));
-      const dueHere = todo.filter(x => x.ls.some(L => inS.includes(L)));
-      const key = skill + n, isOpen = open[key] != null ? open[key] : (k === 0 || dueHere.length > 0);
-      return `<details class="sess" data-key="${key}" ${isOpen ? "open" : ""}>
-        <summary><span class="sname">📚 Buổi ${n}</span><span class="smeta">${inS.length} bài${dueHere.length ? ` · <span class="due ${dueInfo(dueHere[0].H.deadline).cls}">Có homework</span>` : ""}</span></summary>
-        <div class="lessons">${topicsOf(inS).map(([t, g]) => `<div class="topic"><p class="tname">📖 ${esc(t)}</p>${g.map(lessonButton).join("")}</div>`).join("")}</div></details>`;
+    if (!sessions.length) return `<p class="muted">Không có bài ${skill} nào khác.</p>`;
+    return sessions.map(n => {
+      const inS = ls.filter(L => L.session === n);
+      return `<div class="lessons"><p class="tname">📚 Buổi ${n}</p>${inS.map(lessonButton).join("")}</div>`;
     }).join("");
   };
-  const count = skill => todo.filter(x => (x.H.skill || skillOf(x.ls[0])) === skill).length;
+  const libHTML = lib.length ? `<details class="library" ${store.get("libOpen", false) ? "open" : ""}><summary>📚 Kho bài <span class="muted">(luyện thêm, không bắt buộc · ${lib.length} bài)</span></summary>
+    <div class="tabs" role="tablist">${["Speaking", "Listening"].map(t => `<button role="tab" class="tab${t === tab ? " on" : ""}" data-tab="${t}">${t === "Speaking" ? "🗣️" : "🎧"} ${t}</button>`).join("")}</div>
+    <div class="folder">${folder(tab)}</div></details>` : "";
   const loginCard = cloudOn() && !cloudUser() ? `<section class="logincard"><img class="sticker" src="stickers/paw.svg" alt="">
       <p>🔐 <b>Đăng nhập Gmail để lưu tiến độ online.</b> Đổi máy không mất bài đã luyện; phần đã luyện trên máy này cũng được giữ lại.</p>
       <button class="gbtn" id="gSignIn">${GOOGLE_SVG}<span>Đăng nhập bằng Google</span></button>
       <p class="muted" id="gErr" hidden></p></section>` : "";
-  $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}${profileCard(student, false)}
-    ${todo.length ? `<section class="alert" aria-label="Bài tập về nhà">
-      <img class="sticker" src="stickers/wave.svg" alt="">
-      <h2>⏰ Bài tập về nhà cần làm</h2>
-      ${todo.map(({ H, ls, p }) => {
-        const d = dueInfo(H.deadline);
-        return `<button class="alert-row ${d.cls}" data-id="${ls[0].id}">
-          <span class="t"><b>${esc(H.title)}</b><span>Deadline ${esc(fmtDeadline(H.deadline))} · đã làm ${p}%</span></span>
-          <span class="due ${d.cls}">${esc(d.chip)}</span></button>`;
-      }).join("")}
-    </section>` : `<div class="allclear"><img src="stickers/sleep.svg" alt=""><span>🎉 Em làm xong hết bài tập về nhà rồi! Luyện thêm bài cũ bên dưới cho nhớ lâu nha.</span></div>`}
-    <div class="tabs" role="tablist">
-      ${["Speaking", "Listening"].map(t => `<button role="tab" class="tab${t === tab ? " on" : ""}" data-tab="${t}" aria-selected="${t === tab}">${t === "Speaking" ? "🗣️" : "🎧"} ${t}${count(t) ? ` <span class="dot">${count(t)}</span>` : ""}</button>`).join("")}
-    </div>
-    <div class="folder">${folder(tab)}</div>
+  $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}
+    ${todayHTML}${weekHTML}${oweHTML}
+    ${profileCard(student, false)}
+    ${libHTML}
     ${doneBox(mine)}
-    <p class="muted">Mỗi câu: nghe mẫu, bấm nói (hoặc gõ lại với bài nghe chép), xem từ nào đúng (xanh) và sai (đỏ). Đạt từ 80% là câu đó xong.</p>
     <p class="foot"><img src="stickers/paw.svg" alt="">Chị chấm bài ngay trên web, em không cần gửi Zalo. Khi nào cần gửi Zalo chị sẽ nhắn em nha.</p>`;
   wireSignIn();
-  $("#app").querySelectorAll(".lesson:not(.locked), .alert-row").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.id; }));
+  $("#app").querySelectorAll("[data-id]").forEach(b => { if (!b.classList.contains("locked")) b.addEventListener("click", () => { location.hash = b.dataset.id; }); });
   $("#app").querySelectorAll(".autow button").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
+  $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); store.set("libOpen", true); viewList(); }));
+  const li = $("#app").querySelector("details.library"); if (li) li.addEventListener("toggle", () => store.set("libOpen", li.open));
   startTour("list");
-  $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); viewList(); }));
-  $("#app").querySelectorAll("details.sess").forEach(d => d.addEventListener("toggle", () => {
-    const o = store.get("openSessions", {}); o[d.dataset.key] = d.open; store.set("openSessions", o);
-  }));
 }
 
 function renderSentenceHTML(chunks, statuses) {
@@ -1843,10 +1884,11 @@ const TOURS = {
   list: [
     { sel: ".logincard", text: "🔐 Đăng nhập Gmail 1 lần để lưu tiến độ, đổi máy không mất bài." },
     { sel: ".profile", text: "📊 Tiêu chí chấm IELTS, điểm mạnh của em và chỗ cần sửa. Bấm để xem chi tiết." },
-    { sel: ".alert", text: "⏰ Bài tập về nhà chưa xong và số ngày còn lại tới hạn nộp." },
-    { sel: ".tabs", text: "🗣️ / 🎧 Chọn Speaking hoặc Listening. Số đỏ = homework chưa làm." },
-    { sel: "details.sess", text: "📚 Mỗi buổi là một folder, bên trong chia theo chủ đề bài. Bấm để mở hoặc đóng." },
-    { sel: ".lesson", text: "▶️ Bấm vào bài để bắt đầu luyện. Vòng tròn là % đã xong." },
+    { sel: ".today", text: "📅 Mỗi ngày chỉ cần làm bài ở đây. Bấm Bắt đầu là vào bài." },
+    { sel: ".week", text: "🗓️ Cả tuần: ✅ đã xong, ⚠️ chưa làm, 🔒 chưa tới ngày. Bấm một ngày để mở bài ngày đó." },
+    { sel: ".owe", text: "⏰ Bài còn nợ và hạn nộp. Làm hết chỗ này là sạch bài." },
+    { sel: "details.library", text: "📚 Kho bài cũ để luyện thêm, không bắt buộc." },
+    { sel: ".donebox", text: "✅ Bài đã xong nằm ở đây, muốn luyện lại thì mở ra." },
     { sel: "#helpBtn", text: "❓ Quên cách dùng thì bấm đây để xem lại hướng dẫn." },
   ],
   lesson: [
