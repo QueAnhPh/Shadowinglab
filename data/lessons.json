@@ -2884,7 +2884,8 @@
      ],
      "label": "21 · /r/"
     }
-   ]
+   ],
+   "deck": "va1"
   },
   {
    "id": "va1-part1",
@@ -3200,7 +3201,8 @@
      "q": "Do you think English will be important in your future career?",
      "hint": "career prospects · broaden my horizons · win a scholarship · a well-paid job · pick up"
     }
-   ]
+   ],
+   "deck": "va1"
   },
   {
    "id": "va1-shadowing",
@@ -3348,7 +3350,8 @@
       ]
      ]
     }
-   ]
+   ],
+   "deck": "va1"
   }
  ],
  "ipa": {
@@ -3857,5 +3860,810 @@
     "what": "Người nói hay nói một đáp án rồi sửa lại; phải nghe đến hết ý mới chọn."
    }
   ]
- }
+ },
+ "decks": [
+  {
+   "id": "va1",
+   "title": "Studies & School life",
+   "session": 1,
+   "for": [
+    "vananh"
+   ],
+   "cards": [
+    {
+     "w": "a required subject",
+     "type": "Collocation",
+     "ipa": "/ə rɪˈkwaɪɚd ˈsʌbdʒɪkt/",
+     "stress": "a re-QUIRED SUB-ject",
+     "band": "4–5",
+     "mean": "môn bắt buộc",
+     "grammar": "",
+     "ex": "Math is a required subject on the graduation exam.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "an elective",
+     "type": "Vocab",
+     "ipa": "/ən ɪˈlɛktɪv/",
+     "stress": "an e-LEC-tive",
+     "band": "5.5–6.5",
+     "mean": "môn tự chọn",
+     "grammar": "(n.)",
+     "ex": "I chose chemistry as an elective.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "pick up (a skill)",
+     "type": "Phrasal verb",
+     "ipa": "/ˌpɪk ˈʌp/",
+     "stress": "pick‿UP",
+     "band": "5.5–6.5",
+     "mean": "học được (một cách tự nhiên)",
+     "grammar": "tách được: pick up English / pick it up; QK picked up",
+     "ex": "I picked up a lot of English from YouTube.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "excel at",
+     "type": "Vocab",
+     "ipa": "/ɪkˈsɛl æt/",
+     "stress": "ex-CEL‿at",
+     "band": "5.5–6.5",
+     "mean": "giỏi xuất sắc ở",
+     "grammar": "excel at + N / V-ing",
+     "ex": "She excels at physics.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "struggle with",
+     "type": "Vocab",
+     "ipa": "/ˈstrʌɡəl wɪð/",
+     "stress": "STRUG-gle with",
+     "band": "5.5–6.5",
+     "mean": "vật lộn với, gặp khó với",
+     "grammar": "struggle with + N / V-ing",
+     "ex": "I still struggle with essay writing.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "grasp a concept",
+     "type": "Collocation",
+     "ipa": "/ˌɡræsp ə ˈkɑnsɛpt/",
+     "stress": "grasp‿a CON-cept",
+     "band": "7–8",
+     "mean": "nắm được một khái niệm",
+     "grammar": "grasp + concept/idea",
+     "ex": "It took me a week to grasp the concept of limits.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "hands-on",
+     "type": "Vocab",
+     "ipa": "/ˌhændzˈɑn/",
+     "stress": "hands-ON",
+     "band": "7–8",
+     "mean": "thực hành, trực tiếp làm",
+     "grammar": "gain / get + hands-on experience",
+     "ex": "I prefer hands-on subjects like computer science.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "rote learning",
+     "type": "Collocation",
+     "ipa": "/ˌroʊt ˈlɝnɪŋ/",
+     "stress": "rote LEARN-ing",
+     "band": "7–8",
+     "mean": "học vẹt",
+     "grammar": "danh từ không đếm được; learn by rote",
+     "ex": "History at my school is mostly rote learning.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "a steep learning curve",
+     "type": "Collocation",
+     "ipa": "/ə ˌstip ˈlɝnɪŋ ˌkɝv/",
+     "stress": "a steep LEARN-ing curve",
+     "band": "7–8",
+     "mean": "khó, phải học rất nhiều lúc đầu",
+     "grammar": "have / face + a steep learning curve",
+     "ex": "Physics in 12th grade has a steep learning curve.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "brush up on",
+     "type": "Phrasal verb",
+     "ipa": "/ˌbrʌʃ ˈʌp ɑn/",
+     "stress": "brush‿UP‿on",
+     "band": "7–8",
+     "mean": "ôn lại cho chắc",
+     "grammar": "không tách được: + N",
+     "ex": "I need to brush up on my grammar before the test.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "get the hang of",
+     "type": "Idiom",
+     "ipa": "/ˌɡɛt ðə ˈhæŋ əv/",
+     "stress": "get the HANG‿of",
+     "band": "7–8",
+     "mean": "bắt đầu quen, làm được",
+     "grammar": "",
+     "ex": "I finally got the hang of chemical equations.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "be right up my alley",
+     "type": "Idiom",
+     "ipa": "/bi ˌraɪt ʌp maɪ ˈæli/",
+     "stress": "be right‿up my AL-ley",
+     "band": "8.5–9",
+     "mean": "đúng sở trường của mình",
+     "grammar": "",
+     "ex": "Anything with numbers is right up my alley.",
+     "group": "A. Học tập & môn học",
+     "warn": true
+    },
+    {
+     "w": "be under a lot of pressure",
+     "type": "Collocation",
+     "ipa": "/bi ˌʌndɚ ə ˌlɑɾ əv ˈprɛʃɚ/",
+     "stress": "un-der‿a LOT‿of PRES-sure",
+     "band": "4–5",
+     "mean": "chịu nhiều áp lực",
+     "grammar": "",
+     "ex": "Seniors are under a lot of pressure this year.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "the high school graduation exam",
+     "type": "Collocation",
+     "ipa": "/ðə ˌhaɪ skul ˌɡrædʒuˈeɪʃən ɪɡˈzæm/",
+     "stress": "the HIGH school grad-u-A-tion ex-AM",
+     "band": "4–5",
+     "mean": "kỳ thi tốt nghiệp THPT",
+     "grammar": "",
+     "ex": "The graduation exam takes place in June.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "a mock test",
+     "type": "Collocation",
+     "ipa": "/ə ˈmɑk ˌtɛst/",
+     "stress": "a MOCK test",
+     "band": "5.5–6.5",
+     "mean": "bài thi thử",
+     "grammar": "",
+     "ex": "I take a mock test every Saturday.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "college admissions",
+     "type": "Collocation",
+     "ipa": "/ˈkɑlɪdʒ ədˈmɪʃənz/",
+     "stress": "COL-lege ad-MIS-sions",
+     "band": "5.5–6.5",
+     "mean": "tuyển sinh đại học",
+     "grammar": "",
+     "ex": "IELTS can really help with college admissions.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "cram for",
+     "type": "Phrasal verb",
+     "ipa": "/ˈkræm fɚ/",
+     "stress": "CRAM for",
+     "band": "5.5–6.5",
+     "mean": "học dồn, ôn gấp",
+     "grammar": "+ exam/test; QK crammed",
+     "ex": "I used to cram for tests the night before.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "fall behind",
+     "type": "Phrasal verb",
+     "ipa": "/ˌfɔl bɪˈhaɪnd/",
+     "stress": "fall be-HIND",
+     "band": "5.5–6.5",
+     "mean": "bị tụt lại",
+     "grammar": "không tân ngữ / + in + môn; QK fell behind",
+     "ex": "If I miss a class, I fall behind quickly.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "stressed out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌstrɛst ˈaʊt/",
+     "stress": "stressed‿OUT",
+     "band": "5.5–6.5",
+     "mean": "căng thẳng cao độ",
+     "grammar": "phrasal",
+     "ex": "I get stressed out before every mock test.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "a high-stakes exam",
+     "type": "Collocation",
+     "ipa": "/ə ˌhaɪˈsteɪks ɪɡˈzæm/",
+     "stress": "a high-STAKES ex-AM",
+     "band": "7–8",
+     "mean": "kỳ thi quyết định, nhiều thứ phụ thuộc",
+     "grammar": "high-stakes = tính từ ghép, có gạch nối",
+     "ex": "It's a high-stakes exam, so everyone is nervous.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "burn out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌbɝn ˈaʊt/",
+     "stress": "burn‿OUT",
+     "band": "7–8",
+     "mean": "kiệt sức (do học quá nhiều)",
+     "grammar": "không tân ngữ; danh từ burnout /ˈbɝnˌaʊt/",
+     "ex": "If I study twelve hours a day, I'll burn out.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "ace (a test)",
+     "type": "Vocab",
+     "ipa": "/eɪs/",
+     "stress": "ACE",
+     "band": "7–8",
+     "mean": "làm bài xuất sắc (thân mật)",
+     "grammar": "(v.)",
+     "ex": "I aced my last English test.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "have a lot on my plate",
+     "type": "Idiom",
+     "ipa": "/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/",
+     "stress": "have‿a LOT‿on my PLATE",
+     "band": "7–8",
+     "mean": "bận ngập đầu",
+     "grammar": "",
+     "ex": "With extra classes and IELTS, I have a lot on my plate.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "pull an all-nighter",
+     "type": "Idiom",
+     "ipa": "/ˌpʊl ən ˌɔlˈnaɪɾɚ/",
+     "stress": "pull‿an all-NIGHT-er",
+     "band": "7–8",
+     "mean": "thức trắng đêm (để học)",
+     "grammar": "",
+     "ex": "I pulled an all-nighter before my history test.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "take notes",
+     "type": "Collocation",
+     "ipa": "/ˌteɪk ˈnoʊts/",
+     "stress": "take NOTES",
+     "band": "4–5",
+     "mean": "ghi chép",
+     "grammar": "take notes + on + N",
+     "ex": "I take notes on my iPad in every class.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "review (for a test)",
+     "type": "Vocab",
+     "ipa": "/rɪˈvju/",
+     "stress": "re-VIEW",
+     "band": "4–5",
+     "mean": "ôn bài",
+     "grammar": "(v.)",
+     "ex": "I review for tests with my best friend.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "join a study group",
+     "type": "Collocation",
+     "ipa": "/ˌdʒɔɪn ə ˈstʌdi ˌɡrup/",
+     "stress": "join‿a STUD-y group",
+     "band": "4–5",
+     "mean": "tham gia nhóm học",
+     "grammar": "join + a study group",
+     "ex": "I joined a study group for math.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "self-study",
+     "type": "Vocab",
+     "ipa": "/ˌsɛlfˈstʌdi/",
+     "stress": "self-STUD-y",
+     "band": "5.5–6.5",
+     "mean": "tự học",
+     "grammar": "n./v.",
+     "ex": "Most of my IELTS preparation is self-study.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "keep up with",
+     "type": "Phrasal verb",
+     "ipa": "/ˌkip ˈʌp wɪð/",
+     "stress": "keep‿UP with",
+     "band": "5.5–6.5",
+     "mean": "theo kịp",
+     "grammar": "không tách được: + N; QK kept up with",
+     "ex": "It's hard to keep up with all the homework.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "stay focused",
+     "type": "Collocation",
+     "ipa": "/ˌsteɪ ˈfoʊkəst/",
+     "stress": "stay FO-cused",
+     "band": "5.5–6.5",
+     "mean": "giữ tập trung",
+     "grammar": "stay focused + on + N",
+     "ex": "I put my phone away to stay focused.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "learn sth by heart",
+     "type": "Idiom",
+     "ipa": "/ˌlɝn ... baɪ ˈhɑrt/",
+     "stress": "learn … by HEART",
+     "band": "5.5–6.5",
+     "mean": "học thuộc lòng",
+     "grammar": "",
+     "ex": "I learned all the formulas by heart.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "procrastinate",
+     "type": "Vocab",
+     "ipa": "/prəˈkræstəˌneɪt/",
+     "stress": "pro-CRAS-ti-nate",
+     "band": "7–8",
+     "mean": "trì hoãn",
+     "grammar": "(v.)",
+     "ex": "I tend to procrastinate when a subject is boring.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "retain information",
+     "type": "Collocation",
+     "ipa": "/rɪˌteɪn ˌɪnfɚˈmeɪʃən/",
+     "stress": "re-TAIN in-for-MA-tion",
+     "band": "7–8",
+     "mean": "nhớ lâu kiến thức",
+     "grammar": "information không đếm được",
+     "ex": "Teaching my friends helps me retain information.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "put in the hours",
+     "type": "Idiom",
+     "ipa": "/ˌpʊt ɪn ði ˈaʊɚz/",
+     "stress": "put‿in the HOURS",
+     "band": "7–8",
+     "mean": "bỏ nhiều thời gian công sức",
+     "grammar": "",
+     "ex": "You can't get a 7.0 unless you put in the hours.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "hit the books",
+     "type": "Idiom",
+     "ipa": "/ˌhɪt ðə ˈbʊks/",
+     "stress": "hit the BOOKS",
+     "band": "7–8",
+     "mean": "bắt đầu học hành nghiêm túc",
+     "grammar": "",
+     "ex": "After Tết, I really need to hit the books.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "apply to (a university)",
+     "type": "Vocab",
+     "ipa": "/əˈplaɪ tu/",
+     "stress": "ap-PLY to",
+     "band": "4–5",
+     "mean": "nộp hồ sơ vào",
+     "grammar": "apply to + trường; apply for + học bổng/việc",
+     "ex": "I'm applying to three universities in HCMC.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "major in",
+     "type": "Phrasal verb",
+     "ipa": "/ˈmeɪdʒɚ ɪn/",
+     "stress": "MA-jor‿in",
+     "band": "5.5–6.5",
+     "mean": "học chuyên ngành",
+     "grammar": "+ ngành; Mỹ dùng nhiều, Anh dùng study",
+     "ex": "I want to major in international business.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "win a scholarship",
+     "type": "Collocation",
+     "ipa": "/ˌwɪn ə ˈskɑlɚˌʃɪp/",
+     "stress": "win‿a SCHOL-ar-ship",
+     "band": "5.5–6.5",
+     "mean": "giành học bổng",
+     "grammar": "win / get / apply for + a scholarship",
+     "ex": "A high IELTS score helps me win a scholarship.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "a well-paid job",
+     "type": "Collocation",
+     "ipa": "/ə ˌwɛlˈpeɪd ˈdʒɑb/",
+     "stress": "a well-PAID JOB",
+     "band": "5.5–6.5",
+     "mean": "công việc lương cao",
+     "grammar": "",
+     "ex": "Many students choose IT for a well-paid job.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "career prospects",
+     "type": "Collocation",
+     "ipa": "/kəˈrɪr ˈprɑˌspɛkts/",
+     "stress": "ca-REER PROS-pects",
+     "band": "7–8",
+     "mean": "triển vọng nghề nghiệp",
+     "grammar": "luôn số nhiều: prospects",
+     "ex": "Logistics has great career prospects in Vietnam.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "a stepping stone (to)",
+     "type": "Idiom",
+     "ipa": "/ə ˈstɛpɪŋ ˌstoʊn/",
+     "stress": "a STEP-ping stone",
+     "band": "7–8",
+     "mean": "bước đệm",
+     "grammar": "",
+     "ex": "IELTS is a stepping stone to a good university.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "broaden my horizons",
+     "type": "Idiom",
+     "ipa": "/ˈbrɔdən maɪ həˈraɪzənz/",
+     "stress": "BROAD-en my ho-RI-zons",
+     "band": "7–8",
+     "mean": "mở mang tầm nhìn",
+     "grammar": "broaden + my/your + horizons (số nhiều)",
+     "ex": "Studying abroad would broaden my horizons.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "keep my options open",
+     "type": "Idiom",
+     "ipa": "/ˌkip maɪ ˈɑpʃənz ˈoʊpən/",
+     "stress": "keep my OP-tions‿O-pen",
+     "band": "7–8",
+     "mean": "chưa chốt, để ngỏ lựa chọn",
+     "grammar": "",
+     "ex": "I'm keeping my options open between IT and finance.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "follow in sb's footsteps",
+     "type": "Idiom",
+     "ipa": "/ˈfɑloʊ ɪn ... ˈfʊtˌstɛps/",
+     "stress": "FOL-low‿in … FOOT-steps",
+     "band": "7–8",
+     "mean": "theo nghề của ai (trong gia đình)",
+     "grammar": "",
+     "ex": "I might follow in my mom's footsteps and become a doctor.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "look up + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌlʊk ˈʌp/",
+     "stress": "look‿UP",
+     "band": "4–5",
+     "mean": "tra (từ điển)",
+     "grammar": "tách được: look up a word / look it up",
+     "ex": "I look up every new word on Cambridge Dictionary.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "go over + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌɡoʊ ˈoʊvɚ/",
+     "stress": "go‿O-ver",
+     "band": "4–5",
+     "mean": "xem lại, ôn lại",
+     "grammar": "không tách được: + N; QK went over",
+     "ex": "I go over my notes before every class.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "catch up on + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌkætʃ ˈʌp ɑn/",
+     "stress": "catch‿UP‿on",
+     "band": "5.5–6.5",
+     "mean": "làm bù",
+     "grammar": "không tách được: + N / V-ing",
+     "ex": "I catch up on my reading on Sundays.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "figure out + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌfɪɡjɚ ˈaʊt/",
+     "stress": "fig-ure‿OUT",
+     "band": "5.5–6.5",
+     "mean": "tìm ra, hiểu ra",
+     "grammar": "tách được: figure it out; + wh-clause",
+     "ex": "I couldn't figure out how to solve the last problem.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "put off + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌpʊt ˈɔf/",
+     "stress": "put‿OFF",
+     "band": "5.5–6.5",
+     "mean": "trì hoãn",
+     "grammar": "tách được: put it off; + V-ing; QK put off",
+     "ex": "I keep putting off my essay.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "stress (sb) out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌstrɛs ˈaʊt/",
+     "stress": "stress‿OUT",
+     "band": "5.5–6.5",
+     "mean": "làm (ai) căng thẳng",
+     "grammar": "sth stresses me out / be stressed out",
+     "ex": "Mock tests always stress me out.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "zone out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌzoʊn ˈaʊt/",
+     "stress": "zone‿OUT",
+     "band": "7–8",
+     "mean": "mất tập trung, \"treo máy\"",
+     "grammar": "không tân ngữ (thân mật)",
+     "ex": "I zone out in long lectures.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "breeze through + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˈbriz ˌθru/",
+     "stress": "BREEZE through",
+     "band": "7–8",
+     "mean": "vượt qua dễ dàng",
+     "grammar": "không tách được: + test/exam",
+     "ex": "She breezed through the speaking test.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "do well in",
+     "type": "Collocation",
+     "ipa": "/ˌdu ˈwɛl ɪn/",
+     "stress": "do WELL‿in",
+     "band": "4–5",
+     "mean": "làm tốt (bài thi, môn)",
+     "grammar": "do well in + exam/subject",
+     "ex": "I did well in the last mock test.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "get good grades",
+     "type": "Collocation",
+     "ipa": "/ˌɡɛt ˌɡʊd ˈɡreɪdz/",
+     "stress": "get good GRADES",
+     "band": "4–5",
+     "mean": "đạt điểm cao",
+     "grammar": "Mỹ: grades; Anh: marks",
+     "ex": "I get good grades in math.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "be under pressure",
+     "type": "Collocation",
+     "ipa": "/bi ˌʌndɚ ˈprɛʃɚ/",
+     "stress": "be un-der PRES-sure",
+     "band": "4–5",
+     "mean": "chịu áp lực",
+     "grammar": "under + (a lot of) pressure + to V",
+     "ex": "I'm under pressure to get into a top university.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "take a mock test",
+     "type": "Collocation",
+     "ipa": "/ˌteɪk ə ˈmɑk ˌtɛst/",
+     "stress": "take‿a MOCK test",
+     "band": "5.5–6.5",
+     "mean": "làm bài thi thử",
+     "grammar": "take (không dùng do) a mock test",
+     "ex": "I take a mock test every Saturday.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "a heavy workload",
+     "type": "Collocation",
+     "ipa": "/ə ˌhɛvi ˈwɝkˌloʊd/",
+     "stress": "a heav-y WORK-load",
+     "band": "5.5–6.5",
+     "mean": "khối lượng bài vở nặng",
+     "grammar": "have + a heavy workload",
+     "ex": "Seniors have a heavy workload.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "meet a deadline",
+     "type": "Collocation",
+     "ipa": "/ˌmit ə ˈdɛdˌlaɪn/",
+     "stress": "meet‿a DEAD-line",
+     "band": "5.5–6.5",
+     "mean": "kịp hạn",
+     "grammar": "trái nghĩa: miss a deadline",
+     "ex": "I always meet deadlines for group projects.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "manage my time",
+     "type": "Collocation",
+     "ipa": "/ˌmænɪdʒ maɪ ˈtaɪm/",
+     "stress": "MAN-age my TIME",
+     "band": "5.5–6.5",
+     "mean": "quản lý thời gian",
+     "grammar": "danh từ: time management",
+     "ex": "I'm learning to manage my time better.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "pursue",
+     "type": "Vocab",
+     "ipa": "/pɚˈsu/",
+     "stress": "pur-SUE",
+     "band": "7–8",
+     "mean": "theo đuổi, theo học",
+     "grammar": "pursue + a degree / a career",
+     "ex": "I plan to pursue a degree in dentistry.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "gifted in",
+     "type": "Vocab",
+     "ipa": "/ˈɡɪftɪd ɪn/",
+     "stress": "GIFT-ed‿in",
+     "band": "7–8",
+     "mean": "có năng khiếu về",
+     "grammar": "be gifted in + N / V-ing",
+     "ex": "She is gifted in science.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "demanding",
+     "type": "Vocab",
+     "ipa": "/dɪˈmændɪŋ/",
+     "stress": "de-MAND-ing",
+     "band": "7–8",
+     "mean": "đòi hỏi cao, vất vả",
+     "grammar": "a demanding + job / course",
+     "ex": "Dentistry is a demanding major.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "overwhelmed",
+     "type": "Vocab",
+     "ipa": "/ˌoʊvɚˈwɛlmd/",
+     "stress": "o-ver-WHELMED",
+     "band": "7–8",
+     "mean": "quá tải, choáng ngợp",
+     "grammar": "feel overwhelmed + by / with + N",
+     "ex": "I felt overwhelmed by all the mock tests.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "pivotal",
+     "type": "Vocab",
+     "ipa": "/ˈpɪvəɾəl/",
+     "stress": "PIV-o-tal",
+     "band": "7–8",
+     "mean": "then chốt",
+     "grammar": "play a pivotal role in + N",
+     "ex": "This exam plays a pivotal role in my future.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "sail through",
+     "type": "Phrasal verb",
+     "ipa": "/ˈseɪl ˌθru/",
+     "stress": "SAIL through",
+     "band": "7–8",
+     "mean": "vượt qua dễ dàng",
+     "grammar": "sail through + exam / test",
+     "ex": "I hope to sail through the speaking test.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "exposure",
+     "type": "Vocab",
+     "ipa": "/ɪkˈspoʊʒɚ/",
+     "stress": "ex-PO-sure",
+     "band": "7–8",
+     "mean": "sự tiếp xúc, trải nghiệm",
+     "grammar": "exposure + to + N",
+     "ex": "I get a lot of exposure to English online.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "a tough nut to crack",
+     "type": "Idiom",
+     "ipa": "/ə ˌtʌf ˌnʌt tə ˈkræk/",
+     "stress": "a TOUGH NUT to CRACK",
+     "band": "7–8",
+     "mean": "vấn đề khó nhằn",
+     "grammar": "be a tough nut to crack",
+     "ex": "Organic chemistry is a tough nut to crack.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "make or break",
+     "type": "Idiom",
+     "ipa": "/ˌmeɪk ɔr ˈbreɪk/",
+     "stress": "MAKE or BREAK",
+     "band": "7–8",
+     "mean": "quyết định thành bại",
+     "grammar": "a make-or-break + exam / moment",
+     "ex": "This year is make or break for me.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "know sth inside out",
+     "type": "Idiom",
+     "ipa": "/ˌnoʊ ... ˌɪnˌsaɪd ˈaʊt/",
+     "stress": "know … in-side OUT",
+     "band": "7–8",
+     "mean": "nắm cực chắc",
+     "grammar": "know + N + inside out",
+     "ex": "I know the formulas inside out.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "keep my eye on the ball",
+     "type": "Idiom",
+     "ipa": "/ˌkip maɪ ˈaɪ ɑn ðə ˈbɔl/",
+     "stress": "keep my EYE‿on the BALL",
+     "band": "7–8",
+     "mean": "tập trung vào mục tiêu",
+     "grammar": "keep (my/your) eye on the ball",
+     "ex": "I try to keep my eye on the ball during exam season.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "pass with flying colors",
+     "type": "Idiom",
+     "ipa": "/ˌpæs wɪð ˌflaɪɪŋ ˈkʌlɚz/",
+     "stress": "pass with fly-ing COL-ors",
+     "band": "7–8",
+     "mean": "đỗ với điểm cao",
+     "grammar": "pass + (the exam) + with flying colors (Mỹ: colors)",
+     "ex": "She passed the test with flying colors.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "learn the ropes",
+     "type": "Idiom",
+     "ipa": "/ˌlɝn ðə ˈroʊps/",
+     "stress": "learn the ROPES",
+     "band": "7–8",
+     "mean": "học việc, làm quen việc mới",
+     "grammar": "learn the ropes (of + N)",
+     "ex": "Interns spend the first month learning the ropes.",
+     "group": "Alternatives"
+    }
+   ]
+  }
+ ]
 }

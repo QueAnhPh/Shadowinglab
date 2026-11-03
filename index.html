@@ -127,6 +127,37 @@ p.small{font-size:13px;margin:6px 0 0}
 .kwm{background:rgba(100,181,246,.35);color:inherit;padding:0 2px;border-radius:3px}
 .gtr p{margin:6px 0;line-height:1.6}.gtr .sp{opacity:.75}
 .lesson.locked{opacity:.55}
+/* left menu: fixed sidebar on wide screens, slide-in drawer on phones */
+.side{position:fixed;top:0;left:0;bottom:0;width:230px;background:var(--surface);box-shadow:var(--shadow);padding:84px 12px 16px;display:flex;flex-direction:column;gap:4px;z-index:40;transform:translateX(-105%);transition:transform .2s}
+.side.open{transform:none}
+.side a,.side button{display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:12px;color:inherit;text-decoration:none;font-weight:600;background:none;border:none;box-shadow:none;text-align:left;min-height:0;font-size:15px}
+.side a.on{background:var(--near-bg);color:var(--near)}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:39}
+@media (min-width:960px){.side{transform:none;padding-top:90px}.has-side main.wrap,.has-side header.top .wrap{margin-left:max(250px,calc((100vw - 760px)/2))}#menuBtn{display:none}.scrim{display:none!important}}
+#menuBtn{font-size:20px;padding:4px 10px;min-height:0}
+/* flashcards */
+.decks{display:grid;gap:10px}
+.deck{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;width:100%;text-align:left;padding:14px 16px;border-radius:16px;background:var(--surface)}
+.deck .t b{display:block;font-size:16px}.deck .t span{font-size:13px;color:var(--muted)}
+.deck.locked{opacity:.5}
+.fcbar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}.fcbar i{display:block;height:100%;background:var(--ok,#2e7d32)}
+.fcard{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:20px 18px;display:grid;gap:10px;text-align:center}
+.fcard .w{font-size:26px;font-weight:800;line-height:1.25}
+.fcard .tags{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.fcard .tag2{font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--near-bg)}
+.fcard .ipa{font-size:17px;color:var(--muted)}.fcard .st{font-size:14px;letter-spacing:.3px}
+.fcard .say{justify-self:center}
+.choices{display:grid;gap:8px;text-align:left}
+.choices button{padding:12px 14px;border-radius:14px;text-align:left;font-size:15px}
+.choices button:disabled{opacity:1;color:inherit}
+.choices button.right{background:rgba(46,125,50,.15);border-color:var(--ok,#2e7d32);font-weight:700}
+.choices button.wrong{background:rgba(198,40,40,.12);border-color:var(--bad,#c62828);text-decoration:line-through}
+.fcinfo{text-align:left;display:grid;gap:6px;font-size:15px;border-top:1px dashed var(--line);padding-top:10px}
+.fcinfo .k{font-size:12px;font-weight:700;opacity:.7;display:block}
+.fcnav{display:flex;justify-content:space-between;gap:8px;margin-top:10px}
+.fcfilter{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.fcfilter button{font-size:13px;padding:5px 12px;border-radius:99px;min-height:0}
+.fcfilter button.on{outline:2px solid var(--near);font-weight:700}
 .today{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:16px 18px;display:grid;gap:10px;border-top:5px solid var(--accent,#e8a33d)}
 .today h2{margin:0;font-size:19px}.today .done-msg{margin:0;font-size:16px}
 .tbig{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;width:100%;text-align:left;padding:16px;border-radius:16px;background:var(--near-bg);border:2px solid var(--near);font-size:16px}
@@ -381,10 +412,18 @@ details.cmp summary{font-weight:800}
 </head>
 <body>
 <header class="top"><div class="wrap">
+  <button class="ghost" id="menuBtn" aria-label="Menu" title="Menu" hidden>☰</button>
   <h1><img class="logo" src="stickers/cup-cat.svg" alt=""><span>SpeakBack<small id="who"></small></span></h1>
   <button class="ghost" id="switchBtn" hidden>Đổi tên</button>
   <button class="ghost" id="helpBtn" aria-label="Hướng dẫn" title="Hướng dẫn">❓</button>
 </div></header>
+<nav class="side" id="side" hidden aria-label="Menu">
+  <a href="#" data-nav="home">🏠 <span>Bài tập</span></a>
+  <a href="#fc" data-nav="fc">🃏 <span>Flashcard từ vựng</span></a>
+  <a href="#me" data-nav="me">📊 <span>Em đang ở đâu</span></a>
+  <button type="button" data-nav="help">❓ <span>Hướng dẫn</span></button>
+</nav>
+<div class="scrim" id="scrim" hidden></div>
 <main class="wrap" id="app"><p class="muted">Đang tải bài…</p></main>
 <audio id="player" preload="auto" playsinline></audio>
 <div class="modal" id="micModal" hidden role="dialog" aria-modal="true" aria-labelledby="micTitle"><div class="sheet" id="micSheet"></div></div>
@@ -1962,6 +2001,141 @@ $("#helpBtn").addEventListener("click", () => {
   startTour(name, true);
 });
 
+
+/* ---------- vocabulary flashcards (DATA.decks: {id, title, session, for[], opens?, cards[{w,type,ipa,stress,band,mean,grammar,ex,warn?}]}) ---------- */
+const fcKey = id => `fc:${student}:${id}`;
+function myDecks() { return (DATA.decks || []).filter(D => D.for.includes(student)); }
+/* a deck opens once its session has started for this student: deck.opens date, or any unlocked lesson of that session */
+function deckOpen(D) {
+  if (D.opens) return daysLeft(D.opens) <= 0;
+  return DATA.lessons.some(L => L.for.includes(student) && L.session === D.session && !lockedUntil(L));
+}
+function deckOf(L) {
+  const ds = myDecks();
+  return ds.find(D => D.id === L.deck) || ds.find(D => D.session === L.session && (!L.topic || !D.topic || D.topic === L.topic)) || null;
+}
+function deckState(D) { return store.get(fcKey(D.id), {}); }
+function sayIt(text) {
+  try {
+    const t = String(text).replace(/\(.*?\)/g, "").replace(/\b(sth|sb|sb's)\b/g, m => ({ sth: "something", sb: "somebody", "sb's": "somebody's" })[m]).replace(/…|\.\.\./g, "");
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t); u.lang = "en-US"; u.rate = 0.9;
+    const v = speechSynthesis.getVoices().find(x => /en[-_]US/i.test(x.lang)); if (v) u.voice = v;
+    speechSynthesis.speak(u);
+  } catch {}
+}
+function viewDecks() {
+  const ds = myDecks().sort((a, b) => b.session - a.session);
+  $("#app").innerHTML = `<h2>🃏 Flashcard từ vựng</h2>
+    <p class="muted">Từ của từng buổi học, gồm cả từ band cao trong Alternatives. Học tới buổi nào thì mở topic đó. Mỗi thẻ: nghe phát âm, đoán nghĩa (3 lựa chọn), xem cách dùng và ví dụ.</p>
+    <div class="decks">${ds.length ? ds.map(D => {
+      const open = deckOpen(D), st = deckState(D), n = D.cards.length, known = (st.known || []).length;
+      return `<button class="deck ${open ? "" : "locked"}" ${open ? `data-fc="${D.id}"` : "disabled"}>
+        <span style="font-size:26px">${open ? (st.done ? "✅" : "🃏") : "🔒"}</span>
+        <span class="t"><b>${esc(D.title)}</b><span>Buổi ${D.session} · ${n} từ${open ? ` · đã thuộc ${known}/${n}` : " · mở sau buổi học"}</span>${open ? `<span class="fcbar" style="display:block;margin-top:6px"><i style="width:${Math.round(known / n * 100)}%"></i></span>` : ""}</span>
+        <span class="go">${open ? "›" : ""}</span></button>`;
+    }).join("") : `<p class="muted">Chưa có bộ flashcard nào.</p>`}</div>`;
+  $("#app").querySelectorAll("[data-fc]").forEach(b => b.addEventListener("click", () => { location.hash = "fc-" + b.dataset.fc; }));
+}
+const TYPES = ["Vocab", "Phrasal verb", "Collocation", "Idiom"];
+function viewDeck(D, ret) {
+  const st = deckState(D);
+  let filter = store.get("fcFilter", "all"), wrongOnly = false;
+  let list = [], k = 0, score = 0, answered = {};
+  const build = () => {
+    list = D.cards.map((c, i) => i).filter(i => (filter === "all" || D.cards[i].type === filter) && (!wrongOnly || !(st.known || []).includes(D.cards[i].w)));
+    k = 0; score = 0; answered = {};
+  };
+  const choicesFor = i => {
+    const c = D.cards[i], pool = D.cards.filter(x => x.mean !== c.mean);
+    const same = pool.filter(x => x.type === c.type), src = same.length >= 2 ? same : pool;
+    const picks = []; const used = new Set();
+    while (picks.length < 2 && used.size < src.length) { const r = src[Math.floor(Math.random() * src.length)]; if (!used.has(r.mean)) { used.add(r.mean); picks.push(r.mean); } }
+    const all = [c.mean, ...picks]; for (let j = all.length - 1; j > 0; j--) { const r = Math.floor(Math.random() * (j + 1)); [all[j], all[r]] = [all[r], all[j]]; }
+    return all;
+  };
+  const render = () => {
+    if (k >= list.length) return renderEnd();
+    const i = list[k], c = D.cards[i], a = answered[i];
+    const ch = a ? a.choices : choicesFor(i);
+    $("#app").innerHTML = `<button class="back" id="backBtn">← ${ret ? "Quay lại bài" : "Các bộ flashcard"}</button>
+      <h2>🃏 ${esc(D.title)}</h2>
+      <div class="fcfilter">${["all", ...TYPES].map(t => `<button data-f="${t}" class="${filter === t ? "on" : ""}">${t === "all" ? "Tất cả" : t}</button>`).join("")}</div>
+      <div class="fcbar"><i style="width:${Math.round(k / list.length * 100)}%"></i></div>
+      <p class="muted small">Thẻ ${k + 1}/${list.length} · đúng ${score}</p>
+      <section class="fcard">
+        <div class="tags"><span class="tag2">${esc(c.type)}</span><span class="tag2">Band ${esc(c.band)}${c.warn ? " ⚠" : ""}</span></div>
+        <div class="w">${esc(c.w)}</div>
+        <div class="ipa">${esc(c.ipa)}</div>
+        ${c.stress ? `<div class="st">Nhấn: <b>${esc(c.stress)}</b></div>` : ""}
+        <button class="say" id="sayW">🔊 Nghe phát âm</button>
+        <p><b>Nghĩa là gì?</b></p>
+        <div class="choices">${ch.map(m => `<button data-m="${esc(m)}" ${a ? "disabled" : ""} class="${a ? (m === c.mean ? "right" : m === a.pick ? "wrong" : "") : ""}">${esc(m)}</button>`).join("")}</div>
+        ${a ? `<div class="fcinfo">
+          <div><span class="k">Nghĩa</span>${esc(c.mean)}</div>
+          ${c.grammar ? `<div><span class="k">Cách dùng (grammar)</span>${esc(c.grammar)}</div>` : ""}
+          ${c.ex ? `<div><span class="k">Ví dụ (context)</span>${esc(c.ex)} <button class="linkbtn" id="sayEx">🔊</button></div>` : ""}
+          ${c.warn ? `<div class="muted small">⚠ Từ band rất cao: chỉ dùng khi chắc ngữ cảnh.</div>` : ""}
+        </div>` : ""}
+      </section>
+      <div class="fcnav"><button id="prev" ${k ? "" : "disabled"}>← Trước</button><button class="primary" id="next" ${a ? "" : "disabled"}>${k + 1 < list.length ? "Tiếp →" : "Xong ✓"}</button></div>`;
+    $("#backBtn").addEventListener("click", () => { location.hash = ret || "fc"; });
+    $("#sayW").addEventListener("click", () => sayIt(c.w));
+    if ($("#sayEx")) $("#sayEx").addEventListener("click", () => sayIt(c.ex));
+    $("#app").querySelectorAll(".fcfilter button").forEach(b => b.addEventListener("click", () => { filter = b.dataset.f; store.set("fcFilter", filter); wrongOnly = false; build(); render(); }));
+    $("#app").querySelectorAll(".choices button").forEach(b => b.addEventListener("click", () => {
+      const ok = b.dataset.m === c.mean;
+      answered[i] = { pick: b.dataset.m, ok, choices: ch };
+      if (ok) score++;
+      const known = new Set(st.known || []); ok ? known.add(c.w) : known.delete(c.w); st.known = [...known];
+      store.set(fcKey(D.id), st);
+      if (!ok) sayIt(c.w);
+      render();
+    }));
+    $("#prev").addEventListener("click", () => { k--; render(); });
+    $("#next").addEventListener("click", () => { k++; render(); window.scrollTo(0, 0); });
+    if (!a) sayIt(c.w);
+  };
+  const renderEnd = () => {
+    const wrong = list.filter(i => answered[i] && !answered[i].ok).map(i => D.cards[i]);
+    st.done = true; st.at = Date.now(); st.best = Math.max(st.best || 0, Math.round(score / Math.max(1, list.length) * 100));
+    store.set(fcKey(D.id), st);
+    if (cloudUser()) window.Cloud.save({ fc: { [D.id]: { done: true, at: st.at, best: st.best, known: (st.known || []).length, total: D.cards.length } } }).catch(() => {});
+    $("#app").innerHTML = `<section class="fcard">
+      <div class="w">🎉 Xong ${list.length} thẻ!</div>
+      <p>Đúng <b>${score}/${list.length}</b> · đã thuộc ${(st.known || []).length}/${D.cards.length} từ của bộ này.</p>
+      ${wrong.length ? `<p class="muted">Từ cần ôn lại: ${wrong.map(c => `<b>${esc(c.w)}</b>`).join(" · ")}</p>` : ""}
+      <div class="fcnav">${wrong.length ? `<button id="again">🔁 Ôn lại ${wrong.length} từ sai</button>` : `<button id="again">🔁 Ôn lại từ đầu</button>`}
+      <button class="primary" id="goOn">${ret ? "Vào làm bài →" : "Về danh sách"}</button></div></section>`;
+    $("#again").addEventListener("click", () => { if (wrong.length) { list = list.filter(i => answered[i] && !answered[i].ok); k = 0; score = 0; answered = {}; } else build(); render(); });
+    $("#goOn").addEventListener("click", () => { if (ret) store.set(`fcskip:${student}:${ret}`, true); location.hash = ret || "fc"; });
+  };
+  build(); render();
+}
+/* before a lesson: suggest reviewing its topic's flashcards once */
+function fcGate(L) {
+  const D = deckOf(L);
+  if (!D || !deckOpen(D) || deckState(D).done || store.get(`fcskip:${student}:${L.id}`, false)) return false;
+  $("#micSheet").innerHTML = `<div class="mic-ic">🃏</div>
+    <h3 id="micTitle">Ôn từ vựng trước nha?</h3>
+    <p>Bài này dùng từ của topic <b>${esc(D.title)}</b> (${D.cards.length} từ). Em chưa ôn flashcard của topic này. Ôn khoảng 5–10 phút: nghe phát âm, đoán nghĩa, xem cách dùng, làm bài sẽ dễ hơn nhiều.</p>
+    <div class="row"><button class="primary" id="micGo">🃏 Ôn flashcard trước</button><button id="micLater">Vào bài luôn</button></div>`;
+  $("#micModal").hidden = false;
+  $("#micGo").addEventListener("click", () => { closeMic(); location.hash = `fc-${D.id}~${L.id}`; });
+  $("#micLater").addEventListener("click", () => { closeMic(); store.set(`fcskip:${student}:${L.id}`, true); viewLesson(L); window.scrollTo(0, 0); });
+  return true;
+}
+function viewMe() {
+  $("#app").innerHTML = `<button class="back" id="backBtn">← Bài tập</button>${profileCard(student, true)}`;
+  $("#backBtn").addEventListener("click", () => { location.hash = ""; });
+}
+function setNav(where) {
+  const on = !!student && !TEACH;
+  const side = $("#side"), btn = $("#menuBtn");
+  side.hidden = !on; btn.hidden = !on; document.body.classList.toggle("has-side", on);
+  side.querySelectorAll("[data-nav]").forEach(a => a.classList.toggle("on", a.dataset.nav === where));
+  side.classList.remove("open"); $("#scrim").hidden = true;
+}
 function route() {
   if (!DATA) return;
   endTour();
@@ -1972,13 +2146,23 @@ function route() {
     if (T && DATA.students.some(s => s.id === m[1])) { window.scrollTo(0, 0); return viewTeacherLesson(m[1], T); }
     return viewTeacher();
   }
-  if (!DATA.students.some(s => s.id === student)) { student = null; setWho(); return viewPick(); }
+  if (!DATA.students.some(s => s.id === student)) { student = null; setWho(); setNav(""); return viewPick(); }
   setWho();
   const id = location.hash.slice(1);
+  window.scrollTo(0, 0);
+  if (id === "fc") { setNav("fc"); return viewDecks(); }
+  if (id === "me") { setNav("me"); return viewMe(); }
+  const fm = id.match(/^fc-([^~]+)(?:~(.+))?$/);
+  if (fm) { const D = myDecks().find(x => x.id === fm[1]); setNav("fc"); if (D && deckOpen(D)) return viewDeck(D, fm[2] || ""); return viewDecks(); }
+  setNav(id ? "" : "home");
   const L = DATA.lessons.find(x => x.id === id && x.for.includes(student));
-  if (L) { viewLesson(L); window.scrollTo(0, 0); } else viewList();
+  if (L) { if (lockedUntil(L)) { location.hash = ""; return; } if (fcGate(L)) { viewList(); return; } viewLesson(L); } else viewList();
 }
 window.addEventListener("hashchange", route);
+$("#menuBtn").addEventListener("click", () => { const o = !$("#side").classList.contains("open"); $("#side").classList.toggle("open", o); $("#scrim").hidden = !o; });
+$("#scrim").addEventListener("click", () => { $("#side").classList.remove("open"); $("#scrim").hidden = true; });
+$("#side").querySelector('[data-nav="help"]').addEventListener("click", () => { $("#side").classList.remove("open"); $("#scrim").hidden = true; $("#helpBtn").click(); });
+$("#side").querySelectorAll("a").forEach(a => a.addEventListener("click", () => { if (location.hash === a.getAttribute("href") || (a.getAttribute("href") === "#" && !location.hash)) route(); }));
 fetch("data/lessons.json", { cache: "no-cache" }).then(r => r.json()).then(d => { DATA = d; prepGap(d); route(); })
   .catch(() => { $("#app").innerHTML = `<div class="notice"><b>Chưa tải được bài.</b> Kiểm tra mạng rồi tải lại trang.</div>`; });
 </script>
