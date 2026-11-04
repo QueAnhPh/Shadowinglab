@@ -435,7 +435,7 @@ details.cmp summary{font-weight:800}
 
 <script type="module" src="cloud.js"></script>
 <script type="module">
-import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.5";
+import { pipeline, env, Tensor } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.5";
 env.allowLocalModels = false;
 let asrP = null;
 window.Whisper = {
@@ -446,6 +446,27 @@ window.Whisper = {
     return asrP;
   },
   async transcribe(f32) { const asr = await this.load(); const out = await asr(f32); return (out && out.text || "").trim(); },
+  /* how well each text matches the audio (log-probability): encoder runs once, ~0.1 s per text after that.
+     Used for minimal pairs (professionals vs professional) to catch dropped -s / -es / -ed. */
+  async score(f32, texts) {
+    const asr = await this.load();
+    const { input_features } = await asr.processor(f32);
+    const raw = await asr.model.sessions.model.run({ input_features: input_features.ort_tensor || input_features });
+    const enc = new Tensor(raw.last_hidden_state);
+    const out = [];
+    for (const text of texts) {
+      const ids = [50257, 50362, ...asr.tokenizer.encode(" " + text.trim(), { add_special_tokens: false }), 50256];
+      const r = await asr.model({ encoder_outputs: enc, decoder_input_ids: new Tensor("int64", BigInt64Array.from(ids.map(BigInt)), [1, ids.length]) });
+      const L = r.logits, V = L.dims[2], d = L.data; let sum = 0;
+      for (let t = 1; t < ids.length - 1; t++) {
+        let m = -1e9; for (let v = 0; v < V; v++) if (d[t * V + v] > m) m = d[t * V + v];
+        let z = 0; for (let v = 0; v < V; v++) z += Math.exp(d[t * V + v] - m);
+        sum += d[t * V + ids[t + 1]] - m - Math.log(z);
+      }
+      out.push(sum);
+    }
+    return out;
+  },
   /* longer free answers: bigger model, 30 s windows */
   _long: null,
   async transcribeLong(f32, onProgress) {
@@ -1467,7 +1488,10 @@ async function listenWhisper(L, i, card, btn) {
       const text = await window.Whisper.transcribe(audio);
       live.textContent = "";
       if (!text) { live.textContent = "Máy chưa nghe rõ. Em đọc lại to hơn nha."; return; }
-      grade(L, i, card, chunks, exp, text, [[text]], clipP);
+      live.textContent = "Đang kiểm tra âm cuối…";
+      const ends = await checkEndings(audio, chunks, exp, text).catch(() => ({}));
+      live.textContent = "";
+      grade(L, i, card, chunks, exp, text, [[text]], clipP, ends);
       if (azNote) { const res = card.querySelector(".result"); res.insertAdjacentHTML("afterbegin", `<p class="aznote">ℹ️ ${esc(azNote)}</p>`); }
     } catch (e) {
       live.textContent = "Chưa chấm được. Kiểm tra mạng rồi thử lại.";
@@ -1888,13 +1912,55 @@ function loadTakes(L) {
   }).catch(e => console.error("take load failed", e));
 }
 
-function grade(L, i, card, chunks, exp, top, alts, clipP) {
+/* ---------- âm cuối -s / -es / -ed bằng cặp tối thiểu (Whisper trên máy, miễn phí) ----------
+   Whisper hay tự thêm đuôi cho đúng ngữ pháp, nên bản chép "professionals" chưa chắc em đã đọc /s/.
+   Với mỗi từ có đuôi mà bỏ đuôi vẫn là từ thật, so câu mẫu với câu bỏ đuôi: bản bỏ đuôi khớp giọng em hơn → thiếu âm cuối.
+   Ngưỡng chỉnh theo bài thật của Đức (11/2026): thiếu /s/ ≈ −0.6 · có /z/ ≈ +0.9 · có /d/ ≈ +1.5.
+   Không bắt được âm cuối của từ gốc (desk, draft) hay R: bỏ âm ra chữ vô nghĩa, Whisper luôn chê. */
+const END_BAD = 0, END_NEAR = 0.5;
+const END_SKIP = new Set(["is","was","has","this","its","it's","yes","us","his","as","does","bus","plus","always","sometimes","perhaps","news","series","less","miss","boss","class","glass","need","used","indeed","speed","bed","red","feed","seed","shed","led","fed","wed","bad","sad","thus","chaos","lens","focus","status","campus","bonus","virus","famous","various","serious","nervous","previous"]);
+/* stems to try (a stem that is not a real word just scores low, so it never raises a false alarm) */
+function endStems(w) {
+  if (w.length < 4 || END_SKIP.has(w) || /'/.test(w) || /(ss|us|is|ous)$/.test(w)) return null;
+  if (/ies$/.test(w)) return { stems: [w.slice(0, -3) + "y"], snd: "/z/" };
+  if (/(s|x|z|ch|sh)es$/.test(w)) return { stems: [w.slice(0, -2)], snd: "/ɪz/" };
+  if (/s$/.test(w)) return { stems: [w.slice(0, -1)], snd: /[ptkf]s$/.test(w) ? "/s/" : "/z/" };
+  if (/ed$/.test(w)) return { stems: [...new Set([w.slice(0, -1), w.slice(0, -2)])].filter(x => x.length >= 3), snd: /[td]ed$/.test(w) ? "/ɪd/" : /(p|k|s|sh|ch|f|x)ed$/.test(w) ? "/t/" : "/d/" };
+  return null;
+}
+async function checkEndings(audio, chunks, exp, heardText) {
+  const raws = chunks.flat();
+  const heard = new Set(heardWords(heardText));
+  const wordsOf = rs => rs.map((w, k) => w.raw.replace(/([a-z])([A-Z]+)(?=[^A-Za-z]*$)/, (m, a, b) => a + b.toLowerCase()) + (rs[k].joinNext ? "" : " ")).join("").trim();
+  const cands = [];
+  exp.forEach((e, k) => { const st = heard.has(e) ? endStems(e) : null; if (st && !cands.some(c => c.e === e)) cands.push({ k, e, ...st }); });
+  if (!cands.length) return {};
+  const pick = cands.sort((x, y) => y.e.length - x.e.length).slice(0, 4);   // từ dài (nội dung) trước
+  const texts = [wordsOf(raws)], owner = [];
+  pick.forEach((c, n) => c.stems.forEach(stem => {
+    const v = raws.map(w => ({ ...w }));
+    v[c.k].raw = v[c.k].raw.replace(/[A-Za-z']+/, m => (/^[A-Z]/.test(m) ? stem[0].toUpperCase() + stem.slice(1) : stem));
+    texts.push(wordsOf(v)); owner.push({ n, stem });
+  }));
+  const sc = await window.Whisper.score(audio, texts);
+  const out = {};
+  pick.forEach((c, n) => {
+    let best = null;
+    owner.forEach((o, j) => { if (o.n === n && (!best || sc[j + 1] > best.s)) best = { s: sc[j + 1], stem: o.stem }; });
+    const d = sc[0] - best.s;
+    if (d < END_NEAR) out[c.e] = { d, snd: c.snd, stem: best.stem, cls: d < END_BAD ? "bad" : "near" };
+  });
+  return out;
+}
+function grade(L, i, card, chunks, exp, top, alts, clipP, ends) {
   EXPECT = new Set(exp);
   const got = heardWords(top);
   const map = align(exp, got);
   const altWords = new Set(alts.flat().flatMap(heardWords));
+  ends = ends || {};
   const statuses = exp.map((e, k) => {
     const h = map[k];
+    if (h === e && ends[e]) return { cls: ends[e].cls, end: ends[e], heard: h };
     if (h === e) return { cls: "ok" };
     if (altWords.has(e) && (h == null || sim(e, h) >= 0.5)) return { cls: "near", heard: h };
     if (h == null) return { cls: "miss" };
@@ -1920,7 +1986,7 @@ function grade(L, i, card, chunks, exp, top, alts, clipP) {
     <div class="heard">Máy nghe được: “${esc(top)}”</div>
     ${fixes.length ? `<ul class="fixes">${fixes.map(f => {
       const ipa = DATA.ipa[f.w], tip = DATA.tips[f.w];
-      const kind = f.st.cls === "near" ? "Máy nghe chưa rõ, đọc rõ hơn." : diagnose(f.w, f.st.heard);
+      const kind = f.st.end ? `${f.st.cls === "bad" ? "Thiếu" : "Chưa rõ"} âm cuối ${f.st.end.snd}: giọng em giống “${f.st.end.stem}” hơn “${f.w}”. Đọc rõ đuôi, nối sang từ sau.` : f.st.cls === "near" ? "Máy nghe chưa rõ, đọc rõ hơn." : diagnose(f.w, f.st.heard);
       return `<li class="k-${f.st.cls}"><span class="word">${esc(speechWord(f.raw).replace(/[.,!?;:]+$/, ""))}${ipa ? ` <span class="ipa">/${esc(ipa)}/</span>` : ""}</span>
         <span>${esc(kind)}</span>${tip ? `<span class="tip">${esc(tip)}</span>` : ""}</li>`;
     }).join("")}</ul>` : `<p class="okmsg">Đọc đủ và đúng hết các từ.</p>`}`;
