@@ -1,1 +1,4715 @@
-{"students": [{"id": "duc", "name": "Đức", "emails": ["duongtriduc0@gmail.com"], "done": ["s1-duc", "s1-my-weekend"], "weekly": [{"week": "2026-11-02", "short": "2–8/11", "title": "Tuần 2–8/11 · Final sounds + Part 1", "date": "8/11/2026", "draft": true, "bands": {"fc": 4.0, "lr": 4.0, "gra": 4.0, "p": 4.5}, "note": "Tuần này em luyện rất chăm: 59 câu, câu nào cũng làm lại tới khi đạt. Âm cuối là phần em tiến bộ rõ nhất đó!", "stats": [{"name": "Âm cuối – 21 âm", "first": 63, "last": 91}, {"name": "Hội thoại Part 1", "first": 67, "last": 94}], "improved": ["Âm cuối khó đã đúng: career (R cuối, lần đầu máy nghe thành “Korea”), desk /sk/, finish /ʃ/, prestige /ʒ/, staff /f/, email /l/.", "Đánh vần tên, đọc số rõ: B-R-Y-A-N-T, 555-0164.", "Đọc trôi các cụm khó: snowed under with work, a hectic schedule, an internship in marketing."], "fix": ["job: /dʒ/ đầu và /b/ cuối, máy vẫn nghe thành “chop” (0%).", "plans: /pl/ đầu và đuôi /nz/, máy nghe “plants”, “blaze” (57%).", "Cụm phụ âm cuối -st, -ft bị nuốt: first, draft, Maple Street.", "Thiếu /z/ ở is và professionals.", "I'm, I'll, I've em đọc thành “Am”, “I”: mất âm /m/ /l/ /v/.", "Từ dài: badminton, squeeze in, binge-watch (máy nghe “Batman tongue”)."], "next": ["Luyện cặp /b/–/p/ và /dʒ/–/tʃ/: job – chop, big – pig.", "Đọc chậm cụm cuối rồi tăng tốc: first, draft, plans, street.", "I'm, I'll, I've: nói lướt nhưng vẫn nghe được /m/, /l/, /v/."]}]}, {"id": "thu", "name": "Thư", "emails": ["ntmt2125@gmail.com"], "done": ["s1-thu", "s1-my-weekend"]}, {"id": "vananh", "name": "Vân Anh", "emails": ["nguyenngocvananh031209@gmail.com"], "profile": {"updated": "2/11/2026", "level": "Hiện tại khoảng band 5.0 · mục tiêu 6.0–6.5 (thi 2/2027)", "focus": ["Âm cuối /p/ /b/ /ʃ/ /r/ và /v/ /z/: laptop, job, finish, career, love, loves.", "Chia động từ: I study (không nói I'm study), he teaches; homework không đếm được.", "Dùng từ chắc nghĩa: 1 cụm hay mà đúng (over my head, at my own pace) tốt hơn 3 từ khó mà sai."], "speaking": {"by": {"fc": {"good": ["Câu trả lời nào cũng có lý do và ví dụ, nói được 3–4 câu như yêu cầu Part 1.", "Đã biết mở đầu bằng To be honest, The reason is that, That's why."], "weak": ["Dùng 2 từ nối cho 1 ý: Since…, so… → chỉ giữ 1.", "Câu bị thiếu: Based on the subject → It depends on the subject."]}, "lr": {"good": ["Dám dùng từ nâng cao: compulsory, comprehend, struggle with, my cup of tea.", "Có ý riêng rõ ràng về ngành học (muốn làm nha sĩ) → dễ phát triển câu trả lời."], "weak": ["Dịch từ tiếng Việt nên sai nghĩa: acknowledge (thừa nhận) ≠ knowledge (kiến thức); the ground why → the reason why.", "Cụm chưa tự nhiên: walk on my own pace → at my own pace; I will enjoy accompany → I prefer studying with friends."]}, "gra": {"good": ["Đã dùng câu phức với because, since, that's why."], "weak": ["Chia động từ: I'm study → I study; he teach → he teaches.", "Số ít/số nhiều: these homework → this homework; those subject → those subjects."]}, "p": {"good": ["Phần lớn 21 âm cuối đã đọc được: buổi 1 chỉ 4/21 âm trong bảng cần sửa."], "weak": ["Âm cuối /p/ laptop, /b/ job, /ʃ/ finish, /r/ career: khép môi / chu môi / cong lưỡi rồi giữ âm.", "/v/ /z/ cuối: love, loves (cổ rung).", "Nối âm và đọc lướt: work‿on, check‿your, did you → \"đi-dziu\", need to → \"nít-tơ\"."]}}}, "listening": {"note": "Chưa có bài Listening. Chị sẽ đánh giá sau bài nghe đầu tiên.", "by": {}}}}], "homework": [{"id": "hw-speaking-2", "skill": "Speaking", "session": 2, "title": "Homework Speaking buổi 2", "deadline": "2026-11-05", "note": "Âm cuối: mỗi thẻ đọc từ 3 lần rồi đọc câu luyện.", "lessons": ["hw-s2-final-sounds"]}, {"id": "hw-listening-1", "skill": "Listening", "session": 1, "title": "Homework Listening buổi 1", "deadline": "2026-11-05", "note": "Shadowing hội thoại Part 1: Thư nói phần Linda, Đức nói phần Ryan.", "lessons": ["hw-l1-part1"]}, {"id": "hw-va-speaking-1", "skill": "Speaking", "session": 1, "title": "Homework Speaking buổi 1", "deadline": "2026-11-07", "note": "3 bài: Âm cuối · Part 1 (nói lại câu trả lời của em + tự trả lời Q6–Q8) · Shadowing My senior year.", "lessons": ["va1-final-sounds", "va1-part1", "va1-shadowing"]}], "lessons": [{"id": "hw-s2-final-sounds", "session": 2, "title": "Âm cuối – 21 âm", "subtitle": "Đọc từ 3 lần + câu luyện", "for": ["duc", "thu"], "video": "media/hw-s2-final-sounds.mp4", "skill": "Speaking", "topic": "Âm cuối (Final sounds)", "theory": "media/hw-s2-final-sounds-theory.mp4", "theoryTitle": "cách đặt môi, răng, lưỡi cho 21 âm cuối", "sentences": [{"text": "laptoP / laptoP / laptoP / I work on my laptoP. //", "start": 226.92, "end": 232.0, "chunks": [[2.8, 3.71], [5.21, 6.12], [7.63, 8.53], [10.04, 11.61]], "label": "1 · /p/"}, {"text": "joB / joB / joB / She loves her new joB. //", "start": 232.0, "end": 236.27, "chunks": [[14.17, 14.87], [16.17, 16.87], [18.17, 18.87], [20.16, 21.58]], "label": "2 · /b/"}, {"text": "drafT / drafT / drafT / Please read my first drafT. //", "start": 236.27, "end": 241.05, "chunks": [[23.99, 24.74], [26.1, 26.85], [28.2, 28.96], [30.31, 32.04]], "label": "3 · /t/"}, {"text": "paiD / paiD / paiD / This internship is paiD. //", "start": 241.05, "end": 245.65, "chunks": [[34.77, 35.49], [36.81, 37.54], [38.87, 39.6], [40.92, 42.65]], "label": "4 · /d/"}, {"text": "desK / desK / desK / I sit at my desK. //", "start": 245.65, "end": 250.06, "chunks": [[45.37, 46.14], [47.5, 48.27], [49.63, 50.4], [51.76, 53.11]], "label": "5 · /k/"}, {"text": "biG / biG / biG / The company is biG. //", "start": 250.06, "end": 254.27, "chunks": [[55.46, 56.12], [57.39, 58.05], [59.32, 59.98], [61.24, 62.64]], "label": "6 · /g/"}, {"text": "staFF / staFF / staFF / Say hi to the staFF. //", "start": 254.27, "end": 258.72, "chunks": [[65.03, 65.78], [67.13, 67.88], [69.23, 69.98], [71.33, 72.72]], "label": "7 · /f/"}, {"text": "leaVE / leaVE / leaVE / It's time to leaVE. //", "start": 258.72, "end": 263.15, "chunks": [[75.11, 75.84], [77.17, 77.89], [79.22, 79.95], [81.28, 82.61]], "label": "8 · /v/"}, {"text": "monTH / monTH / monTH / I start next monTH. //", "start": 263.15, "end": 267.46, "chunks": [[84.94, 85.64], [86.94, 87.65], [88.95, 89.65], [90.96, 92.45]], "label": "9 · /θ/"}, {"text": "smooTH / smooTH / smooTH / The interview was smooTH. //", "start": 267.46, "end": 271.99, "chunks": [[94.95, 95.69], [97.03, 97.77], [99.11, 99.85], [101.19, 102.79]], "label": "10 · /ð/"}, {"text": "boSS / boSS / boSS / This is my boSS. //", "start": 271.99, "end": 276.36, "chunks": [[105.38, 106.13], [107.48, 108.24], [109.59, 110.34], [111.69, 112.97]], "label": "11 · /s/"}, {"text": "planS / planS / planS / We changed our planS. //", "start": 276.36, "end": 281.21, "chunks": [[115.24, 116.06], [117.47, 118.29], [119.7, 120.52], [121.94, 123.38]], "label": "12 · /z/"}, {"text": "finiSH / finiSH / finiSH / I have a lot to finiSH. //", "start": 281.21, "end": 285.95, "chunks": [[125.83, 126.63], [128.02, 128.82], [130.21, 131.01], [132.4, 134.01]], "label": "13 · /ʃ/"}, {"text": "prestiGE / prestiGE / prestiGE / The job has prestiGE. //", "start": 285.95, "end": 290.91, "chunks": [[136.63, 137.49], [138.95, 139.81], [141.26, 142.12], [143.58, 145.21]], "label": "14 · /ʒ/"}, {"text": "researCH / researCH / researCH / I love my researCH. //", "start": 290.91, "end": 295.94, "chunks": [[147.83, 148.81], [150.38, 151.36], [152.93, 153.91], [155.48, 156.99]], "label": "15 · /tʃ/"}, {"text": "manaGE / manaGE / manaGE / It's hard to manaGE. //", "start": 295.94, "end": 300.74, "chunks": [[159.5, 160.43], [161.97, 162.91], [164.45, 165.39], [166.93, 168.3]], "label": "16 · /dʒ/"}, {"text": "teaM / teaM / teaM / Welcome to the teaM. //", "start": 300.74, "end": 305.24, "chunks": [[170.68, 171.44], [172.79, 173.55], [174.9, 175.65], [177.01, 178.56]], "label": "17 · /m/"}, {"text": "interN / interN / interN / I'm a new interN. //", "start": 305.24, "end": 309.95, "chunks": [[181.11, 181.96], [183.4, 184.25], [185.69, 186.53], [187.98, 189.31]], "label": "18 · /n/"}, {"text": "meetiNG / meetiNG / meetiNG / I'm late for the meetiNG. //", "start": 309.95, "end": 314.65, "chunks": [[191.64, 192.44], [193.84, 194.64], [196.04, 196.84], [198.24, 199.7]], "label": "19 · /ŋ/"}, {"text": "emaiL / emaiL / emaiL / Please check your emaiL. //", "start": 314.65, "end": 319.2, "chunks": [[202.17, 202.98], [204.38, 205.18], [206.58, 207.38], [208.78, 210.24]], "label": "20 · /l/"}, {"text": "careeR / careeR / careeR / I want a good careeR. //", "start": 319.2, "end": 323.61, "chunks": [[212.7, 213.45], [214.81, 215.56], [216.91, 217.66], [219.01, 220.47]], "label": "21 · /r/"}]}, {"id": "hw-l1-part1", "session": 1, "title": "Hội thoại Part 1 – Lakeview Community Center", "subtitle": "Shadowing theo vai", "for": ["duc", "thu"], "video": "media/hw-l1-part1.mp4", "roles": {"thu": "Linda", "duc": "Ryan"}, "skill": "Listening", "topic": "Lakeview Community Center", "sentences": [{"text": "Good morning, / Lakeview Community Center. //", "start": 570.48, "end": 573.76, "chunks": [[2.8, 3.79], [5.39, 7.12]], "speaker": "Linda"}, {"text": "Linda speaking. / How can I help you? //", "start": 573.76, "end": 576.84, "chunks": [[9.84, 11.08], [12.91, 14.2]], "speaker": "Linda"}, {"text": "Hi. //", "start": 576.84, "end": 578.14, "chunks": [[16.5, 17.28]], "speaker": "Ryan"}, {"text": "I'm calling about the weekend activities / for young professionals. //", "start": 578.14, "end": 582.94, "chunks": [[19.06, 21.71], [24.95, 26.72]], "speaker": "Ryan"}, {"text": "I saw your poster / at the coffee shop / near my office. //", "start": 582.94, "end": 587.79, "chunks": [[29.48, 31.03], [33.18, 34.67], [36.76, 38.29]], "speaker": "Ryan"}, {"text": "Great. //", "start": 587.79, "end": 589.08, "chunks": [[40.82, 41.63]], "speaker": "Linda"}, {"text": "Are you thinking of joining? //", "start": 589.08, "end": 591.04, "chunks": [[43.43, 45.01]], "speaker": "Linda"}, {"text": "Yes. //", "start": 591.04, "end": 592.44, "chunks": [[47.59, 48.49]], "speaker": "Ryan"}, {"text": "I graduated in June, / and I've just started my first job, / so I don't have much free time anymore. //", "start": 592.44, "end": 599.56, "chunks": [[50.39, 52.29], [54.79, 57.12], [60.04, 62.64]], "speaker": "Ryan"}, {"text": "I'd like to find something fun / to do on the weekend. //", "start": 599.56, "end": 603.74, "chunks": [[66.23, 68.2], [70.77, 72.6]], "speaker": "Ryan"}, {"text": "No problem. //", "start": 603.74, "end": 605.31, "chunks": [[75.43, 76.49]], "speaker": "Linda"}, {"text": "Let me take a few details. //", "start": 605.31, "end": 607.71, "chunks": [[78.55, 80.35]], "speaker": "Linda"}, {"text": "What's your name? //", "start": 607.71, "end": 609.24, "chunks": [[83.16, 84.23]], "speaker": "Linda"}, {"text": "It's Ryan Bryant. //", "start": 609.24, "end": 611.24, "chunks": [[86.29, 87.84]], "speaker": "Ryan"}, {"text": "Can you spell your last name for me? //", "start": 611.24, "end": 613.56, "chunks": [[90.38, 92.29]], "speaker": "Linda"}, {"text": "Sure. //", "start": 613.56, "end": 614.9, "chunks": [[95.2, 96.06]], "speaker": "Ryan"}, {"text": "It's B-R-Y-A-N-T. //", "start": 614.9, "end": 617.92, "chunks": [[97.92, 100.67]], "speaker": "Ryan"}, {"text": "B-R-Y-A-N-T. //", "start": 617.92, "end": 620.56, "chunks": [[104.43, 106.72]], "speaker": "Linda"}, {"text": "Thanks. //", "start": 620.56, "end": 621.92, "chunks": [[110.01, 110.85]], "speaker": "Linda"}, {"text": "And what do you do, Ryan? //", "start": 621.92, "end": 624.31, "chunks": [[112.69, 114.69]], "speaker": "Linda"}, {"text": "I did an internship in marketing last year, / but now I'm a junior accountant / at a small company downtown. //", "start": 624.31, "end": 632.12, "chunks": [[117.7, 120.95], [124.8, 126.87], [129.54, 131.79]], "speaker": "Ryan"}, {"text": "And what's your address? //", "start": 632.12, "end": 633.88, "chunks": [[135.04, 136.39]], "speaker": "Linda"}, {"text": "It's twenty-four... sorry, no, / forty-two Maple Street. //", "start": 633.88, "end": 638.21, "chunks": [[138.74, 140.77], [143.4, 145.32]], "speaker": "Ryan"}, {"text": "I only moved into a small apartment there / last month. //", "start": 638.21, "end": 642.76, "chunks": [[148.24, 151.14], [154.65, 155.91]], "speaker": "Ryan"}, {"text": "I share the kitchen and the living room / with two roommates. //", "start": 642.76, "end": 647.12, "chunks": [[158.18, 160.66], [163.73, 165.24]], "speaker": "Ryan"}, {"text": "Forty-two Maple Street. //", "start": 647.12, "end": 649.18, "chunks": [[167.75, 169.4]], "speaker": "Linda"}, {"text": "That's just a ten-minute walk from here. //", "start": 649.18, "end": 651.88, "chunks": [[172.05, 174.32]], "speaker": "Linda"}, {"text": "And can I have a phone number? //", "start": 651.88, "end": 654.16, "chunks": [[177.58, 179.39]], "speaker": "Linda"}, {"text": "Sure. //", "start": 654.16, "end": 655.5, "chunks": [[182.2, 183.05]], "speaker": "Ryan"}, {"text": "It's five-five-five, / oh-one-six-four. //", "start": 655.5, "end": 659.32, "chunks": [[184.91, 186.66], [189.0, 190.58]], "speaker": "Ryan"}, {"text": "Five-five-five, / oh-one-four-six. //", "start": 659.32, "end": 662.57, "chunks": [[193.16, 194.5], [196.44, 197.84]], "speaker": "Linda"}, {"text": "No, sorry. //", "start": 662.57, "end": 664.26, "chunks": [[200.24, 201.46]], "speaker": "Ryan"}, {"text": "Oh-one-six-four. //", "start": 664.26, "end": 666.3, "chunks": [[203.68, 205.25]], "speaker": "Ryan"}, {"text": "Got it. //", "start": 666.3, "end": 667.66, "chunks": [[207.83, 208.67]], "speaker": "Linda"}, {"text": "So, which days are you usually free? //", "start": 667.66, "end": 670.18, "chunks": [[210.52, 212.65]], "speaker": "Linda"}, {"text": "Well, / I have a hectic schedule at the moment. //", "start": 670.18, "end": 674.01, "chunks": [[215.79, 216.6], [218.0, 220.54]], "speaker": "Ryan"}, {"text": "I'm snowed under with work / from Monday to Friday. //", "start": 674.01, "end": 678.01, "chunks": [[224.08, 225.76], [228.04, 230.04]], "speaker": "Ryan"}, {"text": "I usually get up at six / and I never get home before seven. //", "start": 678.01, "end": 682.94, "chunks": [[233.04, 234.98], [237.52, 240.15]], "speaker": "Ryan"}, {"text": "And on Saturdays, / I do the laundry and do the shopping, / so Sunday is really my only day off. //", "start": 682.94, "end": 690.13, "chunks": [[243.77, 245.34], [247.51, 249.97], [253.03, 255.82]], "speaker": "Ryan"}, {"text": "I see. //", "start": 690.13, "end": 691.52, "chunks": [[259.6, 260.49]], "speaker": "Linda"}, {"text": "And can I ask / why you'd like to join? //", "start": 691.52, "end": 694.7, "chunks": [[262.39, 263.7], [265.61, 266.97]], "speaker": "Linda"}, {"text": "To be honest, / I used to sleep in / and binge-watch TV series all weekend, / but it didn't really help. //", "start": 694.7, "end": 702.6, "chunks": [[269.33, 270.66], [272.6, 274.13], [276.27, 279.16], [282.66, 284.42]], "speaker": "Ryan"}, {"text": "I just need something / to help me unwind / after a long week. //", "start": 702.6, "end": 708.05, "chunks": [[287.17, 288.81], [291.05, 292.65], [294.84, 296.48]], "speaker": "Ryan"}, {"text": "That's what most of our members say. //", "start": 708.05, "end": 710.45, "chunks": [[299.11, 301.09]], "speaker": "Linda"}, {"text": "So, / we have a few activities on Sundays / that might suit you. //", "start": 710.45, "end": 715.2, "chunks": [[304.07, 304.79], [306.11, 308.34], [311.16, 312.37]], "speaker": "Linda"}, {"text": "The first one is Social Badminton. //", "start": 715.2, "end": 717.96, "chunks": [[314.59, 316.94]], "speaker": "Linda"}, {"text": "Oh, / I played badminton a lot in college, / but I'm not very good at it. //", "start": 717.96, "end": 723.68, "chunks": [[320.29, 321.03], [322.37, 325.07], [328.36, 330.2]], "speaker": "Ryan"}, {"text": "I never win! //", "start": 723.68, "end": 725.51, "chunks": [[333.04, 334.37]], "speaker": "Ryan"}, {"text": "What time does it start? //", "start": 725.51, "end": 727.69, "chunks": [[336.71, 338.45]], "speaker": "Ryan"}, {"text": "It used to start at nine o'clock, / but lots of people wanted to sleep in, / so now it starts at half past nine / and finishes at a quarter to twelve. //", "start": 727.69, "end": 736.85, "chunks": [[341.2, 343.2], [345.79, 348.15], [351.12, 353.23], [355.94, 358.43]], "speaker": "Linda"}, {"text": "And don't worry, / we play for fun. //", "start": 736.85, "end": 739.84, "chunks": [[361.92, 363.06], [364.81, 366.08]], "speaker": "Linda"}, {"text": "Nobody keeps score, / and you don't have to beat anyone. //", "start": 739.84, "end": 743.59, "chunks": [[368.36, 369.79], [371.82, 373.64]], "speaker": "Linda"}, {"text": "That's good to hear. //", "start": 743.59, "end": 745.48, "chunks": [[376.45, 377.92]], "speaker": "Ryan"}, {"text": "Do I need to bring anything? //", "start": 745.48, "end": 747.96, "chunks": [[380.4, 382.54]], "speaker": "Ryan"}, {"text": "We provide the shuttlecocks, / but you need to bring your own racket. //", "start": 747.96, "end": 752.26, "chunks": [[385.68, 387.45], [389.82, 391.78]], "speaker": "Linda"}, {"text": "That's fine. //", "start": 752.26, "end": 753.88, "chunks": [[394.73, 395.92]], "speaker": "Ryan"}, {"text": "I still have one somewhere. //", "start": 753.88, "end": 756.26, "chunks": [[398.11, 400.15]], "speaker": "Ryan"}, {"text": "The second activity is our Picnic and Kite Day. //", "start": 756.26, "end": 759.75, "chunks": [[403.18, 406.33]], "speaker": "Linda"}, {"text": "It's on the last Sunday of every month. //", "start": 759.75, "end": 762.47, "chunks": [[410.48, 412.72]], "speaker": "Linda"}, {"text": "People just hang out, / have a picnic, / play volleyball / and fly kites. //", "start": 762.47, "end": 768.0, "chunks": [[415.96, 417.36], [419.36, 420.51], [422.26, 423.3], [424.94, 426.16]], "speaker": "Linda"}, {"text": "Where do you meet? //", "start": 768.0, "end": 769.74, "chunks": [[428.38, 429.66]], "speaker": "Ryan"}, {"text": "It's in Riverside Park. //", "start": 769.74, "end": 771.74, "chunks": [[431.95, 433.54]], "speaker": "Linda"}, {"text": "Not at the main entrance, though, / because the parking lot there is always full. //", "start": 771.74, "end": 776.95, "chunks": [[436.14, 438.45], [441.36, 444.03]], "speaker": "Linda"}, {"text": "We usually meet next to the lake. //", "start": 776.95, "end": 779.34, "chunks": [[447.69, 449.63]], "speaker": "Linda"}, {"text": "And how much does it cost? //", "start": 779.34, "end": 781.63, "chunks": [[452.58, 454.43]], "speaker": "Ryan"}, {"text": "Members pay a monthly fee / that covers everything. //", "start": 781.63, "end": 785.43, "chunks": [[457.28, 459.16], [461.64, 463.15]], "speaker": "Linda"}, {"text": "For the general public, / it's forty-five dollars a month, / but young professionals under twenty-five / only pay thirty-five. //", "start": 785.43, "end": 793.48, "chunks": [[465.66, 467.15], [469.24, 471.25], [473.86, 476.36], [479.46, 480.97]], "speaker": "Linda"}, {"text": "Great. //", "start": 793.48, "end": 794.87, "chunks": [[483.48, 484.37]], "speaker": "Ryan"}, {"text": "I'm twenty-three. //", "start": 794.87, "end": 796.75, "chunks": [[486.26, 487.73]], "speaker": "Ryan"}, {"text": "Then you can have the lower price. //", "start": 796.75, "end": 799.08, "chunks": [[490.2, 492.13]], "speaker": "Linda"}, {"text": "For the picnic, / we bring a basket of sandwiches / and some bottles of water, / but please bring a blanket to sit on. //", "start": 799.08, "end": 806.53, "chunks": [[495.06, 496.22], [497.97, 499.98], [502.59, 504.23], [506.46, 508.67]], "speaker": "Linda"}, {"text": "OK. //", "start": 806.53, "end": 807.97, "chunks": [[511.88, 512.89]], "speaker": "Ryan"}, {"text": "And is there anything else? //", "start": 807.97, "end": 810.33, "chunks": [[514.89, 516.81]], "speaker": "Ryan"}, {"text": "There's also a walking group. //", "start": 810.33, "end": 812.53, "chunks": [[519.72, 521.48]], "speaker": "Linda"}, {"text": "They go hiking in the hills / every Sunday afternoon. //", "start": 812.53, "end": 816.37, "chunks": [[524.23, 525.89], [528.16, 529.8]], "speaker": "Linda"}, {"text": "It's hard work, / but it's really fun. //", "start": 816.37, "end": 819.4, "chunks": [[532.45, 533.6], [535.36, 536.7]], "speaker": "Linda"}, {"text": "That sounds nice. //", "start": 819.4, "end": 821.29, "chunks": [[539.05, 540.5]], "speaker": "Ryan"}, {"text": "I think I'll try badminton first / and squeeze in the picnic / at the end of the month. //", "start": 821.29, "end": 827.44, "chunks": [[542.95, 545.23], [548.11, 549.79], [552.07, 553.72]], "speaker": "Ryan"}, {"text": "Perfect. //", "start": 827.44, "end": 828.82, "chunks": [[556.36, 557.27]], "speaker": "Linda"}, {"text": "It's a great way / to recharge your batteries. //", "start": 828.82, "end": 832.22, "chunks": [[559.17, 560.33], [562.09, 563.8]], "speaker": "Linda"}]}, {"id": "s1-duc", "session": 1, "title": "Bản tham khảo của Đức", "subtitle": "Buổi 1 · My weekend, viết lại", "for": ["duc"], "video": "media/s1-duc.mp4", "skill": "Speaking", "topic": "My weekend", "sentences": [{"text": "On 'weekends, / I 'don't have much 'free time. //", "start": 132.13, "end": 135.88, "chunks": [[3.16, 4.5], [6.44, 8.41]]}, {"text": "On 'Saturdays, / I have ==classes== / from 'early 'morning / until the 'evening. //", "start": 135.88, "end": 142.27, "chunks": [[11.38, 12.83], [14.88, 16.3], [18.33, 19.7], [21.67, 23.2]]}, {"text": "On 'Sunday 'mornings, / I ++'wake ‿ up++ 'early / and 'go to the 'gym. //", "start": 142.27, "end": 147.51, "chunks": [[25.72, 27.45], [29.79, 31.25], [33.32, 34.95]]}, {"text": "'After that, / I 'usually ++have 'breakfast++ / with my 'family. //", "start": 147.51, "end": 152.43, "chunks": [[37.58, 38.74], [40.5, 42.35], [44.8, 46.17]]}, {"text": "Then I ++'head to 'campus++ / to ++'run ex'periments++ with my pro'fessor / for my ==thesis==. //", "start": 152.43, "end": 158.6, "chunks": [[48.54, 50.29], [52.65, 55.26], [58.47, 59.93]]}, {"text": "In the 'evening, / I ++'squeeze ‿ in++ about 'four 'hours / to ++'hang ‿ out with++ my 'girlfriend. //", "start": 158.6, "end": 164.69, "chunks": [[62.39, 63.7], [65.6, 67.85], [70.69, 72.97]]}, {"text": "To be 'honest, / it's the 'best 'part of my 'week, / because I can 'finally 'see her / ++after a 'long 'week++ / and !!re'charge my 'batteries!!. //", "start": 164.69, "end": 174.07, "chunks": [[76.25, 77.59], [79.52, 81.47], [84.01, 86.13], [88.86, 90.46], [92.66, 94.6]]}, {"text": "'Sometimes / I 'feel like / I 'don't have e'nough 'time / to do ==everything== I 'want, //", "start": 174.07, "end": 180.67, "chunks": [[97.54, 98.67], [100.41, 101.62], [103.43, 105.12], [107.41, 109.46]]}, {"text": "but it 'teaches me / how to ++'manage my 'time++ / and ++'let 'go of++ 'things / that 'aren't im'portant. //", "start": 180.67, "end": 187.37, "chunks": [[112.51, 113.97], [116.03, 117.74], [120.05, 121.64], [123.82, 125.4]]}]}, {"id": "s1-thu", "session": 1, "title": "Bản tham khảo của Thư", "subtitle": "Buổi 1 · Tả tranh A Sunday in the park", "for": ["thu"], "video": "media/s1-thu.mp4", "skill": "Speaking", "topic": "A Sunday in the park", "sentences": [{"text": "On a 'sunny 'Sunday 'morning, / I'm ++'spending 'quality time++ with my 'family / in the 'park. //", "start": 108.73, "end": 114.41, "chunks": [[2.97, 4.66], [6.95, 9.41], [12.46, 13.53]]}, {"text": "'Sunday is my 'only ++'day 'off++ / from my ==internship==, / so I 'come here 'every 'weekend. //", "start": 114.41, "end": 120.33, "chunks": [[15.59, 17.43], [19.88, 21.28], [23.29, 25.41]]}, {"text": "On the 'left, / there's an ==ice cream cart==, / and some 'people are ++'standing ‿ in 'line++. //", "start": 120.33, "end": 125.76, "chunks": [[28.52, 29.58], [31.23, 32.87], [35.12, 37.27]]}, {"text": "Be'hind the 'cart, / a 'boy is ++'flying a 'kite++. //", "start": 125.76, "end": 129.14, "chunks": [[40.42, 41.71], [43.59, 45.17]]}, {"text": "'Next to him, / a 'girl is 'sitting ‿ on a 'bench / under a 'tree / and 'reading a 'book. //", "start": 129.14, "end": 135.12, "chunks": [[47.75, 48.89], [50.63, 52.29], [54.56, 55.67], [57.37, 58.65]]}, {"text": "In the 'middle, / my 'family is 'sitting ‿ on a 'picnic 'blanket / and en'joying ‿ a 'picnic. //", "start": 135.12, "end": 140.81, "chunks": [[60.93, 61.95], [63.58, 66.33], [69.69, 71.31]]}, {"text": "Be'hind us, / 'two 'boys are 'playing 'badminton. //", "start": 140.81, "end": 144.25, "chunks": [[73.93, 75.0], [76.66, 78.57]]}, {"text": "On the 'right, / a 'man is 'riding a 'bicycle. //", "start": 144.25, "end": 147.68, "chunks": [[81.47, 82.51], [84.16, 86.0]]}, {"text": "I 'feel 'really 'happy, / because 'time with my 'family / 'helps me !!re'charge my 'batteries!! / for the 'week ‿ a'head. //", "start": 147.68, "end": 154.75, "chunks": [[88.83, 90.4], [92.56, 94.27], [96.59, 98.59], [101.2, 102.46]]}]}, {"id": "s1-my-weekend", "session": 1, "title": "My weekend", "subtitle": "Buổi 1 · Đoạn shadowing trên lớp", "for": ["duc", "thu"], "video": "media/s1-my-weekend.mp4", "skill": "Speaking", "topic": "My weekend", "sentences": [{"text": "On 'weekends, / I 'don't have much 'free time. //", "start": 84.1, "end": 87.54, "chunks": [[2.97, 4.19], [6.01, 7.74]]}, {"text": "I have 'extra 'classes / on 'Saturday 'mornings, / and a 'lot ‿ of 'homework. //", "start": 87.54, "end": 92.75, "chunks": [[10.48, 12.15], [14.42, 15.91], [18.0, 19.42]]}, {"text": "But on 'Sunday, / I 'try to ++'sleep ‿ in++ / until about 'nine. //", "start": 92.75, "end": 97.21, "chunks": [[21.84, 22.97], [24.71, 26.06], [28.02, 29.38]]}, {"text": "In the after'noon, / I ++'squeeze ‿ in++ an ‿ 'hour / to ++'hang ‿ out with++ my 'friends. //", "start": 97.21, "end": 102.3, "chunks": [[31.74, 32.98], [34.82, 36.28], [38.34, 40.12]]}, {"text": "++To be 'honest++, / it's the 'best 'part of my 'week, / because I can 'finally re'lax. //", "start": 102.3, "end": 107.76, "chunks": [[42.9, 44.05], [45.81, 47.48], [49.74, 51.8]]}, {"text": "In the 'evening, / I ++'catch ‿ up ‿ on++ my 'homework, / but 'sometimes / I ++'put ‿ it ‿ 'off++ / until 'late at 'night. //", "start": 107.76, "end": 114.81, "chunks": [[54.86, 55.95], [57.64, 59.3], [61.56, 62.73], [64.5, 65.54], [67.17, 68.54]]}, {"text": "I 'know / it's a ==bad 'habit==, / but I'm ++'working ‿ on ‿ it++. //", "start": 114.81, "end": 118.96, "chunks": [[70.92, 71.7], [73.07, 74.39], [76.31, 77.71]]}]}, {"id": "va1-final-sounds", "session": 1, "title": "Âm cuối – 21 âm", "subtitle": "Đọc từ 3 lần + câu luyện", "for": ["vananh"], "video": "media/hw-s2-final-sounds.mp4", "skill": "Speaking", "topic": "Âm cuối (Final sounds)", "theory": "media/hw-s2-final-sounds-theory.mp4", "theoryTitle": "cách đặt môi, răng, lưỡi cho 21 âm cuối", "sentences": [{"text": "laptoP / laptoP / laptoP / I work on my laptoP. //", "start": 226.92, "end": 232.0, "chunks": [[2.8, 3.71], [5.21, 6.12], [7.63, 8.53], [10.04, 11.61]], "label": "1 · /p/"}, {"text": "joB / joB / joB / She loves her new joB. //", "start": 232.0, "end": 236.27, "chunks": [[14.17, 14.87], [16.17, 16.87], [18.17, 18.87], [20.16, 21.58]], "label": "2 · /b/"}, {"text": "drafT / drafT / drafT / Please read my first drafT. //", "start": 236.27, "end": 241.05, "chunks": [[23.99, 24.74], [26.1, 26.85], [28.2, 28.96], [30.31, 32.04]], "label": "3 · /t/"}, {"text": "paiD / paiD / paiD / This internship is paiD. //", "start": 241.05, "end": 245.65, "chunks": [[34.77, 35.49], [36.81, 37.54], [38.87, 39.6], [40.92, 42.65]], "label": "4 · /d/"}, {"text": "desK / desK / desK / I sit at my desK. //", "start": 245.65, "end": 250.06, "chunks": [[45.37, 46.14], [47.5, 48.27], [49.63, 50.4], [51.76, 53.11]], "label": "5 · /k/"}, {"text": "biG / biG / biG / The company is biG. //", "start": 250.06, "end": 254.27, "chunks": [[55.46, 56.12], [57.39, 58.05], [59.32, 59.98], [61.24, 62.64]], "label": "6 · /g/"}, {"text": "staFF / staFF / staFF / Say hi to the staFF. //", "start": 254.27, "end": 258.72, "chunks": [[65.03, 65.78], [67.13, 67.88], [69.23, 69.98], [71.33, 72.72]], "label": "7 · /f/"}, {"text": "leaVE / leaVE / leaVE / It's time to leaVE. //", "start": 258.72, "end": 263.15, "chunks": [[75.11, 75.84], [77.17, 77.89], [79.22, 79.95], [81.28, 82.61]], "label": "8 · /v/"}, {"text": "monTH / monTH / monTH / I start next monTH. //", "start": 263.15, "end": 267.46, "chunks": [[84.94, 85.64], [86.94, 87.65], [88.95, 89.65], [90.96, 92.45]], "label": "9 · /θ/"}, {"text": "smooTH / smooTH / smooTH / The interview was smooTH. //", "start": 267.46, "end": 271.99, "chunks": [[94.95, 95.69], [97.03, 97.77], [99.11, 99.85], [101.19, 102.79]], "label": "10 · /ð/"}, {"text": "boSS / boSS / boSS / This is my boSS. //", "start": 271.99, "end": 276.36, "chunks": [[105.38, 106.13], [107.48, 108.24], [109.59, 110.34], [111.69, 112.97]], "label": "11 · /s/"}, {"text": "planS / planS / planS / We changed our planS. //", "start": 276.36, "end": 281.21, "chunks": [[115.24, 116.06], [117.47, 118.29], [119.7, 120.52], [121.94, 123.38]], "label": "12 · /z/"}, {"text": "finiSH / finiSH / finiSH / I have a lot to finiSH. //", "start": 281.21, "end": 285.95, "chunks": [[125.83, 126.63], [128.02, 128.82], [130.21, 131.01], [132.4, 134.01]], "label": "13 · /ʃ/"}, {"text": "prestiGE / prestiGE / prestiGE / The job has prestiGE. //", "start": 285.95, "end": 290.91, "chunks": [[136.63, 137.49], [138.95, 139.81], [141.26, 142.12], [143.58, 145.21]], "label": "14 · /ʒ/"}, {"text": "researCH / researCH / researCH / I love my researCH. //", "start": 290.91, "end": 295.94, "chunks": [[147.83, 148.81], [150.38, 151.36], [152.93, 153.91], [155.48, 156.99]], "label": "15 · /tʃ/"}, {"text": "manaGE / manaGE / manaGE / It's hard to manaGE. //", "start": 295.94, "end": 300.74, "chunks": [[159.5, 160.43], [161.97, 162.91], [164.45, 165.39], [166.93, 168.3]], "label": "16 · /dʒ/"}, {"text": "teaM / teaM / teaM / Welcome to the teaM. //", "start": 300.74, "end": 305.24, "chunks": [[170.68, 171.44], [172.79, 173.55], [174.9, 175.65], [177.01, 178.56]], "label": "17 · /m/"}, {"text": "interN / interN / interN / I'm a new interN. //", "start": 305.24, "end": 309.95, "chunks": [[181.11, 181.96], [183.4, 184.25], [185.69, 186.53], [187.98, 189.31]], "label": "18 · /n/"}, {"text": "meetiNG / meetiNG / meetiNG / I'm late for the meetiNG. //", "start": 309.95, "end": 314.65, "chunks": [[191.64, 192.44], [193.84, 194.64], [196.04, 196.84], [198.24, 199.7]], "label": "19 · /ŋ/"}, {"text": "emaiL / emaiL / emaiL / Please check your emaiL. //", "start": 314.65, "end": 319.2, "chunks": [[202.17, 202.98], [204.38, 205.18], [206.58, 207.38], [208.78, 210.24]], "label": "20 · /l/"}, {"text": "careeR / careeR / careeR / I want a good careeR. //", "start": 319.2, "end": 323.61, "chunks": [[212.7, 213.45], [214.81, 215.56], [216.91, 217.66], [219.01, 220.47]], "label": "21 · /r/"}], "deck": "va1"}, {"id": "va1-part1", "session": 1, "title": "Part 1 – Studies & School life", "subtitle": "Nói lại câu trả lời của em (bản đã sửa) Q1–Q5, rồi tự trả lời Q6–Q8 (có ghi âm)", "for": ["vananh"], "video": "media/va1-part1.mp4", "skill": "Speaking", "topic": "Studies & School life", "sentences": [{"label": "Q1 · Work or studies", "text": "'Currently, / I'm a 'senior / at Thu Duc High 'School. //", "start": 0.65, "end": 4.81, "chunks": [[0.8, 1.65], [1.95, 2.86], [3.16, 4.56]]}, {"label": "Q1 · Work or studies", "text": "Since this is my 'last year, / I have a 'lot of 'homework. //", "start": 5.51, "end": 9.26, "chunks": [[5.66, 7.27], [7.57, 9.01]]}, {"label": "Q1 · Work or studies", "text": "To be more spe'cific, / I have 'extra classes / almost every 'evening, // so I !!have a 'lot ‿ on my 'plate!!. //", "start": 9.96, "end": 17.31, "chunks": [[10.11, 11.39], [11.69, 13.23], [13.53, 14.97], [15.27, 17.06]]}, {"label": "Q2 · Favorite subject", "text": "To be 'honest, / I enjoy bi'ology the 'most / because I want to be'come a 'dentist. //", "start": 18.01, "end": 23.67, "chunks": [[18.16, 19.18], [19.48, 21.15], [21.45, 23.42]]}, {"label": "Q2 · Favorite subject", "text": "So this subject is ==com'pulsory== for me. //", "start": 24.37, "end": 27.01, "chunks": [[24.52, 26.76]]}, {"label": "Q2 · Favorite subject", "text": "Also, / my teacher ex'plains things / in a way that is 'easy to ==compre'hend==. //", "start": 27.71, "end": 33.35, "chunks": [[27.86, 28.64], [28.94, 30.59], [30.89, 33.1]]}, {"label": "Q2 · Favorite subject", "text": "That's the 'reason why / bi'ology is !!my cup of 'tea!!. //", "start": 34.05, "end": 37.8, "chunks": [[34.2, 35.52], [35.82, 37.55]]}, {"label": "Q3 · Difficult subject", "text": "Defi'nitely, / I find 'math and 'chemistry / 'difficult. //", "start": 38.5, "end": 42.95, "chunks": [[38.65, 39.54], [39.84, 41.5], [41.8, 42.7]]}, {"label": "Q3 · Difficult subject", "text": "The reason is that I ++'struggle with++ the 'homework, // and the class dis'cussions / are a bit !!'over my head!!. //", "start": 43.65, "end": 50.0, "chunks": [[43.8, 46.4], [46.7, 48.13], [48.43, 49.75]]}, {"label": "Q3 · Difficult subject", "text": "That's why I take 'extra classes / every 'evening // to re'view my 'lessons. //", "start": 50.7, "end": 56.26, "chunks": [[50.85, 52.98], [53.28, 54.27], [54.57, 56.01]]}, {"label": "Q4 · Preparing for exams", "text": "Per'sonally, / I usually re'view my 'notes / with my 'friends, // either on Google 'Meet / or at a 'coffee shop. //", "start": 56.96, "end": 64.81, "chunks": [[57.11, 58.0], [58.3, 59.96], [60.26, 61.33], [61.63, 62.98], [63.28, 64.56]]}, {"label": "Q4 · Preparing for exams", "text": "We look for ==past exam 'papers== on'line, // because they help us ++re'member the main i'deas++. //", "start": 65.51, "end": 71.14, "chunks": [[65.66, 68.03], [68.33, 70.89]]}, {"label": "Q5 · Alone or with others", "text": "It de'pends on the 'subject. // For 'math, / 'chemistry / or bi'ology, / I prefer studying with 'friends. //", "start": 71.84, "end": 79.42, "chunks": [[71.99, 73.53], [73.83, 74.65], [74.95, 75.78], [76.08, 77.01], [77.31, 79.17]]}, {"label": "Q5 · Alone or with others", "text": "On the 'other hand, / for 'history or 'literature, // I'd rather study a'lone / !!at my own 'pace!!. //", "start": 80.12, "end": 86.63, "chunks": [[80.27, 81.43], [81.73, 83.35], [83.65, 84.94], [85.24, 86.38]]}, {"free": true, "label": "Q6 · Tự trả lời", "q": "How has your school life changed since you started senior year?", "hint": "have a lot on my plate · a high-stakes exam · college admissions · keep up with · burn out"}, {"free": true, "label": "Q7 · Tự trả lời", "q": "What do you want to major in at university?", "hint": "major in (dentistry) · career prospects · a stepping stone to · follow in sb's footsteps · a well-paid job"}, {"free": true, "label": "Q8 · Tự trả lời", "q": "Do you think English will be important in your future career?", "hint": "career prospects · broaden my horizons · win a scholarship · a well-paid job · pick up"}], "deck": "va1"}, {"id": "va1-shadowing", "session": 1, "title": "Shadowing – My senior year", "subtitle": "Đoạn về chính em (lớp 12, muốn học nha khoa), luyện 3 lần/ngày", "for": ["vananh"], "video": "media/va1-shadowing.mp4", "skill": "Speaking", "topic": "Studies & School life", "sentences": [{"text": "Right 'now, / I'm a 'senior at Thu Duc High 'School, // so to be 'honest, / I !!have a 'lot ‿ on my 'plate!!. //", "start": 0.65, "end": 7.51, "chunks": [[0.8, 1.64], [1.94, 3.89], [4.19, 5.34], [5.64, 7.26]]}, {"text": "Be'sides 'regular classes, / I go to 'extra classes / almost every 'evening, // especially for 'math and 'chemistry. //", "start": 8.21, "end": 16.27, "chunks": [[8.36, 10.07], [10.37, 12.01], [12.31, 13.75], [14.05, 16.02]]}, {"text": "I'm also pre'paring for I-E-L-T-S, / because it's !!a 'stepping stone!! / to a top 'medical school. //", "start": 16.97, "end": 23.56, "chunks": [[17.12, 19.61], [19.91, 21.47], [21.77, 23.31]]}, {"text": "I used to ++'cram++ / the night before every 'test, / but it always left me / ++stressed ‿ 'out++. //", "start": 24.26, "end": 30.81, "chunks": [[24.41, 25.61], [25.91, 27.67], [27.97, 29.3], [29.6, 30.56]]}, {"text": "These 'days, / I re'view a little / every 'day, / so I don't ++fall be'hind++. //", "start": 31.51, "end": 37.28, "chunks": [[31.66, 32.64], [32.94, 34.08], [34.38, 35.3], [35.6, 37.03]]}, {"text": "I'm hoping to ++'major ‿ in++ / =='dentistry==, // mainly because the ++ca'reer prospects++ / are really 'promising. //", "start": 37.98, "end": 44.97, "chunks": [[38.13, 39.55], [39.85, 40.79], [41.09, 43.19], [43.49, 44.72]]}], "deck": "va1"}], "ipa": {"a": "eɪ", "about": "əˈbaʊt", "accountant": "əˈkaʊntənt", "activities": "ækˈtɪvətiz", "activity": "ækˈtɪvəti", "address": "ədˈrɛs", "after": "ˈæftɚ", "afternoon": "ˌæftɚˈnun", "ahead": "əˈhɛd", "all": "ˈɔl", "also": "ˈɔlsoʊ", "always": "ˈɔlˌweɪz", "an": "æn", "and": "ænd", "anymore": "ˌɛniˈmɔr", "anyone": "ˈɛniˌwʌn", "anything": "ˈɛniˌθɪŋ", "apartment": "əˈpɑrtmənt", "are": "ɑr", "aren't": "ˌɑrnt", "ask": "ˈæsk", "at": "æt", "b": "ˈbi", "bad": "ˈbæd", "badminton": "ˈbædmɪntən", "basket": "ˈbæskət", "batteries": "ˈbætɚiz", "be": "bi", "beat": "ˈbit", "because": "bəˈkʌz", "before": "bəˈfɔr", "behind": "bəˈhaɪnd", "bench": "ˈbɛntʃ", "best": "bɛst", "bicycle": "ˈbaɪsɪkəl", "big": "bɪɡ", "binge": "ˈbɪndʒ", "blanket": "ˈblæŋkət", "book": "ˈbʊk", "boss": "bɔs", "bottles": "ˈbɑtəlz", "boy": "ˈbɔɪ", "boys": "ˈbɔɪz", "breakfast": "ˈbrɛkfəst", "bring": "ˈbrɪŋ", "bryant": "ˈbraɪənt", "but": "ˌbʌt", "calling": "ˈkɔlɪŋ", "campus": "ˈkæmpəs", "can": "kæn", "career": "kəˈrɪr", "cart": "kɑrt", "catch": "kætʃ", "center": "ˈsɛntɚ", "changed": "ˈtʃeɪndʒd", "check": "ˈtʃɛk", "classes": "ˈklæsɪz", "coffee": "ˈkɔfi", "college": "ˈkɑlɪdʒ", "come": "ˈkʌm", "community": "kəmˈjunəti", "company": "ˈkʌmpəni", "cost": "ˈkɔst", "covers": "ˈkʌvɚz", "cream": "ˈkrim", "day": "ˈdeɪ", "days": "ˈdeɪz", "desk": "dɛsk", "details": "dəˈteɪlz", "did": "ˈdɪd", "didn't": "ˈdɪdənt", "do": "ˈdu", "does": "ˈdʌz", "dollars": "ˈdɑlɚz", "don't": "ˈdoʊnt", "downtown": "ˌdaʊnˈtaʊn", "draft": "dræft", "early": "ˈɝli", "else": "ˈɛls", "email": "ˈiˌmeɪl", "end": "ˈɛnd", "enjoying": "ɛnˈdʒɔɪɪŋ", "enough": "ɪˈnʌf", "entrance": "ˈɛntrəns", "evening": "ˈivnɪŋ", "every": "ˈɛvɚi", "everything": "ˈɛvriθɪŋ", "experiments": "ɪkˈspɛrəmənts", "extra": "ˈɛkstrə", "family": "ˈfæməli", "fee": "ˈfi", "feel": "ˈfil", "few": "ˈfju", "finally": "ˈfaɪnəli", "find": "ˈfaɪnd", "fine": "ˈfaɪn", "finish": "ˈfɪnɪʃ", "finishes": "ˈfɪnəʃəz", "first": "ˈfɝst", "five": "ˈfaɪv", "fly": "ˈflaɪ", "flying": "ˈflaɪɪŋ", "for": "fɔr", "forty": "ˈfɔrti", "four": "ˈfɔr", "free": "fri", "friday": "ˈfraɪˌdeɪ", "friends": "ˈfrɛndz", "from": "frʌm", "full": "ˈfʊl", "fun": "ˈfʌn", "general": "ˈdʒɛnɚəl", "get": "ɡɛt", "girl": "ˈɡɝl", "girlfriend": "ˈɡɝlfrɛnd", "go": "ˌɡoʊ", "good": "ˈɡʊd", "got": "ɡɑt", "graduated": "ˈɡrædʒʊˌeɪtᵻd", "great": "ˈɡreɪt", "group": "ˈɡrup", "gym": "dʒɪm", "habit": "ˈhæbɪt", "half": "ˈhæf", "hang": "ˈhæŋ", "happy": "ˈhæpi", "hard": "ˈhɑrd", "has": "hæz", "have": "hæv", "head": "ˈhɛd", "hear": "ˈhɪr", "hectic": "ˈhɛktɪk", "help": "ˈhɛlp", "helps": "ˈhɛlps", "her": "hɝ", "here": "ˈhɪr", "hi": "ˈhaɪ", "hiking": "ˈhaɪkɪŋ", "hills": "ˈhɪlz", "him": "ˌhɪm", "home": "ˈhoʊm", "homework": "ˈhoʊmwɝk", "honest": "ˈɑnɪst", "hour": "ˈaʊɚ", "hours": "ˈaʊɚz", "how": "ˌhaʊ", "i": "ˈaɪ", "i'd": "ˌaɪd", "i'll": "ˌaɪl", "i'm": "ˌaɪm", "i've": "ˌaɪv", "ice": "ˈaɪs", "important": "ɪmˈpɔrtənt", "in": "ɪn", "intern": "ˈɪnˌtɝn", "internship": "ˈɪntɝnʃɪp", "interview": "ˈɪntɚˌvju", "into": "ˈɪntu", "is": "ɪz", "it": "ɪt", "it's": "ɪts", "job": "dʒɑb", "join": "ˈdʒɔɪn", "joining": "ˈdʒɔɪnɪŋ", "june": "ˈdʒun", "junior": "ˈdʒunjɚ", "just": "ˈdʒʌst", "keeps": "ˈkips", "kitchen": "ˈkɪtʃən", "kite": "kaɪt", "kites": "ˈkaɪts", "know": "ˈnoʊ", "lake": "ˈleɪk", "lakeview": "ˈleɪkˌvju", "laptop": "ˈlæpˌtɑp", "last": "ˈlæst", "late": "leɪt", "laundry": "ˈlɔndri", "leave": "liv", "left": "lɛft", "let": "ˈlɛt", "like": "ˈlaɪk", "linda": "ˈlɪndə", "line": "ˈlaɪn", "living": "ˈlɪvɪŋ", "long": "ˈlɔŋ", "lot": "lɑt", "lots": "ˈlɑts", "love": "ˈlʌv", "loves": "ˈlʌvz", "lower": "ˈloʊɚ", "main": "ˈmeɪn", "man": "ˈmæn", "manage": "ˈmænɪdʒ", "maple": "ˈmeɪpəl", "marketing": "ˈmɑrkətɪŋ", "me": "ˌmi", "meet": "ˈmit", "meeting": "ˈmiɾɪŋ", "members": "ˈmɛmbɚz", "middle": "ˈmɪdəl", "might": "ˌmaɪt", "minute": "ˈmɪnət", "moment": "ˈmoʊmənt", "monday": "ˈmʌnˌdeɪ", "month": "mʌnθ", "monthly": "ˈmʌnθli", "morning": "ˈmɔrnɪŋ", "mornings": "ˈmɔrnɪŋz", "most": "ˈmoʊst", "moved": "ˈmuvd", "much": "ˈmʌtʃ", "my": "maɪ", "n": "ˈɛn", "name": "ˈneɪm", "near": "ˌnɪr", "need": "ˈnid", "never": "ˈnɛvɚ", "new": "ˈnu", "next": "ˈnɛkst", "nice": "ˈnaɪs", "night": "ˈnaɪt", "nine": "ˈnaɪn", "no": "ˈnoʊ", "nobody": "ˈnoʊˌbɑdi", "not": "ˌnɑt", "now": "ˈnaʊ", "number": "ˈnʌmbɚ", "oclock": "əkˈlɑk", "of": "ʌv", "off": "ˈɔf", "office": "ˈɔfəs", "oh": "ˈoʊ", "ok": "ˌoʊˈkeɪ", "on": "ˌɔn", "one": "ˈwʌn", "only": "ˈoʊnli", "our": "ˌaʊɚ", "out": "ˈaʊt", "own": "ˈoʊn", "paid": "peɪd", "park": "ˈpɑrk", "parking": "ˈpɑrkɪŋ", "part": "ˈpɑrt", "past": "ˈpæst", "pay": "ˈpeɪ", "people": "ˈpipəl", "perfect": "ˈpɝfəkt", "phone": "ˈfoʊn", "picnic": "ˈpɪkˌnɪk", "plans": "plænz", "play": "ˈpleɪ", "played": "ˈpleɪd", "playing": "ˈpleɪɪŋ", "please": "ˈpliz", "poster": "ˈpoʊstɚ", "prestige": "prɛˈstiʒ", "price": "ˈpraɪs", "problem": "ˈprɑbləm", "professionals": "prəˈfɛʃənəlz", "professor": "prəˈfɛsɚ", "provide": "prəˈvaɪd", "public": "ˈpʌblɪk", "put": "pʊt", "quality": "ˈkwɑləti", "quarter": "ˈkwɔrtɚ", "r": "ˈɑr", "racket": "ˈrækət", "read": "ˈrid", "reading": "ˈridɪŋ", "really": "ˈriəli", "recharge": "riˈtʃɑrdʒ", "relax": "rɪˈlæks", "research": "ˈriˌsɝtʃ", "riding": "ˈraɪdɪŋ", "right": "raɪt", "riverside": "ˈrɪvɚˌsaɪd", "room": "ˈrum", "roommates": "ˈrumˌmeɪts", "run": "ˈrʌn", "ryan": "ˈraɪən", "sandwiches": "ˈsænˌdwɪtʃəz", "saturday": "ˈsætɚˌdeɪ", "saturdays": "ˈsætɚdeɪz", "saw": "ˈsɔ", "say": "ˈseɪ", "schedule": "ˈskɛˌdʒul", "score": "ˈskɔr", "second": "ˈsɛkənd", "see": "ˈsi", "series": "ˈsɪriz", "seven": "ˈsɛvən", "share": "ˈʃɛr", "she": "ʃi", "shop": "ˈʃɑp", "shopping": "ˈʃɑpɪŋ", "shuttlecocks": "ˈʃʌtəlˌkɑks", "sit": "ˈsɪt", "sitting": "ˈsɪtɪŋ", "six": "ˈsɪks", "sleep": "ˈslip", "small": "ˈsmɔl", "smooth": "smuð", "snowed": "ˈsnoʊd", "so": "ˌsoʊ", "social": "ˈsoʊʃəl", "some": "ˌsʌm", "something": "ˈsʌmˌθɪŋ", "sometimes": "ˈsʌmtaɪmz", "somewhere": "ˈsʌmˌhwɛr", "sorry": "ˈsɔri", "sounds": "ˈsaʊndz", "speaking": "ˈspikɪŋ", "spell": "ˈspɛl", "spending": "ˈspɛndɪŋ", "squeeze": "skwiz", "staff": "stæf", "standing": "ˈstændɪŋ", "start": "ˈstɑrt", "started": "ˈstɑrtᵻd", "starts": "ˈstɑrts", "still": "ˈstɪl", "street": "ˈstrit", "suit": "ˈsut", "sunday": "ˈsʌnˌdeɪ", "sundays": "ˈsʌnˌdeɪz", "sunny": "ˈsʌni", "sure": "ˈʃʊr", "t": "ˈti", "take": "ˈteɪk", "teaches": "ˈtitʃɪz", "team": "tim", "ten": "ˈtɛn", "thanks": "ˈθæŋks", "that": "ðæt", "that's": "ðæts", "the": "ði", "then": "ˈðɛn", "there": "ðɛr", "there's": "ðɛrz", "thesis": "ˈθisɪs", "they": "ðeɪ", "things": "ˈθɪŋz", "think": "ˈθɪŋk", "thinking": "ˈθɪŋkɪŋ", "thirty": "ˈθɝti", "this": "ðɪs", "though": "ˌðoʊ", "three": "ˈθri", "time": "ˈtaɪm", "to": "tu", "tree": "ˈtri", "try": "ˈtraɪ", "tv": "ˌtiˈvi", "twelve": "ˈtwɛlv", "twenty": "ˈtwɛnti", "two": "ˈtu", "under": "ˈʌndɚ", "until": "ˌʌnˈtɪl", "unwind": "ˌʌnˈwaɪnd", "up": "ˌʌp", "us": "ˌʌs", "used": "ˈjuzd", "usually": "ˈjuʒəwəli", "very": "ˈvɛri", "volleyball": "ˈvɑliˌbɔl", "wake": "ˈweɪk", "walk": "ˈwɔk", "walking": "ˈwɔkɪŋ", "want": "ˈwɑnt", "wanted": "ˈwɑntəd", "was": "wʌz", "watch": "ˈwɑtʃ", "water": "ˈwɔtɚ", "way": "ˈweɪ", "we": "wi", "week": "wik", "weekend": "ˈwikɛnd", "weekends": "ˈwikɛndz", "welcome": "ˈwɛlkəm", "well": "ˈwɛl", "what": "ˌwʌt", "what's": "ˌwʌts", "where": "ˌwɛr", "which": "ˌwɪtʃ", "why": "ˌwaɪ", "win": "ˈwɪn", "with": "wɪð", "work": "ˈwɝk", "working": "ˈwɝkɪŋ", "worry": "ˈwɝi", "y": "ˈwaɪ", "year": "ˈjɪr", "yes": "ˈjɛs", "you": "ju", "you'd": "jud", "young": "ˈjʌŋ", "your": "jʊr"}, "tips": {"classes": "Đuôi -es đọc thành âm /ɪz/: cla-sɪz, 2 âm tiết.", "catch": "Kết thúc bằng âm \"ch\" /tʃ/, chu môi ra. Đừng đọc thành cast.", "sometimes": "Nhớ âm /z/ ở cuối.", "week": "Kéo dài âm \"i\" và giữ âm /k/ cuối, không thì nghe thành quick hoặc wish.", "late": "Đọc \"lây-t\", khác light \"lai-t\".", "working": "Tròn môi cho /w/, cong lưỡi cho /ɝ/.", "free": "Có âm /r/ ngay sau /f/.", "gym": "Âm \"i\" ngắn, ngậm môi lại cho /m/ ở cuối.", "breakfast": "Nhấn âm đầu BREAK, đọc rõ /br/.", "best": "Giữ âm /st/ ở cuối. Đọc thành bad là ngược nghĩa.", "hours": "Âm h câm. Nhớ âm /z/ ở cuối.", "hour": "Âm h câm: an hour đọc nối thành a-nau-ơ.", "weekends": "Không có a phía trước. Cuối từ là /dz/.", "extra": "Đọc rõ cụm /kstr/.", "lot": "Không có âm /s/: lot of đọc nối lɑ-təv.", "homework": "Nhớ âm /h/ đầu và /k/ cuối.", "squeeze": "Đọc rõ /skw/ và âm /z/ cuối.", "relax": "Nhấn âm 2 LAX, đọc rõ /ks/ cuối.", "put": "Âm /p/ bật hơi, không phải /b/. Put it off đọc pu-đi-off.", "left": "Kết thúc bằng /ft/, cắn nhẹ môi dưới cho /f/.", "cart": "Nhớ âm /t/ cuối, thiếu là thành car.", "playing": "Đọc rõ /pl/ ở đầu.", "badminton": "Nhấn âm đầu BAD.", "right": "Âm cuối là /t/, không phải /s/.", "riding": "Đạp xe là rai-đinh. Ri-đinh là reading (đọc sách).", "reading": "Đọc sách là ri-đinh. Rai-đinh là riding (đạp xe).", "sitting": "Âm /s/ đầu: đặt lưỡi sau răng, thổi hơi ra âm \"xì\".", "teaches": "Chủ ngữ it thì động từ thêm -es, đọc /ɪz/.", "experiments": "Nhấn âm 2 PE, nhớ /ts/ ở cuối.", "recharge": "Nhấn âm 2 CHARGE, cuối là /dʒ/.", "honest": "Âm h câm: ɑ-nɪst.", "enjoying": "Đuôi -ing đọc rõ.", "mornings": "Nhớ âm /z/ ở cuối.", "saturdays": "Nhớ âm /z/ ở cuối.", "laptop": "Âm cuối /p/: khép 2 môi rồi giữ, như \"p\" cuối trong tháp. Không thêm \"ơ\".", "job": "Âm cuối /b/: khép 2 môi, giữ, cổ rung. Không đọc thành \"jóp-bơ\".", "draft": "Âm cuối /ft/: cắn nhẹ môi dưới thổi /f/, rồi chạm lưỡi sau răng cho /t/.", "paid": "Âm cuối /d/: như /t/ trong mát nhưng cổ rung.", "desk": "Âm cuối /sk/: xì /s/ rồi cuống lưỡi chặn /k/, như \"c\" cuối trong các.", "big": "Âm cuối /g/: như \"c\" cuối trong các nhưng cổ rung.", "staff": "Âm cuối /f/: răng trên cắn nhẹ môi dưới, thổi ra.", "leave": "Âm cuối /v/: như /f/ nhưng cổ rung. Thiếu /v/ thì thành lee.", "month": "Âm cuối /θ/: thè đầu lưỡi giữa 2 hàm răng, thổi. Không đọc thành mon-s.", "smooth": "Âm cuối /ð/: thè lưỡi như /θ/, cổ rung.", "boss": "Âm cuối /s/: răng khép, xì hơi như xì lốp xe.", "plans": "Âm cuối /z/: như /s/ nhưng cổ rung, tiếng ong \"zzz\".", "finish": "Âm cuối /ʃ/: chu môi, \"suỵt\".", "prestige": "Âm cuối /ʒ/: \"suỵt\" + cổ rung. Nhấn âm 2 STIGE.", "research": "Âm cuối /tʃ/: chu môi, bật \"ch\".", "manage": "Âm cuối /dʒ/: như /tʃ/ nhưng cổ rung. Nhấn âm đầu MAN.", "team": "Âm cuối /m/: khép môi, ngân như \"m\" cuối trong cam. Khác teen /n/.", "intern": "Âm cuối /n/: đầu lưỡi chạm gờ sau răng trên, ngân như \"n\" trong lan.", "meeting": "Âm cuối /ŋ/: như \"ng\" trong làng, không thêm \"k\".", "email": "Âm cuối /l/: đầu lưỡi chạm gờ sau răng trên, giữ yên. Không đọc thành \"meo\".", "career": "Âm cuối /r/: cong đầu lưỡi lên, không chạm đâu cả. Nhấn âm 2 REER."}, "criteria": {"intro": ["IELTS Speaking chấm 4 tiêu chí, mỗi tiêu chí 25%. Listening chấm theo số câu đúng trên 40 câu.", "👍 = điểm mạnh em đang có · 🔧 = chỗ cần sửa. Chị cập nhật sau mỗi buổi."], "speaking": [{"id": "fc", "name": "Fluency & Coherence – Trôi chảy, mạch lạc", "what": "Nói dài không ngập ngừng nhiều, ý nối với nhau rõ ràng (A.R.E.: Answer → Reason → Example), dùng từ nối đúng chỗ."}, {"id": "lr", "name": "Lexical Resource – Vốn từ", "what": "Dùng từ đúng nghĩa, đúng ngữ cảnh; có collocation, phrasal verb, idiom; diễn đạt lại được khi bí từ."}, {"id": "gra", "name": "Grammatical Range & Accuracy – Ngữ pháp", "what": "Có cả câu đơn và câu phức; chia động từ, số ít/số nhiều, thì đúng; càng nhiều câu không lỗi càng cao điểm."}, {"id": "p", "name": "Pronunciation – Phát âm", "what": "Người nghe hiểu dễ dàng: đủ âm cuối, nhấn âm đúng, nối âm, ngắt cụm và ngữ điệu tự nhiên."}], "listening": [{"id": "score", "name": "Số câu đúng → band", "what": "40 câu, mỗi câu 1 điểm. Tham khảo: khoảng 23/40 ≈ 6.0 · 26/40 ≈ 6.5 · 30/40 ≈ 7.0."}, {"id": "key", "name": "Bắt keyword & paraphrase", "what": "Đáp án hiếm khi lặp nguyên từ trong câu hỏi; phải nhận ra cách nói khác (paraphrase) của cùng ý."}, {"id": "spell", "name": "Chính tả, số, tên riêng", "what": "Viết sai chính tả hoặc sai số ít/số nhiều là mất điểm; nghe đúng số, ngày tháng, tên được đánh vần."}, {"id": "trap", "name": "Bẫy đổi ý (distractor)", "what": "Người nói hay nói một đáp án rồi sửa lại; phải nghe đến hết ý mới chọn."}]}, "decks": [{"id": "va1", "title": "Studies & School life", "session": 1, "for": ["vananh"], "cards": [{"w": "a required subject", "type": "Collocation", "ipa": "/ə rɪˈkwaɪɚd ˈsʌbdʒɪkt/", "stress": "a re-QUIRED SUB-ject", "band": "4–5", "mean": "môn bắt buộc", "grammar": "", "ex": "Math is a required subject on the graduation exam.", "group": "A. Học tập & môn học"}, {"w": "an elective", "type": "Vocab", "ipa": "/ən ɪˈlɛktɪv/", "stress": "an e-LEC-tive", "band": "5.5–6.5", "mean": "môn tự chọn", "grammar": "(n.)", "ex": "I chose chemistry as an elective.", "group": "A. Học tập & môn học"}, {"w": "pick up (a skill)", "type": "Phrasal verb", "ipa": "/ˌpɪk ˈʌp/", "stress": "pick‿UP", "band": "5.5–6.5", "mean": "học được (một cách tự nhiên)", "grammar": "tách được: pick up English / pick it up; QK picked up", "ex": "I picked up a lot of English from YouTube.", "group": "A. Học tập & môn học"}, {"w": "excel at", "type": "Vocab", "ipa": "/ɪkˈsɛl æt/", "stress": "ex-CEL‿at", "band": "5.5–6.5", "mean": "giỏi xuất sắc ở", "grammar": "excel at + N / V-ing", "ex": "She excels at physics.", "group": "A. Học tập & môn học"}, {"w": "struggle with", "type": "Vocab", "ipa": "/ˈstrʌɡəl wɪð/", "stress": "STRUG-gle with", "band": "5.5–6.5", "mean": "vật lộn với, gặp khó với", "grammar": "struggle with + N / V-ing", "ex": "I still struggle with essay writing.", "group": "A. Học tập & môn học"}, {"w": "grasp a concept", "type": "Collocation", "ipa": "/ˌɡræsp ə ˈkɑnsɛpt/", "stress": "grasp‿a CON-cept", "band": "7–8", "mean": "nắm được một khái niệm", "grammar": "grasp + concept/idea", "ex": "It took me a week to grasp the concept of limits.", "group": "A. Học tập & môn học"}, {"w": "hands-on", "type": "Vocab", "ipa": "/ˌhændzˈɑn/", "stress": "hands-ON", "band": "7–8", "mean": "thực hành, trực tiếp làm", "grammar": "gain / get + hands-on experience", "ex": "I prefer hands-on subjects like computer science.", "group": "A. Học tập & môn học"}, {"w": "rote learning", "type": "Collocation", "ipa": "/ˌroʊt ˈlɝnɪŋ/", "stress": "rote LEARN-ing", "band": "7–8", "mean": "học vẹt", "grammar": "danh từ không đếm được; learn by rote", "ex": "History at my school is mostly rote learning.", "group": "A. Học tập & môn học"}, {"w": "a steep learning curve", "type": "Collocation", "ipa": "/ə ˌstip ˈlɝnɪŋ ˌkɝv/", "stress": "a steep LEARN-ing curve", "band": "7–8", "mean": "khó, phải học rất nhiều lúc đầu", "grammar": "have / face + a steep learning curve", "ex": "Physics in 12th grade has a steep learning curve.", "group": "A. Học tập & môn học"}, {"w": "brush up on", "type": "Phrasal verb", "ipa": "/ˌbrʌʃ ˈʌp ɑn/", "stress": "brush‿UP‿on", "band": "7–8", "mean": "ôn lại cho chắc", "grammar": "không tách được: + N", "ex": "I need to brush up on my grammar before the test.", "group": "A. Học tập & môn học"}, {"w": "get the hang of", "type": "Idiom", "ipa": "/ˌɡɛt ðə ˈhæŋ əv/", "stress": "get the HANG‿of", "band": "7–8", "mean": "bắt đầu quen, làm được", "grammar": "", "ex": "I finally got the hang of chemical equations.", "group": "A. Học tập & môn học"}, {"w": "be right up my alley", "type": "Idiom", "ipa": "/bi ˌraɪt ʌp maɪ ˈæli/", "stress": "be right‿up my AL-ley", "band": "8.5–9", "mean": "đúng sở trường của mình", "grammar": "", "ex": "Anything with numbers is right up my alley.", "group": "A. Học tập & môn học", "warn": true}, {"w": "be under a lot of pressure", "type": "Collocation", "ipa": "/bi ˌʌndɚ ə ˌlɑɾ əv ˈprɛʃɚ/", "stress": "un-der‿a LOT‿of PRES-sure", "band": "4–5", "mean": "chịu nhiều áp lực", "grammar": "", "ex": "Seniors are under a lot of pressure this year.", "group": "B. Thi cử & áp lực"}, {"w": "the high school graduation exam", "type": "Collocation", "ipa": "/ðə ˌhaɪ skul ˌɡrædʒuˈeɪʃən ɪɡˈzæm/", "stress": "the HIGH school grad-u-A-tion ex-AM", "band": "4–5", "mean": "kỳ thi tốt nghiệp THPT", "grammar": "", "ex": "The graduation exam takes place in June.", "group": "B. Thi cử & áp lực"}, {"w": "a mock test", "type": "Collocation", "ipa": "/ə ˈmɑk ˌtɛst/", "stress": "a MOCK test", "band": "5.5–6.5", "mean": "bài thi thử", "grammar": "", "ex": "I take a mock test every Saturday.", "group": "B. Thi cử & áp lực"}, {"w": "college admissions", "type": "Collocation", "ipa": "/ˈkɑlɪdʒ ədˈmɪʃənz/", "stress": "COL-lege ad-MIS-sions", "band": "5.5–6.5", "mean": "tuyển sinh đại học", "grammar": "", "ex": "IELTS can really help with college admissions.", "group": "B. Thi cử & áp lực"}, {"w": "cram for", "type": "Phrasal verb", "ipa": "/ˈkræm fɚ/", "stress": "CRAM for", "band": "5.5–6.5", "mean": "học dồn, ôn gấp", "grammar": "+ exam/test; QK crammed", "ex": "I used to cram for tests the night before.", "group": "B. Thi cử & áp lực"}, {"w": "fall behind", "type": "Phrasal verb", "ipa": "/ˌfɔl bɪˈhaɪnd/", "stress": "fall be-HIND", "band": "5.5–6.5", "mean": "bị tụt lại", "grammar": "không tân ngữ / + in + môn; QK fell behind", "ex": "If I miss a class, I fall behind quickly.", "group": "B. Thi cử & áp lực"}, {"w": "stressed out", "type": "Phrasal verb", "ipa": "/ˌstrɛst ˈaʊt/", "stress": "stressed‿OUT", "band": "5.5–6.5", "mean": "căng thẳng cao độ", "grammar": "phrasal", "ex": "I get stressed out before every mock test.", "group": "B. Thi cử & áp lực"}, {"w": "a high-stakes exam", "type": "Collocation", "ipa": "/ə ˌhaɪˈsteɪks ɪɡˈzæm/", "stress": "a high-STAKES ex-AM", "band": "7–8", "mean": "kỳ thi quyết định, nhiều thứ phụ thuộc", "grammar": "high-stakes = tính từ ghép, có gạch nối", "ex": "It's a high-stakes exam, so everyone is nervous.", "group": "B. Thi cử & áp lực"}, {"w": "burn out", "type": "Phrasal verb", "ipa": "/ˌbɝn ˈaʊt/", "stress": "burn‿OUT", "band": "7–8", "mean": "kiệt sức (do học quá nhiều)", "grammar": "không tân ngữ; danh từ burnout /ˈbɝnˌaʊt/", "ex": "If I study twelve hours a day, I'll burn out.", "group": "B. Thi cử & áp lực"}, {"w": "ace (a test)", "type": "Vocab", "ipa": "/eɪs/", "stress": "ACE", "band": "7–8", "mean": "làm bài xuất sắc (thân mật)", "grammar": "(v.)", "ex": "I aced my last English test.", "group": "B. Thi cử & áp lực"}, {"w": "have a lot on my plate", "type": "Idiom", "ipa": "/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/", "stress": "have‿a LOT‿on my PLATE", "band": "7–8", "mean": "bận ngập đầu", "grammar": "", "ex": "With extra classes and IELTS, I have a lot on my plate.", "group": "B. Thi cử & áp lực"}, {"w": "pull an all-nighter", "type": "Idiom", "ipa": "/ˌpʊl ən ˌɔlˈnaɪɾɚ/", "stress": "pull‿an all-NIGHT-er", "band": "7–8", "mean": "thức trắng đêm (để học)", "grammar": "", "ex": "I pulled an all-nighter before my history test.", "group": "B. Thi cử & áp lực"}, {"w": "take notes", "type": "Collocation", "ipa": "/ˌteɪk ˈnoʊts/", "stress": "take NOTES", "band": "4–5", "mean": "ghi chép", "grammar": "take notes + on + N", "ex": "I take notes on my iPad in every class.", "group": "C. Thói quen & phương pháp học"}, {"w": "review (for a test)", "type": "Vocab", "ipa": "/rɪˈvju/", "stress": "re-VIEW", "band": "4–5", "mean": "ôn bài", "grammar": "(v.)", "ex": "I review for tests with my best friend.", "group": "C. Thói quen & phương pháp học"}, {"w": "join a study group", "type": "Collocation", "ipa": "/ˌdʒɔɪn ə ˈstʌdi ˌɡrup/", "stress": "join‿a STUD-y group", "band": "4–5", "mean": "tham gia nhóm học", "grammar": "join + a study group", "ex": "I joined a study group for math.", "group": "C. Thói quen & phương pháp học"}, {"w": "self-study", "type": "Vocab", "ipa": "/ˌsɛlfˈstʌdi/", "stress": "self-STUD-y", "band": "5.5–6.5", "mean": "tự học", "grammar": "n./v.", "ex": "Most of my IELTS preparation is self-study.", "group": "C. Thói quen & phương pháp học"}, {"w": "keep up with", "type": "Phrasal verb", "ipa": "/ˌkip ˈʌp wɪð/", "stress": "keep‿UP with", "band": "5.5–6.5", "mean": "theo kịp", "grammar": "không tách được: + N; QK kept up with", "ex": "It's hard to keep up with all the homework.", "group": "C. Thói quen & phương pháp học"}, {"w": "stay focused", "type": "Collocation", "ipa": "/ˌsteɪ ˈfoʊkəst/", "stress": "stay FO-cused", "band": "5.5–6.5", "mean": "giữ tập trung", "grammar": "stay focused + on + N", "ex": "I put my phone away to stay focused.", "group": "C. Thói quen & phương pháp học"}, {"w": "learn sth by heart", "type": "Idiom", "ipa": "/ˌlɝn ... baɪ ˈhɑrt/", "stress": "learn … by HEART", "band": "5.5–6.5", "mean": "học thuộc lòng", "grammar": "", "ex": "I learned all the formulas by heart.", "group": "C. Thói quen & phương pháp học"}, {"w": "procrastinate", "type": "Vocab", "ipa": "/prəˈkræstəˌneɪt/", "stress": "pro-CRAS-ti-nate", "band": "7–8", "mean": "trì hoãn", "grammar": "(v.)", "ex": "I tend to procrastinate when a subject is boring.", "group": "C. Thói quen & phương pháp học"}, {"w": "retain information", "type": "Collocation", "ipa": "/rɪˌteɪn ˌɪnfɚˈmeɪʃən/", "stress": "re-TAIN in-for-MA-tion", "band": "7–8", "mean": "nhớ lâu kiến thức", "grammar": "information không đếm được", "ex": "Teaching my friends helps me retain information.", "group": "C. Thói quen & phương pháp học"}, {"w": "put in the hours", "type": "Idiom", "ipa": "/ˌpʊt ɪn ði ˈaʊɚz/", "stress": "put‿in the HOURS", "band": "7–8", "mean": "bỏ nhiều thời gian công sức", "grammar": "", "ex": "You can't get a 7.0 unless you put in the hours.", "group": "C. Thói quen & phương pháp học"}, {"w": "hit the books", "type": "Idiom", "ipa": "/ˌhɪt ðə ˈbʊks/", "stress": "hit the BOOKS", "band": "7–8", "mean": "bắt đầu học hành nghiêm túc", "grammar": "", "ex": "After Tết, I really need to hit the books.", "group": "C. Thói quen & phương pháp học"}, {"w": "apply to (a university)", "type": "Vocab", "ipa": "/əˈplaɪ tu/", "stress": "ap-PLY to", "band": "4–5", "mean": "nộp hồ sơ vào", "grammar": "apply to + trường; apply for + học bổng/việc", "ex": "I'm applying to three universities in HCMC.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "major in", "type": "Phrasal verb", "ipa": "/ˈmeɪdʒɚ ɪn/", "stress": "MA-jor‿in", "band": "5.5–6.5", "mean": "học chuyên ngành", "grammar": "+ ngành; Mỹ dùng nhiều, Anh dùng study", "ex": "I want to major in international business.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "win a scholarship", "type": "Collocation", "ipa": "/ˌwɪn ə ˈskɑlɚˌʃɪp/", "stress": "win‿a SCHOL-ar-ship", "band": "5.5–6.5", "mean": "giành học bổng", "grammar": "win / get / apply for + a scholarship", "ex": "A high IELTS score helps me win a scholarship.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "a well-paid job", "type": "Collocation", "ipa": "/ə ˌwɛlˈpeɪd ˈdʒɑb/", "stress": "a well-PAID JOB", "band": "5.5–6.5", "mean": "công việc lương cao", "grammar": "", "ex": "Many students choose IT for a well-paid job.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "career prospects", "type": "Collocation", "ipa": "/kəˈrɪr ˈprɑˌspɛkts/", "stress": "ca-REER PROS-pects", "band": "7–8", "mean": "triển vọng nghề nghiệp", "grammar": "luôn số nhiều: prospects", "ex": "Logistics has great career prospects in Vietnam.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "a stepping stone (to)", "type": "Idiom", "ipa": "/ə ˈstɛpɪŋ ˌstoʊn/", "stress": "a STEP-ping stone", "band": "7–8", "mean": "bước đệm", "grammar": "", "ex": "IELTS is a stepping stone to a good university.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "broaden my horizons", "type": "Idiom", "ipa": "/ˈbrɔdən maɪ həˈraɪzənz/", "stress": "BROAD-en my ho-RI-zons", "band": "7–8", "mean": "mở mang tầm nhìn", "grammar": "broaden + my/your + horizons (số nhiều)", "ex": "Studying abroad would broaden my horizons.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "keep my options open", "type": "Idiom", "ipa": "/ˌkip maɪ ˈɑpʃənz ˈoʊpən/", "stress": "keep my OP-tions‿O-pen", "band": "7–8", "mean": "chưa chốt, để ngỏ lựa chọn", "grammar": "", "ex": "I'm keeping my options open between IT and finance.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "follow in sb's footsteps", "type": "Idiom", "ipa": "/ˈfɑloʊ ɪn ... ˈfʊtˌstɛps/", "stress": "FOL-low‿in … FOOT-steps", "band": "7–8", "mean": "theo nghề của ai (trong gia đình)", "grammar": "", "ex": "I might follow in my mom's footsteps and become a doctor.", "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"}, {"w": "look up + sth", "type": "Phrasal verb", "ipa": "/ˌlʊk ˈʌp/", "stress": "look‿UP", "band": "4–5", "mean": "tra (từ điển)", "grammar": "tách được: look up a word / look it up", "ex": "I look up every new word on Cambridge Dictionary.", "group": "Alternatives"}, {"w": "go over + sth", "type": "Phrasal verb", "ipa": "/ˌɡoʊ ˈoʊvɚ/", "stress": "go‿O-ver", "band": "4–5", "mean": "xem lại, ôn lại", "grammar": "không tách được: + N; QK went over", "ex": "I go over my notes before every class.", "group": "Alternatives"}, {"w": "catch up on + sth", "type": "Phrasal verb", "ipa": "/ˌkætʃ ˈʌp ɑn/", "stress": "catch‿UP‿on", "band": "5.5–6.5", "mean": "làm bù", "grammar": "không tách được: + N / V-ing", "ex": "I catch up on my reading on Sundays.", "group": "Alternatives"}, {"w": "figure out + sth", "type": "Phrasal verb", "ipa": "/ˌfɪɡjɚ ˈaʊt/", "stress": "fig-ure‿OUT", "band": "5.5–6.5", "mean": "tìm ra, hiểu ra", "grammar": "tách được: figure it out; + wh-clause", "ex": "I couldn't figure out how to solve the last problem.", "group": "Alternatives"}, {"w": "put off + sth", "type": "Phrasal verb", "ipa": "/ˌpʊt ˈɔf/", "stress": "put‿OFF", "band": "5.5–6.5", "mean": "trì hoãn", "grammar": "tách được: put it off; + V-ing; QK put off", "ex": "I keep putting off my essay.", "group": "Alternatives"}, {"w": "stress (sb) out", "type": "Phrasal verb", "ipa": "/ˌstrɛs ˈaʊt/", "stress": "stress‿OUT", "band": "5.5–6.5", "mean": "làm (ai) căng thẳng", "grammar": "sth stresses me out / be stressed out", "ex": "Mock tests always stress me out.", "group": "Alternatives"}, {"w": "zone out", "type": "Phrasal verb", "ipa": "/ˌzoʊn ˈaʊt/", "stress": "zone‿OUT", "band": "7–8", "mean": "mất tập trung, \"treo máy\"", "grammar": "không tân ngữ (thân mật)", "ex": "I zone out in long lectures.", "group": "Alternatives"}, {"w": "breeze through + sth", "type": "Phrasal verb", "ipa": "/ˈbriz ˌθru/", "stress": "BREEZE through", "band": "7–8", "mean": "vượt qua dễ dàng", "grammar": "không tách được: + test/exam", "ex": "She breezed through the speaking test.", "group": "Alternatives"}, {"w": "do well in", "type": "Collocation", "ipa": "/ˌdu ˈwɛl ɪn/", "stress": "do WELL‿in", "band": "4–5", "mean": "làm tốt (bài thi, môn)", "grammar": "do well in + exam/subject", "ex": "I did well in the last mock test.", "group": "Alternatives"}, {"w": "get good grades", "type": "Collocation", "ipa": "/ˌɡɛt ˌɡʊd ˈɡreɪdz/", "stress": "get good GRADES", "band": "4–5", "mean": "đạt điểm cao", "grammar": "Mỹ: grades; Anh: marks", "ex": "I get good grades in math.", "group": "Alternatives"}, {"w": "be under pressure", "type": "Collocation", "ipa": "/bi ˌʌndɚ ˈprɛʃɚ/", "stress": "be un-der PRES-sure", "band": "4–5", "mean": "chịu áp lực", "grammar": "under + (a lot of) pressure + to V", "ex": "I'm under pressure to get into a top university.", "group": "Alternatives"}, {"w": "take a mock test", "type": "Collocation", "ipa": "/ˌteɪk ə ˈmɑk ˌtɛst/", "stress": "take‿a MOCK test", "band": "5.5–6.5", "mean": "làm bài thi thử", "grammar": "take (không dùng do) a mock test", "ex": "I take a mock test every Saturday.", "group": "Alternatives"}, {"w": "a heavy workload", "type": "Collocation", "ipa": "/ə ˌhɛvi ˈwɝkˌloʊd/", "stress": "a heav-y WORK-load", "band": "5.5–6.5", "mean": "khối lượng bài vở nặng", "grammar": "have + a heavy workload", "ex": "Seniors have a heavy workload.", "group": "Alternatives"}, {"w": "meet a deadline", "type": "Collocation", "ipa": "/ˌmit ə ˈdɛdˌlaɪn/", "stress": "meet‿a DEAD-line", "band": "5.5–6.5", "mean": "kịp hạn", "grammar": "trái nghĩa: miss a deadline", "ex": "I always meet deadlines for group projects.", "group": "Alternatives"}, {"w": "manage my time", "type": "Collocation", "ipa": "/ˌmænɪdʒ maɪ ˈtaɪm/", "stress": "MAN-age my TIME", "band": "5.5–6.5", "mean": "quản lý thời gian", "grammar": "danh từ: time management", "ex": "I'm learning to manage my time better.", "group": "Alternatives"}, {"w": "pursue", "type": "Vocab", "ipa": "/pɚˈsu/", "stress": "pur-SUE", "band": "7–8", "mean": "theo đuổi, theo học", "grammar": "pursue + a degree / a career", "ex": "I plan to pursue a degree in dentistry.", "group": "Alternatives"}, {"w": "gifted in", "type": "Vocab", "ipa": "/ˈɡɪftɪd ɪn/", "stress": "GIFT-ed‿in", "band": "7–8", "mean": "có năng khiếu về", "grammar": "be gifted in + N / V-ing", "ex": "She is gifted in science.", "group": "Alternatives"}, {"w": "demanding", "type": "Vocab", "ipa": "/dɪˈmændɪŋ/", "stress": "de-MAND-ing", "band": "7–8", "mean": "đòi hỏi cao, vất vả", "grammar": "a demanding + job / course", "ex": "Dentistry is a demanding major.", "group": "Alternatives"}, {"w": "overwhelmed", "type": "Vocab", "ipa": "/ˌoʊvɚˈwɛlmd/", "stress": "o-ver-WHELMED", "band": "7–8", "mean": "quá tải, choáng ngợp", "grammar": "feel overwhelmed + by / with + N", "ex": "I felt overwhelmed by all the mock tests.", "group": "Alternatives"}, {"w": "pivotal", "type": "Vocab", "ipa": "/ˈpɪvəɾəl/", "stress": "PIV-o-tal", "band": "7–8", "mean": "then chốt", "grammar": "play a pivotal role in + N", "ex": "This exam plays a pivotal role in my future.", "group": "Alternatives"}, {"w": "sail through", "type": "Phrasal verb", "ipa": "/ˈseɪl ˌθru/", "stress": "SAIL through", "band": "7–8", "mean": "vượt qua dễ dàng", "grammar": "sail through + exam / test", "ex": "I hope to sail through the speaking test.", "group": "Alternatives"}, {"w": "exposure", "type": "Vocab", "ipa": "/ɪkˈspoʊʒɚ/", "stress": "ex-PO-sure", "band": "7–8", "mean": "sự tiếp xúc, trải nghiệm", "grammar": "exposure + to + N", "ex": "I get a lot of exposure to English online.", "group": "Alternatives"}, {"w": "a tough nut to crack", "type": "Idiom", "ipa": "/ə ˌtʌf ˌnʌt tə ˈkræk/", "stress": "a TOUGH NUT to CRACK", "band": "7–8", "mean": "vấn đề khó nhằn", "grammar": "be a tough nut to crack", "ex": "Organic chemistry is a tough nut to crack.", "group": "Alternatives"}, {"w": "make or break", "type": "Idiom", "ipa": "/ˌmeɪk ɔr ˈbreɪk/", "stress": "MAKE or BREAK", "band": "7–8", "mean": "quyết định thành bại", "grammar": "a make-or-break + exam / moment", "ex": "This year is make or break for me.", "group": "Alternatives"}, {"w": "know sth inside out", "type": "Idiom", "ipa": "/ˌnoʊ ... ˌɪnˌsaɪd ˈaʊt/", "stress": "know … in-side OUT", "band": "7–8", "mean": "nắm cực chắc", "grammar": "know + N + inside out", "ex": "I know the formulas inside out.", "group": "Alternatives"}, {"w": "keep my eye on the ball", "type": "Idiom", "ipa": "/ˌkip maɪ ˈaɪ ɑn ðə ˈbɔl/", "stress": "keep my EYE‿on the BALL", "band": "7–8", "mean": "tập trung vào mục tiêu", "grammar": "keep (my/your) eye on the ball", "ex": "I try to keep my eye on the ball during exam season.", "group": "Alternatives"}, {"w": "pass with flying colors", "type": "Idiom", "ipa": "/ˌpæs wɪð ˌflaɪɪŋ ˈkʌlɚz/", "stress": "pass with fly-ing COL-ors", "band": "7–8", "mean": "đỗ với điểm cao", "grammar": "pass + (the exam) + with flying colors (Mỹ: colors)", "ex": "She passed the test with flying colors.", "group": "Alternatives"}, {"w": "learn the ropes", "type": "Idiom", "ipa": "/ˌlɝn ðə ˈroʊps/", "stress": "learn the ROPES", "band": "7–8", "mean": "học việc, làm quen việc mới", "grammar": "learn the ropes (of + N)", "ex": "Interns spend the first month learning the ropes.", "group": "Alternatives"}]}]}
+{
+ "students": [
+  {
+   "id": "duc",
+   "name": "Đức",
+   "emails": [
+    "duongtriduc0@gmail.com"
+   ],
+   "done": [
+    "s1-duc",
+    "s1-my-weekend"
+   ],
+   "weekly": [
+    {
+     "week": "2026-11-02",
+     "short": "2–8/11",
+     "title": "Tuần 2–8/11 · Final sounds + Part 1",
+     "date": "8/11/2026",
+     "draft": true,
+     "bands": {
+      "fc": 4.0,
+      "lr": 4.0,
+      "gra": 4.0,
+      "p": 4.5
+     },
+     "note": "Tuần này em luyện rất chăm: 59 câu, câu nào cũng làm lại tới khi đạt. Âm cuối là phần em tiến bộ rõ nhất đó!",
+     "stats": [
+      {
+       "name": "Âm cuối – 21 âm",
+       "first": 63,
+       "last": 91
+      },
+      {
+       "name": "Hội thoại Part 1",
+       "first": 67,
+       "last": 94
+      }
+     ],
+     "improved": [
+      "Âm cuối khó đã đúng: career (R cuối, lần đầu máy nghe thành “Korea”), desk /sk/, finish /ʃ/, prestige /ʒ/, staff /f/, email /l/.",
+      "Đánh vần tên, đọc số rõ: B-R-Y-A-N-T, 555-0164.",
+      "Đọc trôi các cụm khó: snowed under with work, a hectic schedule, an internship in marketing."
+     ],
+     "fix": [
+      "job: /dʒ/ đầu và /b/ cuối, máy vẫn nghe thành “chop” (0%).",
+      "plans: /pl/ đầu và đuôi /nz/, máy nghe “plants”, “blaze” (57%).",
+      "Cụm phụ âm cuối -st, -ft bị nuốt: first, draft, Maple Street.",
+      "Thiếu /z/ ở is và professionals.",
+      "I'm, I'll, I've em đọc thành “Am”, “I”: mất âm /m/ /l/ /v/.",
+      "Từ dài: badminton, squeeze in, binge-watch (máy nghe “Batman tongue”)."
+     ],
+     "next": [
+      "Luyện cặp /b/–/p/ và /dʒ/–/tʃ/: job – chop, big – pig.",
+      "Đọc chậm cụm cuối rồi tăng tốc: first, draft, plans, street.",
+      "I'm, I'll, I've: nói lướt nhưng vẫn nghe được /m/, /l/, /v/."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "thu",
+   "name": "Thư",
+   "emails": [
+    "ntmt2125@gmail.com"
+   ],
+   "done": [
+    "s1-thu",
+    "s1-my-weekend"
+   ]
+  },
+  {
+   "id": "vananh",
+   "name": "Vân Anh",
+   "emails": [
+    "nguyenngocvananh031209@gmail.com"
+   ],
+   "profile": {
+    "updated": "2/11/2026",
+    "level": "Hiện tại khoảng band 5.0 · mục tiêu 6.0–6.5 (thi 2/2027)",
+    "focus": [
+     "Âm cuối /p/ /b/ /ʃ/ /r/ và /v/ /z/: laptop, job, finish, career, love, loves.",
+     "Chia động từ: I study (không nói I'm study), he teaches; homework không đếm được.",
+     "Dùng từ chắc nghĩa: 1 cụm hay mà đúng (over my head, at my own pace) tốt hơn 3 từ khó mà sai."
+    ],
+    "speaking": {
+     "by": {
+      "fc": {
+       "good": [
+        "Câu trả lời nào cũng có lý do và ví dụ, nói được 3–4 câu như yêu cầu Part 1.",
+        "Đã biết mở đầu bằng To be honest, The reason is that, That's why."
+       ],
+       "weak": [
+        "Dùng 2 từ nối cho 1 ý: Since…, so… → chỉ giữ 1.",
+        "Câu bị thiếu: Based on the subject → It depends on the subject."
+       ]
+      },
+      "lr": {
+       "good": [
+        "Dám dùng từ nâng cao: compulsory, comprehend, struggle with, my cup of tea.",
+        "Có ý riêng rõ ràng về ngành học (muốn làm nha sĩ) → dễ phát triển câu trả lời."
+       ],
+       "weak": [
+        "Dịch từ tiếng Việt nên sai nghĩa: acknowledge (thừa nhận) ≠ knowledge (kiến thức); the ground why → the reason why.",
+        "Cụm chưa tự nhiên: walk on my own pace → at my own pace; I will enjoy accompany → I prefer studying with friends."
+       ]
+      },
+      "gra": {
+       "good": [
+        "Đã dùng câu phức với because, since, that's why."
+       ],
+       "weak": [
+        "Chia động từ: I'm study → I study; he teach → he teaches.",
+        "Số ít/số nhiều: these homework → this homework; those subject → those subjects."
+       ]
+      },
+      "p": {
+       "good": [
+        "Phần lớn 21 âm cuối đã đọc được: buổi 1 chỉ 4/21 âm trong bảng cần sửa."
+       ],
+       "weak": [
+        "Âm cuối /p/ laptop, /b/ job, /ʃ/ finish, /r/ career: khép môi / chu môi / cong lưỡi rồi giữ âm.",
+        "/v/ /z/ cuối: love, loves (cổ rung).",
+        "Nối âm và đọc lướt: work‿on, check‿your, did you → \"đi-dziu\", need to → \"nít-tơ\"."
+       ]
+      }
+     }
+    },
+    "listening": {
+     "note": "Chưa có bài Listening. Chị sẽ đánh giá sau bài nghe đầu tiên.",
+     "by": {}
+    }
+   }
+  }
+ ],
+ "homework": [
+  {
+   "id": "hw-speaking-2",
+   "skill": "Speaking",
+   "session": 2,
+   "title": "Homework Speaking buổi 2",
+   "deadline": "2026-11-05",
+   "note": "Âm cuối: mỗi thẻ đọc từ 3 lần rồi đọc câu luyện.",
+   "lessons": [
+    "hw-s2-final-sounds"
+   ]
+  },
+  {
+   "id": "hw-listening-1",
+   "skill": "Listening",
+   "session": 1,
+   "title": "Homework Listening buổi 1",
+   "deadline": "2026-11-05",
+   "note": "Shadowing hội thoại Part 1: Thư nói phần Linda, Đức nói phần Ryan.",
+   "lessons": [
+    "hw-l1-part1"
+   ]
+  },
+  {
+   "id": "hw-va-speaking-1",
+   "skill": "Speaking",
+   "session": 1,
+   "title": "Homework Speaking buổi 1",
+   "deadline": "2026-11-07",
+   "note": "3 bài: Âm cuối · Part 1 (nói lại câu trả lời của em + tự trả lời Q6–Q8) · Shadowing My senior year.",
+   "lessons": [
+    "va1-final-sounds",
+    "va1-part1",
+    "va1-shadowing"
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "hw-s2-final-sounds",
+   "session": 2,
+   "title": "Âm cuối – 21 âm",
+   "subtitle": "Đọc từ 3 lần + câu luyện",
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "video": "media/hw-s2-final-sounds.mp4",
+   "skill": "Speaking",
+   "topic": "Âm cuối (Final sounds)",
+   "theory": "media/hw-s2-final-sounds-theory.mp4",
+   "theoryTitle": "cách đặt môi, răng, lưỡi cho 21 âm cuối",
+   "sentences": [
+    {
+     "text": "laptoP / laptoP / laptoP / I work on my laptoP. //",
+     "start": 226.92,
+     "end": 232.0,
+     "chunks": [
+      [
+       2.8,
+       3.71
+      ],
+      [
+       5.21,
+       6.12
+      ],
+      [
+       7.63,
+       8.53
+      ],
+      [
+       10.04,
+       11.61
+      ]
+     ],
+     "label": "1 · /p/"
+    },
+    {
+     "text": "joB / joB / joB / She loves her new joB. //",
+     "start": 232.0,
+     "end": 236.27,
+     "chunks": [
+      [
+       14.17,
+       14.87
+      ],
+      [
+       16.17,
+       16.87
+      ],
+      [
+       18.17,
+       18.87
+      ],
+      [
+       20.16,
+       21.58
+      ]
+     ],
+     "label": "2 · /b/"
+    },
+    {
+     "text": "drafT / drafT / drafT / Please read my first drafT. //",
+     "start": 236.27,
+     "end": 241.05,
+     "chunks": [
+      [
+       23.99,
+       24.74
+      ],
+      [
+       26.1,
+       26.85
+      ],
+      [
+       28.2,
+       28.96
+      ],
+      [
+       30.31,
+       32.04
+      ]
+     ],
+     "label": "3 · /t/"
+    },
+    {
+     "text": "paiD / paiD / paiD / This internship is paiD. //",
+     "start": 241.05,
+     "end": 245.65,
+     "chunks": [
+      [
+       34.77,
+       35.49
+      ],
+      [
+       36.81,
+       37.54
+      ],
+      [
+       38.87,
+       39.6
+      ],
+      [
+       40.92,
+       42.65
+      ]
+     ],
+     "label": "4 · /d/"
+    },
+    {
+     "text": "desK / desK / desK / I sit at my desK. //",
+     "start": 245.65,
+     "end": 250.06,
+     "chunks": [
+      [
+       45.37,
+       46.14
+      ],
+      [
+       47.5,
+       48.27
+      ],
+      [
+       49.63,
+       50.4
+      ],
+      [
+       51.76,
+       53.11
+      ]
+     ],
+     "label": "5 · /k/"
+    },
+    {
+     "text": "biG / biG / biG / The company is biG. //",
+     "start": 250.06,
+     "end": 254.27,
+     "chunks": [
+      [
+       55.46,
+       56.12
+      ],
+      [
+       57.39,
+       58.05
+      ],
+      [
+       59.32,
+       59.98
+      ],
+      [
+       61.24,
+       62.64
+      ]
+     ],
+     "label": "6 · /g/"
+    },
+    {
+     "text": "staFF / staFF / staFF / Say hi to the staFF. //",
+     "start": 254.27,
+     "end": 258.72,
+     "chunks": [
+      [
+       65.03,
+       65.78
+      ],
+      [
+       67.13,
+       67.88
+      ],
+      [
+       69.23,
+       69.98
+      ],
+      [
+       71.33,
+       72.72
+      ]
+     ],
+     "label": "7 · /f/"
+    },
+    {
+     "text": "leaVE / leaVE / leaVE / It's time to leaVE. //",
+     "start": 258.72,
+     "end": 263.15,
+     "chunks": [
+      [
+       75.11,
+       75.84
+      ],
+      [
+       77.17,
+       77.89
+      ],
+      [
+       79.22,
+       79.95
+      ],
+      [
+       81.28,
+       82.61
+      ]
+     ],
+     "label": "8 · /v/"
+    },
+    {
+     "text": "monTH / monTH / monTH / I start next monTH. //",
+     "start": 263.15,
+     "end": 267.46,
+     "chunks": [
+      [
+       84.94,
+       85.64
+      ],
+      [
+       86.94,
+       87.65
+      ],
+      [
+       88.95,
+       89.65
+      ],
+      [
+       90.96,
+       92.45
+      ]
+     ],
+     "label": "9 · /θ/"
+    },
+    {
+     "text": "smooTH / smooTH / smooTH / The interview was smooTH. //",
+     "start": 267.46,
+     "end": 271.99,
+     "chunks": [
+      [
+       94.95,
+       95.69
+      ],
+      [
+       97.03,
+       97.77
+      ],
+      [
+       99.11,
+       99.85
+      ],
+      [
+       101.19,
+       102.79
+      ]
+     ],
+     "label": "10 · /ð/"
+    },
+    {
+     "text": "boSS / boSS / boSS / This is my boSS. //",
+     "start": 271.99,
+     "end": 276.36,
+     "chunks": [
+      [
+       105.38,
+       106.13
+      ],
+      [
+       107.48,
+       108.24
+      ],
+      [
+       109.59,
+       110.34
+      ],
+      [
+       111.69,
+       112.97
+      ]
+     ],
+     "label": "11 · /s/"
+    },
+    {
+     "text": "planS / planS / planS / We changed our planS. //",
+     "start": 276.36,
+     "end": 281.21,
+     "chunks": [
+      [
+       115.24,
+       116.06
+      ],
+      [
+       117.47,
+       118.29
+      ],
+      [
+       119.7,
+       120.52
+      ],
+      [
+       121.94,
+       123.38
+      ]
+     ],
+     "label": "12 · /z/"
+    },
+    {
+     "text": "finiSH / finiSH / finiSH / I have a lot to finiSH. //",
+     "start": 281.21,
+     "end": 285.95,
+     "chunks": [
+      [
+       125.83,
+       126.63
+      ],
+      [
+       128.02,
+       128.82
+      ],
+      [
+       130.21,
+       131.01
+      ],
+      [
+       132.4,
+       134.01
+      ]
+     ],
+     "label": "13 · /ʃ/"
+    },
+    {
+     "text": "prestiGE / prestiGE / prestiGE / The job has prestiGE. //",
+     "start": 285.95,
+     "end": 290.91,
+     "chunks": [
+      [
+       136.63,
+       137.49
+      ],
+      [
+       138.95,
+       139.81
+      ],
+      [
+       141.26,
+       142.12
+      ],
+      [
+       143.58,
+       145.21
+      ]
+     ],
+     "label": "14 · /ʒ/"
+    },
+    {
+     "text": "researCH / researCH / researCH / I love my researCH. //",
+     "start": 290.91,
+     "end": 295.94,
+     "chunks": [
+      [
+       147.83,
+       148.81
+      ],
+      [
+       150.38,
+       151.36
+      ],
+      [
+       152.93,
+       153.91
+      ],
+      [
+       155.48,
+       156.99
+      ]
+     ],
+     "label": "15 · /tʃ/"
+    },
+    {
+     "text": "manaGE / manaGE / manaGE / It's hard to manaGE. //",
+     "start": 295.94,
+     "end": 300.74,
+     "chunks": [
+      [
+       159.5,
+       160.43
+      ],
+      [
+       161.97,
+       162.91
+      ],
+      [
+       164.45,
+       165.39
+      ],
+      [
+       166.93,
+       168.3
+      ]
+     ],
+     "label": "16 · /dʒ/"
+    },
+    {
+     "text": "teaM / teaM / teaM / Welcome to the teaM. //",
+     "start": 300.74,
+     "end": 305.24,
+     "chunks": [
+      [
+       170.68,
+       171.44
+      ],
+      [
+       172.79,
+       173.55
+      ],
+      [
+       174.9,
+       175.65
+      ],
+      [
+       177.01,
+       178.56
+      ]
+     ],
+     "label": "17 · /m/"
+    },
+    {
+     "text": "interN / interN / interN / I'm a new interN. //",
+     "start": 305.24,
+     "end": 309.95,
+     "chunks": [
+      [
+       181.11,
+       181.96
+      ],
+      [
+       183.4,
+       184.25
+      ],
+      [
+       185.69,
+       186.53
+      ],
+      [
+       187.98,
+       189.31
+      ]
+     ],
+     "label": "18 · /n/"
+    },
+    {
+     "text": "meetiNG / meetiNG / meetiNG / I'm late for the meetiNG. //",
+     "start": 309.95,
+     "end": 314.65,
+     "chunks": [
+      [
+       191.64,
+       192.44
+      ],
+      [
+       193.84,
+       194.64
+      ],
+      [
+       196.04,
+       196.84
+      ],
+      [
+       198.24,
+       199.7
+      ]
+     ],
+     "label": "19 · /ŋ/"
+    },
+    {
+     "text": "emaiL / emaiL / emaiL / Please check your emaiL. //",
+     "start": 314.65,
+     "end": 319.2,
+     "chunks": [
+      [
+       202.17,
+       202.98
+      ],
+      [
+       204.38,
+       205.18
+      ],
+      [
+       206.58,
+       207.38
+      ],
+      [
+       208.78,
+       210.24
+      ]
+     ],
+     "label": "20 · /l/"
+    },
+    {
+     "text": "careeR / careeR / careeR / I want a good careeR. //",
+     "start": 319.2,
+     "end": 323.61,
+     "chunks": [
+      [
+       212.7,
+       213.45
+      ],
+      [
+       214.81,
+       215.56
+      ],
+      [
+       216.91,
+       217.66
+      ],
+      [
+       219.01,
+       220.47
+      ]
+     ],
+     "label": "21 · /r/"
+    }
+   ]
+  },
+  {
+   "id": "hw-l1-part1",
+   "session": 1,
+   "title": "Hội thoại Part 1 – Lakeview Community Center",
+   "subtitle": "Shadowing theo vai",
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "video": "media/hw-l1-part1.mp4",
+   "roles": {
+    "thu": "Linda",
+    "duc": "Ryan"
+   },
+   "skill": "Listening",
+   "topic": "Lakeview Community Center",
+   "sentences": [
+    {
+     "text": "Good morning, / Lakeview Community Center. //",
+     "start": 570.48,
+     "end": 573.76,
+     "chunks": [
+      [
+       2.8,
+       3.79
+      ],
+      [
+       5.39,
+       7.12
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Linda speaking. / How can I help you? //",
+     "start": 573.76,
+     "end": 576.84,
+     "chunks": [
+      [
+       9.84,
+       11.08
+      ],
+      [
+       12.91,
+       14.2
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Hi. //",
+     "start": 576.84,
+     "end": 578.14,
+     "chunks": [
+      [
+       16.5,
+       17.28
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I'm calling about the weekend activities / for young professionals. //",
+     "start": 578.14,
+     "end": 582.94,
+     "chunks": [
+      [
+       19.06,
+       21.71
+      ],
+      [
+       24.95,
+       26.72
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I saw your poster / at the coffee shop / near my office. //",
+     "start": 582.94,
+     "end": 587.79,
+     "chunks": [
+      [
+       29.48,
+       31.03
+      ],
+      [
+       33.18,
+       34.67
+      ],
+      [
+       36.76,
+       38.29
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Great. //",
+     "start": 587.79,
+     "end": 589.08,
+     "chunks": [
+      [
+       40.82,
+       41.63
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Are you thinking of joining? //",
+     "start": 589.08,
+     "end": 591.04,
+     "chunks": [
+      [
+       43.43,
+       45.01
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Yes. //",
+     "start": 591.04,
+     "end": 592.44,
+     "chunks": [
+      [
+       47.59,
+       48.49
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I graduated in June, / and I've just started my first job, / so I don't have much free time anymore. //",
+     "start": 592.44,
+     "end": 599.56,
+     "chunks": [
+      [
+       50.39,
+       52.29
+      ],
+      [
+       54.79,
+       57.12
+      ],
+      [
+       60.04,
+       62.64
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I'd like to find something fun / to do on the weekend. //",
+     "start": 599.56,
+     "end": 603.74,
+     "chunks": [
+      [
+       66.23,
+       68.2
+      ],
+      [
+       70.77,
+       72.6
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "No problem. //",
+     "start": 603.74,
+     "end": 605.31,
+     "chunks": [
+      [
+       75.43,
+       76.49
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Let me take a few details. //",
+     "start": 605.31,
+     "end": 607.71,
+     "chunks": [
+      [
+       78.55,
+       80.35
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "What's your name? //",
+     "start": 607.71,
+     "end": 609.24,
+     "chunks": [
+      [
+       83.16,
+       84.23
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "It's Ryan Bryant. //",
+     "start": 609.24,
+     "end": 611.24,
+     "chunks": [
+      [
+       86.29,
+       87.84
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Can you spell your last name for me? //",
+     "start": 611.24,
+     "end": 613.56,
+     "chunks": [
+      [
+       90.38,
+       92.29
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Sure. //",
+     "start": 613.56,
+     "end": 614.9,
+     "chunks": [
+      [
+       95.2,
+       96.06
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "It's B-R-Y-A-N-T. //",
+     "start": 614.9,
+     "end": 617.92,
+     "chunks": [
+      [
+       97.92,
+       100.67
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "B-R-Y-A-N-T. //",
+     "start": 617.92,
+     "end": 620.56,
+     "chunks": [
+      [
+       104.43,
+       106.72
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Thanks. //",
+     "start": 620.56,
+     "end": 621.92,
+     "chunks": [
+      [
+       110.01,
+       110.85
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "And what do you do, Ryan? //",
+     "start": 621.92,
+     "end": 624.31,
+     "chunks": [
+      [
+       112.69,
+       114.69
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "I did an internship in marketing last year, / but now I'm a junior accountant / at a small company downtown. //",
+     "start": 624.31,
+     "end": 632.12,
+     "chunks": [
+      [
+       117.7,
+       120.95
+      ],
+      [
+       124.8,
+       126.87
+      ],
+      [
+       129.54,
+       131.79
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "And what's your address? //",
+     "start": 632.12,
+     "end": 633.88,
+     "chunks": [
+      [
+       135.04,
+       136.39
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "It's twenty-four... sorry, no, / forty-two Maple Street. //",
+     "start": 633.88,
+     "end": 638.21,
+     "chunks": [
+      [
+       138.74,
+       140.77
+      ],
+      [
+       143.4,
+       145.32
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I only moved into a small apartment there / last month. //",
+     "start": 638.21,
+     "end": 642.76,
+     "chunks": [
+      [
+       148.24,
+       151.14
+      ],
+      [
+       154.65,
+       155.91
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I share the kitchen and the living room / with two roommates. //",
+     "start": 642.76,
+     "end": 647.12,
+     "chunks": [
+      [
+       158.18,
+       160.66
+      ],
+      [
+       163.73,
+       165.24
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Forty-two Maple Street. //",
+     "start": 647.12,
+     "end": 649.18,
+     "chunks": [
+      [
+       167.75,
+       169.4
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "That's just a ten-minute walk from here. //",
+     "start": 649.18,
+     "end": 651.88,
+     "chunks": [
+      [
+       172.05,
+       174.32
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "And can I have a phone number? //",
+     "start": 651.88,
+     "end": 654.16,
+     "chunks": [
+      [
+       177.58,
+       179.39
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Sure. //",
+     "start": 654.16,
+     "end": 655.5,
+     "chunks": [
+      [
+       182.2,
+       183.05
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "It's five-five-five, / oh-one-six-four. //",
+     "start": 655.5,
+     "end": 659.32,
+     "chunks": [
+      [
+       184.91,
+       186.66
+      ],
+      [
+       189.0,
+       190.58
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Five-five-five, / oh-one-four-six. //",
+     "start": 659.32,
+     "end": 662.57,
+     "chunks": [
+      [
+       193.16,
+       194.5
+      ],
+      [
+       196.44,
+       197.84
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "No, sorry. //",
+     "start": 662.57,
+     "end": 664.26,
+     "chunks": [
+      [
+       200.24,
+       201.46
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Oh-one-six-four. //",
+     "start": 664.26,
+     "end": 666.3,
+     "chunks": [
+      [
+       203.68,
+       205.25
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Got it. //",
+     "start": 666.3,
+     "end": 667.66,
+     "chunks": [
+      [
+       207.83,
+       208.67
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "So, which days are you usually free? //",
+     "start": 667.66,
+     "end": 670.18,
+     "chunks": [
+      [
+       210.52,
+       212.65
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Well, / I have a hectic schedule at the moment. //",
+     "start": 670.18,
+     "end": 674.01,
+     "chunks": [
+      [
+       215.79,
+       216.6
+      ],
+      [
+       218.0,
+       220.54
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I'm snowed under with work / from Monday to Friday. //",
+     "start": 674.01,
+     "end": 678.01,
+     "chunks": [
+      [
+       224.08,
+       225.76
+      ],
+      [
+       228.04,
+       230.04
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I usually get up at six / and I never get home before seven. //",
+     "start": 678.01,
+     "end": 682.94,
+     "chunks": [
+      [
+       233.04,
+       234.98
+      ],
+      [
+       237.52,
+       240.15
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "And on Saturdays, / I do the laundry and do the shopping, / so Sunday is really my only day off. //",
+     "start": 682.94,
+     "end": 690.13,
+     "chunks": [
+      [
+       243.77,
+       245.34
+      ],
+      [
+       247.51,
+       249.97
+      ],
+      [
+       253.03,
+       255.82
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I see. //",
+     "start": 690.13,
+     "end": 691.52,
+     "chunks": [
+      [
+       259.6,
+       260.49
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "And can I ask / why you'd like to join? //",
+     "start": 691.52,
+     "end": 694.7,
+     "chunks": [
+      [
+       262.39,
+       263.7
+      ],
+      [
+       265.61,
+       266.97
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "To be honest, / I used to sleep in / and binge-watch TV series all weekend, / but it didn't really help. //",
+     "start": 694.7,
+     "end": 702.6,
+     "chunks": [
+      [
+       269.33,
+       270.66
+      ],
+      [
+       272.6,
+       274.13
+      ],
+      [
+       276.27,
+       279.16
+      ],
+      [
+       282.66,
+       284.42
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I just need something / to help me unwind / after a long week. //",
+     "start": 702.6,
+     "end": 708.05,
+     "chunks": [
+      [
+       287.17,
+       288.81
+      ],
+      [
+       291.05,
+       292.65
+      ],
+      [
+       294.84,
+       296.48
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "That's what most of our members say. //",
+     "start": 708.05,
+     "end": 710.45,
+     "chunks": [
+      [
+       299.11,
+       301.09
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "So, / we have a few activities on Sundays / that might suit you. //",
+     "start": 710.45,
+     "end": 715.2,
+     "chunks": [
+      [
+       304.07,
+       304.79
+      ],
+      [
+       306.11,
+       308.34
+      ],
+      [
+       311.16,
+       312.37
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "The first one is Social Badminton. //",
+     "start": 715.2,
+     "end": 717.96,
+     "chunks": [
+      [
+       314.59,
+       316.94
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Oh, / I played badminton a lot in college, / but I'm not very good at it. //",
+     "start": 717.96,
+     "end": 723.68,
+     "chunks": [
+      [
+       320.29,
+       321.03
+      ],
+      [
+       322.37,
+       325.07
+      ],
+      [
+       328.36,
+       330.2
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I never win! //",
+     "start": 723.68,
+     "end": 725.51,
+     "chunks": [
+      [
+       333.04,
+       334.37
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "What time does it start? //",
+     "start": 725.51,
+     "end": 727.69,
+     "chunks": [
+      [
+       336.71,
+       338.45
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "It used to start at nine o'clock, / but lots of people wanted to sleep in, / so now it starts at half past nine / and finishes at a quarter to twelve. //",
+     "start": 727.69,
+     "end": 736.85,
+     "chunks": [
+      [
+       341.2,
+       343.2
+      ],
+      [
+       345.79,
+       348.15
+      ],
+      [
+       351.12,
+       353.23
+      ],
+      [
+       355.94,
+       358.43
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "And don't worry, / we play for fun. //",
+     "start": 736.85,
+     "end": 739.84,
+     "chunks": [
+      [
+       361.92,
+       363.06
+      ],
+      [
+       364.81,
+       366.08
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Nobody keeps score, / and you don't have to beat anyone. //",
+     "start": 739.84,
+     "end": 743.59,
+     "chunks": [
+      [
+       368.36,
+       369.79
+      ],
+      [
+       371.82,
+       373.64
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "That's good to hear. //",
+     "start": 743.59,
+     "end": 745.48,
+     "chunks": [
+      [
+       376.45,
+       377.92
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Do I need to bring anything? //",
+     "start": 745.48,
+     "end": 747.96,
+     "chunks": [
+      [
+       380.4,
+       382.54
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "We provide the shuttlecocks, / but you need to bring your own racket. //",
+     "start": 747.96,
+     "end": 752.26,
+     "chunks": [
+      [
+       385.68,
+       387.45
+      ],
+      [
+       389.82,
+       391.78
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "That's fine. //",
+     "start": 752.26,
+     "end": 753.88,
+     "chunks": [
+      [
+       394.73,
+       395.92
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I still have one somewhere. //",
+     "start": 753.88,
+     "end": 756.26,
+     "chunks": [
+      [
+       398.11,
+       400.15
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "The second activity is our Picnic and Kite Day. //",
+     "start": 756.26,
+     "end": 759.75,
+     "chunks": [
+      [
+       403.18,
+       406.33
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "It's on the last Sunday of every month. //",
+     "start": 759.75,
+     "end": 762.47,
+     "chunks": [
+      [
+       410.48,
+       412.72
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "People just hang out, / have a picnic, / play volleyball / and fly kites. //",
+     "start": 762.47,
+     "end": 768.0,
+     "chunks": [
+      [
+       415.96,
+       417.36
+      ],
+      [
+       419.36,
+       420.51
+      ],
+      [
+       422.26,
+       423.3
+      ],
+      [
+       424.94,
+       426.16
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Where do you meet? //",
+     "start": 768.0,
+     "end": 769.74,
+     "chunks": [
+      [
+       428.38,
+       429.66
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "It's in Riverside Park. //",
+     "start": 769.74,
+     "end": 771.74,
+     "chunks": [
+      [
+       431.95,
+       433.54
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Not at the main entrance, though, / because the parking lot there is always full. //",
+     "start": 771.74,
+     "end": 776.95,
+     "chunks": [
+      [
+       436.14,
+       438.45
+      ],
+      [
+       441.36,
+       444.03
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "We usually meet next to the lake. //",
+     "start": 776.95,
+     "end": 779.34,
+     "chunks": [
+      [
+       447.69,
+       449.63
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "And how much does it cost? //",
+     "start": 779.34,
+     "end": 781.63,
+     "chunks": [
+      [
+       452.58,
+       454.43
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Members pay a monthly fee / that covers everything. //",
+     "start": 781.63,
+     "end": 785.43,
+     "chunks": [
+      [
+       457.28,
+       459.16
+      ],
+      [
+       461.64,
+       463.15
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "For the general public, / it's forty-five dollars a month, / but young professionals under twenty-five / only pay thirty-five. //",
+     "start": 785.43,
+     "end": 793.48,
+     "chunks": [
+      [
+       465.66,
+       467.15
+      ],
+      [
+       469.24,
+       471.25
+      ],
+      [
+       473.86,
+       476.36
+      ],
+      [
+       479.46,
+       480.97
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "Great. //",
+     "start": 793.48,
+     "end": 794.87,
+     "chunks": [
+      [
+       483.48,
+       484.37
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I'm twenty-three. //",
+     "start": 794.87,
+     "end": 796.75,
+     "chunks": [
+      [
+       486.26,
+       487.73
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Then you can have the lower price. //",
+     "start": 796.75,
+     "end": 799.08,
+     "chunks": [
+      [
+       490.2,
+       492.13
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "For the picnic, / we bring a basket of sandwiches / and some bottles of water, / but please bring a blanket to sit on. //",
+     "start": 799.08,
+     "end": 806.53,
+     "chunks": [
+      [
+       495.06,
+       496.22
+      ],
+      [
+       497.97,
+       499.98
+      ],
+      [
+       502.59,
+       504.23
+      ],
+      [
+       506.46,
+       508.67
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "OK. //",
+     "start": 806.53,
+     "end": 807.97,
+     "chunks": [
+      [
+       511.88,
+       512.89
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "And is there anything else? //",
+     "start": 807.97,
+     "end": 810.33,
+     "chunks": [
+      [
+       514.89,
+       516.81
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "There's also a walking group. //",
+     "start": 810.33,
+     "end": 812.53,
+     "chunks": [
+      [
+       519.72,
+       521.48
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "They go hiking in the hills / every Sunday afternoon. //",
+     "start": 812.53,
+     "end": 816.37,
+     "chunks": [
+      [
+       524.23,
+       525.89
+      ],
+      [
+       528.16,
+       529.8
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "It's hard work, / but it's really fun. //",
+     "start": 816.37,
+     "end": 819.4,
+     "chunks": [
+      [
+       532.45,
+       533.6
+      ],
+      [
+       535.36,
+       536.7
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "That sounds nice. //",
+     "start": 819.4,
+     "end": 821.29,
+     "chunks": [
+      [
+       539.05,
+       540.5
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "I think I'll try badminton first / and squeeze in the picnic / at the end of the month. //",
+     "start": 821.29,
+     "end": 827.44,
+     "chunks": [
+      [
+       542.95,
+       545.23
+      ],
+      [
+       548.11,
+       549.79
+      ],
+      [
+       552.07,
+       553.72
+      ]
+     ],
+     "speaker": "Ryan"
+    },
+    {
+     "text": "Perfect. //",
+     "start": 827.44,
+     "end": 828.82,
+     "chunks": [
+      [
+       556.36,
+       557.27
+      ]
+     ],
+     "speaker": "Linda"
+    },
+    {
+     "text": "It's a great way / to recharge your batteries. //",
+     "start": 828.82,
+     "end": 832.22,
+     "chunks": [
+      [
+       559.17,
+       560.33
+      ],
+      [
+       562.09,
+       563.8
+      ]
+     ],
+     "speaker": "Linda"
+    }
+   ]
+  },
+  {
+   "id": "s1-duc",
+   "session": 1,
+   "title": "Bản tham khảo của Đức",
+   "subtitle": "Buổi 1 · My weekend, viết lại",
+   "for": [
+    "duc"
+   ],
+   "video": "media/s1-duc.mp4",
+   "skill": "Speaking",
+   "topic": "My weekend",
+   "sentences": [
+    {
+     "text": "On 'weekends, / I 'don't have much 'free time. //",
+     "start": 132.13,
+     "end": 135.88,
+     "chunks": [
+      [
+       3.16,
+       4.5
+      ],
+      [
+       6.44,
+       8.41
+      ]
+     ]
+    },
+    {
+     "text": "On 'Saturdays, / I have ==classes== / from 'early 'morning / until the 'evening. //",
+     "start": 135.88,
+     "end": 142.27,
+     "chunks": [
+      [
+       11.38,
+       12.83
+      ],
+      [
+       14.88,
+       16.3
+      ],
+      [
+       18.33,
+       19.7
+      ],
+      [
+       21.67,
+       23.2
+      ]
+     ]
+    },
+    {
+     "text": "On 'Sunday 'mornings, / I ++'wake ‿ up++ 'early / and 'go to the 'gym. //",
+     "start": 142.27,
+     "end": 147.51,
+     "chunks": [
+      [
+       25.72,
+       27.45
+      ],
+      [
+       29.79,
+       31.25
+      ],
+      [
+       33.32,
+       34.95
+      ]
+     ]
+    },
+    {
+     "text": "'After that, / I 'usually ++have 'breakfast++ / with my 'family. //",
+     "start": 147.51,
+     "end": 152.43,
+     "chunks": [
+      [
+       37.58,
+       38.74
+      ],
+      [
+       40.5,
+       42.35
+      ],
+      [
+       44.8,
+       46.17
+      ]
+     ]
+    },
+    {
+     "text": "Then I ++'head to 'campus++ / to ++'run ex'periments++ with my pro'fessor / for my ==thesis==. //",
+     "start": 152.43,
+     "end": 158.6,
+     "chunks": [
+      [
+       48.54,
+       50.29
+      ],
+      [
+       52.65,
+       55.26
+      ],
+      [
+       58.47,
+       59.93
+      ]
+     ]
+    },
+    {
+     "text": "In the 'evening, / I ++'squeeze ‿ in++ about 'four 'hours / to ++'hang ‿ out with++ my 'girlfriend. //",
+     "start": 158.6,
+     "end": 164.69,
+     "chunks": [
+      [
+       62.39,
+       63.7
+      ],
+      [
+       65.6,
+       67.85
+      ],
+      [
+       70.69,
+       72.97
+      ]
+     ]
+    },
+    {
+     "text": "To be 'honest, / it's the 'best 'part of my 'week, / because I can 'finally 'see her / ++after a 'long 'week++ / and !!re'charge my 'batteries!!. //",
+     "start": 164.69,
+     "end": 174.07,
+     "chunks": [
+      [
+       76.25,
+       77.59
+      ],
+      [
+       79.52,
+       81.47
+      ],
+      [
+       84.01,
+       86.13
+      ],
+      [
+       88.86,
+       90.46
+      ],
+      [
+       92.66,
+       94.6
+      ]
+     ]
+    },
+    {
+     "text": "'Sometimes / I 'feel like / I 'don't have e'nough 'time / to do ==everything== I 'want, //",
+     "start": 174.07,
+     "end": 180.67,
+     "chunks": [
+      [
+       97.54,
+       98.67
+      ],
+      [
+       100.41,
+       101.62
+      ],
+      [
+       103.43,
+       105.12
+      ],
+      [
+       107.41,
+       109.46
+      ]
+     ]
+    },
+    {
+     "text": "but it 'teaches me / how to ++'manage my 'time++ / and ++'let 'go of++ 'things / that 'aren't im'portant. //",
+     "start": 180.67,
+     "end": 187.37,
+     "chunks": [
+      [
+       112.51,
+       113.97
+      ],
+      [
+       116.03,
+       117.74
+      ],
+      [
+       120.05,
+       121.64
+      ],
+      [
+       123.82,
+       125.4
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s1-thu",
+   "session": 1,
+   "title": "Bản tham khảo của Thư",
+   "subtitle": "Buổi 1 · Tả tranh A Sunday in the park",
+   "for": [
+    "thu"
+   ],
+   "video": "media/s1-thu.mp4",
+   "skill": "Speaking",
+   "topic": "A Sunday in the park",
+   "sentences": [
+    {
+     "text": "On a 'sunny 'Sunday 'morning, / I'm ++'spending 'quality time++ with my 'family / in the 'park. //",
+     "start": 108.73,
+     "end": 114.41,
+     "chunks": [
+      [
+       2.97,
+       4.66
+      ],
+      [
+       6.95,
+       9.41
+      ],
+      [
+       12.46,
+       13.53
+      ]
+     ]
+    },
+    {
+     "text": "'Sunday is my 'only ++'day 'off++ / from my ==internship==, / so I 'come here 'every 'weekend. //",
+     "start": 114.41,
+     "end": 120.33,
+     "chunks": [
+      [
+       15.59,
+       17.43
+      ],
+      [
+       19.88,
+       21.28
+      ],
+      [
+       23.29,
+       25.41
+      ]
+     ]
+    },
+    {
+     "text": "On the 'left, / there's an ==ice cream cart==, / and some 'people are ++'standing ‿ in 'line++. //",
+     "start": 120.33,
+     "end": 125.76,
+     "chunks": [
+      [
+       28.52,
+       29.58
+      ],
+      [
+       31.23,
+       32.87
+      ],
+      [
+       35.12,
+       37.27
+      ]
+     ]
+    },
+    {
+     "text": "Be'hind the 'cart, / a 'boy is ++'flying a 'kite++. //",
+     "start": 125.76,
+     "end": 129.14,
+     "chunks": [
+      [
+       40.42,
+       41.71
+      ],
+      [
+       43.59,
+       45.17
+      ]
+     ]
+    },
+    {
+     "text": "'Next to him, / a 'girl is 'sitting ‿ on a 'bench / under a 'tree / and 'reading a 'book. //",
+     "start": 129.14,
+     "end": 135.12,
+     "chunks": [
+      [
+       47.75,
+       48.89
+      ],
+      [
+       50.63,
+       52.29
+      ],
+      [
+       54.56,
+       55.67
+      ],
+      [
+       57.37,
+       58.65
+      ]
+     ]
+    },
+    {
+     "text": "In the 'middle, / my 'family is 'sitting ‿ on a 'picnic 'blanket / and en'joying ‿ a 'picnic. //",
+     "start": 135.12,
+     "end": 140.81,
+     "chunks": [
+      [
+       60.93,
+       61.95
+      ],
+      [
+       63.58,
+       66.33
+      ],
+      [
+       69.69,
+       71.31
+      ]
+     ]
+    },
+    {
+     "text": "Be'hind us, / 'two 'boys are 'playing 'badminton. //",
+     "start": 140.81,
+     "end": 144.25,
+     "chunks": [
+      [
+       73.93,
+       75.0
+      ],
+      [
+       76.66,
+       78.57
+      ]
+     ]
+    },
+    {
+     "text": "On the 'right, / a 'man is 'riding a 'bicycle. //",
+     "start": 144.25,
+     "end": 147.68,
+     "chunks": [
+      [
+       81.47,
+       82.51
+      ],
+      [
+       84.16,
+       86.0
+      ]
+     ]
+    },
+    {
+     "text": "I 'feel 'really 'happy, / because 'time with my 'family / 'helps me !!re'charge my 'batteries!! / for the 'week ‿ a'head. //",
+     "start": 147.68,
+     "end": 154.75,
+     "chunks": [
+      [
+       88.83,
+       90.4
+      ],
+      [
+       92.56,
+       94.27
+      ],
+      [
+       96.59,
+       98.59
+      ],
+      [
+       101.2,
+       102.46
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s1-my-weekend",
+   "session": 1,
+   "title": "My weekend",
+   "subtitle": "Buổi 1 · Đoạn shadowing trên lớp",
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "video": "media/s1-my-weekend.mp4",
+   "skill": "Speaking",
+   "topic": "My weekend",
+   "sentences": [
+    {
+     "text": "On 'weekends, / I 'don't have much 'free time. //",
+     "start": 84.1,
+     "end": 87.54,
+     "chunks": [
+      [
+       2.97,
+       4.19
+      ],
+      [
+       6.01,
+       7.74
+      ]
+     ]
+    },
+    {
+     "text": "I have 'extra 'classes / on 'Saturday 'mornings, / and a 'lot ‿ of 'homework. //",
+     "start": 87.54,
+     "end": 92.75,
+     "chunks": [
+      [
+       10.48,
+       12.15
+      ],
+      [
+       14.42,
+       15.91
+      ],
+      [
+       18.0,
+       19.42
+      ]
+     ]
+    },
+    {
+     "text": "But on 'Sunday, / I 'try to ++'sleep ‿ in++ / until about 'nine. //",
+     "start": 92.75,
+     "end": 97.21,
+     "chunks": [
+      [
+       21.84,
+       22.97
+      ],
+      [
+       24.71,
+       26.06
+      ],
+      [
+       28.02,
+       29.38
+      ]
+     ]
+    },
+    {
+     "text": "In the after'noon, / I ++'squeeze ‿ in++ an ‿ 'hour / to ++'hang ‿ out with++ my 'friends. //",
+     "start": 97.21,
+     "end": 102.3,
+     "chunks": [
+      [
+       31.74,
+       32.98
+      ],
+      [
+       34.82,
+       36.28
+      ],
+      [
+       38.34,
+       40.12
+      ]
+     ]
+    },
+    {
+     "text": "++To be 'honest++, / it's the 'best 'part of my 'week, / because I can 'finally re'lax. //",
+     "start": 102.3,
+     "end": 107.76,
+     "chunks": [
+      [
+       42.9,
+       44.05
+      ],
+      [
+       45.81,
+       47.48
+      ],
+      [
+       49.74,
+       51.8
+      ]
+     ]
+    },
+    {
+     "text": "In the 'evening, / I ++'catch ‿ up ‿ on++ my 'homework, / but 'sometimes / I ++'put ‿ it ‿ 'off++ / until 'late at 'night. //",
+     "start": 107.76,
+     "end": 114.81,
+     "chunks": [
+      [
+       54.86,
+       55.95
+      ],
+      [
+       57.64,
+       59.3
+      ],
+      [
+       61.56,
+       62.73
+      ],
+      [
+       64.5,
+       65.54
+      ],
+      [
+       67.17,
+       68.54
+      ]
+     ]
+    },
+    {
+     "text": "I 'know / it's a ==bad 'habit==, / but I'm ++'working ‿ on ‿ it++. //",
+     "start": 114.81,
+     "end": 118.96,
+     "chunks": [
+      [
+       70.92,
+       71.7
+      ],
+      [
+       73.07,
+       74.39
+      ],
+      [
+       76.31,
+       77.71
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "va1-final-sounds",
+   "session": 1,
+   "title": "Âm cuối – 21 âm",
+   "subtitle": "Đọc từ 3 lần + câu luyện",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/hw-s2-final-sounds.mp4",
+   "skill": "Speaking",
+   "topic": "Âm cuối (Final sounds)",
+   "theory": "media/hw-s2-final-sounds-theory.mp4",
+   "theoryTitle": "cách đặt môi, răng, lưỡi cho 21 âm cuối",
+   "sentences": [
+    {
+     "text": "laptoP / laptoP / laptoP / I work on my laptoP. //",
+     "start": 226.92,
+     "end": 232.0,
+     "chunks": [
+      [
+       2.8,
+       3.71
+      ],
+      [
+       5.21,
+       6.12
+      ],
+      [
+       7.63,
+       8.53
+      ],
+      [
+       10.04,
+       11.61
+      ]
+     ],
+     "label": "1 · /p/"
+    },
+    {
+     "text": "joB / joB / joB / She loves her new joB. //",
+     "start": 232.0,
+     "end": 236.27,
+     "chunks": [
+      [
+       14.17,
+       14.87
+      ],
+      [
+       16.17,
+       16.87
+      ],
+      [
+       18.17,
+       18.87
+      ],
+      [
+       20.16,
+       21.58
+      ]
+     ],
+     "label": "2 · /b/"
+    },
+    {
+     "text": "drafT / drafT / drafT / Please read my first drafT. //",
+     "start": 236.27,
+     "end": 241.05,
+     "chunks": [
+      [
+       23.99,
+       24.74
+      ],
+      [
+       26.1,
+       26.85
+      ],
+      [
+       28.2,
+       28.96
+      ],
+      [
+       30.31,
+       32.04
+      ]
+     ],
+     "label": "3 · /t/"
+    },
+    {
+     "text": "paiD / paiD / paiD / This internship is paiD. //",
+     "start": 241.05,
+     "end": 245.65,
+     "chunks": [
+      [
+       34.77,
+       35.49
+      ],
+      [
+       36.81,
+       37.54
+      ],
+      [
+       38.87,
+       39.6
+      ],
+      [
+       40.92,
+       42.65
+      ]
+     ],
+     "label": "4 · /d/"
+    },
+    {
+     "text": "desK / desK / desK / I sit at my desK. //",
+     "start": 245.65,
+     "end": 250.06,
+     "chunks": [
+      [
+       45.37,
+       46.14
+      ],
+      [
+       47.5,
+       48.27
+      ],
+      [
+       49.63,
+       50.4
+      ],
+      [
+       51.76,
+       53.11
+      ]
+     ],
+     "label": "5 · /k/"
+    },
+    {
+     "text": "biG / biG / biG / The company is biG. //",
+     "start": 250.06,
+     "end": 254.27,
+     "chunks": [
+      [
+       55.46,
+       56.12
+      ],
+      [
+       57.39,
+       58.05
+      ],
+      [
+       59.32,
+       59.98
+      ],
+      [
+       61.24,
+       62.64
+      ]
+     ],
+     "label": "6 · /g/"
+    },
+    {
+     "text": "staFF / staFF / staFF / Say hi to the staFF. //",
+     "start": 254.27,
+     "end": 258.72,
+     "chunks": [
+      [
+       65.03,
+       65.78
+      ],
+      [
+       67.13,
+       67.88
+      ],
+      [
+       69.23,
+       69.98
+      ],
+      [
+       71.33,
+       72.72
+      ]
+     ],
+     "label": "7 · /f/"
+    },
+    {
+     "text": "leaVE / leaVE / leaVE / It's time to leaVE. //",
+     "start": 258.72,
+     "end": 263.15,
+     "chunks": [
+      [
+       75.11,
+       75.84
+      ],
+      [
+       77.17,
+       77.89
+      ],
+      [
+       79.22,
+       79.95
+      ],
+      [
+       81.28,
+       82.61
+      ]
+     ],
+     "label": "8 · /v/"
+    },
+    {
+     "text": "monTH / monTH / monTH / I start next monTH. //",
+     "start": 263.15,
+     "end": 267.46,
+     "chunks": [
+      [
+       84.94,
+       85.64
+      ],
+      [
+       86.94,
+       87.65
+      ],
+      [
+       88.95,
+       89.65
+      ],
+      [
+       90.96,
+       92.45
+      ]
+     ],
+     "label": "9 · /θ/"
+    },
+    {
+     "text": "smooTH / smooTH / smooTH / The interview was smooTH. //",
+     "start": 267.46,
+     "end": 271.99,
+     "chunks": [
+      [
+       94.95,
+       95.69
+      ],
+      [
+       97.03,
+       97.77
+      ],
+      [
+       99.11,
+       99.85
+      ],
+      [
+       101.19,
+       102.79
+      ]
+     ],
+     "label": "10 · /ð/"
+    },
+    {
+     "text": "boSS / boSS / boSS / This is my boSS. //",
+     "start": 271.99,
+     "end": 276.36,
+     "chunks": [
+      [
+       105.38,
+       106.13
+      ],
+      [
+       107.48,
+       108.24
+      ],
+      [
+       109.59,
+       110.34
+      ],
+      [
+       111.69,
+       112.97
+      ]
+     ],
+     "label": "11 · /s/"
+    },
+    {
+     "text": "planS / planS / planS / We changed our planS. //",
+     "start": 276.36,
+     "end": 281.21,
+     "chunks": [
+      [
+       115.24,
+       116.06
+      ],
+      [
+       117.47,
+       118.29
+      ],
+      [
+       119.7,
+       120.52
+      ],
+      [
+       121.94,
+       123.38
+      ]
+     ],
+     "label": "12 · /z/"
+    },
+    {
+     "text": "finiSH / finiSH / finiSH / I have a lot to finiSH. //",
+     "start": 281.21,
+     "end": 285.95,
+     "chunks": [
+      [
+       125.83,
+       126.63
+      ],
+      [
+       128.02,
+       128.82
+      ],
+      [
+       130.21,
+       131.01
+      ],
+      [
+       132.4,
+       134.01
+      ]
+     ],
+     "label": "13 · /ʃ/"
+    },
+    {
+     "text": "prestiGE / prestiGE / prestiGE / The job has prestiGE. //",
+     "start": 285.95,
+     "end": 290.91,
+     "chunks": [
+      [
+       136.63,
+       137.49
+      ],
+      [
+       138.95,
+       139.81
+      ],
+      [
+       141.26,
+       142.12
+      ],
+      [
+       143.58,
+       145.21
+      ]
+     ],
+     "label": "14 · /ʒ/"
+    },
+    {
+     "text": "researCH / researCH / researCH / I love my researCH. //",
+     "start": 290.91,
+     "end": 295.94,
+     "chunks": [
+      [
+       147.83,
+       148.81
+      ],
+      [
+       150.38,
+       151.36
+      ],
+      [
+       152.93,
+       153.91
+      ],
+      [
+       155.48,
+       156.99
+      ]
+     ],
+     "label": "15 · /tʃ/"
+    },
+    {
+     "text": "manaGE / manaGE / manaGE / It's hard to manaGE. //",
+     "start": 295.94,
+     "end": 300.74,
+     "chunks": [
+      [
+       159.5,
+       160.43
+      ],
+      [
+       161.97,
+       162.91
+      ],
+      [
+       164.45,
+       165.39
+      ],
+      [
+       166.93,
+       168.3
+      ]
+     ],
+     "label": "16 · /dʒ/"
+    },
+    {
+     "text": "teaM / teaM / teaM / Welcome to the teaM. //",
+     "start": 300.74,
+     "end": 305.24,
+     "chunks": [
+      [
+       170.68,
+       171.44
+      ],
+      [
+       172.79,
+       173.55
+      ],
+      [
+       174.9,
+       175.65
+      ],
+      [
+       177.01,
+       178.56
+      ]
+     ],
+     "label": "17 · /m/"
+    },
+    {
+     "text": "interN / interN / interN / I'm a new interN. //",
+     "start": 305.24,
+     "end": 309.95,
+     "chunks": [
+      [
+       181.11,
+       181.96
+      ],
+      [
+       183.4,
+       184.25
+      ],
+      [
+       185.69,
+       186.53
+      ],
+      [
+       187.98,
+       189.31
+      ]
+     ],
+     "label": "18 · /n/"
+    },
+    {
+     "text": "meetiNG / meetiNG / meetiNG / I'm late for the meetiNG. //",
+     "start": 309.95,
+     "end": 314.65,
+     "chunks": [
+      [
+       191.64,
+       192.44
+      ],
+      [
+       193.84,
+       194.64
+      ],
+      [
+       196.04,
+       196.84
+      ],
+      [
+       198.24,
+       199.7
+      ]
+     ],
+     "label": "19 · /ŋ/"
+    },
+    {
+     "text": "emaiL / emaiL / emaiL / Please check your emaiL. //",
+     "start": 314.65,
+     "end": 319.2,
+     "chunks": [
+      [
+       202.17,
+       202.98
+      ],
+      [
+       204.38,
+       205.18
+      ],
+      [
+       206.58,
+       207.38
+      ],
+      [
+       208.78,
+       210.24
+      ]
+     ],
+     "label": "20 · /l/"
+    },
+    {
+     "text": "careeR / careeR / careeR / I want a good careeR. //",
+     "start": 319.2,
+     "end": 323.61,
+     "chunks": [
+      [
+       212.7,
+       213.45
+      ],
+      [
+       214.81,
+       215.56
+      ],
+      [
+       216.91,
+       217.66
+      ],
+      [
+       219.01,
+       220.47
+      ]
+     ],
+     "label": "21 · /r/"
+    }
+   ],
+   "deck": "va1"
+  },
+  {
+   "id": "va1-part1",
+   "session": 1,
+   "title": "Part 1 – Studies & School life",
+   "subtitle": "Nói lại câu trả lời của em (bản đã sửa) Q1–Q5, rồi tự trả lời Q6–Q8 (có ghi âm)",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/va1-part1.mp4",
+   "skill": "Speaking",
+   "topic": "Studies & School life",
+   "sentences": [
+    {
+     "label": "Q1 · Work or studies",
+     "text": "'Currently, / I'm a 'senior / at Thu Duc High 'School. //",
+     "start": 0.65,
+     "end": 4.81,
+     "chunks": [
+      [
+       0.8,
+       1.65
+      ],
+      [
+       1.95,
+       2.86
+      ],
+      [
+       3.16,
+       4.56
+      ]
+     ]
+    },
+    {
+     "label": "Q1 · Work or studies",
+     "text": "Since this is my 'last year, / I have a 'lot of 'homework. //",
+     "start": 5.51,
+     "end": 9.26,
+     "chunks": [
+      [
+       5.66,
+       7.27
+      ],
+      [
+       7.57,
+       9.01
+      ]
+     ]
+    },
+    {
+     "label": "Q1 · Work or studies",
+     "text": "To be more spe'cific, / I have 'extra classes / almost every 'evening, // so I !!have a 'lot ‿ on my 'plate!!. //",
+     "start": 9.96,
+     "end": 17.31,
+     "chunks": [
+      [
+       10.11,
+       11.39
+      ],
+      [
+       11.69,
+       13.23
+      ],
+      [
+       13.53,
+       14.97
+      ],
+      [
+       15.27,
+       17.06
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "To be 'honest, / I enjoy bi'ology the 'most / because I want to be'come a 'dentist. //",
+     "start": 18.01,
+     "end": 23.67,
+     "chunks": [
+      [
+       18.16,
+       19.18
+      ],
+      [
+       19.48,
+       21.15
+      ],
+      [
+       21.45,
+       23.42
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "So this subject is ==com'pulsory== for me. //",
+     "start": 24.37,
+     "end": 27.01,
+     "chunks": [
+      [
+       24.52,
+       26.76
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "Also, / my teacher ex'plains things / in a way that is 'easy to ==compre'hend==. //",
+     "start": 27.71,
+     "end": 33.35,
+     "chunks": [
+      [
+       27.86,
+       28.64
+      ],
+      [
+       28.94,
+       30.59
+      ],
+      [
+       30.89,
+       33.1
+      ]
+     ]
+    },
+    {
+     "label": "Q2 · Favorite subject",
+     "text": "That's the 'reason why / bi'ology is !!my cup of 'tea!!. //",
+     "start": 34.05,
+     "end": 37.8,
+     "chunks": [
+      [
+       34.2,
+       35.52
+      ],
+      [
+       35.82,
+       37.55
+      ]
+     ]
+    },
+    {
+     "label": "Q3 · Difficult subject",
+     "text": "Defi'nitely, / I find 'math and 'chemistry / 'difficult. //",
+     "start": 38.5,
+     "end": 42.95,
+     "chunks": [
+      [
+       38.65,
+       39.54
+      ],
+      [
+       39.84,
+       41.5
+      ],
+      [
+       41.8,
+       42.7
+      ]
+     ]
+    },
+    {
+     "label": "Q3 · Difficult subject",
+     "text": "The reason is that I ++'struggle with++ the 'homework, // and the class dis'cussions / are a bit !!'over my head!!. //",
+     "start": 43.65,
+     "end": 50.0,
+     "chunks": [
+      [
+       43.8,
+       46.4
+      ],
+      [
+       46.7,
+       48.13
+      ],
+      [
+       48.43,
+       49.75
+      ]
+     ]
+    },
+    {
+     "label": "Q3 · Difficult subject",
+     "text": "That's why I take 'extra classes / every 'evening // to re'view my 'lessons. //",
+     "start": 50.7,
+     "end": 56.26,
+     "chunks": [
+      [
+       50.85,
+       52.98
+      ],
+      [
+       53.28,
+       54.27
+      ],
+      [
+       54.57,
+       56.01
+      ]
+     ]
+    },
+    {
+     "label": "Q4 · Preparing for exams",
+     "text": "Per'sonally, / I usually re'view my 'notes / with my 'friends, // either on Google 'Meet / or at a 'coffee shop. //",
+     "start": 56.96,
+     "end": 64.81,
+     "chunks": [
+      [
+       57.11,
+       58.0
+      ],
+      [
+       58.3,
+       59.96
+      ],
+      [
+       60.26,
+       61.33
+      ],
+      [
+       61.63,
+       62.98
+      ],
+      [
+       63.28,
+       64.56
+      ]
+     ]
+    },
+    {
+     "label": "Q4 · Preparing for exams",
+     "text": "We look for ==past exam 'papers== on'line, // because they help us ++re'member the main i'deas++. //",
+     "start": 65.51,
+     "end": 71.14,
+     "chunks": [
+      [
+       65.66,
+       68.03
+      ],
+      [
+       68.33,
+       70.89
+      ]
+     ]
+    },
+    {
+     "label": "Q5 · Alone or with others",
+     "text": "It de'pends on the 'subject. // For 'math, / 'chemistry / or bi'ology, / I prefer studying with 'friends. //",
+     "start": 71.84,
+     "end": 79.42,
+     "chunks": [
+      [
+       71.99,
+       73.53
+      ],
+      [
+       73.83,
+       74.65
+      ],
+      [
+       74.95,
+       75.78
+      ],
+      [
+       76.08,
+       77.01
+      ],
+      [
+       77.31,
+       79.17
+      ]
+     ]
+    },
+    {
+     "label": "Q5 · Alone or with others",
+     "text": "On the 'other hand, / for 'history or 'literature, // I'd rather study a'lone / !!at my own 'pace!!. //",
+     "start": 80.12,
+     "end": 86.63,
+     "chunks": [
+      [
+       80.27,
+       81.43
+      ],
+      [
+       81.73,
+       83.35
+      ],
+      [
+       83.65,
+       84.94
+      ],
+      [
+       85.24,
+       86.38
+      ]
+     ]
+    },
+    {
+     "free": true,
+     "label": "Q6 · Tự trả lời",
+     "q": "How has your school life changed since you started senior year?",
+     "hint": "have a lot on my plate · a high-stakes exam · college admissions · keep up with · burn out"
+    },
+    {
+     "free": true,
+     "label": "Q7 · Tự trả lời",
+     "q": "What do you want to major in at university?",
+     "hint": "major in (dentistry) · career prospects · a stepping stone to · follow in sb's footsteps · a well-paid job"
+    },
+    {
+     "free": true,
+     "label": "Q8 · Tự trả lời",
+     "q": "Do you think English will be important in your future career?",
+     "hint": "career prospects · broaden my horizons · win a scholarship · a well-paid job · pick up"
+    }
+   ],
+   "deck": "va1"
+  },
+  {
+   "id": "va1-shadowing",
+   "session": 1,
+   "title": "Shadowing – My senior year",
+   "subtitle": "Đoạn về chính em (lớp 12, muốn học nha khoa), luyện 3 lần/ngày",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/va1-shadowing.mp4",
+   "skill": "Speaking",
+   "topic": "Studies & School life",
+   "sentences": [
+    {
+     "text": "Right 'now, / I'm a 'senior at Thu Duc High 'School, // so to be 'honest, / I !!have a 'lot ‿ on my 'plate!!. //",
+     "start": 0.65,
+     "end": 7.51,
+     "chunks": [
+      [
+       0.8,
+       1.64
+      ],
+      [
+       1.94,
+       3.89
+      ],
+      [
+       4.19,
+       5.34
+      ],
+      [
+       5.64,
+       7.26
+      ]
+     ]
+    },
+    {
+     "text": "Be'sides 'regular classes, / I go to 'extra classes / almost every 'evening, // especially for 'math and 'chemistry. //",
+     "start": 8.21,
+     "end": 16.27,
+     "chunks": [
+      [
+       8.36,
+       10.07
+      ],
+      [
+       10.37,
+       12.01
+      ],
+      [
+       12.31,
+       13.75
+      ],
+      [
+       14.05,
+       16.02
+      ]
+     ]
+    },
+    {
+     "text": "I'm also pre'paring for I-E-L-T-S, / because it's !!a 'stepping stone!! / to a top 'medical school. //",
+     "start": 16.97,
+     "end": 23.56,
+     "chunks": [
+      [
+       17.12,
+       19.61
+      ],
+      [
+       19.91,
+       21.47
+      ],
+      [
+       21.77,
+       23.31
+      ]
+     ]
+    },
+    {
+     "text": "I used to ++'cram++ / the night before every 'test, / but it always left me / ++stressed ‿ 'out++. //",
+     "start": 24.26,
+     "end": 30.81,
+     "chunks": [
+      [
+       24.41,
+       25.61
+      ],
+      [
+       25.91,
+       27.67
+      ],
+      [
+       27.97,
+       29.3
+      ],
+      [
+       29.6,
+       30.56
+      ]
+     ]
+    },
+    {
+     "text": "These 'days, / I re'view a little / every 'day, / so I don't ++fall be'hind++. //",
+     "start": 31.51,
+     "end": 37.28,
+     "chunks": [
+      [
+       31.66,
+       32.64
+      ],
+      [
+       32.94,
+       34.08
+      ],
+      [
+       34.38,
+       35.3
+      ],
+      [
+       35.6,
+       37.03
+      ]
+     ]
+    },
+    {
+     "text": "I'm hoping to ++'major ‿ in++ / =='dentistry==, // mainly because the ++ca'reer prospects++ / are really 'promising. //",
+     "start": 37.98,
+     "end": 44.97,
+     "chunks": [
+      [
+       38.13,
+       39.55
+      ],
+      [
+       39.85,
+       40.79
+      ],
+      [
+       41.09,
+       43.19
+      ],
+      [
+       43.49,
+       44.72
+      ]
+     ]
+    }
+   ],
+   "deck": "va1"
+  }
+ ],
+ "ipa": {
+  "a": "eɪ",
+  "about": "əˈbaʊt",
+  "accountant": "əˈkaʊntənt",
+  "activities": "ækˈtɪvətiz",
+  "activity": "ækˈtɪvəti",
+  "address": "ədˈrɛs",
+  "after": "ˈæftɚ",
+  "afternoon": "ˌæftɚˈnun",
+  "ahead": "əˈhɛd",
+  "all": "ˈɔl",
+  "also": "ˈɔlsoʊ",
+  "always": "ˈɔlˌweɪz",
+  "an": "æn",
+  "and": "ænd",
+  "anymore": "ˌɛniˈmɔr",
+  "anyone": "ˈɛniˌwʌn",
+  "anything": "ˈɛniˌθɪŋ",
+  "apartment": "əˈpɑrtmənt",
+  "are": "ɑr",
+  "aren't": "ˌɑrnt",
+  "ask": "ˈæsk",
+  "at": "æt",
+  "b": "ˈbi",
+  "bad": "ˈbæd",
+  "badminton": "ˈbædmɪntən",
+  "basket": "ˈbæskət",
+  "batteries": "ˈbætɚiz",
+  "be": "bi",
+  "beat": "ˈbit",
+  "because": "bəˈkʌz",
+  "before": "bəˈfɔr",
+  "behind": "bəˈhaɪnd",
+  "bench": "ˈbɛntʃ",
+  "best": "bɛst",
+  "bicycle": "ˈbaɪsɪkəl",
+  "big": "bɪɡ",
+  "binge": "ˈbɪndʒ",
+  "blanket": "ˈblæŋkət",
+  "book": "ˈbʊk",
+  "boss": "bɔs",
+  "bottles": "ˈbɑtəlz",
+  "boy": "ˈbɔɪ",
+  "boys": "ˈbɔɪz",
+  "breakfast": "ˈbrɛkfəst",
+  "bring": "ˈbrɪŋ",
+  "bryant": "ˈbraɪənt",
+  "but": "ˌbʌt",
+  "calling": "ˈkɔlɪŋ",
+  "campus": "ˈkæmpəs",
+  "can": "kæn",
+  "career": "kəˈrɪr",
+  "cart": "kɑrt",
+  "catch": "kætʃ",
+  "center": "ˈsɛntɚ",
+  "changed": "ˈtʃeɪndʒd",
+  "check": "ˈtʃɛk",
+  "classes": "ˈklæsɪz",
+  "coffee": "ˈkɔfi",
+  "college": "ˈkɑlɪdʒ",
+  "come": "ˈkʌm",
+  "community": "kəmˈjunəti",
+  "company": "ˈkʌmpəni",
+  "cost": "ˈkɔst",
+  "covers": "ˈkʌvɚz",
+  "cream": "ˈkrim",
+  "day": "ˈdeɪ",
+  "days": "ˈdeɪz",
+  "desk": "dɛsk",
+  "details": "dəˈteɪlz",
+  "did": "ˈdɪd",
+  "didn't": "ˈdɪdənt",
+  "do": "ˈdu",
+  "does": "ˈdʌz",
+  "dollars": "ˈdɑlɚz",
+  "don't": "ˈdoʊnt",
+  "downtown": "ˌdaʊnˈtaʊn",
+  "draft": "dræft",
+  "early": "ˈɝli",
+  "else": "ˈɛls",
+  "email": "ˈiˌmeɪl",
+  "end": "ˈɛnd",
+  "enjoying": "ɛnˈdʒɔɪɪŋ",
+  "enough": "ɪˈnʌf",
+  "entrance": "ˈɛntrəns",
+  "evening": "ˈivnɪŋ",
+  "every": "ˈɛvɚi",
+  "everything": "ˈɛvriθɪŋ",
+  "experiments": "ɪkˈspɛrəmənts",
+  "extra": "ˈɛkstrə",
+  "family": "ˈfæməli",
+  "fee": "ˈfi",
+  "feel": "ˈfil",
+  "few": "ˈfju",
+  "finally": "ˈfaɪnəli",
+  "find": "ˈfaɪnd",
+  "fine": "ˈfaɪn",
+  "finish": "ˈfɪnɪʃ",
+  "finishes": "ˈfɪnəʃəz",
+  "first": "ˈfɝst",
+  "five": "ˈfaɪv",
+  "fly": "ˈflaɪ",
+  "flying": "ˈflaɪɪŋ",
+  "for": "fɔr",
+  "forty": "ˈfɔrti",
+  "four": "ˈfɔr",
+  "free": "fri",
+  "friday": "ˈfraɪˌdeɪ",
+  "friends": "ˈfrɛndz",
+  "from": "frʌm",
+  "full": "ˈfʊl",
+  "fun": "ˈfʌn",
+  "general": "ˈdʒɛnɚəl",
+  "get": "ɡɛt",
+  "girl": "ˈɡɝl",
+  "girlfriend": "ˈɡɝlfrɛnd",
+  "go": "ˌɡoʊ",
+  "good": "ˈɡʊd",
+  "got": "ɡɑt",
+  "graduated": "ˈɡrædʒʊˌeɪtᵻd",
+  "great": "ˈɡreɪt",
+  "group": "ˈɡrup",
+  "gym": "dʒɪm",
+  "habit": "ˈhæbɪt",
+  "half": "ˈhæf",
+  "hang": "ˈhæŋ",
+  "happy": "ˈhæpi",
+  "hard": "ˈhɑrd",
+  "has": "hæz",
+  "have": "hæv",
+  "head": "ˈhɛd",
+  "hear": "ˈhɪr",
+  "hectic": "ˈhɛktɪk",
+  "help": "ˈhɛlp",
+  "helps": "ˈhɛlps",
+  "her": "hɝ",
+  "here": "ˈhɪr",
+  "hi": "ˈhaɪ",
+  "hiking": "ˈhaɪkɪŋ",
+  "hills": "ˈhɪlz",
+  "him": "ˌhɪm",
+  "home": "ˈhoʊm",
+  "homework": "ˈhoʊmwɝk",
+  "honest": "ˈɑnɪst",
+  "hour": "ˈaʊɚ",
+  "hours": "ˈaʊɚz",
+  "how": "ˌhaʊ",
+  "i": "ˈaɪ",
+  "i'd": "ˌaɪd",
+  "i'll": "ˌaɪl",
+  "i'm": "ˌaɪm",
+  "i've": "ˌaɪv",
+  "ice": "ˈaɪs",
+  "important": "ɪmˈpɔrtənt",
+  "in": "ɪn",
+  "intern": "ˈɪnˌtɝn",
+  "internship": "ˈɪntɝnʃɪp",
+  "interview": "ˈɪntɚˌvju",
+  "into": "ˈɪntu",
+  "is": "ɪz",
+  "it": "ɪt",
+  "it's": "ɪts",
+  "job": "dʒɑb",
+  "join": "ˈdʒɔɪn",
+  "joining": "ˈdʒɔɪnɪŋ",
+  "june": "ˈdʒun",
+  "junior": "ˈdʒunjɚ",
+  "just": "ˈdʒʌst",
+  "keeps": "ˈkips",
+  "kitchen": "ˈkɪtʃən",
+  "kite": "kaɪt",
+  "kites": "ˈkaɪts",
+  "know": "ˈnoʊ",
+  "lake": "ˈleɪk",
+  "lakeview": "ˈleɪkˌvju",
+  "laptop": "ˈlæpˌtɑp",
+  "last": "ˈlæst",
+  "late": "leɪt",
+  "laundry": "ˈlɔndri",
+  "leave": "liv",
+  "left": "lɛft",
+  "let": "ˈlɛt",
+  "like": "ˈlaɪk",
+  "linda": "ˈlɪndə",
+  "line": "ˈlaɪn",
+  "living": "ˈlɪvɪŋ",
+  "long": "ˈlɔŋ",
+  "lot": "lɑt",
+  "lots": "ˈlɑts",
+  "love": "ˈlʌv",
+  "loves": "ˈlʌvz",
+  "lower": "ˈloʊɚ",
+  "main": "ˈmeɪn",
+  "man": "ˈmæn",
+  "manage": "ˈmænɪdʒ",
+  "maple": "ˈmeɪpəl",
+  "marketing": "ˈmɑrkətɪŋ",
+  "me": "ˌmi",
+  "meet": "ˈmit",
+  "meeting": "ˈmiɾɪŋ",
+  "members": "ˈmɛmbɚz",
+  "middle": "ˈmɪdəl",
+  "might": "ˌmaɪt",
+  "minute": "ˈmɪnət",
+  "moment": "ˈmoʊmənt",
+  "monday": "ˈmʌnˌdeɪ",
+  "month": "mʌnθ",
+  "monthly": "ˈmʌnθli",
+  "morning": "ˈmɔrnɪŋ",
+  "mornings": "ˈmɔrnɪŋz",
+  "most": "ˈmoʊst",
+  "moved": "ˈmuvd",
+  "much": "ˈmʌtʃ",
+  "my": "maɪ",
+  "n": "ˈɛn",
+  "name": "ˈneɪm",
+  "near": "ˌnɪr",
+  "need": "ˈnid",
+  "never": "ˈnɛvɚ",
+  "new": "ˈnu",
+  "next": "ˈnɛkst",
+  "nice": "ˈnaɪs",
+  "night": "ˈnaɪt",
+  "nine": "ˈnaɪn",
+  "no": "ˈnoʊ",
+  "nobody": "ˈnoʊˌbɑdi",
+  "not": "ˌnɑt",
+  "now": "ˈnaʊ",
+  "number": "ˈnʌmbɚ",
+  "oclock": "əkˈlɑk",
+  "of": "ʌv",
+  "off": "ˈɔf",
+  "office": "ˈɔfəs",
+  "oh": "ˈoʊ",
+  "ok": "ˌoʊˈkeɪ",
+  "on": "ˌɔn",
+  "one": "ˈwʌn",
+  "only": "ˈoʊnli",
+  "our": "ˌaʊɚ",
+  "out": "ˈaʊt",
+  "own": "ˈoʊn",
+  "paid": "peɪd",
+  "park": "ˈpɑrk",
+  "parking": "ˈpɑrkɪŋ",
+  "part": "ˈpɑrt",
+  "past": "ˈpæst",
+  "pay": "ˈpeɪ",
+  "people": "ˈpipəl",
+  "perfect": "ˈpɝfəkt",
+  "phone": "ˈfoʊn",
+  "picnic": "ˈpɪkˌnɪk",
+  "plans": "plænz",
+  "play": "ˈpleɪ",
+  "played": "ˈpleɪd",
+  "playing": "ˈpleɪɪŋ",
+  "please": "ˈpliz",
+  "poster": "ˈpoʊstɚ",
+  "prestige": "prɛˈstiʒ",
+  "price": "ˈpraɪs",
+  "problem": "ˈprɑbləm",
+  "professionals": "prəˈfɛʃənəlz",
+  "professor": "prəˈfɛsɚ",
+  "provide": "prəˈvaɪd",
+  "public": "ˈpʌblɪk",
+  "put": "pʊt",
+  "quality": "ˈkwɑləti",
+  "quarter": "ˈkwɔrtɚ",
+  "r": "ˈɑr",
+  "racket": "ˈrækət",
+  "read": "ˈrid",
+  "reading": "ˈridɪŋ",
+  "really": "ˈriəli",
+  "recharge": "riˈtʃɑrdʒ",
+  "relax": "rɪˈlæks",
+  "research": "ˈriˌsɝtʃ",
+  "riding": "ˈraɪdɪŋ",
+  "right": "raɪt",
+  "riverside": "ˈrɪvɚˌsaɪd",
+  "room": "ˈrum",
+  "roommates": "ˈrumˌmeɪts",
+  "run": "ˈrʌn",
+  "ryan": "ˈraɪən",
+  "sandwiches": "ˈsænˌdwɪtʃəz",
+  "saturday": "ˈsætɚˌdeɪ",
+  "saturdays": "ˈsætɚdeɪz",
+  "saw": "ˈsɔ",
+  "say": "ˈseɪ",
+  "schedule": "ˈskɛˌdʒul",
+  "score": "ˈskɔr",
+  "second": "ˈsɛkənd",
+  "see": "ˈsi",
+  "series": "ˈsɪriz",
+  "seven": "ˈsɛvən",
+  "share": "ˈʃɛr",
+  "she": "ʃi",
+  "shop": "ˈʃɑp",
+  "shopping": "ˈʃɑpɪŋ",
+  "shuttlecocks": "ˈʃʌtəlˌkɑks",
+  "sit": "ˈsɪt",
+  "sitting": "ˈsɪtɪŋ",
+  "six": "ˈsɪks",
+  "sleep": "ˈslip",
+  "small": "ˈsmɔl",
+  "smooth": "smuð",
+  "snowed": "ˈsnoʊd",
+  "so": "ˌsoʊ",
+  "social": "ˈsoʊʃəl",
+  "some": "ˌsʌm",
+  "something": "ˈsʌmˌθɪŋ",
+  "sometimes": "ˈsʌmtaɪmz",
+  "somewhere": "ˈsʌmˌhwɛr",
+  "sorry": "ˈsɔri",
+  "sounds": "ˈsaʊndz",
+  "speaking": "ˈspikɪŋ",
+  "spell": "ˈspɛl",
+  "spending": "ˈspɛndɪŋ",
+  "squeeze": "skwiz",
+  "staff": "stæf",
+  "standing": "ˈstændɪŋ",
+  "start": "ˈstɑrt",
+  "started": "ˈstɑrtᵻd",
+  "starts": "ˈstɑrts",
+  "still": "ˈstɪl",
+  "street": "ˈstrit",
+  "suit": "ˈsut",
+  "sunday": "ˈsʌnˌdeɪ",
+  "sundays": "ˈsʌnˌdeɪz",
+  "sunny": "ˈsʌni",
+  "sure": "ˈʃʊr",
+  "t": "ˈti",
+  "take": "ˈteɪk",
+  "teaches": "ˈtitʃɪz",
+  "team": "tim",
+  "ten": "ˈtɛn",
+  "thanks": "ˈθæŋks",
+  "that": "ðæt",
+  "that's": "ðæts",
+  "the": "ði",
+  "then": "ˈðɛn",
+  "there": "ðɛr",
+  "there's": "ðɛrz",
+  "thesis": "ˈθisɪs",
+  "they": "ðeɪ",
+  "things": "ˈθɪŋz",
+  "think": "ˈθɪŋk",
+  "thinking": "ˈθɪŋkɪŋ",
+  "thirty": "ˈθɝti",
+  "this": "ðɪs",
+  "though": "ˌðoʊ",
+  "three": "ˈθri",
+  "time": "ˈtaɪm",
+  "to": "tu",
+  "tree": "ˈtri",
+  "try": "ˈtraɪ",
+  "tv": "ˌtiˈvi",
+  "twelve": "ˈtwɛlv",
+  "twenty": "ˈtwɛnti",
+  "two": "ˈtu",
+  "under": "ˈʌndɚ",
+  "until": "ˌʌnˈtɪl",
+  "unwind": "ˌʌnˈwaɪnd",
+  "up": "ˌʌp",
+  "us": "ˌʌs",
+  "used": "ˈjuzd",
+  "usually": "ˈjuʒəwəli",
+  "very": "ˈvɛri",
+  "volleyball": "ˈvɑliˌbɔl",
+  "wake": "ˈweɪk",
+  "walk": "ˈwɔk",
+  "walking": "ˈwɔkɪŋ",
+  "want": "ˈwɑnt",
+  "wanted": "ˈwɑntəd",
+  "was": "wʌz",
+  "watch": "ˈwɑtʃ",
+  "water": "ˈwɔtɚ",
+  "way": "ˈweɪ",
+  "we": "wi",
+  "week": "wik",
+  "weekend": "ˈwikɛnd",
+  "weekends": "ˈwikɛndz",
+  "welcome": "ˈwɛlkəm",
+  "well": "ˈwɛl",
+  "what": "ˌwʌt",
+  "what's": "ˌwʌts",
+  "where": "ˌwɛr",
+  "which": "ˌwɪtʃ",
+  "why": "ˌwaɪ",
+  "win": "ˈwɪn",
+  "with": "wɪð",
+  "work": "ˈwɝk",
+  "working": "ˈwɝkɪŋ",
+  "worry": "ˈwɝi",
+  "y": "ˈwaɪ",
+  "year": "ˈjɪr",
+  "yes": "ˈjɛs",
+  "you": "ju",
+  "you'd": "jud",
+  "young": "ˈjʌŋ",
+  "your": "jʊr"
+ },
+ "tips": {
+  "classes": "Đuôi -es đọc thành âm /ɪz/: cla-sɪz, 2 âm tiết.",
+  "catch": "Kết thúc bằng âm \"ch\" /tʃ/, chu môi ra. Đừng đọc thành cast.",
+  "sometimes": "Nhớ âm /z/ ở cuối.",
+  "week": "Kéo dài âm \"i\" và giữ âm /k/ cuối, không thì nghe thành quick hoặc wish.",
+  "late": "Đọc \"lây-t\", khác light \"lai-t\".",
+  "working": "Tròn môi cho /w/, cong lưỡi cho /ɝ/.",
+  "free": "Có âm /r/ ngay sau /f/.",
+  "gym": "Âm \"i\" ngắn, ngậm môi lại cho /m/ ở cuối.",
+  "breakfast": "Nhấn âm đầu BREAK, đọc rõ /br/.",
+  "best": "Giữ âm /st/ ở cuối. Đọc thành bad là ngược nghĩa.",
+  "hours": "Âm h câm. Nhớ âm /z/ ở cuối.",
+  "hour": "Âm h câm: an hour đọc nối thành a-nau-ơ.",
+  "weekends": "Không có a phía trước. Cuối từ là /dz/.",
+  "extra": "Đọc rõ cụm /kstr/.",
+  "lot": "Không có âm /s/: lot of đọc nối lɑ-təv.",
+  "homework": "Nhớ âm /h/ đầu và /k/ cuối.",
+  "squeeze": "Đọc rõ /skw/ và âm /z/ cuối.",
+  "relax": "Nhấn âm 2 LAX, đọc rõ /ks/ cuối.",
+  "put": "Âm /p/ bật hơi, không phải /b/. Put it off đọc pu-đi-off.",
+  "left": "Kết thúc bằng /ft/, cắn nhẹ môi dưới cho /f/.",
+  "cart": "Nhớ âm /t/ cuối, thiếu là thành car.",
+  "playing": "Đọc rõ /pl/ ở đầu.",
+  "badminton": "Nhấn âm đầu BAD.",
+  "right": "Âm cuối là /t/, không phải /s/.",
+  "riding": "Đạp xe là rai-đinh. Ri-đinh là reading (đọc sách).",
+  "reading": "Đọc sách là ri-đinh. Rai-đinh là riding (đạp xe).",
+  "sitting": "Âm /s/ đầu: đặt lưỡi sau răng, thổi hơi ra âm \"xì\".",
+  "teaches": "Chủ ngữ it thì động từ thêm -es, đọc /ɪz/.",
+  "experiments": "Nhấn âm 2 PE, nhớ /ts/ ở cuối.",
+  "recharge": "Nhấn âm 2 CHARGE, cuối là /dʒ/.",
+  "honest": "Âm h câm: ɑ-nɪst.",
+  "enjoying": "Đuôi -ing đọc rõ.",
+  "mornings": "Nhớ âm /z/ ở cuối.",
+  "saturdays": "Nhớ âm /z/ ở cuối.",
+  "laptop": "Âm cuối /p/: khép 2 môi rồi giữ, như \"p\" cuối trong tháp. Không thêm \"ơ\".",
+  "job": "Âm cuối /b/: khép 2 môi, giữ, cổ rung. Không đọc thành \"jóp-bơ\".",
+  "draft": "Âm cuối /ft/: cắn nhẹ môi dưới thổi /f/, rồi chạm lưỡi sau răng cho /t/.",
+  "paid": "Âm cuối /d/: như /t/ trong mát nhưng cổ rung.",
+  "desk": "Âm cuối /sk/: xì /s/ rồi cuống lưỡi chặn /k/, như \"c\" cuối trong các.",
+  "big": "Âm cuối /g/: như \"c\" cuối trong các nhưng cổ rung.",
+  "staff": "Âm cuối /f/: răng trên cắn nhẹ môi dưới, thổi ra.",
+  "leave": "Âm cuối /v/: như /f/ nhưng cổ rung. Thiếu /v/ thì thành lee.",
+  "month": "Âm cuối /θ/: thè đầu lưỡi giữa 2 hàm răng, thổi. Không đọc thành mon-s.",
+  "smooth": "Âm cuối /ð/: thè lưỡi như /θ/, cổ rung.",
+  "boss": "Âm cuối /s/: răng khép, xì hơi như xì lốp xe.",
+  "plans": "Âm cuối /z/: như /s/ nhưng cổ rung, tiếng ong \"zzz\".",
+  "finish": "Âm cuối /ʃ/: chu môi, \"suỵt\".",
+  "prestige": "Âm cuối /ʒ/: \"suỵt\" + cổ rung. Nhấn âm 2 STIGE.",
+  "research": "Âm cuối /tʃ/: chu môi, bật \"ch\".",
+  "manage": "Âm cuối /dʒ/: như /tʃ/ nhưng cổ rung. Nhấn âm đầu MAN.",
+  "team": "Âm cuối /m/: khép môi, ngân như \"m\" cuối trong cam. Khác teen /n/.",
+  "intern": "Âm cuối /n/: đầu lưỡi chạm gờ sau răng trên, ngân như \"n\" trong lan.",
+  "meeting": "Âm cuối /ŋ/: như \"ng\" trong làng, không thêm \"k\".",
+  "email": "Âm cuối /l/: đầu lưỡi chạm gờ sau răng trên, giữ yên. Không đọc thành \"meo\".",
+  "career": "Âm cuối /r/: cong đầu lưỡi lên, không chạm đâu cả. Nhấn âm 2 REER."
+ },
+ "criteria": {
+  "intro": [
+   "IELTS Speaking chấm 4 tiêu chí, mỗi tiêu chí 25%. Listening chấm theo số câu đúng trên 40 câu.",
+   "👍 = điểm mạnh em đang có · 🔧 = chỗ cần sửa. Chị cập nhật sau mỗi buổi."
+  ],
+  "speaking": [
+   {
+    "id": "fc",
+    "name": "Fluency & Coherence – Trôi chảy, mạch lạc",
+    "what": "Nói dài không ngập ngừng nhiều, ý nối với nhau rõ ràng (A.R.E.: Answer → Reason → Example), dùng từ nối đúng chỗ."
+   },
+   {
+    "id": "lr",
+    "name": "Lexical Resource – Vốn từ",
+    "what": "Dùng từ đúng nghĩa, đúng ngữ cảnh; có collocation, phrasal verb, idiom; diễn đạt lại được khi bí từ."
+   },
+   {
+    "id": "gra",
+    "name": "Grammatical Range & Accuracy – Ngữ pháp",
+    "what": "Có cả câu đơn và câu phức; chia động từ, số ít/số nhiều, thì đúng; càng nhiều câu không lỗi càng cao điểm."
+   },
+   {
+    "id": "p",
+    "name": "Pronunciation – Phát âm",
+    "what": "Người nghe hiểu dễ dàng: đủ âm cuối, nhấn âm đúng, nối âm, ngắt cụm và ngữ điệu tự nhiên."
+   }
+  ],
+  "listening": [
+   {
+    "id": "score",
+    "name": "Số câu đúng → band",
+    "what": "40 câu, mỗi câu 1 điểm. Tham khảo: khoảng 23/40 ≈ 6.0 · 26/40 ≈ 6.5 · 30/40 ≈ 7.0."
+   },
+   {
+    "id": "key",
+    "name": "Bắt keyword & paraphrase",
+    "what": "Đáp án hiếm khi lặp nguyên từ trong câu hỏi; phải nhận ra cách nói khác (paraphrase) của cùng ý."
+   },
+   {
+    "id": "spell",
+    "name": "Chính tả, số, tên riêng",
+    "what": "Viết sai chính tả hoặc sai số ít/số nhiều là mất điểm; nghe đúng số, ngày tháng, tên được đánh vần."
+   },
+   {
+    "id": "trap",
+    "name": "Bẫy đổi ý (distractor)",
+    "what": "Người nói hay nói một đáp án rồi sửa lại; phải nghe đến hết ý mới chọn."
+   }
+  ]
+ },
+ "decks": [
+  {
+   "id": "va1",
+   "title": "Studies & School life",
+   "session": 1,
+   "for": [
+    "vananh"
+   ],
+   "cards": [
+    {
+     "w": "a required subject",
+     "type": "Collocation",
+     "ipa": "/ə rɪˈkwaɪɚd ˈsʌbdʒɪkt/",
+     "stress": "a re-QUIRED SUB-ject",
+     "band": "4–5",
+     "mean": "môn bắt buộc",
+     "grammar": "",
+     "ex": "Math is a required subject on the graduation exam.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "an elective",
+     "type": "Vocab",
+     "ipa": "/ən ɪˈlɛktɪv/",
+     "stress": "an e-LEC-tive",
+     "band": "5.5–6.5",
+     "mean": "môn tự chọn",
+     "grammar": "(n.)",
+     "ex": "I chose chemistry as an elective.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "pick up (a skill)",
+     "type": "Phrasal verb",
+     "ipa": "/ˌpɪk ˈʌp/",
+     "stress": "pick‿UP",
+     "band": "5.5–6.5",
+     "mean": "học được (một cách tự nhiên)",
+     "grammar": "tách được: pick up English / pick it up; QK picked up",
+     "ex": "I picked up a lot of English from YouTube.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "excel at",
+     "type": "Vocab",
+     "ipa": "/ɪkˈsɛl æt/",
+     "stress": "ex-CEL‿at",
+     "band": "5.5–6.5",
+     "mean": "giỏi xuất sắc ở",
+     "grammar": "excel at + N / V-ing",
+     "ex": "She excels at physics.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "struggle with",
+     "type": "Vocab",
+     "ipa": "/ˈstrʌɡəl wɪð/",
+     "stress": "STRUG-gle with",
+     "band": "5.5–6.5",
+     "mean": "vật lộn với, gặp khó với",
+     "grammar": "struggle with + N / V-ing",
+     "ex": "I still struggle with essay writing.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "grasp a concept",
+     "type": "Collocation",
+     "ipa": "/ˌɡræsp ə ˈkɑnsɛpt/",
+     "stress": "grasp‿a CON-cept",
+     "band": "7–8",
+     "mean": "nắm được một khái niệm",
+     "grammar": "grasp + concept/idea",
+     "ex": "It took me a week to grasp the concept of limits.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "hands-on",
+     "type": "Vocab",
+     "ipa": "/ˌhændzˈɑn/",
+     "stress": "hands-ON",
+     "band": "7–8",
+     "mean": "thực hành, trực tiếp làm",
+     "grammar": "gain / get + hands-on experience",
+     "ex": "I prefer hands-on subjects like computer science.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "rote learning",
+     "type": "Collocation",
+     "ipa": "/ˌroʊt ˈlɝnɪŋ/",
+     "stress": "rote LEARN-ing",
+     "band": "7–8",
+     "mean": "học vẹt",
+     "grammar": "danh từ không đếm được; learn by rote",
+     "ex": "History at my school is mostly rote learning.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "a steep learning curve",
+     "type": "Collocation",
+     "ipa": "/ə ˌstip ˈlɝnɪŋ ˌkɝv/",
+     "stress": "a steep LEARN-ing curve",
+     "band": "7–8",
+     "mean": "khó, phải học rất nhiều lúc đầu",
+     "grammar": "have / face + a steep learning curve",
+     "ex": "Physics in 12th grade has a steep learning curve.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "brush up on",
+     "type": "Phrasal verb",
+     "ipa": "/ˌbrʌʃ ˈʌp ɑn/",
+     "stress": "brush‿UP‿on",
+     "band": "7–8",
+     "mean": "ôn lại cho chắc",
+     "grammar": "không tách được: + N",
+     "ex": "I need to brush up on my grammar before the test.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "get the hang of",
+     "type": "Idiom",
+     "ipa": "/ˌɡɛt ðə ˈhæŋ əv/",
+     "stress": "get the HANG‿of",
+     "band": "7–8",
+     "mean": "bắt đầu quen, làm được",
+     "grammar": "",
+     "ex": "I finally got the hang of chemical equations.",
+     "group": "A. Học tập & môn học"
+    },
+    {
+     "w": "be right up my alley",
+     "type": "Idiom",
+     "ipa": "/bi ˌraɪt ʌp maɪ ˈæli/",
+     "stress": "be right‿up my AL-ley",
+     "band": "8.5–9",
+     "mean": "đúng sở trường của mình",
+     "grammar": "",
+     "ex": "Anything with numbers is right up my alley.",
+     "group": "A. Học tập & môn học",
+     "warn": true
+    },
+    {
+     "w": "be under a lot of pressure",
+     "type": "Collocation",
+     "ipa": "/bi ˌʌndɚ ə ˌlɑɾ əv ˈprɛʃɚ/",
+     "stress": "un-der‿a LOT‿of PRES-sure",
+     "band": "4–5",
+     "mean": "chịu nhiều áp lực",
+     "grammar": "",
+     "ex": "Seniors are under a lot of pressure this year.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "the high school graduation exam",
+     "type": "Collocation",
+     "ipa": "/ðə ˌhaɪ skul ˌɡrædʒuˈeɪʃən ɪɡˈzæm/",
+     "stress": "the HIGH school grad-u-A-tion ex-AM",
+     "band": "4–5",
+     "mean": "kỳ thi tốt nghiệp THPT",
+     "grammar": "",
+     "ex": "The graduation exam takes place in June.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "a mock test",
+     "type": "Collocation",
+     "ipa": "/ə ˈmɑk ˌtɛst/",
+     "stress": "a MOCK test",
+     "band": "5.5–6.5",
+     "mean": "bài thi thử",
+     "grammar": "",
+     "ex": "I take a mock test every Saturday.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "college admissions",
+     "type": "Collocation",
+     "ipa": "/ˈkɑlɪdʒ ədˈmɪʃənz/",
+     "stress": "COL-lege ad-MIS-sions",
+     "band": "5.5–6.5",
+     "mean": "tuyển sinh đại học",
+     "grammar": "",
+     "ex": "IELTS can really help with college admissions.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "cram for",
+     "type": "Phrasal verb",
+     "ipa": "/ˈkræm fɚ/",
+     "stress": "CRAM for",
+     "band": "5.5–6.5",
+     "mean": "học dồn, ôn gấp",
+     "grammar": "+ exam/test; QK crammed",
+     "ex": "I used to cram for tests the night before.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "fall behind",
+     "type": "Phrasal verb",
+     "ipa": "/ˌfɔl bɪˈhaɪnd/",
+     "stress": "fall be-HIND",
+     "band": "5.5–6.5",
+     "mean": "bị tụt lại",
+     "grammar": "không tân ngữ / + in + môn; QK fell behind",
+     "ex": "If I miss a class, I fall behind quickly.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "stressed out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌstrɛst ˈaʊt/",
+     "stress": "stressed‿OUT",
+     "band": "5.5–6.5",
+     "mean": "căng thẳng cao độ",
+     "grammar": "phrasal",
+     "ex": "I get stressed out before every mock test.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "a high-stakes exam",
+     "type": "Collocation",
+     "ipa": "/ə ˌhaɪˈsteɪks ɪɡˈzæm/",
+     "stress": "a high-STAKES ex-AM",
+     "band": "7–8",
+     "mean": "kỳ thi quyết định, nhiều thứ phụ thuộc",
+     "grammar": "high-stakes = tính từ ghép, có gạch nối",
+     "ex": "It's a high-stakes exam, so everyone is nervous.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "burn out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌbɝn ˈaʊt/",
+     "stress": "burn‿OUT",
+     "band": "7–8",
+     "mean": "kiệt sức (do học quá nhiều)",
+     "grammar": "không tân ngữ; danh từ burnout /ˈbɝnˌaʊt/",
+     "ex": "If I study twelve hours a day, I'll burn out.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "ace (a test)",
+     "type": "Vocab",
+     "ipa": "/eɪs/",
+     "stress": "ACE",
+     "band": "7–8",
+     "mean": "làm bài xuất sắc (thân mật)",
+     "grammar": "(v.)",
+     "ex": "I aced my last English test.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "have a lot on my plate",
+     "type": "Idiom",
+     "ipa": "/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/",
+     "stress": "have‿a LOT‿on my PLATE",
+     "band": "7–8",
+     "mean": "bận ngập đầu",
+     "grammar": "",
+     "ex": "With extra classes and IELTS, I have a lot on my plate.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "pull an all-nighter",
+     "type": "Idiom",
+     "ipa": "/ˌpʊl ən ˌɔlˈnaɪɾɚ/",
+     "stress": "pull‿an all-NIGHT-er",
+     "band": "7–8",
+     "mean": "thức trắng đêm (để học)",
+     "grammar": "",
+     "ex": "I pulled an all-nighter before my history test.",
+     "group": "B. Thi cử & áp lực"
+    },
+    {
+     "w": "take notes",
+     "type": "Collocation",
+     "ipa": "/ˌteɪk ˈnoʊts/",
+     "stress": "take NOTES",
+     "band": "4–5",
+     "mean": "ghi chép",
+     "grammar": "take notes + on + N",
+     "ex": "I take notes on my iPad in every class.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "review (for a test)",
+     "type": "Vocab",
+     "ipa": "/rɪˈvju/",
+     "stress": "re-VIEW",
+     "band": "4–5",
+     "mean": "ôn bài",
+     "grammar": "(v.)",
+     "ex": "I review for tests with my best friend.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "join a study group",
+     "type": "Collocation",
+     "ipa": "/ˌdʒɔɪn ə ˈstʌdi ˌɡrup/",
+     "stress": "join‿a STUD-y group",
+     "band": "4–5",
+     "mean": "tham gia nhóm học",
+     "grammar": "join + a study group",
+     "ex": "I joined a study group for math.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "self-study",
+     "type": "Vocab",
+     "ipa": "/ˌsɛlfˈstʌdi/",
+     "stress": "self-STUD-y",
+     "band": "5.5–6.5",
+     "mean": "tự học",
+     "grammar": "n./v.",
+     "ex": "Most of my IELTS preparation is self-study.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "keep up with",
+     "type": "Phrasal verb",
+     "ipa": "/ˌkip ˈʌp wɪð/",
+     "stress": "keep‿UP with",
+     "band": "5.5–6.5",
+     "mean": "theo kịp",
+     "grammar": "không tách được: + N; QK kept up with",
+     "ex": "It's hard to keep up with all the homework.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "stay focused",
+     "type": "Collocation",
+     "ipa": "/ˌsteɪ ˈfoʊkəst/",
+     "stress": "stay FO-cused",
+     "band": "5.5–6.5",
+     "mean": "giữ tập trung",
+     "grammar": "stay focused + on + N",
+     "ex": "I put my phone away to stay focused.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "learn sth by heart",
+     "type": "Idiom",
+     "ipa": "/ˌlɝn ... baɪ ˈhɑrt/",
+     "stress": "learn … by HEART",
+     "band": "5.5–6.5",
+     "mean": "học thuộc lòng",
+     "grammar": "",
+     "ex": "I learned all the formulas by heart.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "procrastinate",
+     "type": "Vocab",
+     "ipa": "/prəˈkræstəˌneɪt/",
+     "stress": "pro-CRAS-ti-nate",
+     "band": "7–8",
+     "mean": "trì hoãn",
+     "grammar": "(v.)",
+     "ex": "I tend to procrastinate when a subject is boring.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "retain information",
+     "type": "Collocation",
+     "ipa": "/rɪˌteɪn ˌɪnfɚˈmeɪʃən/",
+     "stress": "re-TAIN in-for-MA-tion",
+     "band": "7–8",
+     "mean": "nhớ lâu kiến thức",
+     "grammar": "information không đếm được",
+     "ex": "Teaching my friends helps me retain information.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "put in the hours",
+     "type": "Idiom",
+     "ipa": "/ˌpʊt ɪn ði ˈaʊɚz/",
+     "stress": "put‿in the HOURS",
+     "band": "7–8",
+     "mean": "bỏ nhiều thời gian công sức",
+     "grammar": "",
+     "ex": "You can't get a 7.0 unless you put in the hours.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "hit the books",
+     "type": "Idiom",
+     "ipa": "/ˌhɪt ðə ˈbʊks/",
+     "stress": "hit the BOOKS",
+     "band": "7–8",
+     "mean": "bắt đầu học hành nghiêm túc",
+     "grammar": "",
+     "ex": "After Tết, I really need to hit the books.",
+     "group": "C. Thói quen & phương pháp học"
+    },
+    {
+     "w": "apply to (a university)",
+     "type": "Vocab",
+     "ipa": "/əˈplaɪ tu/",
+     "stress": "ap-PLY to",
+     "band": "4–5",
+     "mean": "nộp hồ sơ vào",
+     "grammar": "apply to + trường; apply for + học bổng/việc",
+     "ex": "I'm applying to three universities in HCMC.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "major in",
+     "type": "Phrasal verb",
+     "ipa": "/ˈmeɪdʒɚ ɪn/",
+     "stress": "MA-jor‿in",
+     "band": "5.5–6.5",
+     "mean": "học chuyên ngành",
+     "grammar": "+ ngành; Mỹ dùng nhiều, Anh dùng study",
+     "ex": "I want to major in international business.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "win a scholarship",
+     "type": "Collocation",
+     "ipa": "/ˌwɪn ə ˈskɑlɚˌʃɪp/",
+     "stress": "win‿a SCHOL-ar-ship",
+     "band": "5.5–6.5",
+     "mean": "giành học bổng",
+     "grammar": "win / get / apply for + a scholarship",
+     "ex": "A high IELTS score helps me win a scholarship.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "a well-paid job",
+     "type": "Collocation",
+     "ipa": "/ə ˌwɛlˈpeɪd ˈdʒɑb/",
+     "stress": "a well-PAID JOB",
+     "band": "5.5–6.5",
+     "mean": "công việc lương cao",
+     "grammar": "",
+     "ex": "Many students choose IT for a well-paid job.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "career prospects",
+     "type": "Collocation",
+     "ipa": "/kəˈrɪr ˈprɑˌspɛkts/",
+     "stress": "ca-REER PROS-pects",
+     "band": "7–8",
+     "mean": "triển vọng nghề nghiệp",
+     "grammar": "luôn số nhiều: prospects",
+     "ex": "Logistics has great career prospects in Vietnam.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "a stepping stone (to)",
+     "type": "Idiom",
+     "ipa": "/ə ˈstɛpɪŋ ˌstoʊn/",
+     "stress": "a STEP-ping stone",
+     "band": "7–8",
+     "mean": "bước đệm",
+     "grammar": "",
+     "ex": "IELTS is a stepping stone to a good university.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "broaden my horizons",
+     "type": "Idiom",
+     "ipa": "/ˈbrɔdən maɪ həˈraɪzənz/",
+     "stress": "BROAD-en my ho-RI-zons",
+     "band": "7–8",
+     "mean": "mở mang tầm nhìn",
+     "grammar": "broaden + my/your + horizons (số nhiều)",
+     "ex": "Studying abroad would broaden my horizons.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "keep my options open",
+     "type": "Idiom",
+     "ipa": "/ˌkip maɪ ˈɑpʃənz ˈoʊpən/",
+     "stress": "keep my OP-tions‿O-pen",
+     "band": "7–8",
+     "mean": "chưa chốt, để ngỏ lựa chọn",
+     "grammar": "",
+     "ex": "I'm keeping my options open between IT and finance.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "follow in sb's footsteps",
+     "type": "Idiom",
+     "ipa": "/ˈfɑloʊ ɪn ... ˈfʊtˌstɛps/",
+     "stress": "FOL-low‿in … FOOT-steps",
+     "band": "7–8",
+     "mean": "theo nghề của ai (trong gia đình)",
+     "grammar": "",
+     "ex": "I might follow in my mom's footsteps and become a doctor.",
+     "group": "D. Tương lai: đại học, ngành học, nghề nghiệp"
+    },
+    {
+     "w": "look up + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌlʊk ˈʌp/",
+     "stress": "look‿UP",
+     "band": "4–5",
+     "mean": "tra (từ điển)",
+     "grammar": "tách được: look up a word / look it up",
+     "ex": "I look up every new word on Cambridge Dictionary.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "go over + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌɡoʊ ˈoʊvɚ/",
+     "stress": "go‿O-ver",
+     "band": "4–5",
+     "mean": "xem lại, ôn lại",
+     "grammar": "không tách được: + N; QK went over",
+     "ex": "I go over my notes before every class.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "catch up on + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌkætʃ ˈʌp ɑn/",
+     "stress": "catch‿UP‿on",
+     "band": "5.5–6.5",
+     "mean": "làm bù",
+     "grammar": "không tách được: + N / V-ing",
+     "ex": "I catch up on my reading on Sundays.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "figure out + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌfɪɡjɚ ˈaʊt/",
+     "stress": "fig-ure‿OUT",
+     "band": "5.5–6.5",
+     "mean": "tìm ra, hiểu ra",
+     "grammar": "tách được: figure it out; + wh-clause",
+     "ex": "I couldn't figure out how to solve the last problem.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "put off + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˌpʊt ˈɔf/",
+     "stress": "put‿OFF",
+     "band": "5.5–6.5",
+     "mean": "trì hoãn",
+     "grammar": "tách được: put it off; + V-ing; QK put off",
+     "ex": "I keep putting off my essay.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "stress (sb) out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌstrɛs ˈaʊt/",
+     "stress": "stress‿OUT",
+     "band": "5.5–6.5",
+     "mean": "làm (ai) căng thẳng",
+     "grammar": "sth stresses me out / be stressed out",
+     "ex": "Mock tests always stress me out.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "zone out",
+     "type": "Phrasal verb",
+     "ipa": "/ˌzoʊn ˈaʊt/",
+     "stress": "zone‿OUT",
+     "band": "7–8",
+     "mean": "mất tập trung, \"treo máy\"",
+     "grammar": "không tân ngữ (thân mật)",
+     "ex": "I zone out in long lectures.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "breeze through + sth",
+     "type": "Phrasal verb",
+     "ipa": "/ˈbriz ˌθru/",
+     "stress": "BREEZE through",
+     "band": "7–8",
+     "mean": "vượt qua dễ dàng",
+     "grammar": "không tách được: + test/exam",
+     "ex": "She breezed through the speaking test.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "do well in",
+     "type": "Collocation",
+     "ipa": "/ˌdu ˈwɛl ɪn/",
+     "stress": "do WELL‿in",
+     "band": "4–5",
+     "mean": "làm tốt (bài thi, môn)",
+     "grammar": "do well in + exam/subject",
+     "ex": "I did well in the last mock test.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "get good grades",
+     "type": "Collocation",
+     "ipa": "/ˌɡɛt ˌɡʊd ˈɡreɪdz/",
+     "stress": "get good GRADES",
+     "band": "4–5",
+     "mean": "đạt điểm cao",
+     "grammar": "Mỹ: grades; Anh: marks",
+     "ex": "I get good grades in math.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "be under pressure",
+     "type": "Collocation",
+     "ipa": "/bi ˌʌndɚ ˈprɛʃɚ/",
+     "stress": "be un-der PRES-sure",
+     "band": "4–5",
+     "mean": "chịu áp lực",
+     "grammar": "under + (a lot of) pressure + to V",
+     "ex": "I'm under pressure to get into a top university.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "take a mock test",
+     "type": "Collocation",
+     "ipa": "/ˌteɪk ə ˈmɑk ˌtɛst/",
+     "stress": "take‿a MOCK test",
+     "band": "5.5–6.5",
+     "mean": "làm bài thi thử",
+     "grammar": "take (không dùng do) a mock test",
+     "ex": "I take a mock test every Saturday.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "a heavy workload",
+     "type": "Collocation",
+     "ipa": "/ə ˌhɛvi ˈwɝkˌloʊd/",
+     "stress": "a heav-y WORK-load",
+     "band": "5.5–6.5",
+     "mean": "khối lượng bài vở nặng",
+     "grammar": "have + a heavy workload",
+     "ex": "Seniors have a heavy workload.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "meet a deadline",
+     "type": "Collocation",
+     "ipa": "/ˌmit ə ˈdɛdˌlaɪn/",
+     "stress": "meet‿a DEAD-line",
+     "band": "5.5–6.5",
+     "mean": "kịp hạn",
+     "grammar": "trái nghĩa: miss a deadline",
+     "ex": "I always meet deadlines for group projects.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "manage my time",
+     "type": "Collocation",
+     "ipa": "/ˌmænɪdʒ maɪ ˈtaɪm/",
+     "stress": "MAN-age my TIME",
+     "band": "5.5–6.5",
+     "mean": "quản lý thời gian",
+     "grammar": "danh từ: time management",
+     "ex": "I'm learning to manage my time better.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "pursue",
+     "type": "Vocab",
+     "ipa": "/pɚˈsu/",
+     "stress": "pur-SUE",
+     "band": "7–8",
+     "mean": "theo đuổi, theo học",
+     "grammar": "pursue + a degree / a career",
+     "ex": "I plan to pursue a degree in dentistry.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "gifted in",
+     "type": "Vocab",
+     "ipa": "/ˈɡɪftɪd ɪn/",
+     "stress": "GIFT-ed‿in",
+     "band": "7–8",
+     "mean": "có năng khiếu về",
+     "grammar": "be gifted in + N / V-ing",
+     "ex": "She is gifted in science.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "demanding",
+     "type": "Vocab",
+     "ipa": "/dɪˈmændɪŋ/",
+     "stress": "de-MAND-ing",
+     "band": "7–8",
+     "mean": "đòi hỏi cao, vất vả",
+     "grammar": "a demanding + job / course",
+     "ex": "Dentistry is a demanding major.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "overwhelmed",
+     "type": "Vocab",
+     "ipa": "/ˌoʊvɚˈwɛlmd/",
+     "stress": "o-ver-WHELMED",
+     "band": "7–8",
+     "mean": "quá tải, choáng ngợp",
+     "grammar": "feel overwhelmed + by / with + N",
+     "ex": "I felt overwhelmed by all the mock tests.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "pivotal",
+     "type": "Vocab",
+     "ipa": "/ˈpɪvəɾəl/",
+     "stress": "PIV-o-tal",
+     "band": "7–8",
+     "mean": "then chốt",
+     "grammar": "play a pivotal role in + N",
+     "ex": "This exam plays a pivotal role in my future.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "sail through",
+     "type": "Phrasal verb",
+     "ipa": "/ˈseɪl ˌθru/",
+     "stress": "SAIL through",
+     "band": "7–8",
+     "mean": "vượt qua dễ dàng",
+     "grammar": "sail through + exam / test",
+     "ex": "I hope to sail through the speaking test.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "exposure",
+     "type": "Vocab",
+     "ipa": "/ɪkˈspoʊʒɚ/",
+     "stress": "ex-PO-sure",
+     "band": "7–8",
+     "mean": "sự tiếp xúc, trải nghiệm",
+     "grammar": "exposure + to + N",
+     "ex": "I get a lot of exposure to English online.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "a tough nut to crack",
+     "type": "Idiom",
+     "ipa": "/ə ˌtʌf ˌnʌt tə ˈkræk/",
+     "stress": "a TOUGH NUT to CRACK",
+     "band": "7–8",
+     "mean": "vấn đề khó nhằn",
+     "grammar": "be a tough nut to crack",
+     "ex": "Organic chemistry is a tough nut to crack.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "make or break",
+     "type": "Idiom",
+     "ipa": "/ˌmeɪk ɔr ˈbreɪk/",
+     "stress": "MAKE or BREAK",
+     "band": "7–8",
+     "mean": "quyết định thành bại",
+     "grammar": "a make-or-break + exam / moment",
+     "ex": "This year is make or break for me.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "know sth inside out",
+     "type": "Idiom",
+     "ipa": "/ˌnoʊ ... ˌɪnˌsaɪd ˈaʊt/",
+     "stress": "know … in-side OUT",
+     "band": "7–8",
+     "mean": "nắm cực chắc",
+     "grammar": "know + N + inside out",
+     "ex": "I know the formulas inside out.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "keep my eye on the ball",
+     "type": "Idiom",
+     "ipa": "/ˌkip maɪ ˈaɪ ɑn ðə ˈbɔl/",
+     "stress": "keep my EYE‿on the BALL",
+     "band": "7–8",
+     "mean": "tập trung vào mục tiêu",
+     "grammar": "keep (my/your) eye on the ball",
+     "ex": "I try to keep my eye on the ball during exam season.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "pass with flying colors",
+     "type": "Idiom",
+     "ipa": "/ˌpæs wɪð ˌflaɪɪŋ ˈkʌlɚz/",
+     "stress": "pass with fly-ing COL-ors",
+     "band": "7–8",
+     "mean": "đỗ với điểm cao",
+     "grammar": "pass + (the exam) + with flying colors (Mỹ: colors)",
+     "ex": "She passed the test with flying colors.",
+     "group": "Alternatives"
+    },
+    {
+     "w": "learn the ropes",
+     "type": "Idiom",
+     "ipa": "/ˌlɝn ðə ˈroʊps/",
+     "stress": "learn the ROPES",
+     "band": "7–8",
+     "mean": "học việc, làm quen việc mới",
+     "grammar": "learn the ropes (of + N)",
+     "ex": "Interns spend the first month learning the ropes.",
+     "group": "Alternatives"
+    }
+   ]
+  }
+ ]
+}
