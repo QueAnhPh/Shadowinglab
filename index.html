@@ -210,6 +210,34 @@ details.nolog .pick{margin-top:8px}
 .crit .good{color:var(--ok)}
 .crit .weak{color:var(--bad)}
 .profile .note{font-size:13px;color:var(--muted)}
+/* band bars: điểm từng tiêu chí, vạch mục tiêu, ▲▼ so với tuần trước */
+.bars{display:grid;gap:7px;margin:2px 0}
+.bar{display:grid;grid-template-columns:104px 1fr 34px 40px;align-items:center;gap:8px;font-size:14px}
+.bar .bl{font-weight:600}
+.bar .bt{position:relative;height:12px;border-radius:999px;background:var(--soft,var(--line));overflow:visible}
+.bar .bt i{position:absolute;inset:0 auto 0 0;border-radius:999px;background:var(--accent)}
+.bar.lis .bt i{background:var(--ok)}
+.bar .bt em{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--bad);border-radius:2px}
+.bar b{text-align:right;font-variant-numeric:tabular-nums}
+.bar small{font-size:12px;font-weight:700}
+.bar small.up{color:var(--ok)} .bar small.down{color:var(--bad)}
+.bars .ov{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:14px;color:var(--muted)}
+.bars .ov b{font-size:20px;color:var(--ink)}
+@media (max-width:420px){.bar{grid-template-columns:86px 1fr 30px 36px;font-size:13px}}
+/* nhận xét tuần + trang tiến độ */
+.wk h4{margin:4px 0 2px;font-size:15px}
+.wk ul{margin:0;padding-left:20px;display:grid;gap:3px;font-size:14.5px}
+.wk .good li::marker{content:"👍 "} .wk .fix li::marker{content:"🔧 "} .wk .next li::marker{content:"🎯 "}
+.wk .stat{display:flex;flex-wrap:wrap;gap:6px}
+.wk .stat span{background:var(--ok-bg);color:var(--ok);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600}
+.wk .msg{background:var(--near-bg);border-radius:12px;padding:10px 12px;font-size:14.5px}
+.prog{display:grid;gap:14px}
+.prog .card{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:16px 18px}
+.prog svg{width:100%;height:auto;display:block}
+.prog .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted)}
+.prog .legend i{display:inline-block;width:12px;height:4px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.prog details.wk{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:12px 16px}
+.prog details.wk>summary{cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:8px}
 .subst{font-size:14px;color:var(--muted)}
 .quota{font-size:13px;margin:4px 0 0}
 .subst.wait{color:var(--near)}
@@ -426,11 +454,13 @@ details.cmp summary{font-weight:800}
   <a href="#" data-nav="home">🏠 <span>Bài tập</span></a>
   <a href="#fc" data-nav="fc">🃏 <span>Flashcard từ vựng</span></a>
   <a href="#me" data-nav="me">📊 <span>Em đang ở đâu</span></a>
+  <a href="#progress" data-nav="progress">📈 <span>Tiến độ theo tuần</span></a>
   <button type="button" data-nav="help">❓ <span>Hướng dẫn</span></button>
 </nav>
 <div class="scrim" id="scrim" hidden></div>
 <main class="wrap" id="app"><p class="muted">Đang tải bài…</p></main>
 <audio id="player" preload="auto" playsinline></audio>
+<div class="modal" id="weekModal" hidden role="dialog" aria-modal="true" aria-labelledby="wkTitle"><div class="sheet" id="weekSheet"></div></div>
 <div class="modal" id="micModal" hidden role="dialog" aria-modal="true" aria-labelledby="micTitle"><div class="sheet" id="micSheet"></div></div>
 
 <script type="module" src="cloud.js"></script>
@@ -769,6 +799,85 @@ function pendingHomework(mine) {
     return { H, ls, p, n: today(H.deadline) };
   }).filter(x => x.ls.length && x.p < 100 && x.n >= -7).sort((a, b) => a.n - b.n);
 }
+/* ---------- band từng tiêu chí (students[].profile.bands) + nhận xét tuần (students[].weekly) ---------- */
+const BANDS = [["fc", "Fluency"], ["lr", "Vocabulary"], ["gra", "Grammar"], ["p", "Pronunciation"]];
+const BAND_COLORS = { fc: "#8A5A35", lr: "#2E7D4F", gra: "#3C6FB0", p: "#C2413A", listening: "#B5650F" };
+function ieltsRound(x) { const f = x - Math.floor(x); return Math.floor(x) + (f < 0.25 ? 0 : f < 0.75 ? 0.5 : 1); }
+function weeksOf(sid) { const S = DATA.students.find(x => x.id === sid); return ((S && S.weekly) || []).filter(w => !w.draft || TEACH).sort((a, b) => (a.week < b.week ? -1 : 1)); }
+function bandBars(sid) {
+  const S = DATA.students.find(x => x.id === sid), P = (S && S.profile) || {}, B = P.bands || {};
+  const ks = BANDS.filter(([k]) => B[k] != null);
+  if (!ks.length && B.listening == null) return `<p class="note">Chưa có điểm band. Chị chấm sau buổi đầu nha.</p>`;
+  const W = weeksOf(sid), prev = W.length > 1 ? (W[W.length - 2].bands || {}) : {};
+  const tgt = +P.target || 0;
+  const row = (k, name, v, cls) => {
+    const d = prev[k] != null ? +v - +prev[k] : 0;
+    return `<div class="bar ${cls || ""}"><span class="bl">${esc(name)}</span><span class="bt"><i style="width:${Math.max(4, +v / 9 * 100)}%"></i>${tgt ? `<em style="left:${tgt / 9 * 100}%" title="Mục tiêu ${tgt}"></em>` : ""}</span><b>${(+v).toFixed(1)}</b>${d ? `<small class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"}${Math.abs(d).toFixed(1)}</small>` : "<small></small>"}</div>`;
+  };
+  const sp = ks.map(([k]) => +B[k]);
+  const ov = sp.length === 4 ? ieltsRound(sp.reduce((a, b) => a + b, 0) / 4) : null;
+  return `<div class="bars">${ov != null ? `<div class="ov"><span>Speaking ước lượng${tgt ? ` · <span style="color:var(--bad)">┃</span> mục tiêu ${tgt}` : ""}</span><b>${ov.toFixed(1)}</b></div>` : ""}
+    ${ks.map(([k, n]) => row(k, n, B[k])).join("")}${B.listening != null ? row("listening", "Listening", B.listening, "lis") : ""}</div>`;
+}
+function weekBody(w, prevW) {
+  const li = (arr, cls) => (arr || []).length ? `<ul class="${cls}">${arr.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : "";
+  const pb = (prevW && prevW.bands) || {}, B = w.bands || {};
+  const changes = [...BANDS, ["listening", "Listening"]].filter(([k]) => B[k] != null).map(([k, n]) => {
+    const d = pb[k] != null ? +B[k] - +pb[k] : null;
+    return `<span>${esc(n)} ${(+B[k]).toFixed(1)}${d ? (d > 0 ? ` ▲${d.toFixed(1)}` : ` ▼${Math.abs(d).toFixed(1)}`) : ""}</span>`;
+  }).join("");
+  return `<div class="wk">${w.note ? `<p class="msg">💬 ${esc(w.note)}</p>` : ""}
+    ${changes ? `<div class="stat">${changes}</div>` : ""}
+    ${(w.stats || []).length ? `<div class="stat">${w.stats.map(x => `<span>${esc(x.name)}: ${x.first}% → ${x.last}%</span>`).join("")}</div>` : ""}
+    ${(w.improved || []).length ? `<h4>${prevW ? "Tiến bộ so với tuần trước" : "Em đã tiến bộ"}</h4>${li(w.improved, "good")}` : ""}
+    ${(w.fix || []).length ? `<h4>Còn cần sửa</h4>${li(w.fix, "fix")}` : ""}
+    ${(w.next || []).length ? `<h4>Tuần tới tập trung</h4>${li(w.next, "next")}` : ""}</div>`;
+}
+/* pop-up 1 lần cho nhận xét tuần mới nhất (đã đăng, chưa xem) */
+function maybeWeekPopup() {
+  if (TEACH || !student) return false;
+  const W = weeksOf(student), w = W[W.length - 1];
+  if (!w || w.draft) return false;
+  const key = `wkSeen:${student}`;
+  if (store.get(key, "") === w.week) return false;
+  const sh = $("#weekSheet");
+  sh.innerHTML = `<h3 id="wkTitle">📈 ${esc(w.title || "Nhận xét tuần")}</h3>${weekBody(w, W[W.length - 2])}
+    <div class="row"><button class="primary" id="wkOk">Em hiểu rồi</button><button id="wkGo">Xem tiến độ các tuần</button></div>`;
+  $("#weekModal").hidden = false;
+  const close = () => { store.set(key, w.week); $("#weekModal").hidden = true; };
+  $("#wkOk").addEventListener("click", close);
+  $("#wkGo").addEventListener("click", () => { close(); location.hash = "progress"; });
+  return true;
+}
+$("#weekModal").addEventListener("click", e => { if (e.target.id === "weekModal") { const W = weeksOf(student); if (W.length) store.set(`wkSeen:${student}`, W[W.length - 1].week); $("#weekModal").hidden = true; } });
+function progressChart(W) {
+  const pts = W.filter(w => w.bands);
+  if (!pts.length) return "";
+  const X0 = 46, X1 = 356, Y0 = 196, Y1 = 14, lo = 3, hi = 9;
+  const x = i => pts.length === 1 ? (X0 + X1) / 2 : X0 + (X1 - X0) * i / (pts.length - 1);
+  const y = v => Y0 - (Y0 - Y1) * (v - lo) / (hi - lo);
+  const grid = [3, 4, 5, 6, 7, 8, 9].map(v => `<line x1="${X0}" x2="${X1}" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" stroke-opacity=".12"/><text x="${X0 - 8}" y="${y(v) + 4}" font-size="14" text-anchor="end" fill="currentColor" fill-opacity=".6">${v}</text>`).join("");
+  const keys = [...BANDS.map(b => b[0]), "listening"].filter(k => pts.some(w => w.bands[k] != null));
+  const lines = keys.map((k, ki) => {
+    const off = (ki - (keys.length - 1) / 2) * 5;   // lệch nhẹ để các điểm trùng band không đè nhau
+    const ps = pts.map((w, i) => w.bands[k] != null ? [x(i) + off, y(+w.bands[k])] : null).filter(Boolean);
+    return `<polyline fill="none" stroke="${BAND_COLORS[k]}" stroke-width="3" points="${ps.map(p => p.join(",")).join(" ")}"/>${ps.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="5" fill="${BAND_COLORS[k]}"/>`).join("")}`;
+  }).join("");
+  const labels = pts.map((w, i) => `<text x="${x(i)}" y="222" font-size="14" text-anchor="middle" fill="currentColor" fill-opacity=".6">${esc(w.short || w.week.slice(8, 10) + "/" + w.week.slice(5, 7))}</text>`).join("");
+  const names = { fc: "Fluency", lr: "Vocabulary", gra: "Grammar", p: "Pronunciation", listening: "Listening" };
+  return `<svg viewBox="0 0 400 232" role="img" aria-label="Band từng tiêu chí qua các tuần">${grid}${lines}${labels}</svg>
+    <div class="legend">${keys.map(k => `<span><i style="background:${BAND_COLORS[k]}"></i>${names[k]}</span>`).join("")}</div>`;
+}
+function progressHTML(sid) {
+  const W = weeksOf(sid);
+  if (!W.length) return `<div class="card"><p class="muted">Chưa có nhận xét tuần nào. Cuối mỗi tuần chị sẽ tổng kết em tiến bộ ở đâu, còn sửa gì.</p></div>`;
+  return `<div class="card"><h3 style="margin:0 0 6px">Band qua các tuần</h3>${progressChart(W) || `<p class="muted">Chưa có điểm band.</p>`}</div>
+    ${W.slice().reverse().map((w, i, R) => `<details class="wk" ${i === 0 ? "open" : ""}><summary><span>${esc(w.title || w.week)}${w.draft ? " · bản nháp (HS chưa thấy)" : ""}</span><span class="muted">${esc(w.date || "")}</span></summary>${weekBody(w, R[i + 1])}</details>`).join("")}`;
+}
+function viewProgress() {
+  $("#app").innerHTML = `<button class="back" id="backBtn">← Bài tập</button><h2>📈 Tiến độ theo tuần</h2><section class="prog">${progressHTML(student)}</section>`;
+  $("#backBtn").addEventListener("click", () => { location.hash = ""; });
+}
 /* level card: IELTS criteria + this student's strengths / weaknesses / focus (data in lessons.json: criteria + students[].profile) */
 function profileCard(sid, open) {
   const C = DATA.criteria, S = DATA.students.find(x => x.id === sid);
@@ -794,7 +903,8 @@ function profileCard(sid, open) {
   return `<details class="profile" ${open ? "open" : ""}>
     <summary><h2>📊 Em đang ở đâu</h2>
       ${P.level ? `<span class="lvl">${esc(P.level)}${P.updated ? ` · cập nhật ${esc(P.updated)}` : ""}</span>` : ""}
-      <span class="more">${(P.focus || []).length ? "🎯 3 việc cần tập trung · " : ""}tiêu chí chấm, điểm mạnh, điểm cần sửa ›</span></summary>
+      ${bandBars(sid)}
+      <span class="more">${(P.focus || []).length ? "🎯 3 việc cần tập trung · " : ""}điểm mạnh, điểm cần sửa, tiêu chí chấm ›</span></summary>
     <div class="pbody">${(P.focus || []).length ? `<b>🎯 Tuần này tập trung:</b><ol class="focus">${P.focus.map(f => `<li>${esc(f)}</li>`).join("")}</ol>` : ""}${(C.intro || []).map(t => `<p class="note">${esc(t)}</p>`).join("")}${skill("speaking")}${skill("listening")}</div></details>`;
 }
 /* finished = marked by the teacher, every question of a listening test answered, or every sentence ≥ 80% / every free answer submitted */
@@ -883,7 +993,7 @@ function viewList() {
   $("#app").querySelectorAll(".autow button").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
   $("#app").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { store.set("tab", b.dataset.tab); store.set("libOpen", true); viewList(); }));
   const li = $("#app").querySelector("details.library"); if (li) li.addEventListener("toggle", () => store.set("libOpen", li.open));
-  startTour("list");
+  if (!maybeWeekPopup()) startTour("list");   // nhận xét tuần mới thì hiện trước, tour để lần sau
 }
 
 function renderSentenceHTML(chunks, statuses) {
@@ -2045,7 +2155,7 @@ function viewTeacher() {
       }).join("")}</tbody></table></div></section>` : ""}
     ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
       <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
-      ${profileCard(r.s.id, false)}<div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
+      ${profileCard(r.s.id, false)}<details class="tprog"><summary>📈 Tiến độ theo tuần (${weeksOf(r.s.id).length} tuần)</summary><section class="prog">${progressHTML(r.s.id)}</section></details><div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
         const p = progressOf(L, r.s.id, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[r.s.id] : null;
         return `<button class="trow" data-go="teach~${r.s.id}~${L.id}">
           <div class="t"><b>${esc(L.title)}</b><span>${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""}${H ? " · homework" : ""} · đã thử ${p.tried.length}/${p.idx.length} câu</span>
@@ -2369,6 +2479,7 @@ function route() {
   window.scrollTo(0, 0);
   if (id === "fc") { setNav("fc"); return viewDecks(); }
   if (id === "me") { setNav("me"); return viewMe(); }
+  if (id === "progress") { setNav("progress"); return viewProgress(); }
   const fm = id.match(/^fc-([^~]+)(?:~(.+))?$/);
   if (fm) { const D = myDecks().find(x => x.id === fm[1]); setNav("fc"); if (D && deckOpen(D)) return viewDeck(D, fm[2] || ""); return viewDecks(); }
   setNav(id ? "" : "home");
