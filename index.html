@@ -248,12 +248,30 @@ details.nolog .pick{margin-top:8px}
 .bars .ov b{font-size:20px;color:var(--ink)}
 @media (max-width:420px){.bar{grid-template-columns:86px 1fr 30px 36px;font-size:13px}}
 /* nhận xét tuần + trang tiến độ */
-.wk h4{margin:4px 0 2px;font-size:15px}
-.wk ul{margin:0;padding-left:20px;display:grid;gap:3px;font-size:14.5px}
-.wk .good li::marker{content:"👍 "} .wk .fix li::marker{content:"🔧 "} .wk .next li::marker{content:"🎯 "}
-.wk .stat{display:flex;flex-wrap:wrap;gap:6px}
-.wk .stat span{background:var(--ok-bg);color:var(--ok);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600}
-.wk .msg{background:var(--near-bg);border-radius:12px;padding:10px 12px;font-size:14.5px}
+.wk{display:grid;gap:10px}
+.wk .msg{margin:0;background:var(--near-bg);border-radius:12px;padding:8px 12px;font-size:14px}
+.bchips{display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:6px}
+.bchip{display:grid;justify-items:center;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:6px 4px}
+.bchip small{font-size:11px;color:var(--muted)}.bchip b{font-size:20px;line-height:1.2}
+.bchip em{font-style:normal;font-size:11px;font-weight:700}.bchip em.up{color:var(--ok)}.bchip em.down{color:var(--bad)}
+.sbars{display:grid;gap:6px}
+.slegend{display:flex;gap:6px;align-items:center;font-size:11px;color:var(--muted)}
+.slegend i{display:inline-block;width:14px;height:6px;border-radius:3px}
+.slegend i.f,.sbar i.f{background:var(--line)}.slegend i.l,.sbar i.l{background:var(--ok)}
+.sbar{display:grid;grid-template-columns:minmax(90px,38%) 1fr auto;align-items:center;gap:8px;font-size:13px}
+.sbar .sn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sbar .st{position:relative;height:10px;border-radius:999px;background:var(--bg)}
+.sbar .st i{position:absolute;inset:0 auto 0 0;border-radius:999px}.sbar .st i.l{opacity:.85;height:5px;top:auto}
+.sbar b{font-variant-numeric:tabular-nums}.sbar b small{margin:0 2px;color:var(--muted)}
+.wkg{border-radius:12px;padding:8px 10px}
+.wkg h5{margin:0 0 6px;font-size:14px}
+.wkg.ok{background:var(--ok-bg)}.wkg.bad{background:var(--bad-bg)}.wkg.next{background:var(--near-bg)}
+.wkg .chips{display:grid;gap:6px}
+.wkg .cg{display:grid;gap:3px}.wkg .cg small{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.wkg .cg>div,.wkg .chips{display:flex;flex-wrap:wrap;gap:4px}.wkg .chips{flex-direction:column}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:13px;background:var(--surface)}
+.chip.ok{color:var(--ok)}.chip.bad{color:var(--bad)}
+.wkg ol{margin:0;padding-left:20px;font-size:14px;display:grid;gap:2px}
 .prog{display:grid;gap:14px}
 .prog .card{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:16px 18px}
 .prog svg{width:100%;height:auto;display:block}
@@ -842,19 +860,25 @@ function bandBars(sid) {
   return `<div class="bars">${ov != null ? `<div class="ov"><span>Speaking ước lượng${tgt ? ` · <span style="color:var(--bad)">┃</span> mục tiêu ${tgt}` : ""}</span><b>${ov.toFixed(1)}</b></div>` : ""}
     ${ks.map(([k, n]) => row(k, n, B[k])).join("")}${B.listening != null ? row("listening", "Listening", B.listening, "lis") : ""}</div>`;
 }
+/* nhận xét tuần dạng nhìn lướt: band chip · thanh lần đầu → gần nhất · nhóm chip ✅ / 🔧 · 3 việc tuần tới
+   improved / fix: chuỗi, hoặc nhóm {"t": "Âm cuối", "w": ["career", "desk"]} */
 function weekBody(w, prevW) {
-  const li = (arr, cls) => (arr || []).length ? `<ul class="${cls}">${arr.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : "";
   const pb = (prevW && prevW.bands) || {}, B = w.bands || {};
-  const changes = [...BANDS, ["listening", "Listening"]].filter(([k]) => B[k] != null).map(([k, n]) => {
-    const d = pb[k] != null ? +B[k] - +pb[k] : null;
-    return `<span>${esc(n)} ${(+B[k]).toFixed(1)}${d ? (d > 0 ? ` ▲${d.toFixed(1)}` : ` ▼${Math.abs(d).toFixed(1)}`) : ""}</span>`;
+  const bands = [...BANDS, ["listening", "Listening"]].filter(([k]) => B[k] != null).map(([k, n]) => {
+    const d = pb[k] != null ? +B[k] - +pb[k] : 0;
+    return `<span class="bchip"><small>${esc(n)}</small><b>${(+B[k]).toFixed(1)}</b>${d ? `<em class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"}${Math.abs(d).toFixed(1)}</em>` : ""}</span>`;
   }).join("");
+  const stats = (w.stats || []).map(x => `<div class="sbar"><span class="sn">${esc(x.name)}</span><span class="st"><i class="f" style="width:${x.first}%"></i><i class="l" style="width:${x.last}%"></i></span><b>${x.first}<small>→</small>${x.last}%</b></div>`).join("");
+  const groups = (arr, cls) => (arr || []).map(g => typeof g === "string"
+    ? `<span class="chip ${cls}">${esc(g)}</span>`
+    : `<div class="cg"><small>${esc(g.t)}</small><div>${(g.w || []).map(x => `<span class="chip ${cls}">${esc(x)}</span>`).join("")}</div></div>`).join("");
+  const box = (cls, title, arr) => (arr || []).length ? `<div class="wkg ${cls}"><h5>${title}</h5><div class="chips">${groups(arr, cls)}</div></div>` : "";
   return `<div class="wk">${w.note ? `<p class="msg">💬 ${esc(w.note)}</p>` : ""}
-    ${changes ? `<div class="stat">${changes}</div>` : ""}
-    ${(w.stats || []).length ? `<div class="stat">${w.stats.map(x => `<span>${esc(x.name)}: ${x.first}% → ${x.last}%</span>`).join("")}</div>` : ""}
-    ${(w.improved || []).length ? `<h4>${prevW ? "Tiến bộ so với tuần trước" : "Em đã tiến bộ"}</h4>${li(w.improved, "good")}` : ""}
-    ${(w.fix || []).length ? `<h4>Còn cần sửa</h4>${li(w.fix, "fix")}` : ""}
-    ${(w.next || []).length ? `<h4>Tuần tới tập trung</h4>${li(w.next, "next")}` : ""}</div>`;
+    ${bands ? `<div class="bchips">${bands}</div>` : ""}
+    ${stats ? `<div class="sbars"><div class="slegend"><i class="f"></i>lần đầu <i class="l"></i>gần nhất</div>${stats}</div>` : ""}
+    ${box("ok", prevW ? "✅ Tiến bộ so với tuần trước" : "✅ Đã sửa được", w.improved)}
+    ${box("bad", "🔧 Còn cần sửa", w.fix)}
+    ${(w.next || []).length ? `<div class="wkg next"><h5>🎯 Tuần tới</h5><ol>${w.next.map(t => `<li>${esc(t)}</li>`).join("")}</ol></div>` : ""}</div>`;
 }
 /* pop-up 1 lần cho nhận xét tuần mới nhất (đã đăng, chưa xem) */
 function maybeWeekPopup() {
@@ -962,7 +986,7 @@ function profileCard(sid, open) {
     const crit = (C[k] || []).map(c => {
       const m = ((P[k] || {}).by || {})[c.id] || {};
       const li = (arr, cls, icon) => (arr || []).map(t => `<li class="${cls}">${icon} ${esc(t)}</li>`).join("");
-      const body = li(m.good, "good", "👍") + li(m.weak, "weak", "🔧");
+      const body = li(m.good, "good", "✅") + li(m.weak, "weak", "🔧");
       return `<div class="crit"><b>${esc(c.name)}</b><span class="what">${esc(c.what)}</span>${body ? `<ul class="pl">${body}</ul>` : ""}</div>`;
     }).join("");
     const note = (P[k] || {}).note;
@@ -971,7 +995,7 @@ function profileCard(sid, open) {
       const R = wordReport(sid);
       if (R.weak.length || R.fixed.length) auto = `<div class="crit"><b>🤖 Máy nghe được từ bài em luyện</b><span class="what">Lấy từ lần nói gần nhất của từng câu. Bấm một từ để luyện lại đúng câu đó.</span>
         ${R.weak.length ? `<span class="weak">🔧 Còn đọc chưa đúng:</span><div class="autow">${R.weak.map(([w, x]) => `<button data-go="${esc(x.L)}">${esc(w)}</button>`).join("")}</div>` : ""}
-        ${R.fixed.length ? `<span class="good">👍 Đã sửa được (lần đầu sai, giờ đúng): ${esc(R.fixed.join(", "))}</span>` : ""}</div>`;
+        ${R.fixed.length ? `<span class="good">✅ Đã sửa được (lần đầu sai, giờ đúng): ${esc(R.fixed.join(", "))}</span>` : ""}</div>`;
     }
     return `<div class="skill"><h3>${k === "speaking" ? "🗣️ Speaking" : "🎧 Listening"}</h3>${note ? `<p class="note">${esc(note)}</p>` : ""}${crit}${auto}</div>`;
   };
@@ -1905,7 +1929,7 @@ function feedbackHTML(sid, lid, i) {
   return `<div class="fb"><h4>${f.auto ? "🤖 Nhận xét nhanh" : "📝 Nhận xét của chị"}${f.date ? ` · ${esc(f.date)}` : ""}${f.band ? ` · ước lượng band ${esc(f.band)}` : ""}</h4>
     ${f.auto ? `<p class="muted">Máy chấm theo 4 tiêu chí IELTS từ bản chép lời của em; chị sẽ xem lại. Phát âm thì chị nghe trực tiếp.</p>` : ""}
     ${f.said ? `<p class="said">Em đã nói: “${esc(f.said)}”</p>` : ""}
-    ${(f.good || []).length ? `<ul>${li(f.good, "good", "👍")}</ul>` : ""}
+    ${(f.good || []).length ? `<ul>${li(f.good, "good", "✅")}</ul>` : ""}
     ${(f.fix || []).length ? `<ul>${f.fix.map(x => `<li class="weak fix">🔧 ${esc(x.err)} → <b>${esc(x.fix)}</b>${x.why ? ` <span class="muted">(${esc(x.why)})</span>` : ""}</li>`).join("")}</ul>` : ""}
     ${(f.tips || []).length ? `<b>💡 Cách khắc phục</b><ul>${li(f.tips, "", "")}</ul>` : ""}
     ${f.better ? `<b>✨ Bản nâng cấp để luyện nói</b><p>${esc(f.better)}</p>` : ""}

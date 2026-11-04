@@ -23,7 +23,7 @@
       "gra": 4.0,
       "p": 4.5
      },
-     "note": "Tuần này em luyện rất chăm: 59 câu, câu nào cũng làm lại tới khi đạt. Âm cuối là phần em tiến bộ rõ nhất đó!",
+     "note": "59 câu, câu nào cũng làm lại tới khi đạt. Âm cuối tiến bộ rõ nhất!",
      "stats": [
       {
        "name": "Âm cuối – 21 âm",
@@ -37,22 +37,75 @@
       }
      ],
      "improved": [
-      "Âm cuối khó đã đúng: career (R cuối, lần đầu máy nghe thành “Korea”), desk /sk/, finish /ʃ/, prestige /ʒ/, staff /f/, email /l/.",
-      "Đánh vần tên, đọc số rõ: B-R-Y-A-N-T, 555-0164.",
-      "Đọc trôi các cụm khó: snowed under with work, a hectic schedule, an internship in marketing."
+      {
+       "t": "Âm cuối",
+       "w": [
+        "career",
+        "desk",
+        "finish",
+        "prestige",
+        "staff",
+        "email"
+       ]
+      },
+      {
+       "t": "Tên, số",
+       "w": [
+        "B-R-Y-A-N-T",
+        "555-0164"
+       ]
+      },
+      {
+       "t": "Cụm khó",
+       "w": [
+        "snowed under with work",
+        "a hectic schedule"
+       ]
+      }
      ],
      "fix": [
-      "job: /dʒ/ đầu và /b/ cuối, máy vẫn nghe thành “chop” (0%).",
-      "plans: /pl/ đầu và đuôi /nz/, máy nghe “plants”, “blaze” (57%).",
-      "Cụm phụ âm cuối -st, -ft bị nuốt: first, draft, Maple Street.",
-      "Thiếu /z/ ở is và professionals.",
-      "I'm, I'll, I've em đọc thành “Am”, “I”: mất âm /m/ /l/ /v/.",
-      "Từ dài: badminton, squeeze in, binge-watch (máy nghe “Batman tongue”)."
+      {
+       "t": "Âm đầu / cuối",
+       "w": [
+        "job → “chop”",
+        "plans → “plants”"
+       ]
+      },
+      {
+       "t": "Cụm cuối -st, -ft",
+       "w": [
+        "first",
+        "draft",
+        "Maple Street"
+       ]
+      },
+      {
+       "t": "Thiếu /z/",
+       "w": [
+        "is",
+        "professionals"
+       ]
+      },
+      {
+       "t": "I'm, I'll, I've",
+       "w": [
+        "I'm → “Am”",
+        "I'll → “I”"
+       ]
+      },
+      {
+       "t": "Từ dài",
+       "w": [
+        "badminton",
+        "squeeze in",
+        "binge-watch"
+       ]
+      }
      ],
      "next": [
-      "Luyện cặp /b/–/p/ và /dʒ/–/tʃ/: job – chop, big – pig.",
-      "Đọc chậm cụm cuối rồi tăng tốc: first, draft, plans, street.",
-      "I'm, I'll, I've: nói lướt nhưng vẫn nghe được /m/, /l/, /v/."
+      "Cặp job – chop, big – pig",
+      "Đọc chậm cụm cuối: first, draft, street",
+      "I'm / I'll / I've: nghe được /m/ /l/ /v/"
      ],
      "n": 3
     }
@@ -3870,7 +3923,7 @@
  "criteria": {
   "intro": [
    "IELTS Speaking chấm 4 tiêu chí, mỗi tiêu chí 25%. Listening chấm theo số câu đúng trên 40 câu.",
-   "👍 = điểm mạnh em đang có · 🔧 = chỗ cần sửa. Chị cập nhật sau mỗi buổi."
+   "✅ = điểm mạnh em đang có · 🔧 = chỗ cần sửa. Chị cập nhật sau mỗi buổi."
   ],
   "speaking": [
    {
