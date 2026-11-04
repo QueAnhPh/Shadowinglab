@@ -278,6 +278,8 @@ details.video video{display:block;width:100%;max-width:100%;border-radius:0 0 12
 .w.bad{color:var(--bad);text-decoration:underline 3px wavy var(--bad);text-underline-offset:5px}
 .w.miss{color:var(--miss);text-decoration:line-through 2px}
 .actions{display:flex;flex-wrap:wrap;gap:8px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0 2px;font-size:15px}
+.aznote{margin:0 0 8px;font-size:14px;color:var(--muted)}
 .speed{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0 10px;font-size:14px}
 .speed button{padding:4px 12px;border-radius:999px;font-size:14px}
 .speed button.on{background:var(--accent,#e8b04a);color:#fff;border-color:transparent;font-weight:700}
@@ -567,7 +569,8 @@ function heardWords(transcript) {
     .flatMap(w => { const d = w.replace(/[^0-9]/g, ""); return d && d === w.replace(/[.,!?;:]/g, "") ? spellNumber(d) : [w]; })
     .map(normWord).filter(Boolean);
 }
-function align(exp, got) { // returns per-expected index: {heard|null}
+function align(exp, got) { return alignIdx(exp, got).map(j => j == null ? null : got[j]); }
+function alignIdx(exp, got) { // returns per-expected index: index into got | null
   const m = exp.length, n = got.length, INF = 1e9;
   const D = Array.from({length: m + 1}, () => Array(n + 1).fill(INF)), B = Array.from({length: m + 1}, () => Array(n + 1).fill(0));
   D[0][0] = 0;
@@ -579,7 +582,7 @@ function align(exp, got) { // returns per-expected index: {heard|null}
   const out = Array(m).fill(null); let i = m, j = n;
   while (i > 0 || j > 0) {
     const b = B[i][j];
-    if (b === 3) { out[i-1] = got[j-1]; i--; j--; }
+    if (b === 3) { out[i-1] = j - 1; i--; j--; }
     else if (b === 1) { out[i-1] = null; i--; }
     else { j--; }
   }
@@ -1275,6 +1278,119 @@ function loadWhisper() {
   }).then(() => { whisperState = "ready"; store.set("whisperLoaded", true); setEngineStatus("sẵn sàng."); })
     .catch(() => { whisperState = "error"; setEngineStatus("tải chưa được. Kiểm tra mạng rồi tải lại trang."); });
 }
+/* ---------- Azure: chấm từng âm (functions/api/pron.js). Chưa cài key → web chạy Whisper như cũ ---------- */
+let AZ = null;
+fetch("/api/pron").then(r => r.ok ? r.json() : {}).then(j => { AZ = !!j.enabled; }).catch(() => { AZ = false; });
+const vnDay = () => new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
+const azureOn = () => AZ === true && !!cloudUser() && store.get("azPool", "") !== vnDay().slice(0, 7) && store.get("azLimit", "") !== vnDay();
+function trimSilence(f) {   // bỏ khoảng lặng đầu/cuối, giữ 0.25 s đệm, tối đa 15 s
+  const F = 320, th = 0.012; let a = -1, b = -1;
+  for (let k = 0; k + F <= f.length; k += F) {
+    let s = 0; for (let m = k; m < k + F; m += 2) s += f[m] * f[m];
+    if (Math.sqrt(s / (F / 2)) > th) { if (a < 0) a = k; b = k + F; }
+  }
+  if (a < 0) return f;
+  a = Math.max(0, a - 4000); b = Math.min(f.length, b + 4000, a + 15 * 16000);
+  return f.subarray(a, b);
+}
+function toWav(f) {
+  const buf = new ArrayBuffer(44 + f.length * 2), v = new DataView(buf);
+  const w = (o, t) => { for (let k = 0; k < t.length; k++) v.setUint8(o + k, t.charCodeAt(k)); };
+  w(0, "RIFF"); v.setUint32(4, 36 + f.length * 2, true); w(8, "WAVEfmt "); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, 16000, true); v.setUint32(28, 32000, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, "data"); v.setUint32(40, f.length * 2, true);
+  for (let k = 0; k < f.length; k++) v.setInt16(44 + k * 2, Math.max(-1, Math.min(1, f[k])) * 0x7fff, true);
+  return buf;
+}
+async function azureGrade(L, i, audio) {
+  try {
+    const tok = await window.Cloud.user.getIdToken();
+    const r = await fetch(`/api/pron?lesson=${encodeURIComponent(L.id)}&i=${i}`, { method: "POST", headers: { "x-id-token": tok, "content-type": "audio/wav" }, body: toWav(trimSilence(audio)) });
+    const j = await r.json().catch(() => ({}));
+    if (j.limit) store.set("azLimit", vnDay());
+    if (j.pool) store.set("azPool", vnDay().slice(0, 7));
+    if (j.off) AZ = false;
+    return j;
+  } catch (e) { return null; }
+}
+const CONS = /^(p|b|t|d|k|g|f|v|θ|ð|s|z|ʃ|ʒ|h|tʃ|dʒ|m|n|ŋ|l|ɹ|r|j|w)$/;
+const SOUNDS = [
+  [/^(ɹ|r|ɝ|ɚ)$/, "R", "cong đầu lưỡi lùi ra sau, không chạm vòm miệng, môi hơi tròn, giữ âm R."],
+  [/^ʃ$/, "/ʃ/ (sh)", "chu môi ra trước, lưỡi lùi sau, đẩy hơi như “suỵt”."],
+  [/^ʒ$/, "/ʒ/", "khẩu hình như /ʃ/ nhưng rung cổ họng."],
+  [/^tʃ$/, "/tʃ/ (ch)", "chu môi, đầu lưỡi chạm lợi trên rồi bật hơi."],
+  [/^dʒ$/, "/dʒ/ (j)", "như /tʃ/ nhưng rung cổ họng."],
+  [/^θ$/, "/θ/ (th)", "đặt đầu lưỡi giữa hai răng, thổi hơi, không rung."],
+  [/^ð$/, "/ð/ (th)", "đặt đầu lưỡi giữa hai răng, rung cổ họng."],
+  [/^[sz]$/, "/s/ /z/", "khép răng, đầu lưỡi gần lợi trên, xì hơi rõ."],
+  [/^[td]$/, "/t/ /d/", "đầu lưỡi chạm lợi trên rồi bật nhẹ."],
+  [/^[kg]$/, "/k/ /g/", "cuống lưỡi chạm vòm mềm rồi bật."],
+  [/^[pb]$/, "/p/ /b/", "mím hai môi rồi bật hơi."],
+  [/^[fv]$/, "/f/ /v/", "răng trên chạm nhẹ môi dưới, thổi hơi."],
+  [/^l$/, "/l/", "đầu lưỡi chạm lợi trên và giữ."],
+  [/^(m|n|ŋ)$/, "âm mũi", "ngậm miệng (m) hoặc lưỡi chặn (n, ng), cho hơi ra mũi."],
+];
+function soundTip(ph) {   // phonemes of one word → câu nhận xét ngắn về âm yếu nhất
+  if (!ph.length) return "";
+  let weak = ph.map((p, k) => ({ ...p, k })).filter(p => p.acc < 60);
+  if (!weak.length) weak = [ph.map((p, k) => ({ ...p, k })).sort((a, b) => a.acc - b.acc)[0]];
+  const runs = [];
+  for (let n = 0; n < weak.length; n++) {
+    const run = [weak[n]];
+    while (n + 1 < weak.length && weak[n + 1].k === run[run.length - 1].k + 1 && CONS.test(weak[n + 1].p) && CONS.test(run[0].p)) run.push(weak[++n]);
+    runs.push(run);
+  }
+  runs.sort((x, y) => Math.min(...x.map(p => p.acc)) - Math.min(...y.map(p => p.acc)));   // âm sai nặng nhất trước
+  const tips = [];
+  for (const run of runs.slice(0, 2)) {
+    const final = !ph.slice(run[run.length - 1].k + 1).some(p => !CONS.test(p.p)) && CONS.test(run[0].p);
+    if (run.length > 1) { tips.push(`Cụm phụ âm${final ? " cuối" : ""} /${run.map(p => p.p).join("")}/ chưa đủ: đọc chậm, đủ từng âm.`); continue; }
+    const p = run[0], S = SOUNDS.find(x => x[0].test(p.p));
+    if (S) tips.push(`${final ? "Âm cuối" : "Âm"} ${S[1]} chưa rõ: ${S[2]}`);
+    else if (!CONS.test(p.p)) tips.push(`Nguyên âm /${p.p}/ chưa chuẩn: nghe mẫu 0.6× rồi bắt chước khẩu hình.`);
+    else tips.push(`Âm /${p.p}/ chưa chuẩn.`);
+  }
+  return tips.join(" ");
+}
+function gradeAzure(L, i, card, chunks, exp, az, clipP) {
+  const aw = az.words.filter(w => w.err !== "Insertion");
+  const idx = alignIdx(exp, aw.map(w => normWord(speechWord(w.w))));
+  const statuses = exp.map((e, k) => {
+    const w = idx[k] == null ? null : aw[idx[k]];
+    if (!w || w.err === "Omission") return { cls: "miss" };
+    const weak = w.ph.some(p => p.acc < 60);
+    if (w.acc >= 80 && !weak) return { cls: "ok" };
+    return { cls: w.acc >= 60 ? "near" : "bad", tip: soundTip(w.ph), acc: w.acc };
+  });
+  const score = Math.round(statuses.reduce((s, x) => s + (x.cls === "ok" ? 1 : x.cls === "near" ? 0.5 : 0), 0) / exp.length * 100);
+  const key = `best:${student}:${L.id}`, best = store.get(key, {});
+  if (best[i] == null || score > best[i]) { best[i] = score; store.set(key, best); syncBest(L.id, best); card.querySelector(".best").textContent = "Tốt nhất: " + score + "%"; }
+  card.querySelector(".sent").innerHTML = renderSentenceHTML(chunks, statuses);
+  recordTake(L, i, card, score, az.display || aw.map(w => w.w).join(" "), statuses, clipP);
+  card.querySelectorAll(".chunk").forEach(ch => ch.addEventListener("click", () => {
+    const span = L.sentences[i].chunks[+ch.dataset.c]; if (span) playSpan(span[0], span[1], ch);
+  }));
+  const raws = chunks.flat(), seen = new Set();
+  const fixes = statuses.map((st, k) => ({ st, w: exp[k], raw: raws[k].raw })).filter(x => x.st.cls !== "ok" && !seen.has(x.w) && seen.add(x.w));
+  const said = statuses.filter(x => x.cls !== "miss").length, sounds = statuses.filter(x => x.cls === "near" || x.cls === "bad").length;
+  const sc = az.scores || {}, num = v => v == null ? "–" : Math.round(v);
+  const verdict = score >= 90 ? "Giỏi quá! Qua câu tiếp theo được rồi." : score >= 80 ? "Đạt rồi! Sửa nốt mấy âm dưới là xịn." : score >= 50 ? "Gần được rồi. Bật 0.6×, nghe kỹ các âm dưới rồi nói lại nha." : "Từ từ thôi. Bấm Nghe mẫu, rồi nói lại chậm và rõ nha.";
+  const res = card.querySelector(".result");
+  res.hidden = false;
+  res.innerHTML = `
+    <div class="cheer"><img src="stickers/${score >= 90 ? "wave" : score >= 80 ? "wink" : score >= 50 ? "cup-cat" : "sleep"}.svg" alt="">
+      <div class="score"><b style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--near)" : "var(--bad)"}">${score}%</b><span>${verdict}</span></div></div>
+    <div class="layers">
+      <span>📖 Đọc đủ từ: <b>${said}/${exp.length}</b></span>
+      <span>${sounds ? `🎯 Âm khó: <b>${sounds} chỗ cần sửa</b>` : `🎯 <b>Chuẩn âm</b> ✅`}</span>
+    </div>
+    <p class="muted small">Chính xác ${num(sc.acc)} · Trôi chảy ${num(sc.flu)}${sc.pros != null ? ` · Ngữ điệu ${num(sc.pros)}` : ""}${az.quota && az.quota.left <= 15 ? ` · còn ${az.quota.left} lượt chấm kỹ tuần này` : ""}</p>
+    ${fixes.length ? `<ul class="fixes">${fixes.map(f => {
+      const ipa = DATA.ipa[f.w], tip = DATA.tips[f.w];
+      const kind = f.st.cls === "miss" ? (FUNC.has(f.w) ? `Em bỏ sót từ nhỏ “${f.w}”. Từ nhỏ vẫn đọc, chỉ đọc lướt nhẹ.` : `Em bỏ sót “${f.w}”.`) : (f.st.tip || "Đọc rõ hơn nha.");
+      return `<li class="k-${f.st.cls}"><span class="word">${esc(speechWord(f.raw).replace(/[.,!?;:]+$/, ""))}${ipa ? ` <span class="ipa">/${esc(ipa)}/</span>` : ""}</span>
+        <span>${esc(kind)}</span>${tip ? `<span class="tip">${esc(tip)}</span>` : ""}</li>`;
+    }).join("")}</ul>` : `<p class="okmsg">Đọc đủ và chuẩn âm hết các từ.</p>`}`;
+}
 function resample(chunks, rate) {
   const n = chunks.reduce((a, c) => a + c.length, 0), src = new Float32Array(n);
   let o = 0; for (const c of chunks) { src.set(c, o); o += c.length; }
@@ -1290,7 +1406,7 @@ async function listenWhisper(L, i, card, btn) {
   const live = card.querySelector(".live");
   const chunks = parseSentence(L.sentences[i].text);
   const exp = chunks.flat().map(w => w.key);
-  loadWhisper();
+  if (!azureOn()) loadWhisper();
   /* create and resume the audio context inside the tap: Safari only allows it during the gesture */
   const ctx = new (window.AudioContext || window.webkitAudioContext)();
   const resumed = ctx.resume().catch(() => {});
@@ -1335,12 +1451,24 @@ async function listenWhisper(L, i, card, btn) {
     if (!keep || !spoke) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
     const audio = resample(bufs, rate);
     btn.disabled = true;
+    let azNote = "";
+    if (azureOn()) {
+      live.textContent = "Đang chấm kỹ phát âm…";
+      const az = await azureGrade(L, i, audio);
+      if (az && az.words) { live.textContent = ""; btn.disabled = false; gradeAzure(L, i, card, chunks, exp, az, clipP); return; }
+      if (az && az.nomatch) { live.textContent = "Máy chưa nghe rõ. Em đọc lại to và rõ hơn nha (chưa tính lượt)."; btn.disabled = false; return; }
+      azNote = az && az.limit ? "Hôm nay em đã dùng hết lượt chấm kỹ (mai có thêm). Lần này máy chỉ chấm đọc đủ từ, chưa chấm âm khó."
+        : az && az.pool ? "Lớp đã dùng hết lượt chấm kỹ của tháng. Máy tạm chỉ chấm đọc đủ từ; phần âm khó chị sẽ nghe bản ghi."
+        : "Chưa chấm kỹ được (mạng chậm). Lần này máy chỉ chấm đọc đủ từ.";
+      loadWhisper();
+    }
     live.textContent = whisperState === "ready" ? "Đang chấm…" : "Đang tải bộ chấm giọng, chờ chút nha…";
     try {
       const text = await window.Whisper.transcribe(audio);
       live.textContent = "";
       if (!text) { live.textContent = "Máy chưa nghe rõ. Em đọc lại to hơn nha."; return; }
       grade(L, i, card, chunks, exp, text, [[text]], clipP);
+      if (azNote) { const res = card.querySelector(".result"); res.insertAdjacentHTML("afterbegin", `<p class="aznote">ℹ️ ${esc(azNote)}</p>`); }
     } catch (e) {
       live.textContent = "Chưa chấm được. Kiểm tra mạng rồi thử lại.";
     } finally { btn.disabled = false; }
@@ -1408,7 +1536,7 @@ try {
 const otherIOSBrowser = isIOS && /CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(navigator.userAgent);
 function listen(L, i, card, btn) {
   if (rec) { rec._finish ? rec._finish() : rec.stop(); return; }
-  if (useWhisper()) { listenWhisper(L, i, card, btn); return; }
+  if (useWhisper() || azureOn()) { listenWhisper(L, i, card, btn); return; }
   if (otherIOSBrowser) { showMic("safari"); return; }
   if (!store.get("micOK", false)) { showMic("ask"); return; }
   player.pause();
