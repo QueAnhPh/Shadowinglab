@@ -22,6 +22,7 @@ css = """
 @page { size: A4; margin: 11mm 11mm 15mm 11mm;
   @bottom-right { content: counter(page) "/" counter(pages); font: 7pt 'DejaVu Sans'; color:#888; } }
 body { font-family: 'DejaVu Sans', sans-serif; font-size: 9.6pt; line-height: 1.5; color:#1d2433; }
+h1 { bookmark-state: closed; } h2 { bookmark-level: 2; bookmark-state: closed; } h3 { bookmark-level: 3; } h4, h5, h6 { bookmark-level: none; }
 h1 { font-size: 18pt; color:#1f3a68; margin: 0 0 8px; border-bottom: 2px solid #1f3a68; padding-bottom:3px; }
 h1#student, h1#answerkey { page-break-before: always; }
 h2 { font-size: 13pt; color:#1f3a68; margin: 16px 0 6px; }
