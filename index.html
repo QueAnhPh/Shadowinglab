@@ -943,7 +943,7 @@ function weekFolders(sid, mine) {
     const review = w ? `<details class="wreview" ${wi === W.length - 1 ? "open" : ""}><summary>📈 Tổng kết tuần ${n}${W[wi - 1] ? ` · so với tuần ${weekNo(W[wi - 1], sid)}` : ""}${w.draft ? " · bản nháp" : ""}</summary>${weekBody(w, W[wi - 1])}</details>` : "";
     return `<details class="wfold${n === now ? " now" : ""}" data-n="${n}" ${n === openN ? "open" : ""}>
       <summary><span class="wh"><b>📁 Tuần ${n}</b><span>${weekRange(sid, n)}${topics ? " · " + esc(topics) : ""}</span></span>
-        <span class="wp">${w && !w.draft ? "📈 " : ""}${!open.length ? "🔒 mở dần" : `${doneN}/${open.length} bài`}${open.length ? ` <span class="ring sm" style="--p:${pct}"><i>${pct}%</i></span>` : ""}</span></summary>
+        <span class="wp">${w && !w.draft ? "📈 " : ""}${!open.length ? "bài mở theo ngày" : `${doneN}/${open.length} bài`}${open.length ? ` <span class="ring sm" style="--p:${pct}"><i>${pct}%</i></span>` : ""}</span></summary>
       ${review}
       <div class="wgrid">
         <div class="wcol"><h4>🗣️ Speaking</h4>${sub("🎙 Tự trả lời", sp.filter(L => !isShadow(L)))}${sub("🔁 Shadowing", sp.filter(isShadow))}${sp.length ? "" : `<p class="muted small">Tuần này không có bài nói.</p>`}</div>
@@ -1003,7 +1003,8 @@ function todoRow(L, note, cls) {
   return `<button class="trow ${cls || ""}" data-id="${L.id}"><span class="tk">${kindOf(L)}</span><span class="t"><b>${esc(L.title)}</b>${note ? `<span>${note}</span>` : ""}</span><span class="go">›</span></button>`;
 }
 function viewList() {
-  const mine = DATA.lessons.filter(L => L.for.includes(student));
+  // HS chỉ thấy bài đã tới ngày mở (bài ngày sau ẩn hẳn, không hiện 🔒 để đỡ áp lực); giáo viên thấy hết
+  const mine = DATA.lessons.filter(L => L.for.includes(student) && !lockedUntil(L));
   const now = new Date(), today = isoDay(now);
   const mon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
   const days = [...Array(7)].map((_, k) => { const d = new Date(mon); d.setDate(mon.getDate() + k); return d; });
@@ -1032,7 +1033,7 @@ function viewList() {
       const icon = done ? "✅" : locked ? "🔒" : isToday ? "▶️" : "⚠️";
       const first = ls.find(L => !isDone(L)) || ls[0];
       return `<button class="day ${done ? "ok" : locked ? "lock" : isToday ? "now" : "late"}" ${locked ? "disabled" : `data-id="${first.id}"`} title="${esc(ls.map(L => L.title).join(" · "))}"><b>${WD_SHORT[d.getDay()]}</b><span>${d.getDate()}/${d.getMonth() + 1}</span><i>${icon}</i><small>${ls.map(L => L.type === "gap" ? "🎧" : "🗣️").join("")}</small></button>`;
-    }).join("")}</div><p class="muted small">✅ xong · ▶️ hôm nay · ⚠️ chưa làm · 🔒 chưa mở</p></section>` : "";
+    }).join("")}</div><p class="muted small">✅ xong · ▶️ hôm nay · ⚠️ chưa làm · bài ngày sau sẽ hiện đúng ngày đó</p></section>` : "";
   // still owed
   const oweHTML = oweIds.size ? `<section class="owe"><h3>⏰ Còn phải làm</h3>
     ${lateWeek.map(L => todoRow(L, `Bài ${VI_WD[parseDay(L.opens).getDay()]} · tuần này`, "late")).join("")}
