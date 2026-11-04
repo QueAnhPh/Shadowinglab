@@ -12,9 +12,9 @@
    ],
    "weekly": [
     {
-     "week": "2026-11-02",
-     "short": "2–8/11",
-     "title": "Tuần 2–8/11 · Final sounds + Part 1",
+     "week": "2026-10-29",
+     "short": "Tuần 3",
+     "title": "Tuần 3 · 29/10–4/11 · Final sounds + Part 1",
      "date": "8/11/2026",
      "draft": true,
      "bands": {
@@ -53,9 +53,13 @@
       "Luyện cặp /b/–/p/ và /dʒ/–/tʃ/: job – chop, big – pig.",
       "Đọc chậm cụm cuối rồi tăng tốc: first, draft, plans, street.",
       "I'm, I'll, I've: nói lướt nhưng vẫn nghe được /m/, /l/, /v/."
-     ]
+     ],
+     "n": 3
     }
-   ]
+   ],
+   "weeks": {
+    "start": "2026-10-15"
+   }
   },
   {
    "id": "thu",
@@ -66,7 +70,10 @@
    "done": [
     "s1-thu",
     "s1-my-weekend"
-   ]
+   ],
+   "weeks": {
+    "start": "2026-10-15"
+   }
   },
   {
    "id": "vananh",
@@ -129,6 +136,9 @@
      "note": "Chưa có bài Listening. Chị sẽ đánh giá sau bài nghe đầu tiên.",
      "by": {}
     }
+   },
+   "weeks": {
+    "start": "2026-10-31"
    }
   }
  ],

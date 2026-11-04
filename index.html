@@ -210,6 +210,29 @@ details.nolog .pick{margin-top:8px}
 .crit .good{color:var(--ok)}
 .crit .weak{color:var(--bad)}
 .profile .note{font-size:13px;color:var(--muted)}
+/* thư mục tuần: tuần xếp dọc · trong tuần Speaking | Listening nằm ngang · trong Speaking: Tự trả lời / Shadowing xếp dọc */
+.weeks{display:grid;gap:10px}.weeks>h3{margin:6px 0 0;font-size:17px}
+.wfold{background:var(--surface);border-radius:20px;box-shadow:var(--shadow);padding:0}
+.wfold.now{border-left:5px solid var(--amber)}
+.wfold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px}
+.wfold>summary::-webkit-details-marker{display:none}
+.wfold .wh{display:grid;gap:2px;min-width:0}.wfold .wh b{font-size:17px}.wfold .wh span{font-size:13px;color:var(--muted)}
+.wfold .wp{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);flex:none}
+.ring.sm{width:38px;height:38px;font-size:10px}.ring.sm i{width:30px;height:30px}
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 12px 14px}
+.wcol{display:grid;gap:6px;align-content:start;min-width:0}
+.wcol h4{margin:0;font-size:14px;padding:6px 8px;border-radius:10px;background:var(--soft,var(--other))}
+.wsub{border:1px solid var(--line);border-radius:12px;padding:4px 6px}
+.wsub>summary{cursor:pointer;font-size:13px;font-weight:700;padding:4px 2px}
+.wsub .wrow+.wrow{margin-top:4px}
+.wrow{display:flex;gap:8px;align-items:center;width:100%;text-align:left;padding:8px;border-radius:12px;background:var(--bg);border:none;box-shadow:none;min-height:0;font-weight:400}
+.wrow .wi{flex:none;width:30px;text-align:center;font-size:15px}.wrow .wi b{font-size:12px;color:var(--accent)}
+.wrow .wt{display:grid;gap:1px;min-width:0}.wrow .wt b{font-size:13.5px;font-weight:600;overflow-wrap:anywhere}.wrow .wt span{font-size:12px;color:var(--muted)}
+.wrow.done{opacity:.6}.wrow.locked{opacity:.5}
+.wlist{display:grid;gap:6px;padding:0 12px 14px}
+.wreview{margin:0 12px 12px;padding:10px 12px;border-radius:14px;background:var(--ok-bg);display:grid;gap:6px}
+.wreview>summary{cursor:pointer;font-weight:700;font-size:15px}
+@media (max-width:360px){.wgrid{grid-template-columns:1fr}}
 /* band bars: điểm từng tiêu chí, vạch mục tiêu, ▲▼ so với tuần trước */
 .bars{display:grid;gap:7px;margin:2px 0}
 .bar{display:grid;grid-template-columns:104px 1fr 34px 40px;align-items:center;gap:8px;font-size:14px}
@@ -878,6 +901,58 @@ function viewProgress() {
   $("#app").innerHTML = `<button class="back" id="backBtn">← Bài tập</button><h2>📈 Tiến độ theo tuần</h2><section class="prog">${progressHTML(student)}</section>`;
   $("#backBtn").addEventListener("click", () => { location.hash = ""; });
 }
+/* ---------- thư mục bài tập theo tuần (students[].weeks.start = ngày bắt đầu tuần 1, thường là ngày buổi S&L) ---------- */
+const DAY = 864e5;
+function weekStart(sid) { const S = DATA.students.find(x => x.id === sid); return S && S.weeks && S.weeks.start ? parseDay(S.weeks.start) : null; }
+function weekOfDate(sid, d) { const st = weekStart(sid); return st ? Math.floor((d - st) / DAY / 7) + 1 : null; }
+function weekOfLesson(sid, L) {
+  if (L.week) return L.week;
+  const H = homeworkOf(L), st = weekStart(sid);
+  if (!st) return null;
+  if (H && H.deadline) return Math.floor((parseDay(H.deadline) - st - DAY) / DAY / 7) + 1;   // hạn nộp = buổi đầu tuần sau
+  if (L.opens) return weekOfDate(sid, parseDay(L.opens));
+  return null;
+}
+function weekRange(sid, n) {
+  const a = new Date(weekStart(sid).getTime() + (n - 1) * 7 * DAY), b = new Date(a.getTime() + 6 * DAY);
+  return a.getMonth() === b.getMonth() ? `${a.getDate()}–${b.getDate()}/${b.getMonth() + 1}` : `${a.getDate()}/${a.getMonth() + 1}–${b.getDate()}/${b.getMonth() + 1}`;
+}
+function weekNo(w, sid) { return w.n || (w.week ? weekOfDate(sid, parseDay(w.week)) : null); }
+function isShadow(L) { return !L.sentences.some(s => s.free); }
+function weekRow(L) {
+  const lock = lockedUntil(L), done = isDone(L), p = lock ? 0 : lessonProgress(L);
+  const ic = lock ? "🔒" : done ? "✅" : p > 0 ? `<b>${p}%</b>` : "▶️";
+  const sub = lock ? `Mở ${esc(lock)}` : L.type === "gap" ? "Nghe điền từ" : L.type === "dictation" ? "Nghe chép" : `${L.sentences.filter(s => isMine(L, s)).length} câu`;
+  return `<button class="wrow${done ? " done" : ""}${lock ? " locked" : ""}" ${lock ? "disabled" : `data-id="${L.id}"`}><span class="wi">${ic}</span><span class="wt"><b>${esc(L.title)}</b><span>${sub}</span></span></button>`;
+}
+function weekFolders(sid, mine) {
+  if (!weekStart(sid)) return "";
+  const by = new Map(), other = [];
+  mine.forEach(L => { const n = weekOfLesson(sid, L); if (n == null) other.push(L); else { if (!by.has(n)) by.set(n, []); by.get(n).push(L); } });
+  const W = weeksOf(sid); W.forEach(w => { const n = weekNo(w, sid); if (n && !by.has(n)) by.set(n, []); });
+  const now = weekOfDate(sid, new Date()), ns = [...by.keys()].sort((a, b) => b - a);
+  const openN = ns.find(n => n <= now) ?? ns[ns.length - 1];
+  const col = (title, ls, empty) => `<div class="wcol"><h4>${title}</h4>${ls.length ? ls.map(weekRow).join("") : `<p class="muted small">${empty}</p>`}</div>`;
+  const sub = (title, ls) => ls.length ? `<details class="wsub" open><summary>${title} <span class="muted">${ls.filter(isDone).length}/${ls.length}</span></summary>${ls.map(weekRow).join("")}</details>` : "";
+  const folders = ns.map(n => {
+    const ls = by.get(n), sp = ls.filter(L => skillOf(L) === "Speaking"), li = ls.filter(L => skillOf(L) === "Listening");
+    const open = ls.filter(L => !lockedUntil(L)), doneN = open.filter(isDone).length;
+    const pct = open.length ? Math.round(open.reduce((a, L) => a + (isDone(L) ? 100 : lessonProgress(L)), 0) / open.length) : 0;
+    const topics = [...new Set(ls.map(L => L.topic).filter(Boolean))].slice(0, 2).join(" · ");
+    const wi = W.findIndex(w => weekNo(w, sid) === n), w = W[wi];
+    const review = w ? `<details class="wreview" ${wi === W.length - 1 ? "open" : ""}><summary>📈 Tổng kết tuần ${n}${W[wi - 1] ? ` · so với tuần ${weekNo(W[wi - 1], sid)}` : ""}${w.draft ? " · bản nháp" : ""}</summary>${weekBody(w, W[wi - 1])}</details>` : "";
+    return `<details class="wfold${n === now ? " now" : ""}" data-n="${n}" ${n === openN ? "open" : ""}>
+      <summary><span class="wh"><b>📁 Tuần ${n}</b><span>${weekRange(sid, n)}${topics ? " · " + esc(topics) : ""}</span></span>
+        <span class="wp">${w && !w.draft ? "📈 " : ""}${!open.length ? "🔒 mở dần" : `${doneN}/${open.length} bài`}${open.length ? ` <span class="ring sm" style="--p:${pct}"><i>${pct}%</i></span>` : ""}</span></summary>
+      ${review}
+      <div class="wgrid">
+        <div class="wcol"><h4>🗣️ Speaking</h4>${sub("🎙 Tự trả lời", sp.filter(L => !isShadow(L)))}${sub("🔁 Shadowing", sp.filter(isShadow))}${sp.length ? "" : `<p class="muted small">Tuần này không có bài nói.</p>`}</div>
+        ${col("🎧 Listening", li, "Tuần này không có bài nghe.")}
+      </div></details>`;
+  }).join("");
+  const rest = other.length ? `<details class="wfold other"><summary><span class="wh"><b>📚 Bài khác</b><span>luyện thêm, không bắt buộc</span></span><span class="wp">${other.length} bài</span></summary><div class="wlist">${other.map(weekRow).join("")}</div></details>` : "";
+  return `<section class="weeks"><h3>📚 Bài tập theo tuần</h3>${folders}${rest}</section>`;
+}
 /* level card: IELTS criteria + this student's strengths / weaknesses / focus (data in lessons.json: criteria + students[].profile) */
 function profileCard(sid, open) {
   const C = DATA.criteria, S = DATA.students.find(x => x.id === sid);
@@ -982,11 +1057,11 @@ function viewList() {
       <p>🔐 <b>Đăng nhập Gmail để lưu tiến độ online.</b> Đổi máy không mất bài đã luyện; phần đã luyện trên máy này cũng được giữ lại.</p>
       <button class="gbtn" id="gSignIn">${GOOGLE_SVG}<span>Đăng nhập bằng Google</span></button>
       <p class="muted" id="gErr" hidden></p></section>` : "";
+  const WF = weekFolders(student, mine);
   $("#app").innerHTML = `${banner()}${cloudNote ? `<div class="notice"><b>Lưu ý.</b> ${esc(cloudNote)}</div>` : ""}${loginCard}
-    ${todayHTML}${weekHTML}${oweHTML}
+    ${todayHTML}${WF ? "" : weekHTML + oweHTML}
     ${profileCard(student, false)}
-    ${libHTML}
-    ${doneBox(mine)}
+    ${WF || libHTML + doneBox(mine)}
     <p class="foot"><img src="stickers/paw.svg" alt="">Chị chấm bài ngay trên web, em không cần gửi Zalo. Khi nào cần gửi Zalo chị sẽ nhắn em nha.</p>`;
   wireSignIn();
   $("#app").querySelectorAll("[data-id]").forEach(b => { if (!b.classList.contains("locked")) b.addEventListener("click", () => { location.hash = b.dataset.id; }); });
@@ -2251,6 +2326,7 @@ const TOURS = {
     { sel: ".logincard", text: "🔐 Đăng nhập Gmail 1 lần để lưu tiến độ, đổi máy không mất bài." },
     { sel: ".profile", text: "📊 Tiêu chí chấm IELTS, điểm mạnh của em và chỗ cần sửa. Bấm để xem chi tiết." },
     { sel: ".today", text: "📅 Mỗi ngày chỉ cần làm bài ở đây. Bấm Bắt đầu là vào bài." },
+    { sel: ".wfold", text: "📁 Bài tập xếp theo tuần. Trong mỗi tuần: Speaking bên trái (tự trả lời, shadowing), Listening bên phải. Làm xong và chị chấm xong thì tổng kết tuần hiện ở đầu thư mục." },
     { sel: ".week", text: "🗓️ Cả tuần: ✅ đã xong, ⚠️ chưa làm, 🔒 chưa tới ngày. Bấm một ngày để mở bài ngày đó." },
     { sel: ".owe", text: "⏰ Bài còn nợ và hạn nộp. Làm hết chỗ này là sạch bài." },
     { sel: "details.library", text: "📚 Kho bài cũ để luyện thêm, không bắt buộc." },
