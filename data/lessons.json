@@ -230,6 +230,17 @@
     "va1-part1",
     "va1-shadowing"
    ]
+  },
+  {
+   "id": "hw-speaking-3",
+   "skill": "Speaking",
+   "session": 3,
+   "title": "Homework Speaking buổi 3",
+   "deadline": "2026-11-12",
+   "note": "Shadowing My last trip: xem video, shadow 3 lần; ôn flashcard Travel & Vacations.",
+   "lessons": [
+    "s3-shadowing"
+   ]
   }
  ],
  "lessons": [
@@ -3461,6 +3472,149 @@
     }
    ],
    "deck": "va1"
+  },
+  {
+   "id": "s3-shadowing",
+   "session": 3,
+   "type": "speak",
+   "title": "Shadowing – My last trip",
+   "subtitle": "Buổi 3 · Travel & Vacations · shadow 3 lần/ngày",
+   "skill": "Speaking",
+   "topic": "Travel & Vacations",
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "video": "media/s3-shadowing.mp4",
+   "deck": "dt3",
+   "sentences": [
+    {
+     "text": "Last 'summer, / after I 'finished my ==internship==, / I went ‿ on a 'short trip / to the 'beach with my 'classmates. //",
+     "start": 83.58,
+     "end": 90.62,
+     "chunks": [
+      [
+       2.8,
+       3.84
+      ],
+      [
+       5.48,
+       7.66
+      ],
+      [
+       10.44,
+       11.98
+      ],
+      [
+       14.13,
+       15.98
+      ]
+     ]
+    },
+    {
+     "text": "We ++traveled on a 'budget++, / so we 'booked a small ho'tel / and 'shared a room. //",
+     "start": 90.62,
+     "end": 95.65,
+     "chunks": [
+      [
+       18.82,
+       20.38
+      ],
+      [
+       22.53,
+       24.22
+      ],
+      [
+       26.5,
+       27.73
+      ]
+     ]
+    },
+    {
+     "text": "In the 'morning, / we went 'swimming, / and in the 'evening, / we tried ‿ all kinds of ++'local food++ / at a night 'market. //",
+     "start": 95.65,
+     "end": 103.15,
+     "chunks": [
+      [
+       29.96,
+       31.0
+      ],
+      [
+       32.64,
+       33.85
+      ],
+      [
+       35.65,
+       36.93
+      ],
+      [
+       38.8,
+       40.95
+      ],
+      [
+       43.7,
+       45.01
+      ]
+     ]
+    },
+    {
+     "text": "It was the most =='memorable== trip / of my 'student life. //",
+     "start": 103.15,
+     "end": 106.92,
+     "chunks": [
+      [
+       47.31,
+       49.2
+      ],
+      [
+       51.68,
+       53.07
+      ]
+     ]
+    },
+    {
+     "text": "Next 'year, / I'll 'start my first 'job, / so I 'won't have many ++va'cation days++. //",
+     "start": 106.92,
+     "end": 112.34,
+     "chunks": [
+      [
+       55.46,
+       56.42
+      ],
+      [
+       57.98,
+       59.59
+      ],
+      [
+       61.81,
+       64.2
+      ]
+     ]
+    },
+    {
+     "text": "That's 'why / I want to 'travel / as 'much as I can / be'fore I graduate! //",
+     "start": 112.34,
+     "end": 117.72,
+     "chunks": [
+      [
+       67.6,
+       68.49
+      ],
+      [
+       69.98,
+       71.08
+      ],
+      [
+       72.77,
+       73.97
+      ],
+      [
+       75.77,
+       77.18
+      ]
+     ]
+    }
+   ]
   }
  ],
  "ipa": {
@@ -3861,7 +4015,34 @@
   "you": "ju",
   "you'd": "jud",
   "young": "ˈjʌŋ",
-  "your": "jʊr"
+  "your": "jʊr",
+  "as": "æz",
+  "beach": "ˈbitʃ",
+  "booked": "ˈbʊkt",
+  "budget": "ˈbʌdʒət",
+  "classmates": "ˈklæsˌmeɪts",
+  "finished": "ˈfɪnəʃt",
+  "food": "ˈfud",
+  "graduate": "ˈɡrædʒəwət",
+  "hotel": "hoʊˈtɛl",
+  "kinds": "ˈkaɪndz",
+  "life": "ˈlaɪf",
+  "local": "ˈloʊkəl",
+  "many": "ˈmɛni",
+  "market": "ˈmɑrkət",
+  "memorable": "ˈmɛmɚəbəl",
+  "shared": "ˈʃɛrd",
+  "short": "ˈʃɔrt",
+  "student": "ˈstudənt",
+  "summer": "ˈsʌmɚ",
+  "swimming": "ˈswɪmɪŋ",
+  "travel": "ˈtrævəl",
+  "traveled": "ˈtrævəld",
+  "tried": "ˈtraɪd",
+  "trip": "ˈtrɪp",
+  "vacation": "veɪˈkeɪʃən",
+  "went": "ˈwɛnt",
+  "won't": "woʊnt"
  },
  "tips": {
   "classes": "Đuôi -es đọc thành âm /ɪz/: cla-sɪz, 2 âm tiết.",
@@ -4771,6 +4952,501 @@
      "grammar": "learn the ropes (of + N)",
      "ex": "Interns spend the first month learning the ropes.",
      "group": "Alternatives"
+    }
+   ]
+  },
+  {
+   "id": "dt3",
+   "title": "Travel & Vacations",
+   "session": 3,
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "cards": [
+    {
+     "w": "vacation",
+     "type": "Noun",
+     "ipa": "/veɪˈkeɪʃn/",
+     "stress": "va-CA-tion",
+     "band": "",
+     "mean": "kỳ nghỉ (Anh: holiday)",
+     "grammar": "",
+     "ex": "The people in the picture are on vacation by the sea.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "trip",
+     "type": "Noun",
+     "ipa": "/trɪp/",
+     "stress": "TRIP",
+     "band": "",
+     "mean": "chuyến đi",
+     "grammar": "",
+     "ex": "The two friends want to remember their trip.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "destination",
+     "type": "Noun",
+     "ipa": "/ˌdestɪˈneɪʃn/",
+     "stress": "des-ti-NA-tion",
+     "band": "",
+     "mean": "điểm đến",
+     "grammar": "",
+     "ex": "This beach is a popular destination in summer.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "go sightseeing",
+     "type": "Collocation",
+     "ipa": "/ˌɡoʊ ˈsaɪtsiːɪŋ/",
+     "stress": "go SIGHT-see-ing",
+     "band": "",
+     "mean": "đi tham quan, ngắm cảnh",
+     "grammar": "",
+     "ex": "Some tourists go sightseeing by boat.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "accommodation",
+     "type": "Noun",
+     "ipa": "/əˌkɑːməˈdeɪʃn/",
+     "stress": "ac-com-mo-DA-tion",
+     "band": "",
+     "mean": "chỗ ở",
+     "grammar": "",
+     "ex": "The hotel on the left is her accommodation.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "book",
+     "type": "Verb",
+     "ipa": "/bʊk/",
+     "stress": "BOOK",
+     "band": "",
+     "mean": "đặt (phòng, vé)",
+     "grammar": "",
+     "ex": "She booked the hotel online two weeks ago.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "pack",
+     "type": "Verb",
+     "ipa": "/pæk/",
+     "stress": "PACK",
+     "band": "",
+     "mean": "xếp đồ (vào va li)",
+     "grammar": "",
+     "ex": "She packed her suitcase the night before.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "explore",
+     "type": "Verb",
+     "ipa": "/ɪkˈsplɔːr/",
+     "stress": "ex-PLORE",
+     "band": "",
+     "mean": "khám phá",
+     "grammar": "",
+     "ex": "After checking in, she wants to explore the town.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "local",
+     "type": "Adjective",
+     "ipa": "/ˈloʊkl/",
+     "stress": "LO-cal",
+     "band": "",
+     "mean": "(thuộc) địa phương",
+     "grammar": "",
+     "ex": "A girl is trying local food at a food cart.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "traditional",
+     "type": "Adjective",
+     "ipa": "/trəˈdɪʃənl/",
+     "stress": "tra-DI-tion-al",
+     "band": "",
+     "mean": "truyền thống",
+     "grammar": "",
+     "ex": "The stall sells traditional hats.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "memorable",
+     "type": "Adjective",
+     "ipa": "/ˈmemərəbl/",
+     "stress": "MEM-o-ra-ble",
+     "band": "",
+     "mean": "đáng nhớ",
+     "grammar": "",
+     "ex": "It is a memorable trip for the two friends.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "homesick",
+     "type": "Adjective",
+     "ipa": "/ˈhoʊmsɪk/",
+     "stress": "HOME-sick",
+     "band": "",
+     "mean": "nhớ nhà",
+     "grammar": "",
+     "ex": "On my first trip abroad, I felt a bit homesick.",
+     "group": "A. Travel & Vacations: từ cốt lõi"
+    },
+    {
+     "w": "check in",
+     "type": "Phrasal verb",
+     "ipa": "/ˌtʃek ˈɪn/",
+     "stress": "check‿IN",
+     "band": "",
+     "mean": "nhận phòng",
+     "grammar": "",
+     "ex": "The woman is going to check in at the hotel.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "wheel a suitcase",
+     "type": "Collocation",
+     "ipa": "/ˌwiːl ə ˈsuːtkeɪs/",
+     "stress": "wheel‿a SUIT-case",
+     "band": "",
+     "mean": "kéo va li",
+     "grammar": "",
+     "ex": "She is wheeling a red suitcase.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "look at a map",
+     "type": "Collocation",
+     "ipa": "/ˌlʊk ət ə ˈmæp/",
+     "stress": "look‿at‿a MAP",
+     "band": "",
+     "mean": "xem bản đồ",
+     "grammar": "",
+     "ex": "She is looking at a map on her phone.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "buy souvenirs",
+     "type": "Collocation",
+     "ipa": "/ˌbaɪ ˌsuːvəˈnɪrz/",
+     "stress": "buy sou-ve-NIRS",
+     "band": "",
+     "mean": "mua quà lưu niệm",
+     "grammar": "",
+     "ex": "A man is buying souvenirs at a small stall.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "try local food",
+     "type": "Collocation",
+     "ipa": "/ˌtraɪ ˈloʊkl ˈfuːd/",
+     "stress": "try LO-cal FOOD",
+     "band": "",
+     "mean": "ăn thử món địa phương",
+     "grammar": "",
+     "ex": "A girl is trying local food from a cart.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "take a selfie",
+     "type": "Collocation",
+     "ipa": "/ˌteɪk ə ˈselfi/",
+     "stress": "take‿a SEL-fie",
+     "band": "",
+     "mean": "chụp ảnh tự sướng",
+     "grammar": "",
+     "ex": "Two friends are taking a selfie.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "go surfing",
+     "type": "Collocation",
+     "ipa": "/ˌɡoʊ ˈsɝːfɪŋ/",
+     "stress": "go SURF-ing",
+     "band": "",
+     "mean": "đi lướt sóng",
+     "grammar": "",
+     "ex": "A young man went surfing early this morning.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "sunbathe",
+     "type": "Verb",
+     "ipa": "/ˈsʌnbeɪð/",
+     "stress": "SUN-bathe",
+     "band": "",
+     "mean": "tắm nắng",
+     "grammar": "",
+     "ex": "A woman is sunbathing on a beach chair.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "go on a boat trip",
+     "type": "Collocation",
+     "ipa": "/ˌɡoʊ ɑːn ə ˈboʊt trɪp/",
+     "stress": "go‿on‿a BOAT trip",
+     "band": "",
+     "mean": "đi tàu tham quan",
+     "grammar": "",
+     "ex": "Some tourists are going on a boat trip.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "work remotely",
+     "type": "Collocation",
+     "ipa": "/ˌwɝːk rɪˈmoʊtli/",
+     "stress": "work re-MOTE-ly",
+     "band": "",
+     "mean": "làm việc từ xa",
+     "grammar": "",
+     "ex": "A man is working remotely at a beach café.",
+     "group": "B. Hoạt động trong tranh"
+    },
+    {
+     "w": "beach vacation",
+     "type": "Noun phrase",
+     "ipa": "/ˈbiːtʃ veɪˌkeɪʃn/",
+     "stress": "BEACH va-ca-tion",
+     "band": "",
+     "mean": "kỳ nghỉ biển",
+     "grammar": "",
+     "ex": "A beach vacation is perfect in June.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "city break",
+     "type": "Noun phrase",
+     "ipa": "/ˈsɪt̬i breɪk/",
+     "stress": "CIT-y break",
+     "band": "",
+     "mean": "chuyến đi thành phố ngắn ngày",
+     "grammar": "",
+     "ex": "A city break in Hanoi is great for a long weekend.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "adventure vacation",
+     "type": "Noun phrase",
+     "ipa": "/ədˈventʃər veɪˌkeɪʃn/",
+     "stress": "ad-VEN-ture va-ca-tion",
+     "band": "",
+     "mean": "kỳ nghỉ mạo hiểm (adventure: phiêu lưu)",
+     "grammar": "",
+     "ex": "On an adventure vacation, you can go hiking.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "family vacation",
+     "type": "Noun phrase",
+     "ipa": "/ˈfæməli veɪˌkeɪʃn/",
+     "stress": "FAM-i-ly va-ca-tion",
+     "band": "",
+     "mean": "kỳ nghỉ gia đình",
+     "grammar": "",
+     "ex": "We go on a family vacation every Tet.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "language exchange",
+     "type": "Noun phrase",
+     "ipa": "/ˈlæŋɡwɪdʒ ɪksˌtʃeɪndʒ/",
+     "stress": "LAN-guage ex-change",
+     "band": "",
+     "mean": "chương trình trao đổi ngôn ngữ",
+     "grammar": "",
+     "ex": "She went on a language exchange to Spain.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "stay with a host family",
+     "type": "Collocation",
+     "ipa": "/ˌsteɪ wɪð ə ˈhoʊst ˌfæməli/",
+     "stress": "stay with‿a HOST fam-i-ly",
+     "band": "",
+     "mean": "ở cùng gia đình bản xứ",
+     "grammar": "",
+     "ex": "Exchange students often stay with a host family.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "beach resort",
+     "type": "Noun phrase",
+     "ipa": "/ˈbiːtʃ rɪˌzɔːrt/",
+     "stress": "BEACH re-sort",
+     "band": "",
+     "mean": "khu nghỉ dưỡng biển",
+     "grammar": "",
+     "ex": "The hotel in the picture is part of a beach resort.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "tourist attraction",
+     "type": "Noun phrase",
+     "ipa": "/ˈtʊrɪst əˌtrækʃn/",
+     "stress": "TOUR-ist at-trac-tion",
+     "band": "",
+     "mean": "điểm thu hút khách du lịch",
+     "grammar": "",
+     "ex": "Ha Long Bay is a famous tourist attraction.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "landmark",
+     "type": "Noun",
+     "ipa": "/ˈlændmɑːrk/",
+     "stress": "LAND-mark",
+     "band": "",
+     "mean": "công trình biểu tượng",
+     "grammar": "",
+     "ex": "The Golden Bridge is a famous landmark in Da Nang.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "go on a day trip",
+     "type": "Collocation",
+     "ipa": "/ˌɡoʊ ɑːn ə ˈdeɪ trɪp/",
+     "stress": "go‿on‿a DAY trip",
+     "band": "",
+     "mean": "đi chơi trong ngày",
+     "grammar": "",
+     "ex": "We went on a day trip to the islands.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "go hiking",
+     "type": "Collocation",
+     "ipa": "/ˌɡoʊ ˈhaɪkɪŋ/",
+     "stress": "go HIK-ing",
+     "band": "",
+     "mean": "đi bộ đường dài",
+     "grammar": "",
+     "ex": "My friends went hiking in Sa Pa last spring.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "visit a water park",
+     "type": "Collocation",
+     "ipa": "/ˌvɪzɪt ə ˈwɑːt̬ər pɑːrk/",
+     "stress": "VIS-it‿a WA-ter park",
+     "band": "",
+     "mean": "đi công viên nước",
+     "grammar": "",
+     "ex": "Kids love visiting a water park on a family vacation.",
+     "group": "C. Loại kỳ nghỉ và nơi chốn"
+    },
+    {
+     "w": "business trip",
+     "type": "Noun phrase",
+     "ipa": "/ˈbɪznəs trɪp/",
+     "stress": "BUS-i-ness trip",
+     "band": "",
+     "mean": "chuyến công tác",
+     "grammar": "",
+     "ex": "My first business trip will probably be to Ho Chi Minh City.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "team-building trip",
+     "type": "Noun phrase",
+     "ipa": "/ˈtiːm ˌbɪldɪŋ trɪp/",
+     "stress": "TEAM-build-ing trip",
+     "band": "",
+     "mean": "chuyến du lịch gắn kết công ty",
+     "grammar": "",
+     "ex": "Many companies organize a team-building trip every summer.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "graduation trip",
+     "type": "Noun phrase",
+     "ipa": "/ˌɡrædʒuˈeɪʃn trɪp/",
+     "stress": "grad-u-A-tion trip",
+     "band": "",
+     "mean": "chuyến đi mừng tốt nghiệp",
+     "grammar": "",
+     "ex": "We are planning a graduation trip after our thesis defense.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "vacation days",
+     "type": "Noun phrase",
+     "ipa": "/veɪˈkeɪʃn deɪz/",
+     "stress": "va-CA-tion days",
+     "band": "",
+     "mean": "ngày nghỉ phép có lương",
+     "grammar": "",
+     "ex": "New employees in Vietnam usually get twelve vacation days a year.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "take time off (work)",
+     "type": "Collocation",
+     "ipa": "/ˌteɪk ˌtaɪm ˈɔːf/",
+     "stress": "take time‿OFF",
+     "band": "",
+     "mean": "xin nghỉ làm",
+     "grammar": "",
+     "ex": "It's hard to take time off during your first months at work.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "out of office",
+     "type": "Collocation",
+     "ipa": "/ˌaʊt əv ˈɔːfɪs/",
+     "stress": "out‿of OF-fice",
+     "band": "",
+     "mean": "đang nghỉ, không ở văn phòng",
+     "grammar": "",
+     "ex": "Before a trip, set an out-of-office email.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "itinerary",
+     "type": "Noun",
+     "ipa": "/aɪˈtɪnəreri/",
+     "stress": "i-TIN-er-ar-y",
+     "band": "",
+     "mean": "lịch trình chuyến đi",
+     "grammar": "",
+     "ex": "We planned a three-day itinerary for our trip.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "travel on a budget",
+     "type": "Collocation",
+     "ipa": "/ˌtrævl ɑːn ə ˈbʌdʒɪt/",
+     "stress": "TRAV-el on‿a BUD-get",
+     "band": "",
+     "mean": "du lịch tiết kiệm",
+     "grammar": "",
+     "ex": "As students, we travel on a budget.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "book in advance",
+     "type": "Collocation",
+     "ipa": "/ˌbʊk ɪn ədˈvæns/",
+     "stress": "book‿in ad-VANCE",
+     "band": "",
+     "mean": "đặt trước",
+     "grammar": "",
+     "ex": "Booking in advance is usually cheaper.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
+    },
+    {
+     "w": "get away from it all",
+     "type": "Idiom",
+     "ipa": "/ɡet əˌweɪ frəm ɪt ˈɔːl/",
+     "stress": "get‿a-WAY from‿it ALL",
+     "band": "",
+     "mean": "thoát khỏi mọi bộn bề",
+     "grammar": "",
+     "ex": "After my internship, I need a trip to get away from it all.",
+     "group": "D. Sinh viên năm cuối, mới đi làm"
     }
    ]
   }
