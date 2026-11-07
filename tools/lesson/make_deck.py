@@ -46,7 +46,7 @@ ap.add_argument("--opens"); ap.add_argument("--link", default="")
 a = ap.parse_args()
 meta, cards = parse(a.cards)
 deck = {"id": meta["id"], "title": meta["title"], "session": int(meta["session"]), "for": a.who.split(",")}
-if meta.get("topic"): deck["topic"] = meta["topic"]
+# deck.topic left out on purpose: weekly lessons use "📅 Tuần …" topics, and web matches decks by session when topic differs
 if a.opens: deck["opens"] = a.opens
 deck["cards"] = cards
 d = json.load(open(a.lessons, encoding="utf-8"))
