@@ -4,6 +4,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 ## 1. Flashcard (`decks` trong `data/lessons.json`)
 
+- **Bộ theo topic Speaking của tuần dạy:** `title` = topic Speaking của buổi (vd. *Studies & School life*), không theo phần phát âm hay Listening. Gói bài tập tuần gắn `"deck"` = bộ của topic Speaking vừa dạy; buổi chỉ có Listening (không dạy Speaking) thì gói tuần dùng lại bộ của topic Speaking gần nhất, không tạo bộ mới.
 - Mỗi buổi 1 bộ (`dt<N>` Đức–Thư, `va<N>` Vân Anh…), từ bảng vocab + Alternatives của buổi. Bài tập của buổi có `"deck": "<id>"`; web hỏi HS ôn flashcard trước khi vào bài. Bộ mở khi có bài cùng `session` đã mở với HS.
 - **Gộp nhóm (từ 7/11/2026):** 1 thẻ = 1 nhóm từ **đồng nghĩa / dùng thay nhau được trong cùng câu**; web xếp hàng theo Vocab / Phrasal verb / Collocation / Idiom. Tối đa 8 từ, ≤ 3 từ mỗi loại (to hơn thì tách nhóm). Mỗi nhóm có 1 dòng **lưu ý** chung: khác nhau ở đâu, thân mật / trang trọng, đếm được, giới từ. Từ không có đồng nghĩa = thẻ 1 từ; từ chỉ gần nghĩa hoặc ngược nghĩa không gộp.
 - `type` chỉ 4 giá trị **Vocab · Phrasal verb · Collocation · Idiom** (Noun/Verb/Adjective → Vocab, Noun phrase → Collocation). Band: 3–3.5 · 4–5 · 5.5–6.5 · 7–8 · 8.5–9 (8.5–9 tự có ⚠). IPA Mỹ, nhấn âm, grammar, câu ví dụ đúng bối cảnh HS. **Nghĩa không trùng** giữa các thẻ (lựa chọn đoán nghĩa lấy từ thẻ khác).
@@ -50,4 +51,5 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 | Ngày | Thay đổi |
 | --- | --- |
 | 7/11/2026 | Flashcard gộp nhóm đồng nghĩa + 🎮 Game đồng nghĩa; `make_deck.py` đọc định dạng `= nghĩa \| lưu ý` |
+| 7/11/2026 | Flashcard theo topic Speaking của tuần dạy; gói tuần gắn `deck` của topic đó · gộp lại `va1` theo nhóm (`decks/va1.txt`) |
 | 7/11/2026 | Part 1 thêm F (Feeling), Part 2 `star`, `guide`; bài nghe `hint`, `why`, `at` / `q` (transcript chạy), `slowFirst`; `opensAt` |
