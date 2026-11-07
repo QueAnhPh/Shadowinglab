@@ -125,7 +125,7 @@ p.small{font-size:13px;margin:6px 0 0}
 .gres .good{color:var(--ok,#2e7d32)}.gres .weak{color:var(--bad,#c62828)}
 .ansb{background:rgba(255,213,79,.45);padding:0 2px;border-radius:3px}
 .kwm{background:rgba(100,181,246,.35);color:inherit;padding:0 2px;border-radius:3px}
-.gtr p{margin:6px 0;line-height:1.6}.gtr .sp{opacity:.75}
+.gtr p{margin:6px 0;line-height:1.6;padding:2px 6px;border-radius:8px}.gtr .sp{opacity:.75}.gtr p[data-at]{cursor:pointer}.gtr p.now{background:rgba(255,213,79,.35)}.gtr .tq{font-size:12px;font-weight:700;background:#6F4325;color:#fff;border-radius:6px;padding:1px 6px}.ghint{display:block;font-size:13px;color:var(--muted,#777);margin:2px 0 4px}.gres tr.why td{font-size:13px;color:var(--muted,#666);border-bottom:1px solid var(--line,#ddd)}.gspeed button{padding:2px 8px;margin-left:4px}.gspeed button.on{font-weight:700;outline:2px solid #C98A1C}
 .lesson.locked{opacity:.55}
 /* left menu: fixed sidebar on wide screens, slide-in drawer on phones */
 .side{position:fixed;top:0;left:0;bottom:0;width:230px;background:var(--surface);box-shadow:var(--shadow);padding:84px 12px 16px;display:flex;flex-direction:column;gap:4px;z-index:40;transform:translateX(-105%);transition:transform .2s}
@@ -821,7 +821,11 @@ function topicsOf(ls) {
 }
 /* daily homework: a lesson with "opens": "YYYY-MM-DD" stays locked until that day */
 const VI_WD = ["Chủ nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
-function lockedUntil(L) { if (!L.opens || TEACH || daysLeft(L.opens) <= 0) return ""; const d = parseDay(L.opens); return `${VI_WD[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}`; }
+function opensLater(L) { /* opens = "YYYY-MM-DD"; opensAt = "HH:MM" (tuỳ chọn, giờ mở trong ngày) */
+  const dl = daysLeft(L.opens); if (dl > 0) return true; if (dl < 0 || !L.opensAt) return false;
+  const [h, m] = L.opensAt.split(":").map(Number), now = new Date(); return now.getHours() * 60 + now.getMinutes() < h * 60 + (m || 0);
+}
+function lockedUntil(L) { if (!L.opens || TEACH || !opensLater(L)) return ""; const d = parseDay(L.opens); return `${L.opensAt && daysLeft(L.opens) === 0 ? L.opensAt + " " : ""}${VI_WD[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}`; }
 function lessonButton(L) {
   const lock = lockedUntil(L);
   if (lock) return `<button class="lesson locked" disabled><span class="ring" style="--p:0"><i>🔒</i></span><span class="t"><b>${esc(L.title)}</b><span>Mở vào ${esc(lock)}</span></span></button>`;
@@ -1112,13 +1116,14 @@ function renderSentenceHTML(chunks, statuses) {
 /* ---------- speaking strategy: guide + demo notes + note boxes (Part 1 A.R.E. · Part 2 cue card · Part 3 A.R.E.A.) ---------- */
 function partOf(S) { const m = /part\s*([123])/i.exec(S.part || S.label || ""); return m ? +m[1] : 1; }
 const STRAT = {
-  1: { name: "Part 1 · A.R.E.", time: "3–4 câu · 20–30 giây",
+  1: { name: "Part 1 · A.R.E. + Feeling", time: "3–4 câu · 20–30 giây",
     steps: ["<b>A – Answer:</b> trả lời thẳng câu hỏi trong 1 câu, dùng lại từ khóa của câu hỏi bằng từ khác (paraphrase).",
             "<b>R – Reason:</b> 1 câu giải thích vì sao (because / since / the main reason is…).",
-            "<b>E – Example:</b> 1–2 câu ví dụ cụ thể của chính em (lúc nào, ở đâu, với ai). Có thể thêm 1 câu cảm nghĩ.",
+            "<b>E – Example:</b> 1–2 câu ví dụ cụ thể của chính em (lúc nào, ở đâu, với ai).",
+            "<b>F – Feeling:</b> 1 câu cảm nghĩ để chốt (It makes me feel… / That's why I really enjoy…).",
             "Mỗi câu dùng ≥ 1 từ trong gợi ý. Ghi <b>từ khóa</b>, không viết cả bài: thi thật Part 1 không có giấy nháp."],
-    fields: [["A", "Answer – trả lời thẳng"], ["R", "Reason – vì sao"], ["E", "Example – ví dụ của em"]],
-    demo: { q: "Do you like getting up early?", notes: { A: "not a morning person · on weekdays have to", R: "school starts 7am · sleep late reviewing", E: "Saturday · sleep in till 9 · recharge" } } },
+    fields: [["A", "Answer – trả lời thẳng"], ["R", "Reason – vì sao"], ["E", "Example – ví dụ của em"], ["F", "Feeling – cảm nghĩ, chốt ý"]],
+    demo: { q: "Do you like getting up early?", notes: { A: "not a morning person · on weekdays have to", R: "work starts 8am · sleep late", E: "Saturday · sleep in till 9 · recharge", F: "feel fresh · happier all day" } } },
   2: { name: "Part 2 · Cue card", time: "1 phút chuẩn bị · nói 1'30–2'",
     steps: ["<b>1 phút chuẩn bị:</b> gạch từ khóa trên cue card, ghi 2–4 từ khóa cho mỗi gợi ý. Thi thật được giữ giấy ghi chú khi nói.",
             "<b>Mở bài (1 câu):</b> I'm going to talk about… / I'd like to describe…",
@@ -1135,9 +1140,11 @@ const STRAT = {
     fields: [["A1", "Answer – quan điểm"], ["R", "Reason – lý do chung"], ["E", "Example – ví dụ"], ["A2", "Alternative – mặt kia + chốt ý"]],
     demo: { q: "Is it better to study at home or at a library?", notes: { A1: "depends on the person · mostly library", R: "fewer distractions · quiet · focus longer", E: "my friends · phone at home · library 3 hours straight", A2: "home saves travel time · but overall library" } } },
 };
+const STAR_FIELDS = [["open", "Mở bài – em sẽ nói về gì"], ["S", "S – Situation: khi nào, ở đâu, với ai"], ["T", "T – Task: em cần làm gì / vấn đề"], ["A", "A – Action: em đã làm gì"], ["R", "R – Result: kết quả"], ["F", "F – Feeling: cảm nghĩ, bài học (dòng and explain)"]];
 function noteFields(S) {
   const p = partOf(S);
   if (p !== 2) return STRAT[p].fields;
+  if (S.star) return STAR_FIELDS;
   return [["open", "Mở bài – em sẽ nói về gì"], ...(S.cue || []).map(c => [c, c]), ["explain", S.explain ? "Kết – " + S.explain : "Kết – cảm nghĩ, vì sao"]];
 }
 function cueHTML(S) {
@@ -1145,7 +1152,7 @@ function cueHTML(S) {
 }
 function stratHTML(L, S) {
   const p = partOf(S), G = STRAT[p], D = S.demo || G.demo;
-  const dFields = p === 2 ? [["open", "Mở bài"], ...Object.keys(D.notes).filter(k => k !== "open" && k !== "explain").map(k => [k, k]), ["explain", "Kết"]] : G.fields;
+  const dFields = p === 2 && S.star ? STAR_FIELDS : p === 2 ? [["open", "Mở bài"], ...Object.keys(D.notes).filter(k => k !== "open" && k !== "explain").map(k => [k, k]), ["explain", "Kết"]] : G.fields;
   return `<details class="strat"><summary>📘 Cách trả lời ${esc(G.name)} · ${esc(G.time)}</summary>
     <ol>${G.steps.map(t => `<li>${t}</li>`).join("")}</ol>
     <p class="muted">Làm mẫu cách ghi chú (câu khác, chỉ là từ khóa, không phải bài mẫu):</p>
@@ -1212,6 +1219,7 @@ function viewLesson(L) {
         ${s.label ? `<span class="tag">${esc(s.label)}</span>` : ""}
         ${partOf(s) === 2 ? cueHTML(s) : `<div class="sent q">❓ ${esc(s.q)}</div>`}
         ${s.hint ? `<p class="hint">💡 Dùng ít nhất 2 từ/cụm: <b>${esc(s.hint)}</b></p>` : ""}
+        ${(s.guide || []).length ? `<details class="strat guide" open><summary>🧭 Phân tích câu hỏi: nghĩ từng bước</summary><ol>${s.guide.map(t => `<li>${t}</li>`).join("")}</ol></details>` : ""}
         ${stratHTML(L, s)}
         ${notesHTML(L, s, i)}
         <div class="actions"><button class="recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm thử</button><button class="primary submit" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>📤 Ghi âm nộp bài</button></div>
@@ -1290,7 +1298,7 @@ function gapRowsHTML(L, st, done) {
       const v = (st.a || {})[n] || "", f = (st.f || {})[n];
       const ok = done ? gapOk(q, v) : null;
       const opts = formOpts(q, n);
-      return `<span class="gap"><b class="qn">${n}</b><input class="gin ${done ? (ok ? "ok" : "bad") : ""}" data-n="${n}" value="${esc(v)}" ${done ? "disabled" : ""} autocomplete="off" autocapitalize="off" spellcheck="false">${done && !ok ? `<span class="gfix">✔ ${esc(q.ans[0])}</span>` : ""}
+      return `<span class="gap"><b class="qn">${n}</b><input class="gin ${done ? (ok ? "ok" : "bad") : ""}" data-n="${n}" value="${esc(v)}" ${done ? "disabled" : ""} autocomplete="off" autocapitalize="off" spellcheck="false">${done && !ok ? `<span class="gfix">✔ ${esc(q.ans[0])}</span>` : ""}${!done && q.hint ? `<span class="ghint">💡 ${esc(q.hint)}</span>` : ""}
         <span class="forms" data-n="${n}">${opts.map(o => `<button class="fo ${f === o ? "on" : ""} ${done ? (o === q.form[0] ? "right" : f === o ? "wrong" : "") : ""}" data-v="${esc(o)}" ${done ? "disabled" : ""}>${esc(o)}</button>`).join("")}</span></span>`;
     });
     return `<div class="grow">${html}</div>`;
@@ -1313,8 +1321,9 @@ function viewGap(L) {
       <p class="muted small">Dưới mỗi ô: chọn <b>dạng từ</b> cần điền (làm trong lúc đọc đề, trước khi nghe).</p>
       <div class="gctl">
         ${done ? `<audio src="${esc(L.audio)}" controls preload="metadata" class="gaudio"></audio>
+          <span class="gspeed">🐢 Tốc độ nghe lại: <button data-r="0.75">0.75×</button><button data-r="1" class="on">1×</button></span>
           <button id="gRedo">🔁 Làm lại từ đầu</button>`
-        : `<button class="primary" id="gStart">▶ Bắt đầu: ${L.prep || 30} giây đọc đề</button>
+        : `${L.slowFirst ? `<button id="gSlow">🐢 Nghe chậm 0.75× để làm quen (không chấm)</button>` : ""}<button class="primary" id="gStart">▶ Bắt đầu: ${L.prep || 30} giây đọc đề</button>
           <button class="primary" id="gSubmit" hidden>📤 Nộp bài</button>`}
       </div>
       <div class="live" aria-live="polite"></div>
@@ -1349,8 +1358,30 @@ function viewGap(L) {
       try { audio.pause(); } catch {}
       gradeGap(L, st); save(); viewGap(L); window.scrollTo(0, 0);
     });
+    const slow = $("#gSlow");
+    if (slow) slow.addEventListener("click", () => {
+      if (!audio.paused) { audio.pause(); audio.currentTime = 0; audio.playbackRate = 1; slow.textContent = "🐢 Nghe chậm 0.75× để làm quen (không chấm)"; return; }
+      audio.preservesPitch = true; audio.playbackRate = 0.75; audio.currentTime = 0;
+      audio.play().then(() => { slow.textContent = "⏹ Dừng bản chậm"; }).catch(() => {});
+      audio.addEventListener("ended", () => { audio.playbackRate = 1; audio.currentTime = 0; slow.textContent = "✅ Đã nghe bản chậm. Giờ bấm Bắt đầu để làm bài thật (tốc độ thật, nghe 1 lần)."; }, { once: true });
+    });
+    start.addEventListener("click", () => { try { audio.pause(); audio.currentTime = 0; audio.playbackRate = 1; } catch {} if (slow) slow.disabled = true; });
   } else {
     $("#gRedo").addEventListener("click", () => { store.set(gapKey(L), { a: {}, f: {} }); viewGap(L); });
+    const ga = $("#app").querySelector(".gaudio"), lines = [...$("#app").querySelectorAll(".gtr p[data-at]")];
+    $("#app").querySelectorAll(".gspeed button").forEach(b => b.addEventListener("click", () => {
+      ga.preservesPitch = true; ga.playbackRate = +b.dataset.r;
+      $("#app").querySelectorAll(".gspeed button").forEach(x => x.classList.toggle("on", x === b));
+    }));
+    if (ga && lines.length) {
+      ga.addEventListener("timeupdate", () => {
+        const t = ga.currentTime; let cur = null;
+        lines.forEach(p => { if (+p.dataset.at <= t) cur = p; });
+        lines.forEach(p => p.classList.toggle("now", p === cur));
+        if (cur && !cur.dataset.seen) { cur.dataset.seen = 1; cur.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+      });
+      lines.forEach(p => p.addEventListener("click", () => { ga.currentTime = +p.dataset.at; ga.play().catch(() => {}); lines.forEach(x => delete x.dataset.seen); }));
+    }
   }
 }
 function gradeGap(L, st) {
@@ -1371,7 +1402,7 @@ function gapResultHTML(L, st) {
   const nq = Object.keys(L.qs).length;
   const rows = Object.keys(L.qs).map(n => {
     const q = L.qs[n], v = (st.a || {})[n] || "", ok = gapOk(q, v), fk = (st.f || {})[n] === q.form[0];
-    return `<tr><td>${n}</td><td class="${ok ? "good" : "weak"}">${ok ? "✔" : "✘"} ${esc(v || "—")}</td><td><b>${esc(q.ans.join(" / "))}</b></td><td class="${fk ? "good" : "weak"}">${fk ? "✔ " + esc(q.form[0]) : `✘ ${(st.f || {})[n] ? "em chọn " + esc(st.f[n]) : "chưa chọn"} → <b>${esc(q.form[0])}</b>`}</td></tr>`;
+    return `<tr><td>${n}</td><td class="${ok ? "good" : "weak"}">${ok ? "✔" : "✘"} ${esc(v || "—")}</td><td><b>${esc(q.ans.join(" / "))}</b></td><td class="${fk ? "good" : "weak"}">${fk ? "✔ " + esc(q.form[0]) : `✘ ${(st.f || {})[n] ? "em chọn " + esc(st.f[n]) : "chưa chọn"} → <b>${esc(q.form[0])}</b>`}</td></tr>${q.why ? `<tr class="why"><td></td><td colspan="3">🧠 ${hlTranscript(q.why)}</td></tr>` : ""}`;
   }).join("");
   return `<section class="card">
     <h3>Kết quả: ${st.score}/${nq} câu đúng · dạng từ đúng ${st.formsOk}/${nq}${st.tries > 1 ? ` · lần đầu ${st.first}/${nq}` : ""}</h3>
@@ -1381,7 +1412,8 @@ function gapResultHTML(L, st) {
   <section class="card">
     <h3>📜 Transcript</h3>
     <p class="muted small"><b class="ansb">In đậm</b> = khúc chứa đáp án · <mark class="kwm">tô màu</mark> = từ khóa trong câu hỏi và chỗ bài nói lại bằng từ khác (paraphrase).</p>
-    <div class="gtr">${(L.transcript || []).map(x => `<p>${x.sp ? `<b class="sp">${esc(x.sp)}:</b> ` : ""}${hlTranscript(x.t)}</p>`).join("")}</div>
+    ${(L.transcript || []).some(x => x.at != null) ? `<p class="muted small">▶ Bấm phát audio ở trên: dòng đang nói sáng lên. Bấm vào 1 dòng để nghe lại từ chỗ đó. Bài nghe đi <b>theo thứ tự câu hỏi</b> (linear): nghe xong câu 3 thì nhìn sang câu 4 ngay.</p>` : ""}
+    <div class="gtr">${(L.transcript || []).map((x, k) => `<p data-k="${k}" ${x.at != null ? `data-at="${x.at}"` : ""}>${x.q ? `<span class="tq">Câu ${esc(String(x.q))}</span> ` : ""}${x.sp ? `<b class="sp">${esc(x.sp)}:</b> ` : ""}${hlTranscript(x.t)}</p>`).join("")}</div>
   </section>`;
 }
 async function viewTeacherGap(sid, L, S) {
