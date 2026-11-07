@@ -2,6 +2,8 @@
 
 Không phải phần của web. Dùng cho việc soạn giáo án hằng tuần.
 
+**Đọc trước: [`SHARED_RULES.md`](SHARED_RULES.md)** = quy tắc chung cho mọi lớp (flashcard gộp nhóm, game, bài nói, bài nghe, mở bài theo ngày).
+
 | File | Dùng |
 | --- | --- |
 | `build_pdf.py <dir> <N> [picture.png]` | `teacher.md` + `student.md` + `alternatives.md` → `Session N_Speaking.pdf` (mục lục, thanh điều hướng, tô màu `<mark>`) |
