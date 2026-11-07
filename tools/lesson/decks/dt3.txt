@@ -3,95 +3,141 @@
 #session=3
 #topic=Travel & Vacations
 @A. Travel & Vacations: từ cốt lõi
-vacation|Vocab|/veɪˈkeɪʃn/|va-CA-tion|3–3.5|kỳ nghỉ (Anh: holiday)|go on / be on + vacation (không nói go to vacation)|The people in the picture are on vacation by the sea.
-trip|Vocab|/trɪp/|TRIP|3–3.5|chuyến đi|danh từ đếm được: a trip, two trips; take / go on a trip|The two friends want to remember their trip.
-destination|Vocab|/ˌdestɪˈneɪʃn/|des-ti-NA-tion|4–5|điểm đến|a popular / tourist destination|This beach is a popular destination in summer.
-go sightseeing|Collocation|/ˌɡoʊ ˈsaɪtsiːɪŋ/|go SIGHT-see-ing|4–5|đi tham quan, ngắm cảnh|go + V-ing (go sightseeing, go hiking); QK went sightseeing|Some tourists go sightseeing by boat.
-accommodation|Vocab|/əˌkɑːməˈdeɪʃn/|ac-com-mo-DA-tion|5.5–6.5|chỗ ở|Anh: không đếm được; Mỹ hay dùng accommodations|The hotel on the left is her accommodation.
-book|Vocab|/bʊk/|BOOK|3–3.5|đặt (phòng, vé)|book + a room / a flight / a table; QK booked /t/|She booked the hotel online two weeks ago.
-pack|Vocab|/pæk/|PACK|3–3.5|xếp đồ (vào va li)|pack + a bag / a suitcase; QK packed /t/|She packed her suitcase the night before.
-explore|Vocab|/ɪkˈsplɔːr/|ex-PLORE|4–5|khám phá|explore + the town / the area; QK explored /d/|After checking in, she wants to explore the town.
-local|Vocab|/ˈloʊkl/|LO-cal|4–5|(thuộc) địa phương|local + food / people / culture|A girl is trying local food at a food cart.
-traditional|Vocab|/trəˈdɪʃənl/|tra-DI-tion-al|4–5|truyền thống|traditional + food / clothes / festival|The stall sells traditional hats.
-memorable|Vocab|/ˈmemərəbl/|MEM-o-ra-ble|5.5–6.5|đáng nhớ|a memorable + trip / experience|It is a memorable trip for the two friends.
-homesick|Vocab|/ˈhoʊmsɪk/|HOME-sick|5.5–6.5|nhớ nhà|feel / be + homesick (for + nơi chốn)|On my first trip abroad, I felt a bit homesick.
-@B. Hoạt động trong tranh
-check in|Phrasal verb|/ˌtʃek ˈɪn/|check‿IN|4–5|nhận phòng|không tân ngữ; check in at + khách sạn; QK checked in /t/|The woman is going to check in at the hotel.
-wheel a suitcase|Collocation|/ˌwiːl ə ˈsuːtkeɪs/|wheel‿a SUIT-case|5.5–6.5|kéo va li|wheel + a suitcase (wheel = động từ)|She is wheeling a red suitcase.
-look at a map|Collocation|/ˌlʊk ət ə ˈmæp/|look‿at‿a MAP|3–3.5|xem bản đồ|look at + N|She is looking at a map on her phone.
-buy souvenirs|Collocation|/ˌbaɪ ˌsuːvəˈnɪrz/|buy sou-ve-NIRS|4–5|mua quà lưu niệm|souvenir đếm được: a souvenir, souvenirs|A man is buying souvenirs at a small stall.
-try local food|Collocation|/ˌtraɪ ˈloʊkl ˈfuːd/|try LO-cal FOOD|4–5|ăn thử món địa phương|try + N (ăn thử); QK tried /d/|A girl is trying local food from a cart.
-take a selfie|Collocation|/ˌteɪk ə ˈselfi/|take‿a SEL-fie|3–3.5|chụp ảnh tự sướng|take (không dùng make) + a selfie / a photo|Two friends are taking a selfie.
-go surfing|Collocation|/ˌɡoʊ ˈsɝːfɪŋ/|go SURF-ing|4–5|đi lướt sóng|go + V-ing; QK went surfing|A young man went surfing early this morning.
-sunbathe|Vocab|/ˈsʌnbeɪð/|SUN-bathe|4–5|tắm nắng|không tân ngữ; V-ing: sunbathing|A woman is sunbathing on a beach chair.
-go on a boat trip|Collocation|/ˌɡoʊ ɑːn ə ˈboʊt trɪp/|go‿on‿a BOAT trip|4–5|đi tàu tham quan|go on + a trip / a boat trip|Some tourists are going on a boat trip.
-work remotely|Collocation|/ˌwɝːk rɪˈmoʊtli/|work re-MOTE-ly|5.5–6.5|làm việc từ xa|work + remotely (trạng từ); tính từ: remote work|A man is working remotely at a beach café.
-@C. Loại kỳ nghỉ và nơi chốn
-beach vacation|Collocation|/ˈbiːtʃ veɪˌkeɪʃn/|BEACH va-ca-tion|3–3.5|kỳ nghỉ biển|go on + a beach vacation|A beach vacation is perfect in June.
-city break|Collocation|/ˈsɪt̬i breɪk/|CIT-y break|5.5–6.5|chuyến đi thành phố ngắn ngày|have / go on + a city break|A city break in Hanoi is great for a long weekend.
-adventure vacation|Collocation|/ədˈventʃər veɪˌkeɪʃn/|ad-VEN-ture va-ca-tion|4–5|kỳ nghỉ mạo hiểm|go on + an adventure vacation|On an adventure vacation, you can go hiking.
-family vacation|Collocation|/ˈfæməli veɪˌkeɪʃn/|FAM-i-ly va-ca-tion|3–3.5|kỳ nghỉ gia đình|go on + a family vacation|We go on a family vacation every Tet.
-language exchange|Collocation|/ˈlæŋɡwɪdʒ ɪksˌtʃeɪndʒ/|LAN-guage ex-change|5.5–6.5|chương trình trao đổi ngôn ngữ|go on / join + a language exchange|She went on a language exchange to Spain.
-stay with a host family|Collocation|/ˌsteɪ wɪð ə ˈhoʊst ˌfæməli/|stay with‿a HOST fam-i-ly|5.5–6.5|ở cùng gia đình bản xứ|stay with + sb; QK stayed /d/|Exchange students often stay with a host family.
-beach resort|Collocation|/ˈbiːtʃ rɪˌzɔːrt/|BEACH re-sort|4–5|khu nghỉ dưỡng biển|stay at + a beach resort|The hotel in the picture is part of a beach resort.
-tourist attraction|Collocation|/ˈtʊrɪst əˌtrækʃn/|TOUR-ist at-trac-tion|4–5|điểm thu hút khách du lịch|a famous / popular + tourist attraction|Ha Long Bay is a famous tourist attraction.
-landmark|Vocab|/ˈlændmɑːrk/|LAND-mark|5.5–6.5|công trình biểu tượng|a famous landmark + in + nơi chốn|The Golden Bridge is a famous landmark in Da Nang.
-go on a day trip|Collocation|/ˌɡoʊ ɑːn ə ˈdeɪ trɪp/|go‿on‿a DAY trip|3–3.5|đi chơi trong ngày|go on + a day trip + to + nơi chốn|We went on a day trip to the islands.
-go hiking|Collocation|/ˌɡoʊ ˈhaɪkɪŋ/|go HIK-ing|4–5|đi bộ đường dài|go + V-ing; QK went hiking|My friends went hiking in Sa Pa last spring.
-visit a water park|Collocation|/ˌvɪzɪt ə ˈwɑːt̬ər pɑːrk/|VIS-it‿a WA-ter park|3–3.5|đi công viên nước|visit + nơi chốn (không cần to)|Kids love visiting a water park on a family vacation.
-@D. Sinh viên năm cuối, mới đi làm
-business trip|Collocation|/ˈbɪznəs trɪp/|BUS-i-ness trip|4–5|chuyến công tác|go on + a business trip + to + nơi chốn|My first business trip will probably be to Ho Chi Minh City.
-team-building trip|Collocation|/ˈtiːm ˌbɪldɪŋ trɪp/|TEAM-build-ing trip|5.5–6.5|chuyến du lịch gắn kết công ty|organize / go on + a team-building trip|Many companies organize a team-building trip every summer.
-graduation trip|Collocation|/ˌɡrædʒuˈeɪʃn trɪp/|grad-u-A-tion trip|4–5|chuyến đi mừng tốt nghiệp|plan / take + a graduation trip|We are planning a graduation trip after our thesis defense.
-vacation days|Collocation|/veɪˈkeɪʃn deɪz/|va-CA-tion days|5.5–6.5|ngày nghỉ phép có lương|get / have + N vacation days (a year); Anh: annual leave|New employees in Vietnam usually get twelve vacation days a year.
-take time off (work)|Collocation|/ˌteɪk ˌtaɪm ˈɔːf/|take time‿OFF|5.5–6.5|xin nghỉ làm|take + time off (+ work); take + a day off|It's hard to take time off during your first months at work.
-out of office|Collocation|/ˌaʊt əv ˈɔːfɪs/|out‿of OF-fice|5.5–6.5|đang nghỉ, không ở văn phòng|be + out of office; đứng trước danh từ: an out-of-office email|Before a trip, set an out-of-office email.
-itinerary|Vocab|/aɪˈtɪnəreri/|i-TIN-er-ar-y|7–8|lịch trình chuyến đi|plan / make + an itinerary; số nhiều itineraries|We planned a three-day itinerary for our trip.
-travel on a budget|Collocation|/ˌtrævl ɑːn ə ˈbʌdʒɪt/|TRAV-el on‿a BUD-get|5.5–6.5|du lịch tiết kiệm|travel + on a budget; travel là động từ (không nói a travel)|As students, we travel on a budget.
-book in advance|Collocation|/ˌbʊk ɪn ədˈvæns/|book‿in ad-VANCE|5.5–6.5|đặt trước|book (sth) + in advance|Booking in advance is usually cheaper.
-get away from it all|Idiom|/ɡet əˌweɪ frəm ɪt ˈɔːl/|get‿a-WAY from‿it ALL|7–8|thoát khỏi mọi bộn bề|cụm cố định, luôn có it all|After my internship, I need a trip to get away from it all.
+= kỳ nghỉ, đi nghỉ | vacation (Mỹ) = holiday (Anh) · go on vacation (không nói go to vacation) · getaway = chuyến nghỉ ngắn · a change of scenery = đổi không khí
+vacation|Vocab|/veɪˈkeɪʃn/|va-CA-tion|3–3.5|go on / be on + vacation (không nói go to vacation)|The people in the picture are on vacation by the sea.
+getaway|Vocab|/ˈɡetəweɪ/|GET-a-way|5.5–6.5|a weekend getaway / a quick getaway|We planned a weekend getaway to Da Lat.
+go on vacation|Collocation|/ˌɡoʊ ɑːn veɪˈkeɪʃn/|go‿on va-CA-tion|3–3.5|go on + vacation (+ to nơi chốn)|We go on vacation every summer.
+a much-needed vacation|Collocation|/ə ˌmʌtʃ ˌniːdɪd veɪˈkeɪʃn/|a much-NEED-ed va-CA-tion|7–8|take / go on + a much-needed vacation|After my thesis, I took a much-needed vacation.
+get away|Phrasal verb|/ˌɡet əˈweɪ/|get‿a-WAY|4–5|không tân ngữ (+ from sth); QK got away|I want to get away for a few days.
+get away from it all|Idiom|/ɡet əˌweɪ frəm ɪt ˈɔːl/|get‿a-WAY from‿it ALL|7–8|cụm cố định, luôn có it all|After my internship, I need a trip to get away from it all.
+a change of scenery|Idiom|/ə ˌtʃeɪndʒ əv ˈsiːnəri/|a CHANGE of SCE-ner-y|7–8|need / want + a change of scenery|After my exams, I needed a change of scenery.
+= chuyến đi | trip đếm được: take / go on a trip · excursion = chuyến tham quan ngắn, thường theo đoàn
+trip|Vocab|/trɪp/|TRIP|3–3.5|danh từ đếm được: a trip, two trips; take / go on a trip|The two friends want to remember their trip.
+excursion|Vocab|/ɪkˈskɝːʒn/|ex-CUR-sion|7–8|go on + an excursion + to + nơi chốn|The hotel offers a half-day excursion to the islands.
+take a trip|Collocation|/ˌteɪk ə ˈtrɪp/|take‿a TRIP|3–3.5|take + a trip + to + nơi chốn|Let's take a trip to Da Lat.
+go on a day trip|Collocation|/ˌɡoʊ ɑːn ə ˈdeɪ trɪp/|go‿on‿a DAY trip|3–3.5|go on + a day trip + to + nơi chốn|We went on a day trip to the islands.
+= điểm đến, nơi nổi tiếng | destination = nơi mình đi tới · tourist attraction = điểm thu hút khách · landmark = công trình biểu tượng
+destination|Vocab|/ˌdestɪˈneɪʃn/|des-ti-NA-tion|4–5|a popular / tourist destination|This beach is a popular destination in summer.
+a popular destination|Collocation|/ə ˌpɑːpjələr ˌdestɪˈneɪʃn/|a POP-u-lar des-ti-NA-tion|4–5|a popular destination + for sb|Da Nang is a popular destination for students.
+tourist attraction|Collocation|/ˈtʊrɪst əˌtrækʃn/|TOUR-ist at-trac-tion|4–5|a famous / popular + tourist attraction|Ha Long Bay is a famous tourist attraction.
+landmark|Vocab|/ˈlændmɑːrk/|LAND-mark|5.5–6.5|a famous landmark + in + nơi chốn|The Golden Bridge is a famous landmark in Da Nang.
+= tham quan, khám phá | go sightseeing = see the sights · look around + nơi chốn · explore (the area) = khám phá, tự đi tìm hiểu
+go sightseeing|Collocation|/ˌɡoʊ ˈsaɪtsiːɪŋ/|go SIGHT-see-ing|4–5|go + V-ing (go sightseeing, go hiking); QK went sightseeing|Some tourists go sightseeing by boat.
+see the sights|Collocation|/ˌsiː ðə ˈsaɪts/|see the SIGHTS|4–5|see the sights + in/of + nơi chốn|We saw the sights in Hue.
+look around|Phrasal verb|/ˌlʊk əˈraʊnd/|look‿a-ROUND|3–3.5|không tân ngữ / + nơi chốn; QK looked around|We looked around the old town.
+explore|Vocab|/ɪkˈsplɔːr/|ex-PLORE|4–5|explore + the town / the area; QK explored /d/|After checking in, she wants to explore the town.
+explore the area|Collocation|/ɪkˌsplɔːr ði ˈeriə/|ex-PLORE the AR-e-a|5.5–6.5|explore + the area / the town|After checking in, we explored the area.
+= chỗ ở | accommodation: Anh không đếm được, Mỹ hay dùng accommodations · lodging trang trọng · a home away from home = nơi ở thân như nhà
+accommodation|Vocab|/əˌkɑːməˈdeɪʃn/|ac-com-mo-DA-tion|5.5–6.5|Anh: không đếm được; Mỹ hay dùng accommodations|The hotel on the left is her accommodation.
+lodging|Vocab|/ˈlɑːdʒɪŋ/|LODG-ing|7–8|không đếm được; food and lodging|The company pays for food and lodging on business trips.
+beach resort|Collocation|/ˈbiːtʃ rɪˌzɔːrt/|BEACH re-sort|4–5|stay at + a beach resort|The hotel in the picture is part of a beach resort.
+a home away from home|Idiom|/ə ˌhoʊm əˌweɪ frəm ˈhoʊm/|a HOME‿a-way from HOME|7–8|be + a home away from home|My host family's house was a home away from home.
+= đặt chỗ, đặt vé | book + a room / a flight / accommodation · book in advance = đặt trước · ngược lại: be booked up = hết chỗ
+book|Vocab|/bʊk/|BOOK|3–3.5|book + a room / a flight / a table; QK booked /t/|She booked the hotel online two weeks ago.
+book in advance|Collocation|/ˌbʊk ɪn ədˈvæns/|book‿in ad-VANCE|5.5–6.5|book (sth) + in advance|Booking in advance is usually cheaper.
+book a flight|Collocation|/ˌbʊk ə ˈflaɪt/|book‿a FLIGHT|4–5|book + a flight + to + nơi chốn|She booked a flight to Hanoi.
+book accommodation|Collocation|/ˌbʊk əˌkɑːməˈdeɪʃn/|book‿ac-com-mo-DA-tion|4–5|book + accommodation(s)|We booked accommodation online.
+= xếp đồ, mang đồ | pack a suitcase = xếp va li · pack up = thu dọn để về · pack light = mang ít đồ (light là trạng từ)
+pack|Vocab|/pæk/|PACK|3–3.5|pack + a bag / a suitcase; QK packed /t/|She packed her suitcase the night before.
+pack a suitcase|Collocation|/ˌpæk ə ˈsuːtkeɪs/|pack‿a SUIT-case|4–5|pack + a/my suitcase|I packed my suitcase last night.
+pack up|Phrasal verb|/ˌpæk ˈʌp/|pack‿UP|4–5|tách được: pack up my things / pack them up|We packed up and went home.
+pack light|Collocation|/ˌpæk ˈlaɪt/|pack LIGHT|5.5–6.5|pack + light (light = trạng từ)|On business trips, I always pack light.
+= (thuộc) địa phương, truyền thống, chính gốc | local = của nơi đó · traditional = có từ lâu đời · authentic = đúng kiểu gốc, không pha
+local|Vocab|/ˈloʊkl/|LO-cal|4–5|local + food / people / culture|A girl is trying local food at a food cart.
+traditional|Vocab|/trəˈdɪʃənl/|tra-DI-tion-al|4–5|traditional + food / clothes / festival|The stall sells traditional hats.
+authentic|Vocab|/ɔːˈθentɪk/|au-THEN-tic|7–8|authentic + food / dish / experience|This stall sells authentic Hue beef noodle soup.
+= đáng nhớ, để đời | It was + a memorable / once-in-a-lifetime experience · the trip of a lifetime
+memorable|Vocab|/ˈmemərəbl/|MEM-o-ra-ble|5.5–6.5|a memorable + trip / experience|It is a memorable trip for the two friends.
+a memorable experience|Collocation|/ə ˌmemərəbl ɪkˈspɪriəns/|a MEM-o-ra-ble ex-PER-i-ence|5.5–6.5|It was + a memorable experience|Staying with a host family was a memorable experience.
+a once-in-a-lifetime experience|Collocation|/ə ˌwʌns ɪn ə ˈlaɪftaɪm ɪkˈspɪriəns/|a ONCE-in‿a-LIFE-time ex-PER-i-ence|7–8|It was + a once-in-a-lifetime experience|Surfing in Bali was a once-in-a-lifetime experience.
+the trip of a lifetime|Idiom|/ðə ˌtrɪp əv ə ˈlaɪftaɪm/|the TRIP‿of‿a LIFE-time|7–8|be + the trip of a lifetime|Our graduation trip was the trip of a lifetime.
+= nhớ nhà, lạc lõng | feel + homesick (+ for nơi chốn) · a fish out of water = thấy lạc lõng ở nơi mới; ngược lại: settle in = quen dần
+homesick|Vocab|/ˈhoʊmsɪk/|HOME-sick|5.5–6.5|feel / be + homesick (for + nơi chốn)|On my first trip abroad, I felt a bit homesick.
+feel homesick|Collocation|/ˌfiːl ˈhoʊmsɪk/|feel HOME-sick|4–5|feel + homesick (+ for)|I felt homesick on my first night abroad.
+a fish out of water|Idiom|/ə ˌfɪʃ aʊt əv ˈwɔːt̬ər/|a FISH‿out‿of WA-ter|7–8|feel like + a fish out of water|On my first business trip, I felt like a fish out of water.
 @Alternatives
-getaway|Vocab|/ˈɡetəweɪ/|GET-a-way|5.5–6.5|chuyến nghỉ ngắn|a weekend getaway / a quick getaway|We planned a weekend getaway to Da Lat.
-excursion|Vocab|/ɪkˈskɝːʒn/|ex-CUR-sion|7–8|chuyến tham quan ngắn|go on + an excursion + to + nơi chốn|The hotel offers a half-day excursion to the islands.
-lodging|Vocab|/ˈlɑːdʒɪŋ/|LODG-ing|7–8|chỗ trọ|không đếm được; food and lodging|The company pays for food and lodging on business trips.
-authentic|Vocab|/ɔːˈθentɪk/|au-THEN-tic|7–8|chính gốc|authentic + food / dish / experience|This stall sells authentic Hue beef noodle soup.
-look around|Phrasal verb|/ˌlʊk əˈraʊnd/|look‿a-ROUND|3–3.5|đi xem quanh|không tân ngữ / + nơi chốn; QK looked around|We looked around the old town.
-eat out|Phrasal verb|/ˌiːt ˈaʊt/|eat‿OUT|3–3.5|ăn ngoài hàng|không tân ngữ; QK ate out|On vacation, we eat out every night.
-set off|Phrasal verb|/ˌset ˈɔːf/|set‿OFF|4–5|khởi hành|không tân ngữ; set off for + nơi chốn; QK set off|We set off for the beach at 5 a.m.
-get away|Phrasal verb|/ˌɡet əˈweɪ/|get‿a-WAY|4–5|đi nghỉ cho thoát bận rộn|không tân ngữ (+ from sth); QK got away|I want to get away for a few days.
-check out|Phrasal verb|/ˌtʃek ˈaʊt/|check‿OUT|4–5|trả phòng|không tân ngữ (+ of + nơi chốn); QK checked out|We checked out at noon.
-pack up|Phrasal verb|/ˌpæk ˈʌp/|pack‿UP|4–5|thu dọn đồ|tách được: pack up my things / pack them up|We packed up and went home.
-head for|Phrasal verb|/ˈhed fər/|HEAD for|5.5–6.5|đi về phía|không tách được: + nơi chốn; QK headed for /ɪd/|After lunch, we headed for the beach.
-get around|Phrasal verb|/ˌɡet əˈraʊnd/|get‿a-ROUND|5.5–6.5|đi lại (trong một nơi)|không tân ngữ / + nơi chốn; by + phương tiện|It's easy to get around Hoi An by bike.
-show sb around|Phrasal verb|/ˌʃoʊ əˈraʊnd/|show‿a-ROUND|5.5–6.5|dẫn ai đi tham quan|show + sb + around (+ nơi chốn)|My host family showed me around the city.
-be booked up|Phrasal verb|/bi ˌbʊkt ˈʌp/|be booked‿UP|5.5–6.5|kín chỗ, hết phòng|be + booked up|All the hotels were booked up.
-settle in|Phrasal verb|/ˌsetl ˈɪn/|set-tle‿IN|7–8|quen dần với nơi mới|không tân ngữ; QK settled in|I felt homesick, but I settled in quickly.
-stop over|Phrasal verb|/ˌstɑːp ˈoʊvər/|stop‿O-ver|7–8|dừng chân, quá cảnh|không tân ngữ (+ in + nơi chốn); QK stopped over /t/|We stopped over in Singapore for a night.
-soak up|Phrasal verb|/ˌsoʊk ˈʌp/|soak‿UP|7–8|tận hưởng (nắng, không khí)|tách được: soak up the sun / soak it up|She is soaking up the sun on a beach chair.
-go on vacation|Collocation|/ˌɡoʊ ɑːn veɪˈkeɪʃn/|go‿on va-CA-tion|3–3.5|đi nghỉ|go on + vacation (+ to nơi chốn)|We go on vacation every summer.
-take a trip|Collocation|/ˌteɪk ə ˈtrɪp/|take‿a TRIP|3–3.5|đi một chuyến|take + a trip + to + nơi chốn|Let's take a trip to Da Lat.
-traditional food|Collocation|/trəˌdɪʃənl ˈfuːd/|tra-DI-tion-al FOOD|3–3.5|món ăn truyền thống|try / eat + traditional food|I always try traditional food on a trip.
-a popular destination|Collocation|/ə ˌpɑːpjələr ˌdestɪˈneɪʃn/|a POP-u-lar des-ti-NA-tion|4–5|điểm đến nổi tiếng|a popular destination + for sb|Da Nang is a popular destination for students.
-pack a suitcase|Collocation|/ˌpæk ə ˈsuːtkeɪs/|pack‿a SUIT-case|4–5|xếp va li|pack + a/my suitcase|I packed my suitcase last night.
-book a flight|Collocation|/ˌbʊk ə ˈflaɪt/|book‿a FLIGHT|4–5|đặt vé máy bay|book + a flight + to + nơi chốn|She booked a flight to Hanoi.
-book accommodation|Collocation|/ˌbʊk əˌkɑːməˈdeɪʃn/|book‿ac-com-mo-DA-tion|4–5|đặt chỗ ở|book + accommodation(s)|We booked accommodation online.
-a budget hotel|Collocation|/ə ˌbʌdʒɪt hoʊˈtel/|a BUD-get ho-TEL|4–5|khách sạn giá rẻ|stay in + a budget hotel|We stayed in a budget hotel near the beach.
-see the sights|Collocation|/ˌsiː ðə ˈsaɪts/|see the SIGHTS|4–5|ngắm cảnh, tham quan|see the sights + in/of + nơi chốn|We saw the sights in Hue.
-feel homesick|Collocation|/ˌfiːl ˈhoʊmsɪk/|feel HOME-sick|4–5|thấy nhớ nhà|feel + homesick (+ for)|I felt homesick on my first night abroad.
-explore the area|Collocation|/ɪkˌsplɔːr ði ˈeriə/|ex-PLORE the AR-e-a|5.5–6.5|khám phá khu vực|explore + the area / the town|After checking in, we explored the area.
-take a guided tour|Collocation|/ˌteɪk ə ˌɡaɪdɪd ˈtʊr/|take‿a GUID-ed TOUR|5.5–6.5|đi tour có hướng dẫn viên|take + a guided tour + of + nơi chốn|We took a guided tour of the old city.
-pack light|Collocation|/ˌpæk ˈlaɪt/|pack LIGHT|5.5–6.5|mang ít đồ|pack + light (light = trạng từ)|On business trips, I always pack light.
-a memorable experience|Collocation|/ə ˌmemərəbl ɪkˈspɪriəns/|a MEM-o-ra-ble ex-PER-i-ence|5.5–6.5|trải nghiệm đáng nhớ|It was + a memorable experience|Staying with a host family was a memorable experience.
-a much-needed vacation|Collocation|/ə ˌmʌtʃ ˌniːdɪd veɪˈkeɪʃn/|a much-NEED-ed va-CA-tion|7–8|kỳ nghỉ rất cần|take / go on + a much-needed vacation|After my thesis, I took a much-needed vacation.
-breathtaking scenery|Collocation|/ˌbreθteɪkɪŋ ˈsiːnəri/|BREATH-tak-ing SCE-ner-y|7–8|phong cảnh ngoạn mục|scenery không đếm được|Ha Giang has breathtaking scenery.
-immerse myself in the local culture|Collocation|/ɪˌmɝːs maɪˈself ɪn ðə ˌloʊkl ˈkʌltʃər/|im-MERSE my-SELF in the LO-cal CUL-ture|7–8|hòa mình vào văn hóa địa phương|immerse + myself/yourself + in + N|On a language exchange, you immerse yourself in the local culture.
-a once-in-a-lifetime experience|Collocation|/ə ˌwʌns ɪn ə ˈlaɪftaɪm ɪkˈspɪriəns/|a ONCE-in‿a-LIFE-time ex-PER-i-ence|7–8|trải nghiệm có một không hai|It was + a once-in-a-lifetime experience|Surfing in Bali was a once-in-a-lifetime experience.
-a tourist trap|Collocation|/ə ˈtʊrɪst træp/|a TOUR-ist trap|7–8|nơi "chặt chém" du khách|be + a tourist trap (ý chê; ⚠ dùng khi chắc ngữ cảnh)|That night market is a tourist trap.
-hit the road|Idiom|/ˌhɪt ðə ˈroʊd/|hit the ROAD|5.5–6.5|lên đường|không tân ngữ; QK hit the road|We hit the road at six to avoid the traffic.
-a change of scenery|Idiom|/ə ˌtʃeɪndʒ əv ˈsiːnəri/|a CHANGE of SCE-ner-y|7–8|thay đổi không khí|need / want + a change of scenery|After my exams, I needed a change of scenery.
-off the beaten track|Idiom|/ˌɔːf ðə ˌbiːtn ˈtræk/|off the BEAT-en TRACK|7–8|nơi ít người biết|go / travel + off the beaten track; Mỹ hay nói off the beaten path|I like small villages off the beaten track.
-a home away from home|Idiom|/ə ˌhoʊm əˌweɪ frəm ˈhoʊm/|a HOME‿a-way from HOME|7–8|nơi ở thân thuộc như nhà|be + a home away from home|My host family's house was a home away from home.
-the trip of a lifetime|Idiom|/ðə ˌtrɪp əv ə ˈlaɪftaɪm/|the TRIP‿of‿a LIFE-time|7–8|chuyến đi để đời|be + the trip of a lifetime|Our graduation trip was the trip of a lifetime.
-a fish out of water|Idiom|/ə ˌfɪʃ aʊt əv ˈwɔːt̬ər/|a FISH‿out‿of WA-ter|7–8|lạc lõng ở nơi mới|feel like + a fish out of water|On my first business trip, I felt like a fish out of water.
-live out of a suitcase|Idiom|/ˌlɪv aʊt əv ə ˈsuːtkeɪs/|live‿out‿of‿a SUIT-case|8.5–9|đi liên tục, sống bằng va li|live out of + a suitcase (thường V-ing)|Consultants often live out of a suitcase.
-when in Rome|Idiom|/ˌwen ɪn ˈroʊm/|when‿in ROME|8.5–9|nhập gia tùy tục|câu rút gọn của When in Rome, do as the Romans do|When in Rome, I always eat what the locals eat.
+= đi xem có người dẫn | take a guided tour + of nơi chốn (có hướng dẫn viên) · show sb around = người quen dẫn mình đi xem
+take a guided tour|Collocation|/ˌteɪk ə ˌɡaɪdɪd ˈtʊr/|take‿a GUID-ed TOUR|5.5–6.5|take + a guided tour + of + nơi chốn|We took a guided tour of the old city.
+show sb around|Phrasal verb|/ˌʃoʊ əˈraʊnd/|show‿a-ROUND|5.5–6.5|show + sb + around (+ nơi chốn)|My host family showed me around the city.
+= khởi hành, lên đường | set off / hit the road (không tân ngữ) · head for + nơi chốn
+set off|Phrasal verb|/ˌset ˈɔːf/|set‿OFF|4–5|không tân ngữ; set off for + nơi chốn; QK set off|We set off for the beach at 5 a.m.
+hit the road|Idiom|/ˌhɪt ðə ˈroʊd/|hit the ROAD|5.5–6.5|không tân ngữ; QK hit the road|We hit the road at six to avoid the traffic.
+head for|Phrasal verb|/ˈhed fər/|HEAD for|5.5–6.5|không tách được: + nơi chốn; QK headed for /ɪd/|After lunch, we headed for the beach.
+= ăn ngoài hàng
+eat out|Phrasal verb|/ˌiːt ˈaʊt/|eat‿OUT|3–3.5|không tân ngữ; QK ate out|On vacation, we eat out every night.
+= trả phòng
+check out|Phrasal verb|/ˌtʃek ˈaʊt/|check‿OUT|4–5|không tân ngữ (+ of + nơi chốn); QK checked out|We checked out at noon.
+= đi lại (trong một nơi)
+get around|Phrasal verb|/ˌɡet əˈraʊnd/|get‿a-ROUND|5.5–6.5|không tân ngữ / + nơi chốn; by + phương tiện|It's easy to get around Hoi An by bike.
+= kín chỗ, hết phòng
+be booked up|Phrasal verb|/bi ˌbʊkt ˈʌp/|be booked‿UP|5.5–6.5|be + booked up|All the hotels were booked up.
+= quen dần với nơi mới
+settle in|Phrasal verb|/ˌsetl ˈɪn/|set-tle‿IN|7–8|không tân ngữ; QK settled in|I felt homesick, but I settled in quickly.
+= dừng chân, quá cảnh
+stop over|Phrasal verb|/ˌstɑːp ˈoʊvər/|stop‿O-ver|7–8|không tân ngữ (+ in + nơi chốn); QK stopped over /t/|We stopped over in Singapore for a night.
+= phong cảnh ngoạn mục
+breathtaking scenery|Collocation|/ˌbreθteɪkɪŋ ˈsiːnəri/|BREATH-tak-ing SCE-ner-y|7–8|scenery không đếm được|Ha Giang has breathtaking scenery.
+= nơi "chặt chém" du khách
+a tourist trap|Collocation|/ə ˈtʊrɪst træp/|a TOUR-ist trap|7–8|be + a tourist trap (ý chê; ⚠ dùng khi chắc ngữ cảnh)|That night market is a tourist trap.
+= nơi ít người biết
+off the beaten track|Idiom|/ˌɔːf ðə ˌbiːtn ˈtræk/|off the BEAT-en TRACK|7–8|go / travel + off the beaten track; Mỹ hay nói off the beaten path|I like small villages off the beaten track.
+= đi liên tục, sống bằng va li
+live out of a suitcase|Idiom|/ˌlɪv aʊt əv ə ˈsuːtkeɪs/|live‿out‿of‿a SUIT-case|8.5–9|live out of + a suitcase (thường V-ing)|Consultants often live out of a suitcase.
+@B. Hoạt động trong tranh
+= trải nghiệm văn hóa, món ăn địa phương | immerse myself in + N · when in Rome = nhập gia tùy tục (câu rút gọn, band rất cao ⚠)
+try local food|Collocation|/ˌtraɪ ˈloʊkl ˈfuːd/|try LO-cal FOOD|4–5|try + N (ăn thử); QK tried /d/|A girl is trying local food from a cart.
+traditional food|Collocation|/trəˌdɪʃənl ˈfuːd/|tra-DI-tion-al FOOD|3–3.5|try / eat + traditional food|I always try traditional food on a trip.
+immerse myself in the local culture|Collocation|/ɪˌmɝːs maɪˈself ɪn ðə ˌloʊkl ˈkʌltʃər/|im-MERSE my-SELF in the LO-cal CUL-ture|7–8|immerse + myself/yourself + in + N|On a language exchange, you immerse yourself in the local culture.
+when in Rome|Idiom|/ˌwen ɪn ˈroʊm/|when‿in ROME|8.5–9|câu rút gọn của When in Rome, do as the Romans do|When in Rome, I always eat what the locals eat.
+= tắm nắng | sunbathe không tân ngữ · soak up the sun / soak it up
+sunbathe|Vocab|/ˈsʌnbeɪð/|SUN-bathe|4–5|không tân ngữ; V-ing: sunbathing|A woman is sunbathing on a beach chair.
+soak up|Phrasal verb|/ˌsoʊk ˈʌp/|soak‿UP|7–8|tách được: soak up the sun / soak it up|She is soaking up the sun on a beach chair.
+= nhận phòng
+check in|Phrasal verb|/ˌtʃek ˈɪn/|check‿IN|4–5|không tân ngữ; check in at + khách sạn; QK checked in /t/|The woman is going to check in at the hotel.
+= kéo va li
+wheel a suitcase|Collocation|/ˌwiːl ə ˈsuːtkeɪs/|wheel‿a SUIT-case|5.5–6.5|wheel + a suitcase (wheel = động từ)|She is wheeling a red suitcase.
+= xem bản đồ
+look at a map|Collocation|/ˌlʊk ət ə ˈmæp/|look‿at‿a MAP|3–3.5|look at + N|She is looking at a map on her phone.
+= mua quà lưu niệm
+buy souvenirs|Collocation|/ˌbaɪ ˌsuːvəˈnɪrz/|buy sou-ve-NIRS|4–5|souvenir đếm được: a souvenir, souvenirs|A man is buying souvenirs at a small stall.
+= chụp ảnh tự sướng
+take a selfie|Collocation|/ˌteɪk ə ˈselfi/|take‿a SEL-fie|3–3.5|take (không dùng make) + a selfie / a photo|Two friends are taking a selfie.
+= đi lướt sóng
+go surfing|Collocation|/ˌɡoʊ ˈsɝːfɪŋ/|go SURF-ing|4–5|go + V-ing; QK went surfing|A young man went surfing early this morning.
+= đi tàu tham quan
+go on a boat trip|Collocation|/ˌɡoʊ ɑːn ə ˈboʊt trɪp/|go‿on‿a BOAT trip|4–5|go on + a trip / a boat trip|Some tourists are going on a boat trip.
+= làm việc từ xa
+work remotely|Collocation|/ˌwɝːk rɪˈmoʊtli/|work re-MOTE-ly|5.5–6.5|work + remotely (trạng từ); tính từ: remote work|A man is working remotely at a beach café.
+@D. Sinh viên năm cuối, mới đi làm
+= du lịch tiết kiệm | travel là động từ: travel on a budget (không nói a travel) · stay in a budget hotel
+travel on a budget|Collocation|/ˌtrævl ɑːn ə ˈbʌdʒɪt/|TRAV-el on‿a BUD-get|5.5–6.5|travel + on a budget; travel là động từ (không nói a travel)|As students, we travel on a budget.
+a budget hotel|Collocation|/ə ˌbʌdʒɪt hoʊˈtel/|a BUD-get ho-TEL|4–5|stay in + a budget hotel|We stayed in a budget hotel near the beach.
+= nghỉ làm, nghỉ phép | take time off (work) / take a day off · vacation days (Mỹ) = annual leave (Anh) · an out-of-office email = email báo đang nghỉ
+take time off (work)|Collocation|/ˌteɪk ˌtaɪm ˈɔːf/|take time‿OFF|5.5–6.5|take + time off (+ work); take + a day off|It's hard to take time off during your first months at work.
+vacation days|Collocation|/veɪˈkeɪʃn deɪz/|va-CA-tion days|5.5–6.5|get / have + N vacation days (a year); Anh: annual leave|New employees in Vietnam usually get twelve vacation days a year.
+out of office|Collocation|/ˌaʊt əv ˈɔːfɪs/|out‿of OF-fice|5.5–6.5|be + out of office; đứng trước danh từ: an out-of-office email|Before a trip, set an out-of-office email.
+= chuyến công tác
+business trip|Collocation|/ˈbɪznəs trɪp/|BUS-i-ness trip|4–5|go on + a business trip + to + nơi chốn|My first business trip will probably be to Ho Chi Minh City.
+= chuyến du lịch gắn kết công ty
+team-building trip|Collocation|/ˈtiːm ˌbɪldɪŋ trɪp/|TEAM-build-ing trip|5.5–6.5|organize / go on + a team-building trip|Many companies organize a team-building trip every summer.
+= chuyến đi mừng tốt nghiệp
+graduation trip|Collocation|/ˌɡrædʒuˈeɪʃn trɪp/|grad-u-A-tion trip|4–5|plan / take + a graduation trip|We are planning a graduation trip after our thesis defense.
+= lịch trình chuyến đi
+itinerary|Vocab|/aɪˈtɪnəreri/|i-TIN-er-ar-y|7–8|plan / make + an itinerary; số nhiều itineraries|We planned a three-day itinerary for our trip.
+@C. Loại kỳ nghỉ và nơi chốn
+= kỳ nghỉ biển
+beach vacation|Collocation|/ˈbiːtʃ veɪˌkeɪʃn/|BEACH va-ca-tion|3–3.5|go on + a beach vacation|A beach vacation is perfect in June.
+= chuyến đi thành phố ngắn ngày
+city break|Collocation|/ˈsɪt̬i breɪk/|CIT-y break|5.5–6.5|have / go on + a city break|A city break in Hanoi is great for a long weekend.
+= kỳ nghỉ mạo hiểm
+adventure vacation|Collocation|/ədˈventʃər veɪˌkeɪʃn/|ad-VEN-ture va-ca-tion|4–5|go on + an adventure vacation|On an adventure vacation, you can go hiking.
+= kỳ nghỉ gia đình
+family vacation|Collocation|/ˈfæməli veɪˌkeɪʃn/|FAM-i-ly va-ca-tion|3–3.5|go on + a family vacation|We go on a family vacation every Tet.
+= chương trình trao đổi ngôn ngữ
+language exchange|Collocation|/ˈlæŋɡwɪdʒ ɪksˌtʃeɪndʒ/|LAN-guage ex-change|5.5–6.5|go on / join + a language exchange|She went on a language exchange to Spain.
+= ở cùng gia đình bản xứ
+stay with a host family|Collocation|/ˌsteɪ wɪð ə ˈhoʊst ˌfæməli/|stay with‿a HOST fam-i-ly|5.5–6.5|stay with + sb; QK stayed /d/|Exchange students often stay with a host family.
+= đi bộ đường dài
+go hiking|Collocation|/ˌɡoʊ ˈhaɪkɪŋ/|go HIK-ing|4–5|go + V-ing; QK went hiking|My friends went hiking in Sa Pa last spring.
+= đi công viên nước
+visit a water park|Collocation|/ˌvɪzɪt ə ˈwɑːt̬ər pɑːrk/|VIS-it‿a WA-ter park|3–3.5|visit + nơi chốn (không cần to)|Kids love visiting a water park on a family vacation.

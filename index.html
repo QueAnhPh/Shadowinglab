@@ -158,6 +158,21 @@ p.small{font-size:13px;margin:6px 0 0}
 .fcfilter{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
 .fcfilter button{font-size:13px;padding:5px 12px;border-radius:99px;min-height:0}
 .fcfilter button.on{outline:2px solid var(--near);font-weight:700}
+.fgrid{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px 10px;text-align:left;align-items:start}
+.fgrid .ft{font-size:12px;font-weight:700;opacity:.7;padding-top:7px}
+.fchips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:15px;padding:5px 10px;border-radius:12px;min-height:0;font-weight:600}
+.chip small{font-size:11px;opacity:.65;font-weight:500}
+.chip.on{outline:2px solid var(--near);background:var(--near-bg)}
+.fdet{font-size:15px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center}
+.fdet .ipa{font-size:15px}
+.fnote{background:rgba(255,193,7,.16);border-radius:12px;padding:8px 10px;font-size:14px;line-height:1.5}
+.choices button.pick{outline:2px solid var(--near);background:var(--near-bg);font-weight:700}
+.choices button.miss{border:2px dashed var(--ok,#2e7d32);font-weight:700}
+.gerr{color:var(--bad,#c62828);font-size:13px;margin:0}
+.deckrow{display:grid;gap:6px}
+.gamebtn{justify-self:start;font-size:14px;padding:6px 14px;border-radius:99px;min-height:0}
+@media (max-width:420px){.fgrid{grid-template-columns:78px minmax(0,1fr)}}
 .today{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:16px 18px;display:grid;gap:10px;border-top:5px solid var(--accent,#e8a33d)}
 .today h2{margin:0;font-size:19px}.today .done-msg{margin:0;font-size:16px}
 .tbig{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;width:100%;text-align:left;padding:16px;border-radius:16px;background:var(--near-bg);border:2px solid var(--near);font-size:16px}
@@ -2484,39 +2499,48 @@ function sayIt(text) {
     speechSynthesis.speak(u);
   } catch {}
 }
+/* cards: grouped {mean, note?, cat, items:[{w,type,ipa,stress,band,grammar,ex,warn?}]} or old flat {w,type,…,mean} */
+const fcCards = D => D._cards || (D._cards = D.cards.map(c => c.items ? c : { mean: c.mean, cat: c.group || "", note: "", items: [c] }));
+const fcWords = D => fcCards(D).reduce((a, c) => a + c.items.length, 0);
+const fcGroups = D => fcCards(D).filter(c => c.items.length > 1);
+const cardKey = c => c.items[0].w;
+const shuffle = a => { a = a.slice(); for (let j = a.length - 1; j > 0; j--) { const r = Math.floor(Math.random() * (j + 1)); [a[j], a[r]] = [a[r], a[j]]; } return a; };
+const bandTxt = it => `${esc(it.band || "")}${it.warn ? " ⚠" : ""}`;
+function chipRows(c, sel, cls = "") {
+  return `<div class="fgrid">${TYPES.filter(t => c.items.some(it => it.type === t)).map(t => `<div class="ft">${t}</div><div class="fchips">${c.items.map((it, j) => it.type !== t ? "" :
+    `<button class="chip ${cls} ${j === sel ? "on" : ""}" data-j="${j}">${esc(it.w)} <small>${bandTxt(it)}</small></button>`).join("")}</div>`).join("")}</div>`;
+}
 function viewDecks() {
   const ds = myDecks().sort((a, b) => b.session - a.session);
   $("#app").innerHTML = `<h2>🃏 Flashcard từ vựng</h2>
-    <p class="muted">Từ của từng buổi học, gồm cả từ band cao trong Alternatives. Học tới buổi nào thì mở topic đó. Mỗi thẻ: nghe phát âm, đoán nghĩa (3 lựa chọn), xem cách dùng và ví dụ.</p>
+    <p class="muted">Từ của từng buổi học, gồm cả từ band cao trong Alternatives. Từ cùng nghĩa gom chung 1 thẻ, xếp theo Vocab / Phrasal verb / Collocation / Idiom. Học tới buổi nào thì mở topic đó. Ôn xong thì chơi 🎮 Game đồng nghĩa để nhớ lâu hơn.</p>
     <div class="decks">${ds.length ? ds.map(D => {
-      const open = deckOpen(D), st = deckState(D), n = D.cards.length, known = (st.known || []).length;
-      return `<button class="deck ${open ? "" : "locked"}" ${open ? `data-fc="${D.id}"` : "disabled"}>
+      const open = deckOpen(D), st = deckState(D), n = fcCards(D).length, nw = fcWords(D), known = (st.known || []).filter(k => fcCards(D).some(c => cardKey(c) === k)).length, g = fcGroups(D).length;
+      return `<div class="deckrow"><button class="deck ${open ? "" : "locked"}" ${open ? `data-fc="${D.id}"` : "disabled"}>
         <span style="font-size:26px">${open ? (st.done ? "✅" : "🃏") : "🔒"}</span>
-        <span class="t"><b>${esc(D.title)}</b><span>Buổi ${D.session} · ${n} từ${open ? ` · đã thuộc ${known}/${n}` : " · mở sau buổi học"}</span>${open ? `<span class="fcbar" style="display:block;margin-top:6px"><i style="width:${Math.round(known / n * 100)}%"></i></span>` : ""}</span>
-        <span class="go">${open ? "›" : ""}</span></button>`;
+        <span class="t"><b>${esc(D.title)}</b><span>Buổi ${D.session} · ${n} thẻ · ${nw} từ${open ? ` · đã thuộc ${known}/${n} thẻ` : " · mở sau buổi học"}</span>${open ? `<span class="fcbar" style="display:block;margin-top:6px"><i style="width:${Math.round(known / n * 100)}%"></i></span>` : ""}</span>
+        <span class="go">${open ? "›" : ""}</span></button>
+        ${open && g ? `<button class="gamebtn" data-fg="${D.id}">🎮 Game đồng nghĩa${store.get(`fcg:${student}:${D.id}`, null) != null ? ` · cao nhất ${store.get(`fcg:${student}:${D.id}`, 0)}%` : ""}</button>` : ""}</div>`;
     }).join("") : `<p class="muted">Chưa có bộ flashcard nào.</p>`}</div>`;
   $("#app").querySelectorAll("[data-fc]").forEach(b => b.addEventListener("click", () => { location.hash = "fc-" + b.dataset.fc; }));
+  $("#app").querySelectorAll("[data-fg]").forEach(b => b.addEventListener("click", () => { location.hash = "fcg-" + b.dataset.fg; }));
 }
 const TYPES = ["Vocab", "Phrasal verb", "Collocation", "Idiom"];
 function viewDeck(D, ret) {
-  const st = deckState(D);
-  let filter = store.get("fcFilter", "all"), wrongOnly = false;
-  let list = [], k = 0, score = 0, answered = {};
-  const build = () => {
-    list = D.cards.map((c, i) => i).filter(i => (filter === "all" || D.cards[i].type === filter) && (!wrongOnly || !(st.known || []).includes(D.cards[i].w)));
-    k = 0; score = 0; answered = {};
-  };
+  const st = deckState(D), C = fcCards(D);
+  let filter = store.get("fcFilter", "all");
+  let list = [], k = 0, score = 0, answered = {}, sel = {};
+  const build = () => { list = C.map((c, i) => i).filter(i => filter === "all" || C[i].items.some(it => it.type === filter)); k = 0; score = 0; answered = {}; sel = {}; };
   const choicesFor = i => {
-    const c = D.cards[i], pool = D.cards.filter(x => x.mean !== c.mean);
-    const same = pool.filter(x => x.type === c.type), src = same.length >= 2 ? same : pool;
-    const picks = []; const used = new Set();
-    while (picks.length < 2 && used.size < src.length) { const r = src[Math.floor(Math.random() * src.length)]; if (!used.has(r.mean)) { used.add(r.mean); picks.push(r.mean); } }
-    const all = [c.mean, ...picks]; for (let j = all.length - 1; j > 0; j--) { const r = Math.floor(Math.random() * (j + 1)); [all[j], all[r]] = [all[r], all[j]]; }
-    return all;
+    const c = C[i], pool = C.filter(x => x.mean !== c.mean);
+    const same = pool.filter(x => x.items[0].type === c.items[0].type), src = same.length >= 2 ? same : pool;
+    const picks = shuffle(src).map(x => x.mean).filter((m, j, a) => a.indexOf(m) === j).slice(0, 2);
+    return shuffle([c.mean, ...picks]);
   };
   const render = () => {
     if (k >= list.length) return renderEnd();
-    const i = list[k], c = D.cards[i], a = answered[i];
+    const i = list[k], c = C[i], a = answered[i], g = c.items.length > 1;
+    const j = sel[i] ?? (filter !== "all" ? Math.max(0, c.items.findIndex(it => it.type === filter)) : 0), it = c.items[j];
     const ch = a ? a.choices : choicesFor(i);
     $("#app").innerHTML = `<button class="back" id="backBtn">← ${ret ? "Quay lại bài" : "Các bộ flashcard"}</button>
       <h2>🃏 ${esc(D.title)}</h2>
@@ -2524,53 +2548,132 @@ function viewDeck(D, ret) {
       <div class="fcbar"><i style="width:${Math.round(k / list.length * 100)}%"></i></div>
       <p class="muted small">Thẻ ${k + 1}/${list.length} · đúng ${score}</p>
       <section class="fcard">
-        <div class="tags"><span class="tag2">${esc(c.type)}</span><span class="tag2">Band ${esc(c.band)}${c.warn ? " ⚠" : ""}</span></div>
-        <div class="w">${esc(c.w)}</div>
-        <div class="ipa">${esc(c.ipa)}</div>
-        ${c.stress ? `<div class="st">Nhấn: <b>${esc(c.stress)}</b></div>` : ""}
-        <button class="say" id="sayW">🔊 Nghe phát âm</button>
-        <p><b>Nghĩa là gì?</b></p>
+        <div class="tags">${c.cat ? `<span class="tag2">${esc(c.cat)}</span>` : ""}${g ? `<span class="tag2">${c.items.length} từ cùng nghĩa</span>` : `<span class="tag2">${esc(it.type)}</span><span class="tag2">Band ${bandTxt(it)}</span>`}</div>
+        ${g ? `${chipRows(c, j)}<p class="muted small">Bấm vào từng từ để nghe và xem cách đọc.</p>` : `<div class="w">${esc(it.w)}</div>`}
+        <div class="fdet">${g ? `<b>${esc(it.w)}</b> · ` : ""}<span class="ipa">${esc(it.ipa)}</span>${it.stress ? ` · Nhấn: <b>${esc(it.stress)}</b>` : ""}
+          <button class="say" id="sayW">🔊 Nghe</button></div>
+        <p><b>${g ? "Cả nhóm nghĩa là gì?" : "Nghĩa là gì?"}</b></p>
         <div class="choices">${ch.map(m => `<button data-m="${esc(m)}" ${a ? "disabled" : ""} class="${a ? (m === c.mean ? "right" : m === a.pick ? "wrong" : "") : ""}">${esc(m)}</button>`).join("")}</div>
         ${a ? `<div class="fcinfo">
           <div><span class="k">Nghĩa</span>${esc(c.mean)}</div>
-          ${c.grammar ? `<div><span class="k">Cách dùng (grammar)</span>${esc(c.grammar)}</div>` : ""}
-          ${c.ex ? `<div><span class="k">Ví dụ (context)</span>${esc(c.ex)} <button class="linkbtn" id="sayEx">🔊</button></div>` : ""}
-          ${c.warn ? `<div class="muted small">⚠ Từ band rất cao: chỉ dùng khi chắc ngữ cảnh.</div>` : ""}
+          ${g ? `<div><span class="k">${esc(it.w)} · ${esc(it.type)} · band ${bandTxt(it)}</span></div>` : ""}
+          ${it.grammar ? `<div><span class="k">Cách dùng (grammar)</span>${esc(it.grammar)}</div>` : ""}
+          ${it.ex ? `<div><span class="k">Ví dụ (context)</span>${esc(it.ex)} <button class="linkbtn" id="sayEx">🔊</button></div>` : ""}
+          ${c.note ? `<div class="fnote">💡 ${esc(c.note)}</div>` : ""}
+          ${c.items.some(x => x.warn) ? `<div class="muted small">⚠ Từ band rất cao: chỉ dùng khi chắc ngữ cảnh.</div>` : ""}
         </div>` : ""}
       </section>
       <div class="fcnav"><button id="prev" ${k ? "" : "disabled"}>← Trước</button><button class="primary" id="next" ${a ? "" : "disabled"}>${k + 1 < list.length ? "Tiếp →" : "Xong ✓"}</button></div>`;
     $("#backBtn").addEventListener("click", () => { location.hash = ret || "fc"; });
-    $("#sayW").addEventListener("click", () => sayIt(c.w));
-    if ($("#sayEx")) $("#sayEx").addEventListener("click", () => sayIt(c.ex));
-    $("#app").querySelectorAll(".fcfilter button").forEach(b => b.addEventListener("click", () => { filter = b.dataset.f; store.set("fcFilter", filter); wrongOnly = false; build(); render(); }));
+    $("#sayW").addEventListener("click", () => sayIt(it.w));
+    if ($("#sayEx")) $("#sayEx").addEventListener("click", () => sayIt(it.ex));
+    $("#app").querySelectorAll(".fcard .chip").forEach(b => b.addEventListener("click", () => { sel[i] = +b.dataset.j; sayIt(c.items[+b.dataset.j].w); render(); }));
+    $("#app").querySelectorAll(".fcfilter button").forEach(b => b.addEventListener("click", () => { filter = b.dataset.f; store.set("fcFilter", filter); build(); render(); }));
     $("#app").querySelectorAll(".choices button").forEach(b => b.addEventListener("click", () => {
       const ok = b.dataset.m === c.mean;
       answered[i] = { pick: b.dataset.m, ok, choices: ch };
       if (ok) score++;
-      const known = new Set(st.known || []); ok ? known.add(c.w) : known.delete(c.w); st.known = [...known];
+      const known = new Set(st.known || []); ok ? known.add(cardKey(c)) : known.delete(cardKey(c)); st.known = [...known];
       store.set(fcKey(D.id), st);
-      if (!ok) sayIt(c.w);
       render();
     }));
     $("#prev").addEventListener("click", () => { k--; render(); });
     $("#next").addEventListener("click", () => { k++; render(); window.scrollTo(0, 0); });
-    if (!a) sayIt(c.w);
+    if (!a && sel[i] == null) sayIt(it.w);
   };
   const renderEnd = () => {
-    const wrong = list.filter(i => answered[i] && !answered[i].ok).map(i => D.cards[i]);
+    const wrong = list.filter(i => answered[i] && !answered[i].ok).map(i => C[i]);
+    const known = (st.known || []).filter(x => C.some(c => cardKey(c) === x)).length;
     st.done = true; st.at = Date.now(); st.best = Math.max(st.best || 0, Math.round(score / Math.max(1, list.length) * 100));
     store.set(fcKey(D.id), st);
-    if (cloudUser()) window.Cloud.save({ fc: { [D.id]: { done: true, at: st.at, best: st.best, known: (st.known || []).length, total: D.cards.length } } }).catch(() => {});
+    if (cloudUser()) window.Cloud.save({ fc: { [D.id]: { done: true, at: st.at, best: st.best, known, total: C.length } } }).catch(() => {});
+    const g = fcGroups(D).length;
     $("#app").innerHTML = `<section class="fcard">
       <div class="w">🎉 Xong ${list.length} thẻ!</div>
-      <p>Đúng <b>${score}/${list.length}</b> · đã thuộc ${(st.known || []).length}/${D.cards.length} từ của bộ này.</p>
-      ${wrong.length ? `<p class="muted">Từ cần ôn lại: ${wrong.map(c => `<b>${esc(c.w)}</b>`).join(" · ")}</p>` : ""}
-      <div class="fcnav">${wrong.length ? `<button id="again">🔁 Ôn lại ${wrong.length} từ sai</button>` : `<button id="again">🔁 Ôn lại từ đầu</button>`}
-      <button class="primary" id="goOn">${ret ? "Vào làm bài →" : "Về danh sách"}</button></div></section>`;
+      <p>Đúng <b>${score}/${list.length}</b> · đã thuộc ${known}/${C.length} thẻ của bộ này.</p>
+      ${wrong.length ? `<p class="muted">Cần ôn lại: ${wrong.map(c => `<b>${esc(c.items.map(x => x.w).join(" / "))}</b>`).join(" · ")}</p>` : ""}
+      ${g ? `<button class="primary" id="game">🎮 Game đồng nghĩa: ${g} nhóm từ</button>` : ""}
+      <div class="fcnav">${wrong.length ? `<button id="again">🔁 Ôn lại ${wrong.length} thẻ sai</button>` : `<button id="again">🔁 Ôn lại từ đầu</button>`}
+      <button ${g ? "" : `class="primary"`} id="goOn">${ret ? "Vào làm bài →" : "Về danh sách"}</button></div></section>`;
     $("#again").addEventListener("click", () => { if (wrong.length) { list = list.filter(i => answered[i] && !answered[i].ok); k = 0; score = 0; answered = {}; } else build(); render(); });
     $("#goOn").addEventListener("click", () => { if (ret) store.set(`fcskip:${student}:${ret}`, true); location.hash = ret || "fc"; });
+    if ($("#game")) $("#game").addEventListener("click", () => { if (ret) store.set(`fcskip:${student}:${ret}`, true); location.hash = `fcg-${D.id}${ret ? "~" + ret : ""}`; });
   };
   build(); render();
+}
+/* 🎮 game: show 1 word of a synonym group, hide the rest; pick every word that means the same from 3–4 options */
+function viewGame(D, ret) {
+  const C = fcCards(D), G = fcGroups(D);
+  if (!G.length) { location.hash = "fc-" + D.id; return; }
+  const ROUNDS = Math.min(10, G.length);
+  let rounds = [], k = 0, score = 0;
+  const makeRound = c => {
+    const target = c.items[Math.floor(Math.random() * c.items.length)];
+    const others = shuffle(c.items.filter(x => x !== target));
+    const nOpt = 3 + Math.floor(Math.random() * 2);
+    const nRight = Math.min(others.length, 1 + Math.floor(Math.random() * Math.min(3, nOpt - 1)));
+    const pool = shuffle(C.filter(x => x !== c).flatMap(x => x.items));
+    const near = pool.filter(x => x.type === target.type);
+    const wrongs = [...near, ...pool.filter(x => x.type !== target.type)].filter((x, j, a) => a.indexOf(x) === j).slice(0, nOpt - nRight);
+    return { c, target, opts: shuffle([...others.slice(0, nRight), ...wrongs]), picked: new Set(), checked: false, ok: false };
+  };
+  const start = () => { rounds = shuffle(G).slice(0, ROUNDS).map(makeRound); k = 0; score = 0; render(); };
+  const render = () => {
+    if (k >= rounds.length) return renderEnd();
+    const R = rounds[k], t = R.target, isRight = o => R.c.items.includes(o);
+    $("#app").innerHTML = `<button class="back" id="backBtn">← ${ret ? "Quay lại bài" : "Các bộ flashcard"}</button>
+      <h2>🎮 Game đồng nghĩa · ${esc(D.title)}</h2>
+      <div class="fcbar"><i style="width:${Math.round(k / rounds.length * 100)}%"></i></div>
+      <p class="muted small">Câu ${k + 1}/${rounds.length} · đúng ${score}</p>
+      <section class="fcard">
+        <div class="tags"><span class="tag2">${esc(t.type)}</span><span class="tag2">Band ${bandTxt(t)}</span></div>
+        <div class="w">${esc(t.w)}</div>
+        <div class="ipa">${esc(t.ipa)}</div>
+        <button class="say" id="sayW">🔊 Nghe</button>
+        <p><b>Từ nào cùng nghĩa, dùng thay được cho từ này?</b><br><span class="muted small">Chọn TẤT CẢ từ đúng (có thể 1, 2 hoặc 3 từ), rồi bấm Kiểm tra.</span></p>
+        <div class="choices">${R.opts.map((o, j) => {
+          const cls = !R.checked ? (R.picked.has(j) ? "pick" : "") : isRight(o) ? (R.picked.has(j) ? "right" : "miss") : (R.picked.has(j) ? "wrong" : "");
+          return `<button data-j="${j}" class="${cls}" ${R.checked ? "disabled" : ""}>${R.picked.has(j) ? "☑" : "☐"} ${esc(o.w)} <small class="muted">${esc(o.type)}</small>${R.checked && isRight(o) && !R.picked.has(j) ? ` <small>← em bỏ sót</small>` : ""}</button>`;
+        }).join("")}</div>
+        <p class="gerr" hidden></p>
+        ${R.checked ? `<div class="fcinfo">
+          <div><span class="k">${R.ok ? "✅ Chính xác!" : "Chưa đúng hết, xem lại cả nhóm nha"}</span></div>
+          <div><span class="k">Cả nhóm nghĩa là</span>${esc(R.c.mean)}</div>
+          ${chipRows(R.c, R.c.items.indexOf(t), "ro")}
+          ${R.c.note ? `<div class="fnote">💡 ${esc(R.c.note)}</div>` : ""}
+        </div>` : ""}
+      </section>
+      <div class="fcnav"><span></span>${R.checked ? `<button class="primary" id="next">${k + 1 < rounds.length ? "Tiếp →" : "Xem kết quả ✓"}</button>` : `<button class="primary" id="check">Kiểm tra</button>`}</div>`;
+    $("#backBtn").addEventListener("click", () => { location.hash = ret || "fc"; });
+    $("#sayW").addEventListener("click", () => sayIt(t.w));
+    $("#app").querySelectorAll(".fcard .chip").forEach(b => b.addEventListener("click", () => sayIt(R.c.items[+b.dataset.j].w)));
+    if (!R.checked) {
+      $("#app").querySelectorAll(".choices button").forEach(b => b.addEventListener("click", () => {
+        const j = +b.dataset.j; R.picked.has(j) ? R.picked.delete(j) : R.picked.add(j); sayIt(R.opts[j].w); render();
+      }));
+      $("#check").addEventListener("click", () => {
+        if (!R.picked.size) { const e = $("#app").querySelector(".gerr"); e.hidden = false; e.textContent = "Chọn ít nhất 1 từ trước đã."; return; }
+        R.checked = true; R.ok = R.opts.every((o, j) => isRight(o) === R.picked.has(j)); if (R.ok) score++; render();
+      });
+      if (!$("#app").dataset.said || $("#app").dataset.said !== String(k)) { $("#app").dataset.said = String(k); sayIt(t.w); }
+    } else {
+      $("#next").addEventListener("click", () => { k++; render(); window.scrollTo(0, 0); });
+    }
+  };
+  const renderEnd = () => {
+    const pct = Math.round(score / rounds.length * 100), key = `fcg:${student}:${D.id}`;
+    store.set(key, Math.max(store.get(key, 0), pct));
+    if (cloudUser()) window.Cloud.save({ fcg: { [D.id]: { at: Date.now(), score, total: rounds.length, best: store.get(key, 0) } } }).catch(() => {});
+    const miss = rounds.filter(R => !R.ok);
+    $("#app").innerHTML = `<section class="fcard">
+      <div class="w">${pct >= 80 ? "🏆" : "🎮"} Đúng ${score}/${rounds.length} nhóm</div>
+      <p>${pct >= 80 ? "Giỏi lắm! Em nhớ nhóm từ rất chắc." : "Chơi lại vài lần nữa là nhớ thôi."} Kỷ lục của em: <b>${store.get(key, 0)}%</b>.</p>
+      ${miss.length ? `<p class="muted">Nhóm cần ôn: ${miss.map(R => `<b>${esc(R.c.items.map(x => x.w).join(" / "))}</b>`).join(" · ")}</p>` : ""}
+      <div class="fcnav"><button id="again">🔁 Chơi lại</button><button class="primary" id="goOn">${ret ? "Vào làm bài →" : "Về flashcard"}</button></div></section>`;
+    $("#again").addEventListener("click", start);
+    $("#goOn").addEventListener("click", () => { location.hash = ret || "fc"; });
+  };
+  start();
 }
 /* before a lesson: suggest reviewing its topic's flashcards once */
 function fcGate(L) {
@@ -2578,7 +2681,7 @@ function fcGate(L) {
   if (!D || !deckOpen(D) || deckState(D).done || store.get(`fcskip:${student}:${L.id}`, false)) return false;
   $("#micSheet").innerHTML = `<div class="mic-ic">🃏</div>
     <h3 id="micTitle">Ôn từ vựng trước nha?</h3>
-    <p>Bài này dùng từ của topic <b>${esc(D.title)}</b> (${D.cards.length} từ). Em chưa ôn flashcard của topic này. Ôn khoảng 5–10 phút: nghe phát âm, đoán nghĩa, xem cách dùng, làm bài sẽ dễ hơn nhiều.</p>
+    <p>Bài này dùng từ của topic <b>${esc(D.title)}</b> (${fcWords(D)} từ, ${fcCards(D).length} thẻ). Em chưa ôn flashcard của topic này. Ôn khoảng 5–10 phút: nghe phát âm, đoán nghĩa, xem cách dùng, làm bài sẽ dễ hơn nhiều.</p>
     <div class="row"><button class="primary" id="micGo">🃏 Ôn flashcard trước</button><button id="micLater">Vào bài luôn</button></div>`;
   $("#micModal").hidden = false;
   $("#micGo").addEventListener("click", () => { closeMic(); location.hash = `fc-${D.id}~${L.id}`; });
@@ -2613,6 +2716,8 @@ function route() {
   if (id === "fc") { setNav("fc"); return viewDecks(); }
   if (id === "me") { setNav("me"); return viewMe(); }
   if (id === "progress") { setNav("progress"); return viewProgress(); }
+  const gm = id.match(/^fcg-([^~]+)(?:~(.+))?$/);
+  if (gm) { const D = myDecks().find(x => x.id === gm[1]); setNav("fc"); if (D && deckOpen(D)) return viewGame(D, gm[2] || ""); return viewDecks(); }
   const fm = id.match(/^fc-([^~]+)(?:~(.+))?$/);
   if (fm) { const D = myDecks().find(x => x.id === fm[1]); setNav("fc"); if (D && deckOpen(D)) return viewDeck(D, fm[2] || ""); return viewDecks(); }
   setNav(id ? "" : "home");
