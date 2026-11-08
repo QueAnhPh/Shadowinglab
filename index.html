@@ -76,7 +76,7 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .tcard h3{margin:0;font-size:16px}
 .tscroll{overflow-x:auto}
 .teachwide .wrap{max-width:1180px}
-.tclasses{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;align-items:start}.tclass{min-width:0}.tclass h4{margin:4px 0 6px}
+.tclasses{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;align-items:start}.tclass{min-width:0}.tcellbtn{all:unset;cursor:pointer;display:inline-block;border-radius:999px}.tcellbtn:hover .tpct,.tcellbtn:focus-visible .tpct{outline:2px solid var(--accent,#7a4b2a);outline-offset:1px}.tpick{display:grid;gap:4px;text-align:left;max-height:60vh;overflow:auto}.tclass h4{margin:4px 0 6px}
 .ttable{border-collapse:collapse;width:100%;font-size:14px}
 .ttable th,.ttable td{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
 .ttable th{font-size:12px;color:var(--muted);font-weight:600;border-top:none}
@@ -2455,7 +2455,7 @@ function viewTeacher() {
             const ls = DATA.lessons.filter(L => H.lessons.includes(L.id) && L.for.includes(r.s.id));
             if (!ls.length) return `<td class="muted">–</td>`;
             const pct = Math.round(ls.reduce((a, L) => a + progressOf(L, r.s.id, r.best[L.id] || {}).pct, 0) / ls.length);
-            return `<td>${pct >= 100 ? `<span class="tpct ok">✅</span>` : cell(pct, pct >= PASS ? "ok" : past ? "late" : pct > 0 ? "mid" : "zero")}</td>`;
+            return `<td><button class="tcellbtn" data-sid="${r.s.id}" data-ls="${esc(ls.map(L => L.id).join(","))}" title="Bấm để xem bài">${pct >= 100 ? `<span class="tpct ok">✅</span>` : cell(pct, pct >= PASS ? "ok" : past ? "late" : pct > 0 ? "mid" : "zero")}</button></td>`;
           }).join("")}</tr>`;
         }).join("")}`).join("")}</tbody></table></div>` : `<p class="muted small">Chưa có bài tập.</p>`}</div>`;
       }).join("")}</div></section>` : ""}
@@ -2467,6 +2467,19 @@ function viewTeacher() {
   $("#tReload").addEventListener("click", async e => { e.currentTarget.disabled = true; await checkTeacher(cloudUser()); route(); });
   $("#app").querySelectorAll("details.tstu").forEach(d => d.addEventListener("toggle", () => { if (d.open) teachOpen = d.dataset.sid; }));
   $("#app").querySelectorAll(".trow[data-go]").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
+  /* bấm ô % trong bảng tuần: 1 bài → mở luôn bài đó; nhiều bài → chọn bài (kèm % từng bài) */
+  $("#app").querySelectorAll(".tcellbtn").forEach(b => b.addEventListener("click", () => {
+    const sid = b.dataset.sid, ids = b.dataset.ls.split(","), r = rows.find(x => x.s.id === sid);
+    if (ids.length === 1) { teachOpen = sid; location.hash = `teach~${sid}~${ids[0]}`; return; }
+    const ls = ids.map(id => DATA.lessons.find(L => L.id === id)).filter(Boolean).sort(byDay);
+    $("#micSheet").innerHTML = `<h3 id="micTitle">${esc(r.s.name)} · chọn bài để xem</h3>
+      <div class="tpick">${ls.map(L => { const p = progressOf(L, sid, r.best[L.id] || {});
+        return `<button class="trow" data-go="teach~${sid}~${L.id}"><span class="wd">${esc(dayLabel(L))}</span><div class="t"><b>${L.type === "gap" ? "🎧" : "🗣️"} ${esc(cleanTitle(L))}</b><span>${p.gap ? (p.pct >= 100 ? `nộp rồi · đúng ${p.score}/${p.idx.length} câu` : "chưa nộp") : `đã thử ${p.tried.length}/${p.idx.length} câu`}</span></div>${p.pct >= 100 ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${p.pct >= PASS ? "ok" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev">›</span></button>`; }).join("")}</div>
+      <div class="row"><button id="micLater">Đóng</button></div>`;
+    $("#micModal").hidden = false;
+    $("#micLater").addEventListener("click", closeMic);
+    $("#micSheet").querySelectorAll(".trow[data-go]").forEach(x => x.addEventListener("click", () => { closeMic(); teachOpen = sid; location.hash = x.dataset.go; }));
+  }));
 }
 /* teacher: every submitted free answer; download the ungraded ones as one JSON file for grading */
 async function loadSubs(rows) {
