@@ -43,6 +43,9 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 ## 4. Mở bài theo ngày
 
 - `opens: "YYYY-MM-DD"` = ngày làm; trước ngày đó HS không thấy bài (giáo viên thấy hết). `opensAt: "HH:MM"` (tuỳ chọn) = giờ mở trong ngày (vd. bài tối sau buổi học).
+- **Gói bài tập theo ngày, hạn nộp = buổi học kế tiếp (mọi lớp, từ 9/11/2026):** mỗi gói tuần bắt đầu **sau buổi học** (bài đầu có `opensAt` = giờ tan học) và kết thúc **trước buổi học tuần sau**. Mục `homework` của gói có `deadline` = ngày buổi học kế tiếp + `deadlineAt` = **giờ bắt đầu buổi đó** (Vân Anh: Thứ Bảy `"17:30"` · Đức–Thư: Thứ Năm `"15:30"`). Web hiện *Deadline …, 17:30 (trước buổi học)*, qua giờ đó thì báo quá hạn.
+- Dải **"Tuần này"** trên trang HS chạy theo chu kỳ bài tập (từ bài đầu tiên tới buổi học kế tiếp, ngày học có 📚), không theo Thứ Hai → Chủ nhật. Chủ nhật nghỉ: không đặt bài nào `opens` Chủ nhật.
+- Tuần học dạng gì thì gói bài tập có dạng đó (Speaking: Part vừa dạy · Listening: dạng bài vừa đào sâu); được thêm, không được thiếu. Lịch từng ngày của mỗi lớp ghi ở project / lịch soạn đề của lớp đó.
 
 ## 5. Dữ liệu và đẩy lên
 
@@ -52,6 +55,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 | Ngày | Thay đổi |
 | --- | --- |
+| 9/11/2026 | Gói bài tập theo ngày, hạn nộp = buổi học kế tiếp (`deadlineAt` = giờ vào học); dải "Tuần này" theo chu kỳ bài tập; tuần học dạng gì thì bài tập có dạng đó |
 | 9/11/2026 | Bài nghe: `kw` (🔑 từ khóa ⇄ synonym), `why` dạng các bước, MCQ A/B/C (`opts`, `optWhy`, đánh dấu ✓/✗/?) · Ghi âm: báo khi micro không thu được tiếng, Android Web Speech rỗng thì nghe lại bản ghi bằng Whisper |
 | 7/11/2026 | Flashcard gộp nhóm đồng nghĩa + 🎮 Game đồng nghĩa; `make_deck.py` đọc định dạng `= nghĩa \| lưu ý` |
 | 7/11/2026 | Flashcard theo topic Speaking của tuần dạy; gói tuần gắn `deck` của topic đó · gộp lại `va1` theo nhóm (`decks/va1.txt`) |

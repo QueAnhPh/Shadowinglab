@@ -229,7 +229,8 @@
     "va1-final-sounds",
     "va1-part1",
     "va1-shadowing"
-   ]
+   ],
+   "deadlineAt": "17:30"
   },
   {
    "id": "hw-speaking-3",
@@ -240,7 +241,8 @@
    "note": "Shadowing My last trip: xem video, shadow 3 lần; ôn flashcard Travel & Vacations.",
    "lessons": [
     "s3-shadowing"
-   ]
+   ],
+   "deadlineAt": "15:30"
   },
   {
    "id": "hw-vananh-week-20261107-s",
@@ -254,7 +256,8 @@
     "va-w20261107-sat",
     "va-w20261107-mon",
     "va-w20261107-tue"
-   ]
+   ],
+   "deadlineAt": "17:30"
   },
   {
    "id": "hw-vananh-week-20261107-l",
@@ -268,7 +271,8 @@
     "va-w20261107-wed",
     "va-w20261107-thu",
     "va-w20261107-fri"
-   ]
+   ],
+   "deadlineAt": "17:30"
   },
   {
    "id": "hw-dt-w20261109-duc-s",
@@ -280,7 +284,8 @@
    "lessons": [
     "dt-w20261109-duc-mon",
     "dt-w20261109-duc-tue"
-   ]
+   ],
+   "deadlineAt": "15:30"
   },
   {
    "id": "hw-dt-w20261109-duc-l",
@@ -291,7 +296,8 @@
    "note": "Thứ Tư: nghe Part 1 form completion, 10 câu, nghe 1 lần.",
    "lessons": [
     "dt-w20261109-duc-wed"
-   ]
+   ],
+   "deadlineAt": "15:30"
   },
   {
    "id": "hw-dt-w20261109-thu-s",
@@ -304,7 +310,8 @@
     "dt-w20261109-thu-mon",
     "dt-w20261109-thu-tue",
     "dt-w20261109-thu-wed-s"
-   ]
+   ],
+   "deadlineAt": "15:30"
   },
   {
    "id": "hw-dt-w20261109-thu-l",
@@ -315,7 +322,8 @@
    "note": "Thứ Tư: nghe Part 1 form completion (bản hỗ trợ): nghe chậm 1 lần, rồi làm thật.",
    "lessons": [
     "dt-w20261109-thu-wed-l"
-   ]
+   ],
+   "deadlineAt": "15:30"
   }
  ],
  "lessons": [
