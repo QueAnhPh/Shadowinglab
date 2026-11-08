@@ -28,6 +28,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 - Ghi chú theo Part: Part 1 **A.R.E. + Feeling** (ô A / R / E / F) · Part 2 cue card (ô theo từng gợi ý; đề kể trải nghiệm thêm `"star": true` → ô Mở bài / S / T / A / R / F) · Part 3 A.R.E.A. (A1 / R / E / A2).
 - `demo` = câu hỏi KHÁC cùng dạng + notes chỉ là từ khóa; không đưa bài mẫu trả lời câu hỏi thật.
 - `guide: [HTML ngắn]` (tuỳ chọn) = khung 🧭 phân tích câu hỏi từng bước, cho HS cần hỗ trợ nhiều.
+- **Shadowing = listen & repeat** (nghe từng câu mẫu rồi nói lại, kể cả hội thoại theo vai `roles`): luôn là bài **Speaking** (`skill: "Speaking"`, title bắt đầu bằng *Shadowing –*), không xếp vào Listening. Bài Listening chỉ gồm bài nghe làm đề (`type: "gap"`) và nghe chép (`dictation`).
 - Máy chấm: 3 lần/câu, 15 lần/tuần/HS. Không cần lên lịch chấm tay; chỉ chấm tay khi hết lượt (skill `speakback-grading`).
 
 ## 3. Bài nghe (`type: "gap"`)

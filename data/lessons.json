@@ -210,9 +210,9 @@
   },
   {
    "id": "hw-listening-1",
-   "skill": "Listening",
+   "skill": "Speaking",
    "session": 1,
-   "title": "Homework Listening buổi 1",
+   "title": "Homework Shadowing buổi 1",
    "deadline": "2026-11-05",
    "note": "Shadowing hội thoại Part 1: Thư nói phần Linda, Đức nói phần Ryan.",
    "lessons": [
@@ -853,8 +853,8 @@
   {
    "id": "hw-l1-part1",
    "session": 1,
-   "title": "Hội thoại Part 1 – Lakeview Community Center",
-   "subtitle": "Shadowing theo vai",
+   "title": "Shadowing – Hội thoại Lakeview Community Center",
+   "subtitle": "Shadowing theo vai (listen & repeat): nghe từng câu rồi nói lại",
    "for": [
     "duc",
     "thu"
@@ -864,7 +864,7 @@
     "thu": "Linda",
     "duc": "Ryan"
    },
-   "skill": "Listening",
+   "skill": "Speaking",
    "topic": "Lakeview Community Center",
    "sentences": [
     {
