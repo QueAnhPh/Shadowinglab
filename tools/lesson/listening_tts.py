@@ -16,11 +16,13 @@ for l in open(LINES):
         z=np.zeros(int(sr*float(txt)),np.float32); out.append(z); t+=len(z)/sr; continue
     a=tts.generate(txt,sid=V[k],speed=0.9 if k=='N' else KS); sr=a.sample_rate
     s=np.array(a.samples,np.float32)
-    if k!='N': s=stretch(s); spk+=len(s)/sr; words+=len(txt.split()); marks.append((round(t),k,txt[:30]))
+    if k!='N': s=stretch(s); spk+=len(s)/sr; words+=len(txt.split()); marks.append((t,k,txt))
     out.append(s); t+=len(s)/sr
     g=np.zeros(int(sr*0.5),np.float32); out.append(g); t+=0.5
 w=np.concatenate(out); w=w/np.abs(w).max()*0.9
 sf.write('tmp.wav',w,sr)
-subprocess.run(['ffmpeg','-loglevel','error','-y','-i','tmp.wav','-ac','1','-b:a','48k',OUT],check=True)
+subprocess.run(['ffmpeg','-loglevel','error','-y','-i','tmp.wav','-ac','1','-b:a',os.environ.get('BITRATE','48k'),OUT],check=True)
 print('wpm',round(words/spk*60),'total',round(len(w)/sr,1))
-for m in marks: print('%d:%02d'%(m[0]//60,m[0]%60),m[1],m[2])
+for m in marks: print('%d:%02d'%(round(m[0])//60,round(m[0])%60),m[1],m[2][:30])
+if os.environ.get('MARKS'):
+    import json; json.dump([[round(m[0],2),m[1],m[2]] for m in marks],open(os.environ['MARKS'],'w'),ensure_ascii=False)

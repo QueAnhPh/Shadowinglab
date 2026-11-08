@@ -5,7 +5,7 @@ for l in open(M,encoding='utf-8'):
     p=l.rstrip('\n').split(' ',1)
     if len(p)==2: lex.setdefault(p[0].lower(),p[1])
 manual={'kevin':'k ˈ ɛ v ə n','hannah':'h ˈ æ n ə','quy':'k w ˈ i','nhon':'n j ˈ ɑ n',
- 'activities':'æ k t ˈ ɪ v ə ɾ i z','bottles':'b ˈ ɑ ɾ ə l z','that\'s':'ð æ t s','what\'s':'w ˌ ʌ t s','wanted':'w ˈ ɑ n t ə d',
+ 'activities':'æ k t ˈ ɪ v ə ɾ i z','bottles':'b ˈ ɑ ɾ ə l z','that\'s':'ð ˈ æ t s','webber':'w ˈ ɛ b ə ɹ','what\'s':'w ˌ ʌ t s','wanted':'w ˈ ɑ n t ə d',
  'roommates':'ɹ ˈ u m m ˌ A t s','sundays':'s ˈ ʌ n d ˌ A z','nang':'n ˈ ɑ ŋ','da':'d ˈ ɑ','hoi':'h ˈ ɔ I','tet':'t ˈ ɛ t'}
 VL=set('p t k f θ'.split()); SIB=set('s z ʃ ʒ ʧ ʤ'.split())
 def derive(w):

@@ -269,6 +269,53 @@
     "va-w20261107-thu",
     "va-w20261107-fri"
    ]
+  },
+  {
+   "id": "hw-dt-w20261109-duc-s",
+   "skill": "Speaking",
+   "session": 3,
+   "title": "Bài tập tuần · Speaking",
+   "deadline": "2026-11-12",
+   "note": "Thứ Hai: 2 câu Hot seat còn lại (tự chọn, tự viết draft) · Thứ Ba: 2 câu Part 1 mới. Ôn flashcard Travel & Vacations trước.",
+   "lessons": [
+    "dt-w20261109-duc-mon",
+    "dt-w20261109-duc-tue"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261109-duc-l",
+   "skill": "Listening",
+   "session": 3,
+   "title": "Bài tập tuần · Listening",
+   "deadline": "2026-11-12",
+   "note": "Thứ Tư: nghe Part 1 form completion, 10 câu, nghe 1 lần.",
+   "lessons": [
+    "dt-w20261109-duc-wed"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261109-thu-s",
+   "skill": "Speaking",
+   "session": 3,
+   "title": "Bài tập tuần · Speaking",
+   "deadline": "2026-11-12",
+   "note": "Mỗi ngày 1 câu Part 1: đọc 🧭 phân tích, ghi từ khóa A / R / E / F, ghi âm thử rồi nộp.",
+   "lessons": [
+    "dt-w20261109-thu-mon",
+    "dt-w20261109-thu-tue",
+    "dt-w20261109-thu-wed-s"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261109-thu-l",
+   "skill": "Listening",
+   "session": 3,
+   "title": "Bài tập tuần · Listening",
+   "deadline": "2026-11-12",
+   "note": "Thứ Tư: nghe Part 1 form completion (bản hỗ trợ): nghe chậm 1 lần, rồi làm thật.",
+   "lessons": [
+    "dt-w20261109-thu-wed-l"
+   ]
   }
  ],
  "lessons": [
@@ -4924,6 +4971,888 @@
      "at": 145.5
     }
    ]
+  },
+  {
+   "id": "dt-w20261109-duc-mon",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-09",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "2 câu Part 1 còn lại – buổi 3",
+   "subtitle": "Thứ Hai 9/11 · 2 câu Hot seat em chưa trả lời trên lớp · tự viết draft A.R.E. + F rồi nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Hot seat buổi 3 · câu còn lại 1",
+     "q": "Câu Hot seat buổi 3 em chưa trả lời trên lớp (câu thứ 1): em tự biết là câu nào, ghi câu hỏi vào ô Answer trước.",
+     "hint": "business trip, take time off, vacation days, itinerary, travel on a budget",
+     "guide": [
+      "<b>Viết draft</b> đầy đủ 4–5 câu theo <b>A.R.E. + Feeling</b> vào các ô ghi chú bên dưới (ô <b>A</b> ghi cả <b>câu hỏi</b> trước, rồi câu trả lời).",
+      "<b>Đọc lại draft</b>, bấm 🎙 <b>Ghi âm thử</b> 1–2 lần, cố nói <b>không nhìn</b> draft.",
+      "Bấm 📤 <b>Ghi âm nộp bài</b>: SpeakBack chấm ngay (cấu trúc A.R.E. + F, ý có mạch lạc không, phát âm, ngữ pháp). Đọc nhận xét rồi sửa và nộp lại nếu cần (tối đa 3 lần)."
+     ]
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Hot seat buổi 3 · câu còn lại 2",
+     "q": "Câu Hot seat buổi 3 em chưa trả lời trên lớp (câu thứ 2): em tự biết là câu nào, ghi câu hỏi vào ô Answer trước.",
+     "hint": "business trip, take time off, vacation days, itinerary, travel on a budget",
+     "guide": [
+      "<b>Viết draft</b> đầy đủ 4–5 câu theo <b>A.R.E. + Feeling</b> vào các ô ghi chú bên dưới (ô <b>A</b> ghi cả <b>câu hỏi</b> trước, rồi câu trả lời).",
+      "<b>Đọc lại draft</b>, bấm 🎙 <b>Ghi âm thử</b> 1–2 lần, cố nói <b>không nhìn</b> draft.",
+      "Bấm 📤 <b>Ghi âm nộp bài</b>: SpeakBack chấm ngay (cấu trúc A.R.E. + F, ý có mạch lạc không, phát âm, ngữ pháp). Đọc nhận xét rồi sửa và nộp lại nếu cần (tối đa 3 lần)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261109-duc-tue",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-10",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "2 câu Part 1 – Travel",
+   "subtitle": "Thứ Ba 10/11 · Part 1 A.R.E. + Feeling · ghi từ khóa → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Photos on a trip",
+     "q": "Do you like taking photos when you travel?",
+     "hint": "take a selfie, memorable, tourist attraction, landmark",
+     "demo": {
+      "q": "Do you like sending postcards when you travel?",
+      "notes": {
+       "A": "not really · old-fashioned",
+       "R": "text · social media faster",
+       "E": "Da Lat trip · photos to family group chat",
+       "F": "feel closer · no stamps needed"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Work or studies",
+     "q": "Have you ever studied or worked while you were on a trip?",
+     "hint": "work remotely, internship, out of office, take time off",
+     "demo": {
+      "q": "Do you check your emails when you are on vacation?",
+      "notes": {
+       "A": "yes · a few times a day",
+       "R": "internship · don't miss deadlines",
+       "E": "Vung Tau · morning coffee · 15 minutes",
+       "F": "less stressed · enjoy the beach more"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261109-duc-wed",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-11",
+   "title": "Nghe Part 1 – Graduation trip booking",
+   "subtitle": "Thứ Tư 11/11 · Form completion · 10 câu · nghe 1 lần như thi thật",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261109-l1.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Sunrise Travel – Graduation Trip Booking Form",
+   "rows": [
+    "## Customer details",
+    "[[Customer's last name]]: {1}",
+    "[[Number of travelers]]: {2}",
+    "[[Departure date]]: July {3}",
+    "## Trip details",
+    "[[Destination]]: {4} Island",
+    "[[Length of stay]]: {5} nights",
+    "[[Accommodation]]: beach {6}",
+    "[[Activities included]]: boat trip and {7}",
+    "[[Price per person]]: ${8}",
+    "[[Pay deposit by]]: {9}",
+    "[[Special request]]: a room with a {10}"
+   ],
+   "transcript": [
+    {
+     "sp": "Amy",
+     "t": "Good afternoon, Sunrise Travel. This is Amy speaking. How can I help you?",
+     "at": 16.34
+    },
+    {
+     "sp": "Daniel",
+     "t": "Hi. I'm a final-year student, and my friends and I want to book a graduation trip for this summer.",
+     "at": 23.45
+    },
+    {
+     "sp": "Amy",
+     "t": "Congratulations! I can help you with that. Can I have your name, please?",
+     "at": 32.07
+    },
+    {
+     "sp": "Daniel",
+     "t": "Sure. It's Daniel Webber.",
+     "at": 38.69
+    },
+    {
+     "sp": "Amy",
+     "t": "Could you spell your [[last name]] for me?",
+     "at": 41.62
+    },
+    {
+     "sp": "Daniel",
+     "t": "Yes. It's **W, E, B, B, E, R**.",
+     "at": 44.58,
+     "q": 1
+    },
+    {
+     "sp": "Amy",
+     "t": "Thank you. And [[how many people will be traveling]]?",
+     "at": 49.41
+    },
+    {
+     "sp": "Daniel",
+     "t": "Well, there were going to be six of us, [[but]] one friend just got a job offer and can't take time off. So it'll be **five people**.",
+     "at": 53.24,
+     "q": 2
+    },
+    {
+     "sp": "Amy",
+     "t": "No problem. [[When would you like to leave]]?",
+     "at": 64.42
+    },
+    {
+     "sp": "Daniel",
+     "t": "We were thinking of July the second, but I still have my last week of internship then. [[So let's say]] **July the ninth**.",
+     "at": 67.76,
+     "q": 3
+    },
+    {
+     "sp": "Amy",
+     "t": "Great. And where would you like to go? Our most popular [[destinations]] this summer are Pearl Bay and Coral Island.",
+     "at": 78.14
+    },
+    {
+     "sp": "Daniel",
+     "t": "We looked at Pearl Bay online, but people say it's really [[crowded]] in summer. We'd like somewhere quieter, so **Coral Island**, please.",
+     "at": 86.89,
+     "q": 4
+    },
+    {
+     "sp": "Amy",
+     "t": "Good choice. Our tour there is four days long.",
+     "at": 98.65
+    },
+    {
+     "sp": "Daniel",
+     "t": "So [[how many nights]] is that?",
+     "at": 102.28
+    },
+    {
+     "sp": "Amy",
+     "t": "**Three [[nights]]**. You arrive on the first morning and fly home on the fourth evening.",
+     "at": 105.06,
+     "q": 5
+    },
+    {
+     "sp": "Daniel",
+     "t": "Perfect.",
+     "at": 110.95
+    },
+    {
+     "sp": "Amy",
+     "t": "Now, let's talk about [[accommodation]]. Would you like a hotel in town, or something near the beach?",
+     "at": 141.99
+    },
+    {
+     "sp": "Daniel",
+     "t": "We're traveling on a budget, so [[at first]] we thought about a hostel. [[But]] my friend saw that the beach resort has a group discount, so we'd like **the resort**.",
+     "at": 149.65,
+     "q": 6
+    },
+    {
+     "sp": "Amy",
+     "t": "That's right. Groups of five or more get a better price. The tour also [[includes]] a boat trip on the first day.",
+     "at": 163.03
+    },
+    {
+     "sp": "Daniel",
+     "t": "Great. Is surfing included too?",
+     "at": 171.25
+    },
+    {
+     "sp": "Amy",
+     "t": "I'm afraid surfing lessons [[cost extra]]. But **hiking** in the national park [[is included]], on the third day.",
+     "at": 174.58,
+     "q": 7
+    },
+    {
+     "sp": "Daniel",
+     "t": "Sounds fun. And [[how much is the tour per person]]?",
+     "at": 183.31
+    },
+    {
+     "sp": "Amy",
+     "t": "The normal price is three hundred and twenty dollars. But you're all students, so you get forty dollars off. [[That makes it]] **two hundred and eighty dollars** each.",
+     "at": 187.75,
+     "q": 8
+    },
+    {
+     "sp": "Daniel",
+     "t": "That's not bad. When do we need to [[pay the deposit]]?",
+     "at": 199.41
+    },
+    {
+     "sp": "Amy",
+     "t": "[[Usually]] you have a week, but summer tours sell out fast. [[So please pay the deposit by]] **this Friday**.",
+     "at": 204.04,
+     "q": 9
+    },
+    {
+     "sp": "Daniel",
+     "t": "OK, I'll tell everyone. Oh, one more thing. I need to finish my internship report during the trip. [[I don't need a sea view]], but [[could I have a room with]] **a desk** for my laptop?",
+     "at": 212.29,
+     "q": 10
+    },
+    {
+     "sp": "Amy",
+     "t": "Sure. I'll add that as a [[special request]]. Is there anything else?",
+     "at": 228.69
+    },
+    {
+     "sp": "Daniel",
+     "t": "No, that's everything. Thank you so much!",
+     "at": 234.22
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 1"
+    },
+    {
+     "label": "Câu 2"
+    },
+    {
+     "label": "Câu 3"
+    },
+    {
+     "label": "Câu 4"
+    },
+    {
+     "label": "Câu 5"
+    },
+    {
+     "label": "Câu 6"
+    },
+    {
+     "label": "Câu 7"
+    },
+    {
+     "label": "Câu 8"
+    },
+    {
+     "label": "Câu 9"
+    },
+    {
+     "label": "Câu 10"
+    }
+   ],
+   "strategy": [
+    "<b>Đọc trước 30 giây:</b> gạch từ khóa mỗi dòng và <b>đoán dạng từ</b> (số? tên riêng? danh từ số ít?), chọn ở nút dưới ô.",
+    "<b>Linear thinking:</b> câu hỏi đi <b>theo thứ tự audio</b>. Mắt đặt ở câu đang nghe <b>và</b> từ khóa câu kế tiếp; nghe thấy từ khóa câu sau mà chưa có đáp án câu trước → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý:</b> con số / lựa chọn đầu tiên thường sai. Chờ từ báo đổi ý: <i>but, actually, so let's say, at first … but</i>.",
+    "<b>Chính tả + giới hạn từ:</b> ghi từng chữ cái khi đánh vần, đừng viết theo tai (Webber ≠ Weber); ONE WORD AND/OR A NUMBER → không viết lại chữ đã in sẵn (July, Island, $). Nộp xong nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Webber"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "why": "Hỏi [[last name]] → Nghe tên dễ viết nhầm 'Weber'; phải theo phần đánh vần W, E, **B, B**, E, R = **Webber** (2 chữ B)."
+    },
+    "2": {
+     "ans": [
+      "5",
+      "five"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "why": "[[how many people]] = Number of travelers. Lúc đầu 'six of us' là bẫy; [[but]] 1 bạn không nghỉ được → **five people**."
+    },
+    "3": {
+     "ans": [
+      "9",
+      "9th",
+      "ninth"
+     ],
+     "form": [
+      "Số (ngày)",
+      "Tên tháng"
+     ],
+     "why": "'July the second' là bẫy (còn thực tập); [[So let's say]] báo đổi ý → **July the ninth**."
+    },
+    "4": {
+     "ans": [
+      "Coral"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Số"
+     ],
+     "why": "Có 2 nơi: Pearl Bay bị chê [[crowded]] → loại; chọn **Coral Island**."
+    },
+    "5": {
+     "ans": [
+      "3",
+      "three"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "why": "'four days long' là bẫy (đề hỏi nights) → **Three nights**."
+    },
+    "6": {
+     "ans": [
+      "resort"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "why": "[[at first]] nghĩ tới hostel (bẫy); [[But]] … group discount → **the resort**. Sau 'beach' cần 1 danh từ số ít."
+    },
+    "7": {
+     "ans": [
+      "hiking"
+     ],
+     "form": [
+      "V-ing (hoạt động)",
+      "Tên riêng"
+     ],
+     "why": "Surfing [[cost extra]] = không included → loại; **hiking** … [[is included]]."
+    },
+    "8": {
+     "ans": [
+      "280"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "why": "3 con số: 320 (giá thường), 40 (giảm) → [[That makes it]] **two hundred and eighty** = 280."
+    },
+    "9": {
+     "ans": [
+      "Friday"
+     ],
+     "form": [
+      "Thứ trong tuần (viết hoa)",
+      "Số (ngày)"
+     ],
+     "why": "[[Usually]] 1 tuần là bẫy; [[So please pay the deposit by]] **this Friday**."
+    },
+    "10": {
+     "ans": [
+      "desk"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "why": "[[sea view]] = không cần (bẫy); [[could I have a room with]] **a desk**."
+    }
+   }
+  },
+  {
+   "id": "dt-w20261109-thu-mon",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-09",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "1 câu Part 1 – Local food",
+   "subtitle": "Thứ Hai 9/11 · đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Food on a trip",
+     "q": "Do you like trying local food when you travel?",
+     "hint": "try local food, traditional, night market, memorable",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>like</b> · <b>local food</b> (món ăn địa phương) · <b>when you travel</b>. Hỏi thói quen, sở thích → trả lời bằng <b>hiện tại đơn</b> (I like / I try).",
+      "<b>A – Answer:</b> trả lời thẳng 1 câu. Khung: <i>Yes, I really enjoy trying local food.</i> / <i>Not really, I usually prefer …</i>",
+      "<b>R – Reason:</b> chọn 1 lý do: món đó <b>ngon / lạ</b>? <b>rẻ</b>? giúp em <b>hiểu văn hóa</b> nơi đó? Khung: <i>because it …</i> / <i>The main reason is that …</i>",
+      "<b>E – Example:</b> tự hỏi <b>Where?</b> (thành phố nào) · <b>When?</b> (lần nào) · <b>Who?</b> (đi với ai) · <b>What?</b> (món gì). Khung quá khứ: <i>Last summer, I tried … in … with …</i>",
+      "<b>F – Feeling:</b> 1 câu chốt. Khung: <i>It made me feel …</i> / <i>That's why I always look for …</i>",
+      "<b>Từ nên dùng:</b> <b>try local food</b>, <b>traditional</b>, <b>memorable</b>. <b>Lỗi hay gặp:</b> <i>I like try</i> ✘ → <i>I like <b>trying</b></i> ✔; kể chuyện cũ nhớ dùng quá khứ: <i>I <b>tried</b></i> (đuôi -ed đọc /d/).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you like buying clothes when you travel?",
+      "notes": {
+       "A": "not really",
+       "R": "same shops everywhere · suitcase full",
+       "E": "Hanoi trip · only bought a hat",
+       "F": "feel lighter · save money"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261109-thu-tue",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-10",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "1 câu Part 1 – Souvenirs",
+   "subtitle": "Thứ Ba 10/11 · đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Souvenirs",
+     "q": "Do you like buying souvenirs for your family when you travel?",
+     "hint": "buy souvenirs, traditional, local, homesick",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>buying souvenirs</b> (quà lưu niệm) · <b>for your family</b> · <b>when you travel</b>. Hỏi thói quen → dùng <b>hiện tại đơn</b>.",
+      "<b>A – Answer:</b> Khung: <i>Yes, I always buy souvenirs for my family.</i> / <i>Not really, I usually just …</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: muốn gia đình <b>vui</b>? nhớ <b>chuyến đi</b>? quà <b>truyền thống</b>, ở nhà không có? Khung: <i>because …</i> / <i>I think it's a nice way to …</i>",
+      "<b>E – Example:</b> tự hỏi <b>Where?</b> · <b>When?</b> · <b>For whom?</b> (mẹ, em…) · <b>What?</b> (bánh, nón, móc khóa). Khung: <i>Last month, I went to … and I bought … for my …</i>",
+      "<b>F – Feeling:</b> Khung: <i>My mom was so happy, and it made me feel …</i> / <i>That's why I …</i>",
+      "<b>Từ nên dùng:</b> <b>buy souvenirs</b>, <b>traditional</b>, <b>local</b>. <b>Lỗi hay gặp:</b> <i>souvenir</i> đếm được → <i>souvenir<b>s</b></i> (âm cuối /z/); <i>buy <b>for</b> my mom</i> (không nói <i>buy to my mom</i>).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you like sending photos to your friends when you travel?",
+      "notes": {
+       "A": "yes · every day",
+       "R": "share · friends feel included",
+       "E": "Nha Trang · beach photos · group chat",
+       "F": "feel happy · not alone"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261109-thu-wed-s",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-11",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "1 câu Part 1 – Work or studies",
+   "subtitle": "Thứ Tư 11/11 · đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Work or studies",
+     "q": "Do you get a long vacation from university every year?",
+     "hint": "vacation, internship, take time off, family vacation",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>long vacation</b> (kỳ nghỉ dài) · <b>from university</b> · <b>every year</b>. Hỏi chuyện lặp lại hằng năm → <b>hiện tại đơn</b> (I get / we have).",
+      "<b>A – Answer:</b> Khung: <i>Yes, we get about … months off every summer.</i> / <i>Not really, this year I only have …</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: năm cuối bận <b>khóa luận</b>? phải đi <b>thực tập</b>? trường cho nghỉ <b>Tết</b> dài? Khung: <i>because …</i> / <i>That's because this is my final year, so …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (hè năm ngoái / Tết) · <b>Where?</b> · <b>Who with?</b> Khung quá khứ: <i>Last summer, I had … weeks off, so I went to … with …</i>",
+      "<b>F – Feeling:</b> Khung: <i>I felt really relaxed …</i> / <i>I'll miss it when I start work.</i>",
+      "<b>Từ nên dùng:</b> <b>vacation</b>, <b>internship</b>, <b>take time off</b>. <b>Lỗi hay gặp:</b> <i>go <b>on</b> vacation</i> (không nói <i>go to vacation</i>); <i>two month<b>s</b></i> nhớ đuôi -s; quá khứ <i>I <b>had</b></i>, không nói <i>I have</i> cho năm ngoái.",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you have a lot of free time at university?",
+      "notes": {
+       "A": "not much this year",
+       "R": "thesis · internship",
+       "E": "last week · library till 9pm",
+       "F": "tired · but proud"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261109-thu-wed-l",
+   "session": 3,
+   "topic": "📅 Tuần 9–11/11 · Travel & Vacations",
+   "deck": "dt3",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-11",
+   "title": "Nghe Part 1 – Graduation trip booking (bản hỗ trợ)",
+   "subtitle": "Thứ Tư 11/11 · Form completion · 10 câu · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261109-l1.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Sunrise Travel – Graduation Trip Booking Form",
+   "rows": [
+    "## Customer details",
+    "[[Customer's last name]]: {1}",
+    "[[Number of travelers]]: {2}",
+    "[[Departure date]]: July {3}",
+    "## Trip details",
+    "[[Destination]]: {4} Island",
+    "[[Length of stay]]: {5} nights",
+    "[[Accommodation]]: beach {6}",
+    "[[Activities included]]: boat trip and {7}",
+    "[[Price per person]]: ${8}",
+    "[[Pay deposit by]]: {9}",
+    "[[Special request]]: a room with a {10}"
+   ],
+   "transcript": [
+    {
+     "sp": "Amy",
+     "t": "Good afternoon, Sunrise Travel. This is Amy speaking. How can I help you?",
+     "at": 16.34
+    },
+    {
+     "sp": "Daniel",
+     "t": "Hi. I'm a final-year student, and my friends and I want to book a graduation trip for this summer.",
+     "at": 23.45
+    },
+    {
+     "sp": "Amy",
+     "t": "Congratulations! I can help you with that. Can I have your name, please?",
+     "at": 32.07
+    },
+    {
+     "sp": "Daniel",
+     "t": "Sure. It's Daniel Webber.",
+     "at": 38.69
+    },
+    {
+     "sp": "Amy",
+     "t": "Could you spell your [[last name]] for me?",
+     "at": 41.62
+    },
+    {
+     "sp": "Daniel",
+     "t": "Yes. It's **W, E, B, B, E, R**.",
+     "at": 44.58,
+     "q": 1
+    },
+    {
+     "sp": "Amy",
+     "t": "Thank you. And [[how many people will be traveling]]?",
+     "at": 49.41
+    },
+    {
+     "sp": "Daniel",
+     "t": "Well, there were going to be six of us, [[but]] one friend just got a job offer and can't take time off. So it'll be **five people**.",
+     "at": 53.24,
+     "q": 2
+    },
+    {
+     "sp": "Amy",
+     "t": "No problem. [[When would you like to leave]]?",
+     "at": 64.42
+    },
+    {
+     "sp": "Daniel",
+     "t": "We were thinking of July the second, but I still have my last week of internship then. [[So let's say]] **July the ninth**.",
+     "at": 67.76,
+     "q": 3
+    },
+    {
+     "sp": "Amy",
+     "t": "Great. And where would you like to go? Our most popular [[destinations]] this summer are Pearl Bay and Coral Island.",
+     "at": 78.14
+    },
+    {
+     "sp": "Daniel",
+     "t": "We looked at Pearl Bay online, but people say it's really [[crowded]] in summer. We'd like somewhere quieter, so **Coral Island**, please.",
+     "at": 86.89,
+     "q": 4
+    },
+    {
+     "sp": "Amy",
+     "t": "Good choice. Our tour there is four days long.",
+     "at": 98.65
+    },
+    {
+     "sp": "Daniel",
+     "t": "So [[how many nights]] is that?",
+     "at": 102.28
+    },
+    {
+     "sp": "Amy",
+     "t": "**Three [[nights]]**. You arrive on the first morning and fly home on the fourth evening.",
+     "at": 105.06,
+     "q": 5
+    },
+    {
+     "sp": "Daniel",
+     "t": "Perfect.",
+     "at": 110.95
+    },
+    {
+     "sp": "Amy",
+     "t": "Now, let's talk about [[accommodation]]. Would you like a hotel in town, or something near the beach?",
+     "at": 141.99
+    },
+    {
+     "sp": "Daniel",
+     "t": "We're traveling on a budget, so [[at first]] we thought about a hostel. [[But]] my friend saw that the beach resort has a group discount, so we'd like **the resort**.",
+     "at": 149.65,
+     "q": 6
+    },
+    {
+     "sp": "Amy",
+     "t": "That's right. Groups of five or more get a better price. The tour also [[includes]] a boat trip on the first day.",
+     "at": 163.03
+    },
+    {
+     "sp": "Daniel",
+     "t": "Great. Is surfing included too?",
+     "at": 171.25
+    },
+    {
+     "sp": "Amy",
+     "t": "I'm afraid surfing lessons [[cost extra]]. But **hiking** in the national park [[is included]], on the third day.",
+     "at": 174.58,
+     "q": 7
+    },
+    {
+     "sp": "Daniel",
+     "t": "Sounds fun. And [[how much is the tour per person]]?",
+     "at": 183.31
+    },
+    {
+     "sp": "Amy",
+     "t": "The normal price is three hundred and twenty dollars. But you're all students, so you get forty dollars off. [[That makes it]] **two hundred and eighty dollars** each.",
+     "at": 187.75,
+     "q": 8
+    },
+    {
+     "sp": "Daniel",
+     "t": "That's not bad. When do we need to [[pay the deposit]]?",
+     "at": 199.41
+    },
+    {
+     "sp": "Amy",
+     "t": "[[Usually]] you have a week, but summer tours sell out fast. [[So please pay the deposit by]] **this Friday**.",
+     "at": 204.04,
+     "q": 9
+    },
+    {
+     "sp": "Daniel",
+     "t": "OK, I'll tell everyone. Oh, one more thing. I need to finish my internship report during the trip. [[I don't need a sea view]], but [[could I have a room with]] **a desk** for my laptop?",
+     "at": 212.29,
+     "q": 10
+    },
+    {
+     "sp": "Amy",
+     "t": "Sure. I'll add that as a [[special request]]. Is there anything else?",
+     "at": 228.69
+    },
+    {
+     "sp": "Daniel",
+     "t": "No, that's everything. Thank you so much!",
+     "at": 234.22
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 1"
+    },
+    {
+     "label": "Câu 2"
+    },
+    {
+     "label": "Câu 3"
+    },
+    {
+     "label": "Câu 4"
+    },
+    {
+     "label": "Câu 5"
+    },
+    {
+     "label": "Câu 6"
+    },
+    {
+     "label": "Câu 7"
+    },
+    {
+     "label": "Câu 8"
+    },
+    {
+     "label": "Câu 9"
+    },
+    {
+     "label": "Câu 10"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢) để làm quen giọng 2 người: <b>Amy</b> (nhân viên du lịch, nữ) hỏi, <b>Daniel</b> (sinh viên năm cuối, nam) trả lời. Lần này chưa chấm.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô, gạch từ khóa và chọn <b>dạng từ</b>. Vd. câu 3 đã có sẵn <i>July</i> → chỉ cần nghe <b>số ngày</b>; câu 8 có sẵn <i>$</i> → chỉ viết <b>số</b>.",
+    "<b>Linear thinking:</b> 10 câu đi <b>đúng thứ tự</b> audio. Vd. nghe Amy hỏi <i>When would you like to leave?</i> là tới câu 3; nghe <i>destinations</i> là sang câu 4. Lỡ câu nào thì bỏ, nhìn sang câu kế tiếp ngay.",
+    "<b>Con số đầu tiên thường là bẫy.</b> Vd. câu 2: <i>six of us, <b>but</b> …</i> → còn đổi. Nghe chờ từ báo đổi ý: <i>but, so let's say, at first … but, usually … so</i>.",
+    "<b>Đề hỏi đúng chữ nào?</b> Vd. câu 5 hỏi <i>nights</i> (đêm) nhưng Amy nói <i>four days</i> trước → đừng điền 4. Câu 7 hỏi <i>included</i> → hoạt động <i>cost extra</i> không phải đáp án.",
+    "<b>Chính tả:</b> tên riêng thì ghi theo phần đánh vần, không viết theo tai (vd. câu 1 có 2 chữ B); tên riêng, thứ trong tuần viết hoa. Nộp xong đọc 🧠 giải thích từng câu, rồi bấm phát audio: transcript chạy theo, bấm dòng để nghe lại chỗ có đáp án."
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Webber"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "hint": "Đừng viết theo lúc nghe tên. Ghi từng chữ cái khi Daniel đánh vần.",
+     "why": "Đề hỏi [[last name]] (họ) → nghe phần đánh vần sau 'spell your last name'. Lúc nói tên, 'Webber' nghe giống 'Weber' → đừng viết theo tai. Daniel đánh vần W, E, **B, B**, E, R → **Webber** (2 chữ B). Tên riêng nhớ viết hoa chữ đầu."
+    },
+    "2": {
+     "ans": [
+      "5",
+      "five"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "hint": "Con số đầu tiên chưa chắc đúng. Nghe tiếp sau 'but'.",
+     "why": "[[Number of travelers]] được nói lại bằng [[how many people will be traveling]]. Con số đầu 'six' là bẫy; từ báo đổi ý [[but]] cho biết 1 bạn có job offer nên không đi → con số cuối mới đúng: **five**."
+    },
+    "3": {
+     "ans": [
+      "9",
+      "9th",
+      "ninth"
+     ],
+     "form": [
+      "Số (ngày)",
+      "Tên tháng"
+     ],
+     "hint": "Có 2 ngày tháng 7. Nghe ngày đứng sau 'So let's say'.",
+     "why": "Đề đã in sẵn 'July' → chỉ cần nghe số ngày. 'July the second' bị loại vì Daniel còn tuần thực tập cuối; cụm [[So let's say]] = chốt lại → **July the ninth** (viết 9 hoặc 9th)."
+    },
+    "4": {
+     "ans": [
+      "Coral"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Số"
+     ],
+     "hint": "Có 2 điểm đến. Nơi bị chê 'crowded' thì loại.",
+     "why": "[[Destination]] = [[destinations]] trong câu của Amy. Có 2 tên: Pearl Bay và Coral Island. Pearl Bay bị chê [[crowded]] (đông) → loại. Daniel chốt **Coral Island**; đề đã có chữ 'Island' nên chỉ điền Coral."
+    },
+    "5": {
+     "ans": [
+      "3",
+      "three"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "hint": "Đề hỏi số ĐÊM (nights), không phải số ngày (days).",
+     "why": "Đề hỏi số [[nights]] (đêm). 'four days long' là bẫy vì 4 là số NGÀY. Daniel hỏi lại 'how many nights' → Amy trả lời **Three nights**."
+    },
+    "6": {
+     "ans": [
+      "resort"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "hint": "Lúc đầu nhóm nghĩ tới 1 chỗ rẻ. Nghe sau 'But my friend saw…'.",
+     "why": "[[Accommodation]] = chỗ ở. Lúc đầu ([[at first]]) nhóm nghĩ tới hostel vì đi tiết kiệm → bẫy. Từ [[But]] báo đổi ý: resort có giảm giá nhóm → **the resort**. Đề có sẵn 'beach' → điền 1 danh từ số ít."
+    },
+    "7": {
+     "ans": [
+      "hiking"
+     ],
+     "form": [
+      "V-ing (hoạt động)",
+      "Tên riêng"
+     ],
+     "hint": "Hoạt động 'cost extra' (trả thêm) là bẫy. Tìm từ 'included'.",
+     "why": "[[Activities included]] = hoạt động có sẵn trong tour. Boat trip đã in trong đề. Surfing [[cost extra]] (phải trả thêm) → không phải 'included' → loại. Amy nói **hiking** … [[is included]] → đáp án."
+    },
+    "8": {
+     "ans": [
+      "280"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "hint": "Có 3 con số tiền. Nghe con số sau 'That makes it'.",
+     "why": "Có 3 con số tiền: 320 = giá thường, 40 = số tiền được giảm. Cụm [[That makes it]] = 'tổng cộng là' → **two hundred and eighty** dollars. Viết số 280, không cần ký hiệu $ (đề có sẵn)."
+    },
+    "9": {
+     "ans": [
+      "Friday"
+     ],
+     "form": [
+      "Thứ trong tuần (viết hoa)",
+      "Số (ngày)"
+     ],
+     "hint": "'Usually' = cách thường lệ, chưa phải đáp án. Nghe sau 'So please pay…'.",
+     "why": "[[Pay deposit by]] = hạn đặt cọc. 'Usually you have a week' là cách bình thường → bẫy. [[So please pay the deposit by]] → **this Friday**. Thứ trong tuần viết hoa chữ đầu."
+    },
+    "10": {
+     "ans": [
+      "desk"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "hint": "Daniel nói thứ KHÔNG cần trước. Nghe thứ để đặt laptop.",
+     "why": "[[Special request]] = yêu cầu đặc biệt. Daniel nói [[I don't need a sea view]] → loại 'view'. Rồi hỏi [[could I have a room with]] **a desk** để đặt laptop. Đề có sẵn 'a' → 1 danh từ số ít."
+    }
+   }
   }
  ],
  "ipa": {
