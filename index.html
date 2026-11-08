@@ -2382,10 +2382,11 @@ function hwWeeks(hws) {
     const L0 = DATA.lessons.find(L => H.lessons.includes(L.id)), sid = L0 && L0.for[0];
     const n = L0 && weekStart(sid) ? weekOfLesson(sid, L0) : null;
     const who = L0 ? [...new Set(DATA.lessons.filter(L => H.lessons.includes(L.id)).flatMap(L => L.for))].map(id => (DATA.students.find(x => x.id === id) || {}).name || id).join(", ") : "";
-    const lab = n ? `📁 Tuần ${n} · ${weekRange(sid, n)}` : `📁 ${who}`;
+    const cls = sid ? DATA.students.filter(x => x.weeks && (DATA.students.find(y => y.id === sid) || {}).weeks && x.weeks.start === DATA.students.find(y => y.id === sid).weeks.start).map(x => x.name).join(" – ") : who;
+    const lab = n ? `📁 ${cls} · Tuần ${n} · ${weekRange(sid, n)}` : `📁 ${who}`;
     if (!m.has(lab)) m.set(lab, []); m.get(lab).push(H);
   });
-  return [...m.entries()];
+  return [...m.entries()].sort((x, y) => x[0].split(" · ")[0].localeCompare(y[0].split(" · ")[0]));   // gom theo lớp, trong lớp tuần mới nhất trước
 }
 /* thư mục tuần của 1 HS ở màn giáo viên: cần làm (theo ngày) → ✅ đã xong (gập) */
 function teacherWeeks(r) {
