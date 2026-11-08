@@ -991,7 +991,7 @@ function dueText(H) { const d = parseDay(H.deadline); return `${WD_SHORT[d.getDa
 function weekRow(L) {
   const lock = lockedUntil(L), done = isDone(L), p = lock ? 0 : lessonProgress(L);
   const ic = lock ? "🔒" : done ? "✅" : p > 0 ? `<b>${p}%</b>` : "▶️";
-  const sub = lock ? `Mở ${esc(lock)}` : L.type === "gap" ? (Object.values(L.qs || {}).some(q => q.opts) ? "Nghe trắc nghiệm" : "Nghe điền từ") : L.type === "dictation" ? "Nghe chép" : `${L.sentences.filter(s => isMine(L, s)).length} câu`;
+  const sub = lock ? `Mở ${esc(lock)}` : L.type === "gap" ? (Object.values(L.qs || {}).some(q => q.opts) ? "Nghe trắc nghiệm" : "Nghe điền từ") : L.type === "dictation" ? "Nghe chép" : `${kindIcon(L)} ${L.sentences.filter(s => isMine(L, s)).length} câu${isShadowL(L) ? " · nghe rồi nói lại" : ""}`;
   return `<button class="wrow${done ? " done" : ""}${lock ? " locked" : ""}" ${lock ? "disabled" : `data-id="${L.id}"`}><span class="wd">${esc(dayLabel(L))}</span><span class="wi">${ic}</span><span class="wt"><b>${esc(cleanTitle(L))}</b><span>${sub}</span></span></button>`;
 }
 function weekFolders(sid, mine) {
@@ -1019,7 +1019,7 @@ function weekFolders(sid, mine) {
         <span class="wp">${w && !w.draft ? "📈 " : ""}${!open.length ? "bài mở theo ngày" : `${doneN}/${open.length} bài`}${open.length ? ` <span class="ring sm" style="--p:${pct}"><i>${pct}%</i></span>` : ""}</span></summary>
       ${review}
       <div class="wgrid">
-        <div class="wcol"><h4>🗣️ Speaking · cần làm</h4>${sub("🎙 Tự trả lời", sp.filter(L => !isShadow(L)))}${sub("🔁 Shadowing", sp.filter(isShadow))}${sp.length ? "" : `<p class="muted small">${dn.some(L => skillOf(L) === "Speaking") ? "Xong hết bài nói rồi 🎉" : "Tuần này không có bài nói."}</p>`}</div>
+        <div class="wcol"><h4>🗣️ Speaking · cần làm</h4>${sub("🎙 Tự trả lời", sp.filter(L => !isShadow(L)))}${sub("🎧🗣️ Shadowing (nghe rồi nói lại)", sp.filter(isShadow))}${sp.length ? "" : `<p class="muted small">${dn.some(L => skillOf(L) === "Speaking") ? "Xong hết bài nói rồi 🎉" : "Tuần này không có bài nói."}</p>`}</div>
         ${col("🎧 Listening · cần làm", li, dn.some(L => skillOf(L) === "Listening") ? "Xong hết bài nghe rồi 🎉" : "Tuần này không có bài nghe.")}
       </div>${dn.length ? `<details class="wdone"><summary>✅ Đã làm (${dn.length})</summary><div class="wlist">${dn.map(weekRow).join("")}</div></details>` : ""}</details>`;
   }).join("");
@@ -1071,7 +1071,10 @@ function doneBox(mine) {
 /* ---------- student home: Hôm nay → Tuần này → Còn phải làm → Kho bài → Đã làm ---------- */
 function isoDay(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
 const WD_SHORT = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
-function kindOf(L) { return L.type === "gap" ? "🎧 Nghe" : L.type === "dictation" ? "🎧 Nghe chép" : "🗣️ Nói"; }
+/* biểu tượng loại bài: 🎧 nghe làm đề · 🎧🗣️ shadowing (nghe rồi nói lại) · 🗣️ tự nói */
+function isShadowL(L) { return L.type !== "gap" && L.type !== "dictation" && !(L.sentences || []).some(s => s.free); }
+function kindIcon(L) { return L.type === "gap" || L.type === "dictation" ? "🎧" : isShadowL(L) ? "🎧🗣️" : "🗣️"; }
+function kindOf(L) { return L.type === "gap" ? "🎧 Nghe" : L.type === "dictation" ? "🎧 Nghe chép" : isShadowL(L) ? "🎧🗣️ Nghe & nói" : "🗣️ Nói"; }
 function todoRow(L, note, cls) {
   return `<button class="trow ${cls || ""}" data-id="${L.id}"><span class="tk">${kindOf(L)}</span><span class="t"><b>${esc(L.title)}</b>${note ? `<span>${note}</span>` : ""}</span><span class="go">›</span></button>`;
 }
@@ -1112,7 +1115,7 @@ function viewList() {
       const done = ls.every(isDone), locked = iso > today, isToday = iso === today;
       const icon = done ? "✅" : locked ? "🔒" : isToday ? "▶️" : "⚠️";
       const first = ls.find(L => !isDone(L)) || ls[0];
-      return `<button class="day ${done ? "ok" : locked ? "lock" : isToday ? "now" : "late"}" ${locked ? "disabled" : `data-id="${first.id}"`} title="${esc(ls.map(L => L.title).join(" · "))}"><b>${WD_SHORT[d.getDay()]}</b><span>${d.getDate()}/${d.getMonth() + 1}</span><i>${icon}</i><small>${ls.map(L => L.type === "gap" ? "🎧" : "🗣️").join("")}</small></button>`;
+      return `<button class="day ${done ? "ok" : locked ? "lock" : isToday ? "now" : "late"}" ${locked ? "disabled" : `data-id="${first.id}"`} title="${esc(ls.map(L => L.title).join(" · "))}"><b>${WD_SHORT[d.getDay()]}</b><span>${d.getDate()}/${d.getMonth() + 1}</span><i>${icon}</i><small>${ls.map(kindIcon).join("")}</small></button>`;
     }).join("")}</div><p class="muted small">✅ xong · ▶️ hôm nay · ⚠️ chưa làm · 📚 buổi học (hạn nộp) · bài ngày sau sẽ hiện đúng ngày đó</p></section>` : "";
   // still owed
   const oweHTML = oweIds.size ? `<section class="owe"><h3>⏰ Còn phải làm</h3>
@@ -2433,7 +2436,7 @@ function teacherWeeks(r) {
     const late = !done && H && duePassed(H), lock = L.opens && opensLater(L);
     const meta = p.gap ? (done ? `nộp rồi · đúng ${p.score}/${p.idx.length} câu` : "chưa nộp") : `đã thử ${p.tried.length}/${p.idx.length} câu`;
     return `<button class="trow" data-go="teach~${sid}~${L.id}"><span class="wd">${esc(dayLabel(L))}</span>
-      <div class="t"><b>${L.type === "gap" ? "🎧" : "🗣️"} ${esc(cleanTitle(L))}</b><span>${meta}${role ? " · vai " + esc(role) : ""}${lock ? " · 🔒 chưa mở" : ""}${late ? ` · <span class="late">⚠️ qua hạn ${esc(dueText(H))}</span>` : ""}</span>
+      <div class="t"><b>${kindIcon(L)} ${esc(cleanTitle(L))}</b><span>${meta}${role ? " · vai " + esc(role) : ""}${lock ? " · 🔒 chưa mở" : ""}${late ? ` · <span class="late">⚠️ qua hạn ${esc(dueText(H))}</span>` : ""}</span>
       ${!done && p.weak.length ? `<span class="weak">Chưa đạt 80%: ${p.weak.slice(0, 8).map(i => "câu " + (p.idx.indexOf(i) + 1) + " (" + r.best[L.id][i] + "%)").join(", ")}${p.weak.length > 8 ? "…" : ""}</span>` : ""}</div>
       ${p.pct >= 100 ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${done ? "ok" : late ? "late" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev" aria-hidden="true">›</span></button>`;
   };
@@ -2475,7 +2478,7 @@ function viewTeacher() {
         <thead><tr><th>Bài</th>${cr.map(r => `<th>${esc(r.s.name)}</th>`).join("")}</tr></thead>
         <tbody>${hwWeeks(hs).map(([lab, hh]) => `<tr class="wkrow"><td colspan="${cr.length + 1}">${esc(lab.replace(/^📁 [^·]+· /, "📁 "))}</td></tr>${hh.map(H => {
           const past = duePassed(H);
-          return `<tr><td><b>${H.skill === "Listening" ? "🎧" : "🗣️"} ${esc(String(H.title).replace(/^Bài tập tuần · /, "").replace(/^Homework /, ""))}</b> <span class="muted">· ${H.lessons.length} bài · hạn ${esc(dueText(H))}</span></td>
+          return `<tr><td><b>${(() => { const hl = DATA.lessons.filter(L => H.lessons.includes(L.id)), ic = [...new Set(hl.map(kindIcon))]; return ic.length === 1 ? ic[0] : H.skill === "Listening" ? "🎧" : "🗣️"; })()} ${esc(String(H.title).replace(/^Bài tập tuần · /, "").replace(/^Homework /, ""))}</b> <span class="muted">· ${H.lessons.length} bài · hạn ${esc(dueText(H))}</span></td>
           ${cr.map(r => {
             const ls = DATA.lessons.filter(L => H.lessons.includes(L.id) && L.for.includes(r.s.id));
             if (!ls.length) return `<td class="muted">–</td>`;
@@ -2499,7 +2502,7 @@ function viewTeacher() {
     const ls = ids.map(id => DATA.lessons.find(L => L.id === id)).filter(Boolean).sort(byDay);
     $("#micSheet").innerHTML = `<h3 id="micTitle">${esc(r.s.name)} · chọn bài để xem</h3>
       <div class="tpick">${ls.map(L => { const p = progressOf(L, sid, r.best[L.id] || {});
-        return `<button class="trow" data-go="teach~${sid}~${L.id}"><span class="wd">${esc(dayLabel(L))}</span><div class="t"><b>${L.type === "gap" ? "🎧" : "🗣️"} ${esc(cleanTitle(L))}</b><span>${p.gap ? (p.pct >= 100 ? `nộp rồi · đúng ${p.score}/${p.idx.length} câu` : "chưa nộp") : `đã thử ${p.tried.length}/${p.idx.length} câu`}</span></div>${p.pct >= 100 ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${p.pct >= PASS ? "ok" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev">›</span></button>`; }).join("")}</div>
+        return `<button class="trow" data-go="teach~${sid}~${L.id}"><span class="wd">${esc(dayLabel(L))}</span><div class="t"><b>${kindIcon(L)} ${esc(cleanTitle(L))}</b><span>${p.gap ? (p.pct >= 100 ? `nộp rồi · đúng ${p.score}/${p.idx.length} câu` : "chưa nộp") : `đã thử ${p.tried.length}/${p.idx.length} câu`}</span></div>${p.pct >= 100 ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${p.pct >= PASS ? "ok" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev">›</span></button>`; }).join("")}</div>
       <div class="row"><button id="micLater">Đóng</button></div>`;
     $("#micModal").hidden = false;
     $("#micLater").addEventListener("click", closeMic);
