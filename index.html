@@ -1596,16 +1596,26 @@ document.addEventListener("click", e => {
 });
 /* phát đúng 1 đoạn [a, b] của file mẫu. Trước đây nếu file chưa tải xong phần đầu (metadata) thì lệnh nhảy tới giây a bị bỏ qua
    → phát từ đầu file tới b, nghe như "nguyên bài". Giờ: chờ metadata rồi mới nhảy; khi đang phát mà lệch khỏi đoạn thì nhảy lại. */
-let startAt = null, spanTry = 0;
+let startAt = null, spanTry = 0, spanTimer = null, spanId = 0;
+function endSpan() { clearTimeout(spanTimer); spanTimer = null; stopAt = null; startAt = null; if (playingEl) playingEl.classList.remove("playing"); }
 function playSpan(a, b, el) {
   try {
     if (playingEl) playingEl.classList.remove("playing");
+    clearTimeout(spanTimer);
     playingEl = el; el.classList.add("playing");
-    startAt = a; stopAt = b; spanTry = 0;
+    startAt = a; stopAt = b; spanTry = 0; const id = ++spanId;
     const go = () => {
+      if (id !== spanId) return;
       try { player.currentTime = a; } catch {}
       applyRate();
       const p = player.play(); if (p) p.catch(() => {});
+      /* chốt chặn thứ 2: dù trình duyệt không báo timeupdate đúng lúc, hết thời lượng câu là dừng */
+      player.addEventListener("playing", () => {
+        if (id !== spanId) return;
+        clearTimeout(spanTimer);
+        const ms = ((b - a) / (player.playbackRate || 1) + 0.6) * 1000;
+        spanTimer = setTimeout(() => { if (id === spanId && stopAt != null) { player.pause(); endSpan(); } }, ms);
+      }, { once: true });
     };
     if (player.readyState >= 1) go();
     else { player.addEventListener("loadedmetadata", go, { once: true }); try { player.load(); } catch {} }
@@ -1614,8 +1624,11 @@ function playSpan(a, b, el) {
 player.addEventListener("timeupdate", () => {
   if (stopAt == null) return;
   const t = player.currentTime;
-  if (startAt != null && (t < startAt - 0.6 || t > stopAt + 1.5) && spanTry < 3) { spanTry++; try { player.currentTime = startAt; } catch {} return; }   // nhảy chưa tới đúng chỗ → nhảy lại
-  if (t >= stopAt) { player.pause(); stopAt = null; startAt = null; if (playingEl) playingEl.classList.remove("playing"); }
+  if (startAt != null && (t < startAt - 0.6 || t > stopAt + 1.5)) {
+    if (spanTry < 4) { spanTry++; try { player.currentTime = startAt; } catch {} return; }   // nhảy chưa tới đúng chỗ → nhảy lại
+    player.pause(); endSpan(); return;                                                       // vẫn lệch: dừng hẳn, không phát cả bài
+  }
+  if (t >= stopAt) { player.pause(); endSpan(); }
 });
 player.addEventListener("pause", () => { if (stopAt == null && playingEl) playingEl.classList.remove("playing"); });
 
