@@ -205,7 +205,8 @@
    "note": "Âm cuối: mỗi thẻ đọc từ 3 lần rồi đọc câu luyện.",
    "lessons": [
     "hw-s2-final-sounds"
-   ]
+   ],
+   "deadlineAt": "15:30"
   },
   {
    "id": "hw-listening-1",
@@ -216,7 +217,8 @@
    "note": "Shadowing hội thoại Part 1: Thư nói phần Linda, Đức nói phần Ryan.",
    "lessons": [
     "hw-l1-part1"
-   ]
+   ],
+   "deadlineAt": "15:30"
   },
   {
    "id": "hw-va-speaking-1",
@@ -3710,7 +3712,7 @@
    "deck": "va1",
    "topic": "Education & Employment",
    "id": "va-w20261107-sat",
-   "title": "Thứ Bảy (tối) · Part 1 – Homework & school life",
+   "title": "Part 1 – Homework & school life",
    "opens": "2026-11-07",
    "opensAt": "19:30",
    "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
@@ -3774,7 +3776,7 @@
    "deck": "va1",
    "topic": "Education & Employment",
    "id": "va-w20261107-mon",
-   "title": "Thứ Hai · Part 1 – Study habits & dream jobs",
+   "title": "Part 1 – Study habits & dream jobs",
    "opens": "2026-11-09",
    "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
    "sentences": [
@@ -3837,7 +3839,7 @@
    "deck": "va1",
    "topic": "Education & Employment",
    "id": "va-w20261107-tue",
-   "title": "Thứ Ba · Part 2 – A goal in your future career",
+   "title": "Part 2 – A goal in your future career",
    "opens": "2026-11-10",
    "subtitle": "1 cue card · đọc 🧭 hướng dẫn → ⏱ 1 phút chuẩn bị (ghi từ khóa từng gợi ý) → nói 1'30–2' → 📤 nộp bài",
    "sentences": [
@@ -3888,7 +3890,7 @@
    "part": "Part 1",
    "opens": "2026-11-11",
    "prep": 30,
-   "title": "Thứ Tư · Nghe Part 1 – Summer Science Program (form completion, 10 câu)",
+   "title": "Nghe Part 1 – Summer Science Program (form completion, 10 câu)",
    "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe",
    "audio": "media/va-w20261107-wed.mp3",
    "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
@@ -4360,7 +4362,7 @@
    "part": "Part 2",
    "opens": "2026-11-12",
    "prep": 30,
-   "title": "Thứ Năm · Nghe Part 2 – Careers Fair (multiple choice)",
+   "title": "Nghe Part 2 – Careers Fair (multiple choice)",
    "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript",
    "audio": "media/va-w20261107-thu.mp3",
    "instructions": "Choose the correct letter, A, B or C.",
@@ -4682,7 +4684,7 @@
    "part": "Part 2",
    "opens": "2026-11-13",
    "prep": 30,
-   "title": "Thứ Sáu · Nghe Part 2 – Job shadowing at a dental clinic (multiple choice)",
+   "title": "Nghe Part 2 – Job shadowing at a dental clinic (multiple choice)",
    "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript",
    "audio": "media/va-w20261107-fri.mp3",
    "instructions": "Choose the correct letter, A, B or C.",

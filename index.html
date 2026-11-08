@@ -250,6 +250,10 @@ details.nolog .pick{margin-top:8px}
 .wrow .wi{flex:none;width:30px;text-align:center;font-size:15px}.wrow .wi b{font-size:12px;color:var(--accent)}
 .wrow .wt{display:grid;gap:1px;min-width:0}.wrow .wt b{font-size:13.5px;font-weight:600;overflow-wrap:anywhere}.wrow .wt span{font-size:12px;color:var(--muted)}
 .wrow.done{opacity:.6}.wrow.locked{opacity:.5}
+.wrow .wd,.trow .wd{flex:none;min-width:58px;font-size:11.5px;font-weight:700;color:var(--accent);background:var(--soft,#f3ece4);border-radius:8px;padding:3px 6px;text-align:center}
+.wdone{margin:0 12px 12px;border-top:1px solid var(--line);padding-top:6px}.wdone>summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--muted);padding:4px 2px}.wdone .wlist{display:grid;gap:4px}
+.tweek{border:1px solid var(--line);border-radius:14px;margin:8px 12px;padding:0}.tweek>summary{cursor:pointer;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 12px;font-size:14px}.tweek>summary b{flex:1 1 auto;text-align:left}.tweek>summary .muted{font-size:12.5px}.tweek .tgrp{padding:0 8px 8px}.tweek .tgh{font-size:12.5px;font-weight:700;color:var(--muted);margin:6px 4px 2px}.tweek details.tgd>summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--muted);margin:6px 4px 2px}
+.trow .late{color:var(--bad,#c62828);font-size:12px;font-weight:700}.ttable .wkrow td{background:var(--soft,#f3ece4);font-weight:700;font-size:13px}
 .wlist{display:grid;gap:6px;padding:0 12px 14px}
 .wreview{margin:0 12px 12px;padding:10px 12px;border-radius:14px;background:var(--ok-bg);display:grid;gap:6px}
 .wreview>summary{cursor:pointer;font-weight:700;font-size:15px}
@@ -971,11 +975,22 @@ function weekRange(sid, n) {
 }
 function weekNo(w, sid) { return w.n || (w.week ? weekOfDate(sid, parseDay(w.week)) : null); }
 function isShadow(L) { return !L.sentences.some(s => s.free); }
+/* tiêu đề gọn: bỏ "Thứ Hai · " ở đầu (ngày đã có ở nhãn ngày) */
+function cleanTitle(L) { return String(L.title || "").replace(/^(Thứ (Hai|Ba|Tư|Năm|Sáu|Bảy)|Chủ nhật)( \(tối\))?\s*·\s*/, ""); }
+/* nhãn ngày làm: "T2 9/11" (+ giờ mở nếu có) · bài buổi học: "Buổi N" */
+function dayLabel(L) {
+  if (!L.opens) return `Buổi ${L.session}`;
+  const d = parseDay(L.opens); return `${WD_SHORT[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}${L.opensAt ? " · " + L.opensAt : ""}`;
+}
+const byDay = (a, b) => (a.opens || "0") < (b.opens || "0") ? -1 : (a.opens || "0") > (b.opens || "0") ? 1 : 0;
+/* hạn nộp đã qua chưa (tính cả giờ vào học) */
+function duePassed(H) { if (!H) return false; const n = daysLeft(H.deadline); return n < 0 || (n === 0 && (!H.deadlineAt || pastTime(H.deadlineAt))); }
+function dueText(H) { const d = parseDay(H.deadline); return `${WD_SHORT[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}${H.deadlineAt ? " " + H.deadlineAt : ""}`; }
 function weekRow(L) {
   const lock = lockedUntil(L), done = isDone(L), p = lock ? 0 : lessonProgress(L);
   const ic = lock ? "🔒" : done ? "✅" : p > 0 ? `<b>${p}%</b>` : "▶️";
-  const sub = lock ? `Mở ${esc(lock)}` : L.type === "gap" ? "Nghe điền từ" : L.type === "dictation" ? "Nghe chép" : `${L.sentences.filter(s => isMine(L, s)).length} câu`;
-  return `<button class="wrow${done ? " done" : ""}${lock ? " locked" : ""}" ${lock ? "disabled" : `data-id="${L.id}"`}><span class="wi">${ic}</span><span class="wt"><b>${esc(L.title)}</b><span>${sub}</span></span></button>`;
+  const sub = lock ? `Mở ${esc(lock)}` : L.type === "gap" ? (Object.values(L.qs || {}).some(q => q.opts) ? "Nghe trắc nghiệm" : "Nghe điền từ") : L.type === "dictation" ? "Nghe chép" : `${L.sentences.filter(s => isMine(L, s)).length} câu`;
+  return `<button class="wrow${done ? " done" : ""}${lock ? " locked" : ""}" ${lock ? "disabled" : `data-id="${L.id}"`}><span class="wd">${esc(dayLabel(L))}</span><span class="wi">${ic}</span><span class="wt"><b>${esc(cleanTitle(L))}</b><span>${sub}</span></span></button>`;
 }
 function weekFolders(sid, mine) {
   if (!weekStart(sid)) return "";
@@ -987,12 +1002,13 @@ function weekFolders(sid, mine) {
   const col = (title, ls, empty) => `<div class="wcol"><h4>${title}</h4>${ls.length ? ls.map(weekRow).join("") : `<p class="muted small">${empty}</p>`}</div>`;
   const sub = (title, ls) => ls.length ? `<details class="wsub" open><summary>${title} <span class="muted">${ls.filter(isDone).length}/${ls.length}</span></summary>${ls.map(weekRow).join("")}</details>` : "";
   const folders = ns.map(n => {
-    const ls = by.get(n), sp = ls.filter(L => skillOf(L) === "Speaking"), li = ls.filter(L => skillOf(L) === "Listening");
-    const open = ls.filter(L => !lockedUntil(L)), doneN = open.filter(isDone).length;
+    const all = by.get(n).slice().sort(byDay), ls = all.filter(L => lockedUntil(L) || !isDone(L)), dn = all.filter(L => !lockedUntil(L) && isDone(L));
+    const sp = ls.filter(L => skillOf(L) === "Speaking"), li = ls.filter(L => skillOf(L) === "Listening");
+    const open = all.filter(L => !lockedUntil(L)), doneN = open.filter(isDone).length;
     const pct = open.length ? Math.round(open.reduce((a, L) => a + (isDone(L) ? 100 : lessonProgress(L)), 0) / open.length) : 0;
-    const topics = [...new Set(ls.map(L => L.topic).filter(Boolean))].slice(0, 2).join(" · ");
+    const topics = [...new Set(all.map(L => L.topic).filter(Boolean))].slice(0, 2).join(" · ");
     const wi = W.findIndex(w => weekNo(w, sid) === n), w = W[wi];
-    const HH = ls.map(homeworkOf).filter(Boolean).sort((x, y) => y.deadline.localeCompare(x.deadline))[0];
+    const HH = all.map(homeworkOf).filter(Boolean).sort((x, y) => y.deadline.localeCompare(x.deadline))[0];
     const due = HH ? (() => { const d = parseDay(HH.deadline), dd = dueInfo(HH.deadline, HH.deadlineAt), allDone = open.length && open.every(isDone);
       return ` · <span class="due ${allDone ? "" : dd.cls}">⏰ hạn ${WD_SHORT[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}${HH.deadlineAt ? " " + esc(HH.deadlineAt) : ""} (buổi học)</span>`; })() : "";
     const review = w ? `<details class="wreview" ${wi === W.length - 1 ? "open" : ""}><summary>📈 Tổng kết tuần ${n}${W[wi - 1] ? ` · so với tuần ${weekNo(W[wi - 1], sid)}` : ""}${w.draft ? " · bản nháp" : ""}</summary>${weekBody(w, W[wi - 1])}</details>` : "";
@@ -1001,9 +1017,9 @@ function weekFolders(sid, mine) {
         <span class="wp">${w && !w.draft ? "📈 " : ""}${!open.length ? "bài mở theo ngày" : `${doneN}/${open.length} bài`}${open.length ? ` <span class="ring sm" style="--p:${pct}"><i>${pct}%</i></span>` : ""}</span></summary>
       ${review}
       <div class="wgrid">
-        <div class="wcol"><h4>🗣️ Speaking</h4>${sub("🎙 Tự trả lời", sp.filter(L => !isShadow(L)))}${sub("🔁 Shadowing", sp.filter(isShadow))}${sp.length ? "" : `<p class="muted small">Tuần này không có bài nói.</p>`}</div>
-        ${col("🎧 Listening", li, "Tuần này không có bài nghe.")}
-      </div></details>`;
+        <div class="wcol"><h4>🗣️ Speaking · cần làm</h4>${sub("🎙 Tự trả lời", sp.filter(L => !isShadow(L)))}${sub("🔁 Shadowing", sp.filter(isShadow))}${sp.length ? "" : `<p class="muted small">${dn.some(L => skillOf(L) === "Speaking") ? "Xong hết bài nói rồi 🎉" : "Tuần này không có bài nói."}</p>`}</div>
+        ${col("🎧 Listening · cần làm", li, dn.some(L => skillOf(L) === "Listening") ? "Xong hết bài nghe rồi 🎉" : "Tuần này không có bài nghe.")}
+      </div>${dn.length ? `<details class="wdone"><summary>✅ Đã làm (${dn.length})</summary><div class="wlist">${dn.map(weekRow).join("")}</div></details>` : ""}</details>`;
   }).join("");
   const rest = other.length ? `<details class="wfold other"><summary><span class="wh"><b>📚 Bài khác</b><span>luyện thêm, không bắt buộc</span></span><span class="wp">${other.length} bài</span></summary><div class="wlist">${other.map(weekRow).join("")}</div></details>` : "";
   return `<section class="weeks"><h3>📚 Bài tập theo tuần</h3>${folders}${rest}</section>`;
@@ -2346,6 +2362,8 @@ function progressOf(L, sid, best) {
   const tried = idx.filter(i => best[i] != null);
   const weak = idx.filter(i => best[i] != null && best[i] < 80);
   if (markedDone(sid, L)) return { idx, done: idx, tried: idx, weak: [], pct: 100, marked: true };
+  /* bài nghe: nộp rồi là xong (điểm đúng/sai ghi riêng), không tính "chưa đạt" */
+  if (L.type === "gap") { const sub = idx.length && tried.length === idx.length; return { idx, done: sub ? idx : [], tried, weak: [], pct: sub ? 100 : 0, gap: true, score: done.length }; }
   return { idx, done, tried, weak, pct: idx.length ? Math.round(done.length / idx.length * 100) : 0 };
 }
 function ago(d) {
@@ -2356,6 +2374,44 @@ function ago(d) {
   const days = Math.round(h / 24); return `${days} ngày trước`;
 }
 let teachOpen = null;
+/* nhóm homework theo tuần (mới nhất trước): nhãn "Tuần N · d–d/m · Đức, Thư" */
+function hwWeeks(hws) {
+  const m = new Map();
+  hws.slice().sort((a, b) => b.deadline.localeCompare(a.deadline)).forEach(H => {
+    const L0 = DATA.lessons.find(L => H.lessons.includes(L.id)), sid = L0 && L0.for[0];
+    const n = L0 && weekStart(sid) ? weekOfLesson(sid, L0) : null;
+    const who = L0 ? [...new Set(DATA.lessons.filter(L => H.lessons.includes(L.id)).flatMap(L => L.for))].map(id => (DATA.students.find(x => x.id === id) || {}).name || id).join(", ") : "";
+    const lab = n ? `📁 Tuần ${n} · ${weekRange(sid, n)}` : `📁 ${who}`;
+    if (!m.has(lab)) m.set(lab, []); m.get(lab).push(H);
+  });
+  return [...m.entries()];
+}
+/* thư mục tuần của 1 HS ở màn giáo viên: cần làm (theo ngày) → ✅ đã xong (gập) */
+function teacherWeeks(r) {
+  const sid = r.s.id, ls = DATA.lessons.filter(L => L.for.includes(sid));
+  const by = new Map();
+  ls.forEach(L => { const n = weekStart(sid) ? weekOfLesson(sid, L) : null; const k = n == null ? 0 : n; if (!by.has(k)) by.set(k, []); by.get(k).push(L); });
+  const now = weekStart(sid) ? weekOfDate(sid, new Date()) : null;
+  const keys = [...by.keys()].sort((a, b) => b - a), openK = keys.find(k => k && k <= now) ?? keys[0];
+  const row = L => {
+    const p = progressOf(L, sid, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[sid] : null, done = p.pct >= 100;
+    const late = !done && H && duePassed(H), lock = L.opens && opensLater(L);
+    const meta = p.gap ? (done ? `nộp rồi · đúng ${p.score}/${p.idx.length} câu` : "chưa nộp") : `đã thử ${p.tried.length}/${p.idx.length} câu`;
+    return `<button class="trow" data-go="teach~${sid}~${L.id}"><span class="wd">${esc(dayLabel(L))}</span>
+      <div class="t"><b>${L.type === "gap" ? "🎧" : "🗣️"} ${esc(cleanTitle(L))}</b><span>${meta}${role ? " · vai " + esc(role) : ""}${lock ? " · 🔒 chưa mở" : ""}${late ? ` · <span class="late">⚠️ qua hạn ${esc(dueText(H))}</span>` : ""}</span>
+      ${!done && p.weak.length ? `<span class="weak">Chưa đạt 80%: ${p.weak.slice(0, 8).map(i => "câu " + (p.idx.indexOf(i) + 1) + " (" + r.best[L.id][i] + "%)").join(", ")}${p.weak.length > 8 ? "…" : ""}</span>` : ""}</div>
+      ${done ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${late ? "late" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev" aria-hidden="true">›</span></button>`;
+  };
+  return keys.map(k => {
+    const all = by.get(k).slice().sort(byDay), done = all.filter(L => progressOf(L, sid, r.best[L.id] || {}).pct >= 100), todo = all.filter(L => !done.includes(L));
+    const Hs = [...new Set(all.map(homeworkOf).filter(Boolean))].sort((a, b) => b.deadline.localeCompare(a.deadline)), H = Hs[0];
+    const lateN = todo.filter(L => { const h = homeworkOf(L); return h && duePassed(h); }).length;
+    const head = k ? `📁 Tuần ${k} · ${weekRange(sid, k)}` : "📚 Bài khác";
+    return `<details class="tweek" ${k === openK ? "open" : ""}><summary><b>${head}</b><span class="muted">${H ? `hạn ${esc(dueText(H))} · ` : ""}✅ ${done.length}/${all.length} xong${lateN ? ` · <span class="late">⚠️ ${lateN} qua hạn</span>` : ""}</span></summary>
+      <div class="tgrp">${todo.length ? `<p class="tgh">Cần làm (${todo.length})</p>${todo.map(row).join("")}` : `<p class="tgh">🎉 Xong hết tuần này</p>`}
+      ${done.length ? `<details class="tgd"><summary>✅ Đã xong (${done.length})</summary>${done.map(row).join("")}</details>` : ""}</div></details>`;
+  }).join("");
+}
 function viewTeacher() {
   /* one row per student: merge every account that chose that student (best score per sentence) */
   const rows = DATA.students.map(s => {
@@ -2377,27 +2433,21 @@ function viewTeacher() {
     <p class="muted">Điểm tốt nhất từng câu; câu đạt từ 80% tính là xong. Dữ liệu chỉ có khi học sinh đăng nhập Gmail lúc luyện.</p>
     <div class="actions"><button id="tReload">Tải lại</button></div>
     <section class="tcard" id="tsubs"><h3>📥 Bài nộp (câu tự trả lời)</h3><p class="muted">Đang tải bài nộp…</p></section>
-    ${hws.length ? `<section class="tcard"><h3>Homework</h3><div class="tscroll"><table class="ttable">
+    ${hws.length ? `<section class="tcard"><h3>📅 Bài tập theo tuần</h3><p class="muted small">Mới nhất ở trên. ✅ = đã làm xong · % = đang làm · <span class="tpct late">đỏ</span> = qua hạn (giờ vào học) mà chưa xong.</p><div class="tscroll"><table class="ttable">
       <thead><tr><th>Bài</th>${rows.map(r => `<th>${esc(r.s.name)}</th>`).join("")}</tr></thead>
-      <tbody>${hws.map(H => {
-        const d = dueInfo(H.deadline, H.deadlineAt);
-        return `<tr><td><b>${esc(H.title)}</b><br><span class="muted">Deadline ${esc(fmtDeadline(H.deadline))} · <span class="due ${d.cls}">${esc(d.chip)}</span></span></td>
+      <tbody>${hwWeeks(hws).map(([lab, hs], k) => `<tr class="wkrow"><td colspan="${rows.length + 1}">${esc(lab)}</td></tr>${hs.map(H => {
+        const past = duePassed(H);
+        return `<tr><td><b>${H.skill === "Listening" ? "🎧" : "🗣️"} ${esc(String(H.title).replace(/^Bài tập tuần · /, "").replace(/^Homework /, ""))}</b> <span class="muted">· ${H.lessons.length} bài · hạn ${esc(dueText(H))}</span></td>
         ${rows.map(r => {
           const ls = DATA.lessons.filter(L => H.lessons.includes(L.id) && L.for.includes(r.s.id));
           if (!ls.length) return `<td class="muted">–</td>`;
           const pct = Math.round(ls.reduce((a, L) => a + progressOf(L, r.s.id, r.best[L.id] || {}).pct, 0) / ls.length);
-          return `<td>${cell(pct, pct < 100 && d.cls === "over" ? "late" : "")}</td>`;
+          return `<td>${pct >= 100 ? `<span class="tpct ok">✅</span>` : cell(pct, past ? "late" : "")}</td>`;
         }).join("")}</tr>`;
-      }).join("")}</tbody></table></div></section>` : ""}
+      }).join("")}`).join("")}</tbody></table></div></section>` : ""}
     ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
       <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
-      ${profileCard(r.s.id, false)}<details class="tprog"><summary>📈 Tiến độ theo tuần (${weeksOf(r.s.id).length} tuần)</summary><section class="prog">${progressHTML(r.s.id)}</section></details><div class="tlist">${lessonsFor(r.s.id).sort((a, b) => b.session - a.session).map(L => {
-        const p = progressOf(L, r.s.id, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[r.s.id] : null;
-        return `<button class="trow" data-go="teach~${r.s.id}~${L.id}">
-          <div class="t"><b>${esc(L.title)}</b><span>${esc(skillOf(L))} buổi ${L.session}${role ? " · vai " + esc(role) : ""}${H ? " · homework" : ""} · đã thử ${p.tried.length}/${p.idx.length} câu</span>
-          ${p.weak.length ? `<span class="weak">Chưa đạt 80%: ${p.weak.slice(0, 12).map(i => "câu " + (p.idx.indexOf(i) + 1) + " (" + r.best[L.id][i] + "%)").join(", ")}${p.weak.length > 12 ? "…" : ""}</span>` : ""}</div>
-          ${cell(p.pct)}<span class="chev" aria-hidden="true">›</span></button>`;
-      }).join("")}</div></details>`).join("")}
+      ${profileCard(r.s.id, false)}<details class="tprog"><summary>📈 Tiến độ theo tuần (${weeksOf(r.s.id).length} tuần)</summary><section class="prog">${progressHTML(r.s.id)}</section></details>${teacherWeeks(r)}</details>`).join("")}
     ${unknown.length ? `<p class="muted">Tài khoản đã đăng nhập nhưng chưa chọn tên: ${esc(unknown.map(u => u.email).join(", "))}</p>` : ""}`;
   loadSubs(rows);
   $("#tReload").addEventListener("click", async e => { e.currentTarget.disabled = true; await checkTeacher(cloudUser()); route(); });
