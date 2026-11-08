@@ -253,7 +253,7 @@
    "title": "Bài tập tuần · Speaking",
    "topic": "📅 Tuần 7–13/11 · Education & Employment",
    "deadline": "2026-11-14",
-   "note": "T7 (tối) + T2: mỗi ngày 2 câu Part 1 · T3: 1 cue card Part 2. Mỗi câu có 🧭 hướng dẫn từng bước; ôn flashcard Studies & School life trước khi nói, dùng ≥ 2 từ trong gợi ý.",
+   "note": "T7 (tối) + T2: mỗi ngày 2 câu Part 1 tự trả lời · T3: shadowing 2 câu trả lời Part 1 mẫu band 7–8 (nghe từng câu rồi nói lại). Ôn flashcard Studies & School life trước khi nói.",
    "lessons": [
     "va-w20261107-sat",
     "va-w20261107-mon",
@@ -3832,50 +3832,180 @@
    "skill": "Speaking"
   },
   {
+   "id": "va-w20261107-tue",
    "session": 2,
+   "title": "Shadowing – Part 1 band 7–8 · Studies & School life",
+   "subtitle": "Listen & repeat: Nghe mẫu từng câu → nói lại · rồi shadow cả bài 2–3 lần (2 câu trả lời Part 1 mẫu band 7–8)",
    "for": [
     "vananh"
    ],
-   "deck": "va1",
+   "video": "media/va-w20261107-tue.mp4",
+   "skill": "Speaking",
    "topic": "Education & Employment",
-   "id": "va-w20261107-tue",
-   "title": "Part 2 – A goal in your future career",
+   "deck": "va1",
    "opens": "2026-11-10",
-   "subtitle": "1 cue card · đọc 🧭 hướng dẫn → ⏱ 1 phút chuẩn bị (ghi từ khóa từng gợi ý) → nói 1'30–2' → 📤 nộp bài",
    "sentences": [
     {
-     "free": true,
-     "part": "Part 2",
-     "label": "Part 2 · Cue card",
-     "q": "Describe a goal you hope to achieve in your future career.",
-     "cue": [
-      "what the goal is",
-      "when you first had this goal",
-      "what you need to do to achieve it"
+     "text": "Without a 'doubt, / it would be ==a'natomy==. //",
+     "start": 116.76,
+     "end": 119.71,
+     "chunks": [
+      [
+       2.8,
+       3.9
+      ],
+      [
+       5.6,
+       6.86
+      ]
      ],
-     "explain": "explain why this goal is important to you",
-     "hint": "pursue · career prospects · put in the hours · win a scholarship · a stepping stone (to) · broaden my horizons",
-     "guide": [
-      "<b>Đọc cue card:</b> đề về <b>mục tiêu nghề nghiệp</b>; mỗi gợi ý một thì: <i>what the goal is</i> (hiện tại) · <i>when you first had</i> (quá khứ) · <i>what you need to do</i> (<i>I need to / I'll have to</i>) · <i>why important</i> (hiện tại).",
-      "<b>⏱ 1 phút chuẩn bị:</b> bấm nút đồng hồ, ghi 2–4 từ khóa cho mỗi ô. Thi thật được nhìn giấy ghi chú khi nói.",
-      "<b>Mở bài (1 câu):</b> <i>I'd like to talk about my goal of becoming a dentist / getting into a dental school.</i>",
-      "<b>Gợi ý 1–3:</b> mỗi gợi ý 3–4 câu, nối bằng <i>It all started when… · To achieve this, I'll need to… · First… Then… · On top of that…</i>",
-      "<b>Kết (and explain why):</b> 2–3 câu: ý nghĩa với em, gia đình, người bệnh. Đây là chỗ ăn điểm, đừng bỏ.",
-      "<b>Nói đủ 1'30–2':</b> xem đồng hồ khi 🎙 ghi âm thử. Hết ý thì thêm chi tiết: ai, ở đâu, cảm giác thế nào. Dùng ≥ 3 từ trong 💡 gợi ý, có ít nhất 1 idiom (<i>a stepping stone, put in the hours</i>)."
+     "label": "Bài 1 · What subject would you like to study in more depth?"
+    },
+    {
+     "text": "Since I'm 'hoping to ++major in++ 'dentistry, / I'll need to ++grasp the 'concepts++ / behind how our 'teeth and 'jaws ‿ actually 'work. //",
+     "start": 119.71,
+     "end": 127.16,
+     "chunks": [
+      [
+       9.12,
+       11.58
+      ],
+      [
+       14.63,
+       16.45
+      ],
+      [
+       18.87,
+       21.54
+      ]
      ],
-     "demo": {
-      "q": "Describe a skill you would like to learn in the future.",
-      "notes": {
-       "open": "learn to drive · after graduation",
-       "what the skill is": "driving a car · license at 18",
-       "why you want to learn it": "independent · no need to ask parents",
-       "how you will learn it": "driving school · 3 months · practice on weekends",
-       "explain": "freedom · take my family on trips"
-      }
-     }
+     "label": "Bài 1 · What subject would you like to study in more depth?"
+    },
+    {
+     "text": "At the 'moment, / I only get a 'taste of it ‿ in 'biology class, / so I've 'started watching 'university 'lectures online / to ++get a 'head start++. //",
+     "start": 127.16,
+     "end": 136.21,
+     "chunks": [
+      [
+       25.22,
+       26.3
+      ],
+      [
+       27.99,
+       31.01
+      ],
+      [
+       34.63,
+       38.06
+      ],
+      [
+       42.1,
+       43.36
+      ]
+     ],
+     "label": "Bài 1 · What subject would you like to study in more depth?"
+    },
+    {
+     "text": "'Honestly, / it's !!right 'up my 'alley!!, / and I find it ==fas'cinating== / rather than ==de'manding==. //",
+     "start": 136.21,
+     "end": 142.38,
+     "chunks": [
+      [
+       45.62,
+       46.56
+      ],
+      [
+       48.1,
+       49.5
+      ],
+      [
+       51.51,
+       53.31
+      ],
+      [
+       55.71,
+       57.14
+      ]
+     ],
+     "label": "Bài 1 · What subject would you like to study in more depth?"
+    },
+    {
+     "text": "To 'some extent, 'yes. //",
+     "start": 142.38,
+     "end": 144.32,
+     "chunks": [
+      [
+       59.57,
+       61.06
+      ]
+     ],
+     "label": "Bài 2 · Do you think your school prepares you well for university?"
+    },
+    {
+     "text": "My school is 'great at helping us ++ace++ ==high-'stakes exams==, / but it re'lies 'heavily on ==rote 'learning==, / so we 'rarely get ==hands-'on== experience. //",
+     "start": 144.32,
+     "end": 152.94,
+     "chunks": [
+      [
+       63.54,
+       67.03
+      ],
+      [
+       71.11,
+       73.44
+      ],
+      [
+       76.36,
+       78.79
+      ]
+     ],
+     "label": "Bài 2 · Do you think your school prepares you well for university?"
+    },
+    {
+     "text": "For ex'ample, / we 'memorize 'chemistry 'formulas, / but we've only 'done two 'lab sessions this year. //",
+     "start": 152.94,
+     "end": 159.35,
+     "chunks": [
+      [
+       82.23,
+       83.25
+      ],
+      [
+       84.87,
+       87.06
+      ],
+      [
+       89.85,
+       92.47
+      ]
+     ],
+     "label": "Bài 2 · Do you think your school prepares you well for university?"
+    },
+    {
+     "text": "'That's why / I've been ++putting in the 'hours++ on my 'own, / because I 'know that 'university / will have !!a 'steep 'learning curve!!. //",
+     "start": 159.35,
+     "end": 166.74,
+     "chunks": [
+      [
+       96.1,
+       97.0
+      ],
+      [
+       98.49,
+       100.74
+      ],
+      [
+       103.58,
+       105.6
+      ],
+      [
+       108.23,
+       110.0
+      ]
+     ],
+     "label": "Bài 2 · Do you think your school prepares you well for university?"
     }
-   ],
-   "skill": "Speaking"
+   ]
   },
   {
    "session": 2,
