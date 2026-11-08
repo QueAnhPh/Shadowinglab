@@ -76,7 +76,7 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .tcard h3{margin:0;font-size:16px}
 .tscroll{overflow-x:auto}
 .teachwide .wrap{max-width:1180px}
-.tclasses{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;align-items:start}.tclass{min-width:0}.tcellbtn{all:unset;cursor:pointer;display:inline-block;border-radius:999px}.tcellbtn:hover .tpct,.tcellbtn:focus-visible .tpct{outline:2px solid var(--accent,#7a4b2a);outline-offset:1px}.tpick{display:grid;gap:4px;text-align:left;max-height:60vh;overflow:auto}.tclass h4{margin:4px 0 6px}
+.tclasses{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;align-items:start}.tclass{min-width:0}.tcellbtn{all:unset;cursor:pointer;display:inline-block;border-radius:999px}.tcellbtn:hover .tpct,.tcellbtn:focus-visible .tpct{outline:2px solid var(--accent,#7a4b2a);outline-offset:1px}.tpick{display:grid;gap:4px;text-align:left;max-height:60vh;overflow:auto}.tclass h4{margin:4px 0 6px}
 .ttable{border-collapse:collapse;width:100%;font-size:14px}
 .ttable th,.ttable td{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
 .ttable th{font-size:12px;color:var(--muted);font-weight:600;border-top:none}
@@ -2405,11 +2405,7 @@ function ago(d) {
 }
 let teachOpen = null;
 /* lớp = các HS cùng ngày bắt đầu tuần 1 (students[].weeks.start); HS chưa có thì đứng riêng */
-function classesOf(rows) {
-  const m = new Map();
-  rows.forEach(r => { const k = (r.s.weeks && r.s.weeks.start) || r.s.id; if (!m.has(k)) m.set(k, []); m.get(k).push(r); });
-  return [...m.values()];
-}
+function classesOf(rows) { return rows.map(r => [r]); }   // mỗi HS 1 bảng riêng (bài tập từng bạn khác nhau)
 const PASS = 70;   // màn giáo viên: bài từ 70% trở lên tính là đạt (xanh), 100% = ✅, dưới 70% mà qua hạn = đỏ
 /* nhóm homework theo tuần (mới nhất trước): nhãn "Tuần N · d–d/m · Đức, Thư" */
 function hwWeeks(hws) {
@@ -2471,11 +2467,11 @@ function viewTeacher() {
     <p class="muted">Điểm tốt nhất từng câu (câu đạt từ 80% tính là xong câu đó). Cả bài: 100% = ✅ · từ 70% = xanh (đạt) · dưới 70% mà qua hạn = đỏ. Dữ liệu chỉ có khi học sinh đăng nhập Gmail lúc luyện.</p>
     <div class="actions"><button id="tReload">Tải lại</button></div>
     <section class="tcard" id="tsubs"><h3>📥 Bài nộp (câu tự trả lời)</h3><p class="muted">Đang tải bài nộp…</p></section>
-    ${hws.length ? `<section class="tcard"><h3>📅 Bài tập theo tuần</h3><p class="muted small">Mỗi lớp 1 bảng, tuần mới nhất ở trên. ✅ = xong · <span class="tpct ok">85%</span> = đạt (từ 70%) · <span class="tpct mid">40%</span> = đang làm · <span class="tpct late">đỏ</span> = qua hạn (giờ vào học) mà dưới 70%.</p>
+    ${hws.length ? `<section class="tcard"><h3>📅 Bài tập theo tuần</h3><p class="muted small">Mỗi bạn 1 bảng (bài tập từng bạn khác nhau), tuần mới nhất ở trên. Bấm vào ô để xem bài. ✅ = xong · <span class="tpct ok">85%</span> = đạt (từ 70%) · <span class="tpct mid">40%</span> = đang làm · <span class="tpct late">đỏ</span> = qua hạn (giờ vào học) mà dưới 70%.</p>
       <div class="tclasses">${classesOf(rows).map(cr => {
         const ids = cr.map(r => r.s.id), hs = hws.filter(H => DATA.lessons.some(L => H.lessons.includes(L.id) && L.for.some(x => ids.includes(x))));
-        return `<div class="tclass"><h4>👥 ${esc(cr.map(r => r.s.name).join(" – "))}</h4>${hs.length ? `<div class="tscroll"><table class="ttable">
-        <thead><tr><th>Bài</th>${cr.map(r => `<th>${esc(r.s.name)}</th>`).join("")}</tr></thead>
+        return `<div class="tclass"><h4>👤 ${esc(cr.map(r => r.s.name).join(" – "))}</h4>${hs.length ? `<div class="tscroll"><table class="ttable">
+        <thead><tr><th>Bài</th><th>Tiến độ</th></tr></thead>
         <tbody>${hwWeeks(hs).map(([lab, hh]) => `<tr class="wkrow"><td colspan="${cr.length + 1}">${esc(lab.replace(/^📁 [^·]+· /, "📁 "))}</td></tr>${hh.map(H => {
           const past = duePassed(H);
           return `<tr><td><b>${(() => { const hl = DATA.lessons.filter(L => H.lessons.includes(L.id)), ic = [...new Set(hl.map(kindIcon))]; return ic.length === 1 ? ic[0] : H.skill === "Listening" ? "🎧" : "🗣️"; })()} ${esc(String(H.title).replace(/^Bài tập tuần · /, "").replace(/^Homework /, ""))}</b> <span class="muted">· ${H.lessons.length} bài · hạn ${esc(dueText(H))}</span></td>
