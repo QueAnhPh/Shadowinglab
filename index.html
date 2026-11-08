@@ -76,7 +76,8 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .tcard h3{margin:0;font-size:16px}
 .tscroll{overflow-x:auto}
 .teachwide .wrap{max-width:1180px}
-.tclasses{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;align-items:start}.tclass{min-width:0}.tcellbtn{all:unset;cursor:pointer;display:inline-block;border-radius:999px}.tcellbtn:hover .tpct,.tcellbtn:focus-visible .tpct{outline:2px solid var(--accent,#7a4b2a);outline-offset:1px}.tpick{display:grid;gap:4px;text-align:left;max-height:60vh;overflow:auto}.tclass h4{margin:4px 0 6px}
+.tclasses{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;align-items:start}.tclass{min-width:0}.wkb:not(.open) tr:not(.wkrow){display:none}.wktog{all:unset;cursor:pointer;display:block;width:100%;font-weight:700}.wktog .car{display:inline-block;width:1em}.wktog .muted{font-weight:400}
+#fab{position:fixed;right:max(14px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));display:grid;gap:8px;z-index:50}#fab[hidden]{display:none}#fab button{width:46px;height:46px;border-radius:50%;padding:0;font-size:20px;box-shadow:var(--shadow,0 2px 8px rgba(0,0,0,.2));background:var(--surface,#fff);border:1px solid var(--line,#ddd)}.tcellbtn{all:unset;cursor:pointer;display:inline-block;border-radius:999px}.tcellbtn:hover .tpct,.tcellbtn:focus-visible .tpct{outline:2px solid var(--accent,#7a4b2a);outline-offset:1px}.tpick{display:grid;gap:4px;text-align:left;max-height:60vh;overflow:auto}.tclass h4{margin:4px 0 6px}
 .ttable{border-collapse:collapse;width:100%;font-size:14px}
 .ttable th,.ttable td{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
 .ttable th{font-size:12px;color:var(--muted);font-weight:600;border-top:none}
@@ -529,6 +530,7 @@ details.cmp summary{font-weight:800}
 <main class="wrap" id="app"><p class="muted">Đang tải bài…</p></main>
 <audio id="player" preload="auto" playsinline></audio>
 <div class="modal" id="weekModal" hidden role="dialog" aria-modal="true" aria-labelledby="wkTitle"><div class="sheet" id="weekSheet"></div></div>
+<div id="fab" hidden><button id="fabBack" title="Quay lại" aria-label="Quay lại">←</button><button id="fabTop" title="Lên đầu trang" aria-label="Lên đầu trang">⬆</button></div>
 <div class="modal" id="micModal" hidden role="dialog" aria-modal="true" aria-labelledby="micTitle"><div class="sheet" id="micSheet"></div></div>
 
 <script type="module" src="cloud.js"></script>
@@ -2472,7 +2474,11 @@ function viewTeacher() {
         const ids = cr.map(r => r.s.id), hs = hws.filter(H => DATA.lessons.some(L => H.lessons.includes(L.id) && L.for.some(x => ids.includes(x))));
         return `<div class="tclass"><h4>👤 ${esc(cr.map(r => r.s.name).join(" – "))}</h4>${hs.length ? `<div class="tscroll"><table class="ttable">
         <thead><tr><th>Bài</th><th>Tiến độ</th></tr></thead>
-        <tbody>${hwWeeks(hs).map(([lab, hh]) => `<tr class="wkrow"><td colspan="${cr.length + 1}">${esc(lab.replace(/^📁 [^·]+· /, "📁 "))}</td></tr>${hh.map(H => {
+        ${hwWeeks(hs).map(([lab, hh], wi) => {
+          const open = wi === 0 || hh.some(H => !duePassed(H));   // tuần mới nhất / chưa qua hạn: mở; tuần đã qua: gập
+          const pcts = hh.map(H => { const r = cr[0], ls = DATA.lessons.filter(L => H.lessons.includes(L.id) && L.for.includes(r.s.id)); return ls.length ? Math.round(ls.reduce((a, L) => a + progressOf(L, r.s.id, r.best[L.id] || {}).pct, 0) / ls.length) : null; }).filter(x => x != null);
+          const okN = pcts.filter(x => x >= PASS).length;
+          return `<tbody class="wkb${open ? " open" : ""}"><tr class="wkrow"><td colspan="${cr.length + 1}"><button class="wktog"><span class="car">${open ? "▾" : "▸"}</span> ${esc(lab.replace(/^📁 [^·]+· /, "📁 "))} <span class="muted">· đạt ${okN}/${pcts.length}</span></button></td></tr>${hh.map(H => {
           const past = duePassed(H);
           return `<tr><td><b>${(() => { const hl = DATA.lessons.filter(L => H.lessons.includes(L.id)), ic = [...new Set(hl.map(kindIcon))]; return ic.length === 1 ? ic[0] : H.skill === "Listening" ? "🎧" : "🗣️"; })()} ${esc(String(H.title).replace(/^Bài tập tuần · /, "").replace(/^Homework /, ""))}</b> <span class="muted">· ${H.lessons.length} bài · hạn ${esc(dueText(H))}</span></td>
           ${cr.map(r => {
@@ -2481,13 +2487,14 @@ function viewTeacher() {
             const pct = Math.round(ls.reduce((a, L) => a + progressOf(L, r.s.id, r.best[L.id] || {}).pct, 0) / ls.length);
             return `<td><button class="tcellbtn" data-sid="${r.s.id}" data-ls="${esc(ls.map(L => L.id).join(","))}" title="Bấm để xem bài">${pct >= 100 ? `<span class="tpct ok">✅</span>` : cell(pct, pct >= PASS ? "ok" : past ? "late" : pct > 0 ? "mid" : "zero")}</button></td>`;
           }).join("")}</tr>`;
-        }).join("")}`).join("")}</tbody></table></div>` : `<p class="muted small">Chưa có bài tập.</p>`}</div>`;
+        }).join("")}</tbody>`; }).join("")}</table></div>` : `<p class="muted small">Chưa có bài tập.</p>`}</div>`;
       }).join("")}</div></section>` : ""}
     ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
       <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
       ${profileCard(r.s.id, false)}<details class="tprog"><summary>📈 Tiến độ theo tuần (${weeksOf(r.s.id).length} tuần)</summary><section class="prog">${progressHTML(r.s.id)}</section></details>${teacherWeeks(r)}</details>`).join("")}
     ${unknown.length ? `<p class="muted">Tài khoản đã đăng nhập nhưng chưa chọn tên: ${esc(unknown.map(u => u.email).join(", "))}</p>` : ""}`;
   loadSubs(rows);
+  $("#app").querySelectorAll(".wktog").forEach(b => b.addEventListener("click", () => { const tb = b.closest(".wkb"); tb.classList.toggle("open"); b.querySelector(".car").textContent = tb.classList.contains("open") ? "▾" : "▸"; }));
   $("#tReload").addEventListener("click", async e => { e.currentTarget.disabled = true; await checkTeacher(cloudUser()); route(); });
   $("#app").querySelectorAll("details.tstu").forEach(d => d.addEventListener("toggle", () => { if (d.open) teachOpen = d.dataset.sid; }));
   $("#app").querySelectorAll(".trow[data-go]").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
@@ -2916,6 +2923,14 @@ function route() {
   if (L) { if (lockedUntil(L)) { location.hash = ""; return; } if (fcGate(L)) { viewList(); return; } viewLesson(L); } else viewList();
 }
 window.addEventListener("hashchange", route);
+/* nút nổi theo trang: ⬆ lên đầu · ← quay lại (khi trang có nút quay lại), hiện khi đã cuộn xuống */
+(() => {
+  const fab = document.getElementById("fab"), back = document.getElementById("fabBack");
+  const upd = () => { const b = document.getElementById("backBtn"); fab.hidden = window.scrollY < 300; back.hidden = !b; };
+  window.addEventListener("scroll", upd, { passive: true }); window.addEventListener("hashchange", () => setTimeout(upd, 50));
+  document.getElementById("fabTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  back.addEventListener("click", () => { const b = document.getElementById("backBtn"); if (b) b.click(); });
+})();
 $("#menuBtn").addEventListener("click", () => { const o = !$("#side").classList.contains("open"); $("#side").classList.toggle("open", o); $("#scrim").hidden = !o; });
 $("#scrim").addEventListener("click", () => { $("#side").classList.remove("open"); $("#scrim").hidden = true; });
 $("#side").querySelector('[data-nav="help"]').addEventListener("click", () => { $("#side").classList.remove("open"); $("#scrim").hidden = true; $("#helpBtn").click(); });
