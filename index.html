@@ -123,6 +123,12 @@ p.small{font-size:13px;margin:6px 0 0}
 .gctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}.gaudio{width:100%}
 .gres{width:100%;border-collapse:collapse;font-size:14px}.gres td,.gres th{border-bottom:1px solid var(--line,#ddd);padding:4px 6px;text-align:left}
 .gres .good{color:var(--ok,#2e7d32)}.gres .weak{color:var(--bad,#c62828)}
+.mcq{margin:12px 0;padding:10px;border:1px solid var(--line,#ddd);border-radius:12px}.mcq .stem{margin:0 0 6px;line-height:1.5}.mcq .qn{display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:6px;background:var(--ink,#333);color:var(--bg,#fff);font-size:13px;margin-right:4px}
+.mopt{display:flex;align-items:stretch;gap:6px;margin:4px 0}.mopt .mo{flex:1;text-align:left;padding:8px 10px;border-radius:10px;font-size:15px;line-height:1.4}.mopt .mo.on{outline:2px solid var(--accent,#7a4b2a);font-weight:700}
+.mopt .mk{min-width:44px;border-radius:10px;font-weight:700}.mopt .mk.y{color:var(--ok,#2e7d32)}.mopt .mk.n{color:var(--bad,#c62828)}.mopt.out .mo{text-decoration:line-through;opacity:.6}
+.mopt .mo.right{background:rgba(46,125,50,.15);border-color:var(--ok,#2e7d32)}.mopt .mo.wrong{background:rgba(198,40,40,.12);border-color:var(--bad,#c62828)}
+.kwp{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:999px;background:rgba(100,181,246,.18);font-size:13px}.kwp i{opacity:.7;font-style:normal;font-size:11px}
+.gres tr.why ol,.gres tr.why ul{margin:4px 0 4px 18px;padding:0}.gres tr.why li{margin:2px 0}.owhy{list-style:none;margin-left:0!important}.owhy li.ok{color:var(--ok,#2e7d32)}
 .ansb{background:rgba(255,213,79,.45);padding:0 2px;border-radius:3px}
 .kwm{background:rgba(100,181,246,.35);color:inherit;padding:0 2px;border-radius:3px}
 .gtr p{margin:6px 0;line-height:1.6;padding:2px 6px;border-radius:8px}.gtr .sp{opacity:.75}.gtr p[data-at]{cursor:pointer}.gtr p.now{background:rgba(255,213,79,.35)}.gtr .tq{font-size:12px;font-weight:700;background:#6F4325;color:#fff;border-radius:6px;padding:1px 6px}.ghint{display:block;font-size:13px;color:var(--muted,#777);margin:2px 0 4px}.gres tr.why td{font-size:13px;color:var(--muted,#666);border-bottom:1px solid var(--line,#ddd)}.gspeed button{padding:2px 8px;margin-left:4px}.gspeed button.on{font-weight:700;outline:2px solid #C98A1C}
@@ -1305,20 +1311,31 @@ function formOpts(q, n) { return (+n) % 2 ? [q.form[0], q.form[1]] : [q.form[1],
 function hlTranscript(t) {
   return esc(t).replace(/\*\*(.+?)\*\*/g, "<b class=\"ansb\">$1</b>").replace(/\[\[(.+?)\]\]/g, "<mark class=\"kwm\">$1</mark>");
 }
+const MK = ["", "✓", "✗", "?"];
+function mcqHTML(L, n, stem, st, done) {
+  const q = L.qs[n], v = (st.a || {})[n] || "", mk = ((st.m || {})[n]) || {};
+  const ok = done ? gapOk(q, v) : null;
+  return `<div class="mcq" data-n="${n}"><p class="stem"><b class="qn">${n}</b> ${stem}</p>${!done && q.hint ? `<span class="ghint">💡 ${esc(q.hint)}</span>` : ""}
+    ${Object.entries(q.opts).map(([k, t]) => `<div class="mopt ${mk[k] === "✗" ? "out" : ""}"><button class="mo ${v === k ? "on" : ""} ${done ? (q.ans.includes(k) ? "right" : v === k ? "wrong" : "") : ""}" data-n="${n}" data-v="${k}" ${done ? "disabled" : ""}><b>${k}</b>&nbsp; ${esc(t).replace(/\[\[(.+?)\]\]/g, "<mark class=\"kwm\">$1</mark>")}</button>${done ? "" : `<button class="mk ${mk[k] === "✓" ? "y" : mk[k] === "✗" ? "n" : ""}" data-n="${n}" data-k="${k}" title="Đánh dấu khi nghe: ✓ đúng · ✗ loại · ? chưa chắc">${mk[k] || "·"}</button>`}</div>`).join("")}
+    ${done && !ok ? `<span class="gfix">✔ Đáp án: ${esc(q.ans[0])}</span>` : ""}</div>`;
+}
 function gapRowsHTML(L, st, done) {
   return L.rows.map(r => {
     if (r.startsWith("## ")) return `<h4 class="gsub">${esc(r.slice(3))}</h4>`;
+    const mm = /^\{(\d+)\}\s*(.*)$/.exec(r);
+    if (mm && L.qs[mm[1]] && L.qs[mm[1]].opts) return mcqHTML(L, mm[1], esc(mm[2]).replace(/\[\[(.+?)\]\]/g, "<mark class=\"kwm\">$1</mark>"), st, done);
     const html = esc(r).replace(/\[\[(.+?)\]\]/g, "<mark class=\"kwm\">$1</mark>").replace(/\{(\d+)\}/g, (m, n) => {
       const q = L.qs[n]; if (!q) return m;
       const v = (st.a || {})[n] || "", f = (st.f || {})[n];
       const ok = done ? gapOk(q, v) : null;
-      const opts = formOpts(q, n);
+      const opts = q.form ? formOpts(q, n) : [];
       return `<span class="gap"><b class="qn">${n}</b><input class="gin ${done ? (ok ? "ok" : "bad") : ""}" data-n="${n}" value="${esc(v)}" ${done ? "disabled" : ""} autocomplete="off" autocapitalize="off" spellcheck="false">${done && !ok ? `<span class="gfix">✔ ${esc(q.ans[0])}</span>` : ""}${!done && q.hint ? `<span class="ghint">💡 ${esc(q.hint)}</span>` : ""}
         <span class="forms" data-n="${n}">${opts.map(o => `<button class="fo ${f === o ? "on" : ""} ${done ? (o === q.form[0] ? "right" : f === o ? "wrong" : "") : ""}" data-v="${esc(o)}" ${done ? "disabled" : ""}>${esc(o)}</button>`).join("")}</span></span>`;
     });
     return `<div class="grow">${html}</div>`;
   }).join("");
 }
+const hasForm = L => Object.values(L.qs).some(q => q.form);
 function viewGap(L) {
   const st = store.get(gapKey(L), {}), done = !!st.done;
   const nq = Object.keys(L.qs).length;
@@ -1333,7 +1350,8 @@ function viewGap(L) {
       <p class="ginst">${esc(L.instructions || "Write ONE WORD AND/OR A NUMBER for each answer.")}</p>
       ${L.heading ? `<h3 class="ghead">${esc(L.heading)}</h3>` : ""}
       <div class="gform">${gapRowsHTML(L, st, done)}</div>
-      <p class="muted small">Dưới mỗi ô: chọn <b>dạng từ</b> cần điền (làm trong lúc đọc đề, trước khi nghe).</p>
+      ${hasForm(L) ? `<p class="muted small">Dưới mỗi ô: chọn <b>dạng từ</b> cần điền (làm trong lúc đọc đề, trước khi nghe).</p>` : ""}
+      ${Object.values(L.qs).some(q => q.opts) && !done ? `<p class="muted small">Trắc nghiệm: bấm vào đáp án để chọn. Nút nhỏ bên phải để <b>đánh dấu khi nghe</b>: ✓ khớp · ✗ loại · ? chưa chắc (bấm nhiều lần để đổi).</p>` : ""}
       <div class="gctl">
         ${done ? `<audio src="${esc(L.audio)}" controls preload="metadata" class="gaudio"></audio>
           <span class="gspeed">🐢 Tốc độ nghe lại: <button data-r="0.75">0.75×</button><button data-r="1" class="on">1×</button></span>
@@ -1352,6 +1370,16 @@ function viewGap(L) {
       const n = b.parentElement.dataset.n; (st.f = st.f || {})[n] = b.dataset.v; save();
       b.parentElement.querySelectorAll(".fo").forEach(x => x.classList.toggle("on", x === b));
     }));
+    $("#app").querySelectorAll(".mo").forEach(b => b.addEventListener("click", () => {
+      const n = b.dataset.n; (st.a = st.a || {})[n] = b.dataset.v; save();
+      $("#app").querySelectorAll(`.mo[data-n="${n}"]`).forEach(x => x.classList.toggle("on", x === b));
+    }));
+    $("#app").querySelectorAll(".mk").forEach(b => b.addEventListener("click", () => {
+      const n = b.dataset.n, k = b.dataset.k, m = ((st.m = st.m || {})[n] = st.m[n] || {});
+      m[k] = MK[(MK.indexOf(m[k] || "") + 1) % MK.length]; save();
+      b.textContent = m[k] || "·"; b.className = "mk " + (m[k] === "✓" ? "y" : m[k] === "✗" ? "n" : "");
+      b.parentElement.classList.toggle("out", m[k] === "✗");
+    }));
     const live = $("#app").querySelector(".live"), start = $("#gStart"), sub = $("#gSubmit");
     const audio = new Audio(L.audio);
     start.addEventListener("click", () => {
@@ -1368,8 +1396,10 @@ function viewGap(L) {
       audio.onended = () => { start.textContent = "✅ Hết audio. Kiểm tra chính tả, số ít/số nhiều rồi bấm Nộp bài."; live.textContent = ""; };
     }, { once: true });
     sub.addEventListener("click", () => {
-      const miss = Object.keys(L.qs).filter(n => !(st.f || {})[n]).length;
+      const miss = Object.keys(L.qs).filter(n => L.qs[n].form && !(st.f || {})[n]).length;
+      const noAns = Object.keys(L.qs).filter(n => L.qs[n].opts && !(st.a || {})[n]).length;
       if (miss && !confirm(`Còn ${miss} câu chưa chọn dạng từ. Vẫn nộp?`)) return;
+      if (noAns && !confirm(`Còn ${noAns} câu trắc nghiệm chưa chọn đáp án (thi thật cứ đoán, không bị trừ điểm). Vẫn nộp?`)) return;
       try { audio.pause(); } catch {}
       gradeGap(L, st); save(); viewGap(L); window.scrollTo(0, 0);
     });
@@ -1405,28 +1435,38 @@ function gradeGap(L, st) {
   Object.keys(L.qs).forEach((n, i) => {
     const q = L.qs[n], ok = gapOk(q, (st.a || {})[n]);
     if (ok) score++;
-    if ((st.f || {})[n] === q.form[0]) formsOk++;
+    if (q.form && (st.f || {})[n] === q.form[0]) formsOk++;
     best[i] = Math.max(best[i] || 0, ok ? 100 : 0);
   });
   st.done = true; st.score = score; st.formsOk = formsOk; st.at = Date.now();
   st.tries = (st.tries || 0) + 1; if (st.tries === 1) st.first = score;
   store.set(`best:${student}:${L.id}`, best); syncBest(L.id, best);
-  if (cloudUser()) window.Cloud.saveTake(`${L.id}~0~gap`, { lesson: L.id, i: 0, kind: "gap", at: st.at, s: score, st: "", h: "", audio: "", a: st.a || {}, f: st.f || {}, first: st.first, tries: st.tries }).catch(e => console.error(e));
+  if (cloudUser()) window.Cloud.saveTake(`${L.id}~0~gap`, { lesson: L.id, i: 0, kind: "gap", at: st.at, s: score, st: "", h: "", audio: "", a: st.a || {}, f: st.f || {}, m: st.m || {}, first: st.first, tries: st.tries }).catch(e => console.error(e));
+}
+/* 🧠 phân tích đáp án: kw = [[từ trong đề, loại từ, audio nói lại]], why = chuỗi hoặc các bước (linear thinking), optWhy = {A: lý do loại / chọn} */
+const richT = t => hlTranscript(t).replace(/&lt;(\/?)(i|b)&gt;/g, "<$1$2>");
+function whyHTML(q) {
+  const kw = (q.kw || []).length ? `<div>🔑 ${q.kw.map(k => `<span class="kwp"><mark class="kwm">${esc(k[0])}</mark> <i>${esc(k[1] || "")}</i> ⇄ <b>${esc(k[2] || "")}</b></span>`).join("")}</div>` : "";
+  const why = Array.isArray(q.why) ? `<ol>${q.why.map(t => `<li>${richT(t)}</li>`).join("")}</ol>` : q.why ? `<div>🧠 ${richT(q.why)}</div>` : "";
+  const ow = q.optWhy ? `<ul class="owhy">${Object.entries(q.optWhy).map(([k, t]) => `<li class="${q.ans.includes(k) ? "ok" : ""}"><b>${q.ans.includes(k) ? "✅" : "❌"} ${esc(k)}</b> ${richT(t)}</li>`).join("")}</ul>` : "";
+  return kw || why || ow ? `<tr class="why"><td></td><td colspan="3">${kw}${why}${ow}</td></tr>` : "";
 }
 function gapResultHTML(L, st) {
-  const nq = Object.keys(L.qs).length;
+  const nq = Object.keys(L.qs).length, nf = Object.values(L.qs).filter(q => q.form).length;
   const rows = Object.keys(L.qs).map(n => {
-    const q = L.qs[n], v = (st.a || {})[n] || "", ok = gapOk(q, v), fk = (st.f || {})[n] === q.form[0];
-    return `<tr><td>${n}</td><td class="${ok ? "good" : "weak"}">${ok ? "✔" : "✘"} ${esc(v || "—")}</td><td><b>${esc(q.ans.join(" / "))}</b></td><td class="${fk ? "good" : "weak"}">${fk ? "✔ " + esc(q.form[0]) : `✘ ${(st.f || {})[n] ? "em chọn " + esc(st.f[n]) : "chưa chọn"} → <b>${esc(q.form[0])}</b>`}</td></tr>${q.why ? `<tr class="why"><td></td><td colspan="3">🧠 ${hlTranscript(q.why)}</td></tr>` : ""}`;
+    const q = L.qs[n], v = (st.a || {})[n] || "", ok = gapOk(q, v), fk = q.form && (st.f || {})[n] === q.form[0];
+    const fcell = !q.form ? `<td class="muted">${q.opts ? "trắc nghiệm" : "—"}</td>` : `<td class="${fk ? "good" : "weak"}">${fk ? "✔ " + esc(q.form[0]) : `✘ ${(st.f || {})[n] ? "em chọn " + esc(st.f[n]) : "chưa chọn"} → <b>${esc(q.form[0])}</b>`}</td>`;
+    return `<tr><td>${n}</td><td class="${ok ? "good" : "weak"}">${ok ? "✔" : "✘"} ${esc(v || "—")}</td><td><b>${esc(q.ans.join(" / "))}</b></td>${fcell}</tr>${whyHTML(q)}`;
   }).join("");
   return `<section class="card">
-    <h3>Kết quả: ${st.score}/${nq} câu đúng · dạng từ đúng ${st.formsOk}/${nq}${st.tries > 1 ? ` · lần đầu ${st.first}/${nq}` : ""}</h3>
-    <table class="gres"><tr><th>#</th><th>Em điền</th><th>Đáp án</th><th>Dạng từ</th></tr>${rows}</table>
-    <p class="muted small">Sai chính tả hoặc sai số ít/số nhiều là mất điểm. Đáp án chấp nhận nhiều cách viết thì cách nhau bằng " / ".</p>
+    <h3>Kết quả: ${st.score}/${nq} câu đúng${nf ? ` · dạng từ đúng ${st.formsOk}/${nf}` : ""}${st.tries > 1 ? ` · lần đầu ${st.first}/${nq}` : ""}</h3>
+    <p class="muted small">Mỗi câu: 🔑 <mark class="kwm">từ khóa trong đề</mark> (loại từ) ⇄ <b>từ audio dùng thay</b> (synonym / paraphrase) → các bước nghe theo tuyến (linear thinking) → vì sao chọn / loại từng phương án.</p>
+    <table class="gres"><tr><th>#</th><th>Em ${nf ? "điền" : "chọn"}</th><th>Đáp án</th><th>${nf ? "Dạng từ" : "Dạng bài"}</th></tr>${rows}</table>
+    ${nf ? `<p class="muted small">Sai chính tả hoặc sai số ít/số nhiều là mất điểm. Đáp án chấp nhận nhiều cách viết thì cách nhau bằng " / ".</p>` : ""}
   </section>
   <section class="card">
     <h3>📜 Transcript</h3>
-    <p class="muted small"><b class="ansb">In đậm</b> = khúc chứa đáp án · <mark class="kwm">tô màu</mark> = từ khóa trong câu hỏi và chỗ bài nói lại bằng từ khác (paraphrase).</p>
+    <p class="muted small"><b class="ansb">In đậm</b> = khúc chứa đáp án · <mark class="kwm">tô màu</mark> = từ khóa chính (danh từ, động từ, tính từ) và chỗ bài nói lại bằng từ khác (synonym, paraphrase), cả từ báo đổi ý / bẫy.</p>
     ${(L.transcript || []).some(x => x.at != null) ? `<p class="muted small">▶ Bấm phát audio ở trên: dòng đang nói sáng lên. Bấm vào 1 dòng để nghe lại từ chỗ đó. Bài nghe đi <b>theo thứ tự câu hỏi</b> (linear): nghe xong câu 3 thì nhìn sang câu 4 ngay.</p>` : ""}
     <div class="gtr">${(L.transcript || []).map((x, k) => `<p data-k="${k}" ${x.at != null ? `data-at="${x.at}"` : ""}>${x.q ? `<span class="tq">Câu ${esc(String(x.q))}</span> ` : ""}${x.sp ? `<b class="sp">${esc(x.sp)}:</b> ` : ""}${hlTranscript(x.t)}</p>`).join("")}</div>
   </section>`;
@@ -1439,7 +1479,7 @@ async function viewTeacherGap(sid, L, S) {
   for (const u of docs) for (const t of await window.Cloud.loadTakesOf(u.uid, L.id)) if (t.kind === "gap" && (!r || t.at > r.at)) r = t;
   $("#tLoading").remove();
   if (!r) { $("#gT").innerHTML = `<p class="muted">Chưa làm bài.</p>`; return; }
-  const st = { a: r.a, f: r.f, score: r.s, formsOk: Object.keys(L.qs).filter(n => (r.f || {})[n] === L.qs[n].form[0]).length, first: r.first, tries: r.tries, done: true };
+  const st = { a: r.a, f: r.f, score: r.s, formsOk: Object.keys(L.qs).filter(n => L.qs[n].form && (r.f || {})[n] === L.qs[n].form[0]).length, first: r.first, tries: r.tries, done: true };
   $("#gT").innerHTML = `<p class="muted">Nộp ${fmtWhen(r.at)} · làm ${r.tries || 1} lần</p>` + gapResultHTML(L, st);
 }
 
@@ -1700,7 +1740,7 @@ async function listenWhisper(L, i, card, btn) {
   const clip = startClip(stream);
   await resumed;
   const src = ctx.createMediaStreamSource(stream), proc = ctx.createScriptProcessor(4096, 1, 1);
-  const bufs = []; let spoke = false, quietMs = 0, totalMs = 0, done = false;
+  const bufs = []; let spoke = false, quietMs = 0, totalMs = 0, done = false, peak = 0, floor = 1;
   const session = { stop: () => finish(true) };
   rec = session;
   btn.textContent = "Đang nghe… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
@@ -1710,9 +1750,11 @@ async function listenWhisper(L, i, card, btn) {
     const d = e.inputBuffer.getChannelData(0); bufs.push(new Float32Array(d));
     let sum = 0; for (let k = 0; k < d.length; k += 4) sum += d[k] * d[k];
     const rms = Math.sqrt(sum / (d.length / 4)), ms = d.length / ctx.sampleRate * 1000;
-    totalMs += ms;
-    if (rms > 0.02) { spoke = true; quietMs = 0; } else if (spoke) quietMs += ms;
-    if ((spoke && quietMs > 1600) || totalMs > 20000 || (!spoke && totalMs > 7000)) finish(spoke);
+    totalMs += ms; peak = Math.max(peak, rms); if (totalMs < 400) floor = Math.min(floor, rms);
+    /* ngưỡng theo độ ồn nền của máy: micro nhỏ (iPhone, tai nghe) vẫn nhận ra giọng */
+    const th = Math.max(0.006, Math.min(0.02, (floor < 1 ? floor : 0) * 3));
+    if (rms > th) { spoke = true; quietMs = 0; } else if (spoke) quietMs += ms;
+    if ((spoke && quietMs > 1600) || totalMs > 20000 || (!spoke && totalMs > 10000)) finish(true);
   };
   src.connect(proc); proc.connect(ctx.destination);
   setTimeout(() => {   // no audio arriving (context still suspended): stop instead of hanging
@@ -1726,7 +1768,7 @@ async function listenWhisper(L, i, card, btn) {
     clipP.finally(() => stream.getTracks().forEach(t => t.stop()));
     const rate = ctx.sampleRate; try { ctx.close(); } catch {}
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
-    if (!keep || !spoke) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
+    if (!keep || (!spoke && peak < 0.004)) { live.textContent = "Máy chưa nghe thấy giọng em. Em bấm lại, nói to và gần micro hơn. Lần nào cũng vậy thì: tắt tai nghe Bluetooth, kiểm tra quyền Micrô của trình duyệt, đóng app khác đang dùng micro (Zalo, Messenger gọi điện)."; return; }
     const audio = resample(bufs, rate);
     btn.disabled = true;
     let azNote = "";
@@ -1846,7 +1888,7 @@ function listen(L, i, card, btn) {
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
     if (errored) return;
     const top = finals ? finals.map(a => a[0]).join(" ") : interim;
-    if (!top.trim()) { live.textContent = "Máy chưa nghe thấy gì. Em bấm lại, nói to và gần điện thoại hơn."; return; }
+    if (!top.trim()) { srFallback(L, i, card, chunks, exp, clipP, live, btn); return; }
     window.__sna = 0;
     live.textContent = "";
     grade(L, i, card, chunks, exp, top, finals || [[interim]], clipP);
@@ -1899,6 +1941,30 @@ function listen(L, i, card, btn) {
   } catch { rec = null; done = true; btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary"); live.textContent = "Chưa bật được micro, em thử lại nha."; }
 }
 
+/* Web Speech trả về rỗng (hay gặp trên Android khi trình duyệt vừa nhận giọng vừa ghi âm: 2 bên tranh micro):
+   nghe lại bản ghi bằng Whisper trên máy; nghe được thì từ lần sau máy này dùng luôn Whisper */
+async function srFallback(L, i, card, chunks, exp, clipP, live, btn) {
+  const NOHEAR = "Máy chưa nghe thấy giọng em. Em bấm lại, nói to và gần micro hơn. Lần nào cũng vậy thì: tắt tai nghe Bluetooth, kiểm tra quyền Micrô của trình duyệt, đóng app khác đang dùng micro (Zalo, Messenger gọi điện).";
+  const blob = await clipP.catch(() => null);
+  if (!blob) { live.textContent = NOHEAR; if (!store.get("srEmpty", 0)) store.set("srEmpty", 1); else store.set("engine", "whisper"); return; }
+  try {
+    btn.disabled = true; live.textContent = "Đang nghe lại bản ghi của em…";
+    const ac = new (window.AudioContext || window.webkitAudioContext)();
+    const dec = await ac.decodeAudioData(await blob.arrayBuffer()); try { ac.close(); } catch {}
+    const ch = dec.getChannelData(0); let peak = 0;
+    for (let k = 0; k + 4096 <= ch.length; k += 4096) { let s2 = 0; for (let j = k; j < k + 4096; j += 4) s2 += ch[j] * ch[j]; peak = Math.max(peak, Math.sqrt(s2 / 1024)); }
+    if (peak < 0.004) { live.textContent = NOHEAR; return; }
+    loadWhisper();
+    live.textContent = whisperState === "ready" ? "Đang chấm…" : "Đang tải bộ chấm giọng (lần đầu hơi lâu), chờ chút nha…";
+    const text = await window.Whisper.transcribe(resample([ch], dec.sampleRate));
+    if (!text || !text.trim()) { live.textContent = "Máy chưa nghe rõ. Em đọc lại to hơn nha."; return; }
+    store.set("engine", "whisper");   // máy này nhận giọng bằng Web Speech không ổn: lần sau dùng Whisper luôn
+    live.textContent = "";
+    grade(L, i, card, chunks, exp, text, [[text]], Promise.resolve(blob));
+  } catch (e) { console.error(e); live.textContent = NOHEAR; }
+  finally { btn.disabled = false; }
+}
+
 /* ---------- first vs latest take of each sentence ---------- */
 const CLIPS = {};   // "<lessonId>:<i>" -> { first: dataURL, last: dataURL }
 const ST_CODE = { o: "ok", n: "near", m: "miss", b: "bad" };
@@ -1930,25 +1996,35 @@ async function recordFree(L, i, card, btn, forSubmit) {
   if (otherIOSBrowser) { showMic("safari"); return; }
   player.pause();
   const live = card.querySelector(".live");
+  /* đo mức âm thanh micro để báo ngay khi máy không thu được giọng (AudioContext tạo trong cú bấm cho Safari) */
+  let actx = null; try { actx = new (window.AudioContext || window.webkitAudioContext)(); actx.resume().catch(() => {}); } catch {}
   let stream;
   try { stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } }); }
-  catch (e) { window.__lastErr = (e && e.name) || "mic"; showMic("blocked"); return; }
+  catch (e) { window.__lastErr = (e && e.name) || "mic"; try { actx && actx.close(); } catch {} showMic("blocked"); return; }
   store.set("micOK", true);
+  let an = null, lvPeak = 0; const lvBuf = new Float32Array(2048);
+  try { if (actx) { an = actx.createAnalyser(); an.fftSize = 2048; actx.createMediaStreamSource(stream).connect(an); } } catch { an = null; }
+  const level = () => { if (!an || actx.state !== "running") { lvPeak = 1; return 0.03; } an.getFloatTimeDomainData(lvBuf); let q = 0; for (let k = 0; k < lvBuf.length; k += 2) q += lvBuf[k] * lvBuf[k]; const r = Math.sqrt(q / 1024); lvPeak = Math.max(lvPeak, r); return r; };
   const clip = startClip(stream);
   if (!clip) { stream.getTracks().forEach(t => t.stop()); live.textContent = "Máy này chưa ghi âm được. Em mở bằng Chrome hoặc Safari bản mới nha."; return; }
   const t0 = Date.now();
   const label0 = btn.textContent, wasPrimary = btn.classList.contains("primary");
   btn.textContent = forSubmit ? "⏺ Đang ghi bài nộp… bấm để dừng" : "⏺ Đang ghi… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
-  const tick = setInterval(() => { live.textContent = `Đang ghi ${Math.round((Date.now() - t0) / 1000)} giây · ${partOf(L.sentences[i]) === 2 ? "nói 1'30–2'" : partOf(L.sentences[i]) === 3 ? "nói 30–45 giây" : "nói 20–30 giây"} rồi bấm dừng.`; }, 500);
+  const tick = setInterval(() => {
+    const r = level(), el = Math.round((Date.now() - t0) / 1000), bars = "▮".repeat(Math.min(5, Math.round(r * 120))) || "▯";
+    live.textContent = el >= 4 && lvPeak < 0.004 ? "⚠️ Micro chưa thu được tiếng. Kiểm tra: tắt tai nghe Bluetooth, cho phép Micrô, đóng app đang gọi điện; rồi bấm dừng và ghi lại."
+      : `🎙 ${bars} Đang ghi ${el} giây · ${partOf(L.sentences[i]) === 2 ? "nói 1'30–2'" : partOf(L.sentences[i]) === 3 ? "nói 30–45 giây" : "nói 20–30 giây"} rồi bấm dừng.`;
+  }, 250);
   const session = { done: false, stop: async () => {
     if (session.done) return; session.done = true;
     clearInterval(tick); clearTimeout(cap);
     if (rec === session) rec = null;
     const blob = await clip.stop().catch(() => null);
-    stream.getTracks().forEach(t => t.stop());
+    stream.getTracks().forEach(t => t.stop()); try { actx && actx.close(); } catch {}
     btn.textContent = forSubmit ? label0 : "🎙 Ghi âm thử lại"; btn.classList.remove("rec", "pulse"); if (wasPrimary) btn.classList.add("primary");
     const sec = Math.round((Date.now() - t0) / 1000);
     if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
+    if (an && lvPeak < 0.004) { live.textContent = "⚠️ Bản ghi không có tiếng (micro không thu được giọng), nên chưa lưu và chưa tính lượt. Tắt tai nghe Bluetooth, kiểm tra quyền Micrô rồi ghi lại nha."; return; }
     live.textContent = forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Sẵn sàng thì bấm 📤 Ghi âm nộp bài.`;
     card.querySelector(".best").textContent = forSubmit ? "Đã nộp" : "Đã ghi thử";
     await recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));

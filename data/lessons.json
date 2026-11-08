@@ -243,32 +243,31 @@
    ]
   },
   {
-   "id": "hw-vananh-week-20261109-s",
+   "id": "hw-vananh-week-20261107-s",
    "skill": "Speaking",
    "session": 2,
    "title": "Bài tập tuần · Speaking",
-   "topic": "📅 Tuần 9–14/11 · Education & Employment",
+   "topic": "📅 Tuần 7–13/11 · Education & Employment",
    "deadline": "2026-11-14",
-   "note": "T2: 2 câu Part 1 · T3: 1 cue card Part 2 · T4: 2 câu Part 3. Ôn flashcard Studies & School life trước khi nói; mỗi câu dùng ≥ 2 từ trong gợi ý.",
+   "note": "T7 (tối) + T2: mỗi ngày 2 câu Part 1 · T3: 1 cue card Part 2. Mỗi câu có 🧭 hướng dẫn từng bước; ôn flashcard Studies & School life trước khi nói, dùng ≥ 2 từ trong gợi ý.",
    "lessons": [
-    "va-w20261109-mon",
-    "va-w20261109-tue",
-    "va-w20261109-wed"
+    "va-w20261107-sat",
+    "va-w20261107-mon",
+    "va-w20261107-tue"
    ]
   },
   {
-   "id": "hw-vananh-week-20261109-l",
+   "id": "hw-vananh-week-20261107-l",
    "skill": "Listening",
    "session": 2,
    "title": "Bài tập tuần · Listening",
-   "topic": "📅 Tuần 9–14/11 · Education & Employment",
+   "topic": "📅 Tuần 7–13/11 · Education & Employment",
    "deadline": "2026-11-14",
-   "note": "T5: Part 1 + Part 2 · T6: Part 3 · T7: Part 4. Đề tự viết theo format IELTS, nghe 1 lần, chọn dạng từ trước khi nghe.",
+   "note": "T4: Part 1 điền form (10 câu) · T5 + T6: Part 2 trắc nghiệm dài (dạng vừa học 7/11). Nghe 1 lần, xong xem 🔑 từ khóa ⇄ synonym và phân tích từng phương án.",
    "lessons": [
-    "va-w20261109-thu1",
-    "va-w20261109-thu2",
-    "va-w20261109-fri",
-    "va-w20261109-sat"
+    "va-w20261107-wed",
+    "va-w20261107-thu",
+    "va-w20261107-fri"
    ]
   }
  ],
@@ -3655,11 +3654,74 @@
    ],
    "deck": "va1",
    "topic": "Education & Employment",
-   "id": "va-w20261109-mon",
+   "id": "va-w20261107-sat",
+   "title": "Thứ Bảy (tối) · Part 1 – Homework & school life",
+   "opens": "2026-11-07",
+   "opensAt": "19:30",
+   "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 1",
+     "q": "How much time do you spend on homework every day?",
+     "hint": "have a lot on my plate · a heavy workload · manage my time · fall behind · put in the hours",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>How much time</i> + <i>every day</i> → hỏi thói quen, dùng <b>thì hiện tại đơn</b> và một con số cụ thể (<i>about two or three hours a day</i>).",
+      "<b>A – Answer:</b> trả lời thẳng, đổi từ khóa: <i>homework</i> → <i>schoolwork, assignments</i>. Lưu ý <i>homework</i> không đếm được (không nói <i>homeworks</i>).",
+      "<b>R – Reason:</b> vì sao nhiều / ít: năm cuối cấp, kỳ thi tốt nghiệp, học thêm buổi tối (<i>a heavy workload, have a lot on my plate</i>).",
+      "<b>E – Example:</b> 1 buổi tối cụ thể: mấy giờ bắt đầu, môn nào lâu nhất, làm xong lúc nào.",
+      "<b>F – Feeling:</b> 1 câu cảm nghĩ: <i>It's exhausting, but I know it's worth it.</i>",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "How much time do you spend on your phone every day?",
+      "notes": {
+       "A": "about 3 hours · too much",
+       "R": "online lessons · chat with friends",
+       "E": "last night · short videos · 1 hour gone",
+       "F": "a bit guilty · trying to cut down"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 2",
+     "q": "Do you enjoy going to school? Why or why not?",
+     "hint": "hands-on · broaden my horizons · stressed out · keep up with · excel at",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> câu Yes/No + <i>Why or why not?</i> → bắt buộc có lý do. Không trả lời trống <i>Yes, I do.</i>",
+      "<b>A – Answer:</b> chọn rõ: <i>Mostly yes</i> / <i>To be honest, not always</i>. Paraphrase <i>enjoy</i> → <i>look forward to, like</i>.",
+      "<b>R – Reason:</b> 1 lý do chính: bạn bè, môn thích (sinh học), thầy cô, hoặc áp lực năm lớp 12.",
+      "<b>E – Example:</b> 1 tiết học / 1 ngày cụ thể (vd. tiết thí nghiệm sinh học <i>hands-on</i>).",
+      "<b>F – Feeling:</b> chốt bằng cảm nghĩ hoặc nối sang tương lai (ngành nha khoa).",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "Do you enjoy cooking? Why or why not?",
+      "notes": {
+       "A": "yes · mostly on weekends",
+       "R": "relaxing · creative",
+       "E": "last Sunday · cooked noodle soup for my family",
+       "F": "proud · want to learn more dishes"
+      }
+     }
+    }
+   ],
+   "skill": "Speaking"
+  },
+  {
+   "session": 2,
+   "for": [
+    "vananh"
+   ],
+   "deck": "va1",
+   "topic": "Education & Employment",
+   "id": "va-w20261107-mon",
    "title": "Thứ Hai · Part 1 – Study habits & dream jobs",
-   "subtitle": "2 câu Part 1: ghi từ khóa theo A.R.E. + Feeling, ghi âm thử rồi 📤 nộp bài",
-   "skill": "Speaking",
    "opens": "2026-11-09",
+   "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
    "sentences": [
     {
      "free": true,
@@ -3667,6 +3729,14 @@
      "label": "Part 1 · Câu 1",
      "q": "Do you prefer to study in the morning or late at night?",
      "hint": "hit the books · stay focused · retain information · pull an all-nighter · procrastinate",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> dạng <i>prefer A or B</i> → chọn <b>1</b> bên rõ ràng: <i>I prefer… / I'd rather…</i>; có thể nhắc bên kia 1 câu để so sánh.",
+      "<b>A – Answer:</b> <i>I'm definitely a morning person, so I prefer to hit the books early.</i> (đổi <i>study</i> → <i>hit the books</i>).",
+      "<b>R – Reason:</b> tỉnh táo hơn, nhớ lâu hơn (<i>stay focused, retain information</i>) hoặc ban đêm yên tĩnh hơn.",
+      "<b>E – Example:</b> 1 lần cụ thể (vd. từng <i>pull an all-nighter</i> trước bài kiểm tra và kết quả ra sao).",
+      "<b>F – Feeling:</b> 1 câu chốt cảm giác.",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
      "demo": {
       "q": "Do you prefer to study in a quiet place or with some background music?",
       "notes": {
@@ -3683,6 +3753,14 @@
      "label": "Part 1 · Câu 2",
      "q": "What job did you want to do when you were a child?",
      "hint": "follow in sb's footsteps · career prospects · pursue · demanding · a stepping stone (to)",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>did you want … when you were a child</i> → kể bằng <b>thì quá khứ</b> (<i>I wanted to be… / I used to dream of…</i>).",
+      "<b>A – Answer:</b> nghề hồi nhỏ, 1 câu.",
+      "<b>R – Reason:</b> vì sao hồi đó thích (ai truyền cảm hứng, xem phim, người nhà làm nghề đó…).",
+      "<b>E – Example:</b> 1 kỷ niệm cụ thể, rồi <b>so sánh với bây giờ</b> bằng thì hiện tại: <i>Now I want to pursue dentistry because…</i>",
+      "<b>F – Feeling:</b> cảm nghĩ khi nhìn lại ước mơ hồi nhỏ.",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
      "demo": {
       "q": "Did you have a hobby as a child that you still enjoy today?",
       "notes": {
@@ -3693,7 +3771,8 @@
       }
      }
     }
-   ]
+   ],
+   "skill": "Speaking"
   },
   {
    "session": 2,
@@ -3702,11 +3781,10 @@
    ],
    "deck": "va1",
    "topic": "Education & Employment",
-   "id": "va-w20261109-tue",
+   "id": "va-w20261107-tue",
    "title": "Thứ Ba · Part 2 – A goal in your future career",
-   "subtitle": "1 cue card: 1 phút chuẩn bị (ghi từ khóa từng gợi ý), nói 1'30–2', rồi 📤 nộp bài",
-   "skill": "Speaking",
    "opens": "2026-11-10",
+   "subtitle": "1 cue card · đọc 🧭 hướng dẫn → ⏱ 1 phút chuẩn bị (ghi từ khóa từng gợi ý) → nói 1'30–2' → 📤 nộp bài",
    "sentences": [
     {
      "free": true,
@@ -3720,6 +3798,14 @@
      ],
      "explain": "explain why this goal is important to you",
      "hint": "pursue · career prospects · put in the hours · win a scholarship · a stepping stone (to) · broaden my horizons",
+     "guide": [
+      "<b>Đọc cue card:</b> đề về <b>mục tiêu nghề nghiệp</b>; mỗi gợi ý một thì: <i>what the goal is</i> (hiện tại) · <i>when you first had</i> (quá khứ) · <i>what you need to do</i> (<i>I need to / I'll have to</i>) · <i>why important</i> (hiện tại).",
+      "<b>⏱ 1 phút chuẩn bị:</b> bấm nút đồng hồ, ghi 2–4 từ khóa cho mỗi ô. Thi thật được nhìn giấy ghi chú khi nói.",
+      "<b>Mở bài (1 câu):</b> <i>I'd like to talk about my goal of becoming a dentist / getting into a dental school.</i>",
+      "<b>Gợi ý 1–3:</b> mỗi gợi ý 3–4 câu, nối bằng <i>It all started when… · To achieve this, I'll need to… · First… Then… · On top of that…</i>",
+      "<b>Kết (and explain why):</b> 2–3 câu: ý nghĩa với em, gia đình, người bệnh. Đây là chỗ ăn điểm, đừng bỏ.",
+      "<b>Nói đủ 1'30–2':</b> xem đồng hồ khi 🎙 ghi âm thử. Hết ý thì thêm chi tiết: ai, ở đâu, cảm giác thế nào. Dùng ≥ 3 từ trong 💡 gợi ý, có ít nhất 1 idiom (<i>a stepping stone, put in the hours</i>)."
+     ],
      "demo": {
       "q": "Describe a skill you would like to learn in the future.",
       "notes": {
@@ -3731,7 +3817,8 @@
       }
      }
     }
-   ]
+   ],
+   "skill": "Speaking"
   },
   {
    "session": 2,
@@ -3740,62 +3827,15 @@
    ],
    "deck": "va1",
    "topic": "Education & Employment",
-   "id": "va-w20261109-wed",
-   "title": "Thứ Tư · Part 3 – Choosing a major & exams",
-   "subtitle": "2 câu Part 3: ghi từ khóa theo A.R.E.A., ghi âm thử rồi 📤 nộp bài",
-   "skill": "Speaking",
-   "opens": "2026-11-11",
-   "sentences": [
-    {
-     "free": true,
-     "part": "Part 3",
-     "label": "Part 3 · Câu 1",
-     "q": "Why do some young people choose a university major because of the salary rather than their interests?",
-     "hint": "a well-paid job · career prospects · be under a lot of pressure · keep my options open · follow in sb's footsteps",
-     "demo": {
-      "q": "Do you think students should have a part-time job while they are at university?",
-      "notes": {
-       "A1": "yes · in moderation",
-       "R": "real-world skills · manage money · time management",
-       "E": "friends in HCMC · tutoring · café shifts",
-       "A2": "may fall behind · max 10 hrs/week · overall yes"
-      }
-     }
-    },
-    {
-     "free": true,
-     "part": "Part 3",
-     "label": "Part 3 · Câu 2",
-     "q": "Do you think exams are the best way to measure what students have learned?",
-     "hint": "rote learning · a high-stakes exam · retain information · hands-on · grasp a concept",
-     "demo": {
-      "q": "Should schools teach practical life skills, like cooking or managing money?",
-      "notes": {
-       "A1": "definitely",
-       "R": "school = theory · life needs practical skills",
-       "E": "many students can't budget · first year away from home",
-       "A2": "timetable already full · but 1 period/week enough"
-      }
-     }
-    }
-   ]
-  },
-  {
-   "session": 2,
-   "for": [
-    "vananh"
-   ],
-   "deck": "va1",
-   "topic": "Education & Employment",
-   "id": "va-w20261109-thu1",
+   "id": "va-w20261107-wed",
    "type": "gap",
    "skill": "Listening",
    "part": "Part 1",
-   "title": "Thứ Năm · Nghe Part 1 – Summer Science Program (form completion)",
-   "subtitle": "30 giây đọc đề + chọn dạng từ → nghe 1 lần như thi thật → nộp → xem transcript",
-   "opens": "2026-11-12",
+   "opens": "2026-11-11",
    "prep": 30,
-   "audio": "media/va-w20261109-thu1.mp3",
+   "title": "Thứ Tư · Nghe Part 1 – Summer Science Program (form completion, 10 câu)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe",
+   "audio": "media/va-w20261107-wed.mp3",
    "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
    "heading": "Summer Science Program – Enrollment Form",
    "strategy": [
@@ -3831,7 +3871,23 @@
       "Danh từ thường"
      ],
      "hint": "Tên được đánh vần: nghe từng chữ cái",
-     "why": "Grace [[spell]] họ: D-A-W-S-O-N. Tên riêng phải viết hoa, đúng từng chữ cái."
+     "why": [
+      "Đọc đề: ô sau <i>Name: Grace</i> + từ khóa [[surname]] → chờ <b>họ</b>, tên riêng, có thể được đánh vần.",
+      "Audio: [[last name]] = surname → **Dawson**, rồi đánh vần D-A-W-S-O-N để kiểm tra chính tả.",
+      "Tên riêng: viết hoa chữ đầu, đúng từng chữ cái."
+     ],
+     "kw": [
+      [
+       "surname",
+       "N",
+       "last name"
+      ],
+      [
+       "spell",
+       "V",
+       "D-A-W-S-O-N"
+      ]
+     ]
     },
     "2": {
      "ans": [
@@ -3841,7 +3897,23 @@
       "Tên riêng (viết hoa)",
       "Danh từ thường"
      ],
-     "why": "Bẫy đổi ý: Grace nói nhầm *Riverdale* rồi sửa [[sorry, I mean]] **Riverside**."
+     "why": [
+      "Ô đứng trước <i>High School</i> → tên trường (tên riêng).",
+      "Bẫy đổi ý: <i>Riverdale</i> → [[sorry, I mean]] **Riverside**. Thông tin <b>sau</b> từ sửa mới là đáp án.",
+      "Linear: Riverdale được giải thích là <i>my old middle school</i> → chắc chắn loại."
+     ],
+     "kw": [
+      [
+       "School",
+       "N",
+       "which high school do you go to"
+      ],
+      [
+       "High School (sau ô)",
+       "N",
+       "Riverside High School"
+      ]
+     ]
     },
     "3": {
      "ans": [
@@ -3851,7 +3923,23 @@
       "Adjective",
       "Noun"
      ],
-     "why": "Bẫy đổi ý: định chọn *Medical Science*, nhưng [[actually]] khóa **Dental** hợp hơn (right up my alley). Ô trống đứng trước *Science* → tính từ."
+     "why": [
+      "Ô đứng trước danh từ <i>Science</i> → cần <b>tính từ</b> (Medical / Dental).",
+      "Bẫy đổi ý: [[I was going to choose]] Medical … [[but actually]] → **Dental**.",
+      "Từ khóa phụ: <i>become a dentist, right up my alley</i> củng cố đáp án."
+     ],
+     "kw": [
+      [
+       "Course chosen",
+       "N+V",
+       "which course are you interested in"
+      ],
+      [
+       "Science (sau ô)",
+       "N",
+       "Dental Science course"
+      ]
+     ]
     },
     "4": {
      "ans": [
@@ -3862,7 +3950,28 @@
       "Noun",
       "Adjective"
      ],
-     "why": "[[Main reason]] = *the main thing is*; *get ready for* = prepare for → **college admissions**."
+     "why": [
+      "Đọc đề: <i>to prepare for college ___</i> → danh từ đi sau college.",
+      "Bẫy đúng một phần: <i>hands-on experience</i> cũng là lý do, nhưng [[of course, but]] → lý do chính nằm sau <b>but</b>.",
+      "[[the main thing is]] = main reason; [[get ready for]] = prepare for → **admissions**."
+     ],
+     "kw": [
+      [
+       "Main reason",
+       "Adj+N",
+       "the main thing is"
+      ],
+      [
+       "prepare for",
+       "V",
+       "get ready for"
+      ],
+      [
+       "college (trước ô)",
+       "N",
+       "college admissions"
+      ]
+     ]
     },
     "5": {
      "ans": [
@@ -3874,7 +3983,23 @@
       "Số",
       "Chữ"
      ],
-     "why": "Bẫy: lớp ngày *June 29th* đã [[full]] → chỉ còn **July 6th**."
+     "why": [
+      "Ô đứng trước <i>July</i> → chỉ cần <b>ngày</b> (số).",
+      "Bẫy: <i>June twenty-ninth</i> được nhắc trước nhưng [[full already]] → [[the only option]] là **July sixth**.",
+      "Ghi số: 6 / 6th đều được."
+     ],
+     "kw": [
+      [
+       "Start date",
+       "N",
+       "starts on two dates"
+      ],
+      [
+       "July (sau ô)",
+       "N",
+       "July sixth"
+      ]
+     ]
     },
     "6": {
      "ans": [
@@ -3885,7 +4010,23 @@
       "Số",
       "Chữ"
      ],
-     "why": "Bẫy: *it used to be four weeks* (năm ngoái) → [[this year]] **three weeks**."
+     "why": [
+      "Đọc đề: <i>___ weeks</i> → số.",
+      "Bẫy xưa – nay: [[it used to be]] four weeks → [[this year]] **three weeks**.",
+      "Chọn thông tin hiện tại, không phải quá khứ."
+     ],
+     "kw": [
+      [
+       "Length",
+       "N",
+       "how long"
+      ],
+      [
+       "weeks (sau ô)",
+       "N",
+       "three weeks"
+      ]
+     ]
     },
     "7": {
      "ans": [
@@ -3895,7 +4036,23 @@
       "Số",
       "Chữ"
      ],
-     "why": "Bẫy: giá gốc $520, [[with the student discount]] còn **$480**. Ô có sẵn ký hiệu $ → chỉ ghi số."
+     "why": [
+      "Ô có sẵn $ → chỉ ghi số.",
+      "Bẫy giá: $520 là [[normal fee]]; [[with the student discount]] → **480** (Grace là học sinh).",
+      "Viết bằng chữ số: 480."
+     ],
+     "kw": [
+      [
+       "Fee",
+       "N",
+       "how much does it cost"
+      ],
+      [
+       "$ (trước ô)",
+       "Số",
+       "four hundred and eighty"
+      ]
+     ]
     },
     "8": {
      "ans": [
@@ -3906,7 +4063,23 @@
       "Noun",
       "Verb"
      ],
-     "why": "[[includes]] = *covers*: lab equipment and **lunch**. Textbooks thì *not included* → loại."
+     "why": [
+      "Đọc đề: <i>lab equipment and ___</i> → danh từ thứ hai được bao gồm.",
+      "[[What does that cover]] = includes → <i>lab equipment</i>, **lunch** every day.",
+      "Bẫy: <i>Textbooks</i> được nhắc ngay sau nhưng [[not included]] → loại."
+     ],
+     "kw": [
+      [
+       "includes",
+       "V",
+       "covers"
+      ],
+      [
+       "lab equipment",
+       "N",
+       "all the lab equipment"
+      ]
+     ]
     },
     "9": {
      "ans": [
@@ -3916,7 +4089,23 @@
       "Noun",
       "Adjective"
      ],
-     "why": "[[online quiz]] = *a short quiz online*; môn **chemistry** (không phải biology, biology là môn em giỏi)."
+     "why": [
+      "Ô sau <i>in</i> → môn học (danh từ).",
+      "[[a short quiz online]] = online quiz → level in **chemistry**.",
+      "Bẫy từ: <i>Biology</i> được nhắc ngay sau (môn Grace thấy dễ), không phải môn của bài quiz."
+     ],
+     "kw": [
+      [
+       "online quiz",
+       "Adj+N",
+       "a short quiz online"
+      ],
+      [
+       "in (trước ô)",
+       "Prep",
+       "your level in chemistry"
+      ]
+     ]
     },
     "10": {
      "ans": [
@@ -3926,7 +4115,23 @@
       "Noun số ít",
       "Noun số nhiều"
      ],
-     "why": "Bẫy: *friend* có nhắc, [[but it was really]] **my biology teacher** giới thiệu. Có *her* → 1 người, số ít."
+     "why": [
+      "Ô sau <i>her</i> → 1 người, danh từ số ít.",
+      "Bẫy nhượng bộ: <i>A friend mentioned it</i> … [[but it was really]] → **teacher**.",
+      "recommended it = người giới thiệu chính."
+     ],
+     "kw": [
+      [
+       "Found out",
+       "V",
+       "how did you hear about"
+      ],
+      [
+       "her (trước ô)",
+       "Det",
+       "my biology teacher"
+      ]
+     ]
     }
    },
    "transcript": [
@@ -4094,144 +4299,318 @@
    ],
    "deck": "va1",
    "topic": "Education & Employment",
-   "id": "va-w20261109-thu2",
+   "id": "va-w20261107-thu",
    "type": "gap",
    "skill": "Listening",
    "part": "Part 2",
-   "title": "Thứ Năm · Nghe Part 2 – University Open Day (note completion)",
-   "subtitle": "30 giây đọc đề + chọn dạng từ → nghe 1 lần như thi thật → nộp → xem transcript",
    "opens": "2026-11-12",
    "prep": 30,
-   "audio": "media/va-w20261109-thu2.mp3",
-   "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
-   "heading": "Westbrook University Open Day – School of Dentistry",
+   "title": "Thứ Năm · Nghe Part 2 – Careers Fair (multiple choice)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript",
+   "audio": "media/va-w20261107-thu.mp3",
+   "instructions": "Choose the correct letter, A, B or C.",
+   "heading": "Riverside Careers Fair · Questions 11–16",
    "strategy": [
-    "<b>Part 2 = 1 người nói</b>, giới thiệu nơi chốn / chương trình. Ghi chú đi theo thứ tự thời gian (Morning → Afternoon → Safety).",
-    "<b>Đọc đề:</b> gạch từ khóa và tiêu đề nhỏ; tiêu đề nhỏ là mốc để biết người nói đã sang ý mới.",
-    "<b>Paraphrase:</b> người nói hiếm khi lặp lại đúng từ trong đề (how to win → the best way to get · manage → cope with).",
-    "<b>Bẫy so sánh xưa – nay:</b> <i>usually … but today · last year … this year</i> → chọn thông tin của hôm nay / năm nay.",
-    "<b>Ngữ pháp kiểm tra đáp án:</b> <i>a</i> + số ít; <i>closed</i> + danh từ số nhiều; <i>a heavy</i> + danh từ."
+    "<b>30 giây đọc đề:</b> gạch từ khóa câu hỏi (danh từ, động từ, tính từ chính) và <b>từ điều kiện</b> (<i>most, mainly, first two days, final, before, after</i>).",
+    "<b>Simplify</b> mỗi phương án còn 2–4 từ (vd. <i>research the organizations</i> → \"tìm hiểu công ty\"). Đọc 3 phương án dài không kịp thì chỉ nhớ phần <b>khác nhau</b> giữa A/B/C.",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio. Audio thường nhắc <b>cả 3 phương án</b>; vừa nghe vừa bấm nút nhỏ bên phải: ✓ khớp · ✗ bị loại · ? chưa chắc.",
+    "<b>Tín hiệu logic</b> báo đáp án: <i>but · actually · however · instead · what's new · the one thing I'd really…</i>. Tín hiệu bẫy: <i>people often assume · we used to · last year · sure, but</i>.",
+    "<b>6 loại bẫy:</b> nhắc rồi phủ định · đúng một phần · có thật nhưng không trả lời câu hỏi · nhượng bộ → đổi ý · bẫy từ (nghe trùng từ) · sai thời điểm (xưa – nay). Chốt theo từ điều kiện, không theo từ nghe trùng."
    ],
    "rows": [
-    "## Morning",
-    "The [[welcome talk]] takes place in the {11}",
-    "[[Clinic tour]]: groups of {12} visitors",
-    "In the [[simulation lab]], visitors practice on a {13}",
-    "## Afternoon",
-    "[[Admissions talk]]: entry requirements and how to win a {14}",
-    "Current students explain how to [[manage]] a heavy {15}",
-    "## Safety",
-    "Visitors to the lab must wear [[closed]] {16}"
+    "{11} This year's careers fair is [[different]] from previous years because",
+    "{12} According to the speaker, the [[most popular]] stalls [[last year]] belonged to",
+    "{13} What does the speaker [[advise]] students to do [[before]] the fair?",
+    "{14} The \"Ask a Graduate\" corner is [[useful]] because graduates can",
+    "{15} What is the [[purpose]] of the [[dentistry workshop]]?",
+    "{16} Students who [[attend the whole day]] will [[receive]]"
    ],
    "qs": {
     "11": {
+     "opts": {
+      "A": "it is being held in a larger venue.",
+      "B": "it is aimed only at final-year students.",
+      "C": "it includes workshops as well as stalls."
+     },
      "ans": [
-      "auditorium"
+      "C"
      ],
-     "form": [
-      "Noun",
-      "Adjective"
+     "kw": [
+      [
+       "different",
+       "Adj",
+       "what's new"
+      ],
+      [
+       "previous years",
+       "N",
+       "for the first time"
+      ],
+      [
+       "workshops",
+       "N",
+       "hands-on workshops"
+      ],
+      [
+       "as well as",
+       "Conj",
+       "alongside"
+      ]
      ],
-     "why": "Bẫy: thường ở *main hall*, nhưng [[today]] hall đang sửa → **auditorium**."
+     "why": [
+      "Simplify: A = <i>chỗ to hơn</i> · B = <i>chỉ lớp 12</i> · C = <i>thêm workshop</i>.",
+      "Audio nhắc lần lượt cả 3 phương án theo đúng thứ tự A → B → C (bẫy kinh điển của MCQ dài).",
+      "Tín hiệu logic: [[actually, that's not true]] (phủ định A) · [[not just seniors]] (phủ định B) · [[What's new]] = <i>different</i> → C.",
+      "Chốt: <b>for the first time</b> + <b>alongside the usual stalls</b> = <i>as well as stalls</i> → **C**."
+     ],
+     "optWhy": {
+      "A": "Bẫy \"nhắc rồi phủ định\": <i>moved to a bigger venue</i> → [[actually, that's not true]], vẫn là trung tâm cũ.",
+      "B": "Sai thông tin: [[open to all high school students, not just seniors]] (all ≠ only).",
+      "C": "[[What's new]] … [[for the first time]], [[alongside]] the usual stalls … **hands-on workshops**."
+     }
     },
     "12": {
+     "opts": {
+      "A": "technology companies.",
+      "B": "healthcare providers.",
+      "C": "universities."
+     },
      "ans": [
-      "12",
-      "twelve"
+      "B"
      ],
-     "form": [
-      "Số",
-      "Chữ"
+     "kw": [
+      [
+       "most popular",
+       "Adj",
+       "the longest queues"
+      ],
+      [
+       "healthcare providers",
+       "N",
+       "hospitals and clinics"
+      ],
+      [
+       "belonged to",
+       "V",
+       "were run by"
+      ]
      ],
-     "why": "Bẫy: *last year fifteen* → [[this year]] **twelve**. Có *groups of* → số."
+     "why": [
+      "Simplify: ai có <i>quầy đông nhất năm ngoái</i>?",
+      "Bẫy \"có thật nhưng không trả lời câu hỏi\": tech companies <i>busy</i> (đông) nhưng chưa phải đông nhất; universities chỉ được nhắc là <i>quieter</i>.",
+      "Từ điều kiện <b>most</b> ⇄ <b>the longest queues</b> → hospitals and clinics = <i>healthcare providers</i> → **B**."
+     ],
+     "optWhy": {
+      "A": "[[certainly busy]] nhưng câu sau có [[but]] → không phải đông nhất (bẫy nhượng bộ → đổi ý).",
+      "B": "[[the longest queues]] = most popular; **hospitals and clinics** = healthcare providers.",
+      "C": "Universities [[were actually quieter]] → ngược nghĩa."
+     }
     },
     "13": {
+     "opts": {
+      "A": "research the organizations they want to visit",
+      "B": "prepare a copy of their résumé",
+      "C": "register for workshops online"
+     },
      "ans": [
-      "model"
+      "A"
      ],
-     "form": [
-      "Noun số ít",
-      "Noun số nhiều"
+     "kw": [
+      [
+       "advise",
+       "V",
+       "I'd really encourage"
+      ],
+      [
+       "research",
+       "V",
+       "look up"
+      ],
+      [
+       "organizations",
+       "N",
+       "the companies"
+      ],
+      [
+       "before",
+       "Prep",
+       "beforehand"
+      ]
      ],
-     "why": "[[simulation lab]] → *practice on* = *try their hands on* **a model** of a patient's head. Có *a* → số ít."
+     "why": [
+      "Simplify: A = <i>tìm hiểu công ty</i> · B = <i>mang CV</i> · C = <i>đăng ký online</i>.",
+      "Hai câu đầu loại B và C bằng phủ định: <i>don't worry about</i>, <i>no need to</i>.",
+      "Tín hiệu chốt: [[The one thing I'd really encourage]] = advise → [[look up]] the companies = research the organizations → **A**."
+     ],
+     "optWhy": {
+      "A": "[[look up]] = research; [[the companies you're interested in]] = organizations they want to visit.",
+      "B": "[[Don't worry about bringing a résumé]] → không cần.",
+      "C": "Workshop places [[are given out on the day]], [[no need to sign up beforehand]] → sai."
+     }
     },
     "14": {
+     "opts": {
+      "A": "help students choose a university.",
+      "B": "describe the reality of their jobs.",
+      "C": "offer students part-time work."
+     },
      "ans": [
-      "scholarship"
+      "B"
      ],
-     "form": [
-      "Noun số ít",
-      "Noun số nhiều"
+     "kw": [
+      [
+       "useful",
+       "Adj",
+       "what they can do"
+      ],
+      [
+       "describe",
+       "V",
+       "give you an honest picture"
+      ],
+      [
+       "the reality of their jobs",
+       "N",
+       "what their working day is actually like"
+      ]
      ],
-     "why": "[[how to win a]] = *the best way to get* **a scholarship**. Có *a* → số ít."
+     "why": [
+      "Simplify: graduate giúp gì? A = <i>chọn trường</i> · B = <i>kể việc thật</i> · C = <i>cho việc làm thêm</i>.",
+      "Audio phủ định C trước ([[won't be offering jobs]]) rồi A ([[can't tell you which university to pick]]).",
+      "Sau [[But]] là đáp án: [[an honest picture]] of [[what their working day is actually like]] = describe the reality → **B**."
+     ],
+     "optWhy": {
+      "A": "[[they're not admissions officers]] … [[can't tell you which university to pick]].",
+      "B": "**give you an honest picture of what their working day is actually like** = describe the reality of their jobs.",
+      "C": "[[won't be offering jobs]] → sai."
+     }
     },
     "15": {
+     "opts": {
+      "A": "to let students try some basic dental procedures",
+      "B": "to explain the cost of studying dentistry",
+      "C": "to show students how to look after their teeth"
+     },
      "ans": [
-      "workload"
+      "A"
      ],
-     "form": [
-      "Noun",
-      "Verb"
+     "kw": [
+      [
+       "purpose",
+       "N",
+       "in the workshop, you'll"
+      ],
+      [
+       "try",
+       "V",
+       "have a go at"
+      ],
+      [
+       "basic",
+       "Adj",
+       "simple"
+      ],
+      [
+       "procedures",
+       "N",
+       "procedures, like filling a tooth"
+      ]
      ],
-     "why": "[[manage]] = *cope with*; *a heavy* + noun → **workload**."
+     "why": [
+      "Simplify: workshop để làm gì? A = <i>thử làm</i> · B = <i>chi phí</i> · C = <i>chăm sóc răng</i>.",
+      "C bị phủ định ([[isn't a talk on how to brush your teeth]]); B có thật nhưng thuộc buổi khác (<i>afternoon admissions session</i>).",
+      "[[have a go at]] = try; [[simple]] = basic → **A**."
+     ],
+     "optWhy": {
+      "A": "you'll actually get to **have a go at simple procedures** = try basic procedures.",
+      "B": "Tuition fees được nói ở [[the afternoon admissions session]], không phải workshop (bẫy \"có thật nhưng không trả lời câu hỏi\").",
+      "C": "[[isn't a talk on how to brush your teeth properly]] → phủ định."
+     }
     },
     "16": {
+     "opts": {
+      "A": "a discount on a summer course.",
+      "B": "a certificate of participation.",
+      "C": "a free careers guidebook."
+     },
      "ans": [
-      "shoes"
+      "B"
      ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
+     "kw": [
+      [
+       "attend the whole day",
+       "V",
+       "stays until the end"
+      ],
+      [
+       "receive",
+       "V",
+       "will get"
+      ],
+      [
+       "certificate",
+       "N",
+       "a certificate"
+      ]
      ],
-     "why": "[[must wear]] = *you need to have on*; *closed* + **shoes** (luôn số nhiều). Sandals → loại."
+     "why": [
+      "Simplify: ở lại cả ngày thì nhận gì?",
+      "C = chuyện [[last year]] (bây giờ [[everything's online]]); A bị phủ định ([[we can't offer discounts]]).",
+      "Từ nối [[However]] → [[anyone who stays until the end]] = attend the whole day → **a certificate** → **B**."
+     ],
+     "optWhy": {
+      "A": "[[unfortunately we can't offer discounts]].",
+      "B": "[[However]], anyone who [[stays until the end]] [[will get]] **a certificate**.",
+      "C": "Bẫy so sánh xưa – nay: guidebooks là [[last year]], năm nay online."
+     }
     }
    },
    "transcript": [
     {
-     "sp": "Speaker",
-     "t": "Good morning, everyone, and welcome to the Westbrook University Open Day. My name is Doctor Helen Price, and I'm the admissions officer for the School of Dentistry. I know many of you are in your senior year and are thinking about your career prospects, so let me quickly explain the plan for today.",
-     "at": 10.5
+     "sp": "Organizer",
+     "t": "Good morning, everyone. I'm Sarah Mills, and I'm organizing this year's Riverside Careers Fair, which takes place next Saturday. Let me tell you what to expect.",
+     "at": 10.3
     },
     {
-     "sp": "Speaker",
-     "t": "We usually hold the [[welcome talk]] in the main hall, but [[today]] the hall is being repaired, so please go to the **auditorium**, which is next to the library.",
-     "at": 32.6,
+     "sp": "Organizer",
+     "t": "Some of you may have heard that we've [[moved to a bigger venue]]. [[Actually, that's not true]]. We're in the same convention center as always. And as in previous years, the fair is [[open to all high school students, not just seniors]]. [[What's new]] is that [[for the first time]], [[alongside]] the usual company stalls, we're running **hands-on workshops**.",
+     "at": 22.7,
      "q": 11
     },
     {
-     "sp": "Speaker",
-     "t": "After that, you'll have a [[tour of our clinic]]. Last year we took groups of fifteen, but that was too many, so [[this year]] each group will have **twelve** visitors.",
-     "at": 44.6,
+     "sp": "Organizer",
+     "t": "Now, [[last year]], you might expect technology companies to draw the biggest crowds, and they were [[certainly busy]]. [[But]] the stalls with [[the longest queues]] were run by **hospitals and clinics**. The universities [[were actually quieter]] than we expected.",
+     "at": 47.3,
      "q": 12
     },
     {
-     "sp": "Speaker",
-     "t": "The highlight for most people is our [[simulation lab]]. Here you can try your hands on **a model** of a patient's head, with real teeth. It's a very hands-on experience.",
-     "at": 56.6,
+     "sp": "Organizer",
+     "t": "So, how should you prepare? [[Don't worry about bringing a résumé]]. Most of you won't need one at this stage. And workshop places [[are given out on the day]], so there's [[no need to sign up beforehand]]. [[The one thing I'd really encourage]] is to **look up the companies you're interested in**, so you can ask sensible questions.",
+     "at": 63.9,
      "q": 13
     },
     {
-     "sp": "Speaker",
-     "t": "In the afternoon, there's an [[admissions talk]]. We'll go over the entry requirements, and we'll also explain [[the best way to get]] a **scholarship**, which many of you have asked about.",
-     "at": 68.7,
+     "sp": "Organizer",
+     "t": "Don't miss our Ask a Graduate corner. The young graduates there [[won't be offering jobs]], and [[they're not admissions officers]] either, so they [[can't tell you which university to pick]]. [[But]] they can **give you an honest picture of what their working day is actually like**, the long hours, the demanding parts, and the rewards.",
+     "at": 86.2,
      "q": 14
     },
     {
-     "sp": "Speaker",
-     "t": "Then, some of our current students will talk about student life. Studying dentistry is very demanding, so they'll share tips on how to [[cope with]] a heavy **workload** and avoid burning out.",
-     "at": 81.9,
+     "sp": "Organizer",
+     "t": "For those of you interested in a medical career, the dentistry workshop [[isn't a talk on how to brush your teeth properly]]. You've heard enough of that! And tuition fees will be covered in [[the afternoon admissions session]]. In the workshop, you'll actually get to **have a go at simple procedures**, like filling a tooth on a model.",
+     "at": 108.6,
      "q": 15
     },
     {
-     "sp": "Speaker",
-     "t": "Finally, one important safety rule. If you visit the lab, you [[need to have]] **closed shoes** on. Sandals are not allowed, I'm afraid.",
-     "at": 95.2,
+     "sp": "Organizer",
+     "t": "[[Last year]], we handed out free guidebooks, but this year [[everything's online]]. And [[unfortunately, we can't offer discounts]] on any courses. [[However]], anyone who [[stays until the end]] [[will get]] **a certificate**, which looks great on a college application.",
+     "at": 130.8,
      "q": 16
     },
     {
-     "sp": "Speaker",
-     "t": "Right. If you have any questions, please ask one of our student helpers in the blue T-shirts. Enjoy your day.",
-     "at": 106.3
+     "sp": "Organizer",
+     "t": "So, I hope to see you all there. Thank you.",
+     "at": 149.4
     }
    ]
   },
@@ -4242,397 +4621,307 @@
    ],
    "deck": "va1",
    "topic": "Education & Employment",
-   "id": "va-w20261109-fri",
+   "id": "va-w20261107-fri",
    "type": "gap",
    "skill": "Listening",
-   "part": "Part 3",
-   "title": "Thứ Sáu · Nghe Part 3 – Choosing a university major (sentence completion)",
-   "subtitle": "30 giây đọc đề + chọn dạng từ → nghe 1 lần như thi thật → nộp → xem transcript",
+   "part": "Part 2",
    "opens": "2026-11-13",
    "prep": 30,
-   "audio": "media/va-w20261109-fri.mp3",
-   "instructions": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
-   "heading": "Presentation: How do school leavers choose their major?",
+   "title": "Thứ Sáu · Nghe Part 2 – Job shadowing at a dental clinic (multiple choice)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript",
+   "audio": "media/va-w20261107-fri.mp3",
+   "instructions": "Choose the correct letter, A, B or C.",
+   "heading": "Sunrise Dental Clinic – Job Shadowing Week · Questions 11–16",
    "strategy": [
-    "<b>Part 3 = 2–3 người thảo luận</b>; mỗi câu thường do 1 người đưa ý và người khác <b>sửa lại</b>. Đáp án là ý được chốt cuối cùng.",
-    "<b>Simplify câu hỏi</b> còn 2–4 từ trong 30 giây: <i>survey → số người</i>, <i>most common reason → lý do số 1</i>, <i>parents → ngành nào</i>.",
-    "<b>Tín hiệu logic</b> (Linearthinking): <i>but actually · what shocked me · only · what I'd really like</i> báo đáp án sắp đến; <i>I thought…</i> thường là ý bị bác bỏ.",
-    "<b>Giới hạn số từ:</b> NO MORE THAN TWO WORDS → tối đa 2 từ, số được viết bằng chữ số. Điền xong đọc lại cả câu xem đúng ngữ pháp chưa."
+    "<b>30 giây đọc đề:</b> gạch từ khóa câu hỏi (danh từ, động từ, tính từ chính) và <b>từ điều kiện</b> (<i>most, mainly, first two days, final, before, after</i>).",
+    "<b>Simplify</b> mỗi phương án còn 2–4 từ (vd. <i>research the organizations</i> → \"tìm hiểu công ty\"). Đọc 3 phương án dài không kịp thì chỉ nhớ phần <b>khác nhau</b> giữa A/B/C.",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio. Audio thường nhắc <b>cả 3 phương án</b>; vừa nghe vừa bấm nút nhỏ bên phải: ✓ khớp · ✗ bị loại · ? chưa chắc.",
+    "<b>Tín hiệu logic</b> báo đáp án: <i>but · actually · however · instead · what's new · the one thing I'd really…</i>. Tín hiệu bẫy: <i>people often assume · we used to · last year · sure, but</i>.",
+    "<b>6 loại bẫy:</b> nhắc rồi phủ định · đúng một phần · có thật nhưng không trả lời câu hỏi · nhượng bộ → đổi ý · bẫy từ (nghe trùng từ) · sai thời điểm (xưa – nay). Chốt theo từ điều kiện, không theo từ nghe trùng."
    ],
    "rows": [
-    "The [[survey]] was answered by {21} final-year students.",
-    "The [[most common reason]] for choosing a major was {22}.",
-    "Maya was [[surprised]] that few students mentioned {23}.",
-    "[[Parents]] had the strongest influence on students choosing {24}.",
-    "Ben thinks students [[under pressure]] often {25} their decision.",
-    "The tutor [[suggests]] adding examples from {26}."
+    "{11} Why did the clinic [[start]] the job shadowing program?",
+    "{12} During the [[first two days]], students will [[mainly]]",
+    "{13} What does the manager say about the [[dress code]]?",
+    "{14} According to the manager, the [[most challenging]] part of the week is usually",
+    "{15} On the [[final day]], each student [[has to]]",
+    "{16} What does the manager [[suggest]] students do [[after]] the program?"
    ],
    "qs": {
-    "21": {
+    "11": {
+     "opts": {
+      "A": "to recruit future staff",
+      "B": "to give young people a realistic view of dentistry",
+      "C": "to raise money for local schools"
+     },
      "ans": [
-      "85",
-      "eighty-five",
-      "eighty five"
+      "B"
      ],
-     "form": [
-      "Số",
-      "Chữ"
+     "kw": [
+      [
+       "start",
+       "V",
+       "we started it because"
+      ],
+      [
+       "recruit (v) staff",
+       "V+N",
+       "find future employees"
+      ],
+      [
+       "realistic view",
+       "Adj+N",
+       "really knowing what the job involves"
+      ]
      ],
-     "why": "Bẫy: phát ra 120 phiếu, nhưng [[only]] **85** người [[filled it in]] (= answered)."
+     "why": [
+      "Simplify: vì sao mở chương trình? A = <i>tuyển người</i> · B = <i>cho thấy nghề thật</i> · C = <i>gây quỹ</i>.",
+      "A: [[People often assume]] (người ta tưởng) + [[that's not the main idea]] → loại. C: [[completely free]] → loại.",
+      "Tín hiệu chốt [[We started it because]] → chọn ngành [[without really knowing what the job involves]] → chương trình cho thấy thực tế → **B**."
+     ],
+     "optWhy": {
+      "A": "[[People often assume]] … find future employees … [[that's not the main idea]].",
+      "B": "young people choose dentistry **without really knowing what the job involves** → cần cái nhìn thực tế (realistic view).",
+      "C": "[[it's completely free]], [[not about money]]."
+     }
     },
-    "22": {
+    "12": {
+     "opts": {
+      "A": "observe dentists treating patients.",
+      "B": "work at the reception desk.",
+      "C": "learn to use dental equipment."
+     },
      "ans": [
-      "career prospects"
+      "A"
      ],
-     "form": [
-      "Noun phrase (2 từ)",
-      "Verb phrase"
+     "kw": [
+      [
+       "first two days",
+       "N",
+       "for the first two days"
+      ],
+      [
+       "mainly",
+       "Adv",
+       "you'll be"
+      ],
+      [
+       "observe",
+       "V",
+       "watching"
+      ],
+      [
+       "treating patients",
+       "V+N",
+       "at work in the treatment rooms"
+      ]
      ],
-     "why": "[[most common reason]] = *the number one reason* → **career prospects**. *Salary* đứng thứ 2 → loại."
+     "why": [
+      "Từ điều kiện: <b>first two days</b> + <b>mainly</b>.",
+      "C bị phủ định ([[You won't be touching any equipment]]). B có thật nhưng là [[on Wednesday]] (sai thời gian).",
+      "[[for the first two days]] → [[in the treatment rooms, watching our dentists at work]] = observe dentists treating patients → **A**."
+     ],
+     "optWhy": {
+      "A": "**watching our dentists at work** in the treatment rooms = observe dentists treating patients.",
+      "B": "Front desk = reception desk, nhưng chỉ [[a couple of hours on Wednesday]] → sai thời điểm và không phải \"mainly\".",
+      "C": "[[You won't be touching any equipment]] → phủ định."
+     }
     },
-    "23": {
+    "13": {
+     "opts": {
+      "A": "Students must buy a uniform.",
+      "B": "Students should wear formal clothes.",
+      "C": "Students will be given protective clothing."
+     },
      "ans": [
-      "personal interest",
-      "interest",
-      "personal interests"
+      "C"
      ],
-     "form": [
-      "Noun",
-      "Adjective"
+     "kw": [
+      [
+       "dress code",
+       "N",
+       "what to wear"
+      ],
+      [
+       "be given",
+       "V",
+       "we'll provide"
+      ],
+      [
+       "protective clothing",
+       "Adj+N",
+       "gowns, masks and gloves"
+      ]
      ],
-     "why": "[[surprised]] = *what shocked me*; *hardly anyone* = few → **personal interest**."
+     "why": [
+      "Simplify: A = <i>mua đồng phục</i> · B = <i>mặc trang trọng</i> · C = <i>được phát đồ bảo hộ</i>.",
+      "A: [[no need to buy anything]]. B: [[don't need to dress up in a suit]], [[smart casual is fine]] (formal ≠ smart casual).",
+      "[[we'll provide]] = be given; gowns, masks and gloves = protective clothing → **C**."
+     ],
+     "optWhy": {
+      "A": "[[There's no need to buy anything]].",
+      "B": "[[You don't need to dress up in a suit]] → không cần trang trọng.",
+      "C": "**we'll provide gowns, masks and gloves** = protective clothing."
+     }
     },
-    "24": {
+    "14": {
+     "opts": {
+      "A": "starting work early in the morning",
+      "B": "dealing with nervous patients",
+      "C": "standing for long periods"
+     },
      "ans": [
-      "medicine"
+      "B"
      ],
-     "form": [
-      "Noun",
-      "Adjective"
+     "kw": [
+      [
+       "most challenging",
+       "Adj",
+       "what most students find hardest"
+      ],
+      [
+       "dealing with",
+       "V",
+       "seeing … learning how to keep calm"
+      ],
+      [
+       "nervous",
+       "Adj",
+       "anxious or even scared"
+      ]
      ],
-     "why": "Bẫy: Ben đoán *business*, Maya sửa [[actually]] → **medicine** (parents pushed them most)."
+     "why": [
+      "Từ điều kiện: <b>most</b> challenging → phải là cái <i>khó nhất</i>, không chỉ là cái khó.",
+      "A: [[they soon get used to it]] (chỉ lo lúc đầu). C: [[Standing all day is tiring, sure]] (khó, nhưng nhượng bộ → [[But]]).",
+      "[[what most students find hardest]] = most challenging; [[anxious or even scared]] = nervous → **B**."
+     ],
+     "optWhy": {
+      "A": "[[were worried about the early start]] … nhưng [[they soon get used to it]].",
+      "B": "**what most students find hardest is seeing patients who are anxious or even scared**.",
+      "C": "[[Standing all day is tiring, sure. But…]] → bẫy nhượng bộ: đúng một phần nhưng không phải \"most\"."
+     }
     },
-    "25": {
+    "15": {
+     "opts": {
+      "A": "give a short presentation.",
+      "B": "write a report on their experience.",
+      "C": "take a test on dental terms."
+     },
      "ans": [
-      "put off"
+      "A"
      ],
-     "form": [
-      "Phrasal verb (2 từ)",
-      "Noun"
+     "kw": [
+      [
+       "final day",
+       "N",
+       "on Friday"
+      ],
+      [
+       "has to",
+       "V",
+       "each of you will"
+      ],
+      [
+       "short presentation",
+       "Adj+N",
+       "a five-minute talk"
+      ]
      ],
-     "why": "[[under pressure]] = *stressed out*; *delay* → **put off** (phrasal verb, giữ nguyên dạng sau *often*)."
+     "why": [
+      "Simplify: ngày cuối phải làm gì? A = <i>thuyết trình</i> · B = <i>viết báo cáo</i> · C = <i>làm bài test</i>.",
+      "B: [[We used to]] (trước đây) → bỏ rồi. C: [[there's no test]].",
+      "[[Instead]], [[on Friday]] = final day → [[a five-minute talk to our team]] = short presentation → **A**."
+     ],
+     "optWhy": {
+      "A": "[[Instead]], on Friday, each of you will **give a five-minute talk** to our team.",
+      "B": "[[We used to ask students to write a report]] → quá khứ, nay không còn.",
+      "C": "[[there's no test, this isn't school]]."
+     }
     },
-    "26": {
+    "16": {
+     "opts": {
+      "A": "apply for a part-time job at the clinic",
+      "B": "keep in touch with a dentist as a mentor",
+      "C": "volunteer at a community health event"
+     },
      "ans": [
-      "online forums",
-      "forums"
+      "B"
      ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
+     "kw": [
+      [
+       "suggest",
+       "V",
+       "what I'd really recommend"
+      ],
+      [
+       "keep in touch with",
+       "V",
+       "staying in contact with"
+      ],
+      [
+       "mentor",
+       "N",
+       "act as mentors"
+      ]
      ],
-     "why": "Bẫy: Ben nghĩ *job advertisements*, tutor nói [[what I'd really like]] là **online forums**."
+     "why": [
+      "Simplify: sau chương trình nên làm gì?",
+      "A: [[we only hire students over eighteen]] → HS lớp 12 chưa đủ tuổi. C: có thật nhưng [[that's for medical students]].",
+      "[[What I'd really recommend]] = suggest → [[staying in contact with]] = keep in touch with the dentist → **B**."
+     ],
+     "optWhy": {
+      "A": "[[might hope for a part-time job]] nhưng [[we only hire students over eighteen]].",
+      "B": "**staying in contact with the dentist you shadowed** … happy to [[act as mentors]].",
+      "C": "Community health day [[is also good, but that's for medical students]] → không dành cho HS."
+     }
     }
    },
    "transcript": [
     {
-     "sp": "Tutor",
-     "t": "So, Ben and Maya, how is your presentation on choosing a university major coming along?",
-     "at": 14.4
+     "sp": "Manager",
+     "t": "Good morning, and welcome to Sunrise Dental Clinic. I'm Doctor James Carter, the clinic manager, and I'm going to explain how your job shadowing week will work.",
+     "at": 12.6
     },
     {
-     "sp": "Ben",
-     "t": "Pretty well, I think. We did a [[survey]] at our school. We handed out a hundred and twenty questionnaires to seniors, but [[only]] **eighty-five** students actually [[filled it in]].",
-     "at": 21.0,
-     "q": 21
+     "sp": "Manager",
+     "t": "[[People often assume]] we run this program to find future employees. Well, that would be nice, but [[that's not the main idea]]. And [[it's completely free]], so it's [[not about money]] either. [[We started it because]] so many young people choose dentistry **without really knowing what the job involves**.",
+     "at": 24.6,
+     "q": 11
     },
     {
-     "sp": "Tutor",
-     "t": "That's still a good number. And what did you find?",
-     "at": 31.7,
-     "q": 22
+     "sp": "Manager",
+     "t": "So what will you be doing? [[You won't be touching any equipment]]. For safety reasons, that's only for qualified staff. You'll spend [[a couple of hours on the front desk on Wednesday]], but [[for the first two days]], you'll be in the treatment rooms, **watching our dentists at work**.",
+     "at": 45.6,
+     "q": 12
     },
     {
-     "sp": "Maya",
-     "t": "Well, we expected salary to come first, but it was actually second. [[The number one reason]] was **career prospects**. Students want a field where they can find a job easily.",
-     "at": 36.2
+     "sp": "Manager",
+     "t": "A quick word about what to wear. [[There's no need to buy anything]]. And [[you don't need to dress up in a suit]] either. [[Smart casual is fine]]. When you enter the treatment rooms, **we'll provide gowns, masks and gloves**.",
+     "at": 66.1,
+     "q": 13
     },
     {
-     "sp": "Ben",
-     "t": "Yes, they want a well-paid job, but they also want security.",
-     "at": 46.7
+     "sp": "Manager",
+     "t": "Students often tell me they [[were worried about the early start]]. We open at seven thirty. But [[they soon get used to it]]. [[Standing all day is tiring, sure]]. [[But]] **what most students find hardest is seeing patients who are anxious or even scared**, and learning how to keep calm.",
+     "at": 83.2,
+     "q": 14
     },
     {
-     "sp": "Maya",
-     "t": "[[What shocked me]], though, was that [[hardly anyone]] talked about **personal interest**. Only a few people said they chose a subject because they love it.",
-     "at": 51.5,
-     "q": 23
+     "sp": "Manager",
+     "t": "[[We used to ask students to write a report]] at the end, but nobody enjoyed it. And [[there's no test]]. This isn't school! [[Instead]], [[on Friday]], each of you will **give a five-minute talk** to our team about what you've learned.",
+     "at": 104.2,
+     "q": 15
     },
     {
-     "sp": "Tutor",
-     "t": "Interesting. What about [[parents]]? Did they play a role?",
-     "at": 60.4,
-     "q": 24
+     "sp": "Manager",
+     "t": "Finally, some of you [[might hope for a part-time job]] here, but [[we only hire students over eighteen]]. [[What I'd really recommend]] is **staying in contact with the dentist you shadowed**. Many of them are happy to [[act as mentors]] and can give advice on college admissions. Our community health day in March [[is also good, but that's for medical students]].",
+     "at": 120.8,
+     "q": 16
     },
     {
-     "sp": "Ben",
-     "t": "A big one. I thought business students would be the most influenced by their parents.",
-     "at": 65.4
-    },
-    {
-     "sp": "Maya",
-     "t": "But [[actually]], it was students choosing **medicine**. Their parents pushed them the most, maybe because they want their children to follow in their footsteps.",
-     "at": 70.5
-    },
-    {
-     "sp": "Tutor",
-     "t": "That makes sense. Did you find any problems in the way students make the decision?",
-     "at": 79.2,
-     "q": 25
-    },
-    {
-     "sp": "Ben",
-     "t": "Yes. A lot of seniors feel [[stressed out]] by the graduation exam, so they tend to **put off** the decision until the very last minute.",
-     "at": 85.0
-    },
-    {
-     "sp": "Tutor",
-     "t": "That's a really useful point. Now, to make the presentation more interesting, you could add some real examples.",
-     "at": 92.8,
-     "q": 26
-    },
-    {
-     "sp": "Ben",
-     "t": "Like job advertisements?",
-     "at": 102.1
-    },
-    {
-     "sp": "Tutor",
-     "t": "Those are fine, but [[what I'd really like]] to see is some comments from **online forums**, where students talk about their choices in their own words.",
-     "at": 104.6
-    },
-    {
-     "sp": "Maya",
-     "t": "Good idea. We'll look for some this weekend.",
-     "at": 114.7
-    }
-   ]
-  },
-  {
-   "session": 2,
-   "for": [
-    "vananh"
-   ],
-   "deck": "va1",
-   "topic": "Education & Employment",
-   "id": "va-w20261109-sat",
-   "type": "gap",
-   "skill": "Listening",
-   "part": "Part 4",
-   "title": "Thứ Bảy · Nghe Part 4 – How students retain information (note completion)",
-   "subtitle": "30 giây đọc đề + chọn dạng từ → nghe 1 lần như thi thật → nộp → xem transcript",
-   "opens": "2026-11-14",
-   "prep": 30,
-   "audio": "media/va-w20261109-sat.mp3",
-   "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
-   "heading": "The science of memory and studying",
-   "strategy": [
-    "<b>Part 4 = bài giảng</b>, không có nghỉ giữa chừng. Dùng các tiêu đề nhỏ (## ) làm bản đồ: nghe <i>Let's start with · Next · finally</i> để biết đã sang phần mới.",
-    "<b>ONE WORD ONLY:</b> chỉ 1 từ, không ghi số. Dạng từ quyết định đáp án: <i>lists of</i> → số nhiều; <i>a</i> → số ít; <i>helps the brain</i> + V nguyên mẫu.",
-    "<b>Linear thinking:</b> 10 câu đi liền nhau; bám từ khóa câu kế tiếp, lỡ câu nào thì bỏ, đừng quay lại.",
-    "<b>Bẫy phủ định:</b> <i>less useful for … dates · notebooks aren't necessary · teeth is quite easy</i> → thông tin bị loại; đáp án nằm sau <i>but / for example / the hard part</i>.",
-    "<b>Chính tả từ học thuật:</b> syllables, retention, intervals, strengthen; kiểm tra -s ở cuối trước khi nộp."
-   ],
-   "rows": [
-    "## The forgetting curve",
-    "Ebbinghaus [[memorized]] lists of meaningless {31}",
-    "Without review, about half of [[new information]] is lost within a {32}",
-    "## Rote learning",
-    "Useful for basic facts such as {33}",
-    "[[Cramming]] improves short-term scores but not long-term {34}",
-    "## Spaced practice",
-    "Review material at [[increasing]] {35}",
-    "Digital {36} make spacing easy",
-    "## Retrieval practice",
-    "[[Testing yourself]] works better than re-reading {37}",
-    "Students who [[explained]] ideas to a {38} remembered more",
-    "## Example: dental students",
-    "Must learn the [[names]] of many {39}",
-    "[[Sleep]] helps the brain {40} new memories"
-   ],
-   "qs": {
-    "31": {
-     "ans": [
-      "syllables"
-     ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
-     ],
-     "why": "[[memorized]] = *learned by heart*; *meaningless* = *nonsense* → **syllables** (lists of → số nhiều)."
-    },
-    "32": {
-     "ans": [
-      "day"
-     ],
-     "form": [
-      "Noun số ít",
-      "Noun số nhiều"
-     ],
-     "why": "[[new information]] = *what we learn*; *half … within a* **day** (= 24 hours). Có *a* → số ít."
-    },
-    "33": {
-     "ans": [
-      "formulas",
-      "formulae"
-     ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
-     ],
-     "why": "Bẫy: *dates* có nhắc nhưng *less useful*; [[such as]] = *for example* → **formulas**."
-    },
-    "34": {
-     "ans": [
-      "retention"
-     ],
-     "form": [
-      "Noun",
-      "Verb"
-     ],
-     "why": "[[Cramming]] = *pulling an all-nighter*; *long-term* + noun → **retention** (= retain information)."
-    },
-    "35": {
-     "ans": [
-      "intervals"
-     ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
-     ],
-     "why": "[[increasing]] = *longer and longer*; **intervals**, số nhiều vì nhiều lần ôn."
-    },
-    "36": {
-     "ans": [
-      "flashcards"
-     ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
-     ],
-     "why": "Có *make* (không -s) → chủ ngữ số nhiều → **flashcards**. *Notebooks* bị phủ định."
-    },
-    "37": {
-     "ans": [
-      "notes"
-     ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
-     ],
-     "why": "[[Testing yourself]] = *a mock test*; *more effective than* re-reading your **notes**."
-    },
-    "38": {
-     "ans": [
-      "partner"
-     ],
-     "form": [
-      "Noun số ít",
-      "Noun số nhiều"
-     ],
-     "why": "[[explained]] = *taught*; *a* → số ít: **partner**. Bẫy *teacher*: người giải thích là HS, không phải giáo viên."
-    },
-    "39": {
-     "ans": [
-      "nerves"
-     ],
-     "form": [
-      "Noun số nhiều",
-      "Noun số ít"
-     ],
-     "why": "Bẫy: *teeth* thì dễ; [[the hard part]] là names of **nerves**."
-    },
-    "40": {
-     "ans": [
-      "strengthen"
-     ],
-     "form": [
-      "Verb (nguyên mẫu)",
-      "Noun"
-     ],
-     "why": "*helps the brain* + V nguyên mẫu → **strengthen**. Bẫy: *pulling an all-nighter* làm ngược lại."
-    }
-   },
-   "transcript": [
-    {
-     "sp": "Lecturer",
-     "t": "Good afternoon. Today I want to look at a question that every student has asked: why do we forget so much of what we study, and what can we do about it?",
-     "at": 9.5
-    },
-    {
-     "sp": "Lecturer",
-     "t": "Let's start with the forgetting curve. In the eighteen eighties, a German researcher called Hermann Ebbinghaus [[learned by heart]] long lists of [[nonsense]] **syllables**, and then tested himself again and again.",
-     "at": 19.1,
-     "q": 31
-    },
-    {
-     "sp": "Lecturer",
-     "t": "He found that memory drops very quickly. Without any review, we lose about half of [[what we learn]] within **a day**, and most of the rest within a week.",
-     "at": 32.1,
-     "q": 32
-    },
-    {
-     "sp": "Lecturer",
-     "t": "So what about rote learning, simply repeating something until you know it? It is often criticized, but it does have a place. It's less useful for things like historical dates, but [[for example]], it works well for **formulas** in math and chemistry.",
-     "at": 41.6,
-     "q": 33
-    },
-    {
-     "sp": "Lecturer",
-     "t": "The problem comes with cramming. [[Pulling an all-nighter]] before a high-stakes exam may help you pass the next morning, but it does very little for long-term **retention**.",
-     "at": 57.0,
-     "q": 34
-    },
-    {
-     "sp": "Lecturer",
-     "t": "A better method is spaced practice. Instead of studying everything at once, you review the material at **intervals** that get [[longer and longer]]: after one day, then three days, then a week.",
-     "at": 67.4,
-     "q": 35
-    },
-    {
-     "sp": "Lecturer",
-     "t": "This used to require careful planning in a notebook, but notebooks aren't really necessary now. Digital **flashcards** do the spacing for you.",
-     "at": 80.2,
-     "q": 36
-    },
-    {
-     "sp": "Lecturer",
-     "t": "Next, retrieval practice. Research shows that [[testing yourself]], for example by taking a mock test, is far more effective than re-reading your **notes** again and again.",
-     "at": 89.3,
-     "q": 37
-    },
-    {
-     "sp": "Lecturer",
-     "t": "In one study, students who [[taught]] a new concept to a **partner** remembered much more a week later. They were not teachers, just classmates, but explaining helped them grasp the concept.",
-     "at": 100.1,
-     "q": 38
-    },
-    {
-     "sp": "Lecturer",
-     "t": "Let's apply this to a demanding field, dentistry. Dental students have to learn the names of every tooth, which is quite easy, but [[the hard part]] is the names of hundreds of **nerves** in the head and face.",
-     "at": 111.7,
-     "q": 39
-    },
-    {
-     "sp": "Lecturer",
-     "t": "And finally, don't forget sleep. During sleep, the brain replays what you studied and helps to **strengthen** new memories. Pulling an all-nighter does exactly the opposite.",
-     "at": 125.0,
-     "q": 40
-    },
-    {
-     "sp": "Lecturer",
-     "t": "So, to sum up: space your practice, test yourself, and get enough sleep.",
-     "at": 135.7
+     "sp": "Manager",
+     "t": "Right, let's start with a quick tour.",
+     "at": 145.5
     }
    ]
   }

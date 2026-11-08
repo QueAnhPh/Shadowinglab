@@ -37,6 +37,8 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 - `transcript`: mỗi lượt `{"sp", "t", "at": giây bắt đầu trong audio, "q": số câu}`; trong `t` khúc đáp án `**...**`, từ khóa / paraphrase / từ báo đổi ý `[[...]]`. Sau khi nộp web chạy transcript theo audio (dòng đang nói sáng lên, nhãn Câu N, bấm dòng để nghe lại) + nghe lại 0.75×.
 - `strategy` dạy **linear thinking**: câu hỏi theo thứ tự audio, bám từ khóa câu kế tiếp, lỡ câu nào thì bỏ đi tiếp.
 - `slowFirst: true` (tuỳ chọn) = cho nghe chậm 0.75× 1 lần để làm quen trước lượt làm thật.
+- **Phân tích đáp án (bắt buộc, từ 9/11/2026):** không chỉ đưa đáp án. Mỗi câu có `kw` = `[[từ khóa trong đề, loại từ (N / V / Adj / Adv…), từ audio dùng thay]]` (web hiện 🔑 *từ đề* ⇄ **synonym / paraphrase**) và `why` = **mảng các bước** linear thinking (đọc đề / simplify → tín hiệu logic, từ điều kiện → bẫy bị loại → chốt). Trong `rows` và `transcript`, tô `[[...]]` các **danh từ, động từ, tính từ chính** của câu hỏi và từ đồng nghĩa trong audio, cả từ báo đổi ý / bẫy. `why` được dùng `<i>`, `<b>`.
+- **Trắc nghiệm A/B/C (MCQ, từ 9/11/2026):** cùng `type: "gap"`; dòng trong `rows` dạng `"{11} câu hỏi có [[từ khóa]]"`; `qs[n]` = `{opts: {A, B, C}, ans: ["B"], kw, why, optWhy: {A: "vì sao loại", B: "vì sao chọn", C: …}}`, không có `form`. `instructions`: *Choose the correct letter, A, B or C.* Khi nghe HS đánh dấu từng phương án ✓ / ✗ / ? (giống worksheet Linearthinking). Viết script sao cho audio nhắc **cả 3 phương án**, 2 phương án bị loại bằng 1 trong 6 loại bẫy (nhắc rồi phủ định · đúng một phần · có thật nhưng không trả lời câu hỏi · nhượng bộ → đổi ý · bẫy từ · xưa – nay).
 
 ## 4. Mở bài theo ngày
 
@@ -50,6 +52,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 | Ngày | Thay đổi |
 | --- | --- |
+| 9/11/2026 | Bài nghe: `kw` (🔑 từ khóa ⇄ synonym), `why` dạng các bước, MCQ A/B/C (`opts`, `optWhy`, đánh dấu ✓/✗/?) · Ghi âm: báo khi micro không thu được tiếng, Android Web Speech rỗng thì nghe lại bản ghi bằng Whisper |
 | 7/11/2026 | Flashcard gộp nhóm đồng nghĩa + 🎮 Game đồng nghĩa; `make_deck.py` đọc định dạng `= nghĩa \| lưu ý` |
 | 7/11/2026 | Flashcard theo topic Speaking của tuần dạy; gói tuần gắn `deck` của topic đó · gộp lại `va1` theo nhóm (`decks/va1.txt`) |
 | 7/11/2026 | Part 1 thêm F (Feeling), Part 2 `star`, `guide`; bài nghe `hint`, `why`, `at` / `q` (transcript chạy), `slowFirst`; `opensAt` |
