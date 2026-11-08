@@ -80,7 +80,7 @@ h2{font-size:20px;margin:8px 0 0;text-wrap:balance}
 .ttable th{font-size:12px;color:var(--muted);font-weight:600;border-top:none}
 .ttable td:not(:first-child),.ttable th:not(:first-child){text-align:center;width:22%}
 .tpct{display:inline-block;min-width:52px;text-align:center;border-radius:999px;padding:3px 8px;font-weight:700;font-variant-numeric:tabular-nums;font-size:13px}
-.tpct.ok{background:var(--ok-bg);color:var(--ok)} .tpct.mid{background:var(--near-bg);color:var(--near)} .tpct.zero{background:var(--line);color:var(--muted)} .tpct.late{background:var(--bad-bg);color:var(--bad)}
+.tpct.ok{background:var(--ok-bg);color:var(--ok)} .tpct.mid{background:var(--near-bg);color:var(--near)} .tpct.zero{background:var(--line);color:var(--muted)} .tpct.late{background:var(--bad-bg);color:var(--bad)} .tpct.near{background:#fff3c4;color:#8a6d00}
 .tlist{display:grid;gap:8px;padding:0 12px 12px}
 .trow{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:none;border-top:1px solid var(--line);border-radius:0;background:none;box-shadow:none;padding:10px 4px;min-height:0;font-weight:400}
 .trow:hover{background:var(--other)}
@@ -2395,17 +2395,17 @@ function teacherWeeks(r) {
   const keys = [...by.keys()].sort((a, b) => b - a), openK = keys.find(k => k && k <= now) ?? keys[0];
   const row = L => {
     const p = progressOf(L, sid, r.best[L.id] || {}), H = homeworkOf(L), role = L.roles ? L.roles[sid] : null, done = p.pct >= 100;
-    const late = !done && H && duePassed(H), lock = L.opens && opensLater(L);
+    const late = !done && p.pct < 80 && H && duePassed(H), near = !done && p.pct >= 80, lock = L.opens && opensLater(L);
     const meta = p.gap ? (done ? `nộp rồi · đúng ${p.score}/${p.idx.length} câu` : "chưa nộp") : `đã thử ${p.tried.length}/${p.idx.length} câu`;
     return `<button class="trow" data-go="teach~${sid}~${L.id}"><span class="wd">${esc(dayLabel(L))}</span>
-      <div class="t"><b>${L.type === "gap" ? "🎧" : "🗣️"} ${esc(cleanTitle(L))}</b><span>${meta}${role ? " · vai " + esc(role) : ""}${lock ? " · 🔒 chưa mở" : ""}${late ? ` · <span class="late">⚠️ qua hạn ${esc(dueText(H))}</span>` : ""}</span>
+      <div class="t"><b>${L.type === "gap" ? "🎧" : "🗣️"} ${esc(cleanTitle(L))}</b><span>${meta}${role ? " · vai " + esc(role) : ""}${lock ? " · 🔒 chưa mở" : ""}${late ? ` · <span class="late">⚠️ qua hạn ${esc(dueText(H))}</span>` : ""}${near ? ` · gần xong: còn ${p.weak.length || (p.idx.length - p.done.length)} câu chưa đạt 80%` : ""}</span>
       ${!done && p.weak.length ? `<span class="weak">Chưa đạt 80%: ${p.weak.slice(0, 8).map(i => "câu " + (p.idx.indexOf(i) + 1) + " (" + r.best[L.id][i] + "%)").join(", ")}${p.weak.length > 8 ? "…" : ""}</span>` : ""}</div>
-      ${done ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${late ? "late" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev" aria-hidden="true">›</span></button>`;
+      ${done ? `<span class="tpct ok">✅</span>` : `<span class="tpct ${late ? "late" : near ? "near" : p.pct > 0 ? "mid" : "zero"}">${p.pct}%</span>`}<span class="chev" aria-hidden="true">›</span></button>`;
   };
   return keys.map(k => {
     const all = by.get(k).slice().sort(byDay), done = all.filter(L => progressOf(L, sid, r.best[L.id] || {}).pct >= 100), todo = all.filter(L => !done.includes(L));
     const Hs = [...new Set(all.map(homeworkOf).filter(Boolean))].sort((a, b) => b.deadline.localeCompare(a.deadline)), H = Hs[0];
-    const lateN = todo.filter(L => { const h = homeworkOf(L); return h && duePassed(h); }).length;
+    const lateN = todo.filter(L => { const h = homeworkOf(L); return h && duePassed(h) && progressOf(L, sid, r.best[L.id] || {}).pct < 80; }).length;
     const head = k ? `📁 Tuần ${k} · ${weekRange(sid, k)}` : "📚 Bài khác";
     return `<details class="tweek" ${k === openK ? "open" : ""}><summary><b>${head}</b><span class="muted">${H ? `hạn ${esc(dueText(H))} · ` : ""}✅ ${done.length}/${all.length} xong${lateN ? ` · <span class="late">⚠️ ${lateN} qua hạn</span>` : ""}</span></summary>
       <div class="tgrp">${todo.length ? `<p class="tgh">Cần làm (${todo.length})</p>${todo.map(row).join("")}` : `<p class="tgh">🎉 Xong hết tuần này</p>`}
@@ -2433,7 +2433,7 @@ function viewTeacher() {
     <p class="muted">Điểm tốt nhất từng câu; câu đạt từ 80% tính là xong. Dữ liệu chỉ có khi học sinh đăng nhập Gmail lúc luyện.</p>
     <div class="actions"><button id="tReload">Tải lại</button></div>
     <section class="tcard" id="tsubs"><h3>📥 Bài nộp (câu tự trả lời)</h3><p class="muted">Đang tải bài nộp…</p></section>
-    ${hws.length ? `<section class="tcard"><h3>📅 Bài tập theo tuần</h3><p class="muted small">Mới nhất ở trên. ✅ = đã làm xong · % = đang làm · <span class="tpct late">đỏ</span> = qua hạn (giờ vào học) mà chưa xong.</p><div class="tscroll"><table class="ttable">
+    ${hws.length ? `<section class="tcard"><h3>📅 Bài tập theo tuần</h3><p class="muted small">Mới nhất ở trên. ✅ = đã làm xong · % = đang làm · <span class="tpct near">vàng</span> = gần xong (≥ 80%, còn vài câu chưa đạt 80%) · <span class="tpct late">đỏ</span> = qua hạn (giờ vào học) mà mới làm dưới 80%.</p><div class="tscroll"><table class="ttable">
       <thead><tr><th>Bài</th>${rows.map(r => `<th>${esc(r.s.name)}</th>`).join("")}</tr></thead>
       <tbody>${hwWeeks(hws).map(([lab, hs], k) => `<tr class="wkrow"><td colspan="${rows.length + 1}">${esc(lab)}</td></tr>${hs.map(H => {
         const past = duePassed(H);
@@ -2442,7 +2442,7 @@ function viewTeacher() {
           const ls = DATA.lessons.filter(L => H.lessons.includes(L.id) && L.for.includes(r.s.id));
           if (!ls.length) return `<td class="muted">–</td>`;
           const pct = Math.round(ls.reduce((a, L) => a + progressOf(L, r.s.id, r.best[L.id] || {}).pct, 0) / ls.length);
-          return `<td>${pct >= 100 ? `<span class="tpct ok">✅</span>` : cell(pct, past ? "late" : "")}</td>`;
+          return `<td>${pct >= 100 ? `<span class="tpct ok">✅</span>` : cell(pct, past && pct < 80 ? "late" : pct >= 80 ? "near" : "")}</td>`;
         }).join("")}</tr>`;
       }).join("")}`).join("")}</tbody></table></div></section>` : ""}
     ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
