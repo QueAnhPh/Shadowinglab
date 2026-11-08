@@ -1594,18 +1594,30 @@ document.addEventListener("click", e => {
   store.set("rate", +b.dataset.rate); applyRate();
   document.querySelectorAll(".speed [data-rate]").forEach(x => x.classList.toggle("on", x === b));
 });
+/* phát đúng 1 đoạn [a, b] của file mẫu. Trước đây nếu file chưa tải xong phần đầu (metadata) thì lệnh nhảy tới giây a bị bỏ qua
+   → phát từ đầu file tới b, nghe như "nguyên bài". Giờ: chờ metadata rồi mới nhảy; khi đang phát mà lệch khỏi đoạn thì nhảy lại. */
+let startAt = null, spanTry = 0;
 function playSpan(a, b, el) {
   try {
     if (playingEl) playingEl.classList.remove("playing");
     playingEl = el; el.classList.add("playing");
-    player.currentTime = a; stopAt = b;
-    applyRate();
-    const p = player.play(); if (p) p.catch(() => {});
+    startAt = a; stopAt = b; spanTry = 0;
+    const go = () => {
+      try { player.currentTime = a; } catch {}
+      applyRate();
+      const p = player.play(); if (p) p.catch(() => {});
+    };
+    if (player.readyState >= 1) go();
+    else { player.addEventListener("loadedmetadata", go, { once: true }); try { player.load(); } catch {} }
   } catch {}
 }
 player.addEventListener("timeupdate", () => {
-  if (stopAt != null && player.currentTime >= stopAt) { player.pause(); stopAt = null; if (playingEl) playingEl.classList.remove("playing"); }
+  if (stopAt == null) return;
+  const t = player.currentTime;
+  if (startAt != null && (t < startAt - 0.6 || t > stopAt + 1.5) && spanTry < 3) { spanTry++; try { player.currentTime = startAt; } catch {} return; }   // nhảy chưa tới đúng chỗ → nhảy lại
+  if (t >= stopAt) { player.pause(); stopAt = null; startAt = null; if (playingEl) playingEl.classList.remove("playing"); }
 });
+player.addEventListener("pause", () => { if (stopAt == null && playingEl) playingEl.classList.remove("playing"); });
 
 let rec = null;
 /* engine: browser speech recognition (Android/desktop Chrome) or on-device Whisper (iPhone, or fallback) */
