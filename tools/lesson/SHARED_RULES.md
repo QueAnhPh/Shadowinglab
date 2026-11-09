@@ -21,6 +21,9 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
   (dòng 8 cột `w|type|ipa|stress|band|mean|grammar|ex` = thẻ 1 từ, vẫn dùng được)
 - Ghép vào web + kiểm tra: `python3 tools/lesson/make_deck.py tools/lesson/decks/<id>.txt data/lessons.json --for <hs,…> [--link <lessonId,…>]` (báo lỗi cột, type, band, nhóm quá 8 từ, nghĩa trùng; thay bộ cùng id).
 - Bộ cũ dạng phẳng (mỗi thẻ 1 từ, có `w` ở ngoài) web vẫn hiện được; khi rảnh thì gộp lại theo cách trên.
+- **🧠 Nhớ lại (từ 10/11/2026, mọi lớp):** chế độ ôn chính, theo nguyên tắc **retrieval** (tự nhớ ra thay vì nhìn lại) + **spacing** (giãn cách) + **interleaving** (trộn bộ cũ). HS thấy **nghĩa + câu ví dụ có chỗ trống** → gõ từ; bí thì gợi ý kiểu **Hangman** (ô chữ theo số chữ cái, đoán từng chữ, 6 tim; 💡 mở 1 chữ, chữ đầu trước; 🔊 nghe từ; 🏳 chịu). Không gợi ý → hộp +1; ≤ 2 gợi ý/lần sai → giữ hộp; nhiều hơn / chịu → về hộp 1 và hỏi lại sau 4 thẻ. Hộp 1–6 = hỏi lại sau 1 · 2 · 4 · 7 · 14 · 30 ngày. Mỗi lượt "hôm nay" = ≤ 20 thẻ đến hạn (mọi bộ đã mở) + ≤ 8 thẻ mới (bộ mới nhất), xáo trộn. Thẻ nhóm: gõ từ nào trong nhóm cũng đúng; hộp < 3 hỏi từ chính (`items[0]`), hộp ≥ 3 hỏi ngẫu nhiên từ trong nhóm. Lưu `localStorage sr:<hs>` + Firestore `users/{uid}.sr` (+ `srlog` theo ngày).
+  - **Soạn thẻ để Nhớ lại chạy tốt:** từ đầu nhóm (`items[0]`) = từ dễ, hay dùng nhất; **câu ví dụ phải chứa đúng từ / cụm** (được chia -s/-ed/-ing) để web đục lỗ; nghĩa tiếng Việt đủ rõ để nhớ ra từ, không chỉ 1 chữ chung chung.
+  - Web tự nhắc trước bài tập khi có ≥ 5 thẻ đến hạn (1 lần/ngày); không cần soạn bài riêng.
 - **🎮 Game đồng nghĩa:** tự có cho mọi bộ có nhóm ≥ 2 từ (cuối phần flashcard + nút dưới mỗi bộ). Mỗi câu hiện 1 từ, ẩn các từ còn lại; SpeakBack đưa ngẫu nhiên 3–4 từ, HS chọn tất cả từ cùng nghĩa; 10 câu / lượt, lưu kỷ lục.
 
 ## 2. Bài nói (thẻ tự trả lời `free: true`, máy chấm khi HS bấm 📤)
@@ -58,6 +61,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 | Ngày | Thay đổi |
 | --- | --- |
+| 10/11/2026 | Flashcard 🧠 Nhớ lại: nghĩa + câu đục lỗ → gõ từ, gợi ý kiểu Hangman, lặp giãn cách 1–30 ngày, trộn từ các bộ cũ; nhắc trước bài khi ≥ 5 thẻ đến hạn |
 | 9/11/2026 | Màn giáo viên + trang HS: xếp theo tuần → ngày (nhãn `T2 9/11`), tách ✅ Đã làm; tiêu đề không ghi thứ; bài nghe nộp rồi là xong, chỉ bài chưa xong mới báo qua hạn |
 | 9/11/2026 | Gói bài tập theo ngày, hạn nộp = buổi học kế tiếp (`deadlineAt` = giờ vào học); dải "Tuần này" theo chu kỳ bài tập; tuần học dạng gì thì bài tập có dạng đó |
 | 9/11/2026 | Bài nghe: `kw` (🔑 từ khóa ⇄ synonym), `why` dạng các bước, MCQ A/B/C (`opts`, `optWhy`, đánh dấu ✓/✗/?) · Ghi âm: báo khi micro không thu được tiếng, Android Web Speech rỗng thì nghe lại bản ghi bằng Whisper |
