@@ -90,7 +90,7 @@ def find(prefix):
         if k.startswith(prefix): return v
     return 0
 nav = [("Mục lục", 0), ("Speaking 101", find("1. Speaking 101")), ("Lộ trình", find("2. Lộ trình")), ("Agenda", find("3. Agenda")),
-       ("Listening", find("3.1 Listening")), ("Homework", find("4. Bài tập")), ("Student", find(f"Speaking Session {N} – Student")), ("Games", find("2. Vocab games")), ("Ladder", find("5. Part 1 Ladder")),
+       ("Listening", find("3.1 Listening")), ("Homework", find("4. Bài tập")), ("Student", find(f"Speaking Session {N} – Student")), ("Vocab", find("2. Vòng Vocab") or find("2. Vocab games")), ("Ladder", find("5. Part 1 Ladder")),
        ("Bài tập", find("7. Bài tập tuần")), ("Alternatives", find(f"Speaking Session {N} – Alternatives"))]
 print(nav)
 pdfmetrics.registerFont(TTFont("DV", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
