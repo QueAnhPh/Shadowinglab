@@ -180,6 +180,23 @@ p.small{font-size:13px;margin:6px 0 0}
 .choices button.miss{border:2px dashed var(--ok,#2e7d32);font-weight:700}
 .gerr{color:var(--bad,#c62828);font-size:13px;margin:0}
 .deckrow{display:grid;gap:6px}
+.srtop{display:grid;gap:8px;padding:14px 16px;border-radius:16px;background:var(--near-bg);margin:6px 0 14px}
+.srtop b{font-size:16px}.srtop .primary{justify-self:start}
+.deckbtns{display:flex;gap:8px;flex-wrap:wrap}
+.srmean{font-size:20px;font-weight:800;margin:4px 0;line-height:1.35}
+.srex{font-style:italic;color:var(--muted);margin:0}.srgap{font-style:normal;font-weight:800;letter-spacing:2px;color:var(--ink)}
+.srslots{display:flex;flex-wrap:wrap;justify-content:center;gap:5px 4px;margin:6px 0}
+.srslots b{min-width:22px;height:34px;border-bottom:3px solid var(--ink);font:800 24px/34px ui-monospace,Menlo,monospace;text-transform:lowercase}
+.srslots b.blank{border-bottom-color:var(--muted)}.srslots b.fx{border-bottom-color:transparent;color:var(--muted)}
+.srslots b.miss{color:var(--bad,#c62828)}.srslots i.sp{width:14px}
+.srlives{margin:0;font-size:18px;letter-spacing:2px}
+.srform{display:flex;gap:8px}.srform input{flex:1;min-width:0;font-size:18px;padding:10px 12px;border-radius:12px;border:1.5px solid var(--line)}
+.srhelp{text-align:left}.srhelp summary{cursor:pointer;font-weight:700;padding:6px 0}
+.srkb{display:grid;grid-template-columns:repeat(9,1fr);gap:5px;margin:8px 0}
+.srkb button{padding:8px 0;min-height:0;font:700 16px ui-monospace,Menlo,monospace;border-radius:10px}
+.srkb button.hit{background:rgba(46,125,50,.18)}.srkb button.no{background:rgba(198,40,40,.12);text-decoration:line-through}
+.srhints{flex-wrap:wrap;gap:6px}.srhints button{font-size:14px}
+.srres{padding:10px 12px;border-radius:14px;font-weight:700}.srres.ok{background:rgba(46,125,50,.15)}.srres.hint{background:var(--near-bg)}.srres.miss{background:rgba(198,40,40,.10)}
 .gamebtn{justify-self:start;font-size:14px;padding:6px 14px;border-radius:99px;min-height:0}
 @media (max-width:420px){.fgrid{grid-template-columns:78px minmax(0,1fr)}}
 .today{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:16px 18px;display:grid;gap:10px;border-top:5px solid var(--accent,#e8a33d)}
@@ -768,6 +785,7 @@ async function onCloud(user, profile) {
     if (id && DATA.students.some(s => s.id === id)) {
       student = id; store.set("student", student);
       const changed = mergeBest(profile.best);
+      srMerge(profile.sr);
       const patch = {};
       if (profile.student !== id) patch.student = id;
       if (Object.keys(changed).length) patch.best = changed;
@@ -2611,6 +2629,10 @@ const TOURS = {
     { sel: ".card.free .recfree", text: "🎙 Câu tự trả lời: bấm ghi âm, nói 20–30 giây, bấm lần nữa để dừng. Chị nghe bài trên web." },
     { sel: "#helpBtn", text: "❓ Bấm đây để xem lại hướng dẫn." },
   ],
+  fc: [
+    { sel: ".recallbtn", text: "🧠 Mỗi ngày ~3 phút: đọc nghĩa → tự nhớ ra từ rồi gõ. Bí thì mở từng chữ như Hangman. Tự nhớ ra (dù khó) giúp nhớ lâu hơn nhiều so với đọc lại." },
+    { sel: "[data-fr]:not(.recallbtn)", text: "Muốn ôn riêng 1 topic thì bấm 🧠 Nhớ lại bộ này." },
+  ],
   dialog: [
     { sel: ".card:not(.other) .speak", text: "🎭 Bài hội thoại: em chỉ nói câu của vai mình (thẻ có nút Bấm để nói)." },
     { sel: ".card.other", text: "👂 Thẻ xám là câu của bạn kia, em chỉ cần nghe để bắt nhịp." },
@@ -2668,6 +2690,7 @@ function startTour(name, force) {
 }
 document.addEventListener("keydown", e => { if (tourState && e.key === "Escape") endTour(); });
 $("#helpBtn").addEventListener("click", () => {
+  if (/^#fc/.test(location.hash) && $(".recallbtn")) { startTour("fc", true); return; }
   const name = $(".card[data-i]") && !TEACH ? "lesson" : "list";
   if (name === "list" && location.hash) { location.hash = ""; setTimeout(() => startTour("list", true), 50); return; }
   startTour(name, true);
@@ -2711,16 +2734,21 @@ function viewDecks() {
   const ds = myDecks().sort((a, b) => b.session - a.session);
   $("#app").innerHTML = `<h2>🃏 Flashcard từ vựng</h2>
     <p class="muted">Từ của từng buổi học, gồm cả từ band cao trong Alternatives. Từ cùng nghĩa gom chung 1 thẻ, xếp theo Vocab / Phrasal verb / Collocation / Idiom. Học tới buổi nào thì mở topic đó. Ôn xong thì chơi 🎮 Game đồng nghĩa để nhớ lâu hơn.</p>
+    ${(() => { const n = srCounts(); const tot = Math.min(20, n.due) + Math.min(8, n.fresh); return ds.some(deckOpen) ? `<div class="srtop"><b>🧠 Nhớ lại hôm nay: ${tot ? `${tot} thẻ` : "xong rồi 🎉"}</b>
+      <span class="muted small">Không nhìn từ: đọc nghĩa + câu có chỗ trống → tự nhớ ra từ rồi gõ. Bí thì mở từng chữ như trò Hangman. Từ nhớ chắc hỏi lại thưa dần (2 → 4 → 7 → 14 → 30 ngày), từ quên hỏi lại ngày mai; trộn cả từ các buổi trước. Mỗi ngày ~3 phút.</span>
+      ${tot ? `<button class="primary recallbtn" data-fr="">🧠 Bắt đầu nhớ lại</button>` : n.next ? `<span class="small">Lần ôn tới: <b>${fmtDeadline(n.next)}</b></span>` : ""}</div>` : ""; })()}
     <div class="decks">${ds.length ? ds.map(D => {
       const open = deckOpen(D), st = deckState(D), n = fcCards(D).length, nw = fcWords(D), known = (st.known || []).filter(k => fcCards(D).some(c => cardKey(c) === k)).length, g = fcGroups(D).length;
       return `<div class="deckrow"><button class="deck ${open ? "" : "locked"}" ${open ? `data-fc="${D.id}"` : "disabled"}>
         <span style="font-size:26px">${open ? (st.done ? "✅" : "🃏") : "🔒"}</span>
         <span class="t"><b>${esc(D.title)}</b><span>Buổi ${D.session} · ${n} thẻ · ${nw} từ${open ? ` · đã thuộc ${known}/${n} thẻ` : " · mở sau buổi học"}</span>${open ? `<span class="fcbar" style="display:block;margin-top:6px"><i style="width:${Math.round(known / n * 100)}%"></i></span>` : ""}</span>
         <span class="go">${open ? "›" : ""}</span></button>
-        ${open && g ? `<button class="gamebtn" data-fg="${D.id}">🎮 Game đồng nghĩa${store.get(`fcg:${student}:${D.id}`, null) != null ? ` · cao nhất ${store.get(`fcg:${student}:${D.id}`, 0)}%` : ""}</button>` : ""}</div>`;
+        ${open ? `<div class="deckbtns"><button class="gamebtn" data-fr="${D.id}">🧠 Nhớ lại bộ này</button>${g ? `<button class="gamebtn" data-fg="${D.id}">🎮 Game đồng nghĩa${store.get(`fcg:${student}:${D.id}`, null) != null ? ` · cao nhất ${store.get(`fcg:${student}:${D.id}`, 0)}%` : ""}</button>` : ""}</div>` : ""}</div>`;
     }).join("") : `<p class="muted">Chưa có bộ flashcard nào.</p>`}</div>`;
   $("#app").querySelectorAll("[data-fc]").forEach(b => b.addEventListener("click", () => { location.hash = "fc-" + b.dataset.fc; }));
   $("#app").querySelectorAll("[data-fg]").forEach(b => b.addEventListener("click", () => { location.hash = "fcg-" + b.dataset.fg; }));
+  $("#app").querySelectorAll("[data-fr]").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.fr ? "fcr-" + b.dataset.fr : "fcr"; }));
+  startTour("fc");
 }
 const TYPES = ["Vocab", "Phrasal verb", "Collocation", "Idiom"];
 function viewDeck(D, ret) {
@@ -2789,12 +2817,14 @@ function viewDeck(D, ret) {
       <div class="w">🎉 Xong ${list.length} thẻ!</div>
       <p>Đúng <b>${score}/${list.length}</b> · đã thuộc ${known}/${C.length} thẻ của bộ này.</p>
       ${wrong.length ? `<p class="muted">Cần ôn lại: ${wrong.map(c => `<b>${esc(c.items.map(x => x.w).join(" / "))}</b>`).join(" · ")}</p>` : ""}
-      ${g ? `<button class="primary" id="game">🎮 Game đồng nghĩa: ${g} nhóm từ</button>` : ""}
+      <button class="primary" id="recall">🧠 Nhớ lại không nhìn từ (nhớ lâu hơn)</button>
+      ${g ? `<button id="game">🎮 Game đồng nghĩa: ${g} nhóm từ</button>` : ""}
       <div class="fcnav">${wrong.length ? `<button id="again">🔁 Ôn lại ${wrong.length} thẻ sai</button>` : `<button id="again">🔁 Ôn lại từ đầu</button>`}
-      <button ${g ? "" : `class="primary"`} id="goOn">${ret ? "Vào làm bài →" : "Về danh sách"}</button></div></section>`;
+      <button id="goOn">${ret ? "Vào làm bài →" : "Về danh sách"}</button></div></section>`;
     $("#again").addEventListener("click", () => { if (wrong.length) { list = list.filter(i => answered[i] && !answered[i].ok); k = 0; score = 0; answered = {}; } else build(); render(); });
     $("#goOn").addEventListener("click", () => { if (ret) store.set(`fcskip:${student}:${ret}`, true); location.hash = ret || "fc"; });
     if ($("#game")) $("#game").addEventListener("click", () => { if (ret) store.set(`fcskip:${student}:${ret}`, true); location.hash = `fcg-${D.id}${ret ? "~" + ret : ""}`; });
+    $("#recall").addEventListener("click", () => { location.hash = `fcr-${D.id}${ret ? "~" + ret : ""}`; });
   };
   build(); render();
 }
@@ -2872,9 +2902,243 @@ function viewGame(D, ret) {
   };
   start();
 }
+/* ---------- 🧠 Nhớ lại: thấy nghĩa + câu có chỗ trống → tự nhớ ra từ (retrieval); bí thì đoán chữ kiểu hangman;
+   lặp giãn cách (spacing) 1 → 2 → 4 → 7 → 14 → 30 ngày, trộn từ các buổi cũ (interleaving).
+   store sr:<student> = { "<deckId>|<word>": { box 1–6, due "YYYY-MM-DD", at ms, n, ok } } (+ Cloud users/{uid}.sr) ---------- */
+const SR_DAYS = [0, 1, 2, 4, 7, 14, 30];
+const SR_LIVES = 6;
+const srKey = () => `sr:${student}`;
+const srAll = () => store.get(srKey(), {});
+const srId = (D, c) => `${D.id}|${cardKey(c)}`;
+const isoOf = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const srToday = () => isoOf(new Date());
+const srAdd = n => { const d = new Date(); d.setDate(d.getDate() + n); return isoOf(d); };
+function srMerge(remote) {
+  if (!remote || typeof remote !== "object") return;
+  const all = srAll();
+  let ch = false;
+  Object.entries(remote).forEach(([k, v]) => { if (v && (!all[k] || (v.at || 0) > (all[k].at || 0))) { all[k] = v; ch = true; } });
+  if (ch) store.set(srKey(), all);
+}
+/* queue: thẻ đến hạn (mọi bộ đã mở, box thấp trước) + thẻ mới (bộ mới nhất trước), trộn lẫn */
+function srQueue(only) {
+  const all = srAll(), t = srToday();
+  const ds = only ? [only] : myDecks().filter(deckOpen).sort((a, b) => b.session - a.session);
+  const due = [], fresh = [];
+  ds.forEach(D => fcCards(D).forEach(c => {
+    const s = all[srId(D, c)];
+    if (!s) fresh.push({ D, c }); else if (s.due <= t) due.push({ D, c, box: s.box });
+  }));
+  due.sort((a, b) => a.box - b.box);
+  return shuffle([...due.slice(0, only ? 40 : 20), ...fresh.slice(0, only ? 20 : 8)]);
+}
+function srCounts(only) {
+  const all = srAll(), t = srToday(), ds = only ? [only] : myDecks().filter(deckOpen);
+  let due = 0, fresh = 0, next = null;
+  ds.forEach(D => fcCards(D).forEach(c => {
+    const s = all[srId(D, c)];
+    if (!s) fresh++; else if (s.due <= t) due++; else if (!next || s.due < next) next = s.due;
+  }));
+  return { due, fresh, next };
+}
+/* phần chữ cần nhớ: bỏ (…) và sth/sb; so sánh không phân biệt hoa thường, dấu câu */
+const SR_PH = /^(sth|sb|sb's|one's|someone|something|somebody|somebody's)$/i;
+const srCore = w => String(w).replace(/\(.*?\)/g, " ").split(/\s+/).filter(x => x && !SR_PH.test(x.replace(/[^\w']/g, ""))).join(" ");
+const srNorm = s => String(s).toLowerCase().replace(/[’`]/g, "'").replace(/[^a-z0-9' ]+/g, " ").replace(/\s+/g, " ").trim();
+function srLev(a, b) {
+  const m = a.length, n = b.length, d = Array.from({ length: m + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= n; j++) d[0][j] = j;
+  for (let i = 1; i <= m; i++) for (let j = 1; j <= n; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[m][n];
+}
+/* mask hangman: mỗi chữ cái a–z ẩn; dấu cách, gạch nối, (…), sth/sb hiện sẵn */
+function srMask(w) {
+  const out = [];
+  let depth = 0;
+  String(w).split(/(\s+)/).forEach(tok => {
+    const ph = SR_PH.test(tok.replace(/[^\w']/g, ""));
+    for (const ch of tok) {
+      if (ch === "(") depth++;
+      const letter = /[a-z]/i.test(ch);
+      out.push({ ch, hide: letter && !ph && depth === 0 });
+      if (ch === ")") depth = Math.max(0, depth - 1);
+    }
+  });
+  return out;
+}
+/* câu ví dụ có chỗ trống ở đúng từ cần nhớ (chấp nhận đuôi -s/-ed/-ing trong câu) */
+function srBlank(ex, w) {
+  if (!ex) return null;
+  const words = srCore(w).split(" ").filter(Boolean);
+  if (!words.length) return null;
+  const pat = words.map(x => { const e = x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); return x.length >= 4 ? e.slice(0, -1) + "\\w*" : e; }).join("[\\s\\-]+");
+  const re = new RegExp(`\\b${pat}\\b`, "i");
+  if (!re.test(ex)) return null;
+  return esc(ex).replace(new RegExp(`\\b${pat}\\b`, "i"), m => `<span class="srgap">${"_".repeat(Math.min(14, Math.max(4, m.length)))}</span>`);
+}
+function viewRecall(only, ret) {
+  let Q = srQueue(only), k = 0, R = null;
+  const res = { ok: 0, hint: 0, miss: 0, missed: [] }, requeued = new Set();
+  const toLesson = !!(ret && !ret.startsWith("fc"));
+  const back = () => { location.hash = toLesson ? ret : "fc"; };
+  const startCard = () => {
+    const { D, c } = Q[k];
+    /* lần đầu / còn ở hộp thấp: hỏi từ chính (items[0]); nhớ chắc rồi mới hỏi từ khác trong nhóm (band cao hơn) */
+    const box = (srAll()[srId(D, c)] || {}).box || 0;
+    const it = box >= 3 ? c.items[Math.floor(Math.random() * c.items.length)] : c.items[0];
+    R = { D, c, it, mask: srMask(it.w), guessed: new Set(), wrong: 0, hints: 0, heard: false, done: false, result: null, typed: "" };
+  };
+  const hidden = () => R.mask.filter(m => m.hide && !R.guessed.has(m.ch.toLowerCase()) && !m.open);
+  const slots = () => R.mask.map(m => m.ch === " " ? `<i class="sp"></i>` : !m.hide ? `<b class="fx">${esc(m.ch)}</b>` :
+    (R.done || R.guessed.has(m.ch.toLowerCase()) || m.open) ? `<b class="${R.done && !(R.guessed.has(m.ch.toLowerCase()) || m.open) ? "miss" : ""}">${esc(m.ch)}</b>` : `<b class="blank"></b>`).join("");
+  const accept = s => {
+    const a = srNorm(s);
+    if (!a) return null;
+    for (const x of R.c.items) {
+      const core = srNorm(srCore(x.w)), full = srNorm(x.w);
+      if (a === core || a === full) return { x, typo: false };
+      if (core.length >= 6 && srLev(a, core) <= 1) return { x, typo: true };
+    }
+    return null;
+  };
+  const finish = (ok, how) => {
+    R.done = true;
+    const cost = R.hints + R.wrong + (R.heard ? 1 : 0);
+    const grade = !ok ? "miss" : cost === 0 ? "ok" : cost <= 2 ? "hint" : "miss";
+    R.result = { ok, grade, how };
+    const all = srAll(), id = srId(R.D, R.c), s = all[id] || { box: 0, n: 0, ok: 0 };
+    if (!requeued.has(id) || grade !== "miss") {
+      s.box = grade === "ok" ? Math.min(6, Math.max(1, s.box) + 1) : grade === "hint" ? Math.max(1, s.box) : 1;
+      s.due = srAdd(SR_DAYS[s.box]); s.n = (s.n || 0) + 1; s.ok = (s.ok || 0) + (grade === "ok" ? 1 : 0); s.at = Date.now();
+      all[id] = s; store.set(srKey(), all);
+      if (cloudUser()) window.Cloud.save({ sr: { [id]: s } }).catch(() => {});
+    }
+    if (!requeued.has(id)) res[grade]++;
+    if (grade === "miss") {
+      if (!res.missed.includes(R.c)) res.missed.push(R.c);
+      if (!requeued.has(id)) { requeued.add(id); Q.splice(Math.min(Q.length, k + 4), 0, { D: R.D, c: R.c }); }
+    }
+    sayIt(R.it.w);
+    render();
+  };
+  const render = () => {
+    if (k >= Q.length) return renderEnd();
+    if (!R) startCard();
+    const { D, c, it } = R, g = c.items.length > 1, gap = srBlank(it.ex, it.w);
+    const lives = SR_LIVES - R.wrong;
+    const kb = "abcdefghijklmnopqrstuvwxyz".split("").map(L => {
+      const used = R.guessed.has(L), inW = R.mask.some(m => m.hide && m.ch.toLowerCase() === L);
+      return `<button data-l="${L}" ${used || R.done ? "disabled" : ""} class="${used ? (inW ? "hit" : "no") : ""}">${L}</button>`;
+    }).join("");
+    const r = R.result;
+    $("#app").innerHTML = `<button class="back" id="backBtn">← ${ret && !ret.startsWith("fc") ? "Quay lại bài" : "Các bộ flashcard"}</button>
+      <h2>🧠 Nhớ lại${only ? ` · ${esc(only.title)}` : " hôm nay"}</h2>
+      <div class="fcbar"><i style="width:${Math.round(k / Q.length * 100)}%"></i></div>
+      <p class="muted small">Thẻ ${k + 1}/${Q.length} · nhớ ngay ${res.ok} · nhờ gợi ý ${res.hint} · chưa nhớ ${res.miss}</p>
+      <section class="fcard srcard">
+        <div class="tags"><span class="tag2">${esc(it.type)}</span>${c.cat ? `<span class="tag2">${esc(c.cat)}</span>` : ""}${!only ? `<span class="tag2">${esc(D.title)}</span>` : ""}${g ? `<span class="tag2">nhóm ${c.items.length} từ: gõ từ nào cũng được</span>` : ""}</div>
+        <p class="srmean">${esc(c.mean)}</p>
+        ${gap && !R.done ? `<p class="srex">${gap}</p>` : ""}
+        <div class="srslots" aria-label="Số chữ của từ">${slots()}</div>
+        ${!R.done ? `<p class="srlives" title="Đoán sai 1 chữ mất 1 tim">${"❤️".repeat(Math.max(0, lives))}${"🤍".repeat(SR_LIVES - Math.max(0, lives))}</p>
+        <form class="srform" id="srForm" autocomplete="off"><input id="srIn" placeholder="Gõ từ em nhớ ra…" autocapitalize="off" spellcheck="false" value="${esc(R.typed)}"><button class="primary">Kiểm tra</button></form>
+        <p class="gerr" id="srErr" hidden></p>
+        <details class="srhelp" ${R.guessed.size || R.hints || R.heard ? "open" : ""}><summary>🆘 Bí rồi? Mở gợi ý (mỗi gợi ý trừ bớt điểm)</summary>
+          <div class="srkb">${kb}</div>
+          <div class="row srhints"><button id="srOne">💡 Mở 1 chữ</button><button id="srHear">🔊 Nghe từ</button><button id="srGive">🏳 Chịu, xem đáp án</button></div>
+        </details>` : `<div class="srres ${r.grade}">${r.grade === "ok" ? "🎉 Nhớ ngay! Thẻ này hỏi lại thưa hơn." : r.grade === "hint" ? "👍 Nhớ ra nhờ gợi ý. Mai mốt hỏi lại." : r.ok ? "😅 Ra rồi nhưng dùng nhiều gợi ý. Chị hỏi lại sau vài thẻ nha." : "💪 Chưa nhớ cũng không sao: quên rồi nhớ lại mới nhớ lâu. Chị hỏi lại sau vài thẻ."}${r.how ? `<br><small>${r.how}</small>` : ""}</div>
+        <div class="fdet"><b>${esc(it.w)}</b> · <span class="ipa">${esc(it.ipa)}</span>${it.stress ? ` · Nhấn: <b>${esc(it.stress)}</b>` : ""} <button class="say" id="sayW">🔊 Nghe</button></div>
+        ${g ? chipRows(c, c.items.indexOf(it), "ro") : ""}
+        <div class="fcinfo">
+          ${it.grammar ? `<div><span class="k">Cách dùng (grammar)</span>${esc(it.grammar)}</div>` : ""}
+          ${it.ex ? `<div><span class="k">Ví dụ (context)</span>${esc(it.ex)} <button class="linkbtn" id="sayEx">🔊</button></div>` : ""}
+          ${c.note ? `<div class="fnote">💡 ${esc(c.note)}</div>` : ""}
+          <div class="muted small">🗣 Nói to từ này 1 lần, rồi tự đặt 1 câu về em (thực tập, khóa luận, đi làm…).</div>
+        </div>`}
+      </section>
+      <div class="fcnav"><span></span>${R.done ? `<button class="primary" id="next">${k + 1 < Q.length ? "Tiếp →" : "Xem kết quả ✓"}</button>` : ""}</div>`;
+    $("#backBtn").addEventListener("click", back);
+    if (R.done) {
+      $("#sayW").addEventListener("click", () => sayIt(R.it.w));
+      if ($("#sayEx")) $("#sayEx").addEventListener("click", () => sayIt(R.it.ex));
+      $("#app").querySelectorAll(".fcard .chip").forEach(b => b.addEventListener("click", () => sayIt(R.c.items[+b.dataset.j].w)));
+      $("#next").addEventListener("click", () => { k++; R = null; render(); window.scrollTo(0, 0); });
+      $("#next").focus({ preventScroll: true });
+      return;
+    }
+    const inp = $("#srIn");
+    inp.addEventListener("input", () => { R.typed = inp.value; });
+    $("#srForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const m = accept(inp.value);
+      if (m) {
+        R.mask.forEach(x => { x.open = true; });
+        const other = m.x !== R.it;
+        if (other) { R.it = m.x; R.mask = srMask(m.x.w); }
+        return finish(true, [other ? `Em gõ <b>${esc(m.x.w)}</b>: cùng nhóm nghĩa, tính đúng.` : "", m.typo ? `Gần đúng, sửa chính tả: <b>${esc(m.x.w)}</b>.` : ""].filter(Boolean).join(" "));
+      }
+      let msg = "Gõ từ em nhớ ra trước đã.";
+      if (inp.value.trim()) {
+        R.wrong++; R.typed = "";
+        if (SR_LIVES - R.wrong <= 0) return finish(false, `Hết tim. Đáp án: <b>${esc(R.it.w)}</b>`);
+        msg = "Chưa đúng, mất 1 tim. Thử lại hoặc mở gợi ý.";
+        render();
+      }
+      const e2 = $("#srErr"); if (e2) { e2.hidden = false; e2.textContent = msg; }
+    });
+    $("#app").querySelectorAll(".srkb button").forEach(b => b.addEventListener("click", () => {
+      const L = b.dataset.l; R.guessed.add(L);
+      if (!R.mask.some(m => m.hide && m.ch.toLowerCase() === L)) R.wrong++;
+      if (SR_LIVES - R.wrong <= 0) return finish(false, `Hết tim. Đáp án: <b>${esc(R.it.w)}</b>`);
+      if (!hidden().length) return finish(true, "Em đoán đủ chữ rồi.");
+      render();
+    }));
+    $("#srOne").addEventListener("click", () => {
+      const h = hidden(); if (!h.length) return;
+      const first = R.mask.find(m => m.hide && !R.guessed.has(m.ch.toLowerCase()) && !m.open);
+      const pick = R.hints === 0 && first ? first : h[Math.floor(Math.random() * h.length)];
+      R.mask.forEach(m => { if (m.hide && m.ch.toLowerCase() === pick.ch.toLowerCase()) m.open = true; });
+      R.hints++;
+      if (!hidden().length) return finish(false, `Gợi ý đã mở hết chữ. Đáp án: <b>${esc(R.it.w)}</b>`);
+      render();
+    });
+    $("#srHear").addEventListener("click", () => { R.heard = true; sayIt(R.it.w); });
+    $("#srGive").addEventListener("click", () => finish(false, `Đáp án: <b>${esc(R.it.w)}</b>`));
+    if (matchMedia("(pointer:fine)").matches) inp.focus({ preventScroll: true });
+  };
+  const renderEnd = () => {
+    const n = srCounts(only), tot = res.ok + res.hint + res.miss;
+    if (cloudUser()) window.Cloud.save({ srlog: { [srToday()]: { ok: res.ok, hint: res.hint, miss: res.miss, at: Date.now() } } }).catch(() => {});
+    $("#app").innerHTML = `<button class="back" id="backBtn">← Các bộ flashcard</button><section class="fcard">
+      <div class="w">${tot ? "🧠 Xong buổi nhớ lại!" : "🎉 Hôm nay hết thẻ cần ôn"}</div>
+      ${tot ? `<p>Nhớ ngay <b>${res.ok}</b> · nhờ gợi ý <b>${res.hint}</b> · chưa nhớ <b>${res.miss}</b> (trong ${tot} thẻ)</p>` : ""}
+      ${res.missed.length ? `<p class="muted">Từ cần nhớ thêm: ${res.missed.map(c => `<b>${esc(c.items.map(x => x.w).join(" / "))}</b>`).join(" · ")}</p>` : ""}
+      <p class="muted small">Quên rồi cố nhớ lại là cách nhớ lâu nhất. Từ nhớ chắc sẽ hỏi lại sau 2 → 4 → 7 → 14 → 30 ngày, từ quên hỏi lại ngày mai.${n.next && !n.due ? ` Lần ôn tới: <b>${fmtDeadline(n.next)}</b>.` : ""}</p>
+      <div class="fcnav">${n.due + n.fresh ? `<button id="again">🔁 Ôn tiếp ${Math.min(n.due + n.fresh, only ? 60 : 28)} thẻ</button>` : `<span></span>`}<button class="primary" id="goOn">${ret && !ret.startsWith("fc") ? "Vào làm bài →" : "Về flashcard"}</button></div></section>`;
+    $("#backBtn").addEventListener("click", () => { location.hash = "fc"; });
+    if ($("#again")) $("#again").addEventListener("click", () => { Q = srQueue(only); k = 0; R = null; res.ok = res.hint = res.miss = 0; res.missed = []; requeued.clear(); render(); });
+    $("#goOn").addEventListener("click", () => { if (ret && !ret.startsWith("fc")) store.set(`fcskip:${student}:${ret}`, true); location.hash = ret && !ret.startsWith("fc") ? ret : "fc"; });
+  };
+  if (!Q.length) return renderEnd();
+  render();
+}
 /* before a lesson: suggest reviewing its topic's flashcards once */
 function fcGate(L) {
   const D = deckOf(L);
+  if (D && deckOpen(D) && deckState(D).done && !store.get(`srgate:${student}:${srToday()}`, false)) {
+    const n = srCounts();
+    if (n.due >= 5) {
+      store.set(`srgate:${student}:${srToday()}`, true);
+      $("#micSheet").innerHTML = `<div class="mic-ic">🧠</div>
+        <h3 id="micTitle">Nhớ lại ${Math.min(20, n.due)} từ cũ trước nha?</h3>
+        <p>Có <b>${n.due}</b> từ đến hạn ôn (trộn các buổi). Khoảng 3 phút: đọc nghĩa → tự nhớ ra từ, bí thì mở chữ như Hangman. Nhớ lại đúng lúc sắp quên là cách nhớ lâu nhất.</p>
+        <div class="row"><button class="primary" id="micGo">🧠 Nhớ lại trước</button><button id="micLater">Vào bài luôn</button></div>`;
+      $("#micModal").hidden = false;
+      $("#micGo").addEventListener("click", () => { closeMic(); location.hash = `fcr~${L.id}`; });
+      $("#micLater").addEventListener("click", () => { closeMic(); viewLesson(L); window.scrollTo(0, 0); });
+      return true;
+    }
+  }
   if (!D || !deckOpen(D) || deckState(D).done || store.get(`fcskip:${student}:${L.id}`, false)) return false;
   $("#micSheet").innerHTML = `<div class="mic-ic">🃏</div>
     <h3 id="micTitle">Ôn từ vựng trước nha?</h3>
@@ -2914,6 +3178,8 @@ function route() {
   if (id === "fc") { setNav("fc"); return viewDecks(); }
   if (id === "me") { setNav("me"); return viewMe(); }
   if (id === "progress") { setNav("progress"); return viewProgress(); }
+  const rm = id.match(/^fcr(?:-([^~]+))?(?:~(.+))?$/);
+  if (rm) { setNav("fc"); const D = rm[1] ? myDecks().find(x => x.id === rm[1]) : null; if (rm[1] && !(D && deckOpen(D))) return viewDecks(); return viewRecall(D, rm[2] || ""); }
   const gm = id.match(/^fcg-([^~]+)(?:~(.+))?$/);
   if (gm) { const D = myDecks().find(x => x.id === gm[1]); setNav("fc"); if (D && deckOpen(D)) return viewGame(D, gm[2] || ""); return viewDecks(); }
   const fm = id.match(/^fc-([^~]+)(?:~(.+))?$/);
