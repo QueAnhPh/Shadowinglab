@@ -2971,7 +2971,8 @@ function srBlank(ex, w) {
   if (!ex) return null;
   const words = srCore(w).split(" ").filter(Boolean);
   if (!words.length) return null;
-  const pat = words.map(x => { const e = x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); return x.length >= 4 ? e.slice(0, -1) + "\\w*" : e; }).join("[\\s\\-]+");
+  const IRR = { go: "go|goes|went|gone|going", be: "be|is|am|are|was|were|been|being", take: "take|takes|took|taken|taking", feel: "feel|feels|felt|feeling", see: "see|sees|saw|seen|seeing", buy: "buy|buys|bought|buying", have: "have|has|had|having", get: "get|gets|got|gotten|getting", sleep: "sleep|sleeps|slept|sleeping", eat: "eat|eats|ate|eaten|eating", do: "do|does|did|done|doing", make: "make|makes|made|making", spend: "spend|spends|spent|spending", run: "run|runs|ran|running", set: "set|sets|setting", put: "put|puts|putting", keep: "keep|keeps|kept|keeping", catch: "catch|catches|caught|catching", know: "know|knows|knew|known|knowing", grasp: "grasp\\w*", stress: "stress\\w*", show: "show|shows|showed|shown|showing", try: "try|tries|tried|trying", my: "my|your|his|her|our|their", myself: "myself|yourself|himself|herself|ourselves|themselves" };
+  const pat = words.map(x => { const k = x.toLowerCase(); if (IRR[k]) return `(?:${IRR[k]})`; const e = x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); return x.length >= 4 ? e.slice(0, -1) + "\\w*" : e; }).join("(?:[\\s\\-]+(?:\\w+[\\s\\-]+)?)");
   const re = new RegExp(`\\b${pat}\\b`, "i");
   if (!re.test(ex)) return null;
   return esc(ex).replace(new RegExp(`\\b${pat}\\b`, "i"), m => `<span class="srgap">${"_".repeat(Math.min(14, Math.max(4, m.length)))}</span>`);
