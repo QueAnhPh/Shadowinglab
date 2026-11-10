@@ -1199,9 +1199,9 @@ function renderSentenceHTML(chunks, statuses) {
 
 /* ---------- speaking strategy: guide + demo notes + note boxes (Part 1 A.R.E. · Part 2 cue card · Part 3 A.R.E.A.) ---------- */
 /* thời lượng nói: nên nói / tối đa (máy tự dừng ghi ở mức tối đa) */
-const SPEAK_LIMIT = { 1: { aim: "20–30 giây", max: 90 }, 2: { aim: "1'30–2'", max: 130 }, 3: { aim: "30–45 giây", max: 90 } };
+const SPEAK_LIMIT = { 1: { aim: "20–30 giây", max: 45 }, 2: { aim: "1'30–2'", max: 130 }, 3: { aim: "30–45 giây", max: 90 } };
 const fmtSec = t => t >= 60 ? `${Math.floor(t / 60)}'${String(t % 60).padStart(2, "0")}"` : `${t} giây`;
-function limitHTML(S) { const P = partOf(S), x = SPEAK_LIMIT[P]; return `<p class="limit small">⏱ <b>Part ${P}</b>: nên nói <b>${x.aim}</b> · tối đa <b>${fmtSec(x.max)}</b> (tới đó máy tự dừng và vẫn lưu bài). <span class="muted">Part 1: 20–30 giây (tối đa 1'30") · Part 2: 1'30–2' (tối đa 2'10") · Part 3: 30–45 giây (tối đa 1'30").</span></p>`; }
+function limitHTML(S) { const P = partOf(S), x = SPEAK_LIMIT[P]; return `<p class="limit small">⏱ <b>Part ${P}</b>: nên nói <b>${x.aim}</b> · tối đa <b>${fmtSec(x.max)}</b> (tới đó máy tự dừng và vẫn lưu bài). <span class="muted">Part 1: 20–30 giây (tối đa 45 giây) · Part 2: 1'30–2' (tối đa 2'10") · Part 3: 30–45 giây (tối đa 1'30").</span></p>`; }
 function partOf(S) { const m = /part\s*([123])/i.exec(S.part || S.label || ""); return m ? +m[1] : 1; }
 const STRAT = {
   1: { name: "Part 1 · A.R.E. + Feeling", time: "3–4 câu · 20–30 giây",
