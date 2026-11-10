@@ -6590,7 +6590,7 @@
        "stress": "get the HANG‿of",
        "band": "7–8",
        "grammar": "get the hang of + N / V-ing; QK got",
-       "ex": "I finally got the hang of chemical equations."
+       "ex": "After a few weeks, I started to get the hang of chemical equations."
       },
       {
        "w": "learn the ropes",
@@ -6640,7 +6640,7 @@
        "stress": "be right‿up my AL-ley",
        "band": "8.5–9",
        "grammar": "sth + is right up + my/your + alley",
-       "ex": "Anything about the human body is right up my alley.",
+       "ex": "Anything about the human body will always be right up my alley.",
        "warn": true
       }
      ],
@@ -6685,15 +6685,6 @@
      "cat": "A. Học tập & môn học",
      "items": [
       {
-       "w": "grasp a concept",
-       "type": "Collocation",
-       "ipa": "/ˌɡræsp ə ˈkɑnsɛpt/",
-       "stress": "grasp‿a CON-cept",
-       "band": "7–8",
-       "grammar": "grasp + a concept / an idea",
-       "ex": "It took me a week to grasp the concept of limits."
-      },
-      {
        "w": "figure out",
        "type": "Phrasal verb",
        "ipa": "/ˌfɪɡjɚ ˈaʊt/",
@@ -6701,9 +6692,18 @@
        "band": "5.5–6.5",
        "grammar": "tách được: figure it out; + how / why / what + clause",
        "ex": "I couldn't figure out how to solve the last problem."
+      },
+      {
+       "w": "grasp a concept",
+       "type": "Collocation",
+       "ipa": "/ˌɡræsp ə ˈkɑnsɛpt/",
+       "stress": "grasp‿a CON-cept",
+       "band": "7–8",
+       "grammar": "grasp + a concept / an idea",
+       "ex": "Drawing diagrams helps me grasp a concept much faster."
       }
      ],
-     "note": "grasp a concept = hiểu một khái niệm · figure out = tìm ra cách giải, + wh-clause"
+     "note": "figure out = tìm ra cách giải, + wh-clause · grasp a concept = hiểu một khái niệm (trang trọng hơn)"
     },
     {
      "mean": "thuộc lòng, nắm chắc, nhớ lâu",
@@ -6716,7 +6716,7 @@
        "stress": "learn … by HEART",
        "band": "5.5–6.5",
        "grammar": "learn + N + by heart; QK learned",
-       "ex": "I learned all the formulas by heart."
+       "ex": "Some biology terms you just have to learn by heart."
       },
       {
        "w": "know sth inside out",
@@ -6725,7 +6725,7 @@
        "stress": "know … in-side OUT",
        "band": "7–8",
        "grammar": "know + N + inside out; QK knew",
-       "ex": "I know the biology formulas inside out."
+       "ex": "Cell biology is the one topic I know inside out."
       },
       {
        "w": "retain information",
@@ -6829,7 +6829,7 @@
        "stress": "the HIGH school grad-u-A-tion ex-AM",
        "band": "4–5",
        "grammar": "take + the graduation exam; in June",
-       "ex": "The graduation exam takes place in June."
+       "ex": "I'll take the high school graduation exam in June."
       }
      ]
     },
@@ -6887,7 +6887,7 @@
        "stress": "take‿a MOCK test",
        "band": "5.5–6.5",
        "grammar": "take + a mock test; QK took",
-       "ex": "I take an IELTS mock test every Saturday."
+       "ex": "I take a mock test every Saturday morning."
       }
      ],
      "note": "take (không dùng do) a mock test"
@@ -6918,7 +6918,7 @@
        "stress": "un-der‿a LOT‿of PRES-sure",
        "band": "4–5",
        "grammar": "be under a lot of pressure + to V",
-       "ex": "Seniors are under a lot of pressure this year."
+       "ex": "It's normal to be under a lot of pressure in senior year."
       },
       {
        "w": "be under pressure",
@@ -6927,7 +6927,7 @@
        "stress": "be un-der PRES-sure",
        "band": "4–5",
        "grammar": "be under pressure + to V",
-       "ex": "I'm under pressure to get into medical school."
+       "ex": "I hate to be under pressure, so I start reviewing early."
       },
       {
        "w": "stressed out",
@@ -6945,7 +6945,7 @@
        "stress": "stress‿OUT",
        "band": "5.5–6.5",
        "grammar": "sth + stresses + me / sb + out",
-       "ex": "Mock tests always stress me out."
+       "ex": "Mock tests always stress out my classmates."
       },
       {
        "w": "overwhelmed",
@@ -6964,15 +6964,6 @@
      "cat": "B. Thi cử & áp lực",
      "items": [
       {
-       "w": "have a lot on my plate",
-       "type": "Idiom",
-       "ipa": "/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/",
-       "stress": "have‿a LOT‿on my PLATE",
-       "band": "7–8",
-       "grammar": "have a lot / too much + on + my/your + plate",
-       "ex": "With extra classes and IELTS, I have a lot on my plate."
-      },
-      {
        "w": "a heavy workload",
        "type": "Collocation",
        "ipa": "/ə ˌhɛvi ˈwɝkˌloʊd/",
@@ -6980,9 +6971,18 @@
        "band": "5.5–6.5",
        "grammar": "have + a heavy workload",
        "ex": "Seniors have a heavy workload."
+      },
+      {
+       "w": "have a lot on my plate",
+       "type": "Idiom",
+       "ipa": "/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/",
+       "stress": "have‿a LOT‿on my PLATE",
+       "band": "7–8",
+       "grammar": "have a lot / too much + on + my/your + plate",
+       "ex": "With extra classes and IELTS, I have a lot on my plate."
       }
      ],
-     "note": "have a lot on my plate: chủ ngữ là người · a heavy workload: have + a heavy workload"
+     "note": "a heavy workload: have + a heavy workload · have a lot on my plate: chủ ngữ là người, thân mật"
     },
     {
      "mean": "học dồn, thức đêm ôn thi",
@@ -7066,7 +7066,7 @@
        "stress": "do WELL‿in",
        "band": "4–5",
        "grammar": "do well in + an exam / a subject; QK did",
-       "ex": "I did well in the last mock test."
+       "ex": "I want to do well in the next mock test."
       },
       {
        "w": "get good grades",
@@ -7084,7 +7084,7 @@
        "stress": "ACE",
        "band": "7–8",
        "grammar": "ace + a test / an exam; QK aced /eɪst/",
-       "ex": "I aced my last English test."
+       "ex": "I hope to ace my English test next week."
       },
       {
        "w": "breeze through",
@@ -7111,7 +7111,7 @@
        "stress": "pass with fly-ing COL-ors",
        "band": "7–8",
        "grammar": "pass (+ the exam) + with flying colors",
-       "ex": "She passed the test with flying colors."
+       "ex": "I hope to pass with flying colors in June."
       }
      ],
      "note": "do well in / get good grades trung tính · ace thân mật · breeze / sail through = qua dễ dàng · with flying colors = điểm rất cao (Mỹ: colors)"
@@ -7222,6 +7222,15 @@
      "cat": "C. Thói quen & phương pháp học",
      "items": [
       {
+       "w": "put off",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpʊt ˈɔf/",
+       "stress": "put‿OFF",
+       "band": "5.5–6.5",
+       "grammar": "tách được: put it off; + V-ing; QK put off",
+       "ex": "I always put off my essays until Sunday night."
+      },
+      {
        "w": "procrastinate",
        "type": "Vocab",
        "ipa": "/prəˈkræstəˌneɪt/",
@@ -7229,18 +7238,9 @@
        "band": "7–8",
        "grammar": "không tân ngữ; danh từ procrastination",
        "ex": "I tend to procrastinate when a subject is boring."
-      },
-      {
-       "w": "put off",
-       "type": "Phrasal verb",
-       "ipa": "/ˌpʊt ˈɔf/",
-       "stress": "put‿OFF",
-       "band": "5.5–6.5",
-       "grammar": "tách được: put it off; + V-ing; QK put off",
-       "ex": "I keep putting off my essay."
       }
      ],
-     "note": "procrastinate không tân ngữ · put off + N / V-ing (tách được: put it off)"
+     "note": "put off + N / V-ing (tách được: put it off) · procrastinate không tân ngữ"
     },
     {
      "mean": "học hành chăm chỉ, nghiêm túc",
@@ -7293,7 +7293,7 @@
        "stress": "meet‿a DEAD-line",
        "band": "5.5–6.5",
        "grammar": "meet a deadline ↔ miss a deadline; QK met",
-       "ex": "I always meet deadlines for group projects."
+       "ex": "It's hard to meet a deadline when I have three projects."
       }
      ]
     },

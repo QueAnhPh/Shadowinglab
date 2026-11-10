@@ -9,23 +9,23 @@ a required subject|Collocation|/ə rɪˈkwaɪɚd ˈsʌbdʒɪkt/|a re-QUIRED SUB-
 an elective|Vocab|/ən ɪˈlɛktɪv/|an e-LEC-tive|5.5–6.5|đếm được: take / choose + an elective|I chose extra biology as an elective.
 = học được, bắt đầu quen tay | pick up = học được tự nhiên, không cần cố · get the hang of = sau một thời gian mới làm được · learn the ropes = làm quen việc ở chỗ mới (lớp, câu lạc bộ, nơi thực tập)
 pick up (a skill)|Phrasal verb|/ˌpɪk ˈʌp/|pick‿UP|5.5–6.5|tách được: pick up English / pick it up; QK picked up|I picked up a lot of English from YouTube.
-get the hang of|Idiom|/ˌɡɛt ðə ˈhæŋ əv/|get the HANG‿of|7–8|get the hang of + N / V-ing; QK got|I finally got the hang of chemical equations.
+get the hang of|Idiom|/ˌɡɛt ðə ˈhæŋ əv/|get the HANG‿of|7–8|get the hang of + N / V-ing; QK got|After a few weeks, I started to get the hang of chemical equations.
 learn the ropes|Idiom|/ˌlɝn ðə ˈroʊps/|learn the ROPES|7–8|learn the ropes (of + N)|Dental students spend the first months learning the ropes in the clinic.
 = giỏi, có năng khiếu | excel at = học giỏi thật sự (nhờ cố gắng) · gifted in = có năng khiếu bẩm sinh, hơi trang trọng
 excel at|Vocab|/ɪkˈsɛl æt/|ex-CEL‿at|5.5–6.5|excel at + N / V-ing; QK excelled|She excels at biology.
 gifted in|Vocab|/ˈɡɪftɪd ɪn/|GIFT-ed‿in|7–8|be gifted in + N / V-ing|She is gifted in science.
 = đúng sở trường, đúng gu | ⚠ thân mật, band rất cao · chủ ngữ là sự việc: sth is right up my alley
-be right up my alley|Idiom|/bi ˌraɪt ʌp maɪ ˈæli/|be right‿up my AL-ley|8.5–9|sth + is right up + my/your + alley|Anything about the human body is right up my alley.
+be right up my alley|Idiom|/bi ˌraɪt ʌp maɪ ˈæli/|be right‿up my AL-ley|8.5–9|sth + is right up + my/your + alley|Anything about the human body will always be right up my alley.
 = khó, gặp khó | struggle with: chủ ngữ là người · a tough nut to crack / a steep learning curve: chủ ngữ là môn, việc
 struggle with|Vocab|/ˈstrʌɡəl wɪð/|STRUG-gle with|5.5–6.5|sb + struggle with + N / V-ing|I still struggle with chemistry.
 a tough nut to crack|Idiom|/ə ˌtʌf ˌnʌt tə ˈkræk/|a TOUGH NUT to CRACK|7–8|sth + is a tough nut to crack|Organic chemistry is a tough nut to crack.
 a steep learning curve|Collocation|/ə ˌstip ˈlɝnɪŋ ˌkɝv/|a steep LEARN-ing curve|7–8|sth + has / sb + faces + a steep learning curve|Chemistry in 12th grade has a steep learning curve.
-= nắm được, hiểu ra | grasp a concept = hiểu một khái niệm · figure out = tìm ra cách giải, + wh-clause
-grasp a concept|Collocation|/ˌɡræsp ə ˈkɑnsɛpt/|grasp‿a CON-cept|7–8|grasp + a concept / an idea|It took me a week to grasp the concept of limits.
+= nắm được, hiểu ra | figure out = tìm ra cách giải, + wh-clause · grasp a concept = hiểu một khái niệm (trang trọng hơn)
 figure out|Phrasal verb|/ˌfɪɡjɚ ˈaʊt/|fig-ure‿OUT|5.5–6.5|tách được: figure it out; + how / why / what + clause|I couldn't figure out how to solve the last problem.
+grasp a concept|Collocation|/ˌɡræsp ə ˈkɑnsɛpt/|grasp‿a CON-cept|7–8|grasp + a concept / an idea|Drawing diagrams helps me grasp a concept much faster.
 = thuộc lòng, nắm chắc, nhớ lâu | learn by heart = học thuộc · know inside out = hiểu tường tận · retain information = giữ được kiến thức lâu (trang trọng)
-learn sth by heart|Idiom|/ˌlɝn ... baɪ ˈhɑrt/|learn … by HEART|5.5–6.5|learn + N + by heart; QK learned|I learned all the formulas by heart.
-know sth inside out|Idiom|/ˌnoʊ ... ˌɪnˌsaɪd ˈaʊt/|know … in-side OUT|7–8|know + N + inside out; QK knew|I know the biology formulas inside out.
+learn sth by heart|Idiom|/ˌlɝn ... baɪ ˈhɑrt/|learn … by HEART|5.5–6.5|learn + N + by heart; QK learned|Some biology terms you just have to learn by heart.
+know sth inside out|Idiom|/ˌnoʊ ... ˌɪnˌsaɪd ˈaʊt/|know … in-side OUT|7–8|know + N + inside out; QK knew|Cell biology is the one topic I know inside out.
 retain information|Collocation|/rɪˌteɪn ˌɪnfɚˈmeɪʃən/|re-TAIN in-for-MA-tion|7–8|information không đếm được|Teaching my friends helps me retain information.
 = thực hành, trực tiếp làm
 hands-on|Vocab|/ˌhændzˈɑn/|hands-ON|7–8|tính từ: hands-on + experience / subject|I prefer hands-on subjects like biology lab work.
@@ -39,25 +39,25 @@ brush up on|Phrasal verb|/ˌbrʌʃ ˈʌp ɑn/|brush‿UP‿on|7–8|không tách
 look up (a word)|Phrasal verb|/ˌlʊk ˈʌp/|look‿UP|4–5|tách được: look up a word / look it up|I look up every new word on Cambridge Dictionary.
 @B. Thi cử & áp lực
 = kỳ thi tốt nghiệp THPT
-the high school graduation exam|Collocation|/ðə ˌhaɪ skul ˌɡrædʒuˈeɪʃən ɪɡˈzæm/|the HIGH school grad-u-A-tion ex-AM|4–5|take + the graduation exam; in June|The graduation exam takes place in June.
+the high school graduation exam|Collocation|/ðə ˌhaɪ skul ˌɡrædʒuˈeɪʃən ɪɡˈzæm/|the HIGH school grad-u-A-tion ex-AM|4–5|take + the graduation exam; in June|I'll take the high school graduation exam in June.
 = quyết định thành bại, then chốt | high-stakes / make-or-break đứng trước danh từ (a ___ exam) · pivotal trang trọng: play a pivotal role in
 a high-stakes exam|Collocation|/ə ˌhaɪˈsteɪks ɪɡˈzæm/|a high-STAKES ex-AM|7–8|high-stakes = tính từ ghép, có gạch nối|It's a high-stakes exam, so everyone is nervous.
 make or break|Idiom|/ˌmeɪk ɔr ˈbreɪk/|MAKE or BREAK|7–8|sth is make or break / a make-or-break + N|This year is make or break for me.
 pivotal|Vocab|/ˈpɪvəɾəl/|PIV-o-tal|7–8|play a pivotal role in + N|This exam plays a pivotal role in my future.
 = bài thi thử | take (không dùng do) a mock test
 a mock test|Collocation|/ə ˈmɑk ˌtɛst/|a MOCK test|5.5–6.5|đếm được: a mock test / mock tests|My school has a mock test every month.
-take a mock test|Collocation|/ˌteɪk ə ˈmɑk ˌtɛst/|take‿a MOCK test|5.5–6.5|take + a mock test; QK took|I take an IELTS mock test every Saturday.
+take a mock test|Collocation|/ˌteɪk ə ˈmɑk ˌtɛst/|take‿a MOCK test|5.5–6.5|take + a mock test; QK took|I take a mock test every Saturday morning.
 = tuyển sinh đại học
 college admissions|Collocation|/ˈkɑlɪdʒ ədˈmɪʃənz/|COL-lege ad-MIS-sions|5.5–6.5|luôn số nhiều: admissions|IELTS can really help with college admissions.
 = chịu áp lực, căng thẳng | under pressure = có áp lực phải làm gì (+ to V) · stressed out = căng thẳng cao độ (thân mật) · overwhelmed = quá tải, choáng ngợp
-be under a lot of pressure|Collocation|/bi ˌʌndɚ ə ˌlɑɾ əv ˈprɛʃɚ/|un-der‿a LOT‿of PRES-sure|4–5|be under a lot of pressure + to V|Seniors are under a lot of pressure this year.
-be under pressure|Collocation|/bi ˌʌndɚ ˈprɛʃɚ/|be un-der PRES-sure|4–5|be under pressure + to V|I'm under pressure to get into medical school.
+be under a lot of pressure|Collocation|/bi ˌʌndɚ ə ˌlɑɾ əv ˈprɛʃɚ/|un-der‿a LOT‿of PRES-sure|4–5|be under a lot of pressure + to V|It's normal to be under a lot of pressure in senior year.
+be under pressure|Collocation|/bi ˌʌndɚ ˈprɛʃɚ/|be un-der PRES-sure|4–5|be under pressure + to V|I hate to be under pressure, so I start reviewing early.
 stressed out|Phrasal verb|/ˌstrɛst ˈaʊt/|stressed‿OUT|5.5–6.5|be / get + stressed out (+ about N)|I get stressed out before every mock test.
-stress (sb) out|Phrasal verb|/ˌstrɛs ˈaʊt/|stress‿OUT|5.5–6.5|sth + stresses + me / sb + out|Mock tests always stress me out.
+stress (sb) out|Phrasal verb|/ˌstrɛs ˈaʊt/|stress‿OUT|5.5–6.5|sth + stresses + me / sb + out|Mock tests always stress out my classmates.
 overwhelmed|Vocab|/ˌoʊvɚˈwɛlmd/|o-ver-WHELMED|7–8|feel overwhelmed + by / with + N|I felt overwhelmed by all the mock tests.
-= bận ngập đầu, nhiều bài vở | have a lot on my plate: chủ ngữ là người · a heavy workload: have + a heavy workload
-have a lot on my plate|Idiom|/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/|have‿a LOT‿on my PLATE|7–8|have a lot / too much + on + my/your + plate|With extra classes and IELTS, I have a lot on my plate.
+= bận ngập đầu, nhiều bài vở | a heavy workload: have + a heavy workload · have a lot on my plate: chủ ngữ là người, thân mật
 a heavy workload|Collocation|/ə ˌhɛvi ˈwɝkˌloʊd/|a heav-y WORK-load|5.5–6.5|have + a heavy workload|Seniors have a heavy workload.
+have a lot on my plate|Idiom|/hæv ə ˈlɑt ɑn maɪ ˈpleɪt/|have‿a LOT‿on my PLATE|7–8|have a lot / too much + on + my/your + plate|With extra classes and IELTS, I have a lot on my plate.
 = học dồn, thức đêm ôn thi | cram for = nhồi nhiều bài trong thời gian ngắn · pull an all-nighter = thức trắng cả đêm
 cram for|Phrasal verb|/ˈkræm fɚ/|CRAM for|5.5–6.5|cram for + an exam / a test; QK crammed|I used to cram for tests the night before.
 pull an all-nighter|Idiom|/ˌpʊl ən ˌɔlˈnaɪɾɚ/|pull‿an all-NIGHT-er|7–8|pull + an all-nighter; QK pulled|I pulled an all-nighter before my history test.
@@ -68,12 +68,12 @@ catch up on|Phrasal verb|/ˌkætʃ ˈʌp ɑn/|catch‿UP‿on|5.5–6.5|không t
 = kiệt sức (do học quá sức)
 burn out|Phrasal verb|/ˌbɝn ˈaʊt/|burn‿OUT|7–8|không tân ngữ; danh từ burnout|If I study twelve hours a day, I'll burn out.
 = làm bài tốt, đỗ dễ dàng | do well in / get good grades trung tính · ace thân mật · breeze / sail through = qua dễ dàng · with flying colors = điểm rất cao (Mỹ: colors)
-do well in|Collocation|/ˌdu ˈwɛl ɪn/|do WELL‿in|4–5|do well in + an exam / a subject; QK did|I did well in the last mock test.
+do well in|Collocation|/ˌdu ˈwɛl ɪn/|do WELL‿in|4–5|do well in + an exam / a subject; QK did|I want to do well in the next mock test.
 get good grades|Collocation|/ˌɡɛt ˌɡʊd ˈɡreɪdz/|get good GRADES|4–5|get good grades + in + môn (Mỹ: grades, Anh: marks)|I get good grades in biology.
-ace (a test)|Vocab|/eɪs/|ACE|7–8|ace + a test / an exam; QK aced /eɪst/|I aced my last English test.
+ace (a test)|Vocab|/eɪs/|ACE|7–8|ace + a test / an exam; QK aced /eɪst/|I hope to ace my English test next week.
 breeze through|Phrasal verb|/ˈbriz ˌθru/|BREEZE through|7–8|không tách được: + a test / an exam|She breezed through the speaking test.
 sail through|Phrasal verb|/ˈseɪl ˌθru/|SAIL through|7–8|không tách được: + an exam / a test|I hope to sail through the entrance exam.
-pass with flying colors|Idiom|/ˌpæs wɪð ˌflaɪɪŋ ˈkʌlɚz/|pass with fly-ing COL-ors|7–8|pass (+ the exam) + with flying colors|She passed the test with flying colors.
+pass with flying colors|Idiom|/ˌpæs wɪð ˌflaɪɪŋ ˈkʌlɚz/|pass with fly-ing COL-ors|7–8|pass (+ the exam) + with flying colors|I hope to pass with flying colors in June.
 @C. Thói quen & phương pháp học
 = ghi chép
 take notes|Collocation|/ˌteɪk ˈnoʊts/|take NOTES|4–5|take notes + on + N|I take notes on my iPad in every class.
@@ -88,16 +88,16 @@ stay focused|Collocation|/ˌsteɪ ˈfoʊkəst/|stay FO-cused|5.5–6.5|stay focu
 keep my eye on the ball|Idiom|/ˌkip maɪ ˈaɪ ɑn ðə ˈbɔl/|keep my EYE‿on the BALL|7–8|keep + my/your + eye on the ball|I try to keep my eye on the ball during exam season.
 = mất tập trung, "treo máy"
 zone out|Phrasal verb|/ˌzoʊn ˈaʊt/|zone‿OUT|7–8|không tân ngữ (thân mật); QK zoned out|I zone out in long lectures.
-= trì hoãn | procrastinate không tân ngữ · put off + N / V-ing (tách được: put it off)
+= trì hoãn | put off + N / V-ing (tách được: put it off) · procrastinate không tân ngữ
+put off|Phrasal verb|/ˌpʊt ˈɔf/|put‿OFF|5.5–6.5|tách được: put it off; + V-ing; QK put off|I always put off my essays until Sunday night.
 procrastinate|Vocab|/prəˈkræstəˌneɪt/|pro-CRAS-ti-nate|7–8|không tân ngữ; danh từ procrastination|I tend to procrastinate when a subject is boring.
-put off|Phrasal verb|/ˌpʊt ˈɔf/|put‿OFF|5.5–6.5|tách được: put it off; + V-ing; QK put off|I keep putting off my essay.
 = học hành chăm chỉ, nghiêm túc | put in the hours = bỏ nhiều giờ công sức · hit the books = bắt tay vào học nghiêm túc (thân mật)
 put in the hours|Idiom|/ˌpʊt ɪn ði ˈaʊɚz/|put‿in the HOURS|7–8|put in the hours; QK put in|You can't get a 6.5 unless you put in the hours.
 hit the books|Idiom|/ˌhɪt ðə ˈbʊks/|hit the BOOKS|7–8|hit the books; QK hit|After Tết, I really need to hit the books.
 = quản lý thời gian
 manage my time|Collocation|/ˌmænɪdʒ maɪ ˈtaɪm/|MAN-age my TIME|5.5–6.5|manage + my/your + time; danh từ time management|I'm learning to manage my time better.
 = kịp hạn
-meet a deadline|Collocation|/ˌmit ə ˈdɛdˌlaɪn/|meet‿a DEAD-line|5.5–6.5|meet a deadline ↔ miss a deadline; QK met|I always meet deadlines for group projects.
+meet a deadline|Collocation|/ˌmit ə ˈdɛdˌlaɪn/|meet‿a DEAD-line|5.5–6.5|meet a deadline ↔ miss a deadline; QK met|It's hard to meet a deadline when I have three projects.
 @D. Tương lai: đại học, ngành học, nghề nghiệp
 = nộp hồ sơ vào (trường)
 apply to (a university)|Vocab|/əˈplaɪ tu/|ap-PLY to|4–5|apply to + trường; apply for + học bổng / việc|I'm applying to the University of Medicine and Pharmacy.
