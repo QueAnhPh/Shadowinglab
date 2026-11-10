@@ -589,9 +589,17 @@ window.Whisper = {
   async transcribeLong(f32, onProgress) {
     if (!this._long) this._long = pipeline("automatic-speech-recognition", "Xenova/whisper-base.en",
       { dtype: "q8", device: "wasm", progress_callback: p => onProgress && onProgress(p) }).catch(e => { this._long = null; throw e; });
-    const asr = await this._long;
-    const out = await asr(f32, { chunk_length_s: 30, stride_length_s: 5 });
-    return (out && out.text || "").trim();
+    try {
+      const asr = await this._long;
+      const out = await asr(f32, { chunk_length_s: 30, stride_length_s: 5 });
+      return (out && out.text || "").trim();
+    } catch (e) {
+      /* máy yếu / hết RAM: bỏ model base (lần sau tải lại), chép bằng model tiny đã dùng cho thẻ câu mẫu */
+      console.error("whisper-base failed, fallback tiny", e); this._long = null; window.__whisperErr = String(e && e.message || e);
+      const asr = await this.load(onProgress);
+      const out = await asr(f32, { chunk_length_s: 30, stride_length_s: 5 });
+      return (out && out.text || "").trim();
+    }
   }
 };
 window.dispatchEvent(new Event("whisper-ready"));
@@ -1298,9 +1306,11 @@ function viewLesson(L) {
         ${stratHTML(L, s)}
         ${notesHTML(L, s, i)}
         <div class="actions"><button class="recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm thử</button><button class="primary submit" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>📤 Ghi âm nộp bài</button></div>
-        <p class="muted small">🎙 <b>Ghi âm thử</b>: tập thoải mái, không chấm, không tính lượt. 📤 <b>Ghi âm nộp bài</b>: máy chấm theo 4 tiêu chí và lưu kết quả, tối đa 3 lần mỗi câu.</p>
+        <p class="muted small">🎙 <b>Ghi âm thử</b>: tập thoải mái, không chấm, không tính lượt. 📤 <b>Ghi âm nộp bài</b>: máy chấm theo 4 tiêu chí và lưu kết quả, tối đa 3 lần mỗi câu. Ghi thử thấy ổn thì bấm <b>Nộp bản ghi thử này</b>, khỏi nói lại.</p>
         <div class="live" aria-live="polite"></div>
+        <div class="trysub" hidden><button class="primary subtry">📤 Hài lòng rồi? Nộp bản ghi thử này</button></div>
         <p class="subst" hidden></p>
+        <div class="refb" hidden><button class="regrade">🔁 Chấm lại bài đã nộp</button> <span class="muted small">không tốn lượt nộp</span></div>
         <details class="cmp" hidden></details>
         ${feedbackHTML(student, L.id, i)}
       </section>`;
@@ -1336,6 +1346,8 @@ function viewLesson(L) {
     if (S.free) {
       card.querySelector(".recfree").addEventListener("click", e => recordFree(L, i, card, e.currentTarget));
       card.querySelector(".submit").addEventListener("click", e => confirmSubmit(L, i, card, e.currentTarget));
+      card.querySelector(".subtry").addEventListener("click", () => confirmSubmitTrial(L, i, card));
+      card.querySelector(".regrade").addEventListener("click", () => regrade(L, i, card));
       wireNotes(L, i, card);
       renderCompare(L, i, card); subStatus(L, i, card); return;
     }
@@ -2104,7 +2116,7 @@ async function recordFree(L, i, card, btn, forSubmit) {
     const sec = Math.round((Date.now() - t0) / 1000);
     if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
     if (an && lvPeak < 0.004) { live.textContent = "⚠️ Bản ghi không có tiếng (micro không thu được giọng), nên chưa lưu và chưa tính lượt. Tắt tai nghe Bluetooth, kiểm tra quyền Micrô rồi ghi lại nha."; return; }
-    live.textContent = forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Sẵn sàng thì bấm 📤 Ghi âm nộp bài.`;
+    live.textContent = forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Thấy ổn thì bấm 📤 Nộp bản ghi thử này, chưa ổn thì ghi lại.`;
     card.querySelector(".best").textContent = forSubmit ? "Đã nộp" : "Đã ghi thử";
     await recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));
     if (forSubmit) await submitFree(L, i, card, btn, sec);
@@ -2115,6 +2127,7 @@ async function recordFree(L, i, card, btn, forSubmit) {
   if (forSubmit && P !== 2 && nb) { nb.open = false; live.textContent = "Thi thật Part " + P + " không có giấy nháp, nên ghi chú đã gập lại. Nói đi em!"; }
   const cap = setTimeout(() => session.stop(), capSec * 1000);
   rec = session;
+  const ts = card.querySelector(".trysub"); if (ts) ts.hidden = true;
 }
 /* ---------- submit a free answer + teacher feedback (DATA.feedback[sid][lessonId][i]) ---------- */
 const subKey = L => `sub:${student}:${L.id}`;
@@ -2147,12 +2160,16 @@ function subStatus(L, i, card) {
   let qn = card.querySelector(".quota");
   if (!qn) { qn = document.createElement("p"); qn.className = "quota muted"; st.after(qn); }
   qn.textContent = quotaText(L, i);
+  const ts = card.querySelector(".trysub");
+  if (ts) ts.hidden = !!rec || !left || !cloudUser() || !(cur && cur.last && mem.last) || (sub && sub >= cur.last.at);
   st.hidden = !sub;
   if (sub) {
     const graded = f && f.sub && f.sub >= sub;
     st.className = "subst" + (graded ? "" : " wait");
-    st.textContent = graded ? `✅ Đã nộp ${fmtWhen(sub)} · nhận xét ở bên dưới.` : `📤 Đã nộp ${fmtWhen(sub)} · chờ nhận xét.`;
+    st.textContent = graded ? `✅ Đã nộp ${fmtWhen(sub)} · nhận xét ở bên dưới.` : `📤 Đã nộp ${fmtWhen(sub)} · chưa có nhận xét của máy.`;
   }
+  const rf = card.querySelector(".refb");
+  if (rf) rf.hidden = !!rec || !sub || !!(f && f.sub && f.sub >= sub) || !(mem.sub || mem.last) || card._grading;
 }
 function attemptsLeft(L, i) {
   const all = store.get(quotaKey(), {}), q = all[`${L.id}~${i}`];
@@ -2177,6 +2194,29 @@ function confirmSubmit(L, i, card, btn) {
   $("#micLater").addEventListener("click", closeMic);
   $("#micGo").addEventListener("click", () => { closeMic(); recordFree(L, i, card, btn, true); });
 }
+/* nộp lại đúng bản ghi thử gần nhất (HS nghe lại thấy hài lòng) – cùng quota 3 lần/câu */
+function confirmSubmitTrial(L, i, card) {
+  const live = card.querySelector(".live"), left = attemptsLeft(L, i);
+  const cur = getTakes(L)[i], mem = CLIPS[L.id + ":" + i] || {};
+  if (!cloudUser()) { live.textContent = "Em đăng nhập Gmail (ở trang chính) thì mới nộp bài cho chị được nha."; return; }
+  if (!left) { live.textContent = "Câu này em đã nộp đủ 3 lần. Xem nhận xét bên dưới và tập lại bằng 🎙 Ghi âm thử nha."; return; }
+  if (!cur || !cur.last || !mem.last) { live.textContent = "Chưa có bản ghi thử để nộp. Em bấm 🎙 Ghi âm thử trước nha."; return; }
+  $("#micSheet").innerHTML = `<div class="mic-ic">📤</div>
+    <h3 id="micTitle">Nộp bản ghi thử này?</h3>
+    <p>Bản ghi ${esc(cur.last.h || "")} lúc ${fmtWhen(cur.last.at)}. Em nghe lại lần cuối nếu muốn:</p>
+    <p><button id="micPlay">▶ Nghe lại</button></p>
+    <p>Máy sẽ chấm theo 4 tiêu chí IELTS và lưu cho chị xem. <b>Câu này còn ${left}/3 lần nộp.</b></p>
+    <div class="row"><button class="primary" id="micGo">📤 Nộp bản này</button><button id="micLater">Để sau</button></div>`;
+  $("#micModal").hidden = false;
+  let a = null;
+  $("#micPlay").addEventListener("click", () => { try { player.pause(); if (a) a.pause(); a = new Audio(mem.last); a.play().catch(() => {}); } catch {} });
+  $("#micLater").addEventListener("click", () => { if (a) a.pause(); closeMic(); });
+  $("#micGo").addEventListener("click", async () => {
+    if (a) a.pause(); closeMic();
+    const b = card.querySelector(".subtry"); b.disabled = true;
+    try { await submitFree(L, i, card, card.querySelector(".submit"), 0); } finally { b.disabled = false; subStatus(L, i, card); }
+  });
+}
 async function submitFree(L, i, card, btn, sec) {
   const live = card.querySelector(".live");
   if (!cloudUser()) { live.textContent = "Em đăng nhập Gmail (ở trang chính) thì mới nộp bài cho chị được nha."; return; }
@@ -2185,6 +2225,7 @@ async function submitFree(L, i, card, btn, sec) {
   btn.disabled = true; live.textContent = "Đang nộp…";
   try {
     await window.Cloud.saveTake(`${L.id}~${i}~sub`, { lesson: L.id, i, kind: "sub", at: Date.now(), took: cur.last.at, h: cur.last.h || "", s: 100, st: "", audio: mem.last });
+    mem.sub = mem.last;
     const subs = store.get(subKey(L), {}); subs[i] = Date.now(); store.set(subKey(L), subs);
     const bk = `best:${student}:${L.id}`, best = store.get(bk, {}); best[i] = 100; store.set(bk, best); syncBest(L.id, best);
     live.textContent = "Đã nộp! Máy đang nghe bài của em để nhận xét…";
@@ -2201,6 +2242,15 @@ function quotaText(L, i) {
   const all = store.get(quotaKey(), {}), q = all[`${L.id}~${i}`], w = all._week;
   const card = q ? Math.max(0, q.cardMax - q.card) : 3;
   return `🤖 Còn ${card}/3 lần nộp cho câu này${w ? ` · tuần này còn ${Math.max(0, w.weekMax - w.week)}/${w.weekMax}` : ""}. Ghi âm thử không tính lượt.`;
+}
+/* nộp rồi mà máy chưa nhận xét (mạng, máy yếu…): chấm lại đúng bản đã nộp; server chỉ trừ lượt khi chấm xong */
+async function regrade(L, i, card) {
+  const mem = CLIPS[L.id + ":" + i] || {}, sub = store.get(subKey(L), {})[i], live = card.querySelector(".live");
+  const url = mem.sub || mem.last;
+  if (!sub || !url) { live.textContent = "Chưa tìm thấy bản đã nộp. Em ghi âm và nộp lại nha."; return; }
+  if (!cloudUser()) { live.textContent = "Em đăng nhập Gmail (ở trang chính) thì mới chấm được nha."; return; }
+  card._grading = true; subStatus(L, i, card);
+  try { await autoFeedback(L, i, card, url, sub); } finally { card._grading = false; subStatus(L, i, card); }
 }
 async function autoFeedback(L, i, card, dataURL, subAt) {
   const live = card.querySelector(".live"), S = L.sentences[i];
@@ -2228,7 +2278,12 @@ async function autoFeedback(L, i, card, dataURL, subAt) {
     live.textContent = "Xong! Đọc nhận xét bên dưới. Muốn sửa thì ghi âm lại rồi nộp lại nha.";
     const old = card.querySelector(".fb"); if (old) old.remove();
     card.insertAdjacentHTML("beforeend", feedbackHTML(student, L.id, i));
-  } catch (e) { console.error(e); live.textContent = "Đã nộp. Máy chưa nhận xét được lúc này, chị sẽ chấm sau nha."; }
+  } catch (e) {
+    console.error(e);
+    live.textContent = "Bài đã nộp và lưu cho chị rồi. Máy chưa nhận xét được (máy/mạng yếu). Em bấm 🔁 Chấm lại bài đã nộp, không tốn lượt nha.";
+    try { window.Cloud.saveTake(`${L.id}~${i}~fberr`, { lesson: L.id, i, kind: "fberr", at: Date.now(), s: 0, st: "", h: "", audio: "", err: String(e && e.message || e).slice(0, 300), wErr: (window.__whisperErr || "").slice(0, 200), ua: navigator.userAgent.slice(0, 200) }).catch(() => {}); } catch {}
+  }
+  subStatus(L, i, card);
 }
 /* words the recognizer marked wrong in the latest take of each sentence (this device + takes synced from the account) */
 function wordReport(sid) {
@@ -2312,8 +2367,8 @@ function loadTakes(L) {
     const all = getTakes(L);
     for (const r of rows) {
       if (r.kind === "note") { const all = store.get(notesKey(L), {}); if (!all[r.i] || !Object.values(all[r.i]).some(Boolean)) { all[r.i] = r.notes || {}; store.set(notesKey(L), all); const inp = document.querySelectorAll(`.card[data-i="${r.i}"] .notes input`); inp.forEach(x => { if (!x.value) x.value = (r.notes || {})[x.dataset.k] || ""; }); } continue; }
-      if (r.kind === "quota") continue;
-      if (r.kind === "sub") { const subs = store.get(subKey(L), {}); if (!subs[r.i] || r.at > subs[r.i]) { subs[r.i] = r.at; store.set(subKey(L), subs); } continue; }
+      if (r.kind === "quota" || r.kind === "fberr") continue;
+      if (r.kind === "sub") { const subs = store.get(subKey(L), {}); if (!subs[r.i] || r.at >= subs[r.i]) { subs[r.i] = r.at; store.set(subKey(L), subs); if (r.audio) (CLIPS[L.id + ":" + r.i] || (CLIPS[L.id + ":" + r.i] = {})).sub = r.audio; } continue; }
       if (r.kind === "fb") { const fbs = store.get(`fb:${student}:${L.id}`, {}); if (!fbs[r.i] || (r.fb && r.fb.sub >= (fbs[r.i].sub || 0))) { fbs[r.i] = r.fb; store.set(`fb:${student}:${L.id}`, fbs); } continue; }
       const cur = all[r.i] || (all[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at };
       const keep = r.kind === "first" ? (!cur.first || t.at <= cur.first.at) : (!cur.last || t.at >= cur.last.at);
@@ -2589,7 +2644,7 @@ async function viewTeacherLesson(sid, L) {
   const takes = {};
   try {
     for (const u of docs) for (const r of await window.Cloud.loadTakesOf(u.uid, L.id)) {
-      if (r.kind === "sub" || r.kind === "fb" || r.kind === "note" || r.kind === "quota" || r.kind === "gap") continue;
+      if (r.kind === "sub" || r.kind === "fb" || r.kind === "note" || r.kind === "quota" || r.kind === "gap" || r.kind === "fberr") continue;
       const cur = takes[r.i] || (takes[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at, audio: r.audio };
       if (r.kind === "first" ? (!cur.first || t.at < cur.first.at) : (!cur.last || t.at > cur.last.at)) cur[r.kind] = t;
     }
