@@ -11,7 +11,7 @@
    Chặn lố budget (credit trả trước 5 USD, Sonnet 5.5 ≈ 0.011 USD / lần chấm):
      - chỉ nhận thẻ có "free": true của bài giao cho đúng HS đó; câu hỏi lấy từ lessons.json, không lấy từ trình duyệt
      - mỗi câu tối đa PER_CARD lần chấm, mỗi HS tối đa PER_WEEK lần / tuần (5 câu × 3) (đếm ở Firestore users/{uid}/takes/_aiquota)
-     - bản chép lời tối đa 2500 ký tự, trả lời tối đa 1200 token
+     - bản chép lời tối đa 2500 ký tự, trả lời tối đa 2000 token (hỏng thì thử lại 1 lần 3000, HS vẫn chỉ tính 1 lượt)
    POST { idToken, lesson, i, transcript, seconds } → feedback JSON + quota { card, cardMax, week, weekMax }
    Needs the Cloudflare Pages secret ANTHROPIC_API_KEY. */
 const PROJECT = "speakback-522aa";
@@ -70,7 +70,43 @@ Quy tắc:
 - Nếu có DÀN Ý em ghi trước (A.R.E. / cue card / A.R.E.A.): trong tips có 1 ý nhận xét em có triển khai đủ các phần của dàn ý không (thiếu phần nào, phần nào quá ngắn).
 - redo: 1 câu nhắc em ghi âm lại phần nào (hoặc "" nếu bài đã tốt).
 - Nếu bản chép quá ngắn, lạc đề hoặc không phải tiếng Anh: band "", good [], fix [], tips nhắc em nói lại đúng yêu cầu.
-Chỉ trả về JSON hợp lệ, không markdown: {"band":"5.5","good":[...],"fix":[{"err":"","fix":"","why":""}],"tips":[...],"better":"","redo":""}`;
+Trả kết quả bằng công cụ give_feedback, không viết gì ngoài công cụ.`;
+
+/* bắt model trả JSON qua tool (API tự dựng JSON đúng cấu trúc) → hết lỗi "Máy trả lời lỗi" do JSON hỏng (ngoặc kép trong chuỗi, bị cắt giữa chừng) */
+const TOOL = {
+  name: "give_feedback",
+  description: "Nhận xét bài nói IELTS của học sinh.",
+  input_schema: {
+    type: "object",
+    properties: {
+      band: { type: "string", description: "band ước lượng, bước .5 (vd 5.5); để trống nếu không chấm được" },
+      good: { type: "array", items: { type: "string" } },
+      fix: { type: "array", items: { type: "object", properties: { err: { type: "string" }, fix: { type: "string" }, why: { type: "string" } }, required: ["err", "fix", "why"] } },
+      tips: { type: "array", items: { type: "string" } },
+      better: { type: "string" },
+      redo: { type: "string" },
+    },
+    required: ["band", "good", "fix", "tips", "better", "redo"],
+  },
+};
+function parseText(text) {   // phòng khi model không gọi tool
+  const a = text.indexOf("{"), b = text.lastIndexOf("}");
+  if (a < 0 || b <= a) return null;
+  try { return JSON.parse(text.slice(a, b + 1)); } catch { return null; }
+}
+async function askClaude(send, env, user_msg, maxTokens) {
+  const r = await send("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+    body: JSON.stringify({ model: env.FEEDBACK_MODEL || MODEL, max_tokens: maxTokens, system: SYSTEM, tools: [TOOL], tool_choice: { type: "tool", name: TOOL.name }, messages: [{ role: "user", content: user_msg }] }),
+  });
+  if (!r.ok) return { r, text: await r.text() };
+  const out = await r.json(), content = out.content || [];
+  const tu = content.find(c => c.type === "tool_use" && c.input && typeof c.input === "object");
+  let fb = out.stop_reason !== "max_tokens" && tu && Array.isArray(tu.input.good) ? tu.input : null;
+  if (!fb) fb = parseText(content.map(c => c.text || "").join(""));
+  return { r, fb, stop: out.stop_reason };
+}
 
 export async function onRequestPost({ request, env }) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: "Chưa cài API key." }, 503);
@@ -108,20 +144,17 @@ Dàn ý em ghi trước khi nói: ${String(req.notes || "").slice(0, 900) || "(k
 Bản chép lời: """${transcript}"""`;
   // gọi qua relay ở Mỹ (service binding CLAUDE → Worker speakback-claude); chưa có binding thì gọi thẳng
   const send = env.CLAUDE ? (u, o) => env.CLAUDE.fetch("https://relay/v1/messages", o) : (u, o) => fetch(u, o);
-  const r = await send("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify({ model: env.FEEDBACK_MODEL || MODEL, max_tokens: 1200, system: SYSTEM, messages: [{ role: "user", content: user_msg }] }),
-  });
+  // tiếng Việt tốn token: 2000 cho đủ; bị cắt / hỏng thì thử lại 1 lần với 3000 (HS chỉ bị tính 1 lượt)
+  let res = await askClaude(send, env, user_msg, 2000);
+  if (res.r.ok && !res.fb) { console.error("feedback retry", res.stop); res = await askClaude(send, env, user_msg, 3000); }
+  const r = res.r;
   if (!r.ok) {
-    const t = await r.text();
+    const t = res.text;
     let why = ""; try { why = (JSON.parse(t).error || {}).message || ""; } catch {}
     return json({ error: /credit|balance/i.test(t) ? "Máy chấm tạm hết lượt của lớp, chị sẽ chấm tay nha." : "Máy nhận xét đang bận, em thử lại sau ít phút nha.", detail: r.status, why: why.slice(0, 300) }, 502);
   }
-  const out = await r.json();
-  const text = (out.content || []).map(c => c.text || "").join("");
-  let fb;
-  try { fb = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1)); } catch { return json({ error: "Máy trả lời lỗi, em nộp lại nha." }, 502); }
+  const fb = res.fb;
+  if (!fb) return json({ error: "Bài đã lưu rồi. Máy chấm bị lỗi lúc trả lời, em bấm 🔁 Chấm lại bài đã nộp (không tốn lượt) nha.", detail: "parse", stop: res.stop || "" }, 502);
   q.cards[cardKey] = used + 1; q.n += 1;
   try { await writeQuota(uid, req.idToken, q); } catch (e) { console.error(e); }
   return json({ ...fb, said: transcript, auto: true, quota: { card: used + 1, cardMax: PER_CARD, week: q.n, weekMax } });
