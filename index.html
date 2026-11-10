@@ -326,6 +326,7 @@ details.nolog .pick{margin-top:8px}
 .prog details.wk>summary{cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:8px}
 .subst{font-size:14px;color:var(--muted)}
 .quota{font-size:13px;margin:4px 0 0}
+.limit{font-size:13px;margin:6px 0;padding:6px 10px;border-radius:10px;background:rgba(0,0,0,.04)}
 .subst.wait{color:var(--near)}
 .fb{border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:14px;padding:10px 12px;display:grid;gap:6px;font-size:14px}
 .fb h4{margin:0;font-size:15px}
@@ -1197,6 +1198,10 @@ function renderSentenceHTML(chunks, statuses) {
 }
 
 /* ---------- speaking strategy: guide + demo notes + note boxes (Part 1 A.R.E. · Part 2 cue card · Part 3 A.R.E.A.) ---------- */
+/* thời lượng nói: nên nói / tối đa (máy tự dừng ghi ở mức tối đa) */
+const SPEAK_LIMIT = { 1: { aim: "20–30 giây", max: 90 }, 2: { aim: "1'30–2'", max: 130 }, 3: { aim: "30–45 giây", max: 90 } };
+const fmtSec = t => t >= 60 ? `${Math.floor(t / 60)}'${String(t % 60).padStart(2, "0")}"` : `${t} giây`;
+function limitHTML(S) { const P = partOf(S), x = SPEAK_LIMIT[P]; return `<p class="limit small">⏱ <b>Part ${P}</b>: nên nói <b>${x.aim}</b> · tối đa <b>${fmtSec(x.max)}</b> (tới đó máy tự dừng và vẫn lưu bài). <span class="muted">Part 1: 20–30 giây (tối đa 1'30") · Part 2: 1'30–2' (tối đa 2'10") · Part 3: 30–45 giây (tối đa 1'30").</span></p>`; }
 function partOf(S) { const m = /part\s*([123])/i.exec(S.part || S.label || ""); return m ? +m[1] : 1; }
 const STRAT = {
   1: { name: "Part 1 · A.R.E. + Feeling", time: "3–4 câu · 20–30 giây",
@@ -1305,6 +1310,7 @@ function viewLesson(L) {
         ${(s.guide || []).length ? `<details class="strat guide" open><summary>🧭 Phân tích câu hỏi: nghĩ từng bước</summary><ol>${s.guide.map(t => `<li>${t}</li>`).join("")}</ol></details>` : ""}
         ${stratHTML(L, s)}
         ${notesHTML(L, s, i)}
+        ${limitHTML(s)}
         <div class="actions"><button class="recfree" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>🎙 Ghi âm thử</button><button class="primary submit" ${!inZalo && navigator.mediaDevices ? "" : "disabled"}>📤 Ghi âm nộp bài</button></div>
         <p class="muted small">🎙 <b>Ghi âm thử</b>: tập thoải mái, không chấm, không tính lượt. 📤 <b>Ghi âm nộp bài</b>: máy chấm theo 4 tiêu chí và lưu kết quả, tối đa 3 lần mỗi câu. Ghi thử thấy ổn thì bấm <b>Nộp bản ghi thử này</b>, khỏi nói lại.</p>
         <div class="live" aria-live="polite"></div>
@@ -2101,8 +2107,10 @@ async function recordFree(L, i, card, btn, forSubmit) {
   const t0 = Date.now();
   const label0 = btn.textContent, wasPrimary = btn.classList.contains("primary");
   btn.textContent = forSubmit ? "⏺ Đang ghi bài nộp… bấm để dừng" : "⏺ Đang ghi… bấm để dừng"; btn.classList.add("rec", "pulse"); btn.classList.remove("primary");
+  const capS = SPEAK_LIMIT[partOf(L.sentences[i])].max;
   const tick = setInterval(() => {
     const r = level(), el = Math.round((Date.now() - t0) / 1000), bars = "▮".repeat(Math.min(5, Math.round(r * 120))) || "▯";
+    if (el >= capS - 15) { live.textContent = `🎙 ${bars} ${el} giây · còn ${Math.max(0, capS - el)} giây là máy tự dừng (tối đa ${fmtSec(capS)}). Chốt ý đi em!`; return; }
     live.textContent = el >= 4 && lvPeak < 0.004 ? "⚠️ Micro chưa thu được tiếng. Kiểm tra: tắt tai nghe Bluetooth, cho phép Micrô, đóng app đang gọi điện; rồi bấm dừng và ghi lại."
       : `🎙 ${bars} Đang ghi ${el} giây · ${partOf(L.sentences[i]) === 2 ? "nói 1'30–2'" : partOf(L.sentences[i]) === 3 ? "nói 30–45 giây" : "nói 20–30 giây"} rồi bấm dừng.`;
   }, 250);
@@ -2116,16 +2124,16 @@ async function recordFree(L, i, card, btn, forSubmit) {
     const sec = Math.round((Date.now() - t0) / 1000);
     if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
     if (an && lvPeak < 0.004) { live.textContent = "⚠️ Bản ghi không có tiếng (micro không thu được giọng), nên chưa lưu và chưa tính lượt. Tắt tai nghe Bluetooth, kiểm tra quyền Micrô rồi ghi lại nha."; return; }
-    live.textContent = forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Thấy ổn thì bấm 📤 Nộp bản ghi thử này, chưa ổn thì ghi lại.`;
+    live.textContent = (session.capped ? `⏱ Hết thời gian tối đa ${fmtSec(capSec)}, máy đã tự dừng. ` : "") + (forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Thấy ổn thì bấm 📤 Nộp bản ghi thử này, chưa ổn thì ghi lại.`);
     card.querySelector(".best").textContent = forSubmit ? "Đã nộp" : "Đã ghi thử";
     await recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));
     if (forSubmit) await submitFree(L, i, card, btn, sec);
     subStatus(L, i, card);
   } };
-  const P = partOf(L.sentences[i]), capSec = P === 2 ? 130 : 90;
+  const P = partOf(L.sentences[i]), capSec = SPEAK_LIMIT[P].max;
   const nb = card.querySelector(".notes");
   if (forSubmit && P !== 2 && nb) { nb.open = false; live.textContent = "Thi thật Part " + P + " không có giấy nháp, nên ghi chú đã gập lại. Nói đi em!"; }
-  const cap = setTimeout(() => session.stop(), capSec * 1000);
+  const cap = setTimeout(() => { session.capped = true; session.stop(); }, capSec * 1000);
   rec = session;
   const ts = card.querySelector(".trysub"); if (ts) ts.hidden = true;
 }
@@ -2221,7 +2229,7 @@ async function submitFree(L, i, card, btn, sec) {
   const live = card.querySelector(".live");
   if (!cloudUser()) { live.textContent = "Em đăng nhập Gmail (ở trang chính) thì mới nộp bài cho chị được nha."; return; }
   const cur = getTakes(L)[i], mem = CLIPS[L.id + ":" + i] || {};
-  if (!cur || !cur.last || !mem.last) { live.textContent = "Em ghi âm trước rồi mới nộp nha."; return; }
+  if (!cur || !cur.last || !mem.last) { live.textContent = cur && cur.last ? "Bản ghi này chưa lưu được (quá dài hoặc máy lỗi). Em nói gọn trong thời gian tối đa rồi ghi lại nha." : "Em ghi âm trước rồi mới nộp nha."; return; }
   btn.disabled = true; live.textContent = "Đang nộp…";
   try {
     await window.Cloud.saveTake(`${L.id}~${i}~sub`, { lesson: L.id, i, kind: "sub", at: Date.now(), took: cur.last.at, h: cur.last.h || "", s: 100, st: "", audio: mem.last });
@@ -2350,7 +2358,7 @@ async function recordTake(L, i, card, score, top, statuses, clipP) {
   if (!isFirst) mem.last = null;
   renderCompare(L, i, card);
   const blob = clipP ? await clipP.catch(() => null) : null;
-  const url = blob && blob.size > 0 && blob.size < 700000 ? await blobToDataURL(blob) : null;
+  const url = blob && blob.size > 0 && blob.size < 3000000 ? await blobToDataURL(blob) : null;
   if (url) { if (isFirst) mem.first = url; mem.last = url; renderCompare(L, i, card); }
   if (cloudUser()) {
     const base = { lesson: L.id, i, ...t, audio: url || "" };

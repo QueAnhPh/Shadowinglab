@@ -42,22 +42,36 @@ const Cloud = {
     return snap.docs.map(d => { const x = d.data(); return { uid: d.id, ...x, updatedAt: x.updatedAt && x.updatedAt.toDate ? x.updatedAt.toDate() : null }; });
   },
   /* first / latest spoken take of a sentence: users/{uid}/takes/{lessonId}~{i}~{first|last} */
+  /* Firestore giới hạn 1 MB / doc: ghi âm dài (Part 2 ~2') tách thành nhiều doc phụ {id}~p0, ~p1… (kind "part") */
   async saveTake(id, data) {
     if (!this.user) return;
-    const { doc, setDoc } = this._fs;
-    await setDoc(doc(this._db, "users", this.user.uid, "takes", id), data);
+    const { doc, setDoc } = this._fs, col = ["users", this.user.uid, "takes"];
+    const a = data.audio || "", CH = 800000;
+    if (a.length <= CH) { await setDoc(doc(this._db, ...col, id), data); return; }
+    const n = Math.ceil(a.length / CH);
+    for (let k = 0; k < n; k++)
+      await setDoc(doc(this._db, ...col, `${id}~p${k}`), { lesson: data.lesson, i: data.i, kind: "part", of: id, k, n, at: data.at, audio: a.slice(k * CH, (k + 1) * CH) });
+    await setDoc(doc(this._db, ...col, id), { ...data, audio: "", parts: n });
+  },
+  _join(snap) {
+    const all = snap.docs.map(d => ({ _id: d.id, ...d.data() })), parts = {};
+    for (const x of all) if (x.kind === "part") (parts[x.of] || (parts[x.of] = []))[x.k] = x.audio;
+    return all.filter(x => x.kind !== "part").map(x => {
+      if (x.parts) { const p = parts[x._id] || []; x.audio = p.length === x.parts && p.every(c => typeof c === "string") ? p.join("") : ""; }
+      delete x._id; return x;
+    });
   },
   /* teachers: takes of any student account */
   async loadTakesOf(uid, lessonId) {
     const { collection, getDocs, query, where } = this._fs;
     const snap = await getDocs(query(collection(this._db, "users", uid, "takes"), where("lesson", "==", lessonId)));
-    return snap.docs.map(d => d.data());
+    return this._join(snap);
   },
   async loadTakes(lessonId) {
     if (!this.user) return [];
     const { collection, getDocs, query, where } = this._fs;
     const snap = await getDocs(query(collection(this._db, "users", this.user.uid, "takes"), where("lesson", "==", lessonId)));
-    return snap.docs.map(d => d.data());
+    return this._join(snap);
   },
   async flush() {
     const p = this._pending; this._pending = {};
