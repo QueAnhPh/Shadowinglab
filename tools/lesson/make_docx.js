@@ -2,6 +2,7 @@ const fs = require('fs');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, ShadingType,
   HeadingLevel, AlignmentType, LevelFormat, LineRuleType, ImageRun, BorderStyle, Footer, PageNumber, ExternalHyperlink,
+  Bookmark, InternalHyperlink,
 } = require('docx');
 
 const FONT = 'Arial';
@@ -52,7 +53,10 @@ function colWidths(header) {
   else if (h.startsWith('Thẻ|Từ cần đoán')) pct = [8, 24, 26, 42];
   else if (h.startsWith('Loại · từ gốc')) pct = [26, 30, 44];
   else if (h.startsWith('Bậc|Thêm gì')) pct = [8, 24, 34, 34];
+  else if (h.startsWith('#|Câu hỏi|A|R|E|F')) pct = [6, 52, 7, 7, 7, 7, 14];
   else if (h.startsWith('#|Câu hỏi|A|R|E')) pct = [6, 58, 8, 8, 8, 12];
+  else if (h.startsWith('Ngày|Đức|Thư')) pct = [24, 36, 40];
+  else if (h.startsWith('#|✍ Từ em nhớ ra') && n === 8) pct = [5, 22, 17, 6, 5, 22, 17, 6];
   else if (h.startsWith('Bước|Mục đích')) pct = [16, 24, 60];
   else if (h.startsWith('Từ gốc') && n === 2) pct = [32, 68];
   else if (h.startsWith('Từ gốc')) pct = [16, 24, 16, 24, 20];
@@ -117,6 +121,7 @@ function bingo() {
   ];
 }
 
+let HID = 0, TOC = [], TOC_DONE = false; const TOC_MARK = {};
 function convert(md) {
   const lines = md.split('\n');
   const out = [];
@@ -136,11 +141,16 @@ function convert(md) {
       continue;
     }
     if (l.startsWith('# ')) {
-      out.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: runs(l.slice(2)) }));
+      const id = 'h' + (++HID);
+      out.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new Bookmark({ id, children: runs(l.slice(2)) })] }));
+      TOC.push({ lvl: 1, id, text: l.slice(2) });
+      if (!TOC_DONE) { TOC_DONE = true; out.push(TOC_MARK); }
     } else if (l.startsWith('### ')) {
       out.push(new Paragraph({ heading: HeadingLevel.HEADING_3, children: runs(l.slice(4)) }));
     } else if (l.startsWith('## ')) {
-      out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: /\{#(vgames|ladder|alt)\}/.test(lines[i]), children: runs(l.slice(3)) }));
+      const id = 'h' + (++HID);
+      out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: /\{#(vgames|ladder|alt)\}/.test(lines[i]), children: [new Bookmark({ id, children: runs(l.slice(3)) })] }));
+      TOC.push({ lvl: 2, id, text: l.slice(3) });
     } else if (l.startsWith('    - ')) {
       out.push(new Paragraph({ numbering: { reference: 'bul', level: 1 }, children: runs(l.slice(6)) }));
     } else if (l.startsWith('- ')) {
@@ -173,6 +183,14 @@ function convert(md) {
 
 const student = convert(fs.readFileSync(require('path').join(DIR, 'student.md'), 'utf8'));
 const alts = convert(fs.readFileSync(require('path').join(DIR, 'alternatives.md'), 'utf8'));
+function tocBlock() {
+  const out = [new Paragraph({ spacing: { after: 60 }, children: [new TextRun({ text: 'Mục lục', bold: true, size: 24, color: NAVY, font: FONT })] })];
+  TOC.forEach(e => out.push(new Paragraph({ indent: { left: e.lvl === 1 ? 0 : 360 }, spacing: { after: 20 },
+    children: [new InternalHyperlink({ anchor: e.id, children: [new TextRun({ text: e.text.replace(/\*\*/g, ''), font: FONT, size: e.lvl === 1 ? 20 : 19, bold: e.lvl === 1, color: '1155CC', underline: {} })] })] })));
+  out.push(new Paragraph({ spacing: { before: 60, after: 200 }, children: [new TextRun({ text: 'Gập / mở: rê chuột vào tiêu đề → bấm ◢ · View → Navigation Pane để xem cây mục lục', italics: true, size: 17, color: '666666', font: FONT })] }));
+  return out;
+}
+const fill = arr => arr.flatMap(x => x === TOC_MARK ? tocBlock() : [x]);
 const pageProps = { page: { size: { width: 11906, height: 16838 }, margin: { top: 850, bottom: 850, left: MARGIN, right: MARGIN } } };
 const footer = { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ children: [PageNumber.CURRENT], size: 16, color: '888888', font: FONT })] })] }) };
 
@@ -196,7 +214,7 @@ const doc = new Document({
     { level: 1, format: LevelFormat.BULLET, text: '◦', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 240 } } } },
   ] }] },
   sections: [
-    { properties: pageProps, footers: footer, children: student },
+    { properties: pageProps, footers: footer, children: fill(student) },
     { properties: pageProps, footers: footer, children: alts },
   ],
 });
