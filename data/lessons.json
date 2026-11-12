@@ -9737,5 +9737,145 @@
     }
    ]
   }
- ]
+ ],
+ "feedback": {
+  "duc": {
+   "dt-w20261109-duc-mon": {
+    "0": {
+     "date": "12/11",
+     "sub": 1794321922488,
+     "band": "5.0",
+     "said": "Do you like traveling? To be honest, vacation trips always make me feel peace and I go once a year. It helped me have a time for my family and recharge my batteries after a dreadful school year. Last summer, I and my family go to Đà Lạt and I planned a five-day itinerary for our trip. We try a local food and go sightseeing. I have a whale of a time with…",
+     "good": [
+      "Có đủ A.R.E.: trả lời → lý do → ví dụ chuyến Đà Lạt.",
+      "Dùng được cụm hay: recharge my batteries, dreadful, a five-day itinerary, have a whale of a time."
+     ],
+     "fix": [
+      {
+       "err": "I and my family go to Đà Lạt",
+       "fix": "my family and I went to Đà Lạt",
+       "why": "kể chuyện đã qua → quá khứ đơn; người khác đứng trước, I đứng sau"
+      },
+      {
+       "err": "We try a local food and go sightseeing. I have a whale of a time",
+       "fix": "We tried local food and went sightseeing. I had a whale of a time",
+       "why": "last summer → động từ chia quá khứ"
+      },
+      {
+       "err": "make me feel peace",
+       "fix": "make me feel relaxed / at peace",
+       "why": "feel + tính từ"
+      }
+     ],
+     "tips": [
+      "Thấy last summer / last month → đổi hết động từ sang quá khứ (go → went, try → tried, have → had).",
+      "whale đọc /weɪl/ (giống \"quêu\"), máy đang nghe thành well."
+     ],
+     "better": "Yes, I do. To be honest, trips always help me relax, so I try to go away at least once a year. A trip lets me spend time with my family and recharge my batteries after a stressful school year. Last summer, my family and I went to Đà Lạt. I planned a five-day itinerary, and we tried local food and went sightseeing. I had a whale of a time.",
+     "redo": "Nói lại phần Example (Last summer…) với động từ quá khứ: went, planned, tried, had."
+    },
+    "1": {
+     "date": "12/11",
+     "sub": 1794284159035,
+     "band": "4.5",
+     "said": "When did you go on your last vacation? Well, I had a day trip with my girlfriend after a long time we met each other. Work and study is too stressful and we don't have time to do something or go somewhere together. Last month we go to Vũng Tàu because it's a day at the end of the month. We travel on a budget. Our target is try local food and take a picture together. That trip helped us get away from it all and create more memories between us.",
+     "good": [
+      "Trả lời đúng câu hỏi, có thời gian và địa điểm cụ thể (last month, Vũng Tàu).",
+      "Có cụm hay: travel on a budget, get away from it all, create memories."
+     ],
+     "fix": [
+      {
+       "err": "after a long time we met each other",
+       "fix": "after a long time without seeing each other",
+       "why": "ý là lâu rồi không gặp"
+      },
+      {
+       "err": "Last month we go to Vũng Tàu … We travel on a budget",
+       "fix": "Last month we went to Vũng Tàu … We traveled on a budget",
+       "why": "last month → quá khứ đơn"
+      },
+      {
+       "err": "Our target is try local food and take a picture",
+       "fix": "Our plan was to try local food and take pictures",
+       "why": "plan was + to V; chụp nhiều ảnh → pictures"
+      }
+     ],
+     "tips": [
+      "Câu hỏi có did → cả câu trả lời dùng quá khứ.",
+      "all đọc /ɔl/ (giống \"o\" kéo dài + l), máy đang nghe get away from it all thành \"it own\"."
+     ],
+     "better": "My last vacation was a day trip to Vũng Tàu with my girlfriend last month. We hadn't seen each other for a long time because work and study were so stressful. We traveled on a budget, and our plan was to try local food and take pictures together. That trip helped us get away from it all and create some great memories.",
+     "redo": "Nói lại 2 câu đầu với quá khứ: My last vacation was… / We went to…"
+    }
+   },
+   "dt-w20261109-duc-tue": {
+    "0": {
+     "date": "12/11",
+     "sub": 1794326851915,
+     "band": "5.0",
+     "said": "Not really. I just take some photos when I see a beauty scene. I don't like take selfies, I just want to throw myself into the trip. Last summer, when I and my family go to Đà Lạt, I don't take too much photos, just a few photos about my family, the beauty scene and the landmark in there. For me, a memorable trip doesn't mean you take a lot of photos, it means the time you spend with your family, your lover and yourself.",
+     "good": [
+      "Câu chốt rất tốt: doesn't mean … it means … (chuẩn ý band 6).",
+      "Trả lời thẳng Not really rồi giải thích, đúng A.R.E."
+     ],
+     "fix": [
+      {
+       "err": "a beauty scene",
+       "fix": "beautiful scenery / a beautiful view",
+       "why": "beauty là danh từ; cần tính từ beautiful"
+      },
+      {
+       "err": "I don't like take selfies",
+       "fix": "I don't like taking selfies",
+       "why": "like + V-ing"
+      },
+      {
+       "err": "when I and my family go … I don't take too much photos",
+       "fix": "when my family and I went … I didn't take too many photos",
+       "why": "quá khứ đơn; photos đếm được → many"
+      }
+     ],
+     "tips": [
+      "Luyện cặp much (không đếm được: much time) ↔ many (đếm được: many photos).",
+      "Chuẩn bị sẵn 3 cụm cảnh đẹp: beautiful scenery, a stunning view, famous landmarks."
+     ],
+     "better": "Not really. I only take a few photos when I see beautiful scenery. I'm not into selfies because I'd rather enjoy the moment. Last summer, when my family and I went to Đà Lạt, I just took a few pictures of my family and some famous landmarks. For me, a memorable trip isn't about how many photos you take; it's about the time you spend with the people you love.",
+     "redo": ""
+    },
+    "1": {
+     "date": "12/11",
+     "sub": 1794330372746,
+     "band": "4.5",
+     "said": "The fact that I haven't studied when I am on vacation. I go one or two times a year because I always finish my midterm or final term before I go on vacation. Last year, my family went to visit Nha Trang in May, but in that time I had a final term exam, so I had to ask my mom: can we move it to June? For me, the vacation trip is an opportunity to get away from it all and recharge my batteries, so I don't want anything can stop me enjoying the trip.",
+     "good": [
+      "Có ví dụ thật: chuyến Nha Trang dời từ tháng 5 sang tháng 6 vì thi cuối kỳ.",
+      "Dùng lại được get away from it all + recharge my batteries của buổi trước."
+     ],
+     "fix": [
+      {
+       "err": "The fact that I haven't studied when I am on vacation",
+       "fix": "To be honest, I've never studied while I was on vacation",
+       "why": "Have you ever…? → trả lời I've never / Yes, once…"
+      },
+      {
+       "err": "I don't want anything can stop me enjoying the trip",
+       "fix": "I don't want anything to stop me from enjoying the trip",
+       "why": "want sth to V; stop sb from V-ing"
+      },
+      {
+       "err": "in that time I had a final term exam",
+       "fix": "at that time I had my final exams",
+       "why": "at that time = lúc đó"
+      }
+     ],
+     "tips": [
+      "Câu mở đầu ngắn, trả lời thẳng: No, never. / Yes, once. Rồi mới giải thích.",
+      "recharge my batteries: nhấn re-CHARGE, đọc rõ đuôi /z/ của batteries; máy đang nghe thành \"reach out my battery\"."
+     ],
+     "better": "No, I've never studied while I was on vacation. I usually travel once or twice a year, always after my midterm or final exams. Last year, my family planned to visit Nha Trang in May, but I had my final exams at that time, so I asked my mom to move the trip to June. For me, a vacation is a chance to get away from it all and recharge my batteries, so I don't want anything to stop me from enjoying it.",
+     "redo": "Nói lại câu mở đầu: No, I've never studied while I was on vacation."
+    }
+   }
+  }
+ }
 }
