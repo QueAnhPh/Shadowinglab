@@ -11986,7 +11986,7 @@
    ],
    "cards": [
     {
-     "mean": "món ăn (một món cụ thể)",
+     "mean": "món ăn, món đặc sản",
      "cat": "A. Food & Cooking: từ cốt lõi",
      "items": [
       {
@@ -11995,16 +11995,27 @@
        "ipa": "/dɪʃ/",
        "stress": "DISH",
        "band": "3–3.5",
-       "grammar": "đếm được: a dish / dishes",
+       "grammar": "đếm được: a dish / two dishes; food không đếm được",
        "ex": "Pho is my favorite Vietnamese dish."
-      }
-     ],
-     "note": "dish đếm được: a dish, two dishes; food không đếm được"
-    },
-    {
-     "mean": "đặc sản của một vùng",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
+      {
+       "w": "specialty",
+       "type": "Vocab",
+       "ipa": "/ˈspeʃəlti/",
+       "stress": "SPE-cial-ty",
+       "band": "5.5–6.5",
+       "grammar": "đếm được (Mỹ); Anh: speciality",
+       "ex": "Banh xeo is a specialty of the south."
+      },
+      {
+       "w": "cuisine",
+       "type": "Vocab",
+       "ipa": "/kwɪˈziːn/",
+       "stress": "cui-SINE",
+       "band": "7–8",
+       "grammar": "Vietnamese / Thai / local + cuisine",
+       "ex": "My manager loves Vietnamese cuisine."
+      },
       {
        "w": "a local specialty",
        "type": "Collocation",
@@ -12015,22 +12026,6 @@
        "ex": "Cao lau is a local specialty of Hoi An."
       },
       {
-       "w": "specialty",
-       "type": "Vocab",
-       "ipa": "/ˈspeʃəlti/",
-       "stress": "SPE-cial-ty",
-       "band": "5.5–6.5",
-       "grammar": "đếm được (Mỹ); Anh: speciality",
-       "ex": "Banh xeo is a specialty of the south."
-      }
-     ],
-     "note": "a local specialty + of / in + nơi chốn"
-    },
-    {
-     "mean": "món tủ, món đặc trưng của ai",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
        "w": "a signature dish",
        "type": "Collocation",
        "ipa": "/ə ˌsɪɡnətʃər ˈdɪʃ/",
@@ -12040,23 +12035,7 @@
        "ex": "Fried rice is a signature dish in my family."
       }
      ],
-     "note": "sb's / the restaurant's + signature dish"
-    },
-    {
-     "mean": "nền ẩm thực của một nước / vùng",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "cuisine",
-       "type": "Vocab",
-       "ipa": "/kwɪˈziːn/",
-       "stress": "cui-SINE",
-       "band": "7–8",
-       "grammar": "Vietnamese / Thai / local + cuisine",
-       "ex": "My manager loves Vietnamese cuisine."
-      }
-     ],
-     "note": "cuisine trang trọng hơn food: Vietnamese cuisine"
+     "note": "dish = 1 món cụ thể (đếm được) · specialty = đặc sản của 1 vùng (Anh: speciality) · signature dish = món tủ · cuisine = cả nền ẩm thực, trang trọng"
     },
     {
      "mean": "nguyên liệu nấu ăn",
@@ -12070,30 +12049,16 @@
        "band": "5.5–6.5",
        "grammar": "đếm được: the ingredients of / for + dish",
        "ex": "Flour and water are the main ingredients of the dough."
-      }
-     ],
-     "note": "ingredient đếm được: the ingredients of / for a dish"
-    },
-    {
-     "mean": "nguyên liệu tươi",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "fresh ingredients",
        "type": "Collocation",
        "ipa": "/ˌfreʃ ɪnˈɡriːdiənts/",
        "stress": "fresh in-GRE-di-ents",
        "band": "4–5",
-       "grammar": "use / buy + fresh ingredients",
+       "grammar": "use / buy + fresh ingredients (số nhiều)",
        "ex": "This restaurant only uses fresh ingredients."
-      }
-     ],
-     "note": "thường dùng số nhiều"
-    },
-    {
-     "mean": "nguyên liệu chính",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "the main ingredient",
        "type": "Collocation",
@@ -12102,14 +12067,7 @@
        "band": "4–5",
        "grammar": "the main ingredient + of / in + dish",
        "ex": "Rice is the main ingredient of this dish."
-      }
-     ],
-     "note": "the main ingredient + of / in + món"
-    },
-    {
-     "mean": "bí quyết làm nên món ngon / thành công",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "the secret ingredient",
        "type": "Idiom",
@@ -12120,7 +12078,7 @@
        "ex": "Teamwork is the secret ingredient of our project."
       }
      ],
-     "note": "nghĩa bóng: điều làm nên khác biệt"
+     "note": "ingredient đếm được: the ingredients of / for + món · the secret ingredient còn có nghĩa bóng: bí quyết thành công"
     },
     {
      "mean": "công thức nấu ăn",
@@ -12134,14 +12092,7 @@
        "band": "4–5",
        "grammar": "a recipe + for + dish",
        "ex": "My mom gave me her recipe for fried rice."
-      }
-     ],
-     "note": "recipe đọc 3 âm tiết REC-i-pe; a recipe for + món"
-    },
-    {
-     "mean": "làm theo công thức",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "follow a recipe",
        "type": "Collocation",
@@ -12150,14 +12101,7 @@
        "band": "4–5",
        "grammar": "follow + a / my mom's + recipe",
        "ex": "I always follow a recipe when I bake."
-      }
-     ],
-     "note": "follow + a / my mom's recipe"
-    },
-    {
-     "mean": "công thức gia truyền",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "a family recipe",
        "type": "Collocation",
@@ -12166,14 +12110,7 @@
        "band": "5.5–6.5",
        "grammar": "đếm được",
        "ex": "This fish sauce is a family recipe."
-      }
-     ],
-     "note": "a family recipe"
-    },
-    {
-     "mean": "thử làm (món mới, công thức mới)",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "try out",
        "type": "Phrasal verb",
@@ -12182,14 +12119,7 @@
        "band": "5.5–6.5",
        "grammar": "tách được: try out a recipe / try it out",
        "ex": "I want to try out a new recipe this weekend."
-      }
-     ],
-     "note": "tách được: try out a recipe / try it out"
-    },
-    {
-     "mean": "điều chắc chắn dẫn tới thất bại",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "a recipe for disaster",
        "type": "Idiom",
@@ -12200,7 +12130,7 @@
        "ex": "Starting my thesis one week before the deadline is a recipe for disaster."
       }
      ],
-     "note": "nghĩa bóng, không nói về nấu ăn"
+     "note": "recipe đọc 3 âm tiết REC-i-pe · follow a recipe = làm theo · try out = thử làm món mới · a recipe for disaster = nghĩa bóng: chắc chắn hỏng"
     },
     {
      "mean": "bữa ăn",
@@ -12214,30 +12144,7 @@
        "band": "3–3.5",
        "grammar": "đếm được: have three meals a day",
        "ex": "I usually have three meals a day."
-      }
-     ],
-     "note": "meal đếm được: three meals a day"
-    },
-    {
-     "mean": "ăn trưa (have + tên bữa)",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "have lunch",
-       "type": "Collocation",
-       "ipa": "/ˌhæv ˈlʌntʃ/",
-       "stress": "have LUNCH",
-       "band": "3–3.5",
-       "grammar": "have + breakfast / lunch / dinner",
-       "ex": "I have lunch with my team at noon."
-      }
-     ],
-     "note": "have + breakfast / lunch / dinner, không có a"
-    },
-    {
-     "mean": "bữa tiệc thịnh soạn",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "feast",
        "type": "Vocab",
@@ -12246,14 +12153,16 @@
        "band": "5.5–6.5",
        "grammar": "a + feast; have a feast",
        "ex": "We had a feast after our thesis defense."
-      }
-     ],
-     "note": "a feast; nghĩa rộng: rất nhiều món ngon"
-    },
-    {
-     "mean": "bữa cơm nhà nấu",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
+      {
+       "w": "have lunch",
+       "type": "Collocation",
+       "ipa": "/ˌhæv ˈlʌntʃ/",
+       "stress": "have LUNCH",
+       "band": "3–3.5",
+       "grammar": "have + breakfast / lunch / dinner",
+       "ex": "I have lunch with my team at noon."
+      },
       {
        "w": "a home-cooked meal",
        "type": "Collocation",
@@ -12262,14 +12171,7 @@
        "band": "5.5–6.5",
        "grammar": "have / miss + a home-cooked meal",
        "ex": "I really miss a home-cooked meal when I'm away."
-      }
-     ],
-     "note": "have / miss + a home-cooked meal"
-    },
-    {
-     "mean": "bữa ăn bổ dưỡng",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "a nutritious meal",
        "type": "Collocation",
@@ -12280,7 +12182,7 @@
        "ex": "A bowl of pho can be a nutritious meal."
       }
      ],
-     "note": "eat / prepare + a nutritious meal"
+     "note": "meal đếm được · have + breakfast / lunch / dinner (không có a) · feast = bữa thịnh soạn · home-cooked = nhà nấu · nutritious = bổ dưỡng"
     },
     {
      "mean": "đồ ăn vặt",
@@ -12294,30 +12196,7 @@
        "band": "3–3.5",
        "grammar": "đếm được: a snack / some snacks",
        "ex": "I keep some snacks in my desk drawer."
-      }
-     ],
-     "note": "snack đếm được: some snacks"
-    },
-    {
-     "mean": "món ăn vặt lành mạnh",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "a healthy snack",
-       "type": "Collocation",
-       "ipa": "/ə ˌhelθi ˈsnæk/",
-       "stress": "a HEAL-thy SNACK",
-       "band": "3–3.5",
-       "grammar": "đếm được: healthy snacks",
-       "ex": "Nuts are a healthy snack for long workdays."
-      }
-     ],
-     "note": "healthy snacks"
-    },
-    {
-     "mean": "món ngon tự thưởng cho mình",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "treat",
        "type": "Vocab",
@@ -12326,12 +12205,30 @@
        "band": "4–5",
        "grammar": "đếm được: a treat (for sb)",
        "ex": "Bubble tea is my treat after a long week."
+      },
+      {
+       "w": "a healthy snack",
+       "type": "Collocation",
+       "ipa": "/ə ˌhelθi ˈsnæk/",
+       "stress": "a HEAL-thy SNACK",
+       "band": "3–3.5",
+       "grammar": "đếm được: healthy snacks",
+       "ex": "Nuts are a healthy snack for long workdays."
+      },
+      {
+       "w": "have a sweet tooth",
+       "type": "Idiom",
+       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
+       "stress": "have‿a SWEET TOOTH",
+       "band": "5.5–6.5",
+       "grammar": "have + a sweet tooth",
+       "ex": "I have a sweet tooth, so I always buy cakes."
       }
      ],
-     "note": "treat (n) đếm được: a treat for myself"
+     "note": "snack đếm được · treat = món tự thưởng · have a sweet tooth = hảo ngọt"
     },
     {
-     "mean": "đồ ăn mua mang về",
+     "mean": "đồ ăn mua về, gọi về",
      "cat": "A. Food & Cooking: từ cốt lõi",
      "items": [
       {
@@ -12351,14 +12248,16 @@
        "band": "4–5",
        "grammar": "Anh – Anh, đếm được: get a takeaway",
        "ex": "In London, we got a takeaway every Friday."
-      }
-     ],
-     "note": "takeout (Mỹ) = takeaway (Anh), đều là danh từ"
-    },
-    {
-     "mean": "gọi đồ ăn về nhà / văn phòng",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
+      {
+       "w": "delivery",
+       "type": "Vocab",
+       "ipa": "/dɪˈlɪvəri/",
+       "stress": "de-LIV-er-y",
+       "band": "4–5",
+       "grammar": "order / get + delivery (Mỹ, không đếm được)",
+       "ex": "It was raining, so we got delivery from a food app."
+      },
       {
        "w": "order takeout",
        "type": "Collocation",
@@ -12376,18 +12275,9 @@
        "band": "4–5",
        "grammar": "không tân ngữ (Mỹ)",
        "ex": "We were too busy, so we ordered in."
-      },
-      {
-       "w": "delivery",
-       "type": "Vocab",
-       "ipa": "/dɪˈlɪvəri/",
-       "stress": "de-LIV-er-y",
-       "band": "4–5",
-       "grammar": "order / get + delivery (Mỹ, không đếm được)",
-       "ex": "It was raining, so we got delivery from a food app."
       }
      ],
-     "note": "order in là cụm động từ không tân ngữ; order takeout / delivery có tân ngữ"
+     "note": "takeout (Mỹ) = takeaway (Anh) · delivery = giao tận nơi · order in không có tân ngữ; order takeout có tân ngữ"
     },
     {
      "mean": "cay",
@@ -12419,14 +12309,7 @@
        "band": "7–8",
        "grammar": "a fiery + sauce / curry",
        "ex": "The fiery sauce made my eyes water."
-      }
-     ],
-     "note": "hot cũng có nghĩa là nóng; fiery = cay xé, rất cay"
-    },
-    {
-     "mean": "không ăn được cay",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "can't handle spicy food",
        "type": "Collocation",
@@ -12435,9 +12318,18 @@
        "band": "5.5–6.5",
        "grammar": "can / can't + handle + spicy food",
        "ex": "I can't handle spicy food, so I order it mild."
+      },
+      {
+       "w": "spice things up",
+       "type": "Idiom",
+       "ipa": "/ˌspaɪs θɪŋz ˈʌp/",
+       "stress": "spice things UP",
+       "band": "7–8",
+       "grammar": "spice + things / sth + up",
+       "ex": "We tried a new restaurant to spice things up."
       }
      ],
-     "note": "can / can't + handle + spicy food"
+     "note": "hot cũng có nghĩa là nóng · fiery = cay xé · can't handle spicy food = không ăn được cay · spice things up = nghĩa bóng: làm thú vị hơn"
     },
     {
      "mean": "ngon",
@@ -12480,6 +12372,15 @@
        "ex": "The dumplings were absolutely delicious."
       },
       {
+       "w": "dig in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdɪɡ ˈɪn/",
+       "stress": "dig‿IN",
+       "band": "4–5",
+       "grammar": "không tân ngữ; câu mệnh lệnh",
+       "ex": "The food is ready, dig in!"
+      },
+      {
        "w": "to die for",
        "type": "Idiom",
        "ipa": "/tə ˈdaɪ fɔːr/",
@@ -12489,23 +12390,7 @@
        "ex": "My grandma's spring rolls are to die for."
       }
      ],
-     "note": "absolutely delicious thay cho very delicious · to die for đứng sau danh từ / sau be (thân mật)"
-    },
-    {
-     "mean": "ăn đi! (lời mời ăn, thân mật)",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "dig in",
-       "type": "Phrasal verb",
-       "ipa": "/ˌdɪɡ ˈɪn/",
-       "stress": "dig‿IN",
-       "band": "4–5",
-       "grammar": "không tân ngữ; câu mệnh lệnh",
-       "ex": "The food is ready, dig in!"
-      }
-     ],
-     "note": "dig in, hay dùng câu mệnh lệnh"
+     "note": "absolutely delicious thay cho very delicious · dig in = mời ăn (mệnh lệnh) · to die for đứng sau danh từ / sau be, thân mật"
     },
     {
      "mean": "tốt cho sức khỏe",
@@ -12535,16 +12420,9 @@
        "ipa": "/ˌɡʊd fər ˈjuː/",
        "stress": "GOOD for you",
        "band": "3–3.5",
-       "grammar": "be + good for you (sau be, không đứng trước danh từ)",
+       "grammar": "be + good for you (không đứng trước danh từ)",
        "ex": "Green tea is good for you."
-      }
-     ],
-     "note": "healthy rộng nhất; nutritious = bổ dưỡng, nhiều chất; good for you thân mật"
-    },
-    {
-     "mean": "thói quen ăn uống lành mạnh",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "healthy eating habits",
        "type": "Collocation",
@@ -12553,30 +12431,7 @@
        "band": "5.5–6.5",
        "grammar": "have / develop + healthy eating habits",
        "ex": "Office workers need healthy eating habits."
-      }
-     ],
-     "note": "have / develop + healthy eating habits"
-    },
-    {
-     "mean": "ăn / dùng bớt (đường, mỡ…)",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "cut down on",
-       "type": "Phrasal verb",
-       "ipa": "/ˌkʌt ˈdaʊn ɑːn/",
-       "stress": "cut DOWN on",
-       "band": "4–5",
-       "grammar": "cut down on + N / V-ing",
-       "ex": "I'm trying to cut down on sugar."
-      }
-     ],
-     "note": "cut down on + N / V-ing, không tách"
-    },
-    {
-     "mean": "ăn có chừng mực",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "eat in moderation",
        "type": "Collocation",
@@ -12585,12 +12440,21 @@
        "band": "7–8",
        "grammar": "eat / drink + sth + in moderation",
        "ex": "You can eat snacks, but eat in moderation."
+      },
+      {
+       "w": "cut down on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈdaʊn ɑːn/",
+       "stress": "cut DOWN on",
+       "band": "4–5",
+       "grammar": "cut down on + N / V-ing, không tách",
+       "ex": "I'm trying to cut down on sugar."
       }
      ],
-     "note": "eat / drink + sth + in moderation"
+     "note": "healthy rộng nhất · nutritious = bổ dưỡng · good for you thân mật, đứng sau be · cut down on = ăn bớt · in moderation = có chừng mực"
     },
     {
-     "mean": "nhà làm, tự nấu (không mua ngoài)",
+     "mean": "nhà làm, tự nấu",
      "cat": "A. Food & Cooking: từ cốt lõi",
      "items": [
       {
@@ -12610,14 +12474,7 @@
        "band": "4–5",
        "grammar": "home-cooked + food / dinner",
        "ex": "I eat home-cooked food on weekends."
-      }
-     ],
-     "note": "homemade + đồ ăn; home-cooked hay đi với meal / food"
-    },
-    {
-     "mean": "tự nấu từ nguyên liệu thô",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "cook from scratch",
        "type": "Collocation",
@@ -12626,14 +12483,7 @@
        "band": "5.5–6.5",
        "grammar": "cook / make + sth + from scratch",
        "ex": "On Sundays, I cook from scratch."
-      }
-     ],
-     "note": "cook / make + sth + from scratch"
-    },
-    {
-     "mean": "hâm nóng (đồ ăn)",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "heat up",
        "type": "Phrasal verb",
@@ -12642,14 +12492,7 @@
        "band": "3–3.5",
        "grammar": "tách được: heat up the soup / heat it up",
        "ex": "I heat up my lunch in the office microwave."
-      }
-     ],
-     "note": "tách được: heat up the soup / heat it up"
-    },
-    {
-     "mean": "nấu nhanh một món đơn giản",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "whip up",
        "type": "Phrasal verb",
@@ -12658,14 +12501,7 @@
        "band": "7–8",
        "grammar": "tách được: whip up a meal / whip it up",
        "ex": "I can whip up fried rice in ten minutes."
-      }
-     ],
-     "note": "tách được: whip up a meal / whip it up"
-    },
-    {
-     "mean": "ngon như mẹ nấu",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "like mom used to make",
        "type": "Idiom",
@@ -12676,10 +12512,10 @@
        "ex": "This soup tastes like mom used to make."
       }
      ],
-     "note": "cụm cố định, đứng sau danh từ"
+     "note": "homemade + đồ ăn; home-cooked hay đi với meal / food · from scratch = từ nguyên liệu thô · heat up = hâm · whip up = nấu nhanh"
     },
     {
-     "mean": "ăn chay; người ăn chay",
+     "mean": "ăn chay",
      "cat": "A. Food & Cooking: từ cốt lõi",
      "items": [
       {
@@ -12708,14 +12544,7 @@
        "band": "7–8",
        "grammar": "plant-based + food / milk",
        "ex": "More cafes now sell plant-based milk."
-      }
-     ],
-     "note": "vegetarian vẫn ăn trứng, sữa; plant-based = chỉ ăn thực vật"
-    },
-    {
-     "mean": "chuyển sang ăn chay",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "go vegetarian",
        "type": "Collocation",
@@ -12724,14 +12553,7 @@
        "band": "5.5–6.5",
        "grammar": "go + vegetarian / vegan",
        "ex": "Many young people go vegetarian for their health."
-      }
-     ],
-     "note": "go + vegetarian / vegan"
-    },
-    {
-     "mean": "chế độ ăn thuần thực vật",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "a plant-based diet",
        "type": "Collocation",
@@ -12740,14 +12562,7 @@
        "band": "7–8",
        "grammar": "follow / be on + a plant-based diet",
        "ex": "More young people follow a plant-based diet."
-      }
-     ],
-     "note": "follow / be on + a plant-based diet"
-    },
-    {
-     "mean": "bỏ hẳn (không ăn món gì nữa)",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "cut out",
        "type": "Phrasal verb",
@@ -12758,10 +12573,10 @@
        "ex": "My sister cut out meat and went vegetarian."
       }
      ],
-     "note": "tách được: cut out meat / cut it out"
+     "note": "vegetarian vẫn ăn trứng, sữa · plant-based = chỉ ăn thực vật · go vegetarian = chuyển sang ăn chay · cut out = bỏ hẳn"
     },
     {
-     "mean": "chế độ ăn (những gì mình ăn hằng ngày)",
+     "mean": "chế độ ăn",
      "cat": "A. Food & Cooking: từ cốt lõi",
      "items": [
       {
@@ -12781,14 +12596,7 @@
        "band": "5.5–6.5",
        "grammar": "số nhiều: my / bad + eating habits",
        "ex": "My eating habits changed when I started my internship."
-      }
-     ],
-     "note": "diet không chỉ là ăn kiêng; eating habits luôn số nhiều"
-    },
-    {
-     "mean": "chế độ ăn cân bằng",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "a balanced diet",
        "type": "Collocation",
@@ -12797,14 +12605,7 @@
        "band": "4–5",
        "grammar": "have / eat + a balanced diet",
        "ex": "It's hard to have a balanced diet during exams."
-      }
-     ],
-     "note": "have / eat + a balanced diet"
-    },
-    {
-     "mean": "ăn kiêng",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "go on a diet",
        "type": "Collocation",
@@ -12813,14 +12614,7 @@
        "band": "4–5",
        "grammar": "go on / be on + a diet",
        "ex": "I want to go on a diet before my graduation photos."
-      }
-     ],
-     "note": "go on / be on + a diet"
-    },
-    {
-     "mean": "giảm cân, gầy đi",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "slim down",
        "type": "Phrasal verb",
@@ -12829,14 +12623,7 @@
        "band": "5.5–6.5",
        "grammar": "không tân ngữ; QK slimmed down",
        "ex": "I want to slim down before my first job interview."
-      }
-     ],
-     "note": "không tân ngữ; QK slimmed down"
-    },
-    {
-     "mean": "ăn gì thì người như vậy",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
+      },
       {
        "w": "you are what you eat",
        "type": "Idiom",
@@ -12847,10 +12634,10 @@
        "ex": "My mom always says, \"You are what you eat.\""
       }
      ],
-     "note": "câu cố định"
+     "note": "diet không chỉ là ăn kiêng · eating habits luôn số nhiều · go on a diet = ăn kiêng · slim down = giảm cân"
     },
     {
-     "mean": "thái hành",
+     "mean": "thái, cắt nhỏ",
      "cat": "B. Hoạt động trong bếp",
      "items": [
       {
@@ -12861,14 +12648,7 @@
        "band": "3–3.5",
        "grammar": "chop + onions / vegetables",
        "ex": "First, chop onions and fry them in a pan."
-      }
-     ],
-     "note": "chop + onions / vegetables; QK chopped /t/"
-    },
-    {
-     "mean": "thái nhỏ",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
+      },
       {
        "w": "chop up",
        "type": "Phrasal verb",
@@ -12879,7 +12659,7 @@
        "ex": "Chop up the cabbage finely."
       }
      ],
-     "note": "tách được: chop up the cabbage / chop it up"
+     "note": "chop + onions / vegetables; QK chopped /t/ · chop up tách được"
     },
     {
      "mean": "trộn bột",
@@ -12975,7 +12755,7 @@
        "ex": "A man is stirring the soup with a big spoon."
       }
      ],
-     "note": "stir + the soup / the sauce"
+     "note": "stir + the soup / the sauce; QK stirred"
     },
     {
      "mean": "nếm nước sốt",
@@ -12991,10 +12771,10 @@
        "ex": "She tasted the sauce and added some salt."
       }
      ],
-     "note": "taste + the sauce / the soup"
+     "note": "taste + the sauce / the soup; QK tasted /ɪd/"
     },
     {
-     "mean": "dọn bàn, bày bát đũa",
+     "mean": "dọn bàn, bày món",
      "cat": "B. Hoạt động trong bếp",
      "items": [
       {
@@ -13005,9 +12785,18 @@
        "band": "4–5",
        "grammar": "set the table + for + dinner",
        "ex": "Can you help me set the table for dinner?"
+      },
+      {
+       "w": "dish up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdɪʃ ˈʌp/",
+       "stress": "dish‿UP",
+       "band": "7–8",
+       "grammar": "tách được: dish up the soup / dish it up",
+       "ex": "Can you dish up the soup for everyone?"
       }
      ],
-     "note": "set the table (for + bữa ăn)"
+     "note": "set the table (for + bữa ăn) = bày bát đũa · dish up = múc thức ăn ra đĩa"
     },
     {
      "mean": "rửa bát",
@@ -13033,22 +12822,6 @@
       }
      ],
      "note": "do the dishes (Mỹ) = wash up (Anh)"
-    },
-    {
-     "mean": "múc ra đĩa, dọn món",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "dish up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌdɪʃ ˈʌp/",
-       "stress": "dish‿UP",
-       "band": "7–8",
-       "grammar": "tách được: dish up the soup / dish it up",
-       "ex": "Can you dish up the soup for everyone?"
-      }
-     ],
-     "note": "tách được: dish up the noodles / dish them up"
     },
     {
      "mean": "lớp học nấu ăn",
@@ -13265,7 +13038,7 @@
        "ex": "Our lunch break is only forty-five minutes."
       }
      ],
-     "note": "on my lunch break"
+     "note": "on / during my lunch break"
     },
     {
      "mean": "mang cơm hộp đi làm",
@@ -13364,7 +13137,7 @@
      "note": "have + a team lunch"
     },
     {
-     "mean": "mời ai ăn trưa (mình trả tiền)",
+     "mean": "mời ai ăn (mình trả tiền)",
      "cat": "D. Sinh viên năm cuối, mới đi làm",
      "items": [
       {
@@ -13428,7 +13201,7 @@
      "note": "eat out không tân ngữ; QK ate out"
     },
     {
-     "mean": "ăn no (bằng món gì)",
+     "mean": "ăn nhiều, ăn no",
      "cat": "D. Sinh viên năm cuối, mới đi làm",
      "items": [
       {
@@ -13439,14 +13212,7 @@
        "band": "4–5",
        "grammar": "fill up on + N",
        "ex": "Don't fill up on bread before the main dish."
-      }
-     ],
-     "note": "fill up on + N"
-    },
-    {
-     "mean": "ăn quá nhiều, ăn ngấu nghiến",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
+      },
       {
        "w": "pig out",
        "type": "Phrasal verb",
@@ -13455,14 +13221,7 @@
        "band": "7–8",
        "grammar": "pig out on + N (thân mật)",
        "ex": "Let's pig out on pizza after the exam!"
-      }
-     ],
-     "note": "rất thân mật, chỉ dùng với bạn bè"
-    },
-    {
-     "mean": "ăn rất khỏe",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
+      },
       {
        "w": "eat like a horse",
        "type": "Idiom",
@@ -13473,39 +13232,7 @@
        "ex": "My brother eats like a horse after the gym."
       }
      ],
-     "note": "eat like a horse (thân mật)"
-    },
-    {
-     "mean": "hảo ngọt, thích đồ ngọt",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "have a sweet tooth",
-       "type": "Idiom",
-       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
-       "stress": "have‿a SWEET TOOTH",
-       "band": "5.5–6.5",
-       "grammar": "have + a sweet tooth",
-       "ex": "I have a sweet tooth, so I always buy cakes."
-      }
-     ],
-     "note": "have a sweet tooth"
-    },
-    {
-     "mean": "làm cho thú vị, mới lạ hơn",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "spice things up",
-       "type": "Idiom",
-       "ipa": "/ˌspaɪs θɪŋz ˈʌp/",
-       "stress": "spice things UP",
-       "band": "7–8",
-       "grammar": "spice + things / sth + up",
-       "ex": "We tried a new restaurant to spice things up."
-      }
-     ],
-     "note": "spice things up (nghĩa bóng)"
+     "note": "fill up on + N = ăn no (bằng món gì) · pig out rất thân mật · eat like a horse = ăn rất khỏe"
     }
    ]
   }

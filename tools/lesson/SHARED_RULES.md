@@ -6,7 +6,10 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 - **Bộ theo topic Speaking của tuần dạy:** `title` = topic Speaking của buổi (vd. *Studies & School life*), không theo phần phát âm hay Listening. Gói bài tập tuần gắn `"deck"` = bộ của topic Speaking vừa dạy; buổi chỉ có Listening (không dạy Speaking) thì gói tuần dùng lại bộ của topic Speaking gần nhất, không tạo bộ mới.
 - Mỗi buổi 1 bộ (`dt<N>` Đức–Thư, `va<N>` Vân Anh…), từ bảng vocab + Alternatives của buổi. Bài tập của buổi có `"deck": "<id>"`; web hỏi HS ôn flashcard trước khi vào bài. Bộ mở khi có bài cùng `session` đã mở với HS.
-- **Gộp nhóm (từ 7/11/2026):** 1 thẻ = 1 nhóm từ **đồng nghĩa / dùng thay nhau được trong cùng câu**; web xếp hàng theo Vocab / Phrasal verb / Collocation / Idiom. Tối đa 8 từ, ≤ 3 từ mỗi loại (to hơn thì tách nhóm). Mỗi nhóm có 1 dòng **lưu ý** chung: khác nhau ở đâu, thân mật / trang trọng, đếm được, giới từ. Từ không có đồng nghĩa = thẻ 1 từ; từ chỉ gần nghĩa hoặc ngược nghĩa không gộp.
+- **Gộp nhóm (từ 7/11/2026, nhắc lại 12/11/2026) — bắt buộc, để HS học cả cụm và so sánh các từ gần nghĩa:** 1 thẻ = 1 từ chính trong bảng Vocab + các từ / cụm **cùng nghĩa hoặc cùng họ** của nó: **synonym · collocation · phrasal verb · idiom**, giống 1 dòng bảng Alternatives (vd. *recipe · follow a recipe · a family recipe · try out · a recipe for disaster*). Web xếp hàng theo Vocab / Phrasal verb / Collocation / Idiom. Tối đa 8 từ, ≤ 3 từ mỗi loại (to hơn thì tách nhóm). Mỗi nhóm có 1 dòng **lưu ý** chung **so sánh** các từ trong thẻ: khác nhau ở đâu, Anh – Mỹ, thân mật / trang trọng, đếm được, giới từ.
+  - **Không** tách mỗi collocation / phrasal verb thành 1 thẻ riêng. Từ cốt lõi (nhóm A, 12 từ) mỗi thẻ nên **≥ 3 từ**; nhóm B–D (hoạt động, nơi chốn, từ đời sống) có thể 1–2 từ khi không có từ cùng nghĩa.
+  - **Cả bộ ≈ số từ bảng Vocab của buổi (~44–46 thẻ)**, mẫu: `decks/dt3.txt`, `decks/dt4.txt`. `make_deck.py` báo lỗi khi bộ > 55 thẻ hoặc số thẻ > 75 % số từ (= chưa gom), cảnh báo thẻ cốt lõi chỉ có 1 từ.
+  - Từ chỉ gần nghĩa nhưng **ngược nghĩa / khác nghĩa** thì không gộp; nghĩa tiếng Việt của các thẻ không trùng nhau.
 - `type` chỉ 4 giá trị **Vocab · Phrasal verb · Collocation · Idiom** (Noun/Verb/Adjective → Vocab, Noun phrase → Collocation). Band: 3–3.5 · 4–5 · 5.5–6.5 · 7–8 · 8.5–9 (8.5–9 tự có ⚠). IPA Mỹ, nhấn âm, grammar, câu ví dụ đúng bối cảnh HS. **Nghĩa không trùng** giữa các thẻ (lựa chọn đoán nghĩa lấy từ thẻ khác).
 - File thẻ `tools/lesson/decks/<id>.txt` (mẫu `decks/dt1.txt`):
   ```
@@ -61,6 +64,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 | Ngày | Thay đổi |
 | --- | --- |
+| 12/11/2026 | Flashcard: nhắc lại quy tắc gom nhóm (1 thẻ = 1 từ bảng Vocab + synonym / collocation / phrasal verb / idiom, lưu ý so sánh; bộ ≈ 44–46 thẻ); `make_deck.py` báo lỗi bộ chưa gom; `dt4` gom lại 85 → 46 thẻ |
 | 10/11/2026 | Flashcard 🧠 Nhớ lại: nghĩa + câu đục lỗ → gõ từ, gợi ý kiểu Hangman, lặp giãn cách 1–30 ngày, trộn từ các bộ cũ; nhắc trước bài khi ≥ 5 thẻ đến hạn |
 | 9/11/2026 | Màn giáo viên + trang HS: xếp theo tuần → ngày (nhãn `T2 9/11`), tách ✅ Đã làm; tiêu đề không ghi thứ; bài nghe nộp rồi là xong, chỉ bài chưa xong mới báo qua hạn |
 | 9/11/2026 | Gói bài tập theo ngày, hạn nộp = buổi học kế tiếp (`deadlineAt` = giờ vào học); dải "Tuần này" theo chu kỳ bài tập; tuần học dạng gì thì bài tập có dạng đó |

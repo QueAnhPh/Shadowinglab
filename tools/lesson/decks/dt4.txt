@@ -3,116 +3,84 @@
 #session=4
 #topic=Food & Cooking
 @A. Food & Cooking: từ cốt lõi
-= món ăn (một món cụ thể) | dish đếm được: a dish, two dishes; food không đếm được
-dish|Vocab|/dɪʃ/|DISH|3–3.5|đếm được: a dish / dishes|Pho is my favorite Vietnamese dish.
-= đặc sản của một vùng | a local specialty + of / in + nơi chốn
-a local specialty|Collocation|/ə ˌloʊkl ˈspeʃəlti/|a LO-cal SPE-cial-ty|4–5|a local specialty + of / in + nơi chốn|Cao lau is a local specialty of Hoi An.
+= món ăn, món đặc sản | dish = 1 món cụ thể (đếm được) · specialty = đặc sản của 1 vùng (Anh: speciality) · signature dish = món tủ · cuisine = cả nền ẩm thực, trang trọng
+dish|Vocab|/dɪʃ/|DISH|3–3.5|đếm được: a dish / two dishes; food không đếm được|Pho is my favorite Vietnamese dish.
 specialty|Vocab|/ˈspeʃəlti/|SPE-cial-ty|5.5–6.5|đếm được (Mỹ); Anh: speciality|Banh xeo is a specialty of the south.
-= món tủ, món đặc trưng của ai | sb's / the restaurant's + signature dish
-a signature dish|Collocation|/ə ˌsɪɡnətʃər ˈdɪʃ/|a SIG-na-ture DISH|5.5–6.5|my / the restaurant's + signature dish|Fried rice is a signature dish in my family.
-= nền ẩm thực của một nước / vùng | cuisine trang trọng hơn food: Vietnamese cuisine
 cuisine|Vocab|/kwɪˈziːn/|cui-SINE|7–8|Vietnamese / Thai / local + cuisine|My manager loves Vietnamese cuisine.
-= nguyên liệu nấu ăn | ingredient đếm được: the ingredients of / for a dish
+a local specialty|Collocation|/ə ˌloʊkl ˈspeʃəlti/|a LO-cal SPE-cial-ty|4–5|a local specialty + of / in + nơi chốn|Cao lau is a local specialty of Hoi An.
+a signature dish|Collocation|/ə ˌsɪɡnətʃər ˈdɪʃ/|a SIG-na-ture DISH|5.5–6.5|my / the restaurant's + signature dish|Fried rice is a signature dish in my family.
+= nguyên liệu nấu ăn | ingredient đếm được: the ingredients of / for + món · the secret ingredient còn có nghĩa bóng: bí quyết thành công
 ingredient|Vocab|/ɪnˈɡriːdiənt/|in-GRE-di-ent|5.5–6.5|đếm được: the ingredients of / for + dish|Flour and water are the main ingredients of the dough.
-= nguyên liệu tươi | thường dùng số nhiều
-fresh ingredients|Collocation|/ˌfreʃ ɪnˈɡriːdiənts/|fresh in-GRE-di-ents|4–5|use / buy + fresh ingredients|This restaurant only uses fresh ingredients.
-= nguyên liệu chính | the main ingredient + of / in + món
+fresh ingredients|Collocation|/ˌfreʃ ɪnˈɡriːdiənts/|fresh in-GRE-di-ents|4–5|use / buy + fresh ingredients (số nhiều)|This restaurant only uses fresh ingredients.
 the main ingredient|Collocation|/ðə ˌmeɪn ɪnˈɡriːdiənt/|the MAIN in-GRE-di-ent|4–5|the main ingredient + of / in + dish|Rice is the main ingredient of this dish.
-= bí quyết làm nên món ngon / thành công | nghĩa bóng: điều làm nên khác biệt
 the secret ingredient|Idiom|/ðə ˌsiːkrət ɪnˈɡriːdiənt/|the SE-cret in-GRE-di-ent|5.5–6.5|the secret ingredient + of / in + sth|Teamwork is the secret ingredient of our project.
-= công thức nấu ăn | recipe đọc 3 âm tiết REC-i-pe; a recipe for + món
+= công thức nấu ăn | recipe đọc 3 âm tiết REC-i-pe · follow a recipe = làm theo · try out = thử làm món mới · a recipe for disaster = nghĩa bóng: chắc chắn hỏng
 recipe|Vocab|/ˈresəpi/|REC-i-pe|4–5|a recipe + for + dish|My mom gave me her recipe for fried rice.
-= làm theo công thức | follow + a / my mom's recipe
 follow a recipe|Collocation|/ˌfɑːloʊ ə ˈresəpi/|FOL-low‿a REC-i-pe|4–5|follow + a / my mom's + recipe|I always follow a recipe when I bake.
-= công thức gia truyền | a family recipe
 a family recipe|Collocation|/ə ˌfæməli ˈresəpi/|a FAM-i-ly REC-i-pe|5.5–6.5|đếm được|This fish sauce is a family recipe.
-= thử làm (món mới, công thức mới) | tách được: try out a recipe / try it out
 try out|Phrasal verb|/ˌtraɪ ˈaʊt/|try‿OUT|5.5–6.5|tách được: try out a recipe / try it out|I want to try out a new recipe this weekend.
-= điều chắc chắn dẫn tới thất bại | nghĩa bóng, không nói về nấu ăn
 a recipe for disaster|Idiom|/ə ˌresəpi fər dɪˈzæstər/|a REC-i-pe for di-SAS-ter|7–8|be + a recipe for disaster|Starting my thesis one week before the deadline is a recipe for disaster.
-= bữa ăn | meal đếm được: three meals a day
+= bữa ăn | meal đếm được · have + breakfast / lunch / dinner (không có a) · feast = bữa thịnh soạn · home-cooked = nhà nấu · nutritious = bổ dưỡng
 meal|Vocab|/miːl/|MEAL|3–3.5|đếm được: have three meals a day|I usually have three meals a day.
-= ăn trưa (have + tên bữa) | have + breakfast / lunch / dinner, không có a
-have lunch|Collocation|/ˌhæv ˈlʌntʃ/|have LUNCH|3–3.5|have + breakfast / lunch / dinner|I have lunch with my team at noon.
-= bữa tiệc thịnh soạn | a feast; nghĩa rộng: rất nhiều món ngon
 feast|Vocab|/fiːst/|FEAST|5.5–6.5|a + feast; have a feast|We had a feast after our thesis defense.
-= bữa cơm nhà nấu | have / miss + a home-cooked meal
+have lunch|Collocation|/ˌhæv ˈlʌntʃ/|have LUNCH|3–3.5|have + breakfast / lunch / dinner|I have lunch with my team at noon.
 a home-cooked meal|Collocation|/ə ˌhoʊm kʊkt ˈmiːl/|a HOME-cooked MEAL|5.5–6.5|have / miss + a home-cooked meal|I really miss a home-cooked meal when I'm away.
-= bữa ăn bổ dưỡng | eat / prepare + a nutritious meal
 a nutritious meal|Collocation|/ə nuˌtrɪʃəs ˈmiːl/|a nu-TRI-tious MEAL|7–8|eat / prepare + a nutritious meal|A bowl of pho can be a nutritious meal.
-= đồ ăn vặt | snack đếm được: some snacks
+= đồ ăn vặt | snack đếm được · treat = món tự thưởng · have a sweet tooth = hảo ngọt
 snack|Vocab|/snæk/|SNACK|3–3.5|đếm được: a snack / some snacks|I keep some snacks in my desk drawer.
-= món ăn vặt lành mạnh | healthy snacks
-a healthy snack|Collocation|/ə ˌhelθi ˈsnæk/|a HEAL-thy SNACK|3–3.5|đếm được: healthy snacks|Nuts are a healthy snack for long workdays.
-= món ngon tự thưởng cho mình | treat (n) đếm được: a treat for myself
 treat|Vocab|/triːt/|TREAT|4–5|đếm được: a treat (for sb)|Bubble tea is my treat after a long week.
-= đồ ăn mua mang về | takeout (Mỹ) = takeaway (Anh), đều là danh từ
+a healthy snack|Collocation|/ə ˌhelθi ˈsnæk/|a HEAL-thy SNACK|3–3.5|đếm được: healthy snacks|Nuts are a healthy snack for long workdays.
+have a sweet tooth|Idiom|/ˌhæv ə ˌswiːt ˈtuːθ/|have‿a SWEET TOOTH|5.5–6.5|have + a sweet tooth|I have a sweet tooth, so I always buy cakes.
+= đồ ăn mua về, gọi về | takeout (Mỹ) = takeaway (Anh) · delivery = giao tận nơi · order in không có tân ngữ; order takeout có tân ngữ
 takeout|Vocab|/ˈteɪkaʊt/|TAKE-out|4–5|không đếm được (Mỹ): order / get takeout|We ordered takeout because we were too tired to cook.
 takeaway|Vocab|/ˈteɪkəweɪ/|TAKE-a-way|4–5|Anh – Anh, đếm được: get a takeaway|In London, we got a takeaway every Friday.
-= gọi đồ ăn về nhà / văn phòng | order in là cụm động từ không tân ngữ; order takeout / delivery có tân ngữ
+delivery|Vocab|/dɪˈlɪvəri/|de-LIV-er-y|4–5|order / get + delivery (Mỹ, không đếm được)|It was raining, so we got delivery from a food app.
 order takeout|Collocation|/ˌɔːrdər ˈteɪkaʊt/|OR-der TAKE-out|4–5|order + takeout|We order takeout when we work late.
 order in|Phrasal verb|/ˌɔːrdər ˈɪn/|or-der‿IN|4–5|không tân ngữ (Mỹ)|We were too busy, so we ordered in.
-delivery|Vocab|/dɪˈlɪvəri/|de-LIV-er-y|4–5|order / get + delivery (Mỹ, không đếm được)|It was raining, so we got delivery from a food app.
-= cay | hot cũng có nghĩa là nóng; fiery = cay xé, rất cay
+= cay | hot cũng có nghĩa là nóng · fiery = cay xé · can't handle spicy food = không ăn được cay · spice things up = nghĩa bóng: làm thú vị hơn
 spicy|Vocab|/ˈspaɪsi/|SPI-cy|3–3.5|spicy + food / soup; too spicy for sb|This noodle soup is too spicy for me.
 hot|Vocab|/hɑːt/|HOT|3–3.5|hot = cay (khi nói món ăn) hoặc nóng|This chili sauce is really hot.
 fiery|Vocab|/ˈfaɪəri/|FI-er-y|7–8|a fiery + sauce / curry|The fiery sauce made my eyes water.
-= không ăn được cay | can / can't + handle + spicy food
 can't handle spicy food|Collocation|/ˌkænt ˌhændl ˈspaɪsi fuːd/|can't HAN-dle SPI-cy food|5.5–6.5|can / can't + handle + spicy food|I can't handle spicy food, so I order it mild.
-= ngon | absolutely delicious thay cho very delicious · to die for đứng sau danh từ / sau be (thân mật)
+spice things up|Idiom|/ˌspaɪs θɪŋz ˈʌp/|spice things UP|7–8|spice + things / sth + up|We tried a new restaurant to spice things up.
+= ngon | absolutely delicious thay cho very delicious · dig in = mời ăn (mệnh lệnh) · to die for đứng sau danh từ / sau be, thân mật
 delicious|Vocab|/dɪˈlɪʃəs/|de-LI-cious|3–3.5|look / taste + delicious|The dumplings in the picture look delicious.
 tasty|Vocab|/ˈteɪsti/|TAS-ty|3–3.5|a tasty + dish / snack|This banh mi is cheap and tasty.
 mouth-watering|Vocab|/ˈmaʊθ ˌwɔːtərɪŋ/|MOUTH-wa-ter-ing|7–8|a mouth-watering + dish / smell|The street food stalls have mouth-watering dishes.
 absolutely delicious|Collocation|/ˌæbsəluːtli dɪˈlɪʃəs/|AB-so-lute-ly de-LI-cious|5.5–6.5|absolutely + tính từ mạnh|The dumplings were absolutely delicious.
-to die for|Idiom|/tə ˈdaɪ fɔːr/|to DIE for|7–8|be + to die for / N + to die for (thân mật)|My grandma's spring rolls are to die for.
-= ăn đi! (lời mời ăn, thân mật) | dig in, hay dùng câu mệnh lệnh
 dig in|Phrasal verb|/ˌdɪɡ ˈɪn/|dig‿IN|4–5|không tân ngữ; câu mệnh lệnh|The food is ready, dig in!
-= tốt cho sức khỏe | healthy rộng nhất; nutritious = bổ dưỡng, nhiều chất; good for you thân mật
+to die for|Idiom|/tə ˈdaɪ fɔːr/|to DIE for|7–8|be + to die for / N + to die for (thân mật)|My grandma's spring rolls are to die for.
+= tốt cho sức khỏe | healthy rộng nhất · nutritious = bổ dưỡng · good for you thân mật, đứng sau be · cut down on = ăn bớt · in moderation = có chừng mực
 healthy|Vocab|/ˈhelθi/|HEAL-thy|3–3.5|healthy + food / snack / diet|Fruit is a healthy snack.
 nutritious|Vocab|/nuˈtrɪʃəs/|nu-TRI-tious|5.5–6.5|nutritious + food / meal|Eggs are cheap and nutritious.
-good for you|Collocation|/ˌɡʊd fər ˈjuː/|GOOD for you|3–3.5|be + good for you (sau be, không đứng trước danh từ)|Green tea is good for you.
-= thói quen ăn uống lành mạnh | have / develop + healthy eating habits
+good for you|Collocation|/ˌɡʊd fər ˈjuː/|GOOD for you|3–3.5|be + good for you (không đứng trước danh từ)|Green tea is good for you.
 healthy eating habits|Collocation|/ˌhelθi ˈiːtɪŋ ˌhæbɪts/|HEAL-thy EAT-ing hab-its|5.5–6.5|have / develop + healthy eating habits|Office workers need healthy eating habits.
-= ăn / dùng bớt (đường, mỡ…) | cut down on + N / V-ing, không tách
-cut down on|Phrasal verb|/ˌkʌt ˈdaʊn ɑːn/|cut DOWN on|4–5|cut down on + N / V-ing|I'm trying to cut down on sugar.
-= ăn có chừng mực | eat / drink + sth + in moderation
 eat in moderation|Collocation|/ˌiːt ɪn ˌmɑːdəˈreɪʃn/|eat in mod-er-A-tion|7–8|eat / drink + sth + in moderation|You can eat snacks, but eat in moderation.
-= nhà làm, tự nấu (không mua ngoài) | homemade + đồ ăn; home-cooked hay đi với meal / food
+cut down on|Phrasal verb|/ˌkʌt ˈdaʊn ɑːn/|cut DOWN on|4–5|cut down on + N / V-ing, không tách|I'm trying to cut down on sugar.
+= nhà làm, tự nấu | homemade + đồ ăn; home-cooked hay đi với meal / food · from scratch = từ nguyên liệu thô · heat up = hâm · whip up = nấu nhanh
 homemade|Vocab|/ˌhoʊmˈmeɪd/|home-MADE|4–5|homemade + food / cake / sauce|I prefer homemade food to fast food.
 home-cooked|Vocab|/ˌhoʊm ˈkʊkt/|home-COOKED|4–5|home-cooked + food / dinner|I eat home-cooked food on weekends.
-= tự nấu từ nguyên liệu thô | cook / make + sth + from scratch
 cook from scratch|Collocation|/ˌkʊk frəm ˈskrætʃ/|cook from SCRATCH|5.5–6.5|cook / make + sth + from scratch|On Sundays, I cook from scratch.
-= hâm nóng (đồ ăn) | tách được: heat up the soup / heat it up
 heat up|Phrasal verb|/ˌhiːt ˈʌp/|heat‿UP|3–3.5|tách được: heat up the soup / heat it up|I heat up my lunch in the office microwave.
-= nấu nhanh một món đơn giản | tách được: whip up a meal / whip it up
 whip up|Phrasal verb|/ˌwɪp ˈʌp/|whip‿UP|7–8|tách được: whip up a meal / whip it up|I can whip up fried rice in ten minutes.
-= ngon như mẹ nấu | cụm cố định, đứng sau danh từ
 like mom used to make|Idiom|/laɪk ˈmɑːm juːst tə ˌmeɪk/|like MOM used to MAKE|7–8|N + like mom used to make (Anh: like mum used to make)|This soup tastes like mom used to make.
-= ăn chay; người ăn chay | vegetarian vẫn ăn trứng, sữa; plant-based = chỉ ăn thực vật
+= ăn chay | vegetarian vẫn ăn trứng, sữa · plant-based = chỉ ăn thực vật · go vegetarian = chuyển sang ăn chay · cut out = bỏ hẳn
 vegetarian|Vocab|/ˌvedʒəˈteriən/|veg-e-TAR-i-an|5.5–6.5|tính từ hoặc danh từ: be vegetarian / a vegetarian|My roommate is vegetarian, so she never eats meat.
 meat-free|Vocab|/ˌmiːt ˈfriː/|meat-FREE|5.5–6.5|meat-free + meal / day|Our cafeteria has a meat-free day every Monday.
 plant-based|Vocab|/ˌplænt ˈbeɪst/|plant-BASED|7–8|plant-based + food / milk|More cafes now sell plant-based milk.
-= chuyển sang ăn chay | go + vegetarian / vegan
 go vegetarian|Collocation|/ˌɡoʊ ˌvedʒəˈteriən/|go veg-e-TAR-i-an|5.5–6.5|go + vegetarian / vegan|Many young people go vegetarian for their health.
-= chế độ ăn thuần thực vật | follow / be on + a plant-based diet
 a plant-based diet|Collocation|/ə ˌplænt beɪst ˈdaɪət/|a PLANT-based DI-et|7–8|follow / be on + a plant-based diet|More young people follow a plant-based diet.
-= bỏ hẳn (không ăn món gì nữa) | tách được: cut out meat / cut it out
 cut out|Phrasal verb|/ˌkʌt ˈaʊt/|cut‿OUT|5.5–6.5|tách được: cut out meat / cut it out|My sister cut out meat and went vegetarian.
-= chế độ ăn (những gì mình ăn hằng ngày) | diet không chỉ là ăn kiêng; eating habits luôn số nhiều
+= chế độ ăn | diet không chỉ là ăn kiêng · eating habits luôn số nhiều · go on a diet = ăn kiêng · slim down = giảm cân
 diet|Vocab|/ˈdaɪət/|DI-et|4–5|a healthy / unhealthy + diet|Students often have an unhealthy diet during exams.
 eating habits|Collocation|/ˈiːtɪŋ ˌhæbɪts/|EAT-ing hab-its|5.5–6.5|số nhiều: my / bad + eating habits|My eating habits changed when I started my internship.
-= chế độ ăn cân bằng | have / eat + a balanced diet
 a balanced diet|Collocation|/ə ˌbælənst ˈdaɪət/|a BAL-anced DI-et|4–5|have / eat + a balanced diet|It's hard to have a balanced diet during exams.
-= ăn kiêng | go on / be on + a diet
 go on a diet|Collocation|/ˌɡoʊ ɑːn ə ˈdaɪət/|go‿on‿a DI-et|4–5|go on / be on + a diet|I want to go on a diet before my graduation photos.
-= giảm cân, gầy đi | không tân ngữ; QK slimmed down
 slim down|Phrasal verb|/ˌslɪm ˈdaʊn/|slim DOWN|5.5–6.5|không tân ngữ; QK slimmed down|I want to slim down before my first job interview.
-= ăn gì thì người như vậy | câu cố định
 you are what you eat|Idiom|/ju ˌɑːr ˌwʌt ju ˈiːt/|you ARE what you EAT|7–8|câu cố định, thường đứng riêng|My mom always says, "You are what you eat."
 @B. Hoạt động trong bếp
-= thái hành | chop + onions / vegetables; QK chopped /t/
+= thái, cắt nhỏ | chop + onions / vegetables; QK chopped /t/ · chop up tách được
 chop onions|Collocation|/ˌtʃɑːp ˈʌnjənz/|chop ON-ions|3–3.5|chop + onions / vegetables|First, chop onions and fry them in a pan.
-= thái nhỏ | tách được: chop up the cabbage / chop it up
 chop up|Phrasal verb|/ˌtʃɑːp ˈʌp/|chop‿UP|4–5|tách được: chop up the onions / chop them up|Chop up the cabbage finely.
 = trộn bột | mix + the dough / the flour and water
 mix the dough|Collocation|/ˌmɪks ðə ˈdoʊ/|mix the DOUGH|3–3.5|mix + the dough / sth + with sth|Two girls are mixing the dough in a big bowl.
@@ -124,17 +92,16 @@ fold dumplings|Collocation|/ˌfoʊld ˈdʌmplɪŋz/|fold DUMP-lings|4–5|fold +
 fry an egg|Collocation|/ˌfraɪ ən ˈeɡ/|fry‿an EGG|3–3.5|fry + an egg / fish|A girl is frying an egg in a pan.
 = luộc mì | boil + noodles / water / eggs
 boil noodles|Collocation|/ˌbɔɪl ˈnuːdlz/|boil NOO-dles|3–3.5|boil + noodles / water|Boil noodles for three minutes.
-= khuấy nồi canh | stir + the soup / the sauce
+= khuấy nồi canh | stir + the soup / the sauce; QK stirred
 stir the soup|Collocation|/ˌstɝː ðə ˈsuːp/|stir the SOUP|4–5|stir + the soup / the sauce; QK stirred|A man is stirring the soup with a big spoon.
-= nếm nước sốt | taste + the sauce / the soup
+= nếm nước sốt | taste + the sauce / the soup; QK tasted /ɪd/
 taste the sauce|Collocation|/ˌteɪst ðə ˈsɔːs/|taste the SAUCE|4–5|taste + the sauce; QK tasted /ɪd/|She tasted the sauce and added some salt.
-= dọn bàn, bày bát đũa | set the table (for + bữa ăn)
+= dọn bàn, bày món | set the table (for + bữa ăn) = bày bát đũa · dish up = múc thức ăn ra đĩa
 set the table|Collocation|/ˌset ðə ˈteɪbl/|set the TA-ble|4–5|set the table + for + dinner|Can you help me set the table for dinner?
+dish up|Phrasal verb|/ˌdɪʃ ˈʌp/|dish‿UP|7–8|tách được: dish up the soup / dish it up|Can you dish up the soup for everyone?
 = rửa bát | do the dishes (Mỹ) = wash up (Anh)
 do the dishes|Collocation|/ˌduː ðə ˈdɪʃɪz/|do the DISH-es|3–3.5|do + the dishes; QK did the dishes|After dinner, I always do the dishes.
 wash up|Phrasal verb|/ˌwɑːʃ ˈʌp/|wash‿UP|4–5|Anh – Anh, không tân ngữ|In my homestay, I always wash up after dinner.
-= múc ra đĩa, dọn món | tách được: dish up the noodles / dish them up
-dish up|Phrasal verb|/ˌdɪʃ ˈʌp/|dish‿UP|7–8|tách được: dish up the soup / dish it up|Can you dish up the soup for everyone?
 @C. Nơi ăn uống, đặt chỗ
 = lớp học nấu ăn | take / book + a cooking class
 cooking class|Collocation|/ˈkʊkɪŋ klæs/|COOK-ing class|3–3.5|take / book + a cooking class|Our team booked a cooking class for Saturday.
@@ -162,7 +129,7 @@ apron|Vocab|/ˈeɪprən/|A-pron|4–5|đếm được: wear an apron|The school 
 = hóa đơn ở nhà hàng | check (Mỹ) = bill (Anh)
 check|Vocab|/tʃek/|CHECK|4–5|ask for / pay + the check|Can we have the check, please?
 @D. Sinh viên năm cuối, mới đi làm
-= giờ nghỉ trưa | on my lunch break
+= giờ nghỉ trưa | on / during my lunch break
 lunch break|Collocation|/ˈlʌntʃ breɪk/|LUNCH break|3–3.5|on / during + my lunch break|Our lunch break is only forty-five minutes.
 = mang cơm hộp đi làm | pack a lunch (Mỹ) = bring a packed lunch (Anh)
 pack a lunch|Collocation|/ˌpæk ə ˈlʌntʃ/|pack‿a LUNCH|4–5|pack + a lunch; QK packed /t/|I pack a lunch to save money.
@@ -176,7 +143,7 @@ skip breakfast|Collocation|/ˌskɪp ˈbrekfəst/|skip BREAK-fast|4–5|skip + br
 food delivery app|Collocation|/ˈfuːd dɪˌlɪvəri æp/|FOOD de-LIV-er-y app|4–5|order from + a food delivery app|Many office workers use a food delivery app every day.
 = bữa trưa cả nhóm | have + a team lunch
 team lunch|Collocation|/ˌtiːm ˈlʌntʃ/|team LUNCH|4–5|have + a team lunch|We have a team lunch every Friday.
-= mời ai ăn trưa (mình trả tiền) | treat + sb + to lunch / dinner
+= mời ai ăn (mình trả tiền) | treat + sb + to lunch / dinner
 treat you to lunch|Collocation|/ˌtriːt ju tə ˈlʌntʃ/|TREAT you to LUNCH|5.5–6.5|treat + sb + to + lunch / dinner|Let me treat you to lunch after the meeting.
 = ăn uống tiết kiệm | eat on a budget
 eat on a budget|Collocation|/ˌiːt ɑːn ə ˈbʌdʒɪt/|eat on‿a BUD-get|5.5–6.5|eat on a budget (as a student)|As a student, I have to eat on a budget.
@@ -184,13 +151,7 @@ eat on a budget|Collocation|/ˌiːt ɑːn ə ˈbʌdʒɪt/|eat on‿a BUD-get|5.5
 cook for myself|Collocation|/ˌkʊk fər maɪˈself/|cook for my-SELF|4–5|cook for + myself / yourself|After I moved out, I started to cook for myself.
 = ăn ngoài hàng | eat out không tân ngữ; QK ate out
 eat out|Phrasal verb|/ˌiːt ˈaʊt/|eat‿OUT|3–3.5|không tân ngữ; QK ate out|We eat out every Friday after work.
-= ăn no (bằng món gì) | fill up on + N
+= ăn nhiều, ăn no | fill up on + N = ăn no (bằng món gì) · pig out rất thân mật · eat like a horse = ăn rất khỏe
 fill up|Phrasal verb|/ˌfɪl ˈʌp/|fill‿UP|4–5|fill up on + N|Don't fill up on bread before the main dish.
-= ăn quá nhiều, ăn ngấu nghiến | rất thân mật, chỉ dùng với bạn bè
 pig out|Phrasal verb|/ˌpɪɡ ˈaʊt/|pig‿OUT|7–8|pig out on + N (thân mật)|Let's pig out on pizza after the exam!
-= ăn rất khỏe | eat like a horse (thân mật)
 eat like a horse|Idiom|/ˌiːt laɪk ə ˈhɔːrs/|eat LIKE‿a HORSE|7–8|eat like a horse|My brother eats like a horse after the gym.
-= hảo ngọt, thích đồ ngọt | have a sweet tooth
-have a sweet tooth|Idiom|/ˌhæv ə ˌswiːt ˈtuːθ/|have‿a SWEET TOOTH|5.5–6.5|have + a sweet tooth|I have a sweet tooth, so I always buy cakes.
-= làm cho thú vị, mới lạ hơn | spice things up (nghĩa bóng)
-spice things up|Idiom|/ˌspaɪs θɪŋz ˈʌp/|spice things UP|7–8|spice + things / sth + up|We tried a new restaurant to spice things up.

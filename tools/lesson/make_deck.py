@@ -61,6 +61,14 @@ def parse(path):
     means = [c["mean"] for c in cards]
     dup = {m for m in means if means.count(m) > 1}
     if dup: sys.exit(f"nghĩa trùng giữa các thẻ (đoán nghĩa sẽ sai): {dup}")
+    # Quy tắc gom nhóm (SHARED_RULES §1): từ cốt lõi (mục đầu tiên) = 1 thẻ / từ, gom cả synonym + collocation
+    # + phrasal verb + idiom như 1 dòng Alternatives (nên ≥ 3 từ); cả bộ ≈ số từ trong bảng Vocab (~44), không tách mỗi cụm 1 thẻ.
+    first = cards[0]["cat"] if cards else ""
+    thin = [c["mean"] for c in cards if c["cat"] == first and len(c["items"]) < 2]
+    if thin: print(f"⚠ mục '{first}': thẻ từ cốt lõi nên gom ≥ 3 từ (synonym / collocation / phrasal verb / idiom), đang 1 từ: {thin}")
+    nw = sum(len(c["items"]) for c in cards)
+    if len(cards) > 55 or len(cards) > 0.75 * nw:
+        sys.exit(f"{len(cards)} thẻ cho {nw} từ: chưa gom nhóm (bộ ~44 thẻ ≈ số từ bảng Vocab; từ cùng nghĩa / cùng họ để chung 1 thẻ)")
     return meta, cards
 
 ap = argparse.ArgumentParser()

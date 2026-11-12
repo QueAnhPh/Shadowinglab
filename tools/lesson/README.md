@@ -12,6 +12,6 @@ Không phải phần của web. Dùng cho việc soạn giáo án hằng tuần.
 | `listening_tts.py <tempo> <out.mp3> <lines.txt>` | audio đề nghe tự viết bằng Kokoro; `tempo` 1 = tốc độ thật, 0.75 = bản chậm |
 | `make_shadow_video.py <ref> <out.mp4> <sid> <kokoro_dir> "<title>"` | video shadowing chữ chạy |
 | `lexfix.py <file>` | thêm từ thiếu vào `lexicon-us-en.txt` của Kokoro |
-| `make_deck.py <cards.txt> data/lessons.json --for <hs,…> [--link <lessonId,…>] [--opens YYYY-MM-DD]` | bộ flashcard của buổi → thêm/thay theo id trong `decks`. File thẻ (mẫu `decks/dt1.txt`): `#id= #title= #session= #topic=`, `@Mục`, `= nghĩa chung \| lưu ý` mở 1 thẻ = 1 nhóm từ đồng nghĩa / dùng thay nhau được (tối đa 8 từ, ≤ 3 từ mỗi loại), dưới đó mỗi từ 1 dòng `w\|type\|ipa\|stress\|band\|grammar\|ex`; từ không có đồng nghĩa = thẻ 1 từ. Nhóm ≥ 2 từ dùng cho 🎮 Game đồng nghĩa |
+| `make_deck.py <cards.txt> data/lessons.json --for <hs,…> [--link <lessonId,…>] [--opens YYYY-MM-DD]` | bộ flashcard của buổi → thêm/thay theo id trong `decks`. File thẻ (mẫu `decks/dt1.txt`): `#id= #title= #session= #topic=`, `@Mục`, `= nghĩa chung \| lưu ý` mở 1 thẻ = 1 từ chính bảng Vocab + synonym / collocation / phrasal verb / idiom của nó (tối đa 8 từ, ≤ 3 từ mỗi loại; bộ ≈ 44–46 thẻ, báo lỗi nếu chưa gom), dưới đó mỗi từ 1 dòng `w\|type\|ipa\|stress\|band\|grammar\|ex`; từ không có đồng nghĩa = thẻ 1 từ. Nhóm ≥ 2 từ dùng cho 🎮 Game đồng nghĩa |
 
 `lines.txt`: mỗi dòng `N|…` (người dẫn) · `H|…`, `K|…` (2 người nói) · `PAUSE|giây`.
