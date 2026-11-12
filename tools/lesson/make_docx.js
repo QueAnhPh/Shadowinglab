@@ -14,12 +14,17 @@ const PIC = process.argv[4] || require('path').join(DIR, 'picture.png');
 
 function runs(text, base = {}) {
   const out = [];
-  const re = /(<mark(?: class="(?:ans|trap)")?>[^<]+<\/mark>|\[[^\]]+\]\(https?:[^)\s]+\)|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  const re = /(<sup>[^<]+<\/sup>|<mark(?: class="(?:ans|trap)")?>[^<]+<\/mark>|\[[^\]]+\]\(https?:[^)\s]+\)|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0, m;
   while ((m = re.exec(text))) {
     if (m.index > last) out.push(new TextRun({ font: FONT, ...base, text: text.slice(last, m.index) }));
     const t = m[0];
-    if (t.startsWith('<mark')) {
+    if (t.startsWith('<sup>')) {
+      // band label as small superscript: [7–8]+ red, [5.5–6.5] green, lower grey
+      const v = t.slice(5, -6), color = /^(7|8)/.test(v) ? 'D84315' : /^5\.5/.test(v) ? '2E7D32' : '757575';
+      out.push(new TextRun({ font: FONT, ...base, text: v, superScript: true, bold: true, color }));
+    }
+    else if (t.startsWith('<mark')) {
       const fill = /class="ans"/.test(t) ? 'B9F6CA' : /class="trap"/.test(t) ? 'FFCDD2' : 'FFF176';
       out.push(new TextRun({ font: FONT, ...base, text: t.replace(/<[^>]+>/g, ''), shading: { type: ShadingType.CLEAR, fill, color: 'auto' } }));
     }
