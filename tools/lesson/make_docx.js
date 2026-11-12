@@ -56,6 +56,8 @@ function colWidths(header) {
   else if (h.startsWith('#|Câu hỏi|A|R|E|F')) pct = [6, 52, 7, 7, 7, 7, 14];
   else if (h.startsWith('#|Câu hỏi|A|R|E')) pct = [6, 58, 8, 8, 8, 12];
   else if (h.startsWith('Ngày|Đức|Thư')) pct = [24, 36, 40];
+  else if (h.startsWith('#|Form|')) pct = [6, 40, 20, 17, 17];
+  else if (h === 'Bước|Làm như sau') pct = [24, 76];
   else if (h.startsWith('#|✍ Từ em nhớ ra') && n === 8) pct = [5, 22, 17, 6, 5, 22, 17, 6];
   else if (h.startsWith('Bước|Mục đích')) pct = [16, 24, 60];
   else if (h.startsWith('Từ gốc') && n === 2) pct = [32, 68];
