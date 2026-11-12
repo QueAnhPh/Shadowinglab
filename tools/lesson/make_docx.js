@@ -157,7 +157,9 @@ function convert(md) {
     } else if (l.startsWith('    - ')) {
       out.push(new Paragraph({ numbering: { reference: 'bul', level: 1 }, children: runs(l.slice(6)) }));
     } else if (l.startsWith('- ')) {
-      out.push(new Paragraph({ numbering: { reference: 'bul', level: 0 }, children: runs(l.slice(2)) }));
+      // keep a bullet that introduces a table on the same page as the table
+      let j = i + 1; while (j < lines.length && !lines[j].trim()) j++;
+      out.push(new Paragraph({ numbering: { reference: 'bul', level: 0 }, keepNext: j < lines.length && lines[j].startsWith('|'), children: runs(l.slice(2)) }));
     } else if (l === '[[BINGO]]') {
       out.push(...bingo());
     } else if (l === '[[PICTURE]]') {
