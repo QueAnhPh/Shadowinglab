@@ -19,3 +19,9 @@ python3 $SKILL/scripts/office/validate.py "<file>.pptx"
 - Từ vựng: icon `react-icons` (gi, tb) trong vòng tròn màu + IPA Mỹ + nhấn âm VIẾT HOA + nút loa (`addMedia` audio). Nối âm `‿` viết thành `_` (Calibri không có ‿).
 - Kiểm tra: `validate.py`, render ảnh từng slide (soffice → pdftoppm) xem chữ tràn / chồng, đếm mp3 nhúng.
 - Audio sách (Mindset) nhúng trong PPT → file PPT chỉ để ở nhánh `Teach` trên Drive, không đưa cho HS / không đưa lên repo.
+
+## Hình minh họa từ vựng (từ 12/11/2026)
+- Không dùng icon trắng 1 màu nữa: dùng **Fluent Emoji Flat** (MIT) có chi tiết, **tô lại theo bảng màu giáo án** để cùng tone.
+- `npm i @iconify-json/fluent-emoji-flat @iconify/utils` → viết `map.json` (`{"1": "pot-of-food", ...}`, mẫu `pics_map_example.json`) → `node render_pics.js map.json pics` → `pics/<số>.png`.
+- Trong `gen.js`: `pic(slide, key, x, y, d, groupColor)` = vòng tròn nền nhạt màu nhóm + viền màu nhóm + hình.
+- Xem bảng hình (contact sheet) trước khi build; hình lạ / sai nghĩa thì đổi tên icon.
