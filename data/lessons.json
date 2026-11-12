@@ -326,6 +326,66 @@
     "dt-w20261109-thu-wed-l"
    ],
    "deadlineAt": "15:30"
+  },
+  {
+   "id": "hw-dt-w20261112-duc-s",
+   "skill": "Speaking",
+   "session": 4,
+   "title": "Bài tập tuần · Speaking",
+   "deadline": "2026-11-19",
+   "deadlineAt": "15:30",
+   "note": "Thứ Năm, Thứ Sáu: mỗi ngày 2 câu Part 1 (A.R.E. + F) · Thứ Bảy: Shadowing Buổi 4 (My lunch box), shadow 3 lần. Ôn flashcard Food & Cooking trước.",
+   "lessons": [
+    "dt-w20261112-duc-thu",
+    "dt-w20261112-duc-fri",
+    "s4-shadowing"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261112-duc-l",
+   "skill": "Listening",
+   "session": 4,
+   "title": "Bài tập tuần · Listening",
+   "deadline": "2026-11-19",
+   "deadlineAt": "15:30",
+   "note": "Thứ Hai, Thứ Ba: nghe Part 1 form completion (5 câu/ngày) · Thứ Tư: nghe Part 2 (trắc nghiệm + notes). Nghe 1 lần như thi thật.",
+   "lessons": [
+    "dt-w20261112-duc-mon",
+    "dt-w20261112-duc-tue",
+    "dt-w20261112-duc-wed"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261112-thu-s",
+   "skill": "Speaking",
+   "session": 4,
+   "title": "Bài tập tuần · Speaking",
+   "deadline": "2026-11-19",
+   "deadlineAt": "15:30",
+   "note": "Mỗi ngày 1 câu Part 1: đọc 🧭 phân tích, ghi từ khóa A / R / E / F, ghi âm thử rồi nộp · Thứ Bảy thêm Shadowing Buổi 4 (My lunch box).",
+   "lessons": [
+    "dt-w20261112-thu-thu",
+    "dt-w20261112-thu-fri",
+    "dt-w20261112-thu-sat",
+    "s4-shadowing",
+    "dt-w20261112-thu-mon-s",
+    "dt-w20261112-thu-tue-s",
+    "dt-w20261112-thu-wed-s"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261112-thu-l",
+   "skill": "Listening",
+   "session": 4,
+   "title": "Bài tập tuần · Listening",
+   "deadline": "2026-11-19",
+   "deadlineAt": "15:30",
+   "note": "Thứ Hai, Thứ Ba: nghe Part 1 form completion (bản hỗ trợ, 5 câu/ngày) · Thứ Tư: nghe Part 2 câu 14–18. Nghe chậm 1 lần rồi làm thật.",
+   "lessons": [
+    "dt-w20261112-thu-mon-l",
+    "dt-w20261112-thu-tue-l",
+    "dt-w20261112-thu-wed-l"
+   ]
   }
  ],
  "lessons": [
@@ -5993,6 +6053,2185 @@
      "why": "[[Special request]] = yêu cầu đặc biệt. Daniel nói [[I don't need a sea view]] → loại 'view'. Rồi hỏi [[could I have a room with]] **a desk** để đặt laptop. Đề có sẵn 'a' → 1 danh từ số ít."
     }
    }
+  },
+  {
+   "id": "dt-w20261112-duc-thu",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-12",
+   "opensAt": "17:00",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Food delivery & work lunch",
+   "subtitle": "Part 1 A.R.E. + Feeling · ghi từ khóa → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Food delivery apps",
+     "q": "Do you often use food delivery apps?",
+     "hint": "food delivery app, order takeout, lunch break, eat on a budget",
+     "demo": {
+      "q": "Do you often eat at food stalls on the street?",
+      "notes": {
+       "A": "yes · 2–3 times a week",
+       "R": "cheap · fast · near campus",
+       "E": "last Tuesday · banh mi · with classmates after class",
+       "F": "feel full · happy · save money"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Work or studies",
+     "q": "Does your university or company have a cafeteria? What do you think of the food there?",
+     "hint": "cafeteria, a balanced diet, tasty, healthy",
+     "demo": {
+      "q": "Is there a coffee shop near your university or workplace?",
+      "notes": {
+       "A": "yes · right opposite the gate",
+       "R": "good place to meet · quiet",
+       "E": "last week · prepared for an interview there",
+       "F": "feel calm · like my second office"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-duc-fri",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-13",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · New food & snacks",
+   "subtitle": "Part 1 A.R.E. + Feeling · ghi từ khóa → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Trying new food",
+     "q": "Do you like trying new food?",
+     "hint": "try out, a local specialty, street food, mouth-watering",
+     "demo": {
+      "q": "Do you like trying new drinks?",
+      "notes": {
+       "A": "not really · stick to iced coffee",
+       "R": "new drinks · too sweet · expensive",
+       "E": "last month · cheese tea · coworkers · didn't finish",
+       "F": "a bit disappointed · back to my usual"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Snacks in the past",
+     "q": "Did you eat a lot of snacks when you were a child?",
+     "hint": "snack, have a sweet tooth, cut down on, healthy",
+     "demo": {
+      "q": "Did you drink a lot of soft drinks when you were a teenager?",
+      "notes": {
+       "A": "yes · too many",
+       "R": "cheap · school canteen sold them",
+       "E": "high school · a can every afternoon · with best friend",
+       "F": "regret it a bit · now drink water"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-duc-mon",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-16",
+   "title": "Nghe Part 1 · Food festival booking (câu 1–5)",
+   "subtitle": "Form completion · 5 câu · 30 giây đọc đề → nghe 1 lần như thi thật → xem 🔑 từ khóa + giải thích",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261112-l1a.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Riverside Street Food Festival – Group Booking Form (Questions 1–5)",
+   "rows": [
+    "## Riverside Street Food Festival · Group Booking",
+    "[[Name]]: Ryan {1}",
+    "[[Mobile]]: 0907 418 {2}",
+    "[[Number of tickets]]: {3}",
+    "## Visit details",
+    "[[Day]]: {4}",
+    "[[Evening session starts at]]: {5} p.m."
+   ],
+   "transcript": [
+    {
+     "sp": "Mia",
+     "t": "Good afternoon, Riverside Street Food Festival. This is Mia. How can I help you?",
+     "at": 18.3
+    },
+    {
+     "sp": "Ryan",
+     "t": "Hi, Mia. I'm an intern at a marketing company, and my manager asked me to book festival [[tickets]] for our team.",
+     "at": 25.33
+    },
+    {
+     "sp": "Mia",
+     "t": "Lovely. Let me fill in the group booking form. What's your [[name]], please?",
+     "at": 35.35
+    },
+    {
+     "sp": "Ryan",
+     "t": "It's Ryan Fenwick.",
+     "at": 40.61
+    },
+    {
+     "sp": "Mia",
+     "t": "Could you [[spell your last name]] for me?",
+     "at": 43.15
+    },
+    {
+     "sp": "Ryan",
+     "t": "Of course. It's **F, E, N, W, I, C, K.**",
+     "at": 46.11,
+     "q": 1
+    },
+    {
+     "sp": "Mia",
+     "t": "Thank you. And what's the best [[contact number]]?",
+     "at": 51.97
+    },
+    {
+     "sp": "Ryan",
+     "t": "My [[mobile]] is oh nine oh seven, four one eight, two six three. [[Oh, sorry]], the end is **two three six**, [[not]] two six three.",
+     "at": 55.7,
+     "q": 2
+    },
+    {
+     "sp": "Mia",
+     "t": "So that's oh nine oh seven, four one eight, **two three six**.",
+     "at": 67.41,
+     "q": 2
+    },
+    {
+     "sp": "Ryan",
+     "t": "That's right.",
+     "at": 72.9
+    },
+    {
+     "sp": "Mia",
+     "t": "And [[how many tickets]] do you need?",
+     "at": 74.77
+    },
+    {
+     "sp": "Ryan",
+     "t": "There are ten people in our team, [[but]] two of my coworkers have a business trip that week. [[So we need]] **eight tickets**.",
+     "at": 77.64,
+     "q": 3
+    },
+    {
+     "sp": "Mia",
+     "t": "Eight. And [[which day]] would you like to come? The festival runs from Friday to Sunday.",
+     "at": 87.71
+    },
+    {
+     "sp": "Ryan",
+     "t": "We finish work late on Friday, so we were [[hoping for]] Saturday evening.",
+     "at": 94.62
+    },
+    {
+     "sp": "Mia",
+     "t": "I'm sorry, Saturday evening is [[completely sold out]]. We still have tickets for **Sunday**.",
+     "at": 101.09,
+     "q": 4
+    },
+    {
+     "sp": "Ryan",
+     "t": "**Sunday** [[is fine]]. Everyone's free on the weekend.",
+     "at": 108.42,
+     "q": 4
+    },
+    {
+     "sp": "Mia",
+     "t": "Great. On Sunday, the [[gates open]] at four, but most groups come for the [[evening session]]. [[That starts at]] **half past five**.",
+     "at": 113.06,
+     "q": 5
+    },
+    {
+     "sp": "Ryan",
+     "t": "Half past five is perfect. Our manager can't come before five anyway.",
+     "at": 122.41
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 1"
+    },
+    {
+     "label": "Câu 2"
+    },
+    {
+     "label": "Câu 3"
+    },
+    {
+     "label": "Câu 4"
+    },
+    {
+     "label": "Câu 5"
+    }
+   ],
+   "strategy": [
+    "<b>Đọc trước 30 giây:</b> gạch từ khóa mỗi dòng và <b>đoán loại thông tin</b> (số? tên riêng? ngày? danh từ số ít?), chọn ở nút dưới ô.",
+    "<b>Linear thinking:</b> câu hỏi đi <b>theo thứ tự audio</b>. Mắt đặt ở câu đang nghe <b>và</b> từ khóa câu kế tiếp; nghe thấy từ khóa câu sau mà chưa có đáp án câu trước → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý / sửa lại:</b> thông tin đầu thường sai. Chờ <i>but, sorry, actually, not …, last year … but this year</i>.",
+    "<b>Chính tả + giới hạn từ:</b> ONE WORD AND/OR A NUMBER → không viết lại chữ đã in sẵn ($, a reusable, p.m.). Nộp xong đọc 🔑 từ khóa ⇄ synonym và nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Fenwick"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Name",
+       "N",
+       "spell your last name"
+      ]
+     ],
+     "why": [
+      "Đề in sẵn <i>Ryan</i> → chỉ cần <b>họ</b>. Mia hỏi [[spell your last name]] → câu sau là đáp án.",
+      "Ghi <b>từng chữ cái</b>: F‑E‑N‑W‑I‑C‑K. Đừng viết theo tai (<i>Fenwik, Fenwich</i>).",
+      "Chốt **Fenwick**, viết hoa chữ đầu."
+     ]
+    },
+    "2": {
+     "ans": [
+      "236"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Mobile",
+       "N",
+       "my mobile"
+      ]
+     ],
+     "why": [
+      "Đề in sẵn 0907 418 → chỉ nghe <b>3 số cuối</b>.",
+      "Ryan đọc 263 rồi [[Oh, sorry]] … [[not]] 263 → bẫy sửa số.",
+      "Mia nhắc lại để xác nhận: **236**."
+     ]
+    },
+    "3": {
+     "ans": [
+      "8",
+      "eight"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Number of tickets",
+       "N",
+       "how many tickets"
+      ]
+     ],
+     "why": [
+      "[[how many tickets]] = Number of tickets.",
+      "10 người là bẫy; [[but]] 2 đồng nghiệp đi công tác.",
+      "[[So we need]] **eight tickets** → 8."
+     ]
+    },
+    "4": {
+     "ans": [
+      "Sunday"
+     ],
+     "form": [
+      "Thứ trong tuần (viết hoa)",
+      "Số (ngày)"
+     ],
+     "kw": [
+      [
+       "Day",
+       "N",
+       "which day"
+      ]
+     ],
+     "why": [
+      "[[which day]] = Day. Ryan muốn Saturday → bẫy.",
+      "Saturday evening [[completely sold out]] (hết vé) → loại.",
+      "Còn vé **Sunday**, Ryan đồng ý [[is fine]] → Sunday."
+     ]
+    },
+    "5": {
+     "ans": [
+      "5:30",
+      "5.30",
+      "530",
+      "half past five",
+      "five thirty"
+     ],
+     "form": [
+      "Giờ (số)",
+      "Thứ trong tuần"
+     ],
+     "kw": [
+      [
+       "Evening session",
+       "N",
+       "the evening session"
+      ],
+      [
+       "starts at",
+       "V",
+       "that starts at"
+      ]
+     ],
+     "why": [
+      "Đề hỏi giờ bắt đầu [[evening session]].",
+      "<i>gates open at four</i> = giờ mở cổng → bẫy (không phải session).",
+      "[[That starts at]] **half past five** = 5:30."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261112-duc-tue",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-17",
+   "title": "Nghe Part 1 · Food festival booking (câu 6–10)",
+   "subtitle": "Form completion · 5 câu · 30 giây đọc đề → nghe 1 lần như thi thật → xem 🔑 từ khóa + giải thích",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261112-l1b.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Riverside Street Food Festival – Group Booking Form (Questions 6–10)",
+   "rows": [
+    "## Ticket details",
+    "[[Food tokens per person]]: {6}",
+    "[[Price per person]]: ${7}",
+    "## Other information",
+    "[[Dietary needs]]: one person is {8}",
+    "[[Meeting point]]: the {9} (next to the north gate)",
+    "[[Each person must bring]]: a reusable {10}"
+   ],
+   "transcript": [
+    {
+     "sp": "Mia",
+     "t": "Now, every ticket comes with [[food tokens]]. You use them at the food stalls.",
+     "at": 17.57
+    },
+    {
+     "sp": "Ryan",
+     "t": "[[How many tokens]] do we get?",
+     "at": 23.73
+    },
+    {
+     "sp": "Mia",
+     "t": "The [[basic ticket]] has six tokens. [[But]] for groups, I'd recommend the team ticket. It has **ten tokens [[per person]]**.",
+     "at": 26.63,
+     "q": 6
+    },
+    {
+     "sp": "Ryan",
+     "t": "**Ten** [[sounds better]]. My coworkers eat like horses! Let's take the team ticket.",
+     "at": 35.82,
+     "q": 6
+    },
+    {
+     "sp": "Mia",
+     "t": "Good choice. The team ticket was twelve dollars [[last year]], [[but this year]] it's **fifteen dollars [[per person]]**.",
+     "at": 43.05,
+     "q": 7
+    },
+    {
+     "sp": "Ryan",
+     "t": "Fifteen. That's fine. Our company is paying.",
+     "at": 51.15
+    },
+    {
+     "sp": "Mia",
+     "t": "Lucky you! Does anyone in your group have any [[special dietary needs]]? Is anyone [[allergic]] to anything?",
+     "at": 55.84
+    },
+    {
+     "sp": "Ryan",
+     "t": "[[Nobody has any allergies]]. But one of my coworkers, Lan, [[doesn't eat meat]]. She's **vegetarian**.",
+     "at": 63.69,
+     "q": 8
+    },
+    {
+     "sp": "Mia",
+     "t": "No problem. There are lots of vegetarian stalls. [[I'll write]] **vegetarian** [[on the form]].",
+     "at": 73.12,
+     "q": 8
+    },
+    {
+     "sp": "Ryan",
+     "t": "Where should we [[meet]] when we arrive? The festival is really big.",
+     "at": 79.92
+    },
+    {
+     "sp": "Mia",
+     "t": "[[Most groups meet]] at the main stage, [[but]] it gets very noisy there. [[I'd suggest]] **the fountain**, next to the north gate. It's easy to find.",
+     "at": 85.58,
+     "q": 9
+    },
+    {
+     "sp": "Ryan",
+     "t": "The fountain. OK.",
+     "at": 95.99
+    },
+    {
+     "sp": "Mia",
+     "t": "And one more thing. You [[don't need to bring]] plates or chopsticks. We give you those. But we don't sell plastic bottles any more, [[so everyone should bring]] **a reusable bottle** for water.",
+     "at": 98.6,
+     "q": 10
+    },
+    {
+     "sp": "Ryan",
+     "t": "A reusable bottle. I'll tell everyone. Thanks for your help, Mia!",
+     "at": 111.91
+    },
+    {
+     "sp": "Mia",
+     "t": "You're welcome, Ryan. Enjoy the festival!",
+     "at": 117.83
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 6"
+    },
+    {
+     "label": "Câu 7"
+    },
+    {
+     "label": "Câu 8"
+    },
+    {
+     "label": "Câu 9"
+    },
+    {
+     "label": "Câu 10"
+    }
+   ],
+   "strategy": [
+    "<b>Đọc trước 30 giây:</b> gạch từ khóa mỗi dòng và <b>đoán loại thông tin</b> (số? tên riêng? ngày? danh từ số ít?), chọn ở nút dưới ô.",
+    "<b>Linear thinking:</b> câu hỏi đi <b>theo thứ tự audio</b>. Mắt đặt ở câu đang nghe <b>và</b> từ khóa câu kế tiếp; nghe thấy từ khóa câu sau mà chưa có đáp án câu trước → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý / sửa lại:</b> thông tin đầu thường sai. Chờ <i>but, sorry, actually, not …, last year … but this year</i>.",
+    "<b>Chính tả + giới hạn từ:</b> ONE WORD AND/OR A NUMBER → không viết lại chữ đã in sẵn ($, a reusable, p.m.). Nộp xong đọc 🔑 từ khóa ⇄ synonym và nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "6": {
+     "ans": [
+      "10",
+      "ten"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Food tokens",
+       "N",
+       "tokens"
+      ],
+      [
+       "per person",
+       "Adv",
+       "per person"
+      ]
+     ],
+     "why": [
+      "Đề hỏi số token <b>mỗi người</b>.",
+      "<i>basic ticket … six tokens</i> → [[But]] Mia gợi ý team ticket → bẫy.",
+      "Team ticket có **ten** [[per person]]; Ryan chọn [[sounds better]] → 10."
+     ]
+    },
+    "7": {
+     "ans": [
+      "15",
+      "fifteen"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Price per person",
+       "N",
+       "fifteen dollars per person"
+      ]
+     ],
+     "why": [
+      "Có 2 giá: twelve [[last year]] → bẫy xưa – nay.",
+      "[[but this year]] it's **fifteen** [[per person]].",
+      "Đề có sẵn $ → viết 15."
+     ]
+    },
+    "8": {
+     "ans": [
+      "vegetarian",
+      "a vegetarian"
+     ],
+     "form": [
+      "Adj / Noun",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Dietary needs",
+       "N",
+       "special dietary needs"
+      ],
+      [
+       "one person",
+       "N",
+       "one of my coworkers, Lan"
+      ]
+     ],
+     "why": [
+      "[[special dietary needs]] = Dietary needs.",
+      "[[Nobody has any allergies]] → loại 'allergic'.",
+      "Lan [[doesn't eat meat]] = **vegetarian**; Mia ghi lên form."
+     ]
+    },
+    "9": {
+     "ans": [
+      "fountain"
+     ],
+     "form": [
+      "Noun số ít",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Meeting point",
+       "N",
+       "where should we meet"
+      ]
+     ],
+     "why": [
+      "[[meet]] = Meeting point; 'next to the north gate' đã in sẵn → mốc nghe.",
+      "main stage = nơi [[Most groups meet]], [[but]] ồn → bẫy.",
+      "[[I'd suggest]] **the fountain** → fountain."
+     ]
+    },
+    "10": {
+     "ans": [
+      "bottle"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "kw": [
+      [
+       "must bring",
+       "V",
+       "everyone should bring"
+      ]
+     ],
+     "why": [
+      "[[don't need to bring]] plates or chopsticks → bẫy.",
+      "[[so everyone should bring]] **a reusable bottle**.",
+      "Đề có 'a reusable' → 1 danh từ số ít: bottle."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261112-duc-wed",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-18",
+   "title": "Nghe Part 2 · Staff food hall (trắc nghiệm + note completion)",
+   "subtitle": "Part 2 · 3 câu A/B/C + 5 câu điền notes · 30 giây đọc đề → nghe 1 lần → xem 🔑 từ khóa + phân tích",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 2",
+   "audio": "media/dt-w20261112-l2.mp3",
+   "instructions": "Questions 11–13: Choose the correct letter, A, B or C. Questions 14–18: Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Greenfield staff food hall · Questions 11–18",
+   "rows": [
+    "{11} The food hall was [[changed]] [[mainly because]]",
+    "{12} What does the speaker say about the [[price]] of lunch?",
+    "{13} The speaker [[advises]] interns to",
+    "## Questions 14–18 · Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer.",
+    "## Food hall – useful information",
+    "[[Breakfast]]: from {14} a.m.",
+    "[[Pay with]]: your staff {15}",
+    "[[Vegetarian counter]]: next to the {16} bar",
+    "[[Microwaves]]: near the {17}",
+    "[[Last Friday of each month]]: a {18} competition"
+   ],
+   "transcript": [
+    {
+     "sp": "Sarah",
+     "t": "Good morning, everyone, and welcome to your first week at Greenfield. I'm Sarah from the HR team, and I'd like to tell you about one place you'll visit every day: our staff [[food hall]].",
+     "at": 19.67
+    },
+    {
+     "sp": "Sarah",
+     "t": "Some of you may have heard that the food hall closed for two months because it was [[too small]]. [[Actually]], it's [[the same size]] as before. And yes, the [[kitchen was quite old]], [[but that wasn't the main reason]]. [[We changed it because]], in our staff survey, **most people asked for healthier food**. So now there are more salads, more fruit and less fried food.",
+     "at": 34.64,
+     "q": 11
+    },
+    {
+     "sp": "Sarah",
+     "t": "Now, the [[price]]. The menu [[changes every day]], [[but]] the price of a lunch set [[stays the same]]. For full-time staff, a lunch set costs four dollars. **As interns, you [[pay less]]: just three dollars.** Lunch on Fridays [[used to be free]] for everyone, [[but]] I'm afraid that [[ended last year]].",
+     "at": 61.41,
+     "q": 12
+    },
+    {
+     "sp": "Sarah",
+     "t": "You [[don't need to book]] your lunch on the app, and you [[can bring your own lunch box if you like]], though most people don't. [[My one real piece of advice]] is this. The busiest time is from twelve to half past twelve, so **try to arrive before twelve**. At a quarter to twelve, there's almost no queue.",
+     "at": 84.13,
+     "q": 13
+    },
+    {
+     "sp": "Sarah",
+     "t": "Let me give you some useful information. [[Breakfast]] [[used to start]] at seven, [[but now]] we serve breakfast **from half past seven** until nine.",
+     "at": 107.42,
+     "q": 14
+    },
+    {
+     "sp": "Sarah",
+     "t": "To [[pay]], please use your **staff card**. We [[stopped taking cash]] last month, and you [[can't pay with your phone]] yet. Maybe next year.",
+     "at": 118.64,
+     "q": 15
+    },
+    {
+     "sp": "Sarah",
+     "t": "If you're vegetarian, the [[vegetarian counter]] is **next to the salad bar**, [[not]] near the drinks, as many people think.",
+     "at": 129.09,
+     "q": 16
+    },
+    {
+     "sp": "Sarah",
+     "t": "Many of you will [[pack a lunch]] to save money. You can [[heat it up]] in the [[microwaves]]. They [[aren't in the food hall itself]]. They're **near the stairs**, on the same floor.",
+     "at": 138.8,
+     "q": 17
+    },
+    {
+     "sp": "Sarah",
+     "t": "Finally, on the [[last Friday of every month]], we have a **cooking** [[competition]]. Each team cooks one dish, and the managers taste them and choose the winner. Last month, the sales team won with their spicy noodle soup.",
+     "at": 151.26,
+     "q": 18
+    },
+    {
+     "sp": "Sarah",
+     "t": "So, enjoy your lunch, and see you in the food hall!",
+     "at": 168.31
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 11"
+    },
+    {
+     "label": "Câu 12"
+    },
+    {
+     "label": "Câu 13"
+    },
+    {
+     "label": "Câu 14"
+    },
+    {
+     "label": "Câu 15"
+    },
+    {
+     "label": "Câu 16"
+    },
+    {
+     "label": "Câu 17"
+    },
+    {
+     "label": "Câu 18"
+    }
+   ],
+   "strategy": [
+    "<b>30 giây đọc đề:</b> câu 11–13 gạch từ khóa câu hỏi + <b>simplify</b> mỗi phương án còn 2–3 từ; câu 14–18 đoán loại thông tin (giờ? danh từ số ít / số nhiều?).",
+    "<b>Linear thinking:</b> 1 người nói, đi đúng thứ tự 11 → 18. Trắc nghiệm: audio thường nhắc <b>cả 3 phương án</b>; đánh dấu ✓ / ✗ / ? từng phương án khi nghe.",
+    "<b>Bẫy thường gặp:</b> nhắc rồi phủ định (<i>Actually …</i>) · có thật nhưng không phải lý do chính (<i>but that wasn't the main reason</i>) · xưa – nay (<i>used to … but now</i>) · bẫy từ (nghe trùng từ nhưng nói về thứ khác).",
+    "<b>Notes:</b> ONE WORD AND/OR A NUMBER, không viết lại chữ in sẵn (staff, bar, a.m.). Nộp xong xem 🔑 từ khóa ⇄ synonym + vì sao loại từng phương án, rồi nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "11": {
+     "opts": {
+      "A": "it was too small.",
+      "B": "staff wanted healthier food.",
+      "C": "the kitchen was too old."
+     },
+     "ans": [
+      "B"
+     ],
+     "kw": [
+      [
+       "changed",
+       "V",
+       "we changed it"
+      ],
+      [
+       "mainly because",
+       "Adv",
+       "the main reason"
+      ],
+      [
+       "staff wanted",
+       "V",
+       "most people asked for"
+      ],
+      [
+       "healthier food",
+       "N",
+       "healthier food · more salads"
+      ]
+     ],
+     "why": [
+      "Simplify: A = <i>chật</i> · B = <i>nhân viên muốn ăn lành mạnh</i> · C = <i>bếp cũ</i>.",
+      "Audio nhắc cả 3 theo thứ tự A → C → B.",
+      "A: [[too small]] → [[Actually]] [[the same size]] (nhắc rồi phủ định). C: kitchen old [[but that wasn't the main reason]] (có thật nhưng không trả lời câu hỏi).",
+      "[[We changed it because]] **most people asked for healthier food** → B."
+     ],
+     "optWhy": {
+      "A": "Nhắc rồi phủ định: [[too small]] → [[Actually]], [[the same size]] as before.",
+      "B": "[[We changed it because]] … **most people asked for healthier food** = staff wanted healthier food.",
+      "C": "Có thật (kitchen was quite old) nhưng [[that wasn't the main reason]]."
+     }
+    },
+    "12": {
+     "opts": {
+      "A": "It changes every day.",
+      "B": "Interns pay less than other staff.",
+      "C": "It is free on Fridays."
+     },
+     "ans": [
+      "B"
+     ],
+     "kw": [
+      [
+       "price",
+       "N",
+       "the price of a lunch set"
+      ],
+      [
+       "interns",
+       "N",
+       "as interns"
+      ],
+      [
+       "pay less",
+       "V",
+       "you pay less: just three dollars"
+      ]
+     ],
+     "why": [
+      "Simplify: A = <i>giá đổi mỗi ngày</i> · B = <i>thực tập sinh trả ít hơn</i> · C = <i>thứ Sáu miễn phí</i>.",
+      "A là bẫy từ: <i>changes every day</i> là <b>menu</b>, giá thì [[stays the same]].",
+      "C là bẫy xưa – nay: [[used to be free]] … [[ended last year]].",
+      "**As interns, you pay less** ($3 so với $4) → B."
+     ],
+     "optWhy": {
+      "A": "Bẫy từ: [[changes every day]] nói về <b>menu</b>; price [[stays the same]].",
+      "B": "**As interns, you [[pay less]]: just three dollars** (nhân viên chính thức $4).",
+      "C": "Xưa – nay: Fridays [[used to be free]] nhưng [[ended last year]]."
+     }
+    },
+    "13": {
+     "opts": {
+      "A": "book their lunch on the app.",
+      "B": "bring their own lunch box.",
+      "C": "arrive before midday."
+     },
+     "ans": [
+      "C"
+     ],
+     "kw": [
+      [
+       "advises",
+       "V",
+       "my one real piece of advice"
+      ],
+      [
+       "before midday",
+       "N",
+       "before twelve"
+      ]
+     ],
+     "why": [
+      "Simplify: A = <i>đặt trên app</i> · B = <i>mang hộp cơm</i> · C = <i>đến trước 12 giờ</i>.",
+      "A: [[don't need to book]] → loại. B: [[can bring … if you like]] = được phép, không phải lời khuyên → loại.",
+      "[[My one real piece of advice]] → **try to arrive before twelve** (midday = twelve) → C."
+     ],
+     "optWhy": {
+      "A": "Phủ định: You [[don't need to book]] your lunch on the app.",
+      "B": "Chỉ là được phép ([[can bring your own lunch box if you like]]), không phải lời khuyên; most people don't.",
+      "C": "[[My one real piece of advice]] … **try to arrive before twelve** = before midday."
+     }
+    },
+    "14": {
+     "ans": [
+      "7:30",
+      "7.30",
+      "730",
+      "half past seven"
+     ],
+     "form": [
+      "Giờ (số)",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Breakfast",
+       "N",
+       "breakfast"
+      ],
+      [
+       "from",
+       "Prep",
+       "from half past seven"
+      ]
+     ],
+     "why": [
+      "Có 2 giờ: seven [[used to start]] → bẫy xưa – nay.",
+      "[[but now]] **from half past seven** → 7:30."
+     ]
+    },
+    "15": {
+     "ans": [
+      "card"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "kw": [
+      [
+       "Pay with",
+       "V",
+       "to pay, please use"
+      ]
+     ],
+     "why": [
+      "[[pay]] → please use your **staff card**.",
+      "cash: [[stopped taking]]; phone: [[can't pay]] yet → bẫy."
+     ]
+    },
+    "16": {
+     "ans": [
+      "salad"
+     ],
+     "form": [
+      "Danh từ (đi trước 'bar')",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Vegetarian counter",
+       "N",
+       "the vegetarian counter"
+      ],
+      [
+       "next to",
+       "Prep",
+       "next to"
+      ]
+     ],
+     "why": [
+      "[[vegetarian counter]] is **next to the salad bar**.",
+      "near the drinks: [[not]] → bẫy."
+     ]
+    },
+    "17": {
+     "ans": [
+      "stairs"
+     ],
+     "form": [
+      "Noun số nhiều",
+      "Noun số ít"
+     ],
+     "kw": [
+      [
+       "Microwaves",
+       "N",
+       "the microwaves"
+      ],
+      [
+       "near",
+       "Prep",
+       "near"
+      ]
+     ],
+     "why": [
+      "[[microwaves]] [[aren't in the food hall itself]] → loại 'food hall'.",
+      "They're **near the stairs** → stairs (số nhiều)."
+     ]
+    },
+    "18": {
+     "ans": [
+      "cooking"
+     ],
+     "form": [
+      "Danh từ / V-ing (loại cuộc thi)",
+      "Tên riêng"
+     ],
+     "kw": [
+      [
+       "Last Friday of each month",
+       "N",
+       "the last Friday of every month"
+      ],
+      [
+       "competition",
+       "N",
+       "competition"
+      ]
+     ],
+     "why": [
+      "[[last Friday of every month]] = Last Friday of each month.",
+      "we have a **cooking** [[competition]] → cooking."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261112-thu-thu",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-12",
+   "opensAt": "17:00",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Breakfast",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Breakfast",
+     "q": "What do you usually have for breakfast?",
+     "hint": "meal, healthy, skip breakfast, grab a bite",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>usually</b> (thường) · <b>have</b> (ăn) · <b>for breakfast</b>. Hỏi thói quen hằng ngày → trả lời bằng <b>hiện tại đơn</b> (I usually have / I eat).",
+      "<b>A – Answer:</b> nói thẳng món em hay ăn. Khung: <i>I usually have … for breakfast.</i> / <i>To be honest, I often skip breakfast.</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: món đó <b>nhanh</b>, tiện? <b>rẻ</b>? <b>ngon</b>, no lâu? hay em <b>không có thời gian</b>? Khung: <i>because it's …</i> / <i>The main reason is that …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (sáng nay / hôm qua) · <b>Where?</b> (ở nhà, quán gần trường) · <b>Who with?</b> Khung quá khứ: <i>This morning, I had … at … with …</i>",
+      "<b>F – Feeling:</b> khung: <i>It makes me feel …</i> (full, awake, ready) / <i>That's why I …</i>",
+      "<b>Từ nên dùng:</b> <b>meal</b>, <b>healthy</b>, <b>skip breakfast</b>, <b>grab a bite</b>. <b>Lỗi hay gặp:</b> <i>have breakfast</i> không có <i>a</i>; <i>for breakfast</i> (không nói <i>in breakfast</i>); kể sáng nay thì dùng quá khứ <i>I <b>had</b></i>, <i>I <b>skipped</b></i> (đuôi -ed đọc /t/).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "What do you usually drink in the morning?",
+      "notes": {
+       "A": "iced milk coffee",
+       "R": "wake up · finish my thesis",
+       "E": "yesterday · small café near campus",
+       "F": "feel awake · ready to work"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-thu-fri",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-13",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Street food",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Street food",
+     "q": "Do you like street food?",
+     "hint": "street food, food stall, delicious, eat on a budget",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>like</b> · <b>street food</b> (món ăn đường phố, ăn ở quầy ven đường). Hỏi sở thích → <b>hiện tại đơn</b> (I like / I love / I don't really like).",
+      "<b>A – Answer:</b> khung: <i>Yes, I really love street food.</i> / <i>Not really, I prefer …</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: <b>rẻ</b>, hợp sinh viên? <b>ngon</b>, nhiều món? <b>nhanh</b>, tiện giờ nghỉ trưa? hay lo <b>không sạch</b>? Khung: <i>because it's …</i> / <i>I think it's …</i>",
+      "<b>E – Example:</b> tự hỏi <b>What?</b> (bánh mì, bún, xôi…) · <b>Where?</b> (quầy gần trường, chợ đêm) · <b>When? Who with?</b> Khung quá khứ: <i>Last week, I had … at a food stall near … with …</i>",
+      "<b>F – Feeling:</b> khung: <i>It was so delicious, and it made me feel …</i> / <i>That's why I …</i>",
+      "<b>Từ nên dùng:</b> <b>street food</b>, <b>food stall</b>, <b>delicious</b>, <b>eat on a budget</b>. <b>Lỗi hay gặp:</b> <i>street food</i> không đếm được → không nói <i>street foods</i>; <i>food stall<b>s</b></i> đếm được (đuôi /z/); <i>delicious</i> nhấn âm 2: de-<b>LI</b>-cious.",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you like fast food?",
+      "notes": {
+       "A": "not really",
+       "R": "oily · not healthy",
+       "E": "last weekend · fried chicken · stomachache",
+       "F": "feel heavy · prefer homemade food"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-thu-sat",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-14",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Family meals",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Eating with family",
+     "q": "Do you often eat with your family?",
+     "hint": "a home-cooked meal, have dinner, homemade, set the table",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>often</b> (thường xuyên không?) · <b>eat with your family</b>. Hỏi thói quen → <b>hiện tại đơn</b>; trả lời được bằng tần suất: <i>every day, on weekends, once a week</i>.",
+      "<b>A – Answer:</b> khung: <i>Yes, I have dinner with my family almost every day.</i> / <i>Not very often, only on weekends.</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: ở <b>gần</b> / ở <b>xa</b> nhà (ký túc xá, thuê trọ)? <b>bận</b> thực tập, khóa luận? gia đình có <b>thói quen</b> ăn tối cùng nhau? Khung: <i>because …</i> / <i>That's because …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (tối qua, Chủ nhật tuần trước) · <b>Who?</b> (bố mẹ, em) · <b>What?</b> (mẹ nấu món gì). Khung quá khứ: <i>Last Sunday, my mom cooked … and we …</i>",
+      "<b>F – Feeling:</b> khung: <i>I felt really …</i> (warm, relaxed, happy) / <i>That's why I miss …</i>",
+      "<b>Từ nên dùng:</b> <b>a home-cooked meal</b>, <b>have dinner</b>, <b>set the table</b>. <b>Lỗi hay gặp:</b> <i>eat <b>with</b> my family</i> (không bỏ <i>with</i>); <i>have dinner</i> không có <i>a</i>; tối qua thì <i>my mom <b>cooked</b></i> (đuôi -ed đọc /t/).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you often cook with your friends?",
+      "notes": {
+       "A": "sometimes · on weekends",
+       "R": "weekdays busy · internship",
+       "E": "last Sunday · hotpot · 3 classmates",
+       "F": "fun · relaxed · want to do it again"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-thu-mon-s",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-16",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Work or studies: busy days",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Work or studies",
+     "q": "Do you ever skip meals when you are busy with your studies or internship?",
+     "hint": "skip breakfast, grab a bite, eat at my desk, lunch break",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>ever</b> (có bao giờ) · <b>skip meals</b> (bỏ bữa) · <b>busy with your studies or internship</b>. Hỏi thói quen → <b>hiện tại đơn</b> (I sometimes skip …).",
+      "<b>A – Answer:</b> khung: <i>Yes, sometimes I skip lunch when …</i> / <i>No, never. I always …</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: <b>deadline</b> khóa luận / báo cáo thực tập? giờ nghỉ trưa <b>ngắn</b>? hay em <b>không bao giờ</b> bỏ vì sẽ mệt, đau dạ dày? Khung: <i>because I have …</i> / <i>The main reason is that …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (tuần trước, hôm nộp báo cáo) · <b>Where?</b> (văn phòng, thư viện) · <b>What did you do?</b> Khung quá khứ: <i>Last week, I had a deadline, so I skipped … and just …</i>",
+      "<b>F – Feeling:</b> khung: <i>I felt really tired / hungry …</i> / <i>Now I try to …</i>",
+      "<b>Từ nên dùng:</b> <b>skip breakfast / lunch</b>, <b>grab a bite</b>, <b>eat at my desk</b>, <b>lunch break</b>. <b>Lỗi hay gặp:</b> <i>busy <b>with</b> my thesis</i> (không nói <i>busy for</i>); quá khứ của skip là <i>skip<b>ped</b></i> (đọc /t/), của grab là <i>grab<b>bed</b></i> (đọc /d/).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you ever stay up late because of your studies?",
+      "notes": {
+       "A": "yes · quite often this year",
+       "R": "thesis · deadlines",
+       "E": "last Friday · until 2 a.m. · report",
+       "F": "tired next day · need a better plan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-thu-mon-l",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-16",
+   "title": "Nghe Part 1 · Food festival booking (câu 1–5, bản hỗ trợ)",
+   "subtitle": "Form completion · 5 câu · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261112-l1a.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Riverside Street Food Festival – Group Booking Form (Questions 1–5)",
+   "rows": [
+    "## Riverside Street Food Festival · Group Booking",
+    "[[Name]]: Ryan {1}",
+    "[[Mobile]]: 0907 418 {2}",
+    "[[Number of tickets]]: {3}",
+    "## Visit details",
+    "[[Day]]: {4}",
+    "[[Evening session starts at]]: {5} p.m."
+   ],
+   "transcript": [
+    {
+     "sp": "Mia",
+     "t": "Good afternoon, Riverside Street Food Festival. This is Mia. How can I help you?",
+     "at": 18.3
+    },
+    {
+     "sp": "Ryan",
+     "t": "Hi, Mia. I'm an intern at a marketing company, and my manager asked me to book festival [[tickets]] for our team.",
+     "at": 25.33
+    },
+    {
+     "sp": "Mia",
+     "t": "Lovely. Let me fill in the group booking form. What's your [[name]], please?",
+     "at": 35.35
+    },
+    {
+     "sp": "Ryan",
+     "t": "It's Ryan Fenwick.",
+     "at": 40.61
+    },
+    {
+     "sp": "Mia",
+     "t": "Could you [[spell your last name]] for me?",
+     "at": 43.15
+    },
+    {
+     "sp": "Ryan",
+     "t": "Of course. It's **F, E, N, W, I, C, K.**",
+     "at": 46.11,
+     "q": 1
+    },
+    {
+     "sp": "Mia",
+     "t": "Thank you. And what's the best [[contact number]]?",
+     "at": 51.97
+    },
+    {
+     "sp": "Ryan",
+     "t": "My [[mobile]] is oh nine oh seven, four one eight, two six three. [[Oh, sorry]], the end is **two three six**, [[not]] two six three.",
+     "at": 55.7,
+     "q": 2
+    },
+    {
+     "sp": "Mia",
+     "t": "So that's oh nine oh seven, four one eight, **two three six**.",
+     "at": 67.41,
+     "q": 2
+    },
+    {
+     "sp": "Ryan",
+     "t": "That's right.",
+     "at": 72.9
+    },
+    {
+     "sp": "Mia",
+     "t": "And [[how many tickets]] do you need?",
+     "at": 74.77
+    },
+    {
+     "sp": "Ryan",
+     "t": "There are ten people in our team, [[but]] two of my coworkers have a business trip that week. [[So we need]] **eight tickets**.",
+     "at": 77.64,
+     "q": 3
+    },
+    {
+     "sp": "Mia",
+     "t": "Eight. And [[which day]] would you like to come? The festival runs from Friday to Sunday.",
+     "at": 87.71
+    },
+    {
+     "sp": "Ryan",
+     "t": "We finish work late on Friday, so we were [[hoping for]] Saturday evening.",
+     "at": 94.62
+    },
+    {
+     "sp": "Mia",
+     "t": "I'm sorry, Saturday evening is [[completely sold out]]. We still have tickets for **Sunday**.",
+     "at": 101.09,
+     "q": 4
+    },
+    {
+     "sp": "Ryan",
+     "t": "**Sunday** [[is fine]]. Everyone's free on the weekend.",
+     "at": 108.42,
+     "q": 4
+    },
+    {
+     "sp": "Mia",
+     "t": "Great. On Sunday, the [[gates open]] at four, but most groups come for the [[evening session]]. [[That starts at]] **half past five**.",
+     "at": 113.06,
+     "q": 5
+    },
+    {
+     "sp": "Ryan",
+     "t": "Half past five is perfect. Our manager can't come before five anyway.",
+     "at": 122.41
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 1"
+    },
+    {
+     "label": "Câu 2"
+    },
+    {
+     "label": "Câu 3"
+    },
+    {
+     "label": "Câu 4"
+    },
+    {
+     "label": "Câu 5"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢) để làm quen giọng: <b>Mia</b> (nhân viên lễ hội, nữ) hỏi, <b>Ryan</b> (thực tập sinh, nam) đặt vé cho cả nhóm. Lần này chưa chấm.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô, gạch từ khóa và chọn <b>loại thông tin</b>. Vd. câu 1 có sẵn <i>Ryan</i> → chỉ nghe <b>họ</b>; câu 2 có sẵn 7 số đầu → chỉ nghe <b>3 số cuối</b>.",
+    "<b>Linear thinking:</b> câu 1–5 đi <b>đúng thứ tự</b> audio. Vd. nghe Mia hỏi <i>how many tickets</i> là tới câu 3; nghe <i>which day</i> là sang câu 4. Lỡ câu nào thì bỏ, nhìn sang câu kế tiếp ngay.",
+    "<b>Thông tin đầu tiên thường là bẫy.</b> Vd. câu 2: Ryan đọc số rồi nói <i>Oh, <b>sorry</b> …</i> → số được sửa; câu 3: <i>ten people, <b>but</b> …</i> → còn đổi.",
+    "<b>Đề hỏi đúng chữ nào?</b> Vd. câu 5 hỏi giờ <i>evening session</i> bắt đầu, nhưng Mia nói giờ <i>gates open</i> (mở cổng) trước → đừng điền 4.",
+    "<b>Chính tả:</b> tên riêng ghi theo phần đánh vần; tên riêng, thứ trong tuần viết hoa; nhớ đuôi -s khi cần. Nộp xong đọc 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi bấm phát audio: transcript chạy theo, bấm dòng để nghe lại chỗ có đáp án."
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Fenwick"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Name",
+       "N",
+       "spell your last name"
+      ]
+     ],
+     "hint": "Đề có sẵn tên Ryan. Chờ câu 'spell your last name', ghi từng chữ cái.",
+     "why": [
+      "Đề in sẵn <i>Ryan</i> (tên) → ô trống là <b>họ</b> (last name).",
+      "Từ tín hiệu: Mia hỏi [[Could you spell your last name]] → câu ngay sau là đáp án.",
+      "Ryan đánh vần F, E, N, W, I, C, K. Ghi từng chữ cái lúc nghe, không viết theo tai (dễ thành <i>Fenwik</i> thiếu C).",
+      "Chốt **Fenwick**. Tên riêng viết hoa chữ đầu."
+     ]
+    },
+    "2": {
+     "ans": [
+      "236"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Mobile",
+       "N",
+       "my mobile"
+      ]
+     ],
+     "hint": "Đề có sẵn 7 số đầu. Ryan đọc 3 số cuối 2 lần, lần sau là sửa lại.",
+     "why": [
+      "Đề in sẵn <b>0907 418</b> → chỉ nghe 3 số cuối. Mắt dò theo từng số khi Ryan đọc.",
+      "Lần 1 Ryan đọc <i>two six three</i> = 263, rồi nói [[Oh, sorry]] → báo <b>sửa lại</b>.",
+      "Ryan sửa: <i>the end is two three six, [[not]] two six three</i> → 263 là bẫy.",
+      "Mia nhắc lại cả số để xác nhận → **236**. 'oh' = số 0."
+     ]
+    },
+    "3": {
+     "ans": [
+      "8",
+      "eight"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Number of tickets",
+       "N",
+       "how many tickets"
+      ]
+     ],
+     "hint": "Có 2 con số. Nghe con số sau 'So we need…'.",
+     "why": [
+      "Đề <b>Number of tickets</b> = Mia hỏi [[how many tickets do you need]].",
+      "Con số đầu: <i>ten people in our team</i> → bẫy (là số người trong nhóm, chưa phải số vé).",
+      "Từ báo đổi ý [[but]]: 2 đồng nghiệp có <i>business trip</i> (đi công tác) → không đi.",
+      "[[So we need]] **eight tickets** → 8 (10 − 2)."
+     ]
+    },
+    "4": {
+     "ans": [
+      "Sunday"
+     ],
+     "form": [
+      "Thứ trong tuần (viết hoa)",
+      "Số (ngày)"
+     ],
+     "kw": [
+      [
+       "Day",
+       "N",
+       "which day"
+      ]
+     ],
+     "hint": "Ngày Ryan muốn lúc đầu đã hết vé. Nghe ngày còn vé.",
+     "why": [
+      "Đề <b>Day</b> = Mia hỏi [[which day would you like to come]]. Có 3 ngày: Friday, Saturday, Sunday.",
+      "Friday bị loại: Ryan <i>finish work late on Friday</i>.",
+      "Saturday là lựa chọn Ryan [[hoping for]] (mong) nhưng [[completely sold out]] (hết sạch vé) → bẫy.",
+      "Còn vé **Sunday** và Ryan nói [[is fine]] → Sunday. Thứ trong tuần viết hoa."
+     ]
+    },
+    "5": {
+     "ans": [
+      "5:30",
+      "5.30",
+      "530",
+      "half past five",
+      "five thirty"
+     ],
+     "form": [
+      "Giờ (số)",
+      "Thứ trong tuần"
+     ],
+     "kw": [
+      [
+       "Evening session",
+       "N",
+       "the evening session"
+      ],
+      [
+       "starts at",
+       "V",
+       "that starts at"
+      ]
+     ],
+     "hint": "Có 3 mốc giờ. Đề hỏi giờ buổi TỐI bắt đầu, không phải giờ mở cổng.",
+     "why": [
+      "Đề <b>Evening session starts at</b> → chờ từ [[evening session]] và [[starts]].",
+      "<i>the gates open at four</i> → giờ <b>mở cổng</b>, không phải buổi tối → bẫy.",
+      "[[That starts at]] **half past five** (5 giờ rưỡi) → viết 5:30 hoặc 5.30.",
+      "<i>can't come before five</i> là câu của Ryan nói về sếp → không phải đáp án."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261112-thu-tue-s",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-17",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Sweet food",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Sweet food",
+     "q": "Do you like sweet food, like cakes or bubble tea?",
+     "hint": "have a sweet tooth, snack, treat, cut down on",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>like</b> · <b>sweet food</b> (đồ ngọt) · ví dụ <b>cakes, bubble tea</b>. Hỏi sở thích → <b>hiện tại đơn</b>.",
+      "<b>A – Answer:</b> khung: <i>Yes, I have a sweet tooth.</i> / <i>Not really, I don't eat much sweet food.</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: đồ ngọt làm em <b>vui</b>, đỡ stress? là <b>món tự thưởng</b> (treat)? hay em đang <b>bớt đường</b> (cut down on sugar) cho khỏe? Khung: <i>because it makes me …</i> / <i>I'm trying to …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (hôm qua, sau buổi phỏng vấn) · <b>Where?</b> · <b>Who with?</b> · <b>What?</b> (trà sữa, bánh bông lan). Khung quá khứ: <i>Yesterday, I bought … with … after …</i>",
+      "<b>F – Feeling:</b> khung: <i>It made me feel …</i> / <i>That's why I …</i>",
+      "<b>Từ nên dùng:</b> <b>have a sweet tooth</b>, <b>treat</b>, <b>cut down on</b>. <b>Lỗi hay gặp:</b> <i>cake<b>s</b></i> đọc /s/ ở cuối; <i>a cup <b>of</b> bubble tea</i>; <i>cut down <b>on</b> sugar</i> (đủ 3 từ, nhấn <b>DOWN</b>); <i>much</i> đi với <i>sweet food</i> (không đếm được).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you like salty snacks, like chips?",
+      "notes": {
+       "A": "yes · a lot",
+       "R": "crunchy · good while studying",
+       "E": "last night · a bag of chips · writing report",
+       "F": "happy · but a bit guilty"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-thu-tue-l",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-17",
+   "title": "Nghe Part 1 · Food festival booking (câu 6–10, bản hỗ trợ)",
+   "subtitle": "Form completion · 5 câu · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261112-l1b.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Riverside Street Food Festival – Group Booking Form (Questions 6–10)",
+   "rows": [
+    "## Ticket details",
+    "[[Food tokens per person]]: {6}",
+    "[[Price per person]]: ${7}",
+    "## Other information",
+    "[[Dietary needs]]: one person is {8}",
+    "[[Meeting point]]: the {9} (next to the north gate)",
+    "[[Each person must bring]]: a reusable {10}"
+   ],
+   "transcript": [
+    {
+     "sp": "Mia",
+     "t": "Now, every ticket comes with [[food tokens]]. You use them at the food stalls.",
+     "at": 17.57
+    },
+    {
+     "sp": "Ryan",
+     "t": "[[How many tokens]] do we get?",
+     "at": 23.73
+    },
+    {
+     "sp": "Mia",
+     "t": "The [[basic ticket]] has six tokens. [[But]] for groups, I'd recommend the team ticket. It has **ten tokens [[per person]]**.",
+     "at": 26.63,
+     "q": 6
+    },
+    {
+     "sp": "Ryan",
+     "t": "**Ten** [[sounds better]]. My coworkers eat like horses! Let's take the team ticket.",
+     "at": 35.82,
+     "q": 6
+    },
+    {
+     "sp": "Mia",
+     "t": "Good choice. The team ticket was twelve dollars [[last year]], [[but this year]] it's **fifteen dollars [[per person]]**.",
+     "at": 43.05,
+     "q": 7
+    },
+    {
+     "sp": "Ryan",
+     "t": "Fifteen. That's fine. Our company is paying.",
+     "at": 51.15
+    },
+    {
+     "sp": "Mia",
+     "t": "Lucky you! Does anyone in your group have any [[special dietary needs]]? Is anyone [[allergic]] to anything?",
+     "at": 55.84
+    },
+    {
+     "sp": "Ryan",
+     "t": "[[Nobody has any allergies]]. But one of my coworkers, Lan, [[doesn't eat meat]]. She's **vegetarian**.",
+     "at": 63.69,
+     "q": 8
+    },
+    {
+     "sp": "Mia",
+     "t": "No problem. There are lots of vegetarian stalls. [[I'll write]] **vegetarian** [[on the form]].",
+     "at": 73.12,
+     "q": 8
+    },
+    {
+     "sp": "Ryan",
+     "t": "Where should we [[meet]] when we arrive? The festival is really big.",
+     "at": 79.92
+    },
+    {
+     "sp": "Mia",
+     "t": "[[Most groups meet]] at the main stage, [[but]] it gets very noisy there. [[I'd suggest]] **the fountain**, next to the north gate. It's easy to find.",
+     "at": 85.58,
+     "q": 9
+    },
+    {
+     "sp": "Ryan",
+     "t": "The fountain. OK.",
+     "at": 95.99
+    },
+    {
+     "sp": "Mia",
+     "t": "And one more thing. You [[don't need to bring]] plates or chopsticks. We give you those. But we don't sell plastic bottles any more, [[so everyone should bring]] **a reusable bottle** for water.",
+     "at": 98.6,
+     "q": 10
+    },
+    {
+     "sp": "Ryan",
+     "t": "A reusable bottle. I'll tell everyone. Thanks for your help, Mia!",
+     "at": 111.91
+    },
+    {
+     "sp": "Mia",
+     "t": "You're welcome, Ryan. Enjoy the festival!",
+     "at": 117.83
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 6"
+    },
+    {
+     "label": "Câu 7"
+    },
+    {
+     "label": "Câu 8"
+    },
+    {
+     "label": "Câu 9"
+    },
+    {
+     "label": "Câu 10"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢) để làm quen giọng: <b>Mia</b> (nữ) giải thích vé và quy định, <b>Ryan</b> (nam) hỏi lại. Lần này chưa chấm.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô, gạch từ khóa và chọn <b>loại thông tin</b>. Vd. câu 7 có sẵn <i>$</i> → chỉ viết <b>số</b>; câu 10 có sẵn <i>a reusable</i> → 1 danh từ <b>số ít</b>.",
+    "<b>Linear thinking:</b> câu 6–10 đi <b>đúng thứ tự</b> audio. Vd. nghe <i>tokens</i> là câu 6; nghe <i>dietary needs</i> là câu 8; nghe <i>Where should we meet</i> là câu 9. Lỡ câu nào thì bỏ, nhìn sang câu kế tiếp ngay.",
+    "<b>Thông tin đầu tiên thường là bẫy.</b> Vd. câu 6: <i>six tokens</i> là vé thường, <b>but</b> nhóm chọn vé khác; câu 7: <i>last year … <b>but this year</b></i>.",
+    "<b>Đề hỏi đúng chữ nào?</b> Vd. câu 8 hỏi người đặc biệt ăn gì: <i>allergies</i> bị phủ định (<i>Nobody has …</i>); câu 10: <i>plates, chopsticks</i> là đồ KHÔNG cần mang.",
+    "<b>Chính tả:</b> tên riêng ghi theo phần đánh vần; tên riêng, thứ trong tuần viết hoa; nhớ đuôi -s khi cần. Nộp xong đọc 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi bấm phát audio: transcript chạy theo, bấm dòng để nghe lại chỗ có đáp án."
+   ],
+   "qs": {
+    "6": {
+     "ans": [
+      "10",
+      "ten"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Food tokens",
+       "N",
+       "tokens"
+      ],
+      [
+       "per person",
+       "Adv",
+       "per person"
+      ]
+     ],
+     "hint": "Có 2 loại vé, mỗi loại số token khác nhau. Nhóm của Ryan chọn vé nào?",
+     "why": [
+      "Đề <b>Food tokens per person</b> = Ryan hỏi [[How many tokens]] do we get?",
+      "<i>The basic ticket has six tokens</i> → vé thường, chưa chắc nhóm chọn.",
+      "Từ [[But]]: Mia gợi ý team ticket có <b>ten tokens per person</b>.",
+      "Ryan chốt <i>Ten [[sounds better]] … Let's take the team ticket</i> → **10**. 6 là bẫy."
+     ]
+    },
+    "7": {
+     "ans": [
+      "15",
+      "fifteen"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Price per person",
+       "N",
+       "fifteen dollars per person"
+      ]
+     ],
+     "hint": "Có 2 con số tiền: giá năm ngoái và giá năm nay. Đề hỏi giá bây giờ.",
+     "why": [
+      "Đề <b>Price per person</b> → chờ số tiền + [[per person]].",
+      "<i>twelve dollars [[last year]]</i> → giá cũ → bẫy xưa – nay.",
+      "[[but this year]] it's **fifteen dollars per person** → giá hiện tại.",
+      "Đề có sẵn $ → chỉ viết số 15."
+     ]
+    },
+    "8": {
+     "ans": [
+      "vegetarian",
+      "a vegetarian"
+     ],
+     "form": [
+      "Adj / Noun",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Dietary needs",
+       "N",
+       "special dietary needs"
+      ],
+      [
+       "one person",
+       "N",
+       "one of my coworkers, Lan"
+      ]
+     ],
+     "hint": "Không ai bị dị ứng. Nghe từ chỉ người không ăn thịt.",
+     "why": [
+      "Đề <b>Dietary needs</b> = Mia hỏi [[special dietary needs]] (nhu cầu ăn uống đặc biệt).",
+      "Mia hỏi tiếp về <i>allergic</i> nhưng Ryan nói [[Nobody has any allergies]] → không phải đáp án.",
+      "<i>one person</i> = <i>one of my coworkers, Lan</i>; [[doesn't eat meat]] (không ăn thịt) = paraphrase của đáp án.",
+      "She's **vegetarian**; Mia nhắc lại [[I'll write]] vegetarian [[on the form]]. Chú ý chính tả v‑e‑g‑e‑t‑a‑r‑i‑a‑n."
+     ]
+    },
+    "9": {
+     "ans": [
+      "fountain"
+     ],
+     "form": [
+      "Noun số ít",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Meeting point",
+       "N",
+       "where should we meet"
+      ]
+     ],
+     "hint": "Có 2 nơi. Nơi 'very noisy' là bẫy. Nghe sau 'I'd suggest…'.",
+     "why": [
+      "Đề <b>Meeting point</b> = Ryan hỏi [[Where should we meet]].",
+      "Đề có sẵn <i>next to the north gate</i> → nghe thấy cụm này là đáp án ở ngay trước.",
+      "<i>the main stage</i>: [[Most groups meet]] ở đó, [[but]] <i>very noisy</i> → bẫy.",
+      "[[I'd suggest]] **the fountain**, next to the north gate → fountain (đài phun nước). Ryan nhắc lại: <i>The fountain. OK.</i>"
+     ]
+    },
+    "10": {
+     "ans": [
+      "bottle"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "kw": [
+      [
+       "must bring",
+       "V",
+       "everyone should bring"
+      ]
+     ],
+     "hint": "Có đồ KHÔNG cần mang. Nghe sau 'everyone should bring…'.",
+     "why": [
+      "Đề <b>Each person must bring</b> = [[everyone should bring]].",
+      "<i>plates or chopsticks</i> → [[don't need to bring]] (không cần mang) → bẫy.",
+      "<i>plastic bottles</i> = festival không bán → lý do phải tự mang.",
+      "[[so everyone should bring]] **a reusable bottle** → đề có sẵn <i>a reusable</i> → viết <b>bottle</b> (số ít, không -s)."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261112-thu-wed-s",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-18",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · A birthday meal",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Birthday food",
+     "q": "What did you eat on your last birthday?",
+     "hint": "feast, treat sb to lunch / dinner, delicious, a home-cooked meal",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>did you eat</b> · <b>last birthday</b> (sinh nhật gần nhất). Có <b>did</b> → hỏi chuyện <b>đã qua</b> → cả câu trả lời dùng <b>quá khứ đơn</b> (I had, we went, my friends bought).",
+      "<b>A – Answer:</b> khung: <i>On my last birthday, I had …</i> / <i>I can't remember exactly, but I think I ate …</i>",
+      "<b>R – Reason:</b> vì sao ăn món đó? là <b>món em thích nhất</b>? bạn bè / gia đình <b>mời</b> (treat me to dinner)? <b>Truyền thống</b> nhà em? Khung: <i>because it's my favorite …</i> / <i>My friends wanted to …</i>",
+      "<b>E – Example:</b> tự hỏi <b>Where?</b> (nhà hàng, ở nhà) · <b>Who with?</b> · <b>What else?</b> (bánh kem, quà). Khung: <i>We went to … and my … treated me to …</i>",
+      "<b>F – Feeling:</b> khung: <i>I felt really happy / loved …</i> / <i>It was one of the best meals …</i>",
+      "<b>Từ nên dùng:</b> <b>feast</b>, <b>treat me to dinner</b>, <b>delicious</b>. <b>Lỗi hay gặp:</b> quên chia quá khứ: <i>I <b>ate</b></i> (không nói <i>I eat</i>), <i>we <b>went</b></i>, <i>my friends <b>treated</b></i> (đuôi -ed đọc /ɪd/); <i><b>on</b> my birthday</i> (không nói <i>in my birthday</i>).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Where did you go on your last birthday?",
+      "notes": {
+       "A": "a small café · with my best friend",
+       "R": "quiet · could talk",
+       "E": "last March · cake · photos",
+       "F": "felt loved · simple but special"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261112-thu-wed-l",
+   "session": 4,
+   "topic": "Food & Cooking",
+   "deck": "dt4",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-18",
+   "title": "Nghe Part 2 · Staff food hall (note completion, bản hỗ trợ)",
+   "subtitle": "Part 2 · 5 câu điền notes (câu 14–18) · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 2",
+   "audio": "media/dt-w20261112-l2.mp3",
+   "instructions": "Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer. (Em chỉ làm câu 14–18; câu 11–13 ở đầu audio em nghe để làm quen.)",
+   "heading": "Greenfield staff food hall · Questions 14–18",
+   "rows": [
+    "## Food hall – useful information",
+    "[[Breakfast]]: from {14} a.m.",
+    "[[Pay with]]: your staff {15}",
+    "[[Vegetarian counter]]: next to the {16} bar",
+    "[[Microwaves]]: near the {17}",
+    "[[Last Friday of each month]]: a {18} competition"
+   ],
+   "transcript": [
+    {
+     "sp": "Sarah",
+     "t": "Good morning, everyone, and welcome to your first week at Greenfield. I'm Sarah from the HR team, and I'd like to tell you about one place you'll visit every day: our staff [[food hall]].",
+     "at": 19.67
+    },
+    {
+     "sp": "Sarah",
+     "t": "Some of you may have heard that the food hall closed for two months because it was [[too small]]. [[Actually]], it's [[the same size]] as before. And yes, the [[kitchen was quite old]], [[but that wasn't the main reason]]. [[We changed it because]], in our staff survey, **most people asked for healthier food**. So now there are more salads, more fruit and less fried food.",
+     "at": 34.64,
+     "q": 11
+    },
+    {
+     "sp": "Sarah",
+     "t": "Now, the [[price]]. The menu [[changes every day]], [[but]] the price of a lunch set [[stays the same]]. For full-time staff, a lunch set costs four dollars. **As interns, you [[pay less]]: just three dollars.** Lunch on Fridays [[used to be free]] for everyone, [[but]] I'm afraid that [[ended last year]].",
+     "at": 61.41,
+     "q": 12
+    },
+    {
+     "sp": "Sarah",
+     "t": "You [[don't need to book]] your lunch on the app, and you [[can bring your own lunch box if you like]], though most people don't. [[My one real piece of advice]] is this. The busiest time is from twelve to half past twelve, so **try to arrive before twelve**. At a quarter to twelve, there's almost no queue.",
+     "at": 84.13,
+     "q": 13
+    },
+    {
+     "sp": "Sarah",
+     "t": "Let me give you some useful information. [[Breakfast]] [[used to start]] at seven, [[but now]] we serve breakfast **from half past seven** until nine.",
+     "at": 107.42,
+     "q": 14
+    },
+    {
+     "sp": "Sarah",
+     "t": "To [[pay]], please use your **staff card**. We [[stopped taking cash]] last month, and you [[can't pay with your phone]] yet. Maybe next year.",
+     "at": 118.64,
+     "q": 15
+    },
+    {
+     "sp": "Sarah",
+     "t": "If you're vegetarian, the [[vegetarian counter]] is **next to the salad bar**, [[not]] near the drinks, as many people think.",
+     "at": 129.09,
+     "q": 16
+    },
+    {
+     "sp": "Sarah",
+     "t": "Many of you will [[pack a lunch]] to save money. You can [[heat it up]] in the [[microwaves]]. They [[aren't in the food hall itself]]. They're **near the stairs**, on the same floor.",
+     "at": 138.8,
+     "q": 17
+    },
+    {
+     "sp": "Sarah",
+     "t": "Finally, on the [[last Friday of every month]], we have a **cooking** [[competition]]. Each team cooks one dish, and the managers taste them and choose the winner. Last month, the sales team won with their spicy noodle soup.",
+     "at": 151.26,
+     "q": 18
+    },
+    {
+     "sp": "Sarah",
+     "t": "So, enjoy your lunch, and see you in the food hall!",
+     "at": 168.31
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 14"
+    },
+    {
+     "label": "Câu 15"
+    },
+    {
+     "label": "Câu 16"
+    },
+    {
+     "label": "Câu 17"
+    },
+    {
+     "label": "Câu 18"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢): chỉ 1 người nói, <b>Sarah</b> (phòng nhân sự) giới thiệu căng tin công ty cho thực tập sinh mới. Lần này chưa chấm.",
+    "<b>Bài của em là câu 14–18</b> (khoảng phút thứ 2 trở đi). Đoạn đầu Sarah nói về lý do sửa căng tin, giá, giờ đông: nghe để quen giọng, không cần ghi.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô. Vd. câu 14 có sẵn <i>a.m.</i> → nghe <b>giờ</b>; câu 16 có sẵn <i>bar</i> → nghe từ <b>đứng trước bar</b>.",
+    "<b>Linear thinking:</b> nghe <i>Breakfast</i> = câu 14 · <i>pay</i> = 15 · <i>vegetarian counter</i> = 16 · <i>microwaves</i> = 17 · <i>last Friday</i> = 18. Lỡ câu nào thì bỏ, nhìn câu sau.",
+    "<b>Thông tin đầu thường là bẫy.</b> Vd. câu 14: <i>used to start at seven, <b>but now</b> …</i> → giờ cũ sai. Câu 16: <i><b>not</b> near the drinks</i> → loại drinks.",
+    "<b>Chính tả + số ít/số nhiều:</b> câu 17 nghe kỹ đuôi -s. Nộp xong đọc 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi bấm phát audio: transcript chạy theo."
+   ],
+   "qs": {
+    "14": {
+     "ans": [
+      "7:30",
+      "7.30",
+      "730",
+      "half past seven"
+     ],
+     "form": [
+      "Giờ (số)",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Breakfast",
+       "N",
+       "breakfast"
+      ],
+      [
+       "from",
+       "Prep",
+       "from half past seven"
+      ]
+     ],
+     "hint": "Có giờ cũ và giờ mới. Đề hỏi giờ bây giờ.",
+     "why": [
+      "Đề <b>Breakfast: from … a.m.</b> → chờ từ [[Breakfast]] + 1 mốc giờ.",
+      "<i>seven</i> đi với [[used to start]] (trước đây) → giờ cũ → bẫy.",
+      "[[but now]] we serve breakfast **from half past seven** → 7:30 (đề có sẵn a.m.)."
+     ]
+    },
+    "15": {
+     "ans": [
+      "card"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "kw": [
+      [
+       "Pay with",
+       "V",
+       "to pay, please use"
+      ]
+     ],
+     "hint": "Có 3 cách trả tiền được nhắc, chỉ 1 cách dùng được bây giờ.",
+     "why": [
+      "Đề <b>Pay with: your staff …</b> → có sẵn <i>staff</i>, chỉ thiếu 1 danh từ.",
+      "Sarah: <i>To [[pay]], please use your</i> **staff card** → card.",
+      "Cash: [[stopped taking cash]]; phone: [[can't pay with your phone]] yet → 2 cách bị loại."
+     ]
+    },
+    "16": {
+     "ans": [
+      "salad"
+     ],
+     "form": [
+      "Danh từ (đi trước 'bar')",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Vegetarian counter",
+       "N",
+       "the vegetarian counter"
+      ],
+      [
+       "next to",
+       "Prep",
+       "next to"
+      ]
+     ],
+     "hint": "Nghe ngay sau 'next to the…'. Nơi có từ 'not' là bẫy.",
+     "why": [
+      "Đề <b>Vegetarian counter: next to the … bar</b> → chờ cụm [[vegetarian counter]].",
+      "Sarah: **next to the salad bar** → salad (đề có sẵn bar).",
+      "<i>near the drinks</i> có [[not]] đứng trước → nhiều người tưởng vậy nhưng sai → bẫy."
+     ]
+    },
+    "17": {
+     "ans": [
+      "stairs"
+     ],
+     "form": [
+      "Noun số nhiều",
+      "Noun số ít"
+     ],
+     "kw": [
+      [
+       "Microwaves",
+       "N",
+       "the microwaves"
+      ],
+      [
+       "near",
+       "Prep",
+       "near"
+      ]
+     ],
+     "hint": "Lò vi sóng KHÔNG ở trong food hall. Nghe sau 'They're near the…'.",
+     "why": [
+      "Đề <b>Microwaves: near the …</b> → chờ [[microwaves]] + <i>near</i>.",
+      "[[pack a lunch]], [[heat it up]] = mang cơm, hâm nóng → đang nói đúng chỗ.",
+      "[[aren't in the food hall itself]] → food hall là bẫy.",
+      "They're **near the stairs** → stairs (cầu thang, nhớ đuôi -s)."
+     ]
+    },
+    "18": {
+     "ans": [
+      "cooking"
+     ],
+     "form": [
+      "Danh từ / V-ing (loại cuộc thi)",
+      "Tên riêng"
+     ],
+     "kw": [
+      [
+       "Last Friday of each month",
+       "N",
+       "the last Friday of every month"
+      ],
+      [
+       "competition",
+       "N",
+       "competition"
+      ]
+     ],
+     "hint": "Nghe ngay trước từ 'competition'.",
+     "why": [
+      "Đề <b>Last Friday of each month: a … competition</b>.",
+      "Sarah: on the [[last Friday of every month]] (each = every) → tới câu 18.",
+      "a **cooking** [[competition]] → cooking. Phần sau (team cooks one dish, managers taste) xác nhận đúng là thi nấu ăn."
+     ]
+    }
+   }
+  },
+  {
+   "id": "s4-shadowing",
+   "session": 4,
+   "type": "speak",
+   "title": "Shadowing – My lunch box",
+   "subtitle": "Buổi 4 · Food & Cooking · Listen & repeat: nghe mẫu từng câu → nói lại · rồi shadow cả bài 2–3 lần",
+   "skill": "Speaking",
+   "topic": "Food & Cooking",
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "opens": "2026-11-14",
+   "video": "media/s4-shadowing.mp4",
+   "deck": "dt4",
+   "sentences": [
+    {
+     "text": "During my ==in'ternship==, / I 'usually ++skip 'breakfast++ / and !!grab ‿ a 'quick bite!! / near the 'office. //",
+     "start": 84.74,
+     "end": 91.2,
+     "chunks": [
+      [
+       2.8,
+       4.2
+      ],
+      [
+       6.2,
+       8.06
+      ],
+      [
+       10.51,
+       11.95
+      ],
+      [
+       13.99,
+       15.27
+      ]
+     ]
+    },
+    {
+     "text": "But 'last month, / I 'started to ++cook for my'self++. //",
+     "start": 91.2,
+     "end": 94.76,
+     "chunks": [
+      [
+       17.55,
+       18.72
+      ],
+      [
+       20.48,
+       22.5
+      ]
+     ]
+    },
+    {
+     "text": "On 'Sundays, / I buy ++fresh 'vegetables++, / some 'eggs / and a bit ‿ of 'chicken, / and I ++'pack ‿ a lunch++ / for the 'whole week. //",
+     "start": 94.76,
+     "end": 103.33,
+     "chunks": [
+      [
+       25.51,
+       26.7
+      ],
+      [
+       28.48,
+       30.17
+      ],
+      [
+       32.46,
+       33.43
+      ],
+      [
+       35.01,
+       36.34
+      ],
+      [
+       38.27,
+       39.69
+      ],
+      [
+       41.71,
+       42.86
+      ]
+     ]
+    },
+    {
+     "text": "It's 'healthier, / and it 'saves me a lot ‿ of 'money. //",
+     "start": 103.33,
+     "end": 106.91,
+     "chunks": [
+      [
+       45.01,
+       46.1
+      ],
+      [
+       47.79,
+       49.62
+      ]
+     ]
+    },
+    {
+     "text": "My 'favorite dish / is my 'mom's fried 'rice. //",
+     "start": 106.91,
+     "end": 110.35,
+     "chunks": [
+      [
+       52.44,
+       53.67
+      ],
+      [
+       55.49,
+       57.24
+      ]
+     ]
+    },
+    {
+     "text": "The =='recipe== is 'simple, / but it 'tastes like 'home. //",
+     "start": 110.35,
+     "end": 113.88,
+     "chunks": [
+      [
+       59.98,
+       61.49
+      ],
+      [
+       63.6,
+       65.08
+      ]
+     ]
+    },
+    {
+     "text": "'Honestly, / I feel really 'proud / when my ==co'workers== / ask me for the 'recipe! //",
+     "start": 113.88,
+     "end": 119.75,
+     "chunks": [
+      [
+       67.55,
+       68.49
+      ],
+      [
+       70.03,
+       71.44
+      ],
+      [
+       73.45,
+       74.7
+      ],
+      [
+       76.55,
+       78.15
+      ]
+     ]
+    }
+   ]
   }
  ],
  "ipa": {
@@ -9734,6 +11973,1539 @@
        "ex": "In the background, there are some tall buildings."
       }
      ]
+    }
+   ]
+  },
+  {
+   "id": "dt4",
+   "title": "Food & Cooking",
+   "session": 4,
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "cards": [
+    {
+     "mean": "món ăn (một món cụ thể)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "dish",
+       "type": "Vocab",
+       "ipa": "/dɪʃ/",
+       "stress": "DISH",
+       "band": "3–3.5",
+       "grammar": "đếm được: a dish / dishes",
+       "ex": "Pho is my favorite Vietnamese dish."
+      }
+     ],
+     "note": "dish đếm được: a dish, two dishes; food không đếm được"
+    },
+    {
+     "mean": "đặc sản của một vùng",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a local specialty",
+       "type": "Collocation",
+       "ipa": "/ə ˌloʊkl ˈspeʃəlti/",
+       "stress": "a LO-cal SPE-cial-ty",
+       "band": "4–5",
+       "grammar": "a local specialty + of / in + nơi chốn",
+       "ex": "Cao lau is a local specialty of Hoi An."
+      },
+      {
+       "w": "specialty",
+       "type": "Vocab",
+       "ipa": "/ˈspeʃəlti/",
+       "stress": "SPE-cial-ty",
+       "band": "5.5–6.5",
+       "grammar": "đếm được (Mỹ); Anh: speciality",
+       "ex": "Banh xeo is a specialty of the south."
+      }
+     ],
+     "note": "a local specialty + of / in + nơi chốn"
+    },
+    {
+     "mean": "món tủ, món đặc trưng của ai",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a signature dish",
+       "type": "Collocation",
+       "ipa": "/ə ˌsɪɡnətʃər ˈdɪʃ/",
+       "stress": "a SIG-na-ture DISH",
+       "band": "5.5–6.5",
+       "grammar": "my / the restaurant's + signature dish",
+       "ex": "Fried rice is a signature dish in my family."
+      }
+     ],
+     "note": "sb's / the restaurant's + signature dish"
+    },
+    {
+     "mean": "nền ẩm thực của một nước / vùng",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "cuisine",
+       "type": "Vocab",
+       "ipa": "/kwɪˈziːn/",
+       "stress": "cui-SINE",
+       "band": "7–8",
+       "grammar": "Vietnamese / Thai / local + cuisine",
+       "ex": "My manager loves Vietnamese cuisine."
+      }
+     ],
+     "note": "cuisine trang trọng hơn food: Vietnamese cuisine"
+    },
+    {
+     "mean": "nguyên liệu nấu ăn",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "ingredient",
+       "type": "Vocab",
+       "ipa": "/ɪnˈɡriːdiənt/",
+       "stress": "in-GRE-di-ent",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: the ingredients of / for + dish",
+       "ex": "Flour and water are the main ingredients of the dough."
+      }
+     ],
+     "note": "ingredient đếm được: the ingredients of / for a dish"
+    },
+    {
+     "mean": "nguyên liệu tươi",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "fresh ingredients",
+       "type": "Collocation",
+       "ipa": "/ˌfreʃ ɪnˈɡriːdiənts/",
+       "stress": "fresh in-GRE-di-ents",
+       "band": "4–5",
+       "grammar": "use / buy + fresh ingredients",
+       "ex": "This restaurant only uses fresh ingredients."
+      }
+     ],
+     "note": "thường dùng số nhiều"
+    },
+    {
+     "mean": "nguyên liệu chính",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "the main ingredient",
+       "type": "Collocation",
+       "ipa": "/ðə ˌmeɪn ɪnˈɡriːdiənt/",
+       "stress": "the MAIN in-GRE-di-ent",
+       "band": "4–5",
+       "grammar": "the main ingredient + of / in + dish",
+       "ex": "Rice is the main ingredient of this dish."
+      }
+     ],
+     "note": "the main ingredient + of / in + món"
+    },
+    {
+     "mean": "bí quyết làm nên món ngon / thành công",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "the secret ingredient",
+       "type": "Idiom",
+       "ipa": "/ðə ˌsiːkrət ɪnˈɡriːdiənt/",
+       "stress": "the SE-cret in-GRE-di-ent",
+       "band": "5.5–6.5",
+       "grammar": "the secret ingredient + of / in + sth",
+       "ex": "Teamwork is the secret ingredient of our project."
+      }
+     ],
+     "note": "nghĩa bóng: điều làm nên khác biệt"
+    },
+    {
+     "mean": "công thức nấu ăn",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "recipe",
+       "type": "Vocab",
+       "ipa": "/ˈresəpi/",
+       "stress": "REC-i-pe",
+       "band": "4–5",
+       "grammar": "a recipe + for + dish",
+       "ex": "My mom gave me her recipe for fried rice."
+      }
+     ],
+     "note": "recipe đọc 3 âm tiết REC-i-pe; a recipe for + món"
+    },
+    {
+     "mean": "làm theo công thức",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "follow a recipe",
+       "type": "Collocation",
+       "ipa": "/ˌfɑːloʊ ə ˈresəpi/",
+       "stress": "FOL-low‿a REC-i-pe",
+       "band": "4–5",
+       "grammar": "follow + a / my mom's + recipe",
+       "ex": "I always follow a recipe when I bake."
+      }
+     ],
+     "note": "follow + a / my mom's recipe"
+    },
+    {
+     "mean": "công thức gia truyền",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a family recipe",
+       "type": "Collocation",
+       "ipa": "/ə ˌfæməli ˈresəpi/",
+       "stress": "a FAM-i-ly REC-i-pe",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "This fish sauce is a family recipe."
+      }
+     ],
+     "note": "a family recipe"
+    },
+    {
+     "mean": "thử làm (món mới, công thức mới)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "try out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌtraɪ ˈaʊt/",
+       "stress": "try‿OUT",
+       "band": "5.5–6.5",
+       "grammar": "tách được: try out a recipe / try it out",
+       "ex": "I want to try out a new recipe this weekend."
+      }
+     ],
+     "note": "tách được: try out a recipe / try it out"
+    },
+    {
+     "mean": "điều chắc chắn dẫn tới thất bại",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a recipe for disaster",
+       "type": "Idiom",
+       "ipa": "/ə ˌresəpi fər dɪˈzæstər/",
+       "stress": "a REC-i-pe for di-SAS-ter",
+       "band": "7–8",
+       "grammar": "be + a recipe for disaster",
+       "ex": "Starting my thesis one week before the deadline is a recipe for disaster."
+      }
+     ],
+     "note": "nghĩa bóng, không nói về nấu ăn"
+    },
+    {
+     "mean": "bữa ăn",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "meal",
+       "type": "Vocab",
+       "ipa": "/miːl/",
+       "stress": "MEAL",
+       "band": "3–3.5",
+       "grammar": "đếm được: have three meals a day",
+       "ex": "I usually have three meals a day."
+      }
+     ],
+     "note": "meal đếm được: three meals a day"
+    },
+    {
+     "mean": "ăn trưa (have + tên bữa)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "have lunch",
+       "type": "Collocation",
+       "ipa": "/ˌhæv ˈlʌntʃ/",
+       "stress": "have LUNCH",
+       "band": "3–3.5",
+       "grammar": "have + breakfast / lunch / dinner",
+       "ex": "I have lunch with my team at noon."
+      }
+     ],
+     "note": "have + breakfast / lunch / dinner, không có a"
+    },
+    {
+     "mean": "bữa tiệc thịnh soạn",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "feast",
+       "type": "Vocab",
+       "ipa": "/fiːst/",
+       "stress": "FEAST",
+       "band": "5.5–6.5",
+       "grammar": "a + feast; have a feast",
+       "ex": "We had a feast after our thesis defense."
+      }
+     ],
+     "note": "a feast; nghĩa rộng: rất nhiều món ngon"
+    },
+    {
+     "mean": "bữa cơm nhà nấu",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a home-cooked meal",
+       "type": "Collocation",
+       "ipa": "/ə ˌhoʊm kʊkt ˈmiːl/",
+       "stress": "a HOME-cooked MEAL",
+       "band": "5.5–6.5",
+       "grammar": "have / miss + a home-cooked meal",
+       "ex": "I really miss a home-cooked meal when I'm away."
+      }
+     ],
+     "note": "have / miss + a home-cooked meal"
+    },
+    {
+     "mean": "bữa ăn bổ dưỡng",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a nutritious meal",
+       "type": "Collocation",
+       "ipa": "/ə nuˌtrɪʃəs ˈmiːl/",
+       "stress": "a nu-TRI-tious MEAL",
+       "band": "7–8",
+       "grammar": "eat / prepare + a nutritious meal",
+       "ex": "A bowl of pho can be a nutritious meal."
+      }
+     ],
+     "note": "eat / prepare + a nutritious meal"
+    },
+    {
+     "mean": "đồ ăn vặt",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "snack",
+       "type": "Vocab",
+       "ipa": "/snæk/",
+       "stress": "SNACK",
+       "band": "3–3.5",
+       "grammar": "đếm được: a snack / some snacks",
+       "ex": "I keep some snacks in my desk drawer."
+      }
+     ],
+     "note": "snack đếm được: some snacks"
+    },
+    {
+     "mean": "món ăn vặt lành mạnh",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a healthy snack",
+       "type": "Collocation",
+       "ipa": "/ə ˌhelθi ˈsnæk/",
+       "stress": "a HEAL-thy SNACK",
+       "band": "3–3.5",
+       "grammar": "đếm được: healthy snacks",
+       "ex": "Nuts are a healthy snack for long workdays."
+      }
+     ],
+     "note": "healthy snacks"
+    },
+    {
+     "mean": "món ngon tự thưởng cho mình",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "treat",
+       "type": "Vocab",
+       "ipa": "/triːt/",
+       "stress": "TREAT",
+       "band": "4–5",
+       "grammar": "đếm được: a treat (for sb)",
+       "ex": "Bubble tea is my treat after a long week."
+      }
+     ],
+     "note": "treat (n) đếm được: a treat for myself"
+    },
+    {
+     "mean": "đồ ăn mua mang về",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "takeout",
+       "type": "Vocab",
+       "ipa": "/ˈteɪkaʊt/",
+       "stress": "TAKE-out",
+       "band": "4–5",
+       "grammar": "không đếm được (Mỹ): order / get takeout",
+       "ex": "We ordered takeout because we were too tired to cook."
+      },
+      {
+       "w": "takeaway",
+       "type": "Vocab",
+       "ipa": "/ˈteɪkəweɪ/",
+       "stress": "TAKE-a-way",
+       "band": "4–5",
+       "grammar": "Anh – Anh, đếm được: get a takeaway",
+       "ex": "In London, we got a takeaway every Friday."
+      }
+     ],
+     "note": "takeout (Mỹ) = takeaway (Anh), đều là danh từ"
+    },
+    {
+     "mean": "gọi đồ ăn về nhà / văn phòng",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "order takeout",
+       "type": "Collocation",
+       "ipa": "/ˌɔːrdər ˈteɪkaʊt/",
+       "stress": "OR-der TAKE-out",
+       "band": "4–5",
+       "grammar": "order + takeout",
+       "ex": "We order takeout when we work late."
+      },
+      {
+       "w": "order in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɔːrdər ˈɪn/",
+       "stress": "or-der‿IN",
+       "band": "4–5",
+       "grammar": "không tân ngữ (Mỹ)",
+       "ex": "We were too busy, so we ordered in."
+      },
+      {
+       "w": "delivery",
+       "type": "Vocab",
+       "ipa": "/dɪˈlɪvəri/",
+       "stress": "de-LIV-er-y",
+       "band": "4–5",
+       "grammar": "order / get + delivery (Mỹ, không đếm được)",
+       "ex": "It was raining, so we got delivery from a food app."
+      }
+     ],
+     "note": "order in là cụm động từ không tân ngữ; order takeout / delivery có tân ngữ"
+    },
+    {
+     "mean": "cay",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "spicy",
+       "type": "Vocab",
+       "ipa": "/ˈspaɪsi/",
+       "stress": "SPI-cy",
+       "band": "3–3.5",
+       "grammar": "spicy + food / soup; too spicy for sb",
+       "ex": "This noodle soup is too spicy for me."
+      },
+      {
+       "w": "hot",
+       "type": "Vocab",
+       "ipa": "/hɑːt/",
+       "stress": "HOT",
+       "band": "3–3.5",
+       "grammar": "hot = cay (khi nói món ăn) hoặc nóng",
+       "ex": "This chili sauce is really hot."
+      },
+      {
+       "w": "fiery",
+       "type": "Vocab",
+       "ipa": "/ˈfaɪəri/",
+       "stress": "FI-er-y",
+       "band": "7–8",
+       "grammar": "a fiery + sauce / curry",
+       "ex": "The fiery sauce made my eyes water."
+      }
+     ],
+     "note": "hot cũng có nghĩa là nóng; fiery = cay xé, rất cay"
+    },
+    {
+     "mean": "không ăn được cay",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "can't handle spicy food",
+       "type": "Collocation",
+       "ipa": "/ˌkænt ˌhændl ˈspaɪsi fuːd/",
+       "stress": "can't HAN-dle SPI-cy food",
+       "band": "5.5–6.5",
+       "grammar": "can / can't + handle + spicy food",
+       "ex": "I can't handle spicy food, so I order it mild."
+      }
+     ],
+     "note": "can / can't + handle + spicy food"
+    },
+    {
+     "mean": "ngon",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "delicious",
+       "type": "Vocab",
+       "ipa": "/dɪˈlɪʃəs/",
+       "stress": "de-LI-cious",
+       "band": "3–3.5",
+       "grammar": "look / taste + delicious",
+       "ex": "The dumplings in the picture look delicious."
+      },
+      {
+       "w": "tasty",
+       "type": "Vocab",
+       "ipa": "/ˈteɪsti/",
+       "stress": "TAS-ty",
+       "band": "3–3.5",
+       "grammar": "a tasty + dish / snack",
+       "ex": "This banh mi is cheap and tasty."
+      },
+      {
+       "w": "mouth-watering",
+       "type": "Vocab",
+       "ipa": "/ˈmaʊθ ˌwɔːtərɪŋ/",
+       "stress": "MOUTH-wa-ter-ing",
+       "band": "7–8",
+       "grammar": "a mouth-watering + dish / smell",
+       "ex": "The street food stalls have mouth-watering dishes."
+      },
+      {
+       "w": "absolutely delicious",
+       "type": "Collocation",
+       "ipa": "/ˌæbsəluːtli dɪˈlɪʃəs/",
+       "stress": "AB-so-lute-ly de-LI-cious",
+       "band": "5.5–6.5",
+       "grammar": "absolutely + tính từ mạnh",
+       "ex": "The dumplings were absolutely delicious."
+      },
+      {
+       "w": "to die for",
+       "type": "Idiom",
+       "ipa": "/tə ˈdaɪ fɔːr/",
+       "stress": "to DIE for",
+       "band": "7–8",
+       "grammar": "be + to die for / N + to die for (thân mật)",
+       "ex": "My grandma's spring rolls are to die for."
+      }
+     ],
+     "note": "absolutely delicious thay cho very delicious · to die for đứng sau danh từ / sau be (thân mật)"
+    },
+    {
+     "mean": "ăn đi! (lời mời ăn, thân mật)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "dig in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdɪɡ ˈɪn/",
+       "stress": "dig‿IN",
+       "band": "4–5",
+       "grammar": "không tân ngữ; câu mệnh lệnh",
+       "ex": "The food is ready, dig in!"
+      }
+     ],
+     "note": "dig in, hay dùng câu mệnh lệnh"
+    },
+    {
+     "mean": "tốt cho sức khỏe",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "healthy",
+       "type": "Vocab",
+       "ipa": "/ˈhelθi/",
+       "stress": "HEAL-thy",
+       "band": "3–3.5",
+       "grammar": "healthy + food / snack / diet",
+       "ex": "Fruit is a healthy snack."
+      },
+      {
+       "w": "nutritious",
+       "type": "Vocab",
+       "ipa": "/nuˈtrɪʃəs/",
+       "stress": "nu-TRI-tious",
+       "band": "5.5–6.5",
+       "grammar": "nutritious + food / meal",
+       "ex": "Eggs are cheap and nutritious."
+      },
+      {
+       "w": "good for you",
+       "type": "Collocation",
+       "ipa": "/ˌɡʊd fər ˈjuː/",
+       "stress": "GOOD for you",
+       "band": "3–3.5",
+       "grammar": "be + good for you (sau be, không đứng trước danh từ)",
+       "ex": "Green tea is good for you."
+      }
+     ],
+     "note": "healthy rộng nhất; nutritious = bổ dưỡng, nhiều chất; good for you thân mật"
+    },
+    {
+     "mean": "thói quen ăn uống lành mạnh",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "healthy eating habits",
+       "type": "Collocation",
+       "ipa": "/ˌhelθi ˈiːtɪŋ ˌhæbɪts/",
+       "stress": "HEAL-thy EAT-ing hab-its",
+       "band": "5.5–6.5",
+       "grammar": "have / develop + healthy eating habits",
+       "ex": "Office workers need healthy eating habits."
+      }
+     ],
+     "note": "have / develop + healthy eating habits"
+    },
+    {
+     "mean": "ăn / dùng bớt (đường, mỡ…)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "cut down on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈdaʊn ɑːn/",
+       "stress": "cut DOWN on",
+       "band": "4–5",
+       "grammar": "cut down on + N / V-ing",
+       "ex": "I'm trying to cut down on sugar."
+      }
+     ],
+     "note": "cut down on + N / V-ing, không tách"
+    },
+    {
+     "mean": "ăn có chừng mực",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "eat in moderation",
+       "type": "Collocation",
+       "ipa": "/ˌiːt ɪn ˌmɑːdəˈreɪʃn/",
+       "stress": "eat in mod-er-A-tion",
+       "band": "7–8",
+       "grammar": "eat / drink + sth + in moderation",
+       "ex": "You can eat snacks, but eat in moderation."
+      }
+     ],
+     "note": "eat / drink + sth + in moderation"
+    },
+    {
+     "mean": "nhà làm, tự nấu (không mua ngoài)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "homemade",
+       "type": "Vocab",
+       "ipa": "/ˌhoʊmˈmeɪd/",
+       "stress": "home-MADE",
+       "band": "4–5",
+       "grammar": "homemade + food / cake / sauce",
+       "ex": "I prefer homemade food to fast food."
+      },
+      {
+       "w": "home-cooked",
+       "type": "Vocab",
+       "ipa": "/ˌhoʊm ˈkʊkt/",
+       "stress": "home-COOKED",
+       "band": "4–5",
+       "grammar": "home-cooked + food / dinner",
+       "ex": "I eat home-cooked food on weekends."
+      }
+     ],
+     "note": "homemade + đồ ăn; home-cooked hay đi với meal / food"
+    },
+    {
+     "mean": "tự nấu từ nguyên liệu thô",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "cook from scratch",
+       "type": "Collocation",
+       "ipa": "/ˌkʊk frəm ˈskrætʃ/",
+       "stress": "cook from SCRATCH",
+       "band": "5.5–6.5",
+       "grammar": "cook / make + sth + from scratch",
+       "ex": "On Sundays, I cook from scratch."
+      }
+     ],
+     "note": "cook / make + sth + from scratch"
+    },
+    {
+     "mean": "hâm nóng (đồ ăn)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "heat up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhiːt ˈʌp/",
+       "stress": "heat‿UP",
+       "band": "3–3.5",
+       "grammar": "tách được: heat up the soup / heat it up",
+       "ex": "I heat up my lunch in the office microwave."
+      }
+     ],
+     "note": "tách được: heat up the soup / heat it up"
+    },
+    {
+     "mean": "nấu nhanh một món đơn giản",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "whip up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwɪp ˈʌp/",
+       "stress": "whip‿UP",
+       "band": "7–8",
+       "grammar": "tách được: whip up a meal / whip it up",
+       "ex": "I can whip up fried rice in ten minutes."
+      }
+     ],
+     "note": "tách được: whip up a meal / whip it up"
+    },
+    {
+     "mean": "ngon như mẹ nấu",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "like mom used to make",
+       "type": "Idiom",
+       "ipa": "/laɪk ˈmɑːm juːst tə ˌmeɪk/",
+       "stress": "like MOM used to MAKE",
+       "band": "7–8",
+       "grammar": "N + like mom used to make (Anh: like mum used to make)",
+       "ex": "This soup tastes like mom used to make."
+      }
+     ],
+     "note": "cụm cố định, đứng sau danh từ"
+    },
+    {
+     "mean": "ăn chay; người ăn chay",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "vegetarian",
+       "type": "Vocab",
+       "ipa": "/ˌvedʒəˈteriən/",
+       "stress": "veg-e-TAR-i-an",
+       "band": "5.5–6.5",
+       "grammar": "tính từ hoặc danh từ: be vegetarian / a vegetarian",
+       "ex": "My roommate is vegetarian, so she never eats meat."
+      },
+      {
+       "w": "meat-free",
+       "type": "Vocab",
+       "ipa": "/ˌmiːt ˈfriː/",
+       "stress": "meat-FREE",
+       "band": "5.5–6.5",
+       "grammar": "meat-free + meal / day",
+       "ex": "Our cafeteria has a meat-free day every Monday."
+      },
+      {
+       "w": "plant-based",
+       "type": "Vocab",
+       "ipa": "/ˌplænt ˈbeɪst/",
+       "stress": "plant-BASED",
+       "band": "7–8",
+       "grammar": "plant-based + food / milk",
+       "ex": "More cafes now sell plant-based milk."
+      }
+     ],
+     "note": "vegetarian vẫn ăn trứng, sữa; plant-based = chỉ ăn thực vật"
+    },
+    {
+     "mean": "chuyển sang ăn chay",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "go vegetarian",
+       "type": "Collocation",
+       "ipa": "/ˌɡoʊ ˌvedʒəˈteriən/",
+       "stress": "go veg-e-TAR-i-an",
+       "band": "5.5–6.5",
+       "grammar": "go + vegetarian / vegan",
+       "ex": "Many young people go vegetarian for their health."
+      }
+     ],
+     "note": "go + vegetarian / vegan"
+    },
+    {
+     "mean": "chế độ ăn thuần thực vật",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a plant-based diet",
+       "type": "Collocation",
+       "ipa": "/ə ˌplænt beɪst ˈdaɪət/",
+       "stress": "a PLANT-based DI-et",
+       "band": "7–8",
+       "grammar": "follow / be on + a plant-based diet",
+       "ex": "More young people follow a plant-based diet."
+      }
+     ],
+     "note": "follow / be on + a plant-based diet"
+    },
+    {
+     "mean": "bỏ hẳn (không ăn món gì nữa)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "cut out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈaʊt/",
+       "stress": "cut‿OUT",
+       "band": "5.5–6.5",
+       "grammar": "tách được: cut out meat / cut it out",
+       "ex": "My sister cut out meat and went vegetarian."
+      }
+     ],
+     "note": "tách được: cut out meat / cut it out"
+    },
+    {
+     "mean": "chế độ ăn (những gì mình ăn hằng ngày)",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "diet",
+       "type": "Vocab",
+       "ipa": "/ˈdaɪət/",
+       "stress": "DI-et",
+       "band": "4–5",
+       "grammar": "a healthy / unhealthy + diet",
+       "ex": "Students often have an unhealthy diet during exams."
+      },
+      {
+       "w": "eating habits",
+       "type": "Collocation",
+       "ipa": "/ˈiːtɪŋ ˌhæbɪts/",
+       "stress": "EAT-ing hab-its",
+       "band": "5.5–6.5",
+       "grammar": "số nhiều: my / bad + eating habits",
+       "ex": "My eating habits changed when I started my internship."
+      }
+     ],
+     "note": "diet không chỉ là ăn kiêng; eating habits luôn số nhiều"
+    },
+    {
+     "mean": "chế độ ăn cân bằng",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "a balanced diet",
+       "type": "Collocation",
+       "ipa": "/ə ˌbælənst ˈdaɪət/",
+       "stress": "a BAL-anced DI-et",
+       "band": "4–5",
+       "grammar": "have / eat + a balanced diet",
+       "ex": "It's hard to have a balanced diet during exams."
+      }
+     ],
+     "note": "have / eat + a balanced diet"
+    },
+    {
+     "mean": "ăn kiêng",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "go on a diet",
+       "type": "Collocation",
+       "ipa": "/ˌɡoʊ ɑːn ə ˈdaɪət/",
+       "stress": "go‿on‿a DI-et",
+       "band": "4–5",
+       "grammar": "go on / be on + a diet",
+       "ex": "I want to go on a diet before my graduation photos."
+      }
+     ],
+     "note": "go on / be on + a diet"
+    },
+    {
+     "mean": "giảm cân, gầy đi",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "slim down",
+       "type": "Phrasal verb",
+       "ipa": "/ˌslɪm ˈdaʊn/",
+       "stress": "slim DOWN",
+       "band": "5.5–6.5",
+       "grammar": "không tân ngữ; QK slimmed down",
+       "ex": "I want to slim down before my first job interview."
+      }
+     ],
+     "note": "không tân ngữ; QK slimmed down"
+    },
+    {
+     "mean": "ăn gì thì người như vậy",
+     "cat": "A. Food & Cooking: từ cốt lõi",
+     "items": [
+      {
+       "w": "you are what you eat",
+       "type": "Idiom",
+       "ipa": "/ju ˌɑːr ˌwʌt ju ˈiːt/",
+       "stress": "you ARE what you EAT",
+       "band": "7–8",
+       "grammar": "câu cố định, thường đứng riêng",
+       "ex": "My mom always says, \"You are what you eat.\""
+      }
+     ],
+     "note": "câu cố định"
+    },
+    {
+     "mean": "thái hành",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "chop onions",
+       "type": "Collocation",
+       "ipa": "/ˌtʃɑːp ˈʌnjənz/",
+       "stress": "chop ON-ions",
+       "band": "3–3.5",
+       "grammar": "chop + onions / vegetables",
+       "ex": "First, chop onions and fry them in a pan."
+      }
+     ],
+     "note": "chop + onions / vegetables; QK chopped /t/"
+    },
+    {
+     "mean": "thái nhỏ",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "chop up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌtʃɑːp ˈʌp/",
+       "stress": "chop‿UP",
+       "band": "4–5",
+       "grammar": "tách được: chop up the onions / chop them up",
+       "ex": "Chop up the cabbage finely."
+      }
+     ],
+     "note": "tách được: chop up the cabbage / chop it up"
+    },
+    {
+     "mean": "trộn bột",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "mix the dough",
+       "type": "Collocation",
+       "ipa": "/ˌmɪks ðə ˈdoʊ/",
+       "stress": "mix the DOUGH",
+       "band": "3–3.5",
+       "grammar": "mix + the dough / sth + with sth",
+       "ex": "Two girls are mixing the dough in a big bowl."
+      }
+     ],
+     "note": "mix + the dough / the flour and water"
+    },
+    {
+     "mean": "cán bột",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "roll out the dough",
+       "type": "Phrasal verb",
+       "ipa": "/ˌroʊl ˈaʊt ðə ˈdoʊ/",
+       "stress": "roll‿OUT the DOUGH",
+       "band": "4–5",
+       "grammar": "roll out + the dough / roll it out",
+       "ex": "She is rolling out the dough to make dumplings."
+      }
+     ],
+     "note": "tách được: roll out the dough / roll it out"
+    },
+    {
+     "mean": "gói, gấp sủi cảo",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "fold dumplings",
+       "type": "Collocation",
+       "ipa": "/ˌfoʊld ˈdʌmplɪŋz/",
+       "stress": "fold DUMP-lings",
+       "band": "4–5",
+       "grammar": "fold + dumplings (+ into shapes)",
+       "ex": "He folded twenty dumplings in ten minutes."
+      }
+     ],
+     "note": "fold + dumplings / into half-moon shapes"
+    },
+    {
+     "mean": "rán trứng",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "fry an egg",
+       "type": "Collocation",
+       "ipa": "/ˌfraɪ ən ˈeɡ/",
+       "stress": "fry‿an EGG",
+       "band": "3–3.5",
+       "grammar": "fry + an egg / fish",
+       "ex": "A girl is frying an egg in a pan."
+      }
+     ],
+     "note": "fry + an egg / some fish; QK fried"
+    },
+    {
+     "mean": "luộc mì",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "boil noodles",
+       "type": "Collocation",
+       "ipa": "/ˌbɔɪl ˈnuːdlz/",
+       "stress": "boil NOO-dles",
+       "band": "3–3.5",
+       "grammar": "boil + noodles / water",
+       "ex": "Boil noodles for three minutes."
+      }
+     ],
+     "note": "boil + noodles / water / eggs"
+    },
+    {
+     "mean": "khuấy nồi canh",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "stir the soup",
+       "type": "Collocation",
+       "ipa": "/ˌstɝː ðə ˈsuːp/",
+       "stress": "stir the SOUP",
+       "band": "4–5",
+       "grammar": "stir + the soup / the sauce; QK stirred",
+       "ex": "A man is stirring the soup with a big spoon."
+      }
+     ],
+     "note": "stir + the soup / the sauce"
+    },
+    {
+     "mean": "nếm nước sốt",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "taste the sauce",
+       "type": "Collocation",
+       "ipa": "/ˌteɪst ðə ˈsɔːs/",
+       "stress": "taste the SAUCE",
+       "band": "4–5",
+       "grammar": "taste + the sauce; QK tasted /ɪd/",
+       "ex": "She tasted the sauce and added some salt."
+      }
+     ],
+     "note": "taste + the sauce / the soup"
+    },
+    {
+     "mean": "dọn bàn, bày bát đũa",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "set the table",
+       "type": "Collocation",
+       "ipa": "/ˌset ðə ˈteɪbl/",
+       "stress": "set the TA-ble",
+       "band": "4–5",
+       "grammar": "set the table + for + dinner",
+       "ex": "Can you help me set the table for dinner?"
+      }
+     ],
+     "note": "set the table (for + bữa ăn)"
+    },
+    {
+     "mean": "rửa bát",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "do the dishes",
+       "type": "Collocation",
+       "ipa": "/ˌduː ðə ˈdɪʃɪz/",
+       "stress": "do the DISH-es",
+       "band": "3–3.5",
+       "grammar": "do + the dishes; QK did the dishes",
+       "ex": "After dinner, I always do the dishes."
+      },
+      {
+       "w": "wash up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwɑːʃ ˈʌp/",
+       "stress": "wash‿UP",
+       "band": "4–5",
+       "grammar": "Anh – Anh, không tân ngữ",
+       "ex": "In my homestay, I always wash up after dinner."
+      }
+     ],
+     "note": "do the dishes (Mỹ) = wash up (Anh)"
+    },
+    {
+     "mean": "múc ra đĩa, dọn món",
+     "cat": "B. Hoạt động trong bếp",
+     "items": [
+      {
+       "w": "dish up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdɪʃ ˈʌp/",
+       "stress": "dish‿UP",
+       "band": "7–8",
+       "grammar": "tách được: dish up the soup / dish it up",
+       "ex": "Can you dish up the soup for everyone?"
+      }
+     ],
+     "note": "tách được: dish up the noodles / dish them up"
+    },
+    {
+     "mean": "lớp học nấu ăn",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "cooking class",
+       "type": "Collocation",
+       "ipa": "/ˈkʊkɪŋ klæs/",
+       "stress": "COOK-ing class",
+       "band": "3–3.5",
+       "grammar": "take / book + a cooking class",
+       "ex": "Our team booked a cooking class for Saturday."
+      }
+     ],
+     "note": "take / book + a cooking class"
+    },
+    {
+     "mean": "lễ hội ẩm thực",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "food festival",
+       "type": "Collocation",
+       "ipa": "/ˈfuːd ˌfestəvl/",
+       "stress": "FOOD fes-ti-val",
+       "band": "4–5",
+       "grammar": "go to + a food festival",
+       "ex": "The food festival is free, but the food isn't."
+      }
+     ],
+     "note": "go to + a food festival"
+    },
+    {
+     "mean": "món ăn đường phố",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "street food",
+       "type": "Collocation",
+       "ipa": "/ˈstriːt fuːd/",
+       "stress": "STREET food",
+       "band": "3–3.5",
+       "grammar": "không đếm được: try street food",
+       "ex": "Banh mi is famous street food in Vietnam."
+      }
+     ],
+     "note": "street food không đếm được"
+    },
+    {
+     "mean": "quầy hàng ăn",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "food stall",
+       "type": "Collocation",
+       "ipa": "/ˈfuːd stɔːl/",
+       "stress": "FOOD stall",
+       "band": "4–5",
+       "grammar": "đếm được: food stalls",
+       "ex": "There are fifty food stalls at the festival."
+      }
+     ],
+     "note": "food stall đếm được: fifty food stalls"
+    },
+    {
+     "mean": "khu ăn uống trong trung tâm thương mại",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "food court",
+       "type": "Collocation",
+       "ipa": "/ˈfuːd kɔːrt/",
+       "stress": "FOOD court",
+       "band": "4–5",
+       "grammar": "at / in + the food court",
+       "ex": "We had lunch at the food court in the mall."
+      }
+     ],
+     "note": "at the food court"
+    },
+    {
+     "mean": "căng tin",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "cafeteria",
+       "type": "Vocab",
+       "ipa": "/ˌkæfəˈtɪriə/",
+       "stress": "caf-e-TER-i-a",
+       "band": "4–5",
+       "grammar": "the university / company + cafeteria",
+       "ex": "The university cafeteria is cheap but crowded."
+      },
+      {
+       "w": "canteen",
+       "type": "Vocab",
+       "ipa": "/kænˈtiːn/",
+       "stress": "can-TEEN",
+       "band": "4–5",
+       "grammar": "Anh – Anh: the school canteen",
+       "ex": "We often had lunch in the school canteen."
+      }
+     ],
+     "note": "cafeteria (Mỹ) = canteen (Anh)"
+    },
+    {
+     "mean": "tiệc tự chọn",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "buffet",
+       "type": "Vocab",
+       "ipa": "/bəˈfeɪ/",
+       "stress": "buf-FET",
+       "band": "4–5",
+       "grammar": "a breakfast / lunch + buffet",
+       "ex": "The hotel has a breakfast buffet."
+      }
+     ],
+     "note": "buffet đọc buf-FET (Mỹ)"
+    },
+    {
+     "mean": "thực đơn",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "menu",
+       "type": "Vocab",
+       "ipa": "/ˈmenjuː/",
+       "stress": "MEN-u",
+       "band": "3–3.5",
+       "grammar": "on the menu; see the menu",
+       "ex": "Can I see the menu, please?"
+      }
+     ],
+     "note": "on the menu"
+    },
+    {
+     "mean": "sự đặt chỗ trước",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "reservation",
+       "type": "Vocab",
+       "ipa": "/ˌrezərˈveɪʃn/",
+       "stress": "res-er-VA-tion",
+       "band": "4–5",
+       "grammar": "make + a reservation + for + số người",
+       "ex": "I made a reservation for four people."
+      }
+     ],
+     "note": "reservation (Mỹ) = booking (Anh); make a reservation"
+    },
+    {
+     "mean": "bị dị ứng với",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "be allergic to",
+       "type": "Collocation",
+       "ipa": "/bi əˈlɝːdʒɪk tə/",
+       "stress": "be al-LER-gic to",
+       "band": "4–5",
+       "grammar": "be allergic to + N (peanuts, seafood)",
+       "ex": "Some people can be allergic to peanuts."
+      }
+     ],
+     "note": "be allergic to + N"
+    },
+    {
+     "mean": "tạp dề",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "apron",
+       "type": "Vocab",
+       "ipa": "/ˈeɪprən/",
+       "stress": "A-pron",
+       "band": "4–5",
+       "grammar": "đếm được: wear an apron",
+       "ex": "The school gives every student an apron."
+      }
+     ],
+     "note": "an apron"
+    },
+    {
+     "mean": "hóa đơn ở nhà hàng",
+     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "items": [
+      {
+       "w": "check",
+       "type": "Vocab",
+       "ipa": "/tʃek/",
+       "stress": "CHECK",
+       "band": "4–5",
+       "grammar": "ask for / pay + the check",
+       "ex": "Can we have the check, please?"
+      }
+     ],
+     "note": "check (Mỹ) = bill (Anh)"
+    },
+    {
+     "mean": "giờ nghỉ trưa",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "lunch break",
+       "type": "Collocation",
+       "ipa": "/ˈlʌntʃ breɪk/",
+       "stress": "LUNCH break",
+       "band": "3–3.5",
+       "grammar": "on / during + my lunch break",
+       "ex": "Our lunch break is only forty-five minutes."
+      }
+     ],
+     "note": "on my lunch break"
+    },
+    {
+     "mean": "mang cơm hộp đi làm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "pack a lunch",
+       "type": "Collocation",
+       "ipa": "/ˌpæk ə ˈlʌntʃ/",
+       "stress": "pack‿a LUNCH",
+       "band": "4–5",
+       "grammar": "pack + a lunch; QK packed /t/",
+       "ex": "I pack a lunch to save money."
+      }
+     ],
+     "note": "pack a lunch (Mỹ) = bring a packed lunch (Anh)"
+    },
+    {
+     "mean": "ăn ngay tại bàn làm việc",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "eat at my desk",
+       "type": "Collocation",
+       "ipa": "/ˌiːt ət maɪ ˈdesk/",
+       "stress": "eat‿at my DESK",
+       "band": "4–5",
+       "grammar": "eat at + my / his / her desk",
+       "ex": "On busy days, I eat at my desk."
+      }
+     ],
+     "note": "eat at + my / your desk"
+    },
+    {
+     "mean": "ăn vội chút gì đó",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "grab a bite",
+       "type": "Idiom",
+       "ipa": "/ˌɡræb ə ˈbaɪt/",
+       "stress": "grab‿a BITE",
+       "band": "5.5–6.5",
+       "grammar": "grab a bite (to eat); QK grabbed",
+       "ex": "Let's grab a bite after the meeting."
+      }
+     ],
+     "note": "thân mật; grab a bite (to eat)"
+    },
+    {
+     "mean": "bỏ bữa sáng",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "skip breakfast",
+       "type": "Collocation",
+       "ipa": "/ˌskɪp ˈbrekfəst/",
+       "stress": "skip BREAK-fast",
+       "band": "4–5",
+       "grammar": "skip + breakfast / a meal",
+       "ex": "I often skip breakfast when I'm late for work."
+      }
+     ],
+     "note": "skip + breakfast / lunch / a meal"
+    },
+    {
+     "mean": "ứng dụng giao đồ ăn",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "food delivery app",
+       "type": "Collocation",
+       "ipa": "/ˈfuːd dɪˌlɪvəri æp/",
+       "stress": "FOOD de-LIV-er-y app",
+       "band": "4–5",
+       "grammar": "order from + a food delivery app",
+       "ex": "Many office workers use a food delivery app every day."
+      }
+     ],
+     "note": "use / order from + a food delivery app"
+    },
+    {
+     "mean": "bữa trưa cả nhóm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "team lunch",
+       "type": "Collocation",
+       "ipa": "/ˌtiːm ˈlʌntʃ/",
+       "stress": "team LUNCH",
+       "band": "4–5",
+       "grammar": "have + a team lunch",
+       "ex": "We have a team lunch every Friday."
+      }
+     ],
+     "note": "have + a team lunch"
+    },
+    {
+     "mean": "mời ai ăn trưa (mình trả tiền)",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "treat you to lunch",
+       "type": "Collocation",
+       "ipa": "/ˌtriːt ju tə ˈlʌntʃ/",
+       "stress": "TREAT you to LUNCH",
+       "band": "5.5–6.5",
+       "grammar": "treat + sb + to + lunch / dinner",
+       "ex": "Let me treat you to lunch after the meeting."
+      }
+     ],
+     "note": "treat + sb + to lunch / dinner"
+    },
+    {
+     "mean": "ăn uống tiết kiệm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "eat on a budget",
+       "type": "Collocation",
+       "ipa": "/ˌiːt ɑːn ə ˈbʌdʒɪt/",
+       "stress": "eat on‿a BUD-get",
+       "band": "5.5–6.5",
+       "grammar": "eat on a budget (as a student)",
+       "ex": "As a student, I have to eat on a budget."
+      }
+     ],
+     "note": "eat on a budget"
+    },
+    {
+     "mean": "tự nấu ăn cho mình",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "cook for myself",
+       "type": "Collocation",
+       "ipa": "/ˌkʊk fər maɪˈself/",
+       "stress": "cook for my-SELF",
+       "band": "4–5",
+       "grammar": "cook for + myself / yourself",
+       "ex": "After I moved out, I started to cook for myself."
+      }
+     ],
+     "note": "cook for + myself / yourself"
+    },
+    {
+     "mean": "ăn ngoài hàng",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "eat out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌiːt ˈaʊt/",
+       "stress": "eat‿OUT",
+       "band": "3–3.5",
+       "grammar": "không tân ngữ; QK ate out",
+       "ex": "We eat out every Friday after work."
+      }
+     ],
+     "note": "eat out không tân ngữ; QK ate out"
+    },
+    {
+     "mean": "ăn no (bằng món gì)",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "fill up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌfɪl ˈʌp/",
+       "stress": "fill‿UP",
+       "band": "4–5",
+       "grammar": "fill up on + N",
+       "ex": "Don't fill up on bread before the main dish."
+      }
+     ],
+     "note": "fill up on + N"
+    },
+    {
+     "mean": "ăn quá nhiều, ăn ngấu nghiến",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "pig out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpɪɡ ˈaʊt/",
+       "stress": "pig‿OUT",
+       "band": "7–8",
+       "grammar": "pig out on + N (thân mật)",
+       "ex": "Let's pig out on pizza after the exam!"
+      }
+     ],
+     "note": "rất thân mật, chỉ dùng với bạn bè"
+    },
+    {
+     "mean": "ăn rất khỏe",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "eat like a horse",
+       "type": "Idiom",
+       "ipa": "/ˌiːt laɪk ə ˈhɔːrs/",
+       "stress": "eat LIKE‿a HORSE",
+       "band": "7–8",
+       "grammar": "eat like a horse",
+       "ex": "My brother eats like a horse after the gym."
+      }
+     ],
+     "note": "eat like a horse (thân mật)"
+    },
+    {
+     "mean": "hảo ngọt, thích đồ ngọt",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "have a sweet tooth",
+       "type": "Idiom",
+       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
+       "stress": "have‿a SWEET TOOTH",
+       "band": "5.5–6.5",
+       "grammar": "have + a sweet tooth",
+       "ex": "I have a sweet tooth, so I always buy cakes."
+      }
+     ],
+     "note": "have a sweet tooth"
+    },
+    {
+     "mean": "làm cho thú vị, mới lạ hơn",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "spice things up",
+       "type": "Idiom",
+       "ipa": "/ˌspaɪs θɪŋz ˈʌp/",
+       "stress": "spice things UP",
+       "band": "7–8",
+       "grammar": "spice + things / sth + up",
+       "ex": "We tried a new restaurant to spice things up."
+      }
+     ],
+     "note": "spice things up (nghĩa bóng)"
     }
    ]
   }

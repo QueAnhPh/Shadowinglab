@@ -1,0 +1,139 @@
+[
+ {
+  "text": "During my ==in'ternship==, / I 'usually ++skip 'breakfast++ / and !!grab ‿ a 'quick bite!! / near the 'office. //",
+  "start": 84.74,
+  "end": 91.2,
+  "chunks": [
+   [
+    2.8,
+    4.2
+   ],
+   [
+    6.2,
+    8.06
+   ],
+   [
+    10.51,
+    11.95
+   ],
+   [
+    13.99,
+    15.27
+   ]
+  ]
+ },
+ {
+  "text": "But 'last month, / I 'started to ++cook for my'self++. //",
+  "start": 91.2,
+  "end": 94.76,
+  "chunks": [
+   [
+    17.55,
+    18.72
+   ],
+   [
+    20.48,
+    22.5
+   ]
+  ]
+ },
+ {
+  "text": "On 'Sundays, / I buy ++fresh 'vegetables++, / some 'eggs / and a bit ‿ of 'chicken, / and I ++'pack ‿ a lunch++ / for the 'whole week. //",
+  "start": 94.76,
+  "end": 103.33,
+  "chunks": [
+   [
+    25.51,
+    26.7
+   ],
+   [
+    28.48,
+    30.17
+   ],
+   [
+    32.46,
+    33.43
+   ],
+   [
+    35.01,
+    36.34
+   ],
+   [
+    38.27,
+    39.69
+   ],
+   [
+    41.71,
+    42.86
+   ]
+  ]
+ },
+ {
+  "text": "It's 'healthier, / and it 'saves me a lot ‿ of 'money. //",
+  "start": 103.33,
+  "end": 106.91,
+  "chunks": [
+   [
+    45.01,
+    46.1
+   ],
+   [
+    47.79,
+    49.62
+   ]
+  ]
+ },
+ {
+  "text": "My 'favorite dish / is my 'mom's fried 'rice. //",
+  "start": 106.91,
+  "end": 110.35,
+  "chunks": [
+   [
+    52.44,
+    53.67
+   ],
+   [
+    55.49,
+    57.24
+   ]
+  ]
+ },
+ {
+  "text": "The =='recipe== is 'simple, / but it 'tastes like 'home. //",
+  "start": 110.35,
+  "end": 113.88,
+  "chunks": [
+   [
+    59.98,
+    61.49
+   ],
+   [
+    63.6,
+    65.08
+   ]
+  ]
+ },
+ {
+  "text": "'Honestly, / I feel really 'proud / when my ==co'workers== / ask me for the 'recipe! //",
+  "start": 113.88,
+  "end": 119.75,
+  "chunks": [
+   [
+    67.55,
+    68.49
+   ],
+   [
+    70.03,
+    71.44
+   ],
+   [
+    73.45,
+    74.7
+   ],
+   [
+    76.55,
+    78.15
+   ]
+  ]
+ }
+]
