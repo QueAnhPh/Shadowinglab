@@ -57,6 +57,7 @@ function colWidths(header) {
   else if (h.startsWith('#|Câu hỏi|A|R|E')) pct = [6, 58, 8, 8, 8, 12];
   else if (h.startsWith('Ngày|Đức|Thư')) pct = [24, 36, 40];
   else if (h.startsWith('#|Form|')) pct = [6, 40, 20, 17, 17];
+  else if (h.startsWith('#|Notes|') || h.startsWith('#|Recipe card|') || h.startsWith('#|Câu hỏi|✍')) pct = [6, 46, 24, 24];
   else if (h === 'Bước|Làm như sau') pct = [24, 76];
   else if (h.startsWith('#|✍ Từ em nhớ ra') && n === 8) pct = [5, 22, 17, 6, 5, 22, 17, 6];
   else if (h.startsWith('Bước|Mục đích')) pct = [16, 24, 60];
@@ -85,7 +86,7 @@ function makeTable(rows) {
           width: { size: CONTENT_W, type: WidthType.DXA },
           shading: isGroup ? { fill: 'F3F6FB', type: ShadingType.CLEAR, color: 'auto' } : undefined,
           margins: { top: 60, bottom: 60, left: 90, right: 90 },
-          children: [new Paragraph({ spacing: { after: 0 }, children: runs(first, isGroup ? { size, color: NAVY } : { size, color: '555555' }) })],
+          children: [new Paragraph({ keepNext: rows.length <= 16, spacing: { after: 0 }, children: runs(first, isGroup ? { size, color: NAVY } : { size, color: '555555' }) })],
         })],
       });
     }
@@ -100,7 +101,7 @@ function makeTable(rows) {
         width: { size: widths[ci], type: WidthType.DXA },
         shading: ri === 0 ? { fill: 'E8EEF8', type: ShadingType.CLEAR, color: 'auto' } : undefined,
         margins: { top: 60, bottom: 60, left: 90, right: 90 },
-        children: [new Paragraph({ spacing: { after: 0, line: 260, lineRule: LineRuleType.AUTO }, children: runs(c.trim(), ri === 0 ? { size, bold: true, color: NAVY } : { size }) })],
+        children: [new Paragraph({ keepNext: rows.length <= 16 && ri < rows.length - 1, spacing: { after: 0, line: 260, lineRule: LineRuleType.AUTO }, children: runs(c.trim(), ri === 0 ? { size, bold: true, color: NAVY } : { size }) })],
       })),
     });
   });
@@ -151,7 +152,7 @@ function convert(md) {
       out.push(new Paragraph({ heading: HeadingLevel.HEADING_3, children: runs(l.slice(4)) }));
     } else if (l.startsWith('## ')) {
       const id = 'h' + (++HID);
-      out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: /\{#(vgames|ladder|alt)\}/.test(lines[i]), children: [new Bookmark({ id, children: runs(l.slice(3)) })] }));
+      out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: /\{#(listen|vocab|vgames|ladder|alt)\}/.test(lines[i]), children: [new Bookmark({ id, children: runs(l.slice(3)) })] }));
       TOC.push({ lvl: 2, id, text: l.slice(3) });
     } else if (l.startsWith('    - ')) {
       out.push(new Paragraph({ numbering: { reference: 'bul', level: 1 }, children: runs(l.slice(6)) }));
