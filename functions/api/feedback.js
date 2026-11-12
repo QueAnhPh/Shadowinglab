@@ -70,7 +70,7 @@ Quy tắc:
 - Nếu có DÀN Ý em ghi trước (A.R.E. / cue card / A.R.E.A.): trong tips có 1 ý nhận xét em có triển khai đủ các phần của dàn ý không (thiếu phần nào, phần nào quá ngắn).
 - redo: 1 câu nhắc em ghi âm lại phần nào (hoặc "" nếu bài đã tốt).
 - Nếu bản chép quá ngắn, lạc đề hoặc không phải tiếng Anh: band "", good [], fix [], tips nhắc em nói lại đúng yêu cầu.
-Trả kết quả bằng công cụ give_feedback, không viết gì ngoài công cụ.`;
+Trả kết quả bằng công cụ give_feedback nếu có; không có công cụ thì chỉ trả về JSON hợp lệ, không markdown: {"band":"5.5","good":[...],"fix":[{"err":"","fix":"","why":""}],"tips":[...],"better":"","redo":""}. Trong chữ tiếng Việt, trích từ tiếng Anh bằng dấu ‘ ’, không dùng dấu ngoặc kép thẳng.`;
 
 /* bắt model trả JSON qua tool (API tự dựng JSON đúng cấu trúc) → hết lỗi "Máy trả lời lỗi" do JSON hỏng (ngoặc kép trong chuỗi, bị cắt giữa chừng) */
 const TOOL = {
@@ -95,11 +95,13 @@ function parseText(text) {   // phòng khi model không gọi tool
   try { return JSON.parse(text.slice(a, b + 1)); } catch { return null; }
 }
 async function askClaude(send, env, user_msg, maxTokens) {
-  const r = await send("https://api.anthropic.com/v1/messages", {
+  const call = useTool => send("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify({ model: env.FEEDBACK_MODEL || MODEL, max_tokens: maxTokens, system: SYSTEM, tools: [TOOL], tool_choice: { type: "tool", name: TOOL.name }, messages: [{ role: "user", content: user_msg }] }),
+    body: JSON.stringify({ model: env.FEEDBACK_MODEL || MODEL, max_tokens: maxTokens, system: SYSTEM, ...(useTool ? { tools: [TOOL], tool_choice: { type: "tool", name: TOOL.name } } : {}), messages: [{ role: "user", content: user_msg }] }),
   });
+  let r = await call(true);
+  if (r.status === 400) { console.error("tool call rejected, plain text", await r.text()); r = await call(false); }   // model/relay không nhận tool → cách cũ
   if (!r.ok) return { r, text: await r.text() };
   const out = await r.json(), content = out.content || [];
   const tu = content.find(c => c.type === "tool_use" && c.input && typeof c.input === "object");
