@@ -337,6 +337,14 @@ details.nolog .pick{margin-top:8px}
 .autow{display:flex;flex-wrap:wrap;gap:6px}
 .autow button{font-size:13px;padding:4px 10px;border-radius:999px}
 .tsub{display:grid;gap:6px}
+.tsub .tsubgo{width:100%;background:none;border:0;border-top:1px solid var(--line);border-radius:0;color:inherit;font:inherit;text-align:left;cursor:pointer;padding:6px 0 0}
+.tsub .tsubgo:hover{color:var(--accent,inherit);text-decoration:underline}
+.tsubbox .take-h{flex-wrap:wrap}.subaudio{width:100%;max-width:420px;height:36px}
+.autofb{font-size:14px}.autofb>summary{cursor:pointer;color:var(--muted)}
+.tfbform{border:1px dashed var(--line);border-radius:14px;padding:10px 12px;display:grid;gap:8px;font-size:14px}
+.tfbform>summary{cursor:pointer;font-weight:600}
+.tfbform label{display:grid;gap:4px;font-weight:600}
+.tfbform textarea,.tfbform input{font:inherit;font-weight:400;width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:10px;padding:6px 8px;background:var(--card,#fff);color:inherit}
 .tsub .row{display:flex;justify-content:space-between;gap:8px;font-size:14px;border-top:1px solid var(--line);padding-top:6px}
 
 .allclear{border-radius:12px;padding:12px 14px;font-size:14px;background:var(--ok-bg);color:var(--ok);font-weight:500}
@@ -2139,15 +2147,21 @@ async function recordFree(L, i, card, btn, forSubmit) {
 }
 /* ---------- submit a free answer + teacher feedback (DATA.feedback[sid][lessonId][i]) ---------- */
 const subKey = L => `sub:${student}:${L.id}`;
+/* nhận xét chị gõ trên web (Firestore takes ~tfb): HS lưu ở store, màn giáo viên giữ trong TFB */
+const TFB = {};
+function webFbOf(sid, lid, i) {
+  if (TEACH && sid !== student) return TFB[`${sid}~${lid}~${i}`] || null;
+  return (store.get(`tfb:${sid}:${lid}`, {}) || {})[i] || null;
+}
 function feedbackOf(sid, lid, i) {
-  const t = (((DATA.feedback || {})[sid] || {})[lid] || {})[i];
+  const t = (((DATA.feedback || {})[sid] || {})[lid] || {})[i], w = webFbOf(sid, lid, i);
+  if (w && (!t || (w.sub || 0) >= (t.sub || 0))) return w;   // chị nhận xét trên web
   if (t) return t;                                    // approved by the teacher
   if (sid !== student) return null;
   return (store.get(`fb:${sid}:${lid}`, {}) || {})[i] || null;   // instant feedback from the machine
 }
-function feedbackHTML(sid, lid, i) {
-  const f = feedbackOf(sid, lid, i);
-  if (!f) return "";
+function feedbackHTML(sid, lid, i) { const f = feedbackOf(sid, lid, i); return f ? fbBlockHTML(f) : ""; }
+function fbBlockHTML(f) {
   const li = (a, cls, icon) => (a || []).map(t => `<li class="${cls}">${icon} ${esc(t)}</li>`).join("");
   return `<div class="fb"><h4>${f.auto ? "🤖 Nhận xét nhanh" : "📝 Nhận xét của chị"}${f.date ? ` · ${esc(f.date)}` : ""}${f.band ? ` · ước lượng band ${esc(f.band)}` : ""}</h4>
     ${f.auto ? `<p class="muted">Máy chấm theo 4 tiêu chí IELTS từ bản chép lời của em; chị sẽ xem lại. Phát âm thì chị nghe trực tiếp.</p>` : ""}
@@ -2377,6 +2391,7 @@ function loadTakes(L) {
       if (r.kind === "note") { const all = store.get(notesKey(L), {}); if (!all[r.i] || !Object.values(all[r.i]).some(Boolean)) { all[r.i] = r.notes || {}; store.set(notesKey(L), all); const inp = document.querySelectorAll(`.card[data-i="${r.i}"] .notes input`); inp.forEach(x => { if (!x.value) x.value = (r.notes || {})[x.dataset.k] || ""; }); } continue; }
       if (r.kind === "quota" || r.kind === "fberr") continue;
       if (r.kind === "sub") { const subs = store.get(subKey(L), {}); if (!subs[r.i] || r.at >= subs[r.i]) { subs[r.i] = r.at; store.set(subKey(L), subs); if (r.audio) (CLIPS[L.id + ":" + r.i] || (CLIPS[L.id + ":" + r.i] = {})).sub = r.audio; } continue; }
+      if (r.kind === "tfb") { const all = store.get(`tfb:${student}:${L.id}`, {}); if (r.fb && (!all[r.i] || (r.fb.saved || 0) >= (all[r.i].saved || 0))) { all[r.i] = r.fb; store.set(`tfb:${student}:${L.id}`, all); const c = document.querySelector(`.card.free[data-i="${r.i}"]`); if (c) { const o = c.querySelector(".fb"); if (o) o.remove(); c.insertAdjacentHTML("beforeend", feedbackHTML(student, L.id, r.i)); } } continue; }
       if (r.kind === "fb") { const fbs = store.get(`fb:${student}:${L.id}`, {}); if (!fbs[r.i] || (r.fb && r.fb.sub >= (fbs[r.i].sub || 0))) { fbs[r.i] = r.fb; store.set(`fb:${student}:${L.id}`, fbs); } continue; }
       const cur = all[r.i] || (all[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at };
       const keep = r.kind === "first" ? (!cur.first || t.at <= cur.first.at) : (!cur.last || t.at >= cur.last.at);
@@ -2601,20 +2616,22 @@ async function loadSubs(rows) {
     for (const r of rows) for (const L of DATA.lessons.filter(x => x.for.includes(r.s.id) && x.sentences.some(z => z.free)))
       for (const u of r.docs) for (const t of await window.Cloud.loadTakesOf(u.uid, L.id)) {
         if (t.kind === "fb") { autoFb[`${r.s.id}~${L.id}~${t.i}`] = t.fb; continue; }
+        if (t.kind === "tfb") { if (t.fb) TFB[`${r.s.id}~${L.id}~${t.i}`] = t.fb; continue; }
         if (t.kind !== "sub") continue;
         const S = L.sentences[t.i] || {}, f = feedbackOf(r.s.id, L.id, t.i);
         items.push({ sid: r.s.id, name: r.s.name, lesson: L.id, lessonTitle: L.title, session: L.session, i: t.i, label: S.label || "", q: S.q || "", hint: S.hint || "", at: t.at, graded: !!(f && f.sub && f.sub >= t.at), audio: t.audio });
       }
   } catch (e) { console.error(e); }
   if (!$("#tsubs")) return;
-  items.forEach(x => { const a = autoFb[`${x.sid}~${x.lesson}~${x.i}`]; if (a && a.sub >= x.at) x.auto = a; });
+  items.forEach(x => { const a = autoFb[`${x.sid}~${x.lesson}~${x.i}`]; if (a && a.sub >= x.at) x.auto = a; const f = feedbackOf(x.sid, x.lesson, x.i); x.graded = !!(f && !f.auto && f.sub && f.sub >= x.at); });
   items.sort((a, b) => a.graded - b.graded || b.at - a.at);
   const todo = items.filter(x => !x.graded);
   box.innerHTML = `<h3>📥 Bài nộp (câu tự trả lời)</h3>
-    ${items.length ? `<p class="muted">${todo.length} bài chờ duyệt · ${items.length - todo.length} bài đã duyệt. Bé đã có nhận xét nhanh của máy ngay khi nộp; tải file về rồi nhắn Claude “duyệt bài nộp” để chị xem lại và cập nhật tiến độ.</p>
-      ${todo.length ? `<div class="actions"><button class="primary" id="tDl">⬇️ Tải ${todo.length} bài chờ chấm</button></div>` : ""}
-      <div class="tsub">${items.map(x => `<div class="row"><span><b>${esc(x.name)}</b> · ${esc(x.label || ("Câu " + (x.i + 1)))} · ${esc(x.lessonTitle)}</span><span>${x.graded ? "✅ đã duyệt" : (x.auto ? `🤖 máy: ${esc(x.auto.band || "?")} · chờ duyệt` : "⏳ " + fmtWhen(x.at))}</span></div>`).join("")}</div>`
+    ${items.length ? `<p class="muted">${todo.length} bài chờ duyệt · ${items.length - todo.length} bài đã duyệt. Bấm 1 bài để <b>nghe bài nộp và gõ nhận xét ngay trên web</b>, em thấy liền khi mở bài. Muốn Claude chấm giùm thì nhắn Claude “chấm bài nộp”, không cần tải file.</p>
+      <div class="tsub">${items.map(x => `<button class="row tsubgo" data-go="teach~${esc(x.sid)}~${esc(x.lesson)}"><span><b>${esc(x.name)}</b> · ${esc(x.label || ("Câu " + (x.i + 1)))} · ${esc(x.lessonTitle)}</span><span>${x.graded ? "✅ đã nhận xét" : (x.auto ? `🤖 máy: ${esc(x.auto.band || "?")} · chờ chị` : "⏳ " + fmtWhen(x.at))} ›</span></button>`).join("")}</div>
+      ${todo.length ? `<details class="tdlx"><summary class="muted small">Tải file bài chờ chấm (không bắt buộc)</summary><div class="actions"><button id="tDl">⬇️ Tải ${todo.length} bài</button></div></details>` : ""}`
     : `<p class="muted">Chưa có bài nộp nào.</p>`}`;
+  box.querySelectorAll(".tsubgo").forEach(b => b.addEventListener("click", () => { teachOpen = b.dataset.go.split("~")[1]; location.hash = b.dataset.go; }));
   const dl = $("#tDl");
   if (dl) dl.addEventListener("click", () => {
     const d = new Date(), stamp = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -2640,7 +2657,8 @@ async function viewTeacherLesson(sid, L) {
       <div class="n"><span>Câu ${k + 1}/${p.idx.length}${L.sentences[i].label ? " · " + esc(L.sentences[i].label) : ""}</span><span class="best">${best[i] != null ? "Đã ghi âm" : "Chưa ghi âm"}</span></div>
       <div class="sent q small">❓ ${esc(L.sentences[i].q)}</div>
       ${L.sentences[i].hint ? `<p class="hint">💡 ${esc(L.sentences[i].hint)}</p>` : ""}
-      <details class="cmp" hidden></details>${feedbackHTML(sid, L.id, i)}</section>` : `<section class="card" data-i="${i}">
+      <div class="tsubbox" hidden></div>
+      <details class="cmp" hidden></details><div class="fbwrap">${feedbackHTML(sid, L.id, i)}</div><div class="tfbedit" hidden></div></section>` : `<section class="card" data-i="${i}">
       <div class="n"><span>Câu ${k + 1}/${p.idx.length}${L.sentences[i].label ? " · " + esc(L.sentences[i].label) : ""}</span><span class="best">${best[i] != null ? "Tốt nhất: " + best[i] + "%" : "Chưa thử"}</span></div>
       <div class="sent small">${renderSentenceHTML(parseSentence(L.sentences[i].text))}</div>
       <div class="actions"><button class="listen">Nghe mẫu</button></div>
@@ -2649,9 +2667,12 @@ async function viewTeacherLesson(sid, L) {
   player.src = L.video;
   $("#app").querySelectorAll(".card").forEach(c => { const S2 = L.sentences[+c.dataset.i]; if (!S2.free) c.querySelector(".listen").addEventListener("click", e => playSpan(S2.start, S2.end, e.currentTarget)); });
   /* takes from every account of this student: earliest "first", latest "last" */
-  const takes = {};
+  const takes = {}, subs = {}, autos = {};
   try {
     for (const u of docs) for (const r of await window.Cloud.loadTakesOf(u.uid, L.id)) {
+      if (r.kind === "sub") { if (!subs[r.i] || r.at > subs[r.i].at) subs[r.i] = { at: r.at, audio: r.audio, uid: u.uid }; continue; }
+      if (r.kind === "fb") { if (r.fb && (!autos[r.i] || (r.fb.sub || 0) >= (autos[r.i].sub || 0))) autos[r.i] = r.fb; continue; }
+      if (r.kind === "tfb") { const k = `${sid}~${L.id}~${r.i}`; if (r.fb && (!TFB[k] || (r.fb.saved || 0) >= (TFB[k].saved || 0))) TFB[k] = r.fb; continue; }
       if (r.kind === "sub" || r.kind === "fb" || r.kind === "note" || r.kind === "quota" || r.kind === "gap" || r.kind === "fberr") continue;
       const cur = takes[r.i] || (takes[r.i] = {}), t = { s: r.s, h: r.h, st: r.st, at: r.at, audio: r.audio };
       if (r.kind === "first" ? (!cur.first || t.at < cur.first.at) : (!cur.last || t.at > cur.last.at)) cur[r.kind] = t;
@@ -2660,6 +2681,8 @@ async function viewTeacherLesson(sid, L) {
   if (location.hash !== `#teach~${sid}~${L.id}`) return;
   const ld = $("#tLoading");
   if (ld) ld.textContent = Object.keys(takes).length ? "" : "Chưa có lần nói nào được lưu (học sinh cần đăng nhập Gmail lúc luyện).";
+  $("#app").querySelectorAll(".card.free[data-i]").forEach(c => teacherFbCard(sid, L, +c.dataset.i, c, subs[+c.dataset.i], autos[+c.dataset.i], docs));
+  if ($(".tfbform")) startTour("teach");
   $("#app").querySelectorAll(".card[data-i]").forEach(c => {
     const i = +c.dataset.i, cur = takes[i];
     if (!cur) return;
@@ -2667,6 +2690,44 @@ async function viewTeacherLesson(sid, L) {
     CLIPS[L.id + ":" + i] = { first: first.audio, last: last.audio };
     renderCompare(L, i, c, { first, last }, "Nghe ghi âm");
     c.querySelector(".cmp").open = true;
+  });
+}
+
+/* teacher: nghe bài nộp + gõ / sửa nhận xét ngay trên web → lưu vào takes của HS (kind "tfb"), HS thấy khi mở bài */
+function teacherFbCard(sid, L, i, card, sub, auto, docs) {
+  const box = card.querySelector(".tsubbox"), ed = card.querySelector(".tfbedit"), wrap = card.querySelector(".fbwrap");
+  if (!box || !ed) return;
+  if (!sub) { box.hidden = false; box.innerHTML = `<p class="muted small">Em chưa nộp câu này.</p>`; return; }
+  box.hidden = false;
+  box.innerHTML = `<div class="take"><div class="take-h"><b>📤 Bài nộp</b><span>${fmtWhen(sub.at)}</span>${sub.audio ? `<audio src="${esc(sub.audio)}" controls preload="metadata" class="subaudio"></audio>` : `<span class="muted">không có ghi âm</span>`}</div></div>
+    ${auto && (auto.sub || 0) >= sub.at ? `<details class="autofb"><summary>🤖 Máy đã nhận xét nhanh (band ${esc(auto.band || "?")}) · bấm để xem</summary>${fbBlockHTML({ ...auto, auto: true })}</details>` : ""}`;
+  const cur = feedbackOf(sid, L.id, i);
+  const base = cur && !cur.auto && (cur.sub || 0) >= sub.at ? cur : (auto && (auto.sub || 0) >= sub.at ? auto : (cur || {}));
+  const lines = a => (a || []).join("\n");
+  ed.hidden = false;
+  ed.innerHTML = `<details class="tfbform" ${cur && !cur.auto && (cur.sub || 0) >= sub.at ? "" : "open"}><summary>✍️ ${cur && !cur.auto && (cur.sub || 0) >= sub.at ? "Sửa nhận xét của chị" : "Chị nhận xét bài này"} <span class="muted small">(điền sẵn từ ${base === auto ? "nhận xét của máy" : "bản đã lưu"}, sửa rồi bấm Gửi)</span></summary>
+    <label>Band ước lượng <input class="f-band" value="${esc(base.band || "")}" placeholder="vd. 5.0"></label>
+    <label>Em đã nói (chép lời) <textarea class="f-said" rows="3">${esc(base.said || "")}</textarea></label>
+    <label>✅ Điểm tốt <span class="muted small">(mỗi dòng 1 ý)</span><textarea class="f-good" rows="2">${esc(lines(base.good))}</textarea></label>
+    <label>🔧 Lỗi cần sửa <span class="muted small">(mỗi dòng: câu sai → câu đúng | vì sao)</span><textarea class="f-fix" rows="3">${esc((base.fix || []).map(x => `${x.err} → ${x.fix}${x.why ? " | " + x.why : ""}`).join("\n"))}</textarea></label>
+    <label>💡 Cách khắc phục <span class="muted small">(mỗi dòng 1 ý)</span><textarea class="f-tips" rows="2">${esc(lines(base.tips))}</textarea></label>
+    <label>✨ Bản nâng cấp để luyện nói <textarea class="f-better" rows="3">${esc(base.better || "")}</textarea></label>
+    <label>🔁 Nhờ em ghi lại phần nào <span class="muted small">(bỏ trống nếu bài đã tốt)</span><input class="f-redo" value="${esc(base.redo || "")}"></label>
+    <div class="actions"><button class="primary f-save">📤 Gửi nhận xét cho em</button></div><p class="muted small f-st" aria-live="polite"></p></details>`;
+  ed.querySelector(".f-save").addEventListener("click", async e => {
+    const btn = e.currentTarget, st = ed.querySelector(".f-st"), v = c => ed.querySelector(c).value.trim(), arr = c => v(c).split("\n").map(x => x.trim()).filter(Boolean);
+    const fix = arr(".f-fix").map(x => { const [a, b = ""] = x.split(/\s*(?:→|->)\s*/); const [f2, why = ""] = b.split(/\s*\|\s*/); return { err: a || "", fix: f2 || "", why }; });
+    const d = new Date();
+    const fb = { date: `${d.getDate()}/${d.getMonth() + 1}`, sub: sub.at, saved: Date.now(), by: "teacher", band: v(".f-band"), said: v(".f-said"), good: arr(".f-good"), fix, tips: arr(".f-tips"), better: v(".f-better"), redo: v(".f-redo") };
+    btn.disabled = true; st.textContent = "Đang gửi…";
+    try {
+      await window.Cloud.saveTakeFor(sub.uid, `${L.id}~${i}~tfb`, { lesson: L.id, i, kind: "tfb", at: fb.saved, s: 0, st: "", h: "", audio: "", fb });
+      TFB[`${sid}~${L.id}~${i}`] = fb;
+      wrap.innerHTML = feedbackHTML(sid, L.id, i);
+      st.textContent = "✅ Đã gửi. Em mở bài này là thấy nhận xét của chị.";
+      ed.querySelector("summary").firstChild.textContent = "✍️ Sửa nhận xét của chị ";
+    } catch (err) { console.error(err); st.textContent = "Chưa gửi được: " + (err && err.code === "permission-denied" ? "Firestore chưa cho giáo viên ghi vào bài của HS (cần mở quyền)." : (err && err.message || err)); }
+    btn.disabled = false;
   });
 }
 
@@ -2695,6 +2756,11 @@ const TOURS = {
   fc: [
     { sel: ".recallbtn", text: "🧠 Mỗi ngày ~3 phút: đọc nghĩa → tự nhớ ra từ rồi gõ. Bí thì mở từng chữ như Hangman. Tự nhớ ra (dù khó) giúp nhớ lâu hơn nhiều so với đọc lại." },
     { sel: "[data-fr]:not(.recallbtn)", text: "Muốn ôn riêng 1 topic thì bấm 🧠 Nhớ lại bộ này." },
+  ],
+  teach: [
+    { sel: ".subaudio", text: "🎧 Nghe bài em nộp ngay ở đây." },
+    { sel: ".autofb", text: "🤖 Nhận xét nhanh của máy, chị mở ra xem để đối chiếu." },
+    { sel: ".tfbform", text: "✍️ Gõ hoặc sửa nhận xét (điền sẵn từ máy), bấm 📤 Gửi. Em mở bài là thấy liền, khỏi tải file." },
   ],
   dialog: [
     { sel: ".card:not(.other) .speak", text: "🎭 Bài hội thoại: em chỉ nói câu của vai mình (thẻ có nút Bấm để nói)." },
@@ -2754,7 +2820,7 @@ function startTour(name, force) {
 document.addEventListener("keydown", e => { if (tourState && e.key === "Escape") endTour(); });
 $("#helpBtn").addEventListener("click", () => {
   if (/^#fc/.test(location.hash) && $(".recallbtn")) { startTour("fc", true); return; }
-  const name = $(".card[data-i]") && !TEACH ? "lesson" : "list";
+  const name = $(".tfbform") ? "teach" : $(".card[data-i]") && !TEACH ? "lesson" : "list";
   if (name === "list" && location.hash) { location.hash = ""; setTimeout(() => startTour("list", true), 50); return; }
   startTour(name, true);
 });

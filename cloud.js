@@ -53,6 +53,12 @@ const Cloud = {
       await setDoc(doc(this._db, ...col, `${id}~p${k}`), { lesson: data.lesson, i: data.i, kind: "part", of: id, k, n, at: data.at, audio: a.slice(k * CH, (k + 1) * CH) });
     await setDoc(doc(this._db, ...col, id), { ...data, audio: "", parts: n });
   },
+  /* teachers only: write a teacher-feedback doc into a student's takes (users/{uid}/takes/{lessonId}~{i}~tfb) */
+  async saveTakeFor(uid, id, data) {
+    if (!this.user) throw new Error("chưa đăng nhập");
+    const { doc, setDoc } = this._fs;
+    await setDoc(doc(this._db, "users", uid, "takes", id), data);
+  },
   _join(snap) {
     const all = snap.docs.map(d => ({ _id: d.id, ...d.data() })), parts = {};
     for (const x of all) if (x.kind === "part") (parts[x.of] || (parts[x.of] = []))[x.k] = x.audio;
