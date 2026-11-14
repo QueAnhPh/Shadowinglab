@@ -386,6 +386,36 @@
     "dt-w20261112-thu-tue-l",
     "dt-w20261112-thu-wed-l"
    ]
+  },
+  {
+   "id": "hw-vananh-week-20261114-s",
+   "skill": "Speaking",
+   "session": 3,
+   "title": "Bài tập tuần · Speaking",
+   "topic": "📅 Tuần 14–20/11 · Work & Careers",
+   "deadline": "2026-11-21",
+   "deadlineAt": "17:30",
+   "note": "T7 (tối) + T2: mỗi ngày 2 câu Part 1 tự trả lời (Work & Careers) · T3: shadowing 2 câu trả lời Part 1 mẫu band 7–8 (nghe từng câu rồi nói lại). Ôn flashcard Work & Careers trước khi nói.",
+   "lessons": [
+    "va-w20261114-sat",
+    "va-w20261114-mon",
+    "va-w20261114-tue"
+   ]
+  },
+  {
+   "id": "hw-vananh-week-20261114-l",
+   "skill": "Listening",
+   "session": 3,
+   "title": "Bài tập tuần · Listening",
+   "topic": "📅 Tuần 14–20/11 · Work & Careers",
+   "deadline": "2026-11-21",
+   "deadlineAt": "17:30",
+   "note": "T4: Part 1 điền form (10 câu) · T5 + T6: sentence completion (dạng vừa học 14/11, NO MORE THAN TWO WORDS AND/OR A NUMBER). Nghe 1 lần, xong xem 🔑 từ khóa ⇄ synonym và phân tích từng câu.",
+   "lessons": [
+    "va-w20261114-wed",
+    "va-w20261114-thu",
+    "va-w20261114-fri"
+   ]
   }
  ],
  "lessons": [
@@ -8232,6 +8262,1375 @@
      ]
     }
    ]
+  },
+  {
+   "session": 3,
+   "for": [
+    "vananh"
+   ],
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "id": "va-w20261114-sat",
+   "title": "Part 1 – Choosing a job",
+   "opens": "2026-11-14",
+   "opensAt": "19:30",
+   "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 1",
+     "q": "What do you think is the most important thing when choosing a job?",
+     "hint": "job satisfaction · job security · work-life balance · a decent salary · rewarding",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>the most important thing</i> → chỉ chọn <b>1 điều</b> (không liệt kê 5 điều); <i>choosing a job</i> → nói chung, dùng <b>thì hiện tại đơn</b>.",
+      "<b>A – Answer:</b> nêu ngay điều em chọn, đổi từ khóa: <i>For me, it has to be…</i> / <i>I'd say… matters most</i> (vd. <i>job satisfaction</i>, <i>job security</i>).",
+      "<b>R – Reason:</b> vì sao điều đó quan trọng hơn lương: <i>because you spend most of your waking hours at work</i>; có thể so sánh <i>a decent salary</i> ↔ <i>a rewarding job</i>.",
+      "<b>E – Example:</b> 1 người thật: nha sĩ em biết, người thân trong gia đình, hoặc ngành nha khoa em muốn theo.",
+      "<b>F – Feeling:</b> chốt 1 câu nối về em: <i>That's why I'd choose a job I'm truly cut out for.</i>",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "What do you think is the most important thing when choosing a university?",
+      "notes": {
+       "A": "the major · not the name",
+       "R": "4–6 years · study every day",
+       "E": "my friend · famous school · wrong major → switched",
+       "F": "careful · choose dentistry first"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 2",
+     "q": "Would you like to do the same kind of work as your parents?",
+     "hint": "a nine-to-five job · be cut out for · career path · take over · run my own business",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>Would you like to</i> → nói mong muốn, dùng <b>would / I'd like / I'd rather</b>; <i>the same kind of work as your parents</i> → phải nói được bố mẹ làm gì.",
+      "<b>A – Answer:</b> trả lời rõ: <i>Not really</i> / <i>Actually, yes</i>, kèm nghề em muốn (<i>dentistry</i>).",
+      "<b>R – Reason:</b> so sánh công việc của bố mẹ với em: <i>a nine-to-five job</i>, <i>run their own business</i>, <i>I'm not cut out for…</i>.",
+      "<b>E – Example:</b> 1 chi tiết cụ thể về công việc của bố / mẹ (giờ làm, việc hằng ngày) → lý do em chọn <i>career path</i> khác (hoặc giống).",
+      "<b>F – Feeling:</b> cảm nghĩ: biết ơn, tôn trọng, hoặc bố mẹ ủng hộ em theo nha khoa.",
+      "<b>Thì:</b> bố mẹ làm gì bây giờ → hiện tại đơn (<i>My mom works in…</i>, nhớ <b>-s</b>); mong muốn của em → <i>would</i>.",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "Would you like to live in the same city as your parents in the future?",
+      "notes": {
+       "A": "yes · at least nearby",
+       "R": "close family · help them when old",
+       "E": "my aunt · moved abroad · misses home",
+       "F": "safe · happy"
+      }
+     }
+    }
+   ],
+   "skill": "Speaking"
+  },
+  {
+   "session": 3,
+   "for": [
+    "vananh"
+   ],
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "id": "va-w20261114-mon",
+   "title": "Part 1 – Hometown jobs & volunteer work",
+   "opens": "2026-11-16",
+   "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 1",
+     "q": "Do you think you will work in your hometown in the future?",
+     "hint": "land a job · a dental clinic · set up · get my foot in the door · job hunting",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>Do you think you will…</i> → dự đoán tương lai, dùng <b>will / I'm planning to / I hope to</b>; <i>hometown</i> → nói tên thành phố của em.",
+      "<b>A – Answer:</b> chọn rõ: <i>Probably yes</i> / <i>I'm not sure, maybe not at first</i>.",
+      "<b>R – Reason:</b> cơ hội việc làm, gia đình, trường đại học (vd. học nha khoa ở TP.HCM xong thì <i>land a job</i> ở đâu).",
+      "<b>E – Example:</b> 1 kế hoạch cụ thể: <i>set up a dental clinic</i> gần nhà, hoặc làm ở bệnh viện lớn trước để <i>get my foot in the door</i>.",
+      "<b>F – Feeling:</b> 1 câu cảm nghĩ: hào hứng, hơi lo, hoặc tự hào nếu giúp được người ở quê.",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "Do you think you will study abroad in the future?",
+      "notes": {
+       "A": "maybe · after university",
+       "R": "scholarship · new methods",
+       "E": "my cousin · master's in Australia",
+       "F": "excited · a bit nervous"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 2",
+     "q": "Have you ever done any volunteer work?",
+     "hint": "do volunteer work · lend a hand · make a difference · rewarding · work experience",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>Have you ever…</i> → trả lời bằng <b>hiện tại hoàn thành</b> (<i>Yes, I have / No, I haven't</i>), kể chi tiết bằng <b>quá khứ đơn</b> (<i>Last summer, I helped…</i>).",
+      "<b>A – Answer:</b> <i>Yes, a few times</i> / <i>Not yet, but I'd love to</i>. Lưu ý: <i>volunteer work</i> không đếm được (không nói <i>a volunteer work</i>).",
+      "<b>R – Reason:</b> vì sao em làm (hoặc chưa làm): muốn <i>make a difference</i>, lấy <i>work experience</i> cho hồ sơ xét tuyển, hoặc năm lớp 12 quá bận.",
+      "<b>E – Example:</b> 1 lần cụ thể: ở đâu, làm gì, với ai (vd. phát kem đánh răng cho trẻ em, <i>lend a hand</i> ở trạm y tế). Chưa làm thì nói kế hoạch.",
+      "<b>F – Feeling:</b> <i>It was really rewarding</i> / <i>I was amazed by…</i>.",
+      "<b>Nói 20–30 giây</b>, dùng ≥ 2 từ trong 💡 gợi ý. Ghi <b>từ khóa</b> vào ô A / R / E / F, không viết cả câu. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "Have you ever taught anyone something new?",
+      "notes": {
+       "A": "yes · my little brother",
+       "R": "parents busy · he asked",
+       "E": "last month · ride a bike · 3 days",
+       "F": "proud · patient"
+      }
+     }
+    }
+   ],
+   "skill": "Speaking"
+  },
+  {
+   "id": "va-w20261114-tue",
+   "session": 3,
+   "title": "Shadowing – Part 1 band 7–8 · Work & Careers",
+   "subtitle": "Listen & repeat: Nghe mẫu từng câu → nói lại · rồi shadow cả bài 2–3 lần (2 câu trả lời Part 1 mẫu band 7–8)",
+   "for": [
+    "vananh"
+   ],
+   "video": "media/va-w20261114-tue.mp4",
+   "skill": "Speaking",
+   "topic": "Work & Careers",
+   "deck": "va3",
+   "opens": "2026-11-17",
+   "sentences": [
+    {
+     "text": "'Definitely. / I could 'never work in 'sales. //",
+     "start": 127.86,
+     "end": 131.29,
+     "chunks": [
+      [
+       2.8,
+       3.79
+      ],
+      [
+       5.39,
+       7.33
+      ]
+     ],
+     "label": "Bài 1 · Is there a job you would never want to do?"
+    },
+    {
+     "text": "The 'main reason is / that I'm 'quite 'shy, / so I'm 'simply !!not 'cut ‿ out for!! / per'suading 'strangers to buy things. //",
+     "start": 131.29,
+     "end": 138.77,
+     "chunks": [
+      [
+       10.27,
+       11.67
+      ],
+      [
+       13.67,
+       15.01
+      ],
+      [
+       16.94,
+       18.83
+      ],
+      [
+       21.32,
+       23.63
+      ]
+     ],
+     "label": "Bài 1 · Is there a job you would never want to do?"
+    },
+    {
+     "text": "My 'cousin worked as ++a 'store as'sistant++ / at a de'partment store ‿ last 'summer, / and she had to ++meet a 'sales target++ / every 'single 'week. //",
+     "start": 138.77,
+     "end": 147.05,
+     "chunks": [
+      [
+       26.94,
+       29.19
+      ],
+      [
+       32.04,
+       34.09
+      ],
+      [
+       36.74,
+       38.89
+      ],
+      [
+       41.64,
+       42.98
+      ]
+     ],
+     "label": "Bài 1 · Is there a job you would never want to do?"
+    },
+    {
+     "text": "She said it was ++a 'high-'pressure 'job++, / and she was !!run 'off her 'feet!! ‿ on 'weekends. //",
+     "start": 147.05,
+     "end": 151.95,
+     "chunks": [
+      [
+       45.33,
+       47.44
+      ],
+      [
+       50.15,
+       52.66
+      ]
+     ],
+     "label": "Bài 1 · Is there a job you would never want to do?"
+    },
+    {
+     "text": "Just 'hearing about it / made me feel ==com'pletely 'drained==. //",
+     "start": 151.95,
+     "end": 155.74,
+     "chunks": [
+      [
+       56.18,
+       57.45
+      ],
+      [
+       59.33,
+       61.31
+      ]
+     ],
+     "label": "Bài 1 · Is there a job you would never want to do?"
+    },
+    {
+     "text": "'Yes, / I think it 'really 'matters. //",
+     "start": 155.74,
+     "end": 158.73,
+     "chunks": [
+      [
+       64.29,
+       65.07
+      ],
+      [
+       66.46,
+       68.2
+      ]
+     ],
+     "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+    },
+    {
+     "text": "If you 'choose your ++ca'reer path++ ‿ early, / you can pick the 'right 'subjects / and a'void ending up in !!a 'dead-'end 'job!!. //",
+     "start": 158.73,
+     "end": 165.53,
+     "chunks": [
+      [
+       70.94,
+       73.03
+      ],
+      [
+       75.72,
+       77.58
+      ],
+      [
+       80.04,
+       82.45
+      ]
+     ],
+     "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+    },
+    {
+     "text": "For ex'ample, / I de'cided on 'dentistry ‿ in 'ninth grade, / so I've been ++'knuckling 'down++ in bi'ology, / and I even spent a 'week / 'shadowing ==an ortho'dontist==. //",
+     "start": 165.53,
+     "end": 175.41,
+     "chunks": [
+      [
+       85.85,
+       86.88
+      ],
+      [
+       88.5,
+       91.3
+      ],
+      [
+       94.7,
+       97.0
+      ],
+      [
+       99.9,
+       101.51
+      ],
+      [
+       103.72,
+       105.59
+      ]
+     ],
+     "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+    },
+    {
+     "text": "'Honestly, / it gave me ++a 'real 'sense of a'chievement++, / and I feel like I've al'ready !!got my 'foot in the 'door!!. //",
+     "start": 175.41,
+     "end": 182.38,
+     "chunks": [
+      [
+       108.47,
+       109.41
+      ],
+      [
+       110.94,
+       113.34
+      ],
+      [
+       116.34,
+       119.61
+      ]
+     ],
+     "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "for": [
+    "vananh"
+   ],
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "id": "va-w20261114-wed",
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "opens": "2026-11-18",
+   "prep": 30,
+   "title": "Nghe Part 1 – Youth Job Agency (form completion, 10 câu)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe",
+   "audio": "media/va-w20261114-wed.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "City Youth Job Agency – Registration Form",
+   "strategy": [
+    "<b>30 giây đọc đề:</b> gạch từ khóa trước mỗi ô (<i>surname, address, area of work, hours…</i>) và đoán loại thông tin: tên, số nhà, ngày, ngành, ngôn ngữ.",
+    "<b>Chọn dạng từ</b> cho mỗi ô: đứng sau <i>Saturdays and</i> + trước <i>evenings</i> → 1 ngày trong tuần; có <i>June</i> → chỉ ghi ngày; đứng trước <i>store</i> → danh từ làm tính từ.",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio. Nghe xong câu 4 thì mắt nhìn ngay câu 5; lỡ 1 câu thì bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý</b> (Part 1 rất hay có): <i>sorry · I always mix it up · but · this time · instead · I was going to</i>. Đáp án là thông tin <b>sau</b> tín hiệu.",
+    "<b>Chính tả + giới hạn số từ:</b> tên được đánh vần thì viết đúng từng chữ cái, viết hoa; ONE WORD → không ghi <i>Friday evening</i>, chỉ <i>Friday</i>."
+   ],
+   "rows": [
+    "## Personal details",
+    "Name: Mia [[surname]] {1}",
+    "[[Address]]: {2} Maple Street",
+    "## Job preferences",
+    "[[Preferred area]] of work: {3}",
+    "[[Available]]: Saturdays and {4} evenings",
+    "[[Maximum]] hours per week: {5}",
+    "[[Start date]]: June {6}",
+    "## Experience and skills",
+    "[[Previous job]]: store assistant at a {7} store",
+    "[[Languages]]: English and {8}",
+    "## Other information",
+    "[[Main reason]] for wanting a job: to improve her {9} skills",
+    "[[Reference]]: her school {10}"
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Hartley"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "hint": "Tên được đánh vần: nghe từng chữ cái",
+     "kw": [
+      [
+       "surname",
+       "N",
+       "last name"
+      ],
+      [
+       "spell",
+       "V",
+       "H-A-R-T-L-E-Y"
+      ]
+     ],
+     "why": [
+      "Đọc đề: ô sau <i>Name: Mia</i> + [[surname]] → chờ <b>họ</b>, tên riêng, thường được đánh vần.",
+      "Audio: [[last name]] = surname → **Hartley**, rồi đánh vần H-A-R-T-L-E-Y.",
+      "Chính tả: viết hoa chữ đầu; đừng viết theo âm nghe (<i>Hartly</i>, <i>Heartley</i>)."
+     ]
+    },
+    "2": {
+     "ans": [
+      "24",
+      "twenty-four",
+      "twenty four"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Address",
+       "N",
+       "what's your address"
+      ],
+      [
+       "Maple Street (sau ô)",
+       "N",
+       "twenty-four Maple Street"
+      ]
+     ],
+     "why": [
+      "Đọc đề: ô trước <i>Maple Street</i> → <b>số nhà</b>.",
+      "Bẫy đổi ý: <i>forty-two</i> → [[sorry, I always mix it up]] → **twenty-four**.",
+      "Linear: 42 được giải thích là <i>my grandmother's house</i> → chắc chắn loại; adviser nhắc lại <i>Twenty-four</i> để xác nhận."
+     ]
+    },
+    "3": {
+     "ans": [
+      "hospitality"
+     ],
+     "form": [
+      "Noun (không đếm được)",
+      "Adjective"
+     ],
+     "kw": [
+      [
+       "Preferred area of work",
+       "Adj+N",
+       "I'd really prefer something in"
+      ],
+      [
+       "(ngành)",
+       "N",
+       "hospitality ↔ retail"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>area of work</i> → tên <b>ngành</b> (danh từ không đếm được: retail, hospitality…).",
+      "Bẫy xưa – nay: <i>last summer I worked in</i> retail → [[but this time]] [[I'd really prefer]] **hospitality**.",
+      "Từ phụ <i>a café or a hotel restaurant</i> = ví dụ của hospitality → chắc chắn."
+     ]
+    },
+    "4": {
+     "ans": [
+      "Friday",
+      "Fridays"
+     ],
+     "form": [
+      "Tên ngày (viết hoa)",
+      "Số"
+     ],
+     "kw": [
+      [
+       "Available",
+       "Adj",
+       "which days are you available"
+      ],
+      [
+       "evenings (sau ô)",
+       "N",
+       "Friday evenings are fine"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>Saturdays and ___ evenings</i> → 1 <b>ngày trong tuần</b>.",
+      "Bẫy nhắc rồi phủ định: <i>Wednesday evenings</i> [[are impossible]] → loại.",
+      "[[But]] **Friday evenings are fine** → Friday (ONE WORD: không ghi thêm <i>evening</i>)."
+     ]
+    },
+    "5": {
+     "ans": [
+      "12",
+      "twelve"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Maximum",
+       "Adj",
+       "no more than"
+      ],
+      [
+       "hours per week",
+       "N",
+       "how many hours a week"
+      ]
+     ],
+     "why": [
+      "Đọc đề: từ điều kiện [[Maximum]] → con số <b>giới hạn trên</b>.",
+      "Bẫy nhượng bộ → đổi ý: <i>I'd like to do about fifteen</i> [[but]] parents say [[no more than]] **twelve**.",
+      "Adviser chốt: <i>Twelve hours maximum</i> → 12."
+     ]
+    },
+    "6": {
+     "ans": [
+      "28",
+      "28th",
+      "twenty-eighth"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Start date",
+       "N",
+       "when could you start"
+      ],
+      [
+       "June (trước ô)",
+       "N",
+       "June twenty-eighth"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>June ___</i> → chỉ ghi <b>ngày</b>.",
+      "Bẫy có thật nhưng không trả lời câu hỏi: <i>June twenty-fifth</i> = ngày <b>thi xong</b>, không phải ngày bắt đầu làm.",
+      "[[I can start on]] **the twenty-eighth** → 28 / 28th."
+     ]
+    },
+    "7": {
+     "ans": [
+      "department"
+     ],
+     "form": [
+      "Noun (đứng trước store)",
+      "Adjective"
+     ],
+     "kw": [
+      [
+       "Previous job",
+       "Adj+N",
+       "have you had a job before / last summer"
+      ],
+      [
+       "store assistant",
+       "N",
+       "a store assistant"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>at a ___ store</i> → danh từ ghép với <i>store</i>.",
+      "[[Last summer]] = previous job → store assistant at a **department** store.",
+      "Bẫy từ: <i>electronics section</i> là <b>khu</b> trong cửa hàng, không phải loại cửa hàng; <i>downtown</i> là nơi chốn → loại."
+     ]
+    },
+    "8": {
+     "ans": [
+      "Korean"
+     ],
+     "form": [
+      "Tên ngôn ngữ (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Languages",
+       "N",
+       "do you speak any other languages"
+      ],
+      [
+       "(nói giỏi)",
+       "Adj",
+       "fluent in"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>English and ___</i> → tên 1 <b>ngôn ngữ</b>, viết hoa.",
+      "Bẫy đúng một phần: <i>studied Spanish</i> [[but I'm not very confident]] → không tính.",
+      "[[though]] → [[fluent in]] **Korean** → đáp án."
+     ]
+    },
+    "9": {
+     "ans": [
+      "communication"
+     ],
+     "form": [
+      "Noun (đứng trước skills)",
+      "Verb"
+     ],
+     "kw": [
+      [
+       "Main reason",
+       "Adj+N",
+       "the main thing is"
+      ],
+      [
+       "improve",
+       "V",
+       "improve"
+      ],
+      [
+       "skills (sau ô)",
+       "N",
+       "communication skills"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>to improve her ___ skills</i> → danh từ ghép với <i>skills</i>.",
+      "Bẫy nhượng bộ: <i>The money is nice, of course</i>, [[but the main thing is]] → lý do chính nằm sau <b>but</b>.",
+      "**communication** skills (nối với nha khoa: <i>talk to nervous patients</i>)."
+     ]
+    },
+    "10": {
+     "ans": [
+      "counselor",
+      "counsellor"
+     ],
+     "form": [
+      "Noun (người)",
+      "Noun (môn học)"
+     ],
+     "kw": [
+      [
+       "Reference",
+       "N",
+       "we need one reference / who would you like to put down"
+      ],
+      [
+       "school (trước ô)",
+       "N",
+       "my school counselor"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>her school ___</i> → 1 <b>người</b> ở trường.",
+      "Bẫy đổi ý: [[I was going to ask]] my biology teacher, [[but she's on leave]] → loại.",
+      "[[instead]] → school **counselor** (Mỹ; Anh viết <i>counsellor</i>, đều được)."
+     ]
+    }
+   },
+   "transcript": [
+    {
+     "sp": "Adviser",
+     "t": "Good afternoon, City Youth Job Agency. How can I help you?",
+     "at": 13.1
+    },
+    {
+     "sp": "Mia",
+     "t": "Hi. I'm in my senior year, and I'm looking for a part-time job for the summer. My friend said I could register with you.",
+     "at": 19.1
+    },
+    {
+     "sp": "Adviser",
+     "t": "Of course. I'll fill in the registration form with you now. What's your name, please?",
+     "at": 27.7
+    },
+    {
+     "sp": "Mia",
+     "t": "It's Mia. My [[last name]] is **Hartley**.",
+     "at": 34.4,
+     "q": 1
+    },
+    {
+     "sp": "Adviser",
+     "t": "Could you spell that for me?",
+     "at": 37.3
+    },
+    {
+     "sp": "Mia",
+     "t": "Sure. Aitch, ay, are, tee, el, ee, why.",
+     "at": 39.9
+    },
+    {
+     "sp": "Adviser",
+     "t": "Thank you. And what's your [[address]]?",
+     "at": 43.8,
+     "q": 2
+    },
+    {
+     "sp": "Mia",
+     "t": "It's forty-two Maple Street. Oh, [[sorry, I always mix it up]]. It's **twenty-four** Maple Street. Forty-two is my grandmother's house.",
+     "at": 46.7
+    },
+    {
+     "sp": "Adviser",
+     "t": "No problem. Twenty-four Maple Street. Now, what [[kind of work]] are you looking for?",
+     "at": 56.6,
+     "q": 3
+    },
+    {
+     "sp": "Mia",
+     "t": "Well, last summer I worked in retail, [[but this time]] [[I'd really prefer]] something in **hospitality**, like a café or a hotel restaurant.",
+     "at": 63.1
+    },
+    {
+     "sp": "Adviser",
+     "t": "Hospitality is very popular with students. Which days are you [[available]]?",
+     "at": 73.2,
+     "q": 4
+    },
+    {
+     "sp": "Mia",
+     "t": "Saturdays, definitely. On weekdays I have extra classes, so Wednesday evenings [[are impossible]]. [[But]] **Friday** evenings are fine.",
+     "at": 79.8
+    },
+    {
+     "sp": "Adviser",
+     "t": "Saturdays and Friday evenings. And [[how many hours a week]] can you work?",
+     "at": 89.6,
+     "q": 5
+    },
+    {
+     "sp": "Mia",
+     "t": "I'd like to do about fifteen hours, [[but]] my parents say [[no more than]] **twelve** because I need to review for my exams.",
+     "at": 95.7
+    },
+    {
+     "sp": "Adviser",
+     "t": "That's sensible. Twelve hours [[maximum]]. [[When could you start]]?",
+     "at": 104.2,
+     "q": 6
+    },
+    {
+     "sp": "Mia",
+     "t": "My graduation exam finishes on June twenty-fifth, and I need a few days to rest, so [[I can start on]] the **twenty-eighth**.",
+     "at": 109.6
+    },
+    {
+     "sp": "Adviser",
+     "t": "June twenty-eighth. [[Have you had a job before]]?",
+     "at": 118.7,
+     "q": 7
+    },
+    {
+     "sp": "Mia",
+     "t": "Yes. [[Last summer]] I was a store assistant at a **department** store downtown. I worked in the electronics section.",
+     "at": 122.7
+    },
+    {
+     "sp": "Adviser",
+     "t": "Great, that's useful work experience. Do you speak any other [[languages]]?",
+     "at": 131.1,
+     "q": 8
+    },
+    {
+     "sp": "Mia",
+     "t": "I studied Spanish at school, [[but I'm not very confident]]. My mom is Korean, [[though]], so I'm [[fluent in]] **Korean**.",
+     "at": 137.3
+    },
+    {
+     "sp": "Adviser",
+     "t": "That's a real advantage. A lot of hotels have Korean guests. And can I ask [[why you want this job]]?",
+     "at": 145.9,
+     "q": 9
+    },
+    {
+     "sp": "Mia",
+     "t": "The money is nice, of course, [[but the main thing is]] that I want to [[improve]] my **communication** skills. I'm planning to study dentistry, and dentists need to talk to nervous patients all the time.",
+     "at": 154.7
+    },
+    {
+     "sp": "Adviser",
+     "t": "That makes sense. Finally, we need one [[reference]]. Who would you like to put down?",
+     "at": 168.8,
+     "q": 10
+    },
+    {
+     "sp": "Mia",
+     "t": "[[I was going to ask]] my biology teacher, [[but she's on leave]] this semester. So I'll ask my school **counselor** [[instead]]. She knows me really well.",
+     "at": 175.8
+    },
+    {
+     "sp": "Adviser",
+     "t": "Perfect. I'll send you an email with some job offers this week.",
+     "at": 186.0
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "for": [
+    "vananh"
+   ],
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "id": "va-w20261114-thu",
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 2",
+   "opens": "2026-11-19",
+   "prep": 30,
+   "title": "Nghe Part 2 – Hospital Volunteer Scheme (sentence completion)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe · dạng vừa học 14/11: sentence completion",
+   "audio": "media/va-w20261114-thu.mp3",
+   "instructions": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "heading": "Greenfield Hospital – Teen Health Volunteer Scheme · Questions 11–17",
+   "strategy": [
+    "<b>Sentence completion – đọc đề 30 giây:</b> đọc <b>cả câu</b>, gạch từ khóa (danh từ, động từ, tính từ chính) và <b>từ điều kiện</b> (<i>most, at least, every, after, only, must</i>). Câu trong đề là bản <b>paraphrase</b> của lời nói, hiếm khi trùng nguyên văn.",
+    "<b>Đoán loại thông tin + dạng từ:</b> sau <i>a / an</i> → danh từ số ít; sau <i>the</i> + trước dấu chấm → danh từ; trước <i>years / percent / hours</i> → số; sau <i>by</i> + hạn chót → ngày / thứ.",
+    "<b>Giới hạn số từ:</b> NO MORE THAN TWO WORDS AND/OR A NUMBER → tối đa 2 từ (+ 1 số). Từ nghe được phải lắp <b>vừa ngữ pháp</b> vào câu (số ít / số nhiều, không lặp từ đã có sẵn trong câu).",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio. Bám từ khóa của câu <b>kế tiếp</b>: nghe thấy nó mà chưa điền câu trước thì bỏ, đi tiếp.",
+    "<b>Bẫy:</b> nhiều con số / nhiều nơi chốn được nhắc → chờ tín hiệu chốt <i>but, however, in fact, actually, now, instead, most</i>. Thông tin <i>used to · some people think · at first</i> thường là bẫy."
+   ],
+   "rows": [
+    "The scheme has been [[open to high school students]] for {11} years.",
+    "All volunteers must be [[at least]] {12} years old.",
+    "[[Most]] volunteers [[work]] in the {13}.",
+    "Before helping in the [[dental department]], volunteers must [[complete]] an online {14} course.",
+    "[[Every]] volunteer does one {15} shift per week.",
+    "On each shift, volunteers [[receive]] a [[free]] {16}.",
+    "Volunteers [[get a certificate]] after {17} hours."
+   ],
+   "qs": {
+    "11": {
+     "ans": [
+      "3",
+      "three"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "open to high school students",
+       "Adj+N",
+       "open to high school students"
+      ],
+      [
+       "years (sau ô)",
+       "N",
+       "for three years now"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>for ___ years</i> + từ khóa <i>high school students</i> → số năm <b>dành cho HS cấp 3</b>, không phải tuổi của cả chương trình.",
+      "Bẫy có thật nhưng không trả lời câu hỏi: <i>started eight years ago</i> nhưng [[in the beginning it was only for university students]].",
+      "Chốt: [[open to high school students]] for **three years** → 3."
+     ]
+    },
+    "12": {
+     "ans": [
+      "16",
+      "sixteen"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "at least",
+       "Adv",
+       "have to be at least"
+      ],
+      [
+       "must",
+       "V",
+       "have to"
+      ]
+     ],
+     "why": [
+      "Đọc đề: từ điều kiện [[at least]] → tuổi <b>tối thiểu</b>.",
+      "Bẫy nhắc rồi phủ định: <i>fifteen-year-olds</i> → [[I'm afraid the answer is no]].",
+      "[[have to]] = must · **sixteen** years old → 16."
+     ]
+    },
+    "13": {
+     "ans": [
+      "children's ward",
+      "childrens ward",
+      "children ward"
+     ],
+     "form": [
+      "Noun phrase (nơi chốn)",
+      "Verb"
+     ],
+     "kw": [
+      [
+       "Most",
+       "Det",
+       "most of our volunteers"
+      ],
+      [
+       "work in",
+       "V",
+       "are based in"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>Most volunteers work in the ___</i> → 1 <b>nơi chốn</b> trong bệnh viện; từ điều kiện <b>Most</b>.",
+      "Audio nhắc 3 nơi: <i>gift shop</i> (a few) · <i>main reception desk</i> (some) → không phải <b>most</b>.",
+      "[[However, most]] … [[are based in]] = work in → **the children's ward** (2 từ, nhớ <i>'s</i>)."
+     ]
+    },
+    "14": {
+     "ans": [
+      "infection control"
+     ],
+     "form": [
+      "Noun (2 từ, đứng trước course)",
+      "Adjective"
+     ],
+     "kw": [
+      [
+       "dental department",
+       "N",
+       "dental department"
+      ],
+      [
+       "before helping in",
+       "V",
+       "before you set foot in"
+      ],
+      [
+       "complete",
+       "V",
+       "you must complete"
+      ],
+      [
+       "online",
+       "Adj",
+       "you can do it online"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>an online ___ course</i> → danh từ ghép đứng trước <i>course</i> (tên khóa).",
+      "Bẫy: <i>You don't need any medical knowledge</i> → không phải <i>medical</i>.",
+      "[[before you set foot in]] = before helping in · [[must complete]] an **infection control** course · [[do it online]] = online."
+     ]
+    },
+    "15": {
+     "ans": [
+      "three-hour",
+      "3-hour",
+      "three hour",
+      "3 hour"
+     ],
+     "form": [
+      "Adjective (số + hour)",
+      "Noun số nhiều (hours)"
+     ],
+     "kw": [
+      [
+       "Every volunteer",
+       "N",
+       "every volunteer"
+      ],
+      [
+       "one … shift per week",
+       "N",
+       "one three-hour shift a week"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>one ___ shift</i> → cụm <b>tính từ đứng trước danh từ</b>: <i>three-hour</i> (không có <b>s</b>: ✗ three-hours).",
+      "Bẫy xưa – nay: <i>Shifts</i> [[used to be]] four hours → [[So now]] → **three-hour** shift.",
+      "Từ phụ <i>exhausting after a full day at school</i> giải thích vì sao đổi."
+     ]
+    },
+    "16": {
+     "ans": [
+      "meal"
+     ],
+     "form": [
+      "Noun số ít",
+      "Noun số nhiều"
+     ],
+     "kw": [
+      [
+       "receive",
+       "V",
+       "you'll get"
+      ],
+      [
+       "free",
+       "Adj",
+       "free"
+      ],
+      [
+       "on each shift",
+       "Prep+N",
+       "on every shift"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>a free ___</i> → <b>danh từ số ít</b> (có <i>a</i>).",
+      "Bẫy phủ định: <i>We can't pay you</i> · <i>parking isn't free</i> → loại tiền lương và chỗ đỗ xe.",
+      "[[But]] on every shift [[you'll get]] a free **meal** (in the staff canteen) → meal."
+     ]
+    },
+    "17": {
+     "ans": [
+      "40",
+      "forty"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "get a certificate",
+       "V+N",
+       "receive a certificate"
+      ],
+      [
+       "after",
+       "Prep",
+       "you need to complete … After that"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>after ___ hours</i> → số giờ.",
+      "Bẫy <i>Some people think</i>: <i>after twenty hours</i> → [[but in fact]] → đổi ý.",
+      "Chốt: [[you need to complete]] **forty** hours → 40."
+     ]
+    }
+   },
+   "transcript": [
+    {
+     "sp": "Coordinator",
+     "t": "Good morning, everyone, and thank you for coming. My name is Rachel, and I coordinate the Teen Health Volunteer Scheme here at Greenfield Hospital. Let me tell you a little about how it works.",
+     "at": 14.4
+    },
+    {
+     "sp": "Coordinator",
+     "t": "The scheme itself started eight years ago, but [[in the beginning it was only for university students]]. It has been [[open to high school students]] for **three years** now, and it's been a huge success.",
+     "at": 28.8,
+     "q": 11
+    },
+    {
+     "sp": "Coordinator",
+     "t": "A lot of parents ask me whether fifteen-year-olds can join. [[I'm afraid the answer is no]]. Because of our insurance, all volunteers [[have to be at least]] **sixteen** years old.",
+     "at": 42.9,
+     "q": 12
+    },
+    {
+     "sp": "Coordinator",
+     "t": "So where will you work? A few volunteers help in the gift shop, and some work at the main reception desk. [[However, most]] of our volunteers [[are based in]] **the children's ward**, where you'll read stories, play games and keep young patients company.",
+     "at": 55.6,
+     "q": 13
+    },
+    {
+     "sp": "Coordinator",
+     "t": "Now, I know some of you are interested in dentistry. You don't need any medical knowledge to volunteer, but [[before you set foot in]] the [[dental department]], you [[must complete]] an **infection control** course. Don't worry, it's short, and you can [[do it online]].",
+     "at": 73.0,
+     "q": 14
+    },
+    {
+     "sp": "Coordinator",
+     "t": "Let's talk about time. Shifts [[used to be]] four hours long, but students told us that was exhausting after a full day at school. [[So now]], [[every volunteer]] works one **three-hour** shift a week.",
+     "at": 90.9,
+     "q": 15
+    },
+    {
+     "sp": "Coordinator",
+     "t": "We can't pay you, of course, and I'm afraid parking isn't free either. [[But]] on every shift [[you'll get]] a [[free]] **meal** in the staff canteen, which most students really appreciate.",
+     "at": 105.3,
+     "q": 16
+    },
+    {
+     "sp": "Coordinator",
+     "t": "Finally, many of you will want something for your university applications. [[Some people think]] you get a certificate after twenty hours, [[but in fact]] you need to complete **forty** hours. After that, you'll [[receive a certificate]] signed by the head of the hospital, and it really can help you get your foot in the door.",
+     "at": 117.7,
+     "q": 17
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "for": [
+    "vananh"
+   ],
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "id": "va-w20261114-fri",
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 3",
+   "opens": "2026-11-20",
+   "prep": 30,
+   "title": "Nghe Part 3 – Careers presentation (sentence completion)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe · sentence completion, đề thứ 2 (2 người nói)",
+   "audio": "media/va-w20261114-fri.mp3",
+   "instructions": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "heading": "Class presentation: How seniors choose their future · Questions 21–27",
+   "strategy": [
+    "<b>Sentence completion – đọc đề 30 giây:</b> đọc <b>cả câu</b>, gạch từ khóa (danh từ, động từ, tính từ chính) và <b>từ điều kiện</b> (<i>most, at least, every, after, only, must</i>). Câu trong đề là bản <b>paraphrase</b> của lời nói, hiếm khi trùng nguyên văn.",
+    "<b>Đoán loại thông tin + dạng từ:</b> sau <i>a / an</i> → danh từ số ít; sau <i>the</i> + trước dấu chấm → danh từ; trước <i>years / percent / hours</i> → số; sau <i>by</i> + hạn chót → ngày / thứ.",
+    "<b>Giới hạn số từ:</b> NO MORE THAN TWO WORDS AND/OR A NUMBER → tối đa 2 từ (+ 1 số). Từ nghe được phải lắp <b>vừa ngữ pháp</b> vào câu (số ít / số nhiều, không lặp từ đã có sẵn trong câu).",
+    "<b>Part 3 = 2 người nói:</b> đáp án thường đến sau khi <b>người kia</b> xác nhận hoặc sửa lại (<i>So only…</i>, <i>It was…, but…</i>). Nghe cả 2 lượt rồi mới chốt.",
+    "<b>Bẫy:</b> nhiều con số / nhiều nơi chốn được nhắc → chờ tín hiệu chốt <i>but, however, in fact, actually, now, instead, most</i>. Thông tin <i>used to · some people think · at first</i> thường là bẫy."
+   ],
+   "rows": [
+    "The presentation is about how twelfth graders [[choose]] a {21}.",
+    "[[Most]] students in the survey said their {22} [[influenced]] them the most.",
+    "[[Only]] {23} percent of students [[had]] any [[work experience]].",
+    "Lily thinks job shadowing is [[more useful]] than online {24}.",
+    "Jack was [[amazed]] by how much time a dentist [[spends]] on {25}.",
+    "The presentation will [[end with]] a short {26}.",
+    "The presentation must be [[finished by]] {27}."
+   ],
+   "qs": {
+    "21": {
+     "ans": [
+      "career path"
+     ],
+     "form": [
+      "Noun (số ít, sau a)",
+      "Noun số nhiều"
+     ],
+     "kw": [
+      [
+       "choose",
+       "V",
+       "choose"
+      ],
+      [
+       "twelfth graders",
+       "N",
+       "twelfth graders / seniors"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>choose a ___</i> → danh từ số ít.",
+      "Bẫy nhắc rồi phủ định: Lily nói [[our topic isn't]] <i>how seniors choose a university</i> → loại <i>university</i>.",
+      "Jack: <i>Ours is about how twelfth graders choose</i> a **career path** → 2 từ, vừa giới hạn."
+     ]
+    },
+    "22": {
+     "ans": [
+      "parents"
+     ],
+     "form": [
+      "Noun số nhiều (người)",
+      "Noun số ít"
+     ],
+     "kw": [
+      [
+       "Most students",
+       "N",
+       "nearly sixty percent"
+      ],
+      [
+       "influenced them the most",
+       "V",
+       "influenced them the most"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>their ___ influenced them</i> → 1 nhóm <b>người</b>; từ điều kiện <b>most</b>.",
+      "Bẫy kỳ vọng: <i>I expected teachers or social media</i> [[but]] → đổi ý.",
+      "[[nearly sixty percent]] = most → their **parents** (số nhiều)."
+     ]
+    },
+    "23": {
+     "ans": [
+      "20",
+      "twenty"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Only … percent",
+       "Adv",
+       "so only twenty percent"
+      ],
+      [
+       "had any work experience",
+       "V+N",
+       "had any"
+      ]
+     ],
+     "why": [
+      "Đọc đề: [[Only]] ___ percent [[had]] work experience → phần <b>có</b> kinh nghiệm.",
+      "Bẫy số: Jack nói <i>eighty percent</i> … [[had no work experience]] → ngược nghĩa (không có).",
+      "Lily paraphrase: [[So only]] **twenty** percent [[had any]] → 20 (100 − 80)."
+     ]
+    },
+    "24": {
+     "ans": [
+      "career quizzes",
+      "quizzes"
+     ],
+     "form": [
+      "Noun số nhiều",
+      "Noun số ít"
+     ],
+     "kw": [
+      [
+       "more useful than",
+       "Adj",
+       "… are fun, but … tells you far more"
+      ],
+      [
+       "online",
+       "Adj",
+       "online"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>more useful than online ___</i> → thứ bị so sánh <b>kém hơn</b>, danh từ.",
+      "Tín hiệu nhượng bộ: [[Those online career quizzes are fun, but]] → vế sau <b>but</b> (job shadowing) mới hay hơn.",
+      "[[tells you far more]] = more useful → online **career quizzes** (số nhiều)."
+     ]
+    },
+    "25": {
+     "ans": [
+      "paperwork"
+     ],
+     "form": [
+      "Noun (không đếm được)",
+      "Verb"
+     ],
+     "kw": [
+      [
+       "amazed",
+       "Adj",
+       "amazed"
+      ],
+      [
+       "spends … on",
+       "V",
+       "spent on"
+      ],
+      [
+       "a dentist",
+       "N",
+       "my uncle, who's a dentist"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>spends on ___</i> → danh từ / V-ing.",
+      "Bẫy có thật nhưng không trả lời câu hỏi: <i>the treatment part was what I expected</i> → không gây ngạc nhiên.",
+      "[[But I was amazed by]] how much time he [[spent on]] **paperwork** → 1 từ, không đếm được."
+     ]
+    },
+    "26": {
+     "ans": [
+      "video interview"
+     ],
+     "form": [
+      "Noun (2 từ, sau a short)",
+      "Verb"
+     ],
+     "kw": [
+      [
+       "end with",
+       "V",
+       "finish with"
+      ],
+      [
+       "short",
+       "Adj",
+       "short"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>end with a short ___</i> → danh từ số ít.",
+      "Bẫy đề xuất bị bác: Lily hỏi [[Shall we finish with a quiz]] → Jack: <i>We only have ten minutes</i> → loại quiz.",
+      "[[instead]] → a short **video interview**, Lily đồng ý <i>Perfect</i> → chốt."
+     ]
+    },
+    "27": {
+     "ans": [
+      "Thursday"
+     ],
+     "form": [
+      "Tên thứ (viết hoa)",
+      "Số"
+     ],
+     "kw": [
+      [
+       "finished by",
+       "V",
+       "finish it by"
+      ],
+      [
+       "must",
+       "V",
+       "have to"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>must be finished by ___</i> → hạn chót: ngày / thứ.",
+      "Bẫy xưa – nay: Lily ghi <i>Friday</i> → Jack: [[It was Friday, but]] Mrs. Brooks [[changed it]].",
+      "[[We have to finish it by]] **Thursday** → viết hoa."
+     ]
+    }
+   },
+   "transcript": [
+    {
+     "sp": "Lily",
+     "t": "Okay, Jack, let's plan our presentation. Just to be clear, [[our topic isn't]] how seniors choose a university. That was last year's group.",
+     "at": 13.1,
+     "q": 21
+    },
+    {
+     "sp": "Jack",
+     "t": "Right. Ours is about how twelfth graders [[choose]] a **career path**. So, what did our survey show?",
+     "at": 22.3
+    },
+    {
+     "sp": "Lily",
+     "t": "Well, I expected teachers or social media to be the biggest influence, [[but]] [[nearly sixty percent]] said their **parents** [[influenced them the most]].",
+     "at": 29.0,
+     "q": 22
+    },
+    {
+     "sp": "Jack",
+     "t": "That surprised me too. And I was shocked that eighty percent of students [[had no work experience]] at all.",
+     "at": 38.4,
+     "q": 23
+    },
+    {
+     "sp": "Lily",
+     "t": "[[So only]] **twenty** percent [[had any]]. That's really low, considering how important it is.",
+     "at": 45.8
+    },
+    {
+     "sp": "Jack",
+     "t": "Exactly. What should we recommend, then?",
+     "at": 51.7
+    },
+    {
+     "sp": "Lily",
+     "t": "I think job shadowing. [[Those online career quizzes are fun, but]] following a real person for a day [[tells you far more]] about a job.",
+     "at": 55.5,
+     "q": 24
+    },
+    {
+     "sp": "Jack",
+     "t": "I agree. When I shadowed my uncle, who's a dentist, the treatment part was what I expected. [[But I was amazed by]] how much time he [[spent on]] **paperwork**.",
+     "at": 64.4,
+     "q": 25
+    },
+    {
+     "sp": "Lily",
+     "t": "That's a great detail for the presentation. [[Shall we finish with a quiz]] for the class?",
+     "at": 75.8,
+     "q": 26
+    },
+    {
+     "sp": "Jack",
+     "t": "We only have ten minutes. How about a short **video interview** with my uncle [[instead]]? He's happy to help.",
+     "at": 81.2
+    },
+    {
+     "sp": "Lily",
+     "t": "Perfect. And when's the deadline? I wrote down Friday.",
+     "at": 89.2,
+     "q": 27
+    },
+    {
+     "sp": "Jack",
+     "t": "[[It was Friday, but]] Mrs. Brooks [[changed it]] last week. [[We have to finish it by]] **Thursday**.",
+     "at": 93.4
+    },
+    {
+     "sp": "Lily",
+     "t": "Then we'd better knuckle down this weekend.",
+     "at": 100.7
+    }
+   ]
   }
  ],
  "ipa": {
@@ -13233,6 +14632,1196 @@
       }
      ],
      "note": "fill up on + N = ăn no (bằng món gì) · pig out rất thân mật · eat like a horse = ăn rất khỏe"
+    }
+   ]
+  },
+  {
+   "id": "va3",
+   "title": "Work & Careers",
+   "session": 3,
+   "for": [
+    "vananh"
+   ],
+   "cards": [
+    {
+     "mean": "con đường sự nghiệp",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "career path",
+       "type": "Collocation",
+       "ipa": "/kəˈrɪr ˌpæθ/",
+       "stress": "ca-REER path",
+       "band": "5.5–6.5",
+       "grammar": "choose / follow + a career path",
+       "ex": "Dentistry is the career path I have wanted since ninth grade."
+      },
+      {
+       "w": "launch a career",
+       "type": "Collocation",
+       "ipa": "/ˌlɔntʃ ə kəˈrɪr/",
+       "stress": "launch_a ca-REER",
+       "band": "7–8",
+       "grammar": "launch + a / my career (in + N)",
+       "ex": "An internship can help you launch a career in dentistry."
+      },
+      {
+       "w": "a dead-end job",
+       "type": "Idiom",
+       "ipa": "/ə ˌdɛd ˈɛnd ˈdʒɑb/",
+       "stress": "a dead-END job",
+       "band": "7–8",
+       "grammar": "↔ a career path: việc không có tương lai",
+       "ex": "He quit a dead-end job to study nursing."
+      }
+     ],
+     "note": "career path = con đường dài hạn ↔ a dead-end job = việc không có tương lai · launch a career = bắt đầu sự nghiệp"
+    },
+    {
+     "mean": "sự hài lòng với công việc",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "job satisfaction",
+       "type": "Collocation",
+       "ipa": "/ˈdʒɑb ˌsætɪsˈfækʃən/",
+       "stress": "JOB sat-is-FAC-tion",
+       "band": "7–8",
+       "grammar": "không đếm được; get job satisfaction from + N / V-ing",
+       "ex": "Dentists get a lot of job satisfaction from helping patients smile again."
+      },
+      {
+       "w": "a sense of achievement",
+       "type": "Collocation",
+       "ipa": "/ə ˌsɛns əv əˈtʃivmənt/",
+       "stress": "a SENSE_of a-CHIEVE-ment",
+       "band": "7–8",
+       "grammar": "give sb + a sense of achievement",
+       "ex": "Fixing a broken tooth gives me a sense of achievement."
+      },
+      {
+       "w": "fulfilled",
+       "type": "Vocab",
+       "ipa": "/fʊlˈfɪld/",
+       "stress": "ful-FILLED",
+       "band": "7–8",
+       "grammar": "feel fulfilled (cảm xúc người)",
+       "ex": "Nurses often feel fulfilled at the end of a hard day."
+      },
+      {
+       "w": "over the moon",
+       "type": "Idiom",
+       "ipa": "/ˌoʊvɚ ðə ˈmun/",
+       "stress": "o-ver the MOON",
+       "band": "7–8",
+       "grammar": "be over the moon + about / with + N",
+       "ex": "I was over the moon when I got the internship."
+      }
+     ],
+     "note": "job satisfaction = hài lòng nói chung · a sense of achievement = cảm giác làm được việc khó · fulfilled = tính từ cho người"
+    },
+    {
+     "mean": "đáng công sức, cho nhiều niềm vui",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "rewarding",
+       "type": "Vocab",
+       "ipa": "/rɪˈwɔrdɪŋ/",
+       "stress": "re-WARD-ing",
+       "band": "5.5–6.5",
+       "grammar": "a rewarding job / It is rewarding to + V",
+       "ex": "Fixing a child’s teeth must be really rewarding."
+      },
+      {
+       "w": "worthwhile",
+       "type": "Vocab",
+       "ipa": "/ˌwɝθˈwaɪl/",
+       "stress": "worth-WHILE",
+       "band": "7–8",
+       "grammar": "sth is worthwhile / a worthwhile job",
+       "ex": "Helping people smile is a worthwhile job."
+      }
+     ],
+     "note": "rewarding = mang lại niềm vui, ý nghĩa (không nói về tiền) · worthwhile = đáng bỏ công"
+    },
+    {
+     "mean": "công việc giờ hành chính",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "a nine-to-five job",
+       "type": "Collocation",
+       "ipa": "/ə ˌnaɪn tə ˈfaɪv ˈdʒɑb/",
+       "stress": "a nine-to-FIVE job",
+       "band": "5.5–6.5",
+       "grammar": "có gạch nối khi đứng trước danh từ",
+       "ex": "My dad has a nine-to-five job at a bank."
+      },
+      {
+       "w": "a full-time position",
+       "type": "Collocation",
+       "ipa": "/ə ˌfʊlˈtaɪm pəˈzɪʃən/",
+       "stress": "a full-TIME po-SI-tion",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "After her internship, she got a full-time position."
+      },
+      {
+       "w": "a steady income",
+       "type": "Collocation",
+       "ipa": "/ə ˌstɛdi ˈɪnˌkʌm/",
+       "stress": "a STEAD-y IN-come",
+       "band": "5.5–6.5",
+       "grammar": "have + a steady income",
+       "ex": "A nine-to-five job gives you a steady income."
+      }
+     ],
+     "note": "a nine-to-five job = giờ hành chính, ổn định · a full-time position (trang trọng) · a steady income = thu nhập đều"
+    },
+    {
+     "mean": "việc làm thêm (bán thời gian)",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "a part-time job",
+       "type": "Collocation",
+       "ipa": "/ə ˌpɑrtˈtaɪm ˈdʒɑb/",
+       "stress": "a part-TIME job",
+       "band": "4–5",
+       "grammar": "have / get + a part-time job; ↔ a full-time job",
+       "ex": "Many seniors have a part-time job at a coffee shop."
+      },
+      {
+       "w": "help out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhɛlp ˈaʊt/",
+       "stress": "help_OUT",
+       "band": "4–5",
+       "grammar": "help out (at + nơi) / help sb out",
+       "ex": "I help out at my aunt’s clinic on Sundays."
+      },
+      {
+       "w": "fill in for",
+       "type": "Phrasal verb",
+       "ipa": "/ˌfɪl ˈɪn fɚ/",
+       "stress": "fill_IN for",
+       "band": "7–8",
+       "grammar": "fill in for + người",
+       "ex": "I filled in for my friend at the café."
+      },
+      {
+       "w": "lend a hand",
+       "type": "Idiom",
+       "ipa": "/ˌlɛnd ə ˈhænd/",
+       "stress": "lend_a HAND",
+       "band": "5.5–6.5",
+       "grammar": "lend (sb) a hand with + N",
+       "ex": "I lend a hand at my aunt’s clinic on Sundays."
+      }
+     ],
+     "note": "part-time job = việc làm thêm · help out = phụ giúp (không chính thức) · fill in for = làm thay tạm"
+    },
+    {
+     "mean": "kinh nghiệm làm việc",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "work experience",
+       "type": "Collocation",
+       "ipa": "/ˈwɝk ɪkˌspɪriəns/",
+       "stress": "WORK ex-PE-ri-ence",
+       "band": "4–5",
+       "grammar": "không đếm được: gain / get + work experience",
+       "ex": "I want to gain some work experience at a dental clinic this summer."
+      },
+      {
+       "w": "do volunteer work",
+       "type": "Collocation",
+       "ipa": "/ˌdu ˌvɑlənˈtɪr ˌwɝk/",
+       "stress": "do vol-un-TEER work",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được",
+       "ex": "I do volunteer work at a children’s hospital."
+      },
+      {
+       "w": "take a gap year",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ə ˈɡæp ˌjɪr/",
+       "stress": "take_a GAP year",
+       "band": "5.5–6.5",
+       "grammar": "QK took",
+       "ex": "Some students take a gap year to work and travel."
+      }
+     ],
+     "note": "work experience không đếm được · do volunteer work = làm không lương · take a gap year = nghỉ 1 năm trước đại học"
+    },
+    {
+     "mean": "kiếm được việc (tốt, sau nhiều cố gắng)",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "land a job",
+       "type": "Collocation",
+       "ipa": "/ˌlænd ə ˈdʒɑb/",
+       "stress": "land‿a JOB",
+       "band": "7–8",
+       "grammar": "land + a job / an internship; QK landed",
+       "ex": "My cousin landed a job at a big hospital right after graduation."
+      },
+      {
+       "w": "secure a position",
+       "type": "Collocation",
+       "ipa": "/sɪˌkjʊr ə pəˈzɪʃən/",
+       "stress": "se-CURE a po-SI-tion",
+       "band": "7–8",
+       "grammar": "trang trọng hơn land a job",
+       "ex": "She secured a position at a top hospital."
+      },
+      {
+       "w": "accept a job offer",
+       "type": "Collocation",
+       "ipa": "/əkˌsɛpt ə ˈdʒɑb ˌɔfɚ/",
+       "stress": "ac-CEPT a JOB of-fer",
+       "band": "5.5–6.5",
+       "grammar": "↔ turn down a job offer",
+       "ex": "She accepted a job offer from a big hospital."
+      },
+      {
+       "w": "get into",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡɛt ˈɪntu/",
+       "stress": "get_IN-to",
+       "band": "5.5–6.5",
+       "grammar": "không tách: + an industry / a university",
+       "ex": "It is hard to get into medical school."
+      }
+     ],
+     "note": "apply for = ứng tuyển (chưa chắc được) → land / secure = đã có việc · land thân mật, secure trang trọng"
+    },
+    {
+     "mean": "hợp với, sinh ra để làm (nghề)",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "be cut out for",
+       "type": "Idiom",
+       "ipa": "/bi ˌkʌt ˈaʊt fɚ/",
+       "stress": "be cut‿OUT for",
+       "band": "7–8",
+       "grammar": "hay dùng phủ định / câu hỏi; + N / V-ing",
+       "ex": "I am not cut out for sales because I am quite shy."
+      },
+      {
+       "w": "have a knack for",
+       "type": "Idiom",
+       "ipa": "/hæv ə ˈnæk fɚ/",
+       "stress": "have_a KNACK for",
+       "band": "7–8",
+       "grammar": "have a knack for + N / V-ing",
+       "ex": "I have a knack for calming down little kids."
+      },
+      {
+       "w": "skilled at",
+       "type": "Vocab",
+       "ipa": "/ˈskɪld æt/",
+       "stress": "SKILLED_at",
+       "band": "5.5–6.5",
+       "grammar": "skilled at + N / V-ing",
+       "ex": "Good dentists are skilled at explaining things simply."
+      }
+     ],
+     "note": "be cut out for = hợp bẩm sinh với nghề · have a knack for = có khiếu làm 1 việc nhỏ · skilled at = giỏi nhờ luyện"
+    },
+    {
+     "mean": "công việc mơ ước",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "a dream job",
+       "type": "Collocation",
+       "ipa": "/ə ˌdrim ˈdʒɑb/",
+       "stress": "a DREAM job",
+       "band": "4–5",
+       "grammar": "my dream job is + N / to V",
+       "ex": "My dream job is to open my own dental clinic."
+      },
+      {
+       "w": "a dream come true",
+       "type": "Idiom",
+       "ipa": "/ə ˌdrim kʌm ˈtru/",
+       "stress": "a DREAM come TRUE",
+       "band": "5.5–6.5",
+       "grammar": "sth is / would be + a dream come true",
+       "ex": "Becoming a dentist would be a dream come true."
+      }
+     ],
+     "note": "a dream job = công việc mơ ước · a dream come true = điều mơ ước thành sự thật"
+    },
+    {
+     "mean": "thăng tiến trong sự nghiệp",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "climb the career ladder",
+       "type": "Idiom",
+       "ipa": "/ˌklaɪm ðə kəˈrɪr ˌlædɚ/",
+       "stress": "climb the ca-REER lad-der",
+       "band": "7–8",
+       "grammar": "climb không đọc âm b; QK climbed",
+       "ex": "My aunt climbed the career ladder quickly and became a head nurse at thirty."
+      },
+      {
+       "w": "get promoted",
+       "type": "Collocation",
+       "ipa": "/ˌɡɛt prəˈmoʊɾɪd/",
+       "stress": "get pro-MOT-ed",
+       "band": "5.5–6.5",
+       "grammar": "get promoted + to + vị trí",
+       "ex": "She got promoted to manager last year."
+      },
+      {
+       "w": "work my way up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwɝk maɪ ˌweɪ ˈʌp/",
+       "stress": "work my way UP",
+       "band": "7–8",
+       "grammar": "work + my/your + way up (to + vị trí)",
+       "ex": "He worked his way up to head of the clinic."
+      },
+      {
+       "w": "start out (as)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌstɑrt ˈaʊt/",
+       "stress": "start_OUT",
+       "band": "5.5–6.5",
+       "grammar": "start out as + nghề",
+       "ex": "My aunt started out as a dental assistant."
+      }
+     ],
+     "note": "climb the career ladder (idiom) · get promoted = được thăng 1 bậc · work my way up = đi lên từ vị trí thấp · start out as = vị trí đầu tiên"
+    },
+    {
+     "mean": "cân bằng công việc – cuộc sống",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "work-life balance",
+       "type": "Collocation",
+       "ipa": "/ˌwɝk ˈlaɪf ˌbæləns/",
+       "stress": "work-LIFE bal-ance",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: have / keep + a good work-life balance",
+       "ex": "Dentists can have a good work-life balance because they rarely work at night."
+      },
+      {
+       "w": "put in long hours",
+       "type": "Collocation",
+       "ipa": "/ˌpʊt ɪn ˌlɔŋ ˈaʊɚz/",
+       "stress": "put_in long HOURS",
+       "band": "5.5–6.5",
+       "grammar": "QK put",
+       "ex": "Surgeons often put in long hours."
+      },
+      {
+       "w": "work overtime",
+       "type": "Collocation",
+       "ipa": "/ˌwɝk ˈoʊvɚˌtaɪm/",
+       "stress": "work O-ver-time",
+       "band": "5.5–6.5",
+       "grammar": "không có \"the\": ✗ work the overtime",
+       "ex": "Nurses often work overtime on weekends."
+      }
+     ],
+     "note": "work-life balance không đếm được · put in long hours / work overtime = làm nhiều → mất cân bằng"
+    },
+    {
+     "mean": "sự ổn định, ít lo mất việc",
+     "cat": "A. Work & careers",
+     "items": [
+      {
+       "w": "job security",
+       "type": "Collocation",
+       "ipa": "/ˈdʒɑb sɪˌkjʊrəɾi/",
+       "stress": "JOB se-CU-ri-ty",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: offer / have + job security",
+       "ex": "Healthcare jobs offer great job security."
+      },
+      {
+       "w": "a decent salary",
+       "type": "Collocation",
+       "ipa": "/ə ˌdisənt ˈsæləri/",
+       "stress": "a DE-cent SAL-a-ry",
+       "band": "5.5–6.5",
+       "grammar": "earn + a decent salary",
+       "ex": "Dentists usually earn a decent salary."
+      },
+      {
+       "w": "earn a living",
+       "type": "Collocation",
+       "ipa": "/ˌɝn ə ˈlɪvɪŋ/",
+       "stress": "earn_a LIV-ing",
+       "band": "5.5–6.5",
+       "grammar": "earn a living + as / from + N",
+       "ex": "My uncle earns a living as a taxi driver."
+      }
+     ],
+     "note": "job security = không lo mất việc · a decent salary / earn a living = chuyện tiền"
+    },
+    {
+     "mean": "đăng ký (khóa học, lớp)",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "sign up for",
+       "type": "Phrasal verb",
+       "ipa": "/ˌsaɪn ˈʌp fɚ/",
+       "stress": "sign‿UP for",
+       "band": "5.5–6.5",
+       "grammar": "không tách: sign up for + a course; QK signed up",
+       "ex": "I signed up for a first-aid course last summer."
+      }
+     ]
+    },
+    {
+     "mean": "buổi học thực hành ngắn",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "a workshop",
+       "type": "Vocab",
+       "ipa": "/ə ˈwɝkˌʃɑp/",
+       "stress": "a WORK-shop",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: run / attend + a workshop",
+       "ex": "The university runs a free workshop on dental care."
+      }
+     ]
+    },
+    {
+     "mean": "học phí",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "tuition fees",
+       "type": "Collocation",
+       "ipa": "/tuˈɪʃən ˌfiz/",
+       "stress": "tu-I-tion fees",
+       "band": "5.5–6.5",
+       "grammar": "thường số nhiều: pay + tuition fees",
+       "ex": "Tuition fees at medical schools are quite high."
+      }
+     ]
+    },
+    {
+     "mean": "giới hạn ở (số người)",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "be limited to",
+       "type": "Collocation",
+       "ipa": "/bi ˈlɪmɪɾɪd tu/",
+       "stress": "be LIM-it-ed to",
+       "band": "5.5–6.5",
+       "grammar": "be limited to + số + N số nhiều",
+       "ex": "The class is limited to twelve participants."
+      }
+     ]
+    },
+    {
+     "mean": "người tham gia",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "participant",
+       "type": "Vocab",
+       "ipa": "/pɑrˈtɪsəpənt/",
+       "stress": "par-TIC-i-pant",
+       "band": "5.5–6.5",
+       "grammar": "đếm được; động từ participate in",
+       "ex": "Each participant gets a name card on the first day."
+      }
+     ]
+    },
+    {
+     "mean": "chứng chỉ, giấy chứng nhận",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "certificate",
+       "type": "Vocab",
+       "ipa": "/sɚˈtɪfɪkət/",
+       "stress": "cer-TIF-i-cate",
+       "band": "5.5–6.5",
+       "grammar": "get / receive + a certificate in + N; cuối đọc /kət/",
+       "ex": "I received a certificate in first aid."
+      }
+     ]
+    },
+    {
+     "mean": "đồ ăn nhẹ và nước uống (ở sự kiện)",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "refreshments",
+       "type": "Vocab",
+       "ipa": "/rɪˈfrɛʃmənts/",
+       "stress": "re-FRESH-ments",
+       "band": "7–8",
+       "grammar": "luôn số nhiều",
+       "ex": "Lunch and refreshments are included in the fee."
+      }
+     ]
+    },
+    {
+     "mean": "tại hiện trường thật (không ở lớp)",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "on location",
+       "type": "Collocation",
+       "ipa": "/ɑn loʊˈkeɪʃən/",
+       "stress": "on lo-CA-tion",
+       "band": "7–8",
+       "grammar": "spend + time + on location (at + nơi)",
+       "ex": "We spent the afternoon on location at a local hospital."
+      }
+     ]
+    },
+    {
+     "mean": "khóa học thực hành",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "a practical course",
+       "type": "Collocation",
+       "ipa": "/ə ˈpræktɪkəl ˈkɔrs/",
+       "stress": "a PRAC-ti-cal course",
+       "band": "5.5–6.5",
+       "grammar": "↔ a theoretical course",
+       "ex": "I prefer a practical course to a long lecture."
+      }
+     ]
+    },
+    {
+     "mean": "kiến thức cơ bản về",
+     "cat": "B. Courses & training",
+     "items": [
+      {
+       "w": "the basics of",
+       "type": "Collocation",
+       "ipa": "/ðə ˈbeɪsɪks əv/",
+       "stress": "the BA-sics of",
+       "band": "4–5",
+       "grammar": "learn / train sb in + the basics of + N",
+       "ex": "The course trains you in the basics of photography."
+      }
+     ]
+    },
+    {
+     "mean": "nhân viên bán hàng (Anh: shop assistant)",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "a store assistant",
+       "type": "Collocation",
+       "ipa": "/ə ˈstɔr əˌsɪstənt/",
+       "stress": "a STORE as-SIS-tant",
+       "band": "4–5",
+       "grammar": "đếm được; a store assistant (không phải an)",
+       "ex": "She works as a store assistant on weekends."
+      }
+     ]
+    },
+    {
+     "mean": "trung tâm thương mại, cửa hàng bách hóa",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "a department store",
+       "type": "Collocation",
+       "ipa": "/ə dɪˈpɑrtmənt ˌstɔr/",
+       "stress": "a de-PART-ment store",
+       "band": "4–5",
+       "grammar": "đếm được",
+       "ex": "The department store has a new computer section."
+      }
+     ]
+    },
+    {
+     "mean": "ngành bán lẻ",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "retail",
+       "type": "Vocab",
+       "ipa": "/ˈriˌteɪl/",
+       "stress": "RE-tail",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: work in retail",
+       "ex": "My sister has worked in retail for three years."
+      }
+     ]
+    },
+    {
+     "mean": "ngành nhà hàng – khách sạn",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "hospitality",
+       "type": "Vocab",
+       "ipa": "/ˌhɑspɪˈtæləɾi/",
+       "stress": "hos-pi-TAL-i-ty",
+       "band": "7–8",
+       "grammar": "không đếm được; (sách: hotel and catering)",
+       "ex": "Many students get part-time jobs in hospitality."
+      }
+     ]
+    },
+    {
+     "mean": "ngành xây dựng",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "construction",
+       "type": "Vocab",
+       "ipa": "/kənˈstrʌkʃən/",
+       "stress": "con-STRUC-tion",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: work in construction",
+       "ex": "My uncle is an engineer in construction."
+      }
+     ]
+    },
+    {
+     "mean": "nhà thiết kế đồ họa",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "a graphic designer",
+       "type": "Collocation",
+       "ipa": "/ə ˈɡræfɪk dɪˈzaɪnɚ/",
+       "stress": "a GRAPH-ic de-SIGN-er",
+       "band": "5.5–6.5",
+       "grammar": "đếm được; design không đọc âm g",
+       "ex": "A graphic designer made the logo for our school club."
+      }
+     ]
+    },
+    {
+     "mean": "công nghệ thông tin (IT)",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "information technology",
+       "type": "Collocation",
+       "ipa": "/ˌɪnfɚˌmeɪʃən tɛkˈnɑlədʒi/",
+       "stress": "in-for-MA-tion tech-NOL-o-gy",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: ✗ informations",
+       "ex": "She has just finished a course in information technology."
+      }
+     ]
+    },
+    {
+     "mean": "lực lượng khẩn cấp (cấp cứu, cứu hỏa, cảnh sát)",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "the emergency services",
+       "type": "Collocation",
+       "ipa": "/ði ɪˈmɝdʒənsi ˌsɝvɪsɪz/",
+       "stress": "the e-MER-gen-cy SER-vic-es",
+       "band": "7–8",
+       "grammar": "số nhiều; work in + the emergency services",
+       "ex": "Nurses in the emergency services often work night shifts."
+      }
+     ]
+    },
+    {
+     "mean": "nghiên cứu và phát triển (R&D)",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "research and development",
+       "type": "Collocation",
+       "ipa": "/rɪˈsɝtʃ ən dɪˈvɛləpmənt/",
+       "stress": "re-SEARCH and de-VEL-op-ment",
+       "band": "7–8",
+       "grammar": "không đếm được",
+       "ex": "Some dentists work in research and development for toothpaste companies."
+      }
+     ]
+    },
+    {
+     "mean": "nhiều loại, đa dạng",
+     "cat": "C. Jobs & workplaces",
+     "items": [
+      {
+       "w": "a wide range of",
+       "type": "Collocation",
+       "ipa": "/ə ˌwaɪd ˈreɪndʒ əv/",
+       "stress": "a wide RANGE of",
+       "band": "5.5–6.5",
+       "grammar": "a wide range of + N số nhiều / không đếm được",
+       "ex": "The store sells a wide range of smart watches."
+      }
+     ]
+    },
+    {
+     "mean": "phòng khám nha khoa",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "a dental clinic",
+       "type": "Collocation",
+       "ipa": "/ə ˌdɛntəl ˈklɪnɪk/",
+       "stress": "a DEN-tal CLIN-ic",
+       "band": "5.5–6.5",
+       "grammar": "at + a dental clinic",
+       "ex": "There is a small dental clinic near my house."
+      }
+     ]
+    },
+    {
+     "mean": "bác sĩ chỉnh nha (niềng răng)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "an orthodontist",
+       "type": "Vocab",
+       "ipa": "/ən ˌɔrθəˈdɑntɪst/",
+       "stress": "an or-tho-DON-tist",
+       "band": "7–8",
+       "grammar": "đếm được; dentist = nha sĩ chung",
+       "ex": "I saw an orthodontist when I got my braces."
+      }
+     ]
+    },
+    {
+     "mean": "điều trị cho bệnh nhân",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "treat patients",
+       "type": "Collocation",
+       "ipa": "/ˌtrit ˈpeɪʃənts/",
+       "stress": "treat PA-tients",
+       "band": "5.5–6.5",
+       "grammar": "treat + sb + for + bệnh; QK treated",
+       "ex": "Final-year students treat patients under a teacher’s eye."
+      }
+     ]
+    },
+    {
+     "mean": "kỳ thực tập",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "an internship",
+       "type": "Vocab",
+       "ipa": "/ən ˈɪnˌtɝnʃɪp/",
+       "stress": "an IN-tern-ship",
+       "band": "5.5–6.5",
+       "grammar": "do an internship at + nơi; người thực tập = an intern",
+       "ex": "Dental students do an internship at a hospital in their last year."
+      }
+     ],
+     "note": "internship = thực tập (có thể có lương) · shadow a dentist = chỉ đi theo quan sát"
+    },
+    {
+     "mean": "đi theo quan sát nha sĩ làm việc (để học nghề)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "shadow a dentist",
+       "type": "Collocation",
+       "ipa": "/ˈʃædoʊ ə ˈdɛntɪst/",
+       "stress": "SHAD-ow a DEN-tist",
+       "band": "7–8",
+       "grammar": "shadow + sb; danh từ job shadowing",
+       "ex": "Last summer I spent a week shadowing a dentist."
+      }
+     ]
+    },
+    {
+     "mean": "tạo ra thay đổi tốt",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "make a difference",
+       "type": "Collocation",
+       "ipa": "/ˌmeɪk ə ˈdɪfrəns/",
+       "stress": "make‿a DIF-ference",
+       "band": "5.5–6.5",
+       "grammar": "make a difference to / in + N",
+       "ex": "I want a job where I can make a difference to people’s lives."
+      },
+      {
+       "w": "go the extra mile",
+       "type": "Idiom",
+       "ipa": "/ɡoʊ ði ˌɛkstrə ˈmaɪl/",
+       "stress": "go the EX-tra MILE",
+       "band": "7–8",
+       "grammar": "QK went",
+       "ex": "My dentist always goes the extra mile for nervous patients."
+      }
+     ],
+     "note": "make a difference to / in + N · go the extra mile = làm hơn mức cần thiết"
+    },
+    {
+     "mean": "thiên hướng, nghề mình được \"gọi\" để làm",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "a calling",
+       "type": "Vocab",
+       "ipa": "/ə ˈkɔlɪŋ/",
+       "stress": "a CALL-ing",
+       "band": "7–8",
+       "grammar": "đếm được: a calling, not just a job",
+       "ex": "For my aunt, nursing is a calling, not just a job."
+      },
+      {
+       "w": "occupation",
+       "type": "Vocab",
+       "ipa": "/ˌɑkjəˈpeɪʃən/",
+       "stress": "oc-cu-PA-tion",
+       "band": "5.5–6.5",
+       "grammar": "trang trọng, hay gặp trong form",
+       "ex": "Please write your occupation on the form."
+      }
+     ],
+     "note": "a calling = nghề mình thấy được \"gọi\" để làm · occupation = từ trang trọng chỉ nghề (trong form)"
+    },
+    {
+     "mean": "có được bước đầu để bước chân vào (ngành)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "get my foot in the door",
+       "type": "Idiom",
+       "ipa": "/ˌɡɛt maɪ ˈfʊt ɪn ðə ˈdɔr/",
+       "stress": "get my FOOT in the DOOR",
+       "band": "7–8",
+       "grammar": "get + my / your + foot in the door (of + N)",
+       "ex": "An internship can help me get my foot in the door."
+      }
+     ]
+    },
+    {
+     "mean": "cực kỳ vui, phấn khích (cảm xúc của người)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "thrilled",
+       "type": "Vocab",
+       "ipa": "/θrɪld/",
+       "stress": "THRILLED",
+       "band": "7–8",
+       "grammar": "be thrilled to V / about N; ↔ thrilling (sự việc)",
+       "ex": "I was thrilled to get a place on the workshop."
+      }
+     ]
+    },
+    {
+     "mean": "kinh ngạc (người); ↔ amazing (sự việc)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "amazed",
+       "type": "Vocab",
+       "ipa": "/əˈmeɪzd/",
+       "stress": "a-MAZED",
+       "band": "5.5–6.5",
+       "grammar": "be amazed at / by + N; đuôi -ed đọc /d/",
+       "ex": "I was amazed by how calm the dentist was."
+      }
+     ]
+    },
+    {
+     "mean": "khó nhưng thú vị, thử thách (sự việc)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "challenging",
+       "type": "Vocab",
+       "ipa": "/ˈtʃælɪndʒɪŋ/",
+       "stress": "CHAL-leng-ing",
+       "band": "5.5–6.5",
+       "grammar": "↔ challenged (người); It is challenging to + V",
+       "ex": "Medical school is challenging, but I am ready."
+      },
+      {
+       "w": "no walk in the park",
+       "type": "Idiom",
+       "ipa": "/ˌnoʊ ˌwɔk ɪn ðə ˈpɑrk/",
+       "stress": "no WALK in the PARK",
+       "band": "7–8",
+       "grammar": "sth is no walk in the park",
+       "ex": "Dental school is no walk in the park."
+      },
+      {
+       "w": "a competitive industry",
+       "type": "Collocation",
+       "ipa": "/ə kəmˌpɛtəɾɪv ˈɪndəstri/",
+       "stress": "a com-PET-i-tive IN-dus-try",
+       "band": "7–8",
+       "grammar": "đếm được",
+       "ex": "Design is a very competitive industry."
+      },
+      {
+       "w": "a high-pressure job",
+       "type": "Collocation",
+       "ipa": "/ə ˌhaɪˈprɛʃɚ ˈdʒɑb/",
+       "stress": "a high-PRES-sure job",
+       "band": "7–8",
+       "grammar": "có gạch nối khi đứng trước danh từ",
+       "ex": "Working in an emergency room is a high-pressure job."
+      }
+     ],
+     "note": "challenging = khó nhưng hay (tích cực) · no walk in the park = idiom \"không dễ chút nào\" · a competitive industry = ngành cạnh tranh · a high-pressure job = áp lực cao"
+    },
+    {
+     "mean": "làm kiệt sức (sự việc); ↔ exhausted (người)",
+     "cat": "D. Dentistry, medical school & feelings",
+     "items": [
+      {
+       "w": "exhausting",
+       "type": "Vocab",
+       "ipa": "/ɪɡˈzɔstɪŋ/",
+       "stress": "ex-HAUST-ing",
+       "band": "5.5–6.5",
+       "grammar": "h không đọc: /ɪɡˈzɔ/",
+       "ex": "A twelve-hour shift at a hospital is exhausting."
+      },
+      {
+       "w": "drained",
+       "type": "Vocab",
+       "ipa": "/dreɪnd/",
+       "stress": "DRAINED",
+       "band": "7–8",
+       "grammar": "feel drained (người)",
+       "ex": "After a twelve-hour shift, she felt completely drained."
+      },
+      {
+       "w": "wear (sb) out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwɛr ˈaʊt/",
+       "stress": "wear_OUT",
+       "band": "5.5–6.5",
+       "grammar": "tách được: wear me out",
+       "ex": "Night shifts really wear nurses out."
+      },
+      {
+       "w": "be run off my feet",
+       "type": "Idiom",
+       "ipa": "/bi ˌrʌn ɔf maɪ ˈfit/",
+       "stress": "be run OFF my FEET",
+       "band": "7–8",
+       "grammar": "thân mật; be run off + my / her + feet",
+       "ex": "On Saturdays, the clinic staff are run off their feet."
+      }
+     ],
+     "note": "-ing = sự việc làm mệt ↔ drained (người, band 7–8) · wear sb out = phrasal verb · be run off my feet = bận tối mắt (thân mật)"
+    },
+    {
+     "mean": "tự kinh doanh, mở cơ sở riêng",
+     "cat": "E. Alternatives band 7–8",
+     "items": [
+      {
+       "w": "run my own business",
+       "type": "Collocation",
+       "ipa": "/ˌrʌn maɪ ˌoʊn ˈbɪznəs/",
+       "stress": "run my OWN BUS-i-ness",
+       "band": "5.5–6.5",
+       "grammar": "QK ran",
+       "ex": "My parents run their own business."
+      },
+      {
+       "w": "set up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌsɛt ˈʌp/",
+       "stress": "set_UP",
+       "band": "5.5–6.5",
+       "grammar": "tách được: set up a clinic / set it up",
+       "ex": "One day I want to set up my own clinic."
+      },
+      {
+       "w": "take over",
+       "type": "Phrasal verb",
+       "ipa": "/ˌteɪk ˈoʊvɚ/",
+       "stress": "take_O-ver",
+       "band": "5.5–6.5",
+       "grammar": "take over + N / take over from + người",
+       "ex": "She will take over her father’s clinic."
+      },
+      {
+       "w": "from the ground up",
+       "type": "Idiom",
+       "ipa": "/frəm ðə ˌɡraʊnd ˈʌp/",
+       "stress": "from the GROUND UP",
+       "band": "7–8",
+       "grammar": "build / start + sth + from the ground up",
+       "ex": "My parents built their business from the ground up."
+      }
+     ],
+     "note": "run my own business = đang kinh doanh · set up = thành lập · take over = tiếp quản cơ sở của người khác · from the ground up = gây dựng từ đầu"
+    },
+    {
+     "mean": "nghỉ việc",
+     "cat": "E. Alternatives band 7–8",
+     "items": [
+      {
+       "w": "resign",
+       "type": "Vocab",
+       "ipa": "/rɪˈzaɪn/",
+       "stress": "re-SIGN",
+       "band": "5.5–6.5",
+       "grammar": "g câm; resign from + job",
+       "ex": "He resigned from the bank to open a café."
+      },
+      {
+       "w": "hand in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhænd ˈɪn/",
+       "stress": "hand_IN",
+       "band": "5.5–6.5",
+       "grammar": "tách được: hand in my notice / hand it in",
+       "ex": "He handed in his notice last week."
+      },
+      {
+       "w": "step down",
+       "type": "Phrasal verb",
+       "ipa": "/ˌstɛp ˈdaʊn/",
+       "stress": "step DOWN",
+       "band": "7–8",
+       "grammar": "step down (as + chức vụ)",
+       "ex": "The director stepped down after twenty years."
+      },
+      {
+       "w": "call it quits",
+       "type": "Idiom",
+       "ipa": "/ˌkɔl ɪt ˈkwɪts/",
+       "stress": "call_it QUITS",
+       "band": "7–8",
+       "grammar": "thân mật; QK called it quits",
+       "ex": "After ten years in retail, she called it quits."
+      }
+     ],
+     "note": "resign (trang trọng) · hand in my notice = nộp đơn nghỉ · step down = rời chức vụ cao · call it quits = thân mật"
+    },
+    {
+     "mean": "chăm chỉ, dốc sức làm",
+     "cat": "E. Alternatives band 7–8",
+     "items": [
+      {
+       "w": "knuckle down",
+       "type": "Phrasal verb",
+       "ipa": "/ˌnʌkəl ˈdaʊn/",
+       "stress": "knuck-le DOWN",
+       "band": "7–8",
+       "grammar": "không tân ngữ; knuckle down to + N",
+       "ex": "I need to knuckle down before the entrance exam."
+      },
+      {
+       "w": "carry on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkæri ˈɑn/",
+       "stress": "car-ry_ON",
+       "band": "5.5–6.5",
+       "grammar": "carry on + V-ing / with + N",
+       "ex": "She carried on working after she had a baby."
+      },
+      {
+       "w": "meet a target",
+       "type": "Collocation",
+       "ipa": "/ˌmit ə ˈtɑrɡɪt/",
+       "stress": "meet_a TAR-get",
+       "band": "5.5–6.5",
+       "grammar": "meet / hit + a target",
+       "ex": "Store assistants have to meet a sales target."
+      }
+     ],
+     "note": "knuckle down = bắt đầu nghiêm túc · carry on = tiếp tục (không bỏ) · meet a target = đạt chỉ tiêu"
+    },
+    {
+     "mean": "cấp trên, hướng nghiệp",
+     "cat": "E. Alternatives band 7–8",
+     "items": [
+      {
+       "w": "report to",
+       "type": "Phrasal verb",
+       "ipa": "/rɪˈpɔrt tu/",
+       "stress": "re-PORT to",
+       "band": "5.5–6.5",
+       "grammar": "report to + người",
+       "ex": "Interns report to the head dentist."
+      },
+      {
+       "w": "career advice",
+       "type": "Collocation",
+       "ipa": "/kəˈrɪr ədˌvaɪs/",
+       "stress": "ca-REER ad-VICE",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: ✗ advices",
+       "ex": "Our school counselor gives career advice."
+      },
+      {
+       "w": "a professional qualification",
+       "type": "Collocation",
+       "ipa": "/ə prəˌfɛʃənəl ˌkwɑləfəˈkeɪʃən/",
+       "stress": "a pro-FES-sion-al qual-i-fi-CA-tion",
+       "band": "7–8",
+       "grammar": "gain + a professional qualification",
+       "ex": "You need a professional qualification to work as a nurse."
+      }
+     ],
+     "note": "report to + người quản lý · career advice không đếm được · a professional qualification = bằng chuyên môn"
+    },
+    {
+     "mean": "tìm việc, ứng tuyển, phỏng vấn",
+     "cat": "E. Alternatives band 7–8",
+     "items": [
+      {
+       "w": "attend a job interview",
+       "type": "Collocation",
+       "ipa": "/əˌtɛnd ə ˈdʒɑb ˌɪntɚvju/",
+       "stress": "at-TEND a JOB in-ter-view",
+       "band": "5.5–6.5",
+       "grammar": "attend / have + a job interview",
+       "ex": "My brother attended three job interviews last month."
+      },
+      {
+       "w": "apply for a position",
+       "type": "Collocation",
+       "ipa": "/əˌplaɪ fɚ ə pəˈzɪʃən/",
+       "stress": "ap-PLY for a po-SI-tion",
+       "band": "5.5–6.5",
+       "grammar": "apply FOR a job ≠ apply TO a school",
+       "ex": "I will apply for a position at a dental clinic."
+      },
+      {
+       "w": "job hunting",
+       "type": "Collocation",
+       "ipa": "/ˈdʒɑb ˌhʌntɪŋ/",
+       "stress": "JOB hunt-ing",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: go job hunting",
+       "ex": "My sister went job hunting after graduation."
+      },
+      {
+       "w": "look into",
+       "type": "Phrasal verb",
+       "ipa": "/ˌlʊk ˈɪntu/",
+       "stress": "look_IN-to",
+       "band": "5.5–6.5",
+       "grammar": "không tách: look into + N",
+       "ex": "I am looking into scholarships for dental school."
+      }
+     ],
+     "note": "job hunting = quá trình tìm việc · apply for a position = nộp đơn · attend a job interview · look into = tìm hiểu kỹ trước khi quyết"
     }
    ]
   }

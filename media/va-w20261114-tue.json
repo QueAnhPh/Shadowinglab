@@ -1,0 +1,182 @@
+[
+ {
+  "text": "'Definitely. / I could 'never work in 'sales. //",
+  "start": 127.86,
+  "end": 131.29,
+  "chunks": [
+   [
+    2.8,
+    3.79
+   ],
+   [
+    5.39,
+    7.33
+   ]
+  ],
+  "label": "Bài 1 · Is there a job you would never want to do?"
+ },
+ {
+  "text": "The 'main reason is / that I'm 'quite 'shy, / so I'm 'simply !!not 'cut ‿ out for!! / per'suading 'strangers to buy things. //",
+  "start": 131.29,
+  "end": 138.77,
+  "chunks": [
+   [
+    10.27,
+    11.67
+   ],
+   [
+    13.67,
+    15.01
+   ],
+   [
+    16.94,
+    18.83
+   ],
+   [
+    21.32,
+    23.63
+   ]
+  ],
+  "label": "Bài 1 · Is there a job you would never want to do?"
+ },
+ {
+  "text": "My 'cousin worked as ++a 'store as'sistant++ / at a de'partment store ‿ last 'summer, / and she had to ++meet a 'sales target++ / every 'single 'week. //",
+  "start": 138.77,
+  "end": 147.05,
+  "chunks": [
+   [
+    26.94,
+    29.19
+   ],
+   [
+    32.04,
+    34.09
+   ],
+   [
+    36.74,
+    38.89
+   ],
+   [
+    41.64,
+    42.98
+   ]
+  ],
+  "label": "Bài 1 · Is there a job you would never want to do?"
+ },
+ {
+  "text": "She said it was ++a 'high-'pressure 'job++, / and she was !!run 'off her 'feet!! ‿ on 'weekends. //",
+  "start": 147.05,
+  "end": 151.95,
+  "chunks": [
+   [
+    45.33,
+    47.44
+   ],
+   [
+    50.15,
+    52.66
+   ]
+  ],
+  "label": "Bài 1 · Is there a job you would never want to do?"
+ },
+ {
+  "text": "Just 'hearing about it / made me feel ==com'pletely 'drained==. //",
+  "start": 151.95,
+  "end": 155.74,
+  "chunks": [
+   [
+    56.18,
+    57.45
+   ],
+   [
+    59.33,
+    61.31
+   ]
+  ],
+  "label": "Bài 1 · Is there a job you would never want to do?"
+ },
+ {
+  "text": "'Yes, / I think it 'really 'matters. //",
+  "start": 155.74,
+  "end": 158.73,
+  "chunks": [
+   [
+    64.29,
+    65.07
+   ],
+   [
+    66.46,
+    68.2
+   ]
+  ],
+  "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+ },
+ {
+  "text": "If you 'choose your ++ca'reer path++ ‿ early, / you can pick the 'right 'subjects / and a'void ending up in !!a 'dead-'end 'job!!. //",
+  "start": 158.73,
+  "end": 165.53,
+  "chunks": [
+   [
+    70.94,
+    73.03
+   ],
+   [
+    75.72,
+    77.58
+   ],
+   [
+    80.04,
+    82.45
+   ]
+  ],
+  "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+ },
+ {
+  "text": "For ex'ample, / I de'cided on 'dentistry ‿ in 'ninth grade, / so I've been ++'knuckling 'down++ in bi'ology, / and I even spent a 'week / 'shadowing ==an ortho'dontist==. //",
+  "start": 165.53,
+  "end": 175.41,
+  "chunks": [
+   [
+    85.85,
+    86.88
+   ],
+   [
+    88.5,
+    91.3
+   ],
+   [
+    94.7,
+    97.0
+   ],
+   [
+    99.9,
+    101.51
+   ],
+   [
+    103.72,
+    105.59
+   ]
+  ],
+  "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+ },
+ {
+  "text": "'Honestly, / it gave me ++a 'real 'sense of a'chievement++, / and I feel like I've al'ready !!got my 'foot in the 'door!!. //",
+  "start": 175.41,
+  "end": 182.38,
+  "chunks": [
+   [
+    108.47,
+    109.41
+   ],
+   [
+    110.94,
+    113.34
+   ],
+   [
+    116.34,
+    119.61
+   ]
+  ],
+  "label": "Bài 2 · Do you think it's important to plan your career while you're still in school?"
+ }
+]
