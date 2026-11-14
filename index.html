@@ -767,7 +767,7 @@ function diagnose(exp, heard) {
 
 /* ---------- cloud: Google sign-in + progress saved online (cloud.js) ---------- */
 const cloudOn = () => !!(window.Cloud && window.Cloud.enabled);
-const cloudUser = () => cloudOn() ? window.Cloud.user : null;
+const cloudUser = () => cloudOn() && !PREVIEW ? window.Cloud.user : null;
 function syncBest(lessonId, best) { if (cloudUser()) window.Cloud.saveBest(lessonId, best); }
 function studentForEmail(email) {
   email = (email || "").toLowerCase();
@@ -788,6 +788,17 @@ function mergeBest(cloudBest) {
 }
 let cloudNote = "";
 let TEACH = null;   // null = not a teacher; [] or rows = teacher view data
+/* giáo viên "👁 Xem như HS": hiện đúng giao diện của HS đó (bài theo ngày mở, flashcard, tiến độ), không ghi gì lên mạng */
+let PREVIEW = null, PREV_STASH = null;
+function startPreview(sid) {
+  PREVIEW = sid; student = sid;
+  if (window.Cloud && !PREV_STASH) { PREV_STASH = {}; for (const k of ["save", "saveBest", "saveTake"]) if (typeof window.Cloud[k] === "function") { PREV_STASH[k] = window.Cloud[k]; window.Cloud[k] = () => Promise.resolve(); } }
+  location.hash = ""; route();
+}
+function endPreview() {
+  if (PREV_STASH) { Object.assign(window.Cloud, PREV_STASH); PREV_STASH = null; }
+  PREVIEW = null; student = null; location.hash = ""; route();
+}
 async function checkTeacher(user) {
   try { TEACH = await window.Cloud.listUsers(); return true; }
   catch (e) { TEACH = null; return false; }
@@ -818,12 +829,14 @@ window.addEventListener("cloud-ready", () => { if (cloudOn()) window.Cloud.onCha
 /* ---------- views ---------- */
 function setWho() {
   const s = DATA.students.find(x => x.id === student), u = cloudUser();
+  if (TEACH && PREVIEW) { $("#who").textContent = "👁 Xem như HS: " + (s ? s.name : PREVIEW) + " · thử, không lưu"; $("#switchBtn").hidden = false; $("#switchBtn").textContent = "↩ Về màn giáo viên"; return; }
   if (TEACH && u) { $("#who").textContent = "Giáo viên · " + u.email; $("#switchBtn").hidden = false; $("#switchBtn").textContent = "Đăng xuất"; return; }
   $("#who").textContent = s ? "Học viên: " + s.name + (u ? " · đã lưu online" : "") : (u ? u.email : "");
   $("#switchBtn").hidden = !s && !u;
   $("#switchBtn").textContent = u ? "Đăng xuất" : "Đổi tên";
 }
 $("#switchBtn").addEventListener("click", async () => {
+  if (PREVIEW) return endPreview();
   if (cloudUser()) { await window.Cloud.flush(); await window.Cloud.signOut(); }
   TEACH = null;
   student = null; store.set("student", null); location.hash = ""; route();
@@ -894,7 +907,7 @@ function opensLater(L) { /* opens = "YYYY-MM-DD"; opensAt = "HH:MM" (tuỳ chọ
   const dl = daysLeft(L.opens); if (dl > 0) return true; if (dl < 0 || !L.opensAt) return false;
   const [h, m] = L.opensAt.split(":").map(Number), now = new Date(); return now.getHours() * 60 + now.getMinutes() < h * 60 + (m || 0);
 }
-function lockedUntil(L) { if (!L.opens || TEACH || !opensLater(L)) return ""; const d = parseDay(L.opens); return `${L.opensAt && daysLeft(L.opens) === 0 ? L.opensAt + " " : ""}${VI_WD[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}`; }
+function lockedUntil(L) { if (!L.opens || (TEACH && !PREVIEW) || !opensLater(L)) return ""; const d = parseDay(L.opens); return `${L.opensAt && daysLeft(L.opens) === 0 ? L.opensAt + " " : ""}${VI_WD[d.getDay()]} ${d.getDate()}/${d.getMonth() + 1}`; }
 function lessonButton(L) {
   const lock = lockedUntil(L);
   if (lock) return `<button class="lesson locked" disabled><span class="ring" style="--p:0"><i>🔒</i></span><span class="t"><b>${esc(L.title)}</b><span>Mở vào ${esc(lock)}</span></span></button>`;
@@ -917,7 +930,7 @@ function pendingHomework(mine) {
 const BANDS = [["fc", "Fluency"], ["lr", "Vocabulary"], ["gra", "Grammar"], ["p", "Pronunciation"]];
 const BAND_COLORS = { fc: "#8A5A35", lr: "#2E7D4F", gra: "#3C6FB0", p: "#C2413A", listening: "#B5650F" };
 function ieltsRound(x) { const f = x - Math.floor(x); return Math.floor(x) + (f < 0.25 ? 0 : f < 0.75 ? 0.5 : 1); }
-function weeksOf(sid) { const S = DATA.students.find(x => x.id === sid); return ((S && S.weekly) || []).filter(w => !w.draft || TEACH).sort((a, b) => (a.week < b.week ? -1 : 1)); }
+function weeksOf(sid) { const S = DATA.students.find(x => x.id === sid); return ((S && S.weekly) || []).filter(w => !w.draft || (TEACH && !PREVIEW)).sort((a, b) => (a.week < b.week ? -1 : 1)); }
 function bandBars(sid) {
   const S = DATA.students.find(x => x.id === sid), P = (S && S.profile) || {}, B = P.bands || {};
   const ks = BANDS.filter(([k]) => B[k] != null);
@@ -2589,11 +2602,12 @@ function viewTeacher() {
       }).join("")}</div></section>` : ""}
     ${rows.map(r => `<details class="sess tstu" data-sid="${r.s.id}" ${teachOpen === r.s.id ? "open" : ""}>
       <summary><span class="sname">${esc(r.s.name)}</span><span class="smeta">${r.docs.length ? esc(r.docs.map(u => u.email).join(", ")) + " · " + ago(r.last) : "chưa đăng nhập lần nào"}</span></summary>
-      ${profileCard(r.s.id, false)}<details class="tprog"><summary>📈 Tiến độ theo tuần (${weeksOf(r.s.id).length} tuần)</summary><section class="prog">${progressHTML(r.s.id)}</section></details>${teacherWeeks(r)}</details>`).join("")}
+      <div class="actions"><button class="tview" data-sid="${r.s.id}">👁 Xem như ${esc(r.s.name)}</button></div>${profileCard(r.s.id, false)}<details class="tprog"><summary>📈 Tiến độ theo tuần (${weeksOf(r.s.id).length} tuần)</summary><section class="prog">${progressHTML(r.s.id)}</section></details>${teacherWeeks(r)}</details>`).join("")}
     ${unknown.length ? `<p class="muted">Tài khoản đã đăng nhập nhưng chưa chọn tên: ${esc(unknown.map(u => u.email).join(", "))}</p>` : ""}`;
   loadSubs(rows);
   $("#app").querySelectorAll(".wktog").forEach(b => b.addEventListener("click", () => { const tb = b.closest(".wkb"); tb.classList.toggle("open"); b.querySelector(".car").textContent = tb.classList.contains("open") ? "▾" : "▸"; }));
   $("#tReload").addEventListener("click", async e => { e.currentTarget.disabled = true; await checkTeacher(cloudUser()); route(); });
+  $("#app").querySelectorAll(".tview").forEach(b => b.addEventListener("click", () => startPreview(b.dataset.sid)));
   $("#app").querySelectorAll("details.tstu").forEach(d => d.addEventListener("toggle", () => { if (d.open) teachOpen = d.dataset.sid; }));
   $("#app").querySelectorAll(".trow[data-go]").forEach(b => b.addEventListener("click", () => { location.hash = b.dataset.go; }));
   /* bấm ô % trong bảng tuần: 1 bài → mở luôn bài đó; nhiều bài → chọn bài (kèm % từng bài) */
@@ -3286,7 +3300,7 @@ function viewMe() {
   $("#backBtn").addEventListener("click", () => { location.hash = ""; });
 }
 function setNav(where) {
-  const on = !!student && !TEACH;
+  const on = !!student && (!TEACH || !!PREVIEW);
   const side = $("#side"), btn = $("#menuBtn");
   side.hidden = !on; btn.hidden = !on; document.body.classList.toggle("has-side", on);
   side.querySelectorAll("[data-nav]").forEach(a => a.classList.toggle("on", a.dataset.nav === where));
@@ -3295,8 +3309,9 @@ function setNav(where) {
 function route() {
   if (!DATA) return;
   endTour();
-  document.body.classList.toggle("teachwide", !!TEACH);
-  if (TEACH) {
+  document.body.classList.toggle("teachwide", !!TEACH && !PREVIEW);
+  if (TEACH && PREVIEW) student = PREVIEW;
+  if (TEACH && !PREVIEW) {
     setWho();
     const m = location.hash.match(/^#teach~([^~]+)~(.+)$/);
     const T = m && DATA.lessons.find(x => x.id === m[2]);
