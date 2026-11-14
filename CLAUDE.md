@@ -2,9 +2,9 @@
 
 Đọc `tools/lesson/SHARED_RULES.md` trước khi soạn bài, flashcard hay sửa web.
 
-## Context lớp: file `claude/...` nằm trên Google Drive
+## Context lớp: chỉ dùng Drive khi phiên KHÔNG có tool Projects
 
-Phiên có repo này (Claude Code) **không có tool Projects**. Mọi chỗ trong prompt / lịch tự động nói "Projects", "project", `project_info`, `project_read`, `project_write` hay file `claude/<đường dẫn>` thì dùng Google Drive (connector Google_Drive):
+Thread trong project (có tool Projects) thì đọc / ghi file `claude/...` của project như bình thường, bỏ qua mục này. Chỉ khi phiên **không có tool Projects**: mọi chỗ trong prompt / lịch tự động nói "Projects", "project", `project_info`, `project_read`, `project_write` hay file `claude/<đường dẫn>` thì dùng Google Drive (connector Google_Drive):
 
 | Lớp | Thư mục Drive | id |
 | --- | --- | --- |
