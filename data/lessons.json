@@ -9631,6 +9631,21 @@
      "at": 100.7
     }
    ]
+  },
+  {
+   "id": "_test-ping",
+   "for": [
+    "_test"
+   ],
+   "skill": "Speaking",
+   "session": 0,
+   "topic": "TEST",
+   "title": "TEST – xoá ngay",
+   "sentences": [
+    {
+     "text": "This is a test."
+    }
+   ]
   }
  ],
  "ipa": {
