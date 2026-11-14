@@ -2,6 +2,12 @@
 
 File này là **nguồn chung** cho mọi project / lịch tự động soạn bài trên SpeakBack (lớp Đức–Thư, lớp Vân Anh, lớp sau này). Đọc file này trước khi soạn bài tập, flashcard hay sửa web. Có thay đổi dùng chung thì sửa ở đây (kèm 1 dòng ở mục Nhật ký thay đổi), không chép qua lại giữa các project. Repo công khai: không ghi họ tên đầy đủ, email, lỗi của HS, ghi chú nội bộ.
 
+## 0. Context lớp dùng chung qua Google Drive (từ 14/11/2026)
+
+- Lịch tự động chạy trong phiên có repo (push được) nhưng không thấy file project; chat trong project thấy file project nhưng không push được. **Nguồn context chung = Google Drive**: thư mục `Claude Context – Vân Anh` và `Claude Context – Đức–Thư`, cấu trúc giống `claude/` của project (id + cách đọc / ghi: `CLAUDE.md` ở gốc repo).
+- **Phiên có repo** (lịch tự động): đọc / ghi `claude/...` trên Drive theo `CLAUDE.md`.
+- **Chat trong project:** mỗi lần tạo hoặc sửa file `claude/...` (Context, `s<N>_*.md`, bộ thẻ, mẫu pptx) thì **lưu luôn bản đó lên thư mục Drive** cùng đường dẫn, ghi đè bản cũ, để lịch tự động đọc được bản mới nhất.
+
 ## 1. Flashcard (`decks` trong `data/lessons.json`)
 
 - **Bộ theo topic Speaking của tuần dạy:** `title` = topic Speaking của buổi (vd. *Studies & School life*), không theo phần phát âm hay Listening. Gói bài tập tuần gắn `"deck"` = bộ của topic Speaking vừa dạy; buổi chỉ có Listening (không dạy Speaking) thì gói tuần dùng lại bộ của topic Speaking gần nhất, không tạo bộ mới.
@@ -64,6 +70,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 
 | Ngày | Thay đổi |
 | --- | --- |
+| 14/11/2026 | Context lớp (`claude/...`) dùng chung qua Google Drive: lịch tự động đọc / ghi Drive theo `CLAUDE.md`, chat trong project lưu bản sao lên Drive mỗi lần sửa (mục 0) |
 | 12/11/2026 | Flashcard: nhắc lại quy tắc gom nhóm (1 thẻ = 1 từ bảng Vocab + synonym / collocation / phrasal verb / idiom, lưu ý so sánh; bộ ≈ 44–46 thẻ); `make_deck.py` báo lỗi bộ chưa gom; `dt4` gom lại 85 → 46 thẻ |
 | 10/11/2026 | Flashcard 🧠 Nhớ lại: nghĩa + câu đục lỗ → gõ từ, gợi ý kiểu Hangman, lặp giãn cách 1–30 ngày, trộn từ các bộ cũ; nhắc trước bài khi ≥ 5 thẻ đến hạn |
 | 9/11/2026 | Màn giáo viên + trang HS: xếp theo tuần → ngày (nhãn `T2 9/11`), tách ✅ Đã làm; tiêu đề không ghi thứ; bài nghe nộp rồi là xong, chỉ bài chưa xong mới báo qua hạn |
