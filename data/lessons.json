@@ -13447,7 +13447,7 @@
        "stress": "in-GRE-di-ent",
        "band": "5.5–6.5",
        "grammar": "đếm được: the ingredients of / for + dish",
-       "ex": "Flour and water are the main ingredients of the dough."
+       "ex": "Fresh ingredients make a big difference."
       },
       {
        "w": "fresh ingredients",
@@ -13572,16 +13572,34 @@
        "ex": "I really miss a home-cooked meal when I'm away."
       },
       {
-       "w": "a nutritious meal",
+       "w": "a hearty meal",
        "type": "Collocation",
-       "ipa": "/ə nuˌtrɪʃəs ˈmiːl/",
-       "stress": "a nu-TRI-tious MEAL",
+       "ipa": "/ə ˌhɑːrti ˈmiːl/",
+       "stress": "a HEAR-ty MEAL",
+       "band": "5.5–6.5",
+       "grammar": "have / enjoy + a hearty meal",
+       "ex": "We had a hearty meal after the long project."
+      },
+      {
+       "w": "fill up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌfɪl ˈʌp/",
+       "stress": "fill‿UP",
+       "band": "4–5",
+       "grammar": "fill up on + N",
+       "ex": "Don't fill up on bread before the main dish."
+      },
+      {
+       "w": "eat like a horse",
+       "type": "Idiom",
+       "ipa": "/ˌiːt laɪk ə ˈhɔːrs/",
+       "stress": "eat LIKE‿a HORSE",
        "band": "7–8",
-       "grammar": "eat / prepare + a nutritious meal",
-       "ex": "A bowl of pho can be a nutritious meal."
+       "grammar": "eat like a horse",
+       "ex": "My brother eats like a horse after the gym."
       }
      ],
-     "note": "meal đếm được · have + breakfast / lunch / dinner (không có a) · feast = bữa thịnh soạn · home-cooked = nhà nấu · nutritious = bổ dưỡng"
+     "note": "meal đếm được · have + breakfast / lunch / dinner (không có a) · feast = bữa thịnh soạn · a hearty meal = bữa no nê · fill up = ăn no · eat like a horse = ăn rất khỏe"
     },
     {
      "mean": "đồ ăn vặt",
@@ -13615,16 +13633,34 @@
        "ex": "Nuts are a healthy snack for long workdays."
       },
       {
-       "w": "have a sweet tooth",
+       "w": "eat in moderation",
+       "type": "Collocation",
+       "ipa": "/ˌiːt ɪn ˌmɑːdəˈreɪʃn/",
+       "stress": "eat in mod-er-A-tion",
+       "band": "7–8",
+       "grammar": "eat / drink + sth + in moderation",
+       "ex": "You can eat snacks, but eat in moderation."
+      },
+      {
+       "w": "pig out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpɪɡ ˈaʊt/",
+       "stress": "pig‿OUT",
+       "band": "7–8",
+       "grammar": "pig out on + N (rất thân mật)",
+       "ex": "We pigged out on pizza after the exam."
+      },
+      {
+       "w": "a guilty pleasure",
        "type": "Idiom",
-       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
-       "stress": "have‿a SWEET TOOTH",
-       "band": "5.5–6.5",
-       "grammar": "have + a sweet tooth",
-       "ex": "I have a sweet tooth, so I always buy cakes."
+       "ipa": "/ə ˌɡɪlti ˈpleʒər/",
+       "stress": "a GUIL-ty PLEA-sure",
+       "band": "7–8",
+       "grammar": "sth is my guilty pleasure",
+       "ex": "Fried chicken is my guilty pleasure."
       }
      ],
-     "note": "snack đếm được · treat = món tự thưởng · have a sweet tooth = hảo ngọt"
+     "note": "snack đếm được · treat = món tự thưởng · a guilty pleasure = món biết là không tốt nhưng vẫn mê · eat in moderation = ăn có chừng mực"
     },
     {
      "mean": "đồ ăn mua về, gọi về",
@@ -13637,7 +13673,7 @@
        "stress": "TAKE-out",
        "band": "4–5",
        "grammar": "không đếm được (Mỹ): order / get takeout",
-       "ex": "We ordered takeout because we were too tired to cook."
+       "ex": "We got takeout because we were too tired to cook."
       },
       {
        "w": "takeaway",
@@ -13658,15 +13694,6 @@
        "ex": "It was raining, so we got delivery from a food app."
       },
       {
-       "w": "order takeout",
-       "type": "Collocation",
-       "ipa": "/ˌɔːrdər ˈteɪkaʊt/",
-       "stress": "OR-der TAKE-out",
-       "band": "4–5",
-       "grammar": "order + takeout",
-       "ex": "We order takeout when we work late."
-      },
-      {
        "w": "order in",
        "type": "Phrasal verb",
        "ipa": "/ˌɔːrdər ˈɪn/",
@@ -13674,9 +13701,18 @@
        "band": "4–5",
        "grammar": "không tân ngữ (Mỹ)",
        "ex": "We were too busy, so we ordered in."
+      },
+      {
+       "w": "get food delivered",
+       "type": "Collocation",
+       "ipa": "/ˌɡet ˈfuːd dɪˌlɪvərd/",
+       "stress": "get FOOD de-LIV-ered",
+       "band": "4–5",
+       "grammar": "get + food / lunch + delivered",
+       "ex": "We get food delivered to the office on Fridays."
       }
      ],
-     "note": "takeout (Mỹ) = takeaway (Anh) · delivery = giao tận nơi · order in không có tân ngữ; order takeout có tân ngữ"
+     "note": "takeout (Mỹ) = takeaway (Anh) · delivery = giao tận nơi · order in không có tân ngữ · get food delivered = gọi giao tận nơi"
     },
     {
      "mean": "cay",
@@ -13741,7 +13777,7 @@
        "stress": "de-LI-cious",
        "band": "3–3.5",
        "grammar": "look / taste + delicious",
-       "ex": "The dumplings in the picture look delicious."
+       "ex": "My mom's fried rice is delicious."
       },
       {
        "w": "tasty",
@@ -13832,25 +13868,16 @@
        "ex": "Office workers need healthy eating habits."
       },
       {
-       "w": "eat in moderation",
+       "w": "a nutritious meal",
        "type": "Collocation",
-       "ipa": "/ˌiːt ɪn ˌmɑːdəˈreɪʃn/",
-       "stress": "eat in mod-er-A-tion",
+       "ipa": "/ə nuˌtrɪʃəs ˈmiːl/",
+       "stress": "a nu-TRI-tious MEAL",
        "band": "7–8",
-       "grammar": "eat / drink + sth + in moderation",
-       "ex": "You can eat snacks, but eat in moderation."
-      },
-      {
-       "w": "cut down on",
-       "type": "Phrasal verb",
-       "ipa": "/ˌkʌt ˈdaʊn ɑːn/",
-       "stress": "cut DOWN on",
-       "band": "4–5",
-       "grammar": "cut down on + N / V-ing, không tách",
-       "ex": "I'm trying to cut down on sugar."
+       "grammar": "eat / prepare + a nutritious meal",
+       "ex": "A bowl of pho can be a nutritious meal."
       }
      ],
-     "note": "healthy rộng nhất · nutritious = bổ dưỡng · good for you thân mật, đứng sau be · cut down on = ăn bớt · in moderation = có chừng mực"
+     "note": "healthy rộng nhất · nutritious = bổ dưỡng · good for you thân mật, đứng sau be · a nutritious meal = bữa ăn bổ dưỡng"
     },
     {
      "mean": "nhà làm, tự nấu",
@@ -13873,15 +13900,6 @@
        "band": "4–5",
        "grammar": "home-cooked + food / dinner",
        "ex": "I eat home-cooked food on weekends."
-      },
-      {
-       "w": "cook from scratch",
-       "type": "Collocation",
-       "ipa": "/ˌkʊk frəm ˈskrætʃ/",
-       "stress": "cook from SCRATCH",
-       "band": "5.5–6.5",
-       "grammar": "cook / make + sth + from scratch",
-       "ex": "On Sundays, I cook from scratch."
       },
       {
        "w": "heat up",
@@ -13911,7 +13929,7 @@
        "ex": "This soup tastes like mom used to make."
       }
      ],
-     "note": "homemade + đồ ăn; home-cooked hay đi với meal / food · from scratch = từ nguyên liệu thô · heat up = hâm · whip up = nấu nhanh"
+     "note": "homemade + đồ ăn; home-cooked hay đi với meal / food · heat up = hâm · whip up = nấu nhanh"
     },
     {
      "mean": "ăn chay",
@@ -13997,13 +14015,13 @@
        "ex": "My eating habits changed when I started my internship."
       },
       {
-       "w": "a balanced diet",
+       "w": "a healthy diet",
        "type": "Collocation",
-       "ipa": "/ə ˌbælənst ˈdaɪət/",
-       "stress": "a BAL-anced DI-et",
-       "band": "4–5",
-       "grammar": "have / eat + a balanced diet",
-       "ex": "It's hard to have a balanced diet during exams."
+       "ipa": "/ə ˌhelθi ˈdaɪət/",
+       "stress": "a HEAL-thy DI-et",
+       "band": "3–3.5",
+       "grammar": "have / follow + a healthy diet",
+       "ex": "My doctor told me to follow a healthy diet."
       },
       {
        "w": "go on a diet",
@@ -14036,195 +14054,204 @@
      "note": "diet không chỉ là ăn kiêng · eating habits luôn số nhiều · go on a diet = ăn kiêng · slim down = giảm cân"
     },
     {
-     "mean": "thái, cắt nhỏ",
-     "cat": "B. Hoạt động trong bếp",
+     "mean": "ăn ngoài hàng",
+     "cat": "B. Thói quen ăn uống & ý kiến",
      "items": [
       {
-       "w": "chop onions",
-       "type": "Collocation",
-       "ipa": "/ˌtʃɑːp ˈʌnjənz/",
-       "stress": "chop ON-ions",
+       "w": "eat out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌiːt ˈaʊt/",
+       "stress": "eat‿OUT",
        "band": "3–3.5",
-       "grammar": "chop + onions / vegetables",
-       "ex": "First, chop onions and fry them in a pan."
+       "grammar": "không tân ngữ; QK ate out",
+       "ex": "We eat out every Friday after work."
+      }
+     ],
+     "note": "eat out không tân ngữ; QK ate out · eat outside = ăn ngoài trời (khác nghĩa)"
+    },
+    {
+     "mean": "đồ ăn không tốt cho sức khỏe",
+     "cat": "B. Thói quen ăn uống & ý kiến",
+     "items": [
+      {
+       "w": "junk food",
+       "type": "Collocation",
+       "ipa": "/ˈdʒʌŋk fuːd/",
+       "stress": "JUNK food",
+       "band": "4–5",
+       "grammar": "không đếm được: too much junk food",
+       "ex": "I eat too much junk food when I'm stressed."
       },
       {
-       "w": "chop up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌtʃɑːp ˈʌp/",
-       "stress": "chop‿UP",
-       "band": "4–5",
-       "grammar": "tách được: chop up the onions / chop them up",
-       "ex": "Chop up the cabbage finely."
-      }
-     ],
-     "note": "chop + onions / vegetables; QK chopped /t/ · chop up tách được"
-    },
-    {
-     "mean": "trộn bột",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "mix the dough",
+       "w": "fast food",
        "type": "Collocation",
-       "ipa": "/ˌmɪks ðə ˈdoʊ/",
-       "stress": "mix the DOUGH",
+       "ipa": "/ˌfæst ˈfuːd/",
+       "stress": "FAST food",
        "band": "3–3.5",
-       "grammar": "mix + the dough / sth + with sth",
-       "ex": "Two girls are mixing the dough in a big bowl."
+       "grammar": "không đếm được: a fast food restaurant",
+       "ex": "There is a fast food restaurant next to my office."
       }
      ],
-     "note": "mix + the dough / the flour and water"
+     "note": "junk food không đếm được · fast food = đồ ăn nhanh (gà rán, burger) · junk food rộng hơn (cả snack, nước ngọt)"
     },
     {
-     "mean": "cán bột",
-     "cat": "B. Hoạt động trong bếp",
+     "mean": "gọi đồ ăn mang về",
+     "cat": "B. Thói quen ăn uống & ý kiến",
      "items": [
       {
-       "w": "roll out the dough",
-       "type": "Phrasal verb",
-       "ipa": "/ˌroʊl ˈaʊt ðə ˈdoʊ/",
-       "stress": "roll‿OUT the DOUGH",
+       "w": "order takeout",
+       "type": "Collocation",
+       "ipa": "/ˌɔːrdər ˈteɪkaʊt/",
+       "stress": "OR-der TAKE-out",
        "band": "4–5",
-       "grammar": "roll out + the dough / roll it out",
-       "ex": "She is rolling out the dough to make dumplings."
-      }
-     ],
-     "note": "tách được: roll out the dough / roll it out"
-    },
-    {
-     "mean": "gói, gấp sủi cảo",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "fold dumplings",
-       "type": "Collocation",
-       "ipa": "/ˌfoʊld ˈdʌmplɪŋz/",
-       "stress": "fold DUMP-lings",
-       "band": "4–5",
-       "grammar": "fold + dumplings (+ into shapes)",
-       "ex": "He folded twenty dumplings in ten minutes."
-      }
-     ],
-     "note": "fold + dumplings / into half-moon shapes"
-    },
-    {
-     "mean": "rán trứng",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "fry an egg",
-       "type": "Collocation",
-       "ipa": "/ˌfraɪ ən ˈeɡ/",
-       "stress": "fry‿an EGG",
-       "band": "3–3.5",
-       "grammar": "fry + an egg / fish",
-       "ex": "A girl is frying an egg in a pan."
-      }
-     ],
-     "note": "fry + an egg / some fish; QK fried"
-    },
-    {
-     "mean": "luộc mì",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "boil noodles",
-       "type": "Collocation",
-       "ipa": "/ˌbɔɪl ˈnuːdlz/",
-       "stress": "boil NOO-dles",
-       "band": "3–3.5",
-       "grammar": "boil + noodles / water",
-       "ex": "Boil noodles for three minutes."
-      }
-     ],
-     "note": "boil + noodles / water / eggs"
-    },
-    {
-     "mean": "khuấy nồi canh",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "stir the soup",
-       "type": "Collocation",
-       "ipa": "/ˌstɝː ðə ˈsuːp/",
-       "stress": "stir the SOUP",
-       "band": "4–5",
-       "grammar": "stir + the soup / the sauce; QK stirred",
-       "ex": "A man is stirring the soup with a big spoon."
-      }
-     ],
-     "note": "stir + the soup / the sauce; QK stirred"
-    },
-    {
-     "mean": "nếm nước sốt",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "taste the sauce",
-       "type": "Collocation",
-       "ipa": "/ˌteɪst ðə ˈsɔːs/",
-       "stress": "taste the SAUCE",
-       "band": "4–5",
-       "grammar": "taste + the sauce; QK tasted /ɪd/",
-       "ex": "She tasted the sauce and added some salt."
-      }
-     ],
-     "note": "taste + the sauce / the soup; QK tasted /ɪd/"
-    },
-    {
-     "mean": "dọn bàn, bày món",
-     "cat": "B. Hoạt động trong bếp",
-     "items": [
-      {
-       "w": "set the table",
-       "type": "Collocation",
-       "ipa": "/ˌset ðə ˈteɪbl/",
-       "stress": "set the TA-ble",
-       "band": "4–5",
-       "grammar": "set the table + for + dinner",
-       "ex": "Can you help me set the table for dinner?"
+       "grammar": "order + takeout",
+       "ex": "We order takeout when we work late."
       },
       {
-       "w": "dish up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌdɪʃ ˈʌp/",
-       "stress": "dish‿UP",
-       "band": "7–8",
-       "grammar": "tách được: dish up the soup / dish it up",
-       "ex": "Can you dish up the soup for everyone?"
+       "w": "get takeout",
+       "type": "Collocation",
+       "ipa": "/ˌɡet ˈteɪkaʊt/",
+       "stress": "get TAKE-out",
+       "band": "4–5",
+       "grammar": "get + takeout + from + nơi",
+       "ex": "Let's get takeout from the noodle shop."
       }
      ],
-     "note": "set the table (for + bữa ăn) = bày bát đũa · dish up = múc thức ăn ra đĩa"
+     "note": "order takeout có tân ngữ (Mỹ) · get takeout = mua mang về"
     },
     {
-     "mean": "rửa bát",
-     "cat": "B. Hoạt động trong bếp",
+     "mean": "chế độ ăn cân bằng",
+     "cat": "B. Thói quen ăn uống & ý kiến",
      "items": [
       {
-       "w": "do the dishes",
+       "w": "a balanced diet",
        "type": "Collocation",
-       "ipa": "/ˌduː ðə ˈdɪʃɪz/",
-       "stress": "do the DISH-es",
-       "band": "3–3.5",
-       "grammar": "do + the dishes; QK did the dishes",
-       "ex": "After dinner, I always do the dishes."
-      },
-      {
-       "w": "wash up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌwɑːʃ ˈʌp/",
-       "stress": "wash‿UP",
+       "ipa": "/ə ˌbælənst ˈdaɪət/",
+       "stress": "a BAL-anced DI-et",
        "band": "4–5",
-       "grammar": "Anh – Anh, không tân ngữ",
-       "ex": "In my homestay, I always wash up after dinner."
+       "grammar": "have / eat + a balanced diet",
+       "ex": "It's hard to have a balanced diet during exams."
       }
      ],
-     "note": "do the dishes (Mỹ) = wash up (Anh)"
+     "note": "a balanced diet = đủ chất · a healthy diet = lành mạnh (rộng hơn)"
+    },
+    {
+     "mean": "ăn / dùng ít đi",
+     "cat": "B. Thói quen ăn uống & ý kiến",
+     "items": [
+      {
+       "w": "cut down on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈdaʊn ɑːn/",
+       "stress": "cut DOWN on",
+       "band": "4–5",
+       "grammar": "cut down on + N / V-ing, không tách",
+       "ex": "I'm trying to cut down on sugar."
+      },
+      {
+       "w": "cut back on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈbæk ɑːn/",
+       "stress": "cut BACK on",
+       "band": "5.5–6.5",
+       "grammar": "cut back on + N / V-ing, không tách",
+       "ex": "I cut back on coffee during my internship."
+      }
+     ],
+     "note": "cut down on = cut back on (giảm bớt) · cut out = bỏ hẳn"
+    },
+    {
+     "mean": "tự nấu từ nguyên liệu tươi",
+     "cat": "B. Thói quen ăn uống & ý kiến",
+     "items": [
+      {
+       "w": "cook from scratch",
+       "type": "Collocation",
+       "ipa": "/ˌkʊk frəm ˈskrætʃ/",
+       "stress": "cook from SCRATCH",
+       "band": "5.5–6.5",
+       "grammar": "cook / make + sth + from scratch",
+       "ex": "On Sundays, I cook from scratch for my family."
+      }
+     ],
+     "note": "cook from scratch = không dùng đồ làm sẵn · whip up = nấu nhanh món đơn giản"
+    },
+    {
+     "mean": "món ăn quen, ăn vào thấy dễ chịu",
+     "cat": "B. Thói quen ăn uống & ý kiến",
+     "items": [
+      {
+       "w": "comfort food",
+       "type": "Collocation",
+       "ipa": "/ˈkʌmfərt fuːd/",
+       "stress": "COM-fort food",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: X is my comfort food",
+       "ex": "Instant noodles are my comfort food during exam week."
+      }
+     ],
+     "note": "comfort food không đếm được; thường là món quen từ nhỏ"
+    },
+    {
+     "mean": "người kén ăn",
+     "cat": "B. Thói quen ăn uống & ý kiến",
+     "items": [
+      {
+       "w": "a picky eater",
+       "type": "Collocation",
+       "ipa": "/ə ˌpɪki ˈiːtər/",
+       "stress": "a PICK-y EAT-er",
+       "band": "5.5–6.5",
+       "grammar": "be + a picky eater; used to be + a picky eater",
+       "ex": "I was a picky eater when I was a child."
+      },
+      {
+       "w": "a fussy eater",
+       "type": "Collocation",
+       "ipa": "/ə ˌfʌsi ˈiːtər/",
+       "stress": "a FUSS-y EAT-er",
+       "band": "5.5–6.5",
+       "grammar": "Anh – Anh: be + a fussy eater",
+       "ex": "My little brother is a fussy eater."
+      }
+     ],
+     "note": "a picky eater (Mỹ) = a fussy eater (Anh)"
+    },
+    {
+     "mean": "hảo ngọt",
+     "cat": "B. Thói quen ăn uống & ý kiến",
+     "items": [
+      {
+       "w": "have a sweet tooth",
+       "type": "Idiom",
+       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
+       "stress": "have‿a SWEET TOOTH",
+       "band": "5.5–6.5",
+       "grammar": "have + a sweet tooth",
+       "ex": "I have a sweet tooth, so I can't say no to cake."
+      }
+     ],
+     "note": "have a sweet tooth (idiom) · love desserts = thích đồ tráng miệng (thường)"
+    },
+    {
+     "mean": "thực đơn",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "items": [
+      {
+       "w": "menu",
+       "type": "Vocab",
+       "ipa": "/ˈmenjuː/",
+       "stress": "MEN-u",
+       "band": "3–3.5",
+       "grammar": "on the menu; see the menu",
+       "ex": "Can I see the menu, please?"
+      }
+     ],
+     "note": "on the menu"
     },
     {
      "mean": "lớp học nấu ăn",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
      "items": [
       {
        "w": "cooking class",
@@ -14239,31 +14266,15 @@
      "note": "take / book + a cooking class"
     },
     {
-     "mean": "lễ hội ẩm thực",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "food festival",
-       "type": "Collocation",
-       "ipa": "/ˈfuːd ˌfestəvl/",
-       "stress": "FOOD fes-ti-val",
-       "band": "4–5",
-       "grammar": "go to + a food festival",
-       "ex": "The food festival is free, but the food isn't."
-      }
-     ],
-     "note": "go to + a food festival"
-    },
-    {
      "mean": "món ăn đường phố",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
      "items": [
       {
        "w": "street food",
        "type": "Collocation",
        "ipa": "/ˈstriːt fuːd/",
        "stress": "STREET food",
-       "band": "3–3.5",
+       "band": "4–5",
        "grammar": "không đếm được: try street food",
        "ex": "Banh mi is famous street food in Vietnam."
       }
@@ -14272,7 +14283,7 @@
     },
     {
      "mean": "quầy hàng ăn",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
      "items": [
       {
        "w": "food stall",
@@ -14281,30 +14292,14 @@
        "stress": "FOOD stall",
        "band": "4–5",
        "grammar": "đếm được: food stalls",
-       "ex": "There are fifty food stalls at the festival."
+       "ex": "There is a noodle food stall near my office."
       }
      ],
-     "note": "food stall đếm được: fifty food stalls"
-    },
-    {
-     "mean": "khu ăn uống trong trung tâm thương mại",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "food court",
-       "type": "Collocation",
-       "ipa": "/ˈfuːd kɔːrt/",
-       "stress": "FOOD court",
-       "band": "4–5",
-       "grammar": "at / in + the food court",
-       "ex": "We had lunch at the food court in the mall."
-      }
-     ],
-     "note": "at the food court"
+     "note": "food stall đếm được"
     },
     {
      "mean": "căng tin",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
      "items": [
       {
        "w": "cafeteria",
@@ -14328,88 +14323,8 @@
      "note": "cafeteria (Mỹ) = canteen (Anh)"
     },
     {
-     "mean": "tiệc tự chọn",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "buffet",
-       "type": "Vocab",
-       "ipa": "/bəˈfeɪ/",
-       "stress": "buf-FET",
-       "band": "4–5",
-       "grammar": "a breakfast / lunch + buffet",
-       "ex": "The hotel has a breakfast buffet."
-      }
-     ],
-     "note": "buffet đọc buf-FET (Mỹ)"
-    },
-    {
-     "mean": "thực đơn",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "menu",
-       "type": "Vocab",
-       "ipa": "/ˈmenjuː/",
-       "stress": "MEN-u",
-       "band": "3–3.5",
-       "grammar": "on the menu; see the menu",
-       "ex": "Can I see the menu, please?"
-      }
-     ],
-     "note": "on the menu"
-    },
-    {
-     "mean": "sự đặt chỗ trước",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "reservation",
-       "type": "Vocab",
-       "ipa": "/ˌrezərˈveɪʃn/",
-       "stress": "res-er-VA-tion",
-       "band": "4–5",
-       "grammar": "make + a reservation + for + số người",
-       "ex": "I made a reservation for four people."
-      }
-     ],
-     "note": "reservation (Mỹ) = booking (Anh); make a reservation"
-    },
-    {
-     "mean": "bị dị ứng với",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "be allergic to",
-       "type": "Collocation",
-       "ipa": "/bi əˈlɝːdʒɪk tə/",
-       "stress": "be al-LER-gic to",
-       "band": "4–5",
-       "grammar": "be allergic to + N (peanuts, seafood)",
-       "ex": "Some people can be allergic to peanuts."
-      }
-     ],
-     "note": "be allergic to + N"
-    },
-    {
-     "mean": "tạp dề",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
-     "items": [
-      {
-       "w": "apron",
-       "type": "Vocab",
-       "ipa": "/ˈeɪprən/",
-       "stress": "A-pron",
-       "band": "4–5",
-       "grammar": "đếm được: wear an apron",
-       "ex": "The school gives every student an apron."
-      }
-     ],
-     "note": "an apron"
-    },
-    {
      "mean": "hóa đơn ở nhà hàng",
-     "cat": "C. Nơi ăn uống, đặt chỗ",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
      "items": [
       {
        "w": "check",
@@ -14424,6 +14339,38 @@
      "note": "check (Mỹ) = bill (Anh)"
     },
     {
+     "mean": "sự đặt chỗ trước",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "items": [
+      {
+       "w": "reservation",
+       "type": "Vocab",
+       "ipa": "/ˌrezərˈveɪʃn/",
+       "stress": "res-er-VA-tion",
+       "band": "5.5–6.5",
+       "grammar": "make + a reservation + for + số người",
+       "ex": "I made a reservation for four people."
+      }
+     ],
+     "note": "reservation (Mỹ) = booking (Anh); make a reservation"
+    },
+    {
+     "mean": "bị dị ứng với",
+     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "items": [
+      {
+       "w": "be allergic to",
+       "type": "Collocation",
+       "ipa": "/bi əˈlɝːdʒɪk tə/",
+       "stress": "be al-LER-gic to",
+       "band": "5.5–6.5",
+       "grammar": "be allergic to + N (peanuts, seafood)",
+       "ex": "My friend is allergic to peanuts."
+      }
+     ],
+     "note": "be allergic to + N; danh từ: have an allergy to"
+    },
+    {
      "mean": "giờ nghỉ trưa",
      "cat": "D. Sinh viên năm cuối, mới đi làm",
      "items": [
@@ -14432,60 +14379,12 @@
        "type": "Collocation",
        "ipa": "/ˈlʌntʃ breɪk/",
        "stress": "LUNCH break",
-       "band": "3–3.5",
+       "band": "4–5",
        "grammar": "on / during + my lunch break",
        "ex": "Our lunch break is only forty-five minutes."
       }
      ],
      "note": "on / during my lunch break"
-    },
-    {
-     "mean": "mang cơm hộp đi làm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "pack a lunch",
-       "type": "Collocation",
-       "ipa": "/ˌpæk ə ˈlʌntʃ/",
-       "stress": "pack‿a LUNCH",
-       "band": "4–5",
-       "grammar": "pack + a lunch; QK packed /t/",
-       "ex": "I pack a lunch to save money."
-      }
-     ],
-     "note": "pack a lunch (Mỹ) = bring a packed lunch (Anh)"
-    },
-    {
-     "mean": "ăn ngay tại bàn làm việc",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "eat at my desk",
-       "type": "Collocation",
-       "ipa": "/ˌiːt ət maɪ ˈdesk/",
-       "stress": "eat‿at my DESK",
-       "band": "4–5",
-       "grammar": "eat at + my / his / her desk",
-       "ex": "On busy days, I eat at my desk."
-      }
-     ],
-     "note": "eat at + my / your desk"
-    },
-    {
-     "mean": "ăn vội chút gì đó",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "grab a bite",
-       "type": "Idiom",
-       "ipa": "/ˌɡræb ə ˈbaɪt/",
-       "stress": "grab‿a BITE",
-       "band": "5.5–6.5",
-       "grammar": "grab a bite (to eat); QK grabbed",
-       "ex": "Let's grab a bite after the meeting."
-      }
-     ],
-     "note": "thân mật; grab a bite (to eat)"
     },
     {
      "mean": "bỏ bữa sáng",
@@ -14504,68 +14403,20 @@
      "note": "skip + breakfast / lunch / a meal"
     },
     {
-     "mean": "ứng dụng giao đồ ăn",
+     "mean": "ăn ngay tại bàn làm việc",
      "cat": "D. Sinh viên năm cuối, mới đi làm",
      "items": [
       {
-       "w": "food delivery app",
+       "w": "eat at my desk",
        "type": "Collocation",
-       "ipa": "/ˈfuːd dɪˌlɪvəri æp/",
-       "stress": "FOOD de-LIV-er-y app",
+       "ipa": "/ˌiːt ət maɪ ˈdesk/",
+       "stress": "eat‿at my DESK",
        "band": "4–5",
-       "grammar": "order from + a food delivery app",
-       "ex": "Many office workers use a food delivery app every day."
+       "grammar": "eat at + my / his / her desk",
+       "ex": "On busy days, I eat at my desk."
       }
      ],
-     "note": "use / order from + a food delivery app"
-    },
-    {
-     "mean": "bữa trưa cả nhóm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "team lunch",
-       "type": "Collocation",
-       "ipa": "/ˌtiːm ˈlʌntʃ/",
-       "stress": "team LUNCH",
-       "band": "4–5",
-       "grammar": "have + a team lunch",
-       "ex": "We have a team lunch every Friday."
-      }
-     ],
-     "note": "have + a team lunch"
-    },
-    {
-     "mean": "mời ai ăn (mình trả tiền)",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "treat you to lunch",
-       "type": "Collocation",
-       "ipa": "/ˌtriːt ju tə ˈlʌntʃ/",
-       "stress": "TREAT you to LUNCH",
-       "band": "5.5–6.5",
-       "grammar": "treat + sb + to + lunch / dinner",
-       "ex": "Let me treat you to lunch after the meeting."
-      }
-     ],
-     "note": "treat + sb + to lunch / dinner"
-    },
-    {
-     "mean": "ăn uống tiết kiệm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "eat on a budget",
-       "type": "Collocation",
-       "ipa": "/ˌiːt ɑːn ə ˈbʌdʒɪt/",
-       "stress": "eat on‿a BUD-get",
-       "band": "5.5–6.5",
-       "grammar": "eat on a budget (as a student)",
-       "ex": "As a student, I have to eat on a budget."
-      }
-     ],
-     "note": "eat on a budget"
+     "note": "eat at + my / your desk"
     },
     {
      "mean": "tự nấu ăn cho mình",
@@ -14584,54 +14435,86 @@
      "note": "cook for + myself / yourself"
     },
     {
-     "mean": "ăn ngoài hàng",
+     "mean": "ứng dụng giao đồ ăn",
      "cat": "D. Sinh viên năm cuối, mới đi làm",
      "items": [
       {
-       "w": "eat out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌiːt ˈaʊt/",
-       "stress": "eat‿OUT",
-       "band": "3–3.5",
-       "grammar": "không tân ngữ; QK ate out",
-       "ex": "We eat out every Friday after work."
+       "w": "food delivery app",
+       "type": "Collocation",
+       "ipa": "/ˈfuːd dɪˌlɪvəri æp/",
+       "stress": "FOOD de-LIV-er-y app",
+       "band": "4–5",
+       "grammar": "order from + a food delivery app",
+       "ex": "Many office workers use a food delivery app every day."
       }
      ],
-     "note": "eat out không tân ngữ; QK ate out"
+     "note": "use / order from + a food delivery app"
     },
     {
-     "mean": "ăn nhiều, ăn no",
+     "mean": "mang cơm hộp đi làm",
      "cat": "D. Sinh viên năm cuối, mới đi làm",
      "items": [
       {
-       "w": "fill up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌfɪl ˈʌp/",
-       "stress": "fill‿UP",
-       "band": "4–5",
-       "grammar": "fill up on + N",
-       "ex": "Don't fill up on bread before the main dish."
-      },
-      {
-       "w": "pig out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌpɪɡ ˈaʊt/",
-       "stress": "pig‿OUT",
-       "band": "7–8",
-       "grammar": "pig out on + N (thân mật)",
-       "ex": "Let's pig out on pizza after the exam!"
-      },
-      {
-       "w": "eat like a horse",
-       "type": "Idiom",
-       "ipa": "/ˌiːt laɪk ə ˈhɔːrs/",
-       "stress": "eat LIKE‿a HORSE",
-       "band": "7–8",
-       "grammar": "eat like a horse",
-       "ex": "My brother eats like a horse after the gym."
+       "w": "pack a lunch",
+       "type": "Collocation",
+       "ipa": "/ˌpæk ə ˈlʌntʃ/",
+       "stress": "pack‿a LUNCH",
+       "band": "5.5–6.5",
+       "grammar": "pack + a lunch; QK packed /t/",
+       "ex": "I pack a lunch to save money."
       }
      ],
-     "note": "fill up on + N = ăn no (bằng món gì) · pig out rất thân mật · eat like a horse = ăn rất khỏe"
+     "note": "pack a lunch (Mỹ) = bring a packed lunch (Anh)"
+    },
+    {
+     "mean": "ăn vội chút gì đó",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "grab a bite",
+       "type": "Idiom",
+       "ipa": "/ˌɡræb ə ˈbaɪt/",
+       "stress": "grab‿a BITE",
+       "band": "5.5–6.5",
+       "grammar": "grab a bite (to eat); QK grabbed",
+       "ex": "Let's grab a bite after the meeting."
+      },
+      {
+       "w": "grab a quick lunch",
+       "type": "Collocation",
+       "ipa": "/ˌɡræb ə ˌkwɪk ˈlʌntʃ/",
+       "stress": "grab‿a QUICK LUNCH",
+       "band": "4–5",
+       "grammar": "grab + a quick lunch / coffee",
+       "ex": "I grabbed a quick lunch near the office."
+      }
+     ],
+     "note": "grab a bite (to eat) thân mật · grab a quick lunch = ăn trưa vội"
+    },
+    {
+     "mean": "ăn uống tiết kiệm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "eat on a budget",
+       "type": "Collocation",
+       "ipa": "/ˌiːt ɑːn ə ˈbʌdʒɪt/",
+       "stress": "eat on‿a BUD-get",
+       "band": "5.5–6.5",
+       "grammar": "eat on a budget (as a student)",
+       "ex": "As a student, I have to eat on a budget."
+      },
+      {
+       "w": "be on a tight budget",
+       "type": "Collocation",
+       "ipa": "/bi ɑːn ə ˌtaɪt ˈbʌdʒɪt/",
+       "stress": "be on‿a TIGHT BUD-get",
+       "band": "5.5–6.5",
+       "grammar": "be on a tight budget",
+       "ex": "I'm on a tight budget until my first paycheck."
+      }
+     ],
+     "note": "eat on a budget · be on a tight budget = rất ít tiền"
     }
    ]
   },
