@@ -48,7 +48,8 @@ function colWidths(header) {
   const n = header.length;
   const h = header.join('|');
   let pct;
-  if (h.startsWith('#|Từ / cụm|Loại|Phát âm')) pct = [5, 16, 11, 17, 15, 12, 24];
+  if (h.startsWith('#|Từ / cụm|Loại|Phát âm') && n === 8) pct = [4, 15, 12, 14, 12, 7, 17, 19];
+  else if (h.startsWith('#|Từ / cụm|Loại|Phát âm')) pct = [5, 16, 11, 17, 15, 12, 24];
   else if (h.startsWith('#|Phrasal verb') || h.startsWith('#|Collocation')) pct = [5, 15, 20, 9, 13, 19, 19];
   else if (h.startsWith('Câu|Ai')) pct = [6, 5, 16, 27, 22, 24];
   else if (h.startsWith('Câu|Nói về gì')) pct = [6, 18, 30, 20, 26];
@@ -68,7 +69,11 @@ function colWidths(header) {
   else if (h.startsWith('Bước|Mục đích')) pct = [16, 24, 60];
   else if (h.startsWith('Từ gốc') && n === 2) pct = [32, 68];
   else if (h.startsWith('Từ gốc')) pct = [16, 24, 16, 24, 20];
+  else if (h.startsWith('Bước|Làm gì|Khung câu')) pct = [18, 37, 45];
+  else if (h.startsWith('#|Bài|Cách làm|Tiêu chí')) pct = [5, 24, 41, 30];
+  else if (h.startsWith('Bước|Làm như sau|Ví dụ')) pct = [22, 38, 40];
   else pct = Array(n).fill(100 / n);
+  if (pct.length !== n) pct = Array(n).fill(100 / n);
   const w = pct.map(p => Math.floor(CONTENT_W * p / 100));
   w[w.length - 1] += CONTENT_W - w.reduce((a, b) => a + b, 0);
   return w;
@@ -157,7 +162,7 @@ function convert(md) {
       out.push(new Paragraph({ heading: HeadingLevel.HEADING_3, children: runs(l.slice(4)) }));
     } else if (l.startsWith('## ')) {
       const id = 'h' + (++HID);
-      out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: /\{#(listen|vocab|vgames|ladder|alt)\}/.test(lines[i]), children: [new Bookmark({ id, children: runs(l.slice(3)) })] }));
+      out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: /\{#(listen|vocab|vgames|ladder|alt|speak|hw)\}/.test(lines[i]), children: [new Bookmark({ id, children: runs(l.slice(3)) })] }));
       TOC.push({ lvl: 2, id, text: l.slice(3) });
     } else if (l.startsWith('    - ')) {
       out.push(new Paragraph({ numbering: { reference: 'bul', level: 1 }, children: runs(l.slice(6)) }));

@@ -1,0 +1,158 @@
+[
+ {
+  "text": "To be 'honest, / I'd 'rather work in a 'team. //",
+  "start": 102.26,
+  "end": 105.59,
+  "chunks": [
+   [
+    2.8,
+    3.93
+   ],
+   [
+    5.65,
+    7.28
+   ]
+  ],
+  "label": "Bài 1 · Do you prefer working alone or in a team?"
+ },
+ {
+  "text": "The 'main reason is / that I'm !!not 'really 'cut ‿ out for!! / 'working a'lone for 'hours. //",
+  "start": 105.59,
+  "end": 110.9,
+  "chunks": [
+   [
+    9.91,
+    11.31
+   ],
+   [
+    13.3,
+    14.96
+   ],
+   [
+    17.21,
+    18.94
+   ]
+  ],
+  "label": "Bài 1 · Do you prefer working alone or in a team?"
+ },
+ {
+  "text": "For ex'ample, / in our bi'ology project ‿ last 'month, / my 'group 'split the 'tasks, / and 'everyone !!went the 'extra 'mile!!. //",
+  "start": 110.9,
+  "end": 118.44,
+  "chunks": [
+   [
+    21.68,
+    22.7
+   ],
+   [
+    24.32,
+    26.59
+   ],
+   [
+    29.45,
+    31.14
+   ],
+   [
+    33.43,
+    35.37
+   ]
+  ],
+  "label": "Bài 1 · Do you prefer working alone or in a team?"
+ },
+ {
+  "text": "It 'gave me ++a 'real 'sense of a'chievement++, / and I 'think ==den'tistry== is 'teamwork too. //",
+  "start": 118.44,
+  "end": 123.75,
+  "chunks": [
+   [
+    38.3,
+    40.7
+   ],
+   [
+    43.7,
+    46.24
+   ]
+  ],
+  "label": "Bài 1 · Do you prefer working alone or in a team?"
+ },
+ {
+  "text": "'Definitely my 'aunt, / who's a 'nurse at a 'big 'hospital. //",
+  "start": 123.75,
+  "end": 127.85,
+  "chunks": [
+   [
+    49.77,
+    51.16
+   ],
+   [
+    53.15,
+    55.41
+   ]
+  ],
+  "label": "Bài 2 · Who would you ask for advice about your future career?"
+ },
+ {
+  "text": "She !!'climbed the ca'reer 'ladder!! / 'quite 'quickly, / so she 'knows how to ++'land a 'job++ ‿ in 'healthcare. //",
+  "start": 127.85,
+  "end": 133.77,
+  "chunks": [
+   [
+    58.67,
+    60.3
+   ],
+   [
+    62.54,
+    63.6
+   ],
+   [
+    65.27,
+    68.0
+   ]
+  ],
+  "label": "Bài 2 · Who would you ask for advice about your future career?"
+ },
+ {
+  "text": "Last 'weekend, / she 'told me that ==an 'internship== / is the 'best way / to !!get my 'foot in the 'door!!. //",
+  "start": 133.77,
+  "end": 140.09,
+  "chunks": [
+   [
+    71.72,
+    72.97
+   ],
+   [
+    74.82,
+    76.5
+   ],
+   [
+    78.78,
+    80.0
+   ],
+   [
+    81.82,
+    83.38
+   ]
+  ],
+  "label": "Bài 2 · Who would you ask for advice about your future career?"
+ },
+ {
+  "text": "'Honestly, / 'talking to her made me 'feel / that den'tistry could 'really be ==my 'calling==. //",
+  "start": 140.09,
+  "end": 145.7,
+  "chunks": [
+   [
+    85.94,
+    86.87
+   ],
+   [
+    88.41,
+    90.02
+   ],
+   [
+    92.23,
+    94.75
+   ]
+  ],
+  "label": "Bài 2 · Who would you ask for advice about your future career?"
+ }
+]

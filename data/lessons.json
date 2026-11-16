@@ -416,6 +416,35 @@
     "va-w20261114-thu",
     "va-w20261114-fri"
    ]
+  },
+  {
+   "id": "hw-vananh-week-20261121-s",
+   "skill": "Speaking",
+   "session": 3,
+   "title": "Bài tập tuần · Speaking",
+   "topic": "📅 Tuần 23–27/11 · Work & Careers",
+   "deadline": "2026-11-28",
+   "deadlineAt": "17:30",
+   "note": "T2: 2 câu Part 1 tự trả lời (Work & Careers) · T3: shadowing 2 câu trả lời Part 1 mẫu band 7–8 (nghe từng câu rồi nói lại). Thứ Bảy, Chủ nhật nghỉ. Ôn flashcard Work & Careers trước khi nói.",
+   "lessons": [
+    "va-w20261121-mon",
+    "va-w20261121-tue"
+   ]
+  },
+  {
+   "id": "hw-vananh-week-20261121-l",
+   "skill": "Listening",
+   "session": 3,
+   "title": "Bài tập tuần · Listening",
+   "topic": "📅 Tuần 23–27/11 · Work & Careers",
+   "deadline": "2026-11-28",
+   "deadlineAt": "17:30",
+   "note": "T4: Part 1 điền form (10 câu) · T5: Part 2 + T6: Part 4 sentence completion (dạng vừa học 21/11). Nghe 1 lần, xong xem 🔑 từ khóa ⇄ synonym và phân tích từng câu.",
+   "lessons": [
+    "va-w20261121-wed",
+    "va-w20261121-thu",
+    "va-w20261121-fri"
+   ]
   }
  ],
  "lessons": [
@@ -9629,6 +9658,1183 @@
      "sp": "Lily",
      "t": "Then we'd better knuckle down this weekend.",
      "at": 100.7
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "for": [
+    "vananh"
+   ],
+   "id": "va-w20261121-mon",
+   "title": "Part 1 – Useful subjects & working abroad",
+   "opens": "2026-11-23",
+   "skill": "Speaking",
+   "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 1 (Work or studies)",
+     "q": "Which subject at school do you think will be most useful for your future job?",
+     "hint": "career path · the basics of · a dental clinic · treat patients · be cut out for",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>Which subject … most useful … future job?</i> → chọn <b>1 môn</b>, nối với <b>nghề tương lai</b> (nha khoa). Dùng <b>will / I think … will</b> cho tương lai.",
+      "<b>A – Answer:</b> nêu thẳng tên môn: <i>Definitely biology.</i> / <i>I'd say chemistry, to be honest.</i>",
+      "<b>R – Reason:</b> môn đó giúp gì cho nghề: hiểu cơ thể người, <i>the basics of</i> thuốc, cách <i>treat patients</i>…",
+      "<b>E – Example:</b> 1 bài học / 1 lần cụ thể (quá khứ đơn): <i>Last month, we learned about… and I realized…</i>",
+      "<b>F – Feeling:</b> <i>It made me feel more confident that I'm cut out for…</i>",
+      "<b>Từ nên dùng:</b> <i>career path, the basics of, be cut out for</i>. <b>Lỗi hay gặp:</b> <i>the biology</i> (môn học không có <i>the</i>) → <i>biology</i>.",
+      "<b>Nói 20–30 giây</b>, ghi <b>từ khóa</b> vào ô A / R / E / F. Tập bằng 🎙 Ghi âm thử tới khi trôi chảy rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "Which subject do you find the most difficult at school?",
+      "notes": {
+       "A": "math",
+       "R": "many formulas · fall behind",
+       "E": "last test · 6 points · extra class",
+       "F": "stressed out · now better"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 2",
+     "q": "Would you like to work abroad in the future?",
+     "hint": "land a job · climb the career ladder · work experience · get my foot in the door · job security",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>Would you like to…</i> → mong muốn tương lai: <b>I'd love to / I'd rather not / Maybe for a few years</b>.",
+      "<b>A – Answer:</b> chọn rõ 1 hướng, không nói <i>yes and no</i> lưng chừng.",
+      "<b>R – Reason:</b> 2–3 hướng: học hỏi kỹ thuật mới · lương / <i>job security</i> · gần gia đình · ngôn ngữ.",
+      "<b>E – Example:</b> 1 người em biết (anh chị, cô chú) đi làm ở nước ngoài, hoặc 1 kế hoạch cụ thể: <i>gain some work experience in Singapore, then come back</i>.",
+      "<b>F – Feeling:</b> <i>I'm thrilled / a bit nervous about…</i>",
+      "<b>Từ nên dùng:</b> <i>land a job, climb the career ladder, get my foot in the door</i>. <b>Lỗi hay gặp:</b> <i>work at abroad</i> → <i>work abroad</i> (không có giới từ).",
+      "<b>Nói 20–30 giây</b>, ghi từ khóa vào ô A / R / E / F, 🎙 thử → 📤 nộp."
+     ],
+     "demo": {
+      "q": "Would you like to live in a big city in the future?",
+      "notes": {
+       "A": "yes · Saigon",
+       "R": "more jobs · good hospitals",
+       "E": "cousin · moved last year · landed a job",
+       "F": "excited · a bit homesick"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "for": [
+    "vananh"
+   ],
+   "id": "va-w20261121-tue",
+   "title": "Shadowing – Part 1 band 7–8 · Work & Careers (2)",
+   "opens": "2026-11-24",
+   "skill": "Speaking",
+   "subtitle": "Listen & repeat: Nghe mẫu từng câu → nói lại · rồi shadow cả bài 2–3 lần (2 câu trả lời Part 1 mẫu band 7–8)",
+   "video": "media/va-w20261121-tue.mp4",
+   "sentences": [
+    {
+     "text": "To be 'honest, / I'd 'rather work in a 'team. //",
+     "start": 102.26,
+     "end": 105.59,
+     "chunks": [
+      [
+       2.8,
+       3.93
+      ],
+      [
+       5.65,
+       7.28
+      ]
+     ],
+     "label": "Bài 1 · Do you prefer working alone or in a team?"
+    },
+    {
+     "text": "The 'main reason is / that I'm !!not 'really 'cut ‿ out for!! / 'working a'lone for 'hours. //",
+     "start": 105.59,
+     "end": 110.9,
+     "chunks": [
+      [
+       9.91,
+       11.31
+      ],
+      [
+       13.3,
+       14.96
+      ],
+      [
+       17.21,
+       18.94
+      ]
+     ],
+     "label": "Bài 1 · Do you prefer working alone or in a team?"
+    },
+    {
+     "text": "For ex'ample, / in our bi'ology project ‿ last 'month, / my 'group 'split the 'tasks, / and 'everyone !!went the 'extra 'mile!!. //",
+     "start": 110.9,
+     "end": 118.44,
+     "chunks": [
+      [
+       21.68,
+       22.7
+      ],
+      [
+       24.32,
+       26.59
+      ],
+      [
+       29.45,
+       31.14
+      ],
+      [
+       33.43,
+       35.37
+      ]
+     ],
+     "label": "Bài 1 · Do you prefer working alone or in a team?"
+    },
+    {
+     "text": "It 'gave me ++a 'real 'sense of a'chievement++, / and I 'think ==den'tistry== is 'teamwork too. //",
+     "start": 118.44,
+     "end": 123.75,
+     "chunks": [
+      [
+       38.3,
+       40.7
+      ],
+      [
+       43.7,
+       46.24
+      ]
+     ],
+     "label": "Bài 1 · Do you prefer working alone or in a team?"
+    },
+    {
+     "text": "'Definitely my 'aunt, / who's a 'nurse at a 'big 'hospital. //",
+     "start": 123.75,
+     "end": 127.85,
+     "chunks": [
+      [
+       49.77,
+       51.16
+      ],
+      [
+       53.15,
+       55.41
+      ]
+     ],
+     "label": "Bài 2 · Who would you ask for advice about your future career?"
+    },
+    {
+     "text": "She !!'climbed the ca'reer 'ladder!! / 'quite 'quickly, / so she 'knows how to ++'land a 'job++ ‿ in 'healthcare. //",
+     "start": 127.85,
+     "end": 133.77,
+     "chunks": [
+      [
+       58.67,
+       60.3
+      ],
+      [
+       62.54,
+       63.6
+      ],
+      [
+       65.27,
+       68.0
+      ]
+     ],
+     "label": "Bài 2 · Who would you ask for advice about your future career?"
+    },
+    {
+     "text": "Last 'weekend, / she 'told me that ==an 'internship== / is the 'best way / to !!get my 'foot in the 'door!!. //",
+     "start": 133.77,
+     "end": 140.09,
+     "chunks": [
+      [
+       71.72,
+       72.97
+      ],
+      [
+       74.82,
+       76.5
+      ],
+      [
+       78.78,
+       80.0
+      ],
+      [
+       81.82,
+       83.38
+      ]
+     ],
+     "label": "Bài 2 · Who would you ask for advice about your future career?"
+    },
+    {
+     "text": "'Honestly, / 'talking to her made me 'feel / that den'tistry could 'really be ==my 'calling==. //",
+     "start": 140.09,
+     "end": 145.7,
+     "chunks": [
+      [
+       85.94,
+       86.87
+      ],
+      [
+       88.41,
+       90.02
+      ],
+      [
+       92.23,
+       94.75
+      ]
+     ],
+     "label": "Bài 2 · Who would you ask for advice about your future career?"
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "for": [
+    "vananh"
+   ],
+   "id": "va-w20261121-wed",
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "opens": "2026-11-25",
+   "prep": 30,
+   "title": "Nghe Part 1 – Medical University Open Day (form completion, 10 câu)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Saigon Medical University – Open Day Registration Form",
+   "strategy": [
+    "<b>30 giây đọc đề:</b> gạch từ khóa trước mỗi ô (<i>surname, phone, school, date, faculty…</i>) và đoán loại thông tin: tên đánh vần, số, ngày, giờ, ngành.",
+    "<b>Chọn dạng từ</b> cho mỗi ô: có <i>December</i> in sẵn → chỉ ghi ngày; sau <i>a</i> → danh từ số ít; trước <i>High School</i> → tên riêng, viết hoa.",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio. Nghe xong câu 4 thì mắt nhìn ngay câu 5; lỡ 1 câu thì bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý</b> (Part 1 rất hay có): <i>actually, no · used to · at first … but · not … actually</i>. Đáp án là thông tin <b>sau</b> tín hiệu.",
+    "<b>Số điện thoại:</b> <i>oh</i> = 0 · đọc theo cụm 3 số. <b>ONE WORD</b> → không ghi <i>a motorbike</i>, chỉ <i>motorbike</i>."
+   ],
+   "rows": [
+    "## Personal details",
+    "Name: Kevin [[surname]] {1}",
+    "[[Phone]] number: {2}",
+    "[[School]]: {3} High School",
+    "## Open Day",
+    "[[Date]]: Saturday, December {4}",
+    "[[Faculty]] to visit: {5}",
+    "Number of [[people]] (including Kevin): {6}",
+    "Campus [[tour]] starts at: {7} a.m.",
+    "## Other requests",
+    "[[Parking]]: a space for a {8}",
+    "Would like to [[talk to]] a current {9}",
+    "[[Heard about]] the Open Day from his {10}"
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Walsh"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "hint": "Tên được đánh vần",
+     "kw": [
+      [
+       "surname",
+       "N",
+       "last name"
+      ],
+      [
+       "spell",
+       "V",
+       "W, A, L, S, H"
+      ]
+     ],
+     "why": [
+      "Đọc đề: ô sau <i>Kevin</i> + [[surname]] → chờ <b>họ</b>, thường được đánh vần.",
+      "Audio: [[my last name]] = surname → **Walsh**, đánh vần W-A-L-S-H.",
+      "Viết hoa chữ đầu, đúng từng chữ cái (không viết <i>Welsh</i>)."
+     ]
+    },
+    "2": {
+     "ans": [
+      "0908361742",
+      "0908 361 742",
+      "090 836 1742"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Phone number",
+       "N",
+       "mobile"
+      ]
+     ],
+     "why": [
+      "Đọc đề: [[Phone number]] → chờ dãy số.",
+      "Bẫy đổi ý: <i>home number 283 915</i> → [[Actually, no]] … [[my mobile]].",
+      "<i>oh nine oh eight, three six one, seven four two</i> → **0908 361 742** (<i>oh</i> = 0)."
+     ]
+    },
+    "3": {
+     "ans": [
+      "Riverside"
+     ],
+     "form": [
+      "Tên riêng",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "School",
+       "N",
+       "which high school do you go to"
+      ]
+     ],
+     "why": [
+      "Đọc đề: ô đứng trước <i>High School</i> → <b>tên trường</b>, viết hoa.",
+      "Bẫy xưa – nay: [[I used to go to]] Lincoln … [[but]] … [[now I'm at]] **Riverside**.",
+      "Đề hỏi trường hiện tại → Riverside."
+     ]
+    },
+    "4": {
+     "ans": [
+      "5",
+      "5th",
+      "fifth"
+     ],
+     "form": [
+      "Số (ngày)",
+      "Tháng"
+     ],
+     "kw": [
+      [
+       "Date",
+       "N",
+       "Saturday the fifth of December"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>Saturday, December ___</i> → tháng in sẵn, chỉ ghi <b>ngày</b>.",
+      "Bẫy có thật nhưng không trả lời câu hỏi: <i>28th of November</i> chỉ cho <b>engineering</b>.",
+      "[[the other one]] … Saturday **the fifth** of December → 5."
+     ]
+    },
+    "5": {
+     "ans": [
+      "dentistry",
+      "Dentistry"
+     ],
+     "form": [
+      "Danh từ (ngành)",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Faculty to visit",
+       "N",
+       "which faculty would you like to visit"
+      ]
+     ],
+     "why": [
+      "Đọc đề: [[Faculty]] → tên <b>ngành / khoa</b>.",
+      "Bẫy: [[My second choice]] is pharmacy → không phải lựa chọn chính.",
+      "[[but mainly]] I'm interested in **dentistry** → dentistry."
+     ]
+    },
+    "6": {
+     "ans": [
+      "3",
+      "three"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "people (including Kevin)",
+       "N",
+       "how many people are coming, including you"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>Number of people</i> → <b>số</b>.",
+      "Bẫy đổi ý: [[At first]] … four → [[But]] my sister has an exam.",
+      "[[so it'll be]] **three** → 3."
+     ]
+    },
+    "7": {
+     "ans": [
+      "10.15",
+      "10:15",
+      "ten fifteen"
+     ],
+     "form": [
+      "Giờ",
+      "Số lượng"
+     ],
+     "kw": [
+      [
+       "Campus tour starts",
+       "N+V",
+       "the campus tour starts at"
+      ]
+     ],
+     "why": [
+      "Đọc đề: [[tour]] + <i>starts at ___ a.m.</i> → <b>giờ</b>, <i>a.m.</i> in sẵn.",
+      "Bẫy: <i>welcome talk at nine thirty</i> = buổi nói chuyện, không phải tour.",
+      "[[the campus tour]] starts at **ten fifteen** → 10.15."
+     ]
+    },
+    "8": {
+     "ans": [
+      "motorbike",
+      "motorcycle"
+     ],
+     "form": [
+      "Danh từ số ít",
+      "Danh từ số nhiều"
+     ],
+     "kw": [
+      [
+       "Parking",
+       "N",
+       "a parking space"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>a space for a ___</i> → <b>danh từ số ít</b> (phương tiện).",
+      "Bẫy nhắc rồi phủ định: <i>for a car?</i> → [[Not a car]].",
+      "a space for a **motorbike** → motorbike."
+     ]
+    },
+    "9": {
+     "ans": [
+      "student"
+     ],
+     "form": [
+      "Danh từ số ít (người)",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "talk to",
+       "V",
+       "I'd love to talk to"
+      ],
+      [
+       "current",
+       "Adj",
+       "current"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>talk to a current ___</i> → <b>người</b>, danh từ số ít.",
+      "Audio: [[I'd love to talk to]] a current **student**.",
+      "ONE WORD → chỉ <i>student</i> (không ghi <i>dental student</i>)."
+     ]
+    },
+    "10": {
+     "ans": [
+      "teacher",
+      "biology teacher"
+     ],
+     "form": [
+      "Danh từ (người)",
+      "Nơi chốn"
+     ],
+     "kw": [
+      [
+       "Heard about",
+       "V",
+       "how did you hear about"
+      ],
+      [
+       "from his",
+       "Det",
+       "my … told me"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>from his ___</i> → 1 <b>người</b> (vì có <i>his</i>).",
+      "Bẫy: <i>On our website?</i> → [[Not the website, actually]].",
+      "My biology **teacher** told me → teacher (ONE WORD)."
+     ]
+    }
+   },
+   "audio": "media/va-w20261121-wed.mp3",
+   "transcript": [
+    {
+     "sp": "Officer",
+     "t": "Good morning, Saigon Medical University, Open Day bookings. How can I help you?",
+     "at": 45.2
+    },
+    {
+     "sp": "Kevin",
+     "t": "Hi. I'm in my senior year, and I'd like to register for the Open Day, please.",
+     "at": 52.2
+    },
+    {
+     "sp": "Officer",
+     "t": "Of course. Can I have your name?",
+     "at": 59.7
+    },
+    {
+     "sp": "Kevin",
+     "t": "It's Kevin. My last name is **Walsh**. That's W, A, L, S, H.",
+     "at": 62.5,
+     "q": 1
+    },
+    {
+     "sp": "Officer",
+     "t": "Thank you, Kevin. And a phone number?",
+     "at": 69.7
+    },
+    {
+     "sp": "Kevin",
+     "t": "My home number is two eight three, nine one five. [[Actually, no]], it's better to use [[my mobile]]. It's **oh nine oh eight, three six one, seven four two**.",
+     "at": 72.8,
+     "q": 2
+    },
+    {
+     "sp": "Officer",
+     "t": "Got it. Which high school do you go to?",
+     "at": 86.8
+    },
+    {
+     "sp": "Kevin",
+     "t": "[[I used to go to]] Lincoln High School, [[but]] I moved this year, so [[now I'm at]] **Riverside** High School.",
+     "at": 89.8,
+     "q": 3
+    },
+    {
+     "sp": "Officer",
+     "t": "Lovely. Now, we have two Open Days. The one on the twenty-eighth of November is only for the engineering faculty, so I think you want [[the other one]], on Saturday **the fifth** of December.",
+     "at": 98.9,
+     "q": 4
+    },
+    {
+     "sp": "Kevin",
+     "t": "Yes, the fifth, please. I want to see the dental school.",
+     "at": 113.3
+    },
+    {
+     "sp": "Officer",
+     "t": "So which faculty would you like to visit?",
+     "at": 118.7
+    },
+    {
+     "sp": "Kevin",
+     "t": "[[My second choice]] is pharmacy, [[but mainly]] I'm interested in **dentistry**.",
+     "at": 122.1,
+     "q": 5
+    },
+    {
+     "sp": "Officer",
+     "t": "I'll put dentistry. How many people are coming, including you?",
+     "at": 129.1
+    },
+    {
+     "sp": "Kevin",
+     "t": "[[At first]] I said my parents and my sister would come, so four. [[But]] my sister has an exam that day, [[so it'll be]] **three**.",
+     "at": 134.4,
+     "q": 6
+    },
+    {
+     "sp": "Officer",
+     "t": "Three people. There's a welcome talk at nine thirty, and then the campus [[tour]] starts at **ten fifteen**.",
+     "at": 145.6,
+     "q": 7
+    },
+    {
+     "sp": "Kevin",
+     "t": "We can't get there for the talk, but the tour at ten fifteen is perfect.",
+     "at": 153.3
+    },
+    {
+     "sp": "Officer",
+     "t": "Will you need a parking space for a car?",
+     "at": 159.8
+    },
+    {
+     "sp": "Kevin",
+     "t": "[[Not a car]]. My dad and I will come by **motorbike**, so a space for a motorbike, please.",
+     "at": 163.1,
+     "q": 8
+    },
+    {
+     "sp": "Officer",
+     "t": "No problem. Is there anything else you'd like to do on the day?",
+     "at": 171.7
+    },
+    {
+     "sp": "Kevin",
+     "t": "Yes. [[I'd love to talk to]] a current **student** about what dental school is really like.",
+     "at": 176.5,
+     "q": 9
+    },
+    {
+     "sp": "Officer",
+     "t": "We can arrange that. And just for our records, how did you hear about the Open Day? On our website?",
+     "at": 184.0
+    },
+    {
+     "sp": "Kevin",
+     "t": "[[Not the website, actually]]. My biology **teacher** told me about it.",
+     "at": 192.3,
+     "q": 10
+    },
+    {
+     "sp": "Officer",
+     "t": "Great. You're all booked, Kevin. See you on the fifth.",
+     "at": 198.6
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "for": [
+    "vananh"
+   ],
+   "id": "va-w20261121-thu",
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 2",
+   "opens": "2026-11-26",
+   "prep": 30,
+   "title": "Nghe Part 2 – Summer Assistant Program (sentence completion)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe · dạng vừa học 21/11: sentence completion",
+   "instructions": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "heading": "Bright Smile Dental Clinic – Summer Assistant Program · Questions 11–17",
+   "strategy": [
+    "<b>Sentence completion – đọc đề 30 giây:</b> đọc <b>cả câu</b>, gạch 2–4 từ khóa và <b>từ điều kiện</b> (<i>most, every, never, best</i>). Câu trong đề là bản <b>paraphrase</b> của lời nói.",
+    "<b>Đoán loại thông tin + dạng từ:</b> trước <i>weeks</i> → số · sau <i>at … a.m.</i> → giờ · sau <i>a</i> → danh từ số ít · sau <i>to</i> → động từ nguyên mẫu.",
+    "<b>Giới hạn số từ:</b> NO MORE THAN TWO WORDS AND/OR A NUMBER → tối đa 2 từ (+ 1 số); từ điền phải vừa ngữ pháp câu.",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio; nghe thấy từ khóa câu <b>kế tiếp</b> mà chưa có đáp án → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý:</b> <i>used to · when we started · some people think · however · instead</i> → lấy thông tin <b>sau</b> tín hiệu."
+   ],
+   "rows": [
+    "The program now [[lasts]] {11} weeks.",
+    "Assistants [[start each day]] at {12} a.m.",
+    "[[Most of the time]], assistants work at the {13}.",
+    "[[Before the first day]], every assistant must complete a {14} course.",
+    "Assistants are [[never allowed]] to {15} patients' teeth.",
+    "[[At the end]], each assistant gives a short {16}.",
+    "The [[best]] assistant [[receives]] a {17} from the head dentist."
+   ],
+   "qs": {
+    "11": {
+     "ans": [
+      "6",
+      "six"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "lasts",
+       "V",
+       "lasts"
+      ],
+      [
+       "now",
+       "Adv",
+       "So now"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>now lasts ___ weeks</i> → <b>số</b>; từ điều kiện <b>now</b>.",
+      "Bẫy xưa – nay: [[When we started]] … four weeks.",
+      "[[So now]] the program lasts **six** weeks → 6."
+     ]
+    },
+    "12": {
+     "ans": [
+      "7.30",
+      "7:30",
+      "seven thirty"
+     ],
+     "form": [
+      "Giờ",
+      "Số lượng"
+     ],
+     "kw": [
+      [
+       "start each day",
+       "V",
+       "you'll start each day"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>at ___ a.m.</i> → <b>giờ</b>.",
+      "Bẫy có thật nhưng không trả lời câu hỏi: <i>opens to patients at eight</i> = giờ mở cửa.",
+      "[[you'll start each day]] at **seven thirty** → 7.30."
+     ]
+    },
+    "13": {
+     "ans": [
+      "reception desk",
+      "reception"
+     ],
+     "form": [
+      "Danh từ (nơi chốn)",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Most of the time",
+       "Det+N",
+       "most of your time"
+      ],
+      [
+       "work at",
+       "V",
+       "will be at"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>work at the ___</i> → <b>nơi chốn</b>; từ điều kiện <b>Most</b>.",
+      "Bẫy: <i>a few hours … in the sterilization room</i> → không phải <b>most</b>.",
+      "[[However, most of your time]] will be at the **reception desk**."
+     ]
+    },
+    "14": {
+     "ans": [
+      "first-aid",
+      "first aid"
+     ],
+     "form": [
+      "Danh từ làm tính từ",
+      "Số"
+     ],
+     "kw": [
+      [
+       "Before the first day",
+       "Prep+N",
+       "Before your first day"
+      ],
+      [
+       "must complete",
+       "V",
+       "must complete"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>a ___ course</i> → loại khóa học (từ đứng trước <i>course</i>).",
+      "Audio: [[Before your first day]], every assistant [[must complete]] a **first-aid** course.",
+      "Không cần kinh nghiệm y khoa (<i>no medical experience</i>) – không phải đáp án."
+     ]
+    },
+    "15": {
+     "ans": [
+      "touch"
+     ],
+     "form": [
+      "Động từ nguyên mẫu",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "never allowed",
+       "Adv+V",
+       "are never allowed to"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>allowed to ___</i> → <b>động từ nguyên mẫu</b>.",
+      "Bẫy: <i>hand them their tools</i> = được phép.",
+      "[[But]] assistants are [[never allowed to]] **touch** patients' teeth."
+     ]
+    },
+    "16": {
+     "ans": [
+      "presentation"
+     ],
+     "form": [
+      "Danh từ số ít",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "At the end",
+       "Prep+N",
+       "At the end of the program"
+      ],
+      [
+       "gives",
+       "V",
+       "gives"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>a short ___</i> → <b>danh từ số ít</b>.",
+      "Bẫy xưa – nay: [[we used to]] ask everyone to write a report.",
+      "[[This year, instead]], each assistant gives a short **presentation**."
+     ]
+    },
+    "17": {
+     "ans": [
+      "reference letter",
+      "letter of reference"
+     ],
+     "form": [
+      "Danh từ (2 từ)",
+      "Số tiền"
+     ],
+     "kw": [
+      [
+       "best",
+       "Adj",
+       "the best assistant"
+      ],
+      [
+       "receives",
+       "V",
+       "receives"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>receives a ___ from the head dentist</i> → 1 <b>vật</b>, danh từ.",
+      "Bẫy nhắc rồi phủ định: <i>gets money</i> → [[that's not the case]].",
+      "The best assistant **receives a reference letter** → reference letter (2 từ)."
+     ]
+    }
+   },
+   "audio": "media/va-w20261121-thu.mp3",
+   "transcript": [
+    {
+     "sp": "Manager",
+     "t": "Good afternoon, everyone, and welcome to Bright Smile Dental Clinic. I'm the clinic manager, and I'm going to tell you about our Summer Assistant Program.",
+     "at": 45.4
+    },
+    {
+     "sp": "Manager",
+     "t": "[[When we started]] the program, it only lasted four weeks, but students told us that wasn't enough time to learn anything. [[So now]] the program lasts **six** weeks, from the end of June to the beginning of August.",
+     "at": 57.0,
+     "q": 11
+    },
+    {
+     "sp": "Manager",
+     "t": "The clinic opens to patients at eight o'clock, but assistants need to be ready before that, so [[you'll start each day]] at **seven thirty**.",
+     "at": 72.0,
+     "q": 12
+    },
+    {
+     "sp": "Manager",
+     "t": "What will you actually do? You'll spend a few hours each week in the sterilization room, cleaning tools. [[However, most of your time]] will be at the **reception desk**, where you'll welcome patients and help them fill in forms.",
+     "at": 81.6,
+     "q": 13
+    },
+    {
+     "sp": "Manager",
+     "t": "[[Before your first day]], every assistant [[must complete]] a **first-aid** course. It's free, and it only takes one Saturday. You don't need any medical experience at all.",
+     "at": 97.0,
+     "q": 14
+    },
+    {
+     "sp": "Manager",
+     "t": "Now, one important rule. You'll watch our dentists treat patients, and you can hand them their tools. [[But]] assistants are [[never allowed to]] **touch** a patient's teeth. Only qualified dentists can do that.",
+     "at": 109.0,
+     "q": 15
+    },
+    {
+     "sp": "Manager",
+     "t": "At the end of the program, [[we used to]] ask everyone to write a report. [[This year, instead]], each assistant gives a short **presentation** to our team about what they've learned.",
+     "at": 123.6,
+     "q": 16
+    },
+    {
+     "sp": "Manager",
+     "t": "Finally, the prize. Some people think the best assistant gets money, but [[that's not the case]]. The best assistant **receives a reference letter** from our head dentist, which is very useful when you apply to dental school.",
+     "at": 136.1,
+     "q": 17
+    }
+   ]
+  },
+  {
+   "session": 3,
+   "deck": "va3",
+   "topic": "Work & Careers",
+   "for": [
+    "vananh"
+   ],
+   "id": "va-w20261121-fri",
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 4",
+   "opens": "2026-11-27",
+   "prep": 30,
+   "title": "Nghe Part 4 – History of dentistry (sentence completion)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe · dạng vừa học 21/11: sentence completion",
+   "instructions": "Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Lecture: How dentistry became a profession · Questions 31–37",
+   "strategy": [
+    "<b>Part 4 = bài giảng 1 người nói</b>, không có nghỉ giữa chừng → đọc trước <b>cả 7 câu</b> trong 30 giây, gạch từ khóa + <b>thời gian</b> (<i>Middle Ages, 1840, 1938, today, future</i>) để biết mình đang ở đâu.",
+    "<b>ONE WORD AND/OR A NUMBER</b> → chỉ 1 từ (+ 1 số). Số lớn viết bằng chữ số: <i>9,000</i>.",
+    "<b>Đoán dạng từ:</b> <i>made from ___</i> → chất liệu · <i>pulled by ___</i> → người, số nhiều · <i>more time on ___</i> → danh từ.",
+    "<b>Linear thinking:</b> mốc thời gian là tín hiệu chuyển câu; nghe thấy mốc của câu sau → bỏ câu trước.",
+    "<b>Bẫy:</b> <i>people often say · not … but · in the past · however · already</i> → đáp án là thông tin người giảng <b>khẳng định</b>."
+   ],
+   "rows": [
+    "The oldest evidence of dental work comes from teeth about {31} years old.",
+    "The [[first drills]] were made of {32}.",
+    "In the [[Middle Ages]], teeth were usually pulled by {33}.",
+    "In 1840, the world's first dental {34} opened in Baltimore.",
+    "In 1938, toothbrushes with [[nylon]] {35} appeared.",
+    "[[Today]], dentists spend more time on {36} than on treatment.",
+    "Future dentists will need strong {37} skills."
+   ],
+   "qs": {
+    "31": {
+     "ans": [
+      "9000",
+      "9,000",
+      "nine thousand"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "oldest evidence",
+       "Adj+N",
+       "scientists have found holes"
+      ],
+      [
+       "years old",
+       "N",
+       "around … years old"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>about ___ years old</i> → <b>số</b>.",
+      "Bẫy: [[People often say]] two thousand years → [[In fact]] …",
+      "teeth that are [[around]] **nine thousand** years old → 9,000."
+     ]
+    },
+    "32": {
+     "ans": [
+      "stone"
+     ],
+     "form": [
+      "Danh từ (chất liệu)",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "first drills",
+       "Adj+N",
+       "the first drills"
+      ],
+      [
+       "made of",
+       "V",
+       "made of"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>made of ___</i> → <b>chất liệu</b>.",
+      "Bẫy nhắc rồi phủ định: [[not made of metal]].",
+      "The first drills were … made of **stone** → stone."
+     ]
+    },
+    "33": {
+     "ans": [
+      "barbers"
+     ],
+     "form": [
+      "Danh từ số nhiều (người)",
+      "Danh từ số ít"
+     ],
+     "kw": [
+      [
+       "Middle Ages",
+       "N",
+       "In the Middle Ages"
+      ],
+      [
+       "pulled by",
+       "V",
+       "pulled by"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>pulled by ___</i> → <b>người</b>, không có <i>a</i> → số nhiều.",
+      "Bẫy: <i>you would not go to a doctor</i>.",
+      "Teeth were usually pulled by **barbers** (nhớ <i>-s</i>)."
+     ]
+    },
+    "34": {
+     "ans": [
+      "college"
+     ],
+     "form": [
+      "Danh từ (nơi chốn)",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "1840",
+       "Num",
+       "In eighteen forty"
+      ],
+      [
+       "opened",
+       "V",
+       "opened"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>first dental ___ opened</i> → 1 <b>nơi</b> (trường, phòng khám…).",
+      "Mốc <b>1840</b> = tín hiệu chuyển sang câu 34.",
+      "the world's first dental **college** opened in Baltimore → college."
+     ]
+    },
+    "35": {
+     "ans": [
+      "bristles"
+     ],
+     "form": [
+      "Danh từ số nhiều",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "1938",
+       "Num",
+       "in nineteen thirty-eight"
+      ],
+      [
+       "nylon",
+       "Adj",
+       "nylon"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>with nylon ___</i> → <b>danh từ</b>, phần của bàn chải.",
+      "Bẫy: <i>animal hair</i> = bàn chải đời đầu.",
+      "toothbrushes with nylon **bristles** appeared → bristles (số nhiều)."
+     ]
+    },
+    "36": {
+     "ans": [
+      "prevention"
+     ],
+     "form": [
+      "Danh từ",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Today",
+       "Adv",
+       "Today, however"
+      ],
+      [
+       "more time on",
+       "N",
+       "spend more time on"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>more time on ___ than on treatment</i> → <b>danh từ</b> đối lập với treatment.",
+      "Bẫy xưa – nay: [[In the past]] … pulling teeth.",
+      "[[Today, however]], dentists spend more time on **prevention** → prevention."
+     ]
+    },
+    "37": {
+     "ans": [
+      "communication"
+     ],
+     "form": [
+      "Danh từ làm tính từ",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Future dentists",
+       "N",
+       "dentists of the future"
+      ],
+      [
+       "strong … skills",
+       "Adj+N",
+       "strong … skills"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>strong ___ skills</i> → loại <b>kỹ năng</b>.",
+      "Bẫy: [[Technical skills are already taught]] → không phải điều cần thêm.",
+      "[[In my opinion]] … strong **communication** skills → communication."
+     ]
+    }
+   },
+   "audio": "media/va-w20261121-fri.mp3",
+   "transcript": [
+    {
+     "sp": "Lecturer",
+     "t": "Good morning. Today I want to look at how dentistry developed into the profession we know today.",
+     "at": 44.1
+    },
+    {
+     "sp": "Lecturer",
+     "t": "[[People often say]] that dental treatment began about two thousand years ago. [[In fact]], scientists have found holes drilled into human teeth that are [[around]] **nine thousand** years old, in what is now Pakistan.",
+     "at": 50.5,
+     "q": 31
+    },
+    {
+     "sp": "Lecturer",
+     "t": "Those early drills were [[not made of metal]]. Metal tools came much later. The first drills were simple tools made of **stone**, and they were probably turned by hand.",
+     "at": 64.7,
+     "q": 32
+    },
+    {
+     "sp": "Lecturer",
+     "t": "For many centuries, there was no such thing as a dentist. In the Middle Ages in Europe, if you had a bad tooth, you would not go to a doctor. Teeth were usually pulled by **barbers**, the same people who cut your hair.",
+     "at": 75.6,
+     "q": 33
+    },
+    {
+     "sp": "Lecturer",
+     "t": "Things changed in the nineteenth century. In eighteen forty, the world's first dental **college** opened in Baltimore, in the United States, and dentistry became a separate profession with its own training.",
+     "at": 90.1,
+     "q": 34
+    },
+    {
+     "sp": "Lecturer",
+     "t": "Everyday tools changed too. Early toothbrushes used animal hair, but in nineteen thirty-eight, the first toothbrushes with nylon **bristles** appeared, and they quickly became popular.",
+     "at": 103.5,
+     "q": 35
+    },
+    {
+     "sp": "Lecturer",
+     "t": "[[In the past]], a dentist's main job was pulling teeth and repairing damage. [[Today, however]], dentists spend more time on **prevention** than on treatment, teaching patients how to keep their teeth healthy.",
+     "at": 116.1,
+     "q": 36
+    },
+    {
+     "sp": "Lecturer",
+     "t": "So what will dentists of the future need? [[Technical skills are already taught]] very well in dental schools. [[In my opinion]], the biggest challenge will be **communication**, so future dentists will need strong communication skills to help nervous patients.",
+     "at": 129.2,
+     "q": 37
     }
    ]
   }
