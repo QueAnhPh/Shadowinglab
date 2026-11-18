@@ -15,13 +15,14 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
   - **Không** tách mỗi collocation / phrasal verb thành 1 thẻ riêng. Từ cốt lõi (nhóm A, 12 từ) mỗi thẻ nên **≥ 3 từ**; nhóm B–D (hoạt động, nơi chốn, từ đời sống) có thể 1–2 từ khi không có từ cùng nghĩa.
   - **Cả bộ ≈ số từ bảng Vocab của buổi (~44–46 thẻ)**, mẫu: `decks/dt3.txt`, `decks/dt4.txt`. `make_deck.py` báo lỗi khi bộ > 55 thẻ hoặc số thẻ > 75 % số từ (= chưa gom), cảnh báo thẻ cốt lõi chỉ có 1 từ.
   - Từ chỉ gần nghĩa nhưng **ngược nghĩa / khác nghĩa** thì không gộp; nghĩa tiếng Việt của các thẻ không trùng nhau.
+- **Mục trong bộ chia theo topic (từ 18/11/2026, mọi lớp):** mỗi `@mục` = 1 mảng nhỏ của topic giáo án tuần đó, đặt tên `English · tiếng Việt` (vd. Transport: *Getting around · Phương tiện đi lại* · *Traffic & commuting · Kẹt xe, đi làm* · *My neighborhood & hometown · Nơi mình sống* · *Places in town · Nơi chốn trong thành phố*), 3–6 mục / bộ. **Không** đặt mục theo nhóm A–D của bảng Vocab hay "Alternatives": từ nhóm D (đi làm), C (Listening), Alternatives xếp vào mảng topic hợp nghĩa. Mục hiện thành nhãn trên thẻ; `make_deck.py` cảnh báo mục kiểu A–D.
 - `type` chỉ 4 giá trị **Vocab · Phrasal verb · Collocation · Idiom** (Noun/Verb/Adjective → Vocab, Noun phrase → Collocation). Band: 3–3.5 · 4–5 · 5.5–6.5 · 7–8 · 8.5–9 (8.5–9 tự có ⚠). IPA Mỹ, nhấn âm, grammar, câu ví dụ đúng bối cảnh HS. **Nghĩa không trùng** giữa các thẻ (lựa chọn đoán nghĩa lấy từ thẻ khác).
 - File thẻ `tools/lesson/decks/<id>.txt` (mẫu `decks/dt1.txt`):
   ```
   #id=dt3
   #title=Travel & Vacations
   #session=3
-  @A. Travel & Vacations: từ cốt lõi
+  @Planning a trip · Lên kế hoạch
   = kỳ nghỉ, đi nghỉ | vacation (Mỹ) = holiday (Anh) · go on vacation, không nói go to vacation
   vacation|Vocab|/veɪˈkeɪʃn/|va-CA-tion|3–3.5|go on / be on + vacation|The people in the picture are on vacation.
   getaway|Vocab|/ˈɡetəweɪ/|GET-a-way|5.5–6.5|a weekend getaway|We planned a weekend getaway to Da Lat.
@@ -70,6 +71,7 @@ File này là **nguồn chung** cho mọi project / lịch tự động soạn b
 | Ngày | Thay đổi |
 | --- | --- |
 | 14/11/2026 | Lịch tự động chạy trong project có gắn repo; phiên không có Projects dùng bản dự phòng `claude/...` trên Google Drive theo `CLAUDE.md` (mục 0) |
+| 18/11/2026 | Flashcard: mục trong bộ chia theo mảng của topic tuần đó (`English · tiếng Việt`), bỏ mục A–D / Alternatives; đã chia lại dt1, dt3, dt4, dt5, va1, va3 (nội dung thẻ, tiến độ ôn giữ nguyên) |
 | 12/11/2026 | Flashcard: nhắc lại quy tắc gom nhóm (1 thẻ = 1 từ bảng Vocab + synonym / collocation / phrasal verb / idiom, lưu ý so sánh; bộ ≈ 44–46 thẻ); `make_deck.py` báo lỗi bộ chưa gom; `dt4` gom lại 85 → 46 thẻ |
 | 10/11/2026 | Flashcard 🧠 Nhớ lại: nghĩa + câu đục lỗ → gõ từ, gợi ý kiểu Hangman, lặp giãn cách 1–30 ngày, trộn từ các bộ cũ; nhắc trước bài khi ≥ 5 thẻ đến hạn |
 | 9/11/2026 | Màn giáo viên + trang HS: xếp theo tuần → ngày (nhãn `T2 9/11`), tách ✅ Đã làm; tiêu đề không ghi thứ; bài nghe nộp rồi là xong, chỉ bài chưa xong mới báo qua hạn |

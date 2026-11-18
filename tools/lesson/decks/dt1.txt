@@ -2,7 +2,7 @@
 #title=Free time & Weekends
 #session=1
 #topic=Free time & Weekends
-@A. Free time
+@Free time & hobbies · Thời gian rảnh & sở thích
 = thời gian rảnh | free time không đếm được: có some / no, không nói a free time
 free time|Vocab|/ˌfriː ˈtaɪm/|free TIME|3–3.5|không đếm được: have some / no free time; in my free time|Everyone in the park is enjoying their free time.
 in my free time|Collocation|/ɪn maɪ ˈfriː taɪm/|in my FREE time|3–3.5|in + my/his + free time|In my free time, I read in the park.
@@ -13,6 +13,20 @@ hobby|Vocab|/ˈhɑːbi/|HOB-by|3–3.5|đếm được: a hobby, hobbies; my fav
 pastime|Vocab|/ˈpæstaɪm/|PAS-time|7–8|a popular / favorite + pastime|Badminton is a popular pastime in Vietnam.
 have a hobby|Collocation|/hæv ə ˈhɑːbi/|have‿a HOB-by|3–3.5|have + a hobby / hobbies|Everyone here seems to have a hobby.
 a favorite hobby|Collocation|/ə ˌfeɪvərɪt ˈhɑːbi/|a FA-vo-rite HOB-by|3–3.5|my/her + favorite + N|Reading is her favorite hobby.
+= bắt đầu theo / bắt đầu thích (sở thích) | take up = bắt đầu tập · get into = bắt đầu mê; cả hai + N / V-ing
+get into|Phrasal verb|/ˌɡet ˈɪntuː/|get‿IN-to|5.5–6.5|không tách được: + N / V-ing; QK got into|I got into badminton last year.
+take up|Phrasal verb|/ˌteɪk ˈʌp/|take‿UP|5.5–6.5|tách được: take up cycling / take it up; QK took up|He took up cycling to stay healthy.
+= sắp xếp, chen thời gian | free up = dọn để có thời gian trống · squeeze in = chen vào lịch kín · strike a balance between A and B = cân bằng
+free up|Phrasal verb|/ˌfriː ˈʌp/|free‿UP|5.5–6.5|tách được: free up my Sunday / free it up|I freed up my Sunday for the park.
+squeeze in|Phrasal verb|/ˌskwiːz ˈɪn/|squeeze‿IN|7–8|tách được: squeeze in a walk / squeeze it in|I try to squeeze in a short walk after dinner.
+strike a balance (between … and …)|Idiom|/ˌstraɪk ə ˈbæləns/|strike‿a BAL-ance|7–8|strike a balance + between A and B|It's hard to strike a balance between work and free time.
+= không phải gu của mình
+not my cup of tea|Idiom|/ˌnɑːt maɪ ˌkʌp əv ˈtiː/|not my CUP‿of TEA|7–8|sth + is not + my cup of tea|Video games are not my cup of tea.
+= một ngày nghỉ hiếm hoi
+a rare day off|Collocation|/ə ˌrer deɪ ˈɔːf/|a rare day‿OFF|5.5–6.5|on + a rare day off|On a rare day off, I just stay at home and sleep in.
+= thời gian cho bản thân
+me-time|Vocab|/ˈmiː taɪm/|ME-time|5.5–6.5|không đếm được: need some me-time|I need some me-time after a long day at my internship.
+@Relaxing at home · Thư giãn ở nhà
 = thư giãn, xả hơi | relaxing tả việc (a relaxing day), relaxed tả người (I feel relaxed) · chill out, kick back thân mật · wind down = thả lỏng sau khi căng thẳng
 relaxing|Vocab|/rɪˈlæksɪŋ/|re-LAX-ing|4–5|-ing tả sự việc (a relaxing day); -ed tả người (I feel relaxed)|Reading under a big tree looks really relaxing.
 feel relaxed|Collocation|/ˌfiːl rɪˈlækst/|feel re-LAXED|4–5|feel + relaxed (-ed tả cảm xúc người)|The girl feels relaxed.
@@ -34,6 +48,25 @@ get some extra sleep|Collocation|/ɡet səm ˌekstrə ˈsliːp/|get some EX-tra 
 catch up on sleep|Collocation|/ˌkætʃ ˈʌp ɑːn ˈsliːp/|catch‿UP‿on SLEEP|5.5–6.5|catch up on + sleep|I need to catch up on sleep.
 get some shut-eye|Collocation|/ɡet səm ˈʃʌt aɪ/|get some SHUT-eye|5.5–6.5|get + some shut-eye (thân mật)|After lunch, I try to get some shut-eye.
 sleep like a log|Idiom|/ˌsliːp laɪk ə ˈlɔːɡ/|sleep like‿a LOG|7–8|sleep like a log; QK slept like a log|After the hike, I slept like a log.
+= nghỉ một lát | take (không dùng make) a break · ease off = giảm nhịp, làm chậm lại
+take a break|Collocation|/ˌteɪk ə ˈbreɪk/|take‿a BREAK|4–5|take + a break (+ from sth)|The couple is taking a break with a cup of coffee.
+take a short break|Collocation|/ˌteɪk ə ʃɔːrt ˈbreɪk/|take‿a short BREAK|4–5|take + a short break|The cyclist takes a short break.
+need a break|Collocation|/ˌniːd ə ˈbreɪk/|need‿a BREAK|3–3.5|need + a break (+ from sth)|After exams, I need a break.
+take a breather|Idiom|/ˌteɪk ə ˈbriːðər/|take‿a BREATH-er|7–8|take + a breather (+ from sth)|Let's take a breather before the next task.
+ease off|Phrasal verb|/ˌiːz ˈɔːf/|ease‿OFF|7–8|không tân ngữ (+ on sth)|On weekends, I ease off a bit.
+= ở nhà thong thả, không làm gì | laze around hơi ý chê (lười); chilled-out là tính từ đứng trước danh từ
+laze around|Phrasal verb|/ˌleɪz əˈraʊnd/|laze‿a-ROUND|5.5–6.5|không tân ngữ (+ nơi chốn); QK lazed around|On a rare day off, I just laze around at home.
+chill out at home|Collocation|/ˌtʃɪl ˈaʊt ət ˈhoʊm/|chill‿OUT at HOME|5.5–6.5|chill out + at home / in + nơi chốn|Some people chill out at home.
+a chilled-out day|Collocation|/ə ˌtʃɪld aʊt ˈdeɪ/|a chilled-out DAY|7–8|a + chilled-out + N|It's a chilled-out day in the park.
+= bình tĩnh lại
+calm down|Phrasal verb|/ˌkɑːm ˈdaʊn/|calm DOWN|4–5|không tân ngữ / calm sb down|Reading helps me calm down.
+= dành cả ngày
+spend the whole day|Collocation|/ˌspend ðə hoʊl ˈdeɪ/|spend the whole DAY|4–5|+ V-ing / at + nơi chốn|They spent the whole day at the park.
+= lướt (mạng xã hội)
+scroll through|Phrasal verb|/ˌskroʊl ˈθruː/|scroll THROUGH|5.5–6.5|scroll through + N (TikTok, my phone)|I often scroll through TikTok to relax, but it wastes time.
+= xem liền nhiều tập phim
+binge-watch|Vocab|/ˈbɪndʒ wɑːtʃ/|BINGE-watch|7–8|binge-watch + a series / a show|After exams, I binge-watch my favorite series.
+@Going out with friends · Đi chơi với bạn
 = đi chơi, gặp gỡ bạn bè | hang out / meet up + with sb · hang around hơi ý la cà, không làm gì cụ thể
 hang out (with)|Phrasal verb|/ˌhæŋ ˈaʊt/|hang‿OUT|4–5|hang out + with sb (+ nơi chốn); QK hung out|Two friends are hanging out together and playing badminton.
 hang out with friends|Collocation|/ˌhæŋ ˈaʊt wɪð ˈfrendz/|hang‿OUT with FRIENDS|4–5|hang out + with + sb|He wants to hang out with friends.
@@ -48,32 +81,12 @@ have a great time|Collocation|/hæv ə ˌɡreɪt ˈtaɪm/|have‿a great TIME|3�
 have a lot of fun|Collocation|/hæv ə ˌlɑːt̬ əv ˈfʌn/|have‿a lot‿of FUN|3–3.5|a lot of / so much + fun|The kids are having a lot of fun.
 have a blast|Idiom|/hæv ə ˈblæst/|have‿a BLAST|7–8|have + a blast (+ V-ing)|We had a blast at the team party.
 have the time of my life|Idiom|/hæv ðə ˌtaɪm əv maɪ ˈlaɪf/|have the TIME‿of my LIFE|5.5–6.5|have + the time of + my/our + life|We had the time of our lives on our graduation trip.
-= nghỉ một lát | take (không dùng make) a break · ease off = giảm nhịp, làm chậm lại
-take a break|Collocation|/ˌteɪk ə ˈbreɪk/|take‿a BREAK|4–5|take + a break (+ from sth)|The couple is taking a break with a cup of coffee.
-take a short break|Collocation|/ˌteɪk ə ʃɔːrt ˈbreɪk/|take‿a short BREAK|4–5|take + a short break|The cyclist takes a short break.
-need a break|Collocation|/ˌniːd ə ˈbreɪk/|need‿a BREAK|3–3.5|need + a break (+ from sth)|After exams, I need a break.
-take a breather|Idiom|/ˌteɪk ə ˈbriːðər/|take‿a BREATH-er|7–8|take + a breather (+ from sth)|Let's take a breather before the next task.
-ease off|Phrasal verb|/ˌiːz ˈɔːf/|ease‿OFF|7–8|không tân ngữ (+ on sth)|On weekends, I ease off a bit.
 = đi dạo | go for a walk / take a stroll (dạo thong thả) · walk around + nơi chốn · stretch my legs = đi lại cho đỡ mỏi sau khi ngồi lâu
 go for a walk|Collocation|/ˌɡoʊ fər ə ˈwɔːk/|go for‿a WALK|3–3.5|go for + a walk; QK went for a walk|A couple is going for a walk near the lake.
 go for a short walk|Collocation|/ɡoʊ fər ə ˌʃɔːrt ˈwɔːk/|go for‿a short WALK|3–3.5|go for + a (short) walk|They go for a short walk after lunch.
 take a stroll|Collocation|/ˌteɪk ə ˈstroʊl/|take‿a STROLL|5.5–6.5|take + a stroll (+ along/around)|The couple takes a stroll along the path.
 walk around|Phrasal verb|/ˌwɔːk əˈraʊnd/|walk‿a-ROUND|3–3.5|không tách được: + nơi chốn|The couple is walking around the lake.
 stretch my legs|Idiom|/ˌstretʃ maɪ ˈleɡz/|stretch my LEGS|7–8|stretch + my/your + legs|After sitting at my desk all day, I go out to stretch my legs.
-= làm bù, làm cho xong việc | catch up on = làm bù phần còn dở · get through = làm cho xong · cram for = học dồn trước kỳ thi · burn the midnight oil = thức khuya làm việc
-catch up on|Phrasal verb|/ˌkætʃ ˈʌp ɑːn/|catch‿UP‿on|5.5–6.5|không tách được: + N / V-ing; QK caught up on|Maybe the girl is catching up on a book she didn't finish.
-catch up on homework|Collocation|/ˌkætʃ ˈʌp ɑːn ˈhoʊmwɝːk/|catch‿UP‿on HOME-work|5.5–6.5|catch up on + N|I catch up on homework on Sunday night.
-get through|Phrasal verb|/ˌɡet ˈθruː/|get THROUGH|5.5–6.5|không tách được: + N; QK got through|I got through my work first.
-cram for|Phrasal verb|/ˈkræm fər/|CRAM for|5.5–6.5|cram for + a test / an exam; QK crammed /d/|I usually cram for exams the night before.
-burn the midnight oil|Idiom|/ˌbɝːn ðə ˌmɪdnaɪt ˈɔɪl/|burn the MID-night OIL|8.5–9|cụm cố định; QK burned the midnight oil|I burned the midnight oil to finish my thesis.
-@Alternatives
-= bắt đầu theo / bắt đầu thích (sở thích) | take up = bắt đầu tập · get into = bắt đầu mê; cả hai + N / V-ing
-get into|Phrasal verb|/ˌɡet ˈɪntuː/|get‿IN-to|5.5–6.5|không tách được: + N / V-ing; QK got into|I got into badminton last year.
-take up|Phrasal verb|/ˌteɪk ˈʌp/|take‿UP|5.5–6.5|tách được: take up cycling / take it up; QK took up|He took up cycling to stay healthy.
-= ở nhà thong thả, không làm gì | laze around hơi ý chê (lười); chilled-out là tính từ đứng trước danh từ
-laze around|Phrasal verb|/ˌleɪz əˈraʊnd/|laze‿a-ROUND|5.5–6.5|không tân ngữ (+ nơi chốn); QK lazed around|On a rare day off, I just laze around at home.
-chill out at home|Collocation|/ˌtʃɪl ˈaʊt ət ˈhoʊm/|chill‿OUT at HOME|5.5–6.5|chill out + at home / in + nơi chốn|Some people chill out at home.
-a chilled-out day|Collocation|/ə ˌtʃɪld aʊt ˈdeɪ/|a chilled-out DAY|7–8|a + chilled-out + N|It's a chilled-out day in the park.
 = ra ngoài chơi | go out (không tân ngữ) + for N / to + nơi chốn; QK went out
 go out|Phrasal verb|/ˌɡoʊ ˈaʊt/|go‿OUT|3–3.5|không tân ngữ; for + N / to + nơi chốn; QK went out|We went out for ice cream after the picnic.
 go out for coffee|Collocation|/ˌɡoʊ ˈaʊt fər ˈkɔːfi/|go‿OUT for COF-fee|4–5|go out + for + N|The couple went out for coffee.
@@ -81,32 +94,20 @@ go out for coffee|Collocation|/ˌɡoʊ ˈaʊt fər ˈkɔːfi/|go‿OUT for COF-f
 live it up|Phrasal verb|/ˌlɪv ɪt ˈʌp/|live‿it‿UP|8.5–9|cụm cố định, luôn có it|After graduation, we're going to live it up.
 paint the town red|Idiom|/ˌpeɪnt ðə ˌtaʊn ˈred/|paint the town RED|8.5–9|cụm cố định; QK painted the town red|After our thesis defense, we painted the town red.
 let my hair down|Idiom|/ˌlet maɪ ˈher daʊn/|let my HAIR down|8.5–9|let + my/your + hair down|At the year-end party, everyone let their hair down.
-= sắp xếp, chen thời gian | free up = dọn để có thời gian trống · squeeze in = chen vào lịch kín · strike a balance between A and B = cân bằng
-free up|Phrasal verb|/ˌfriː ˈʌp/|free‿UP|5.5–6.5|tách được: free up my Sunday / free it up|I freed up my Sunday for the park.
-squeeze in|Phrasal verb|/ˌskwiːz ˈɪn/|squeeze‿IN|7–8|tách được: squeeze in a walk / squeeze it in|I try to squeeze in a short walk after dinner.
-strike a balance (between … and …)|Idiom|/ˌstraɪk ə ˈbæləns/|strike‿a BAL-ance|7–8|strike a balance + between A and B|It's hard to strike a balance between work and free time.
-= bình tĩnh lại
-calm down|Phrasal verb|/ˌkɑːm ˈdaʊn/|calm DOWN|4–5|không tân ngữ / calm sb down|Reading helps me calm down.
-= dành cả ngày
-spend the whole day|Collocation|/ˌspend ðə hoʊl ˈdeɪ/|spend the whole DAY|4–5|+ V-ing / at + nơi chốn|They spent the whole day at the park.
-= không phải gu của mình
-not my cup of tea|Idiom|/ˌnɑːt maɪ ˌkʌp əv ˈtiː/|not my CUP‿of TEA|7–8|sth + is not + my cup of tea|Video games are not my cup of tea.
-@D. Học tập, áp lực, thời gian cho mình
+@Busy weeks · Tuần bận rộn
+= làm bù, làm cho xong việc | catch up on = làm bù phần còn dở · get through = làm cho xong · cram for = học dồn trước kỳ thi · burn the midnight oil = thức khuya làm việc
+catch up on|Phrasal verb|/ˌkætʃ ˈʌp ɑːn/|catch‿UP‿on|5.5–6.5|không tách được: + N / V-ing; QK caught up on|Maybe the girl is catching up on a book she didn't finish.
+catch up on homework|Collocation|/ˌkætʃ ˈʌp ɑːn ˈhoʊmwɝːk/|catch‿UP‿on HOME-work|5.5–6.5|catch up on + N|I catch up on homework on Sunday night.
+get through|Phrasal verb|/ˌɡet ˈθruː/|get THROUGH|5.5–6.5|không tách được: + N; QK got through|I got through my work first.
+cram for|Phrasal verb|/ˈkræm fər/|CRAM for|5.5–6.5|cram for + a test / an exam; QK crammed /d/|I usually cram for exams the night before.
+burn the midnight oil|Idiom|/ˌbɝːn ðə ˌmɪdnaɪt ˈɔɪl/|burn the MID-night OIL|8.5–9|cụm cố định; QK burned the midnight oil|I burned the midnight oil to finish my thesis.
 = bận rộn, chịu áp lực | be under (a lot of) pressure + to V · be snowed under + with + N
 under pressure|Collocation|/ˌʌndər ˈpreʃər/|un-der PRES-sure|4–5|be + under (a lot of) pressure + to V|Final-year students are always under pressure.
 a hectic schedule|Collocation|/ə ˌhektɪk ˈskedʒuːl/|a HEC-tic SCHED-ule|5.5–6.5|have + a hectic schedule; schedule đọc /sk/|With my internship and my thesis, I have a hectic schedule.
 be snowed under (with)|Idiom|/bi ˌsnoʊd ˈʌndər/|be snowed‿UN-der|7–8|be snowed under + with + N|Before my thesis deadline, I'm snowed under with work.
 = lớp học thêm
 extra classes|Collocation|/ˌekstrə ˈklæsɪz/|EX-tra CLASS-es|4–5|take / go to + extra classes; -es đọc /ɪz/|I take extra English classes on Saturday mornings.
-= lướt (mạng xã hội)
-scroll through|Phrasal verb|/ˌskroʊl ˈθruː/|scroll THROUGH|5.5–6.5|scroll through + N (TikTok, my phone)|I often scroll through TikTok to relax, but it wastes time.
-= một ngày nghỉ hiếm hoi
-a rare day off|Collocation|/ə ˌrer deɪ ˈɔːf/|a rare day‿OFF|5.5–6.5|on + a rare day off|On a rare day off, I just stay at home and sleep in.
-= thời gian cho bản thân
-me-time|Vocab|/ˈmiː taɪm/|ME-time|5.5–6.5|không đếm được: need some me-time|I need some me-time after a long day at my internship.
-= xem liền nhiều tập phim
-binge-watch|Vocab|/ˈbɪndʒ wɑːtʃ/|BINGE-watch|7–8|binge-watch + a series / a show|After exams, I binge-watch my favorite series.
-@B. Hoạt động trong tranh
+@Outdoor activities · Hoạt động ngoài trời
 = đi dã ngoại
 have a picnic|Collocation|/hæv ə ˈpɪknɪk/|have‿a PIC-nic|3–3.5|have + a picnic (+ in the park)|A family is having a picnic on a red blanket.
 = thả diều
@@ -123,7 +124,7 @@ sit on a bench|Collocation|/ˌsɪt ɑːn ə ˈbentʃ/|sit‿on‿a BENCH|3–3.5
 hold a cup of coffee|Collocation|/hoʊld ə ˌkʌp əv ˈkɔːfi/|hold‿a cup‿of COF-fee|3–3.5|a cup of + N; QK held|The man is holding a cup of coffee.
 = chạy về phía
 run toward|Phrasal verb|/rʌn ˈtɔːrd/|run TOWARD|4–5|run toward + sb/sth; Anh: towards|The dog is running toward the family.
-@C. Đồ vật, nơi chốn, tả chung
+@In the park · Ở công viên
 = tấm thảm
 blanket|Vocab|/ˈblæŋkɪt/|BLAN-ket|3–3.5|đếm được: a blanket; on a blanket|The family is sitting on a red blanket.
 = cái giỏ

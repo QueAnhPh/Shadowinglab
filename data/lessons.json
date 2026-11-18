@@ -13563,7 +13563,7 @@
    "cards": [
     {
      "mean": "môn bắt buộc",
-     "cat": "A. Học tập & môn học",
+     "cat": "School subjects · Môn học",
      "items": [
       {
        "w": "a required subject",
@@ -13579,7 +13579,7 @@
     },
     {
      "mean": "môn tự chọn",
-     "cat": "A. Học tập & môn học",
+     "cat": "School subjects · Môn học",
      "items": [
       {
        "w": "an elective",
@@ -13594,42 +13594,8 @@
      "note": "đếm được: take / choose + an elective"
     },
     {
-     "mean": "học được, bắt đầu quen tay",
-     "cat": "A. Học tập & môn học",
-     "items": [
-      {
-       "w": "pick up (a skill)",
-       "type": "Phrasal verb",
-       "ipa": "/ˌpɪk ˈʌp/",
-       "stress": "pick‿UP",
-       "band": "5.5–6.5",
-       "grammar": "tách được: pick up English / pick it up; QK picked up",
-       "ex": "I picked up a lot of English from YouTube."
-      },
-      {
-       "w": "get the hang of",
-       "type": "Idiom",
-       "ipa": "/ˌɡɛt ðə ˈhæŋ əv/",
-       "stress": "get the HANG‿of",
-       "band": "7–8",
-       "grammar": "get the hang of + N / V-ing; QK got",
-       "ex": "After a few weeks, I started to get the hang of chemical equations."
-      },
-      {
-       "w": "learn the ropes",
-       "type": "Idiom",
-       "ipa": "/ˌlɝn ðə ˈroʊps/",
-       "stress": "learn the ROPES",
-       "band": "7–8",
-       "grammar": "learn the ropes (of + N)",
-       "ex": "Dental students spend the first months learning the ropes in the clinic."
-      }
-     ],
-     "note": "pick up = học được tự nhiên, không cần cố · get the hang of = sau một thời gian mới làm được · learn the ropes = làm quen việc ở chỗ mới (lớp, câu lạc bộ, nơi thực tập)"
-    },
-    {
      "mean": "giỏi, có năng khiếu",
-     "cat": "A. Học tập & môn học",
+     "cat": "School subjects · Môn học",
      "items": [
       {
        "w": "excel at",
@@ -13654,7 +13620,7 @@
     },
     {
      "mean": "đúng sở trường, đúng gu",
-     "cat": "A. Học tập & môn học",
+     "cat": "School subjects · Môn học",
      "items": [
       {
        "w": "be right up my alley",
@@ -13671,7 +13637,7 @@
     },
     {
      "mean": "khó, gặp khó",
-     "cat": "A. Học tập & môn học",
+     "cat": "School subjects · Môn học",
      "items": [
       {
        "w": "struggle with",
@@ -13704,8 +13670,57 @@
      "note": "struggle with: chủ ngữ là người · a tough nut to crack / a steep learning curve: chủ ngữ là môn, việc"
     },
     {
+     "mean": "thực hành, trực tiếp làm",
+     "cat": "School subjects · Môn học",
+     "items": [
+      {
+       "w": "hands-on",
+       "type": "Vocab",
+       "ipa": "/ˌhændzˈɑn/",
+       "stress": "hands-ON",
+       "band": "7–8",
+       "grammar": "tính từ: hands-on + experience / subject",
+       "ex": "I prefer hands-on subjects like biology lab work."
+      }
+     ]
+    },
+    {
+     "mean": "học được, bắt đầu quen tay",
+     "cat": "Learning & memorizing · Cách học",
+     "items": [
+      {
+       "w": "pick up (a skill)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpɪk ˈʌp/",
+       "stress": "pick‿UP",
+       "band": "5.5–6.5",
+       "grammar": "tách được: pick up English / pick it up; QK picked up",
+       "ex": "I picked up a lot of English from YouTube."
+      },
+      {
+       "w": "get the hang of",
+       "type": "Idiom",
+       "ipa": "/ˌɡɛt ðə ˈhæŋ əv/",
+       "stress": "get the HANG‿of",
+       "band": "7–8",
+       "grammar": "get the hang of + N / V-ing; QK got",
+       "ex": "After a few weeks, I started to get the hang of chemical equations."
+      },
+      {
+       "w": "learn the ropes",
+       "type": "Idiom",
+       "ipa": "/ˌlɝn ðə ˈroʊps/",
+       "stress": "learn the ROPES",
+       "band": "7–8",
+       "grammar": "learn the ropes (of + N)",
+       "ex": "Dental students spend the first months learning the ropes in the clinic."
+      }
+     ],
+     "note": "pick up = học được tự nhiên, không cần cố · get the hang of = sau một thời gian mới làm được · learn the ropes = làm quen việc ở chỗ mới (lớp, câu lạc bộ, nơi thực tập)"
+    },
+    {
      "mean": "nắm được, hiểu ra",
-     "cat": "A. Học tập & môn học",
+     "cat": "Learning & memorizing · Cách học",
      "items": [
       {
        "w": "figure out",
@@ -13730,7 +13745,7 @@
     },
     {
      "mean": "thuộc lòng, nắm chắc, nhớ lâu",
-     "cat": "A. Học tập & môn học",
+     "cat": "Learning & memorizing · Cách học",
      "items": [
       {
        "w": "learn sth by heart",
@@ -13763,23 +13778,8 @@
      "note": "learn by heart = học thuộc · know inside out = hiểu tường tận · retain information = giữ được kiến thức lâu (trang trọng)"
     },
     {
-     "mean": "thực hành, trực tiếp làm",
-     "cat": "A. Học tập & môn học",
-     "items": [
-      {
-       "w": "hands-on",
-       "type": "Vocab",
-       "ipa": "/ˌhændzˈɑn/",
-       "stress": "hands-ON",
-       "band": "7–8",
-       "grammar": "tính từ: hands-on + experience / subject",
-       "ex": "I prefer hands-on subjects like biology lab work."
-      }
-     ]
-    },
-    {
      "mean": "học vẹt",
-     "cat": "A. Học tập & môn học",
+     "cat": "Learning & memorizing · Cách học",
      "items": [
       {
        "w": "rote learning",
@@ -13794,7 +13794,7 @@
     },
     {
      "mean": "ôn lại, xem lại",
-     "cat": "A. Học tập & môn học",
+     "cat": "Learning & memorizing · Cách học",
      "items": [
       {
        "w": "review (for a test)",
@@ -13828,7 +13828,7 @@
     },
     {
      "mean": "tra (từ điển)",
-     "cat": "A. Học tập & môn học",
+     "cat": "Learning & memorizing · Cách học",
      "items": [
       {
        "w": "look up (a word)",
@@ -13842,8 +13842,189 @@
      ]
     },
     {
+     "mean": "ghi chép",
+     "cat": "Learning & memorizing · Cách học",
+     "items": [
+      {
+       "w": "take notes",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ˈnoʊts/",
+       "stress": "take NOTES",
+       "band": "4–5",
+       "grammar": "take notes + on + N",
+       "ex": "I take notes on my iPad in every class."
+      }
+     ]
+    },
+    {
+     "mean": "tham gia nhóm học",
+     "cat": "Learning & memorizing · Cách học",
+     "items": [
+      {
+       "w": "join a study group",
+       "type": "Collocation",
+       "ipa": "/ˌdʒɔɪn ə ˈstʌdi ˌɡrup/",
+       "stress": "join‿a STUD-y group",
+       "band": "4–5",
+       "grammar": "join + a study group (+ for + môn)",
+       "ex": "I joined a study group for chemistry."
+      }
+     ]
+    },
+    {
+     "mean": "tự học",
+     "cat": "Learning & memorizing · Cách học",
+     "items": [
+      {
+       "w": "self-study",
+       "type": "Vocab",
+       "ipa": "/ˌsɛlfˈstʌdi/",
+       "stress": "self-STUD-y",
+       "band": "5.5–6.5",
+       "grammar": "danh từ / động từ, có gạch nối",
+       "ex": "Most of my IELTS preparation is self-study."
+      }
+     ]
+    },
+    {
+     "mean": "theo kịp",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "keep up with",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkip ˈʌp wɪð/",
+       "stress": "keep‿UP with",
+       "band": "5.5–6.5",
+       "grammar": "không tách được: + N; QK kept up with",
+       "ex": "It's hard to keep up with all the homework."
+      }
+     ],
+     "note": "↔ fall behind"
+    },
+    {
+     "mean": "giữ tập trung",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "stay focused",
+       "type": "Collocation",
+       "ipa": "/ˌsteɪ ˈfoʊkəst/",
+       "stress": "stay FO-cused",
+       "band": "5.5–6.5",
+       "grammar": "stay focused + on + N",
+       "ex": "I put my phone away to stay focused."
+      },
+      {
+       "w": "keep my eye on the ball",
+       "type": "Idiom",
+       "ipa": "/ˌkip maɪ ˈaɪ ɑn ðə ˈbɔl/",
+       "stress": "keep my EYE‿on the BALL",
+       "band": "7–8",
+       "grammar": "keep + my/your + eye on the ball",
+       "ex": "I try to keep my eye on the ball during exam season."
+      }
+     ],
+     "note": "stay focused + on + N · keep my eye on the ball = luôn nhắm vào mục tiêu chính (thân mật)"
+    },
+    {
+     "mean": "mất tập trung, \"treo máy\"",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "zone out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌzoʊn ˈaʊt/",
+       "stress": "zone‿OUT",
+       "band": "7–8",
+       "grammar": "không tân ngữ (thân mật); QK zoned out",
+       "ex": "I zone out in long lectures."
+      }
+     ]
+    },
+    {
+     "mean": "trì hoãn",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "put off",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpʊt ˈɔf/",
+       "stress": "put‿OFF",
+       "band": "5.5–6.5",
+       "grammar": "tách được: put it off; + V-ing; QK put off",
+       "ex": "I always put off my essays until Sunday night."
+      },
+      {
+       "w": "procrastinate",
+       "type": "Vocab",
+       "ipa": "/prəˈkræstəˌneɪt/",
+       "stress": "pro-CRAS-ti-nate",
+       "band": "7–8",
+       "grammar": "không tân ngữ; danh từ procrastination",
+       "ex": "I tend to procrastinate when a subject is boring."
+      }
+     ],
+     "note": "put off + N / V-ing (tách được: put it off) · procrastinate không tân ngữ"
+    },
+    {
+     "mean": "học hành chăm chỉ, nghiêm túc",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "put in the hours",
+       "type": "Idiom",
+       "ipa": "/ˌpʊt ɪn ði ˈaʊɚz/",
+       "stress": "put‿in the HOURS",
+       "band": "7–8",
+       "grammar": "put in the hours; QK put in",
+       "ex": "You can't get a 6.5 unless you put in the hours."
+      },
+      {
+       "w": "hit the books",
+       "type": "Idiom",
+       "ipa": "/ˌhɪt ðə ˈbʊks/",
+       "stress": "hit the BOOKS",
+       "band": "7–8",
+       "grammar": "hit the books; QK hit",
+       "ex": "After Tết, I really need to hit the books."
+      }
+     ],
+     "note": "put in the hours = bỏ nhiều giờ công sức · hit the books = bắt tay vào học nghiêm túc (thân mật)"
+    },
+    {
+     "mean": "quản lý thời gian",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "manage my time",
+       "type": "Collocation",
+       "ipa": "/ˌmænɪdʒ maɪ ˈtaɪm/",
+       "stress": "MAN-age my TIME",
+       "band": "5.5–6.5",
+       "grammar": "manage + my/your + time; danh từ time management",
+       "ex": "I'm learning to manage my time better."
+      }
+     ]
+    },
+    {
+     "mean": "kịp hạn",
+     "cat": "Focus & time · Tập trung & thời gian",
+     "items": [
+      {
+       "w": "meet a deadline",
+       "type": "Collocation",
+       "ipa": "/ˌmit ə ˈdɛdˌlaɪn/",
+       "stress": "meet‿a DEAD-line",
+       "band": "5.5–6.5",
+       "grammar": "meet a deadline ↔ miss a deadline; QK met",
+       "ex": "It's hard to meet a deadline when I have three projects."
+      }
+     ]
+    },
+    {
      "mean": "kỳ thi tốt nghiệp THPT",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "the high school graduation exam",
@@ -13858,7 +14039,7 @@
     },
     {
      "mean": "quyết định thành bại, then chốt",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "a high-stakes exam",
@@ -13892,7 +14073,7 @@
     },
     {
      "mean": "bài thi thử",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "a mock test",
@@ -13916,23 +14097,8 @@
      "note": "take (không dùng do) a mock test"
     },
     {
-     "mean": "tuyển sinh đại học",
-     "cat": "B. Thi cử & áp lực",
-     "items": [
-      {
-       "w": "college admissions",
-       "type": "Collocation",
-       "ipa": "/ˈkɑlɪdʒ ədˈmɪʃənz/",
-       "stress": "COL-lege ad-MIS-sions",
-       "band": "5.5–6.5",
-       "grammar": "luôn số nhiều: admissions",
-       "ex": "IELTS can really help with college admissions."
-      }
-     ]
-    },
-    {
      "mean": "chịu áp lực, căng thẳng",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "be under a lot of pressure",
@@ -13984,7 +14150,7 @@
     },
     {
      "mean": "bận ngập đầu, nhiều bài vở",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "a heavy workload",
@@ -14009,7 +14175,7 @@
     },
     {
      "mean": "học dồn, thức đêm ôn thi",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "cram for",
@@ -14034,7 +14200,7 @@
     },
     {
      "mean": "bị tụt lại",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "fall behind",
@@ -14050,7 +14216,7 @@
     },
     {
      "mean": "làm bù",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "catch up on",
@@ -14065,7 +14231,7 @@
     },
     {
      "mean": "kiệt sức (do học quá sức)",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "burn out",
@@ -14080,7 +14246,7 @@
     },
     {
      "mean": "làm bài tốt, đỗ dễ dàng",
-     "cat": "B. Thi cử & áp lực",
+     "cat": "Exams & pressure · Thi cử & áp lực",
      "items": [
       {
        "w": "do well in",
@@ -14140,189 +14306,23 @@
      "note": "do well in / get good grades trung tính · ace thân mật · breeze / sail through = qua dễ dàng · with flying colors = điểm rất cao (Mỹ: colors)"
     },
     {
-     "mean": "ghi chép",
-     "cat": "C. Thói quen & phương pháp học",
+     "mean": "tuyển sinh đại học",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
-       "w": "take notes",
+       "w": "college admissions",
        "type": "Collocation",
-       "ipa": "/ˌteɪk ˈnoʊts/",
-       "stress": "take NOTES",
-       "band": "4–5",
-       "grammar": "take notes + on + N",
-       "ex": "I take notes on my iPad in every class."
-      }
-     ]
-    },
-    {
-     "mean": "tham gia nhóm học",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "join a study group",
-       "type": "Collocation",
-       "ipa": "/ˌdʒɔɪn ə ˈstʌdi ˌɡrup/",
-       "stress": "join‿a STUD-y group",
-       "band": "4–5",
-       "grammar": "join + a study group (+ for + môn)",
-       "ex": "I joined a study group for chemistry."
-      }
-     ]
-    },
-    {
-     "mean": "tự học",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "self-study",
-       "type": "Vocab",
-       "ipa": "/ˌsɛlfˈstʌdi/",
-       "stress": "self-STUD-y",
+       "ipa": "/ˈkɑlɪdʒ ədˈmɪʃənz/",
+       "stress": "COL-lege ad-MIS-sions",
        "band": "5.5–6.5",
-       "grammar": "danh từ / động từ, có gạch nối",
-       "ex": "Most of my IELTS preparation is self-study."
-      }
-     ]
-    },
-    {
-     "mean": "theo kịp",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "keep up with",
-       "type": "Phrasal verb",
-       "ipa": "/ˌkip ˈʌp wɪð/",
-       "stress": "keep‿UP with",
-       "band": "5.5–6.5",
-       "grammar": "không tách được: + N; QK kept up with",
-       "ex": "It's hard to keep up with all the homework."
-      }
-     ],
-     "note": "↔ fall behind"
-    },
-    {
-     "mean": "giữ tập trung",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "stay focused",
-       "type": "Collocation",
-       "ipa": "/ˌsteɪ ˈfoʊkəst/",
-       "stress": "stay FO-cused",
-       "band": "5.5–6.5",
-       "grammar": "stay focused + on + N",
-       "ex": "I put my phone away to stay focused."
-      },
-      {
-       "w": "keep my eye on the ball",
-       "type": "Idiom",
-       "ipa": "/ˌkip maɪ ˈaɪ ɑn ðə ˈbɔl/",
-       "stress": "keep my EYE‿on the BALL",
-       "band": "7–8",
-       "grammar": "keep + my/your + eye on the ball",
-       "ex": "I try to keep my eye on the ball during exam season."
-      }
-     ],
-     "note": "stay focused + on + N · keep my eye on the ball = luôn nhắm vào mục tiêu chính (thân mật)"
-    },
-    {
-     "mean": "mất tập trung, \"treo máy\"",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "zone out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌzoʊn ˈaʊt/",
-       "stress": "zone‿OUT",
-       "band": "7–8",
-       "grammar": "không tân ngữ (thân mật); QK zoned out",
-       "ex": "I zone out in long lectures."
-      }
-     ]
-    },
-    {
-     "mean": "trì hoãn",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "put off",
-       "type": "Phrasal verb",
-       "ipa": "/ˌpʊt ˈɔf/",
-       "stress": "put‿OFF",
-       "band": "5.5–6.5",
-       "grammar": "tách được: put it off; + V-ing; QK put off",
-       "ex": "I always put off my essays until Sunday night."
-      },
-      {
-       "w": "procrastinate",
-       "type": "Vocab",
-       "ipa": "/prəˈkræstəˌneɪt/",
-       "stress": "pro-CRAS-ti-nate",
-       "band": "7–8",
-       "grammar": "không tân ngữ; danh từ procrastination",
-       "ex": "I tend to procrastinate when a subject is boring."
-      }
-     ],
-     "note": "put off + N / V-ing (tách được: put it off) · procrastinate không tân ngữ"
-    },
-    {
-     "mean": "học hành chăm chỉ, nghiêm túc",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "put in the hours",
-       "type": "Idiom",
-       "ipa": "/ˌpʊt ɪn ði ˈaʊɚz/",
-       "stress": "put‿in the HOURS",
-       "band": "7–8",
-       "grammar": "put in the hours; QK put in",
-       "ex": "You can't get a 6.5 unless you put in the hours."
-      },
-      {
-       "w": "hit the books",
-       "type": "Idiom",
-       "ipa": "/ˌhɪt ðə ˈbʊks/",
-       "stress": "hit the BOOKS",
-       "band": "7–8",
-       "grammar": "hit the books; QK hit",
-       "ex": "After Tết, I really need to hit the books."
-      }
-     ],
-     "note": "put in the hours = bỏ nhiều giờ công sức · hit the books = bắt tay vào học nghiêm túc (thân mật)"
-    },
-    {
-     "mean": "quản lý thời gian",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "manage my time",
-       "type": "Collocation",
-       "ipa": "/ˌmænɪdʒ maɪ ˈtaɪm/",
-       "stress": "MAN-age my TIME",
-       "band": "5.5–6.5",
-       "grammar": "manage + my/your + time; danh từ time management",
-       "ex": "I'm learning to manage my time better."
-      }
-     ]
-    },
-    {
-     "mean": "kịp hạn",
-     "cat": "C. Thói quen & phương pháp học",
-     "items": [
-      {
-       "w": "meet a deadline",
-       "type": "Collocation",
-       "ipa": "/ˌmit ə ˈdɛdˌlaɪn/",
-       "stress": "meet‿a DEAD-line",
-       "band": "5.5–6.5",
-       "grammar": "meet a deadline ↔ miss a deadline; QK met",
-       "ex": "It's hard to meet a deadline when I have three projects."
+       "grammar": "luôn số nhiều: admissions",
+       "ex": "IELTS can really help with college admissions."
       }
      ]
     },
     {
      "mean": "nộp hồ sơ vào (trường)",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "apply to (a university)",
@@ -14337,7 +14337,7 @@
     },
     {
      "mean": "học chuyên ngành, theo đuổi",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "major in",
@@ -14362,7 +14362,7 @@
     },
     {
      "mean": "giành học bổng",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "win a scholarship",
@@ -14377,7 +14377,7 @@
     },
     {
      "mean": "công việc lương cao",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "a well-paid job",
@@ -14392,7 +14392,7 @@
     },
     {
      "mean": "triển vọng nghề nghiệp",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "career prospects",
@@ -14407,7 +14407,7 @@
     },
     {
      "mean": "bước đệm",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "a stepping stone (to)",
@@ -14422,7 +14422,7 @@
     },
     {
      "mean": "mở mang tầm nhìn",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "broaden my horizons",
@@ -14437,7 +14437,7 @@
     },
     {
      "mean": "sự tiếp xúc, trải nghiệm",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "exposure",
@@ -14452,7 +14452,7 @@
     },
     {
      "mean": "chưa chốt, để ngỏ lựa chọn",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "keep my options open",
@@ -14467,7 +14467,7 @@
     },
     {
      "mean": "theo nghề của người trong nhà",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "follow in sb's footsteps",
@@ -14482,7 +14482,7 @@
     },
     {
      "mean": "đòi hỏi cao, vất vả",
-     "cat": "D. Tương lai: đại học, ngành học, nghề nghiệp",
+     "cat": "University & future · Đại học & tương lai",
      "items": [
       {
        "w": "demanding",
@@ -14508,7 +14508,7 @@
    "cards": [
     {
      "mean": "kỳ nghỉ, đi nghỉ",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
+     "cat": "Planning a trip · Lên kế hoạch",
      "items": [
       {
        "w": "vacation",
@@ -14578,7 +14578,7 @@
     },
     {
      "mean": "chuyến đi",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
+     "cat": "Planning a trip · Lên kế hoạch",
      "items": [
       {
        "w": "trip",
@@ -14620,8 +14620,202 @@
      "note": "trip đếm được: take / go on a trip · excursion = chuyến tham quan ngắn, thường theo đoàn"
     },
     {
+     "mean": "đặt chỗ, đặt vé",
+     "cat": "Planning a trip · Lên kế hoạch",
+     "items": [
+      {
+       "w": "book",
+       "type": "Vocab",
+       "ipa": "/bʊk/",
+       "stress": "BOOK",
+       "band": "3–3.5",
+       "grammar": "book + a room / a flight / a table; QK booked /t/",
+       "ex": "She booked the hotel online two weeks ago."
+      },
+      {
+       "w": "book in advance",
+       "type": "Collocation",
+       "ipa": "/ˌbʊk ɪn ədˈvæns/",
+       "stress": "book‿in ad-VANCE",
+       "band": "5.5–6.5",
+       "grammar": "book (sth) + in advance",
+       "ex": "Booking in advance is usually cheaper."
+      },
+      {
+       "w": "book a flight",
+       "type": "Collocation",
+       "ipa": "/ˌbʊk ə ˈflaɪt/",
+       "stress": "book‿a FLIGHT",
+       "band": "4–5",
+       "grammar": "book + a flight + to + nơi chốn",
+       "ex": "She booked a flight to Hanoi."
+      },
+      {
+       "w": "book accommodation",
+       "type": "Collocation",
+       "ipa": "/ˌbʊk əˌkɑːməˈdeɪʃn/",
+       "stress": "book‿ac-com-mo-DA-tion",
+       "band": "4–5",
+       "grammar": "book + accommodation(s)",
+       "ex": "We booked accommodation online."
+      }
+     ],
+     "note": "book + a room / a flight / accommodation · book in advance = đặt trước · ngược lại: be booked up = hết chỗ"
+    },
+    {
+     "mean": "xếp đồ, mang đồ",
+     "cat": "Planning a trip · Lên kế hoạch",
+     "items": [
+      {
+       "w": "pack",
+       "type": "Vocab",
+       "ipa": "/pæk/",
+       "stress": "PACK",
+       "band": "3–3.5",
+       "grammar": "pack + a bag / a suitcase; QK packed /t/",
+       "ex": "She packed her suitcase the night before."
+      },
+      {
+       "w": "pack a suitcase",
+       "type": "Collocation",
+       "ipa": "/ˌpæk ə ˈsuːtkeɪs/",
+       "stress": "pack‿a SUIT-case",
+       "band": "4–5",
+       "grammar": "pack + a/my suitcase",
+       "ex": "I packed my suitcase last night."
+      },
+      {
+       "w": "pack up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpæk ˈʌp/",
+       "stress": "pack‿UP",
+       "band": "4–5",
+       "grammar": "tách được: pack up my things / pack them up",
+       "ex": "We packed up and went home."
+      },
+      {
+       "w": "pack light",
+       "type": "Collocation",
+       "ipa": "/ˌpæk ˈlaɪt/",
+       "stress": "pack LIGHT",
+       "band": "5.5–6.5",
+       "grammar": "pack + light (light = trạng từ)",
+       "ex": "On business trips, I always pack light."
+      }
+     ],
+     "note": "pack a suitcase = xếp va li · pack up = thu dọn để về · pack light = mang ít đồ (light là trạng từ)"
+    },
+    {
+     "mean": "khởi hành, lên đường",
+     "cat": "Planning a trip · Lên kế hoạch",
+     "items": [
+      {
+       "w": "set off",
+       "type": "Phrasal verb",
+       "ipa": "/ˌset ˈɔːf/",
+       "stress": "set‿OFF",
+       "band": "4–5",
+       "grammar": "không tân ngữ; set off for + nơi chốn; QK set off",
+       "ex": "We set off for the beach at 5 a.m."
+      },
+      {
+       "w": "hit the road",
+       "type": "Idiom",
+       "ipa": "/ˌhɪt ðə ˈroʊd/",
+       "stress": "hit the ROAD",
+       "band": "5.5–6.5",
+       "grammar": "không tân ngữ; QK hit the road",
+       "ex": "We hit the road at six to avoid the traffic."
+      },
+      {
+       "w": "head for",
+       "type": "Phrasal verb",
+       "ipa": "/ˈhed fər/",
+       "stress": "HEAD for",
+       "band": "5.5–6.5",
+       "grammar": "không tách được: + nơi chốn; QK headed for /ɪd/",
+       "ex": "After lunch, we headed for the beach."
+      }
+     ],
+     "note": "set off / hit the road (không tân ngữ) · head for + nơi chốn"
+    },
+    {
+     "mean": "du lịch tiết kiệm",
+     "cat": "Planning a trip · Lên kế hoạch",
+     "items": [
+      {
+       "w": "travel on a budget",
+       "type": "Collocation",
+       "ipa": "/ˌtrævl ɑːn ə ˈbʌdʒɪt/",
+       "stress": "TRAV-el on‿a BUD-get",
+       "band": "5.5–6.5",
+       "grammar": "travel + on a budget; travel là động từ (không nói a travel)",
+       "ex": "As students, we travel on a budget."
+      },
+      {
+       "w": "a budget hotel",
+       "type": "Collocation",
+       "ipa": "/ə ˌbʌdʒɪt hoʊˈtel/",
+       "stress": "a BUD-get ho-TEL",
+       "band": "4–5",
+       "grammar": "stay in + a budget hotel",
+       "ex": "We stayed in a budget hotel near the beach."
+      }
+     ],
+     "note": "travel là động từ: travel on a budget (không nói a travel) · stay in a budget hotel"
+    },
+    {
+     "mean": "nghỉ làm, nghỉ phép",
+     "cat": "Planning a trip · Lên kế hoạch",
+     "items": [
+      {
+       "w": "take time off (work)",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ˌtaɪm ˈɔːf/",
+       "stress": "take time‿OFF",
+       "band": "5.5–6.5",
+       "grammar": "take + time off (+ work); take + a day off",
+       "ex": "It's hard to take time off during your first months at work."
+      },
+      {
+       "w": "vacation days",
+       "type": "Collocation",
+       "ipa": "/veɪˈkeɪʃn deɪz/",
+       "stress": "va-CA-tion days",
+       "band": "5.5–6.5",
+       "grammar": "get / have + N vacation days (a year); Anh: annual leave",
+       "ex": "New employees in Vietnam usually get twelve vacation days a year."
+      },
+      {
+       "w": "out of office",
+       "type": "Collocation",
+       "ipa": "/ˌaʊt əv ˈɔːfɪs/",
+       "stress": "out‿of OF-fice",
+       "band": "5.5–6.5",
+       "grammar": "be + out of office; đứng trước danh từ: an out-of-office email",
+       "ex": "Before a trip, set an out-of-office email."
+      }
+     ],
+     "note": "take time off (work) / take a day off · vacation days (Mỹ) = annual leave (Anh) · an out-of-office email = email báo đang nghỉ"
+    },
+    {
+     "mean": "lịch trình chuyến đi",
+     "cat": "Planning a trip · Lên kế hoạch",
+     "items": [
+      {
+       "w": "itinerary",
+       "type": "Vocab",
+       "ipa": "/aɪˈtɪnəreri/",
+       "stress": "i-TIN-er-ar-y",
+       "band": "7–8",
+       "grammar": "plan / make + an itinerary; số nhiều itineraries",
+       "ex": "We planned a three-day itinerary for our trip."
+      }
+     ]
+    },
+    {
      "mean": "điểm đến, nơi nổi tiếng",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
      "items": [
       {
        "w": "destination",
@@ -14663,8 +14857,156 @@
      "note": "destination = nơi mình đi tới · tourist attraction = điểm thu hút khách · landmark = công trình biểu tượng"
     },
     {
+     "mean": "chỗ ở",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "accommodation",
+       "type": "Vocab",
+       "ipa": "/əˌkɑːməˈdeɪʃn/",
+       "stress": "ac-com-mo-DA-tion",
+       "band": "5.5–6.5",
+       "grammar": "Anh: không đếm được; Mỹ hay dùng accommodations",
+       "ex": "The hotel on the left is her accommodation."
+      },
+      {
+       "w": "lodging",
+       "type": "Vocab",
+       "ipa": "/ˈlɑːdʒɪŋ/",
+       "stress": "LODG-ing",
+       "band": "7–8",
+       "grammar": "không đếm được; food and lodging",
+       "ex": "The company pays for food and lodging on business trips."
+      },
+      {
+       "w": "beach resort",
+       "type": "Collocation",
+       "ipa": "/ˈbiːtʃ rɪˌzɔːrt/",
+       "stress": "BEACH re-sort",
+       "band": "4–5",
+       "grammar": "stay at + a beach resort",
+       "ex": "The hotel in the picture is part of a beach resort."
+      },
+      {
+       "w": "a home away from home",
+       "type": "Idiom",
+       "ipa": "/ə ˌhoʊm əˌweɪ frəm ˈhoʊm/",
+       "stress": "a HOME‿a-way from HOME",
+       "band": "7–8",
+       "grammar": "be + a home away from home",
+       "ex": "My host family's house was a home away from home."
+      }
+     ],
+     "note": "accommodation: Anh không đếm được, Mỹ hay dùng accommodations · lodging trang trọng · a home away from home = nơi ở thân như nhà"
+    },
+    {
+     "mean": "trả phòng",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "check out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌtʃek ˈaʊt/",
+       "stress": "check‿OUT",
+       "band": "4–5",
+       "grammar": "không tân ngữ (+ of + nơi chốn); QK checked out",
+       "ex": "We checked out at noon."
+      }
+     ]
+    },
+    {
+     "mean": "kín chỗ, hết phòng",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "be booked up",
+       "type": "Phrasal verb",
+       "ipa": "/bi ˌbʊkt ˈʌp/",
+       "stress": "be booked‿UP",
+       "band": "5.5–6.5",
+       "grammar": "be + booked up",
+       "ex": "All the hotels were booked up."
+      }
+     ]
+    },
+    {
+     "mean": "dừng chân, quá cảnh",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "stop over",
+       "type": "Phrasal verb",
+       "ipa": "/ˌstɑːp ˈoʊvər/",
+       "stress": "stop‿O-ver",
+       "band": "7–8",
+       "grammar": "không tân ngữ (+ in + nơi chốn); QK stopped over /t/",
+       "ex": "We stopped over in Singapore for a night."
+      }
+     ]
+    },
+    {
+     "mean": "nơi \"chặt chém\" du khách",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "a tourist trap",
+       "type": "Collocation",
+       "ipa": "/ə ˈtʊrɪst træp/",
+       "stress": "a TOUR-ist trap",
+       "band": "7–8",
+       "grammar": "be + a tourist trap (ý chê; ⚠ dùng khi chắc ngữ cảnh)",
+       "ex": "That night market is a tourist trap."
+      }
+     ]
+    },
+    {
+     "mean": "nơi ít người biết",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "off the beaten track",
+       "type": "Idiom",
+       "ipa": "/ˌɔːf ðə ˌbiːtn ˈtræk/",
+       "stress": "off the BEAT-en TRACK",
+       "band": "7–8",
+       "grammar": "go / travel + off the beaten track; Mỹ hay nói off the beaten path",
+       "ex": "I like small villages off the beaten track."
+      }
+     ]
+    },
+    {
+     "mean": "nhận phòng",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "check in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌtʃek ˈɪn/",
+       "stress": "check‿IN",
+       "band": "4–5",
+       "grammar": "không tân ngữ; check in at + khách sạn; QK checked in /t/",
+       "ex": "The woman is going to check in at the hotel."
+      }
+     ]
+    },
+    {
+     "mean": "ở cùng gia đình bản xứ",
+     "cat": "Places & accommodation · Nơi đến & chỗ ở",
+     "items": [
+      {
+       "w": "stay with a host family",
+       "type": "Collocation",
+       "ipa": "/ˌsteɪ wɪð ə ˈhoʊst ˌfæməli/",
+       "stress": "stay with‿a HOST fam-i-ly",
+       "band": "5.5–6.5",
+       "grammar": "stay with + sb; QK stayed /d/",
+       "ex": "Exchange students often stay with a host family."
+      }
+     ]
+    },
+    {
      "mean": "tham quan, khám phá",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "go sightseeing",
@@ -14715,248 +15057,8 @@
      "note": "go sightseeing = see the sights · look around + nơi chốn · explore (the area) = khám phá, tự đi tìm hiểu"
     },
     {
-     "mean": "chỗ ở",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
-     "items": [
-      {
-       "w": "accommodation",
-       "type": "Vocab",
-       "ipa": "/əˌkɑːməˈdeɪʃn/",
-       "stress": "ac-com-mo-DA-tion",
-       "band": "5.5–6.5",
-       "grammar": "Anh: không đếm được; Mỹ hay dùng accommodations",
-       "ex": "The hotel on the left is her accommodation."
-      },
-      {
-       "w": "lodging",
-       "type": "Vocab",
-       "ipa": "/ˈlɑːdʒɪŋ/",
-       "stress": "LODG-ing",
-       "band": "7–8",
-       "grammar": "không đếm được; food and lodging",
-       "ex": "The company pays for food and lodging on business trips."
-      },
-      {
-       "w": "beach resort",
-       "type": "Collocation",
-       "ipa": "/ˈbiːtʃ rɪˌzɔːrt/",
-       "stress": "BEACH re-sort",
-       "band": "4–5",
-       "grammar": "stay at + a beach resort",
-       "ex": "The hotel in the picture is part of a beach resort."
-      },
-      {
-       "w": "a home away from home",
-       "type": "Idiom",
-       "ipa": "/ə ˌhoʊm əˌweɪ frəm ˈhoʊm/",
-       "stress": "a HOME‿a-way from HOME",
-       "band": "7–8",
-       "grammar": "be + a home away from home",
-       "ex": "My host family's house was a home away from home."
-      }
-     ],
-     "note": "accommodation: Anh không đếm được, Mỹ hay dùng accommodations · lodging trang trọng · a home away from home = nơi ở thân như nhà"
-    },
-    {
-     "mean": "đặt chỗ, đặt vé",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
-     "items": [
-      {
-       "w": "book",
-       "type": "Vocab",
-       "ipa": "/bʊk/",
-       "stress": "BOOK",
-       "band": "3–3.5",
-       "grammar": "book + a room / a flight / a table; QK booked /t/",
-       "ex": "She booked the hotel online two weeks ago."
-      },
-      {
-       "w": "book in advance",
-       "type": "Collocation",
-       "ipa": "/ˌbʊk ɪn ədˈvæns/",
-       "stress": "book‿in ad-VANCE",
-       "band": "5.5–6.5",
-       "grammar": "book (sth) + in advance",
-       "ex": "Booking in advance is usually cheaper."
-      },
-      {
-       "w": "book a flight",
-       "type": "Collocation",
-       "ipa": "/ˌbʊk ə ˈflaɪt/",
-       "stress": "book‿a FLIGHT",
-       "band": "4–5",
-       "grammar": "book + a flight + to + nơi chốn",
-       "ex": "She booked a flight to Hanoi."
-      },
-      {
-       "w": "book accommodation",
-       "type": "Collocation",
-       "ipa": "/ˌbʊk əˌkɑːməˈdeɪʃn/",
-       "stress": "book‿ac-com-mo-DA-tion",
-       "band": "4–5",
-       "grammar": "book + accommodation(s)",
-       "ex": "We booked accommodation online."
-      }
-     ],
-     "note": "book + a room / a flight / accommodation · book in advance = đặt trước · ngược lại: be booked up = hết chỗ"
-    },
-    {
-     "mean": "xếp đồ, mang đồ",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
-     "items": [
-      {
-       "w": "pack",
-       "type": "Vocab",
-       "ipa": "/pæk/",
-       "stress": "PACK",
-       "band": "3–3.5",
-       "grammar": "pack + a bag / a suitcase; QK packed /t/",
-       "ex": "She packed her suitcase the night before."
-      },
-      {
-       "w": "pack a suitcase",
-       "type": "Collocation",
-       "ipa": "/ˌpæk ə ˈsuːtkeɪs/",
-       "stress": "pack‿a SUIT-case",
-       "band": "4–5",
-       "grammar": "pack + a/my suitcase",
-       "ex": "I packed my suitcase last night."
-      },
-      {
-       "w": "pack up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌpæk ˈʌp/",
-       "stress": "pack‿UP",
-       "band": "4–5",
-       "grammar": "tách được: pack up my things / pack them up",
-       "ex": "We packed up and went home."
-      },
-      {
-       "w": "pack light",
-       "type": "Collocation",
-       "ipa": "/ˌpæk ˈlaɪt/",
-       "stress": "pack LIGHT",
-       "band": "5.5–6.5",
-       "grammar": "pack + light (light = trạng từ)",
-       "ex": "On business trips, I always pack light."
-      }
-     ],
-     "note": "pack a suitcase = xếp va li · pack up = thu dọn để về · pack light = mang ít đồ (light là trạng từ)"
-    },
-    {
-     "mean": "(thuộc) địa phương, truyền thống, chính gốc",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
-     "items": [
-      {
-       "w": "local",
-       "type": "Vocab",
-       "ipa": "/ˈloʊkl/",
-       "stress": "LO-cal",
-       "band": "4–5",
-       "grammar": "local + food / people / culture",
-       "ex": "A girl is trying local food at a food cart."
-      },
-      {
-       "w": "traditional",
-       "type": "Vocab",
-       "ipa": "/trəˈdɪʃənl/",
-       "stress": "tra-DI-tion-al",
-       "band": "4–5",
-       "grammar": "traditional + food / clothes / festival",
-       "ex": "The stall sells traditional hats."
-      },
-      {
-       "w": "authentic",
-       "type": "Vocab",
-       "ipa": "/ɔːˈθentɪk/",
-       "stress": "au-THEN-tic",
-       "band": "7–8",
-       "grammar": "authentic + food / dish / experience",
-       "ex": "This stall sells authentic Hue beef noodle soup."
-      }
-     ],
-     "note": "local = của nơi đó · traditional = có từ lâu đời · authentic = đúng kiểu gốc, không pha"
-    },
-    {
-     "mean": "đáng nhớ, để đời",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
-     "items": [
-      {
-       "w": "memorable",
-       "type": "Vocab",
-       "ipa": "/ˈmemərəbl/",
-       "stress": "MEM-o-ra-ble",
-       "band": "5.5–6.5",
-       "grammar": "a memorable + trip / experience",
-       "ex": "It is a memorable trip for the two friends."
-      },
-      {
-       "w": "a memorable experience",
-       "type": "Collocation",
-       "ipa": "/ə ˌmemərəbl ɪkˈspɪriəns/",
-       "stress": "a MEM-o-ra-ble ex-PER-i-ence",
-       "band": "5.5–6.5",
-       "grammar": "It was + a memorable experience",
-       "ex": "Staying with a host family was a memorable experience."
-      },
-      {
-       "w": "a once-in-a-lifetime experience",
-       "type": "Collocation",
-       "ipa": "/ə ˌwʌns ɪn ə ˈlaɪftaɪm ɪkˈspɪriəns/",
-       "stress": "a ONCE-in‿a-LIFE-time ex-PER-i-ence",
-       "band": "7–8",
-       "grammar": "It was + a once-in-a-lifetime experience",
-       "ex": "Surfing in Bali was a once-in-a-lifetime experience."
-      },
-      {
-       "w": "the trip of a lifetime",
-       "type": "Idiom",
-       "ipa": "/ðə ˌtrɪp əv ə ˈlaɪftaɪm/",
-       "stress": "the TRIP‿of‿a LIFE-time",
-       "band": "7–8",
-       "grammar": "be + the trip of a lifetime",
-       "ex": "Our graduation trip was the trip of a lifetime."
-      }
-     ],
-     "note": "It was + a memorable / once-in-a-lifetime experience · the trip of a lifetime"
-    },
-    {
-     "mean": "nhớ nhà, lạc lõng",
-     "cat": "A. Travel & Vacations: từ cốt lõi",
-     "items": [
-      {
-       "w": "homesick",
-       "type": "Vocab",
-       "ipa": "/ˈhoʊmsɪk/",
-       "stress": "HOME-sick",
-       "band": "5.5–6.5",
-       "grammar": "feel / be + homesick (for + nơi chốn)",
-       "ex": "On my first trip abroad, I felt a bit homesick."
-      },
-      {
-       "w": "feel homesick",
-       "type": "Collocation",
-       "ipa": "/ˌfiːl ˈhoʊmsɪk/",
-       "stress": "feel HOME-sick",
-       "band": "4–5",
-       "grammar": "feel + homesick (+ for)",
-       "ex": "I felt homesick on my first night abroad."
-      },
-      {
-       "w": "a fish out of water",
-       "type": "Idiom",
-       "ipa": "/ə ˌfɪʃ aʊt əv ˈwɔːt̬ər/",
-       "stress": "a FISH‿out‿of WA-ter",
-       "band": "7–8",
-       "grammar": "feel like + a fish out of water",
-       "ex": "On my first business trip, I felt like a fish out of water."
-      }
-     ],
-     "note": "feel + homesick (+ for nơi chốn) · a fish out of water = thấy lạc lõng ở nơi mới; ngược lại: settle in = quen dần"
-    },
-    {
      "mean": "đi xem có người dẫn",
-     "cat": "Alternatives",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "take a guided tour",
@@ -14980,42 +15082,8 @@
      "note": "take a guided tour + of nơi chốn (có hướng dẫn viên) · show sb around = người quen dẫn mình đi xem"
     },
     {
-     "mean": "khởi hành, lên đường",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "set off",
-       "type": "Phrasal verb",
-       "ipa": "/ˌset ˈɔːf/",
-       "stress": "set‿OFF",
-       "band": "4–5",
-       "grammar": "không tân ngữ; set off for + nơi chốn; QK set off",
-       "ex": "We set off for the beach at 5 a.m."
-      },
-      {
-       "w": "hit the road",
-       "type": "Idiom",
-       "ipa": "/ˌhɪt ðə ˈroʊd/",
-       "stress": "hit the ROAD",
-       "band": "5.5–6.5",
-       "grammar": "không tân ngữ; QK hit the road",
-       "ex": "We hit the road at six to avoid the traffic."
-      },
-      {
-       "w": "head for",
-       "type": "Phrasal verb",
-       "ipa": "/ˈhed fər/",
-       "stress": "HEAD for",
-       "band": "5.5–6.5",
-       "grammar": "không tách được: + nơi chốn; QK headed for /ɪd/",
-       "ex": "After lunch, we headed for the beach."
-      }
-     ],
-     "note": "set off / hit the road (không tân ngữ) · head for + nơi chốn"
-    },
-    {
      "mean": "ăn ngoài hàng",
-     "cat": "Alternatives",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "eat out",
@@ -15029,23 +15097,8 @@
      ]
     },
     {
-     "mean": "trả phòng",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "check out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌtʃek ˈaʊt/",
-       "stress": "check‿OUT",
-       "band": "4–5",
-       "grammar": "không tân ngữ (+ of + nơi chốn); QK checked out",
-       "ex": "We checked out at noon."
-      }
-     ]
-    },
-    {
      "mean": "đi lại (trong một nơi)",
-     "cat": "Alternatives",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "get around",
@@ -15059,53 +15112,8 @@
      ]
     },
     {
-     "mean": "kín chỗ, hết phòng",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "be booked up",
-       "type": "Phrasal verb",
-       "ipa": "/bi ˌbʊkt ˈʌp/",
-       "stress": "be booked‿UP",
-       "band": "5.5–6.5",
-       "grammar": "be + booked up",
-       "ex": "All the hotels were booked up."
-      }
-     ]
-    },
-    {
-     "mean": "quen dần với nơi mới",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "settle in",
-       "type": "Phrasal verb",
-       "ipa": "/ˌsetl ˈɪn/",
-       "stress": "set-tle‿IN",
-       "band": "7–8",
-       "grammar": "không tân ngữ; QK settled in",
-       "ex": "I felt homesick, but I settled in quickly."
-      }
-     ]
-    },
-    {
-     "mean": "dừng chân, quá cảnh",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "stop over",
-       "type": "Phrasal verb",
-       "ipa": "/ˌstɑːp ˈoʊvər/",
-       "stress": "stop‿O-ver",
-       "band": "7–8",
-       "grammar": "không tân ngữ (+ in + nơi chốn); QK stopped over /t/",
-       "ex": "We stopped over in Singapore for a night."
-      }
-     ]
-    },
-    {
      "mean": "phong cảnh ngoạn mục",
-     "cat": "Alternatives",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "breathtaking scenery",
@@ -15119,54 +15127,8 @@
      ]
     },
     {
-     "mean": "nơi \"chặt chém\" du khách",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "a tourist trap",
-       "type": "Collocation",
-       "ipa": "/ə ˈtʊrɪst træp/",
-       "stress": "a TOUR-ist trap",
-       "band": "7–8",
-       "grammar": "be + a tourist trap (ý chê; ⚠ dùng khi chắc ngữ cảnh)",
-       "ex": "That night market is a tourist trap."
-      }
-     ]
-    },
-    {
-     "mean": "nơi ít người biết",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "off the beaten track",
-       "type": "Idiom",
-       "ipa": "/ˌɔːf ðə ˌbiːtn ˈtræk/",
-       "stress": "off the BEAT-en TRACK",
-       "band": "7–8",
-       "grammar": "go / travel + off the beaten track; Mỹ hay nói off the beaten path",
-       "ex": "I like small villages off the beaten track."
-      }
-     ]
-    },
-    {
-     "mean": "đi liên tục, sống bằng va li",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "live out of a suitcase",
-       "type": "Idiom",
-       "ipa": "/ˌlɪv aʊt əv ə ˈsuːtkeɪs/",
-       "stress": "live‿out‿of‿a SUIT-case",
-       "band": "8.5–9",
-       "grammar": "live out of + a suitcase (thường V-ing)",
-       "ex": "Consultants often live out of a suitcase.",
-       "warn": true
-      }
-     ]
-    },
-    {
      "mean": "trải nghiệm văn hóa, món ăn địa phương",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "try local food",
@@ -15210,7 +15172,7 @@
     },
     {
      "mean": "tắm nắng",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "sunbathe",
@@ -15234,23 +15196,8 @@
      "note": "sunbathe không tân ngữ · soak up the sun / soak it up"
     },
     {
-     "mean": "nhận phòng",
-     "cat": "B. Hoạt động trong tranh",
-     "items": [
-      {
-       "w": "check in",
-       "type": "Phrasal verb",
-       "ipa": "/ˌtʃek ˈɪn/",
-       "stress": "check‿IN",
-       "band": "4–5",
-       "grammar": "không tân ngữ; check in at + khách sạn; QK checked in /t/",
-       "ex": "The woman is going to check in at the hotel."
-      }
-     ]
-    },
-    {
      "mean": "kéo va li",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "wheel a suitcase",
@@ -15265,7 +15212,7 @@
     },
     {
      "mean": "xem bản đồ",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "look at a map",
@@ -15280,7 +15227,7 @@
     },
     {
      "mean": "mua quà lưu niệm",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "buy souvenirs",
@@ -15295,7 +15242,7 @@
     },
     {
      "mean": "chụp ảnh tự sướng",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "take a selfie",
@@ -15310,7 +15257,7 @@
     },
     {
      "mean": "đi lướt sóng",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "go surfing",
@@ -15325,7 +15272,7 @@
     },
     {
      "mean": "đi tàu tham quan",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "go on a boat trip",
@@ -15339,232 +15286,8 @@
      ]
     },
     {
-     "mean": "làm việc từ xa",
-     "cat": "B. Hoạt động trong tranh",
-     "items": [
-      {
-       "w": "work remotely",
-       "type": "Collocation",
-       "ipa": "/ˌwɝːk rɪˈmoʊtli/",
-       "stress": "work re-MOTE-ly",
-       "band": "5.5–6.5",
-       "grammar": "work + remotely (trạng từ); tính từ: remote work",
-       "ex": "A man is working remotely at a beach café."
-      }
-     ]
-    },
-    {
-     "mean": "du lịch tiết kiệm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "travel on a budget",
-       "type": "Collocation",
-       "ipa": "/ˌtrævl ɑːn ə ˈbʌdʒɪt/",
-       "stress": "TRAV-el on‿a BUD-get",
-       "band": "5.5–6.5",
-       "grammar": "travel + on a budget; travel là động từ (không nói a travel)",
-       "ex": "As students, we travel on a budget."
-      },
-      {
-       "w": "a budget hotel",
-       "type": "Collocation",
-       "ipa": "/ə ˌbʌdʒɪt hoʊˈtel/",
-       "stress": "a BUD-get ho-TEL",
-       "band": "4–5",
-       "grammar": "stay in + a budget hotel",
-       "ex": "We stayed in a budget hotel near the beach."
-      }
-     ],
-     "note": "travel là động từ: travel on a budget (không nói a travel) · stay in a budget hotel"
-    },
-    {
-     "mean": "nghỉ làm, nghỉ phép",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "take time off (work)",
-       "type": "Collocation",
-       "ipa": "/ˌteɪk ˌtaɪm ˈɔːf/",
-       "stress": "take time‿OFF",
-       "band": "5.5–6.5",
-       "grammar": "take + time off (+ work); take + a day off",
-       "ex": "It's hard to take time off during your first months at work."
-      },
-      {
-       "w": "vacation days",
-       "type": "Collocation",
-       "ipa": "/veɪˈkeɪʃn deɪz/",
-       "stress": "va-CA-tion days",
-       "band": "5.5–6.5",
-       "grammar": "get / have + N vacation days (a year); Anh: annual leave",
-       "ex": "New employees in Vietnam usually get twelve vacation days a year."
-      },
-      {
-       "w": "out of office",
-       "type": "Collocation",
-       "ipa": "/ˌaʊt əv ˈɔːfɪs/",
-       "stress": "out‿of OF-fice",
-       "band": "5.5–6.5",
-       "grammar": "be + out of office; đứng trước danh từ: an out-of-office email",
-       "ex": "Before a trip, set an out-of-office email."
-      }
-     ],
-     "note": "take time off (work) / take a day off · vacation days (Mỹ) = annual leave (Anh) · an out-of-office email = email báo đang nghỉ"
-    },
-    {
-     "mean": "chuyến công tác",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "business trip",
-       "type": "Collocation",
-       "ipa": "/ˈbɪznəs trɪp/",
-       "stress": "BUS-i-ness trip",
-       "band": "4–5",
-       "grammar": "go on + a business trip + to + nơi chốn",
-       "ex": "My first business trip will probably be to Ho Chi Minh City."
-      }
-     ]
-    },
-    {
-     "mean": "chuyến du lịch gắn kết công ty",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "team-building trip",
-       "type": "Collocation",
-       "ipa": "/ˈtiːm ˌbɪldɪŋ trɪp/",
-       "stress": "TEAM-build-ing trip",
-       "band": "5.5–6.5",
-       "grammar": "organize / go on + a team-building trip",
-       "ex": "Many companies organize a team-building trip every summer."
-      }
-     ]
-    },
-    {
-     "mean": "chuyến đi mừng tốt nghiệp",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "graduation trip",
-       "type": "Collocation",
-       "ipa": "/ˌɡrædʒuˈeɪʃn trɪp/",
-       "stress": "grad-u-A-tion trip",
-       "band": "4–5",
-       "grammar": "plan / take + a graduation trip",
-       "ex": "We are planning a graduation trip after our thesis defense."
-      }
-     ]
-    },
-    {
-     "mean": "lịch trình chuyến đi",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "itinerary",
-       "type": "Vocab",
-       "ipa": "/aɪˈtɪnəreri/",
-       "stress": "i-TIN-er-ar-y",
-       "band": "7–8",
-       "grammar": "plan / make + an itinerary; số nhiều itineraries",
-       "ex": "We planned a three-day itinerary for our trip."
-      }
-     ]
-    },
-    {
-     "mean": "kỳ nghỉ biển",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
-     "items": [
-      {
-       "w": "beach vacation",
-       "type": "Collocation",
-       "ipa": "/ˈbiːtʃ veɪˌkeɪʃn/",
-       "stress": "BEACH va-ca-tion",
-       "band": "3–3.5",
-       "grammar": "go on + a beach vacation",
-       "ex": "A beach vacation is perfect in June."
-      }
-     ]
-    },
-    {
-     "mean": "chuyến đi thành phố ngắn ngày",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
-     "items": [
-      {
-       "w": "city break",
-       "type": "Collocation",
-       "ipa": "/ˈsɪt̬i breɪk/",
-       "stress": "CIT-y break",
-       "band": "5.5–6.5",
-       "grammar": "have / go on + a city break",
-       "ex": "A city break in Hanoi is great for a long weekend."
-      }
-     ]
-    },
-    {
-     "mean": "kỳ nghỉ mạo hiểm",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
-     "items": [
-      {
-       "w": "adventure vacation",
-       "type": "Collocation",
-       "ipa": "/ədˈventʃər veɪˌkeɪʃn/",
-       "stress": "ad-VEN-ture va-ca-tion",
-       "band": "4–5",
-       "grammar": "go on + an adventure vacation",
-       "ex": "On an adventure vacation, you can go hiking."
-      }
-     ]
-    },
-    {
-     "mean": "kỳ nghỉ gia đình",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
-     "items": [
-      {
-       "w": "family vacation",
-       "type": "Collocation",
-       "ipa": "/ˈfæməli veɪˌkeɪʃn/",
-       "stress": "FAM-i-ly va-ca-tion",
-       "band": "3–3.5",
-       "grammar": "go on + a family vacation",
-       "ex": "We go on a family vacation every Tet."
-      }
-     ]
-    },
-    {
-     "mean": "chương trình trao đổi ngôn ngữ",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
-     "items": [
-      {
-       "w": "language exchange",
-       "type": "Collocation",
-       "ipa": "/ˈlæŋɡwɪdʒ ɪksˌtʃeɪndʒ/",
-       "stress": "LAN-guage ex-change",
-       "band": "5.5–6.5",
-       "grammar": "go on / join + a language exchange",
-       "ex": "She went on a language exchange to Spain."
-      }
-     ]
-    },
-    {
-     "mean": "ở cùng gia đình bản xứ",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
-     "items": [
-      {
-       "w": "stay with a host family",
-       "type": "Collocation",
-       "ipa": "/ˌsteɪ wɪð ə ˈhoʊst ˌfæməli/",
-       "stress": "stay with‿a HOST fam-i-ly",
-       "band": "5.5–6.5",
-       "grammar": "stay with + sb; QK stayed /d/",
-       "ex": "Exchange students often stay with a host family."
-      }
-     ]
-    },
-    {
      "mean": "đi bộ đường dài",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "go hiking",
@@ -15579,7 +15302,7 @@
     },
     {
      "mean": "đi công viên nước",
-     "cat": "C. Loại kỳ nghỉ và nơi chốn",
+     "cat": "Sightseeing & activities · Tham quan & hoạt động",
      "items": [
       {
        "w": "visit a water park",
@@ -15589,6 +15312,283 @@
        "band": "3–3.5",
        "grammar": "visit + nơi chốn (không cần to)",
        "ex": "Kids love visiting a water park on a family vacation."
+      }
+     ]
+    },
+    {
+     "mean": "đi liên tục, sống bằng va li",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "live out of a suitcase",
+       "type": "Idiom",
+       "ipa": "/ˌlɪv aʊt əv ə ˈsuːtkeɪs/",
+       "stress": "live‿out‿of‿a SUIT-case",
+       "band": "8.5–9",
+       "grammar": "live out of + a suitcase (thường V-ing)",
+       "ex": "Consultants often live out of a suitcase.",
+       "warn": true
+      }
+     ]
+    },
+    {
+     "mean": "làm việc từ xa",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "work remotely",
+       "type": "Collocation",
+       "ipa": "/ˌwɝːk rɪˈmoʊtli/",
+       "stress": "work re-MOTE-ly",
+       "band": "5.5–6.5",
+       "grammar": "work + remotely (trạng từ); tính từ: remote work",
+       "ex": "A man is working remotely at a beach café."
+      }
+     ]
+    },
+    {
+     "mean": "chuyến công tác",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "business trip",
+       "type": "Collocation",
+       "ipa": "/ˈbɪznəs trɪp/",
+       "stress": "BUS-i-ness trip",
+       "band": "4–5",
+       "grammar": "go on + a business trip + to + nơi chốn",
+       "ex": "My first business trip will probably be to Ho Chi Minh City."
+      }
+     ]
+    },
+    {
+     "mean": "chuyến du lịch gắn kết công ty",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "team-building trip",
+       "type": "Collocation",
+       "ipa": "/ˈtiːm ˌbɪldɪŋ trɪp/",
+       "stress": "TEAM-build-ing trip",
+       "band": "5.5–6.5",
+       "grammar": "organize / go on + a team-building trip",
+       "ex": "Many companies organize a team-building trip every summer."
+      }
+     ]
+    },
+    {
+     "mean": "chuyến đi mừng tốt nghiệp",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "graduation trip",
+       "type": "Collocation",
+       "ipa": "/ˌɡrædʒuˈeɪʃn trɪp/",
+       "stress": "grad-u-A-tion trip",
+       "band": "4–5",
+       "grammar": "plan / take + a graduation trip",
+       "ex": "We are planning a graduation trip after our thesis defense."
+      }
+     ]
+    },
+    {
+     "mean": "kỳ nghỉ biển",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "beach vacation",
+       "type": "Collocation",
+       "ipa": "/ˈbiːtʃ veɪˌkeɪʃn/",
+       "stress": "BEACH va-ca-tion",
+       "band": "3–3.5",
+       "grammar": "go on + a beach vacation",
+       "ex": "A beach vacation is perfect in June."
+      }
+     ]
+    },
+    {
+     "mean": "chuyến đi thành phố ngắn ngày",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "city break",
+       "type": "Collocation",
+       "ipa": "/ˈsɪt̬i breɪk/",
+       "stress": "CIT-y break",
+       "band": "5.5–6.5",
+       "grammar": "have / go on + a city break",
+       "ex": "A city break in Hanoi is great for a long weekend."
+      }
+     ]
+    },
+    {
+     "mean": "kỳ nghỉ mạo hiểm",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "adventure vacation",
+       "type": "Collocation",
+       "ipa": "/ədˈventʃər veɪˌkeɪʃn/",
+       "stress": "ad-VEN-ture va-ca-tion",
+       "band": "4–5",
+       "grammar": "go on + an adventure vacation",
+       "ex": "On an adventure vacation, you can go hiking."
+      }
+     ]
+    },
+    {
+     "mean": "kỳ nghỉ gia đình",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "family vacation",
+       "type": "Collocation",
+       "ipa": "/ˈfæməli veɪˌkeɪʃn/",
+       "stress": "FAM-i-ly va-ca-tion",
+       "band": "3–3.5",
+       "grammar": "go on + a family vacation",
+       "ex": "We go on a family vacation every Tet."
+      }
+     ]
+    },
+    {
+     "mean": "chương trình trao đổi ngôn ngữ",
+     "cat": "Kinds of trips · Các kiểu chuyến đi",
+     "items": [
+      {
+       "w": "language exchange",
+       "type": "Collocation",
+       "ipa": "/ˈlæŋɡwɪdʒ ɪksˌtʃeɪndʒ/",
+       "stress": "LAN-guage ex-change",
+       "band": "5.5–6.5",
+       "grammar": "go on / join + a language exchange",
+       "ex": "She went on a language exchange to Spain."
+      }
+     ]
+    },
+    {
+     "mean": "(thuộc) địa phương, truyền thống, chính gốc",
+     "cat": "Feelings on the road · Cảm xúc khi đi xa",
+     "items": [
+      {
+       "w": "local",
+       "type": "Vocab",
+       "ipa": "/ˈloʊkl/",
+       "stress": "LO-cal",
+       "band": "4–5",
+       "grammar": "local + food / people / culture",
+       "ex": "A girl is trying local food at a food cart."
+      },
+      {
+       "w": "traditional",
+       "type": "Vocab",
+       "ipa": "/trəˈdɪʃənl/",
+       "stress": "tra-DI-tion-al",
+       "band": "4–5",
+       "grammar": "traditional + food / clothes / festival",
+       "ex": "The stall sells traditional hats."
+      },
+      {
+       "w": "authentic",
+       "type": "Vocab",
+       "ipa": "/ɔːˈθentɪk/",
+       "stress": "au-THEN-tic",
+       "band": "7–8",
+       "grammar": "authentic + food / dish / experience",
+       "ex": "This stall sells authentic Hue beef noodle soup."
+      }
+     ],
+     "note": "local = của nơi đó · traditional = có từ lâu đời · authentic = đúng kiểu gốc, không pha"
+    },
+    {
+     "mean": "đáng nhớ, để đời",
+     "cat": "Feelings on the road · Cảm xúc khi đi xa",
+     "items": [
+      {
+       "w": "memorable",
+       "type": "Vocab",
+       "ipa": "/ˈmemərəbl/",
+       "stress": "MEM-o-ra-ble",
+       "band": "5.5–6.5",
+       "grammar": "a memorable + trip / experience",
+       "ex": "It is a memorable trip for the two friends."
+      },
+      {
+       "w": "a memorable experience",
+       "type": "Collocation",
+       "ipa": "/ə ˌmemərəbl ɪkˈspɪriəns/",
+       "stress": "a MEM-o-ra-ble ex-PER-i-ence",
+       "band": "5.5–6.5",
+       "grammar": "It was + a memorable experience",
+       "ex": "Staying with a host family was a memorable experience."
+      },
+      {
+       "w": "a once-in-a-lifetime experience",
+       "type": "Collocation",
+       "ipa": "/ə ˌwʌns ɪn ə ˈlaɪftaɪm ɪkˈspɪriəns/",
+       "stress": "a ONCE-in‿a-LIFE-time ex-PER-i-ence",
+       "band": "7–8",
+       "grammar": "It was + a once-in-a-lifetime experience",
+       "ex": "Surfing in Bali was a once-in-a-lifetime experience."
+      },
+      {
+       "w": "the trip of a lifetime",
+       "type": "Idiom",
+       "ipa": "/ðə ˌtrɪp əv ə ˈlaɪftaɪm/",
+       "stress": "the TRIP‿of‿a LIFE-time",
+       "band": "7–8",
+       "grammar": "be + the trip of a lifetime",
+       "ex": "Our graduation trip was the trip of a lifetime."
+      }
+     ],
+     "note": "It was + a memorable / once-in-a-lifetime experience · the trip of a lifetime"
+    },
+    {
+     "mean": "nhớ nhà, lạc lõng",
+     "cat": "Feelings on the road · Cảm xúc khi đi xa",
+     "items": [
+      {
+       "w": "homesick",
+       "type": "Vocab",
+       "ipa": "/ˈhoʊmsɪk/",
+       "stress": "HOME-sick",
+       "band": "5.5–6.5",
+       "grammar": "feel / be + homesick (for + nơi chốn)",
+       "ex": "On my first trip abroad, I felt a bit homesick."
+      },
+      {
+       "w": "feel homesick",
+       "type": "Collocation",
+       "ipa": "/ˌfiːl ˈhoʊmsɪk/",
+       "stress": "feel HOME-sick",
+       "band": "4–5",
+       "grammar": "feel + homesick (+ for)",
+       "ex": "I felt homesick on my first night abroad."
+      },
+      {
+       "w": "a fish out of water",
+       "type": "Idiom",
+       "ipa": "/ə ˌfɪʃ aʊt əv ˈwɔːt̬ər/",
+       "stress": "a FISH‿out‿of WA-ter",
+       "band": "7–8",
+       "grammar": "feel like + a fish out of water",
+       "ex": "On my first business trip, I felt like a fish out of water."
+      }
+     ],
+     "note": "feel + homesick (+ for nơi chốn) · a fish out of water = thấy lạc lõng ở nơi mới; ngược lại: settle in = quen dần"
+    },
+    {
+     "mean": "quen dần với nơi mới",
+     "cat": "Feelings on the road · Cảm xúc khi đi xa",
+     "items": [
+      {
+       "w": "settle in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌsetl ˈɪn/",
+       "stress": "set-tle‿IN",
+       "band": "7–8",
+       "grammar": "không tân ngữ; QK settled in",
+       "ex": "I felt homesick, but I settled in quickly."
       }
      ]
     }
@@ -15605,7 +15605,7 @@
    "cards": [
     {
      "mean": "thời gian rảnh",
-     "cat": "A. Free time",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
      "items": [
       {
        "w": "free time",
@@ -15648,7 +15648,7 @@
     },
     {
      "mean": "sở thích",
-     "cat": "A. Free time",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
      "items": [
       {
        "w": "hobby",
@@ -15690,8 +15690,112 @@
      "note": "pastime trang trọng hơn hobby; favorite (Mỹ) = favourite (Anh)"
     },
     {
+     "mean": "bắt đầu theo / bắt đầu thích (sở thích)",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
+     "items": [
+      {
+       "w": "get into",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡet ˈɪntuː/",
+       "stress": "get‿IN-to",
+       "band": "5.5–6.5",
+       "grammar": "không tách được: + N / V-ing; QK got into",
+       "ex": "I got into badminton last year."
+      },
+      {
+       "w": "take up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌteɪk ˈʌp/",
+       "stress": "take‿UP",
+       "band": "5.5–6.5",
+       "grammar": "tách được: take up cycling / take it up; QK took up",
+       "ex": "He took up cycling to stay healthy."
+      }
+     ],
+     "note": "take up = bắt đầu tập · get into = bắt đầu mê; cả hai + N / V-ing"
+    },
+    {
+     "mean": "sắp xếp, chen thời gian",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
+     "items": [
+      {
+       "w": "free up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌfriː ˈʌp/",
+       "stress": "free‿UP",
+       "band": "5.5–6.5",
+       "grammar": "tách được: free up my Sunday / free it up",
+       "ex": "I freed up my Sunday for the park."
+      },
+      {
+       "w": "squeeze in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌskwiːz ˈɪn/",
+       "stress": "squeeze‿IN",
+       "band": "7–8",
+       "grammar": "tách được: squeeze in a walk / squeeze it in",
+       "ex": "I try to squeeze in a short walk after dinner."
+      },
+      {
+       "w": "strike a balance (between … and …)",
+       "type": "Idiom",
+       "ipa": "/ˌstraɪk ə ˈbæləns/",
+       "stress": "strike‿a BAL-ance",
+       "band": "7–8",
+       "grammar": "strike a balance + between A and B",
+       "ex": "It's hard to strike a balance between work and free time."
+      }
+     ],
+     "note": "free up = dọn để có thời gian trống · squeeze in = chen vào lịch kín · strike a balance between A and B = cân bằng"
+    },
+    {
+     "mean": "không phải gu của mình",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
+     "items": [
+      {
+       "w": "not my cup of tea",
+       "type": "Idiom",
+       "ipa": "/ˌnɑːt maɪ ˌkʌp əv ˈtiː/",
+       "stress": "not my CUP‿of TEA",
+       "band": "7–8",
+       "grammar": "sth + is not + my cup of tea",
+       "ex": "Video games are not my cup of tea."
+      }
+     ]
+    },
+    {
+     "mean": "một ngày nghỉ hiếm hoi",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
+     "items": [
+      {
+       "w": "a rare day off",
+       "type": "Collocation",
+       "ipa": "/ə ˌrer deɪ ˈɔːf/",
+       "stress": "a rare day‿OFF",
+       "band": "5.5–6.5",
+       "grammar": "on + a rare day off",
+       "ex": "On a rare day off, I just stay at home and sleep in."
+      }
+     ]
+    },
+    {
+     "mean": "thời gian cho bản thân",
+     "cat": "Free time & hobbies · Thời gian rảnh & sở thích",
+     "items": [
+      {
+       "w": "me-time",
+       "type": "Vocab",
+       "ipa": "/ˈmiː taɪm/",
+       "stress": "ME-time",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: need some me-time",
+       "ex": "I need some me-time after a long day at my internship."
+      }
+     ]
+    },
+    {
      "mean": "thư giãn, xả hơi",
-     "cat": "A. Free time",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
      "items": [
       {
        "w": "relaxing",
@@ -15761,7 +15865,7 @@
     },
     {
      "mean": "nạp lại năng lượng, sảng khoái",
-     "cat": "A. Free time",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
      "items": [
       {
        "w": "recharge my batteries",
@@ -15822,7 +15926,7 @@
     },
     {
      "mean": "ngủ thêm, ngủ ngon",
-     "cat": "A. Free time",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
      "items": [
       {
        "w": "sleep in",
@@ -15873,128 +15977,8 @@
      "note": "sleep in = ngủ dậy muộn hơn thường lệ · get some shut-eye = chợp mắt (thân mật) · sleep like a log = ngủ rất say"
     },
     {
-     "mean": "đi chơi, gặp gỡ bạn bè",
-     "cat": "A. Free time",
-     "items": [
-      {
-       "w": "hang out (with)",
-       "type": "Phrasal verb",
-       "ipa": "/ˌhæŋ ˈaʊt/",
-       "stress": "hang‿OUT",
-       "band": "4–5",
-       "grammar": "hang out + with sb (+ nơi chốn); QK hung out",
-       "ex": "Two friends are hanging out together and playing badminton."
-      },
-      {
-       "w": "hang out with friends",
-       "type": "Collocation",
-       "ipa": "/ˌhæŋ ˈaʊt wɪð ˈfrendz/",
-       "stress": "hang‿OUT with FRIENDS",
-       "band": "4–5",
-       "grammar": "hang out + with + sb",
-       "ex": "He wants to hang out with friends."
-      },
-      {
-       "w": "meet up (with sb)",
-       "type": "Phrasal verb",
-       "ipa": "/ˌmiːt ˈʌp/",
-       "stress": "meet‿UP",
-       "band": "4–5",
-       "grammar": "+ with sb; QK met up",
-       "ex": "I often meet up with friends at a café."
-      },
-      {
-       "w": "hang around (with sb)",
-       "type": "Phrasal verb",
-       "ipa": "/ˌhæŋ əˈraʊnd/",
-       "stress": "hang‿a-ROUND",
-       "band": "5.5–6.5",
-       "grammar": "+ with sb / + nơi chốn",
-       "ex": "Kids hang around the ice cream cart."
-      }
-     ],
-     "note": "hang out / meet up + with sb · hang around hơi ý la cà, không làm gì cụ thể"
-    },
-    {
-     "mean": "dành thời gian với ai",
-     "cat": "A. Free time",
-     "items": [
-      {
-       "w": "spend time with",
-       "type": "Collocation",
-       "ipa": "/spend ˈtaɪm wɪð/",
-       "stress": "spend TIME with",
-       "band": "4–5",
-       "grammar": "spend + time + with sb / V-ing; QK spent",
-       "ex": "The parents are spending time with their son."
-      },
-      {
-       "w": "spend quality time with",
-       "type": "Collocation",
-       "ipa": "/spend ˈkwɑːləti taɪm wɪð/",
-       "stress": "spend QUAL-i-ty time with",
-       "band": "5.5–6.5",
-       "grammar": "+ with sb",
-       "ex": "The parents spend quality time with their son."
-      }
-     ],
-     "note": "spend + time + with sb · quality time = thời gian có ý nghĩa, tập trung cho nhau"
-    },
-    {
-     "mean": "rất vui",
-     "cat": "A. Free time",
-     "items": [
-      {
-       "w": "have fun",
-       "type": "Collocation",
-       "ipa": "/hæv ˈfʌn/",
-       "stress": "have FUN",
-       "band": "3–3.5",
-       "grammar": "fun không đếm được: have a lot of fun (không nói a fun)",
-       "ex": "The boy is having fun with his kite."
-      },
-      {
-       "w": "have a great time",
-       "type": "Collocation",
-       "ipa": "/hæv ə ˌɡreɪt ˈtaɪm/",
-       "stress": "have‿a great TIME",
-       "band": "3–3.5",
-       "grammar": "have + a great time (+ V-ing)",
-       "ex": "Everyone is having a great time."
-      },
-      {
-       "w": "have a lot of fun",
-       "type": "Collocation",
-       "ipa": "/hæv ə ˌlɑːt̬ əv ˈfʌn/",
-       "stress": "have‿a lot‿of FUN",
-       "band": "3–3.5",
-       "grammar": "a lot of / so much + fun",
-       "ex": "The kids are having a lot of fun."
-      },
-      {
-       "w": "have a blast",
-       "type": "Idiom",
-       "ipa": "/hæv ə ˈblæst/",
-       "stress": "have‿a BLAST",
-       "band": "7–8",
-       "grammar": "have + a blast (+ V-ing)",
-       "ex": "We had a blast at the team party."
-      },
-      {
-       "w": "have the time of my life",
-       "type": "Idiom",
-       "ipa": "/hæv ðə ˌtaɪm əv maɪ ˈlaɪf/",
-       "stress": "have the TIME‿of my LIFE",
-       "band": "5.5–6.5",
-       "grammar": "have + the time of + my/our + life",
-       "ex": "We had the time of our lives on our graduation trip."
-      }
-     ],
-     "note": "fun không đếm được (a lot of fun, không nói a fun) · have a blast thân mật"
-    },
-    {
      "mean": "nghỉ một lát",
-     "cat": "A. Free time",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
      "items": [
       {
        "w": "take a break",
@@ -16045,8 +16029,222 @@
      "note": "take (không dùng make) a break · ease off = giảm nhịp, làm chậm lại"
     },
     {
+     "mean": "ở nhà thong thả, không làm gì",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
+     "items": [
+      {
+       "w": "laze around",
+       "type": "Phrasal verb",
+       "ipa": "/ˌleɪz əˈraʊnd/",
+       "stress": "laze‿a-ROUND",
+       "band": "5.5–6.5",
+       "grammar": "không tân ngữ (+ nơi chốn); QK lazed around",
+       "ex": "On a rare day off, I just laze around at home."
+      },
+      {
+       "w": "chill out at home",
+       "type": "Collocation",
+       "ipa": "/ˌtʃɪl ˈaʊt ət ˈhoʊm/",
+       "stress": "chill‿OUT at HOME",
+       "band": "5.5–6.5",
+       "grammar": "chill out + at home / in + nơi chốn",
+       "ex": "Some people chill out at home."
+      },
+      {
+       "w": "a chilled-out day",
+       "type": "Collocation",
+       "ipa": "/ə ˌtʃɪld aʊt ˈdeɪ/",
+       "stress": "a chilled-out DAY",
+       "band": "7–8",
+       "grammar": "a + chilled-out + N",
+       "ex": "It's a chilled-out day in the park."
+      }
+     ],
+     "note": "laze around hơi ý chê (lười); chilled-out là tính từ đứng trước danh từ"
+    },
+    {
+     "mean": "bình tĩnh lại",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
+     "items": [
+      {
+       "w": "calm down",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkɑːm ˈdaʊn/",
+       "stress": "calm DOWN",
+       "band": "4–5",
+       "grammar": "không tân ngữ / calm sb down",
+       "ex": "Reading helps me calm down."
+      }
+     ]
+    },
+    {
+     "mean": "dành cả ngày",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
+     "items": [
+      {
+       "w": "spend the whole day",
+       "type": "Collocation",
+       "ipa": "/ˌspend ðə hoʊl ˈdeɪ/",
+       "stress": "spend the whole DAY",
+       "band": "4–5",
+       "grammar": "+ V-ing / at + nơi chốn",
+       "ex": "They spent the whole day at the park."
+      }
+     ]
+    },
+    {
+     "mean": "lướt (mạng xã hội)",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
+     "items": [
+      {
+       "w": "scroll through",
+       "type": "Phrasal verb",
+       "ipa": "/ˌskroʊl ˈθruː/",
+       "stress": "scroll THROUGH",
+       "band": "5.5–6.5",
+       "grammar": "scroll through + N (TikTok, my phone)",
+       "ex": "I often scroll through TikTok to relax, but it wastes time."
+      }
+     ]
+    },
+    {
+     "mean": "xem liền nhiều tập phim",
+     "cat": "Relaxing at home · Thư giãn ở nhà",
+     "items": [
+      {
+       "w": "binge-watch",
+       "type": "Vocab",
+       "ipa": "/ˈbɪndʒ wɑːtʃ/",
+       "stress": "BINGE-watch",
+       "band": "7–8",
+       "grammar": "binge-watch + a series / a show",
+       "ex": "After exams, I binge-watch my favorite series."
+      }
+     ]
+    },
+    {
+     "mean": "đi chơi, gặp gỡ bạn bè",
+     "cat": "Going out with friends · Đi chơi với bạn",
+     "items": [
+      {
+       "w": "hang out (with)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhæŋ ˈaʊt/",
+       "stress": "hang‿OUT",
+       "band": "4–5",
+       "grammar": "hang out + with sb (+ nơi chốn); QK hung out",
+       "ex": "Two friends are hanging out together and playing badminton."
+      },
+      {
+       "w": "hang out with friends",
+       "type": "Collocation",
+       "ipa": "/ˌhæŋ ˈaʊt wɪð ˈfrendz/",
+       "stress": "hang‿OUT with FRIENDS",
+       "band": "4–5",
+       "grammar": "hang out + with + sb",
+       "ex": "He wants to hang out with friends."
+      },
+      {
+       "w": "meet up (with sb)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌmiːt ˈʌp/",
+       "stress": "meet‿UP",
+       "band": "4–5",
+       "grammar": "+ with sb; QK met up",
+       "ex": "I often meet up with friends at a café."
+      },
+      {
+       "w": "hang around (with sb)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhæŋ əˈraʊnd/",
+       "stress": "hang‿a-ROUND",
+       "band": "5.5–6.5",
+       "grammar": "+ with sb / + nơi chốn",
+       "ex": "Kids hang around the ice cream cart."
+      }
+     ],
+     "note": "hang out / meet up + with sb · hang around hơi ý la cà, không làm gì cụ thể"
+    },
+    {
+     "mean": "dành thời gian với ai",
+     "cat": "Going out with friends · Đi chơi với bạn",
+     "items": [
+      {
+       "w": "spend time with",
+       "type": "Collocation",
+       "ipa": "/spend ˈtaɪm wɪð/",
+       "stress": "spend TIME with",
+       "band": "4–5",
+       "grammar": "spend + time + with sb / V-ing; QK spent",
+       "ex": "The parents are spending time with their son."
+      },
+      {
+       "w": "spend quality time with",
+       "type": "Collocation",
+       "ipa": "/spend ˈkwɑːləti taɪm wɪð/",
+       "stress": "spend QUAL-i-ty time with",
+       "band": "5.5–6.5",
+       "grammar": "+ with sb",
+       "ex": "The parents spend quality time with their son."
+      }
+     ],
+     "note": "spend + time + with sb · quality time = thời gian có ý nghĩa, tập trung cho nhau"
+    },
+    {
+     "mean": "rất vui",
+     "cat": "Going out with friends · Đi chơi với bạn",
+     "items": [
+      {
+       "w": "have fun",
+       "type": "Collocation",
+       "ipa": "/hæv ˈfʌn/",
+       "stress": "have FUN",
+       "band": "3–3.5",
+       "grammar": "fun không đếm được: have a lot of fun (không nói a fun)",
+       "ex": "The boy is having fun with his kite."
+      },
+      {
+       "w": "have a great time",
+       "type": "Collocation",
+       "ipa": "/hæv ə ˌɡreɪt ˈtaɪm/",
+       "stress": "have‿a great TIME",
+       "band": "3–3.5",
+       "grammar": "have + a great time (+ V-ing)",
+       "ex": "Everyone is having a great time."
+      },
+      {
+       "w": "have a lot of fun",
+       "type": "Collocation",
+       "ipa": "/hæv ə ˌlɑːt̬ əv ˈfʌn/",
+       "stress": "have‿a lot‿of FUN",
+       "band": "3–3.5",
+       "grammar": "a lot of / so much + fun",
+       "ex": "The kids are having a lot of fun."
+      },
+      {
+       "w": "have a blast",
+       "type": "Idiom",
+       "ipa": "/hæv ə ˈblæst/",
+       "stress": "have‿a BLAST",
+       "band": "7–8",
+       "grammar": "have + a blast (+ V-ing)",
+       "ex": "We had a blast at the team party."
+      },
+      {
+       "w": "have the time of my life",
+       "type": "Idiom",
+       "ipa": "/hæv ðə ˌtaɪm əv maɪ ˈlaɪf/",
+       "stress": "have the TIME‿of my LIFE",
+       "band": "5.5–6.5",
+       "grammar": "have + the time of + my/our + life",
+       "ex": "We had the time of our lives on our graduation trip."
+      }
+     ],
+     "note": "fun không đếm được (a lot of fun, không nói a fun) · have a blast thân mật"
+    },
+    {
      "mean": "đi dạo",
-     "cat": "A. Free time",
+     "cat": "Going out with friends · Đi chơi với bạn",
      "items": [
       {
        "w": "go for a walk",
@@ -16097,8 +16295,70 @@
      "note": "go for a walk / take a stroll (dạo thong thả) · walk around + nơi chốn · stretch my legs = đi lại cho đỡ mỏi sau khi ngồi lâu"
     },
     {
+     "mean": "ra ngoài chơi",
+     "cat": "Going out with friends · Đi chơi với bạn",
+     "items": [
+      {
+       "w": "go out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡoʊ ˈaʊt/",
+       "stress": "go‿OUT",
+       "band": "3–3.5",
+       "grammar": "không tân ngữ; for + N / to + nơi chốn; QK went out",
+       "ex": "We went out for ice cream after the picnic."
+      },
+      {
+       "w": "go out for coffee",
+       "type": "Collocation",
+       "ipa": "/ˌɡoʊ ˈaʊt fər ˈkɔːfi/",
+       "stress": "go‿OUT for COF-fee",
+       "band": "4–5",
+       "grammar": "go out + for + N",
+       "ex": "The couple went out for coffee."
+      }
+     ],
+     "note": "go out (không tân ngữ) + for N / to + nơi chốn; QK went out"
+    },
+    {
+     "mean": "chơi hết mình, xõa",
+     "cat": "Going out with friends · Đi chơi với bạn",
+     "items": [
+      {
+       "w": "live it up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌlɪv ɪt ˈʌp/",
+       "stress": "live‿it‿UP",
+       "band": "8.5–9",
+       "grammar": "cụm cố định, luôn có it",
+       "ex": "After graduation, we're going to live it up.",
+       "warn": true
+      },
+      {
+       "w": "paint the town red",
+       "type": "Idiom",
+       "ipa": "/ˌpeɪnt ðə ˌtaʊn ˈred/",
+       "stress": "paint the town RED",
+       "band": "8.5–9",
+       "grammar": "cụm cố định; QK painted the town red",
+       "ex": "After our thesis defense, we painted the town red.",
+       "warn": true
+      },
+      {
+       "w": "let my hair down",
+       "type": "Idiom",
+       "ipa": "/ˌlet maɪ ˈher daʊn/",
+       "stress": "let my HAIR down",
+       "band": "8.5–9",
+       "grammar": "let + my/your + hair down",
+       "ex": "At the year-end party, everyone let their hair down.",
+       "warn": true
+      }
+     ],
+     "note": "⚠ cả 3 đều thân mật, band rất cao: chỉ dùng khi kể chuyện vui với bạn bè"
+    },
+    {
      "mean": "làm bù, làm cho xong việc",
-     "cat": "A. Free time",
+     "cat": "Busy weeks · Tuần bận rộn",
      "items": [
       {
        "w": "catch up on",
@@ -16150,208 +16410,8 @@
      "note": "catch up on = làm bù phần còn dở · get through = làm cho xong · cram for = học dồn trước kỳ thi · burn the midnight oil = thức khuya làm việc"
     },
     {
-     "mean": "bắt đầu theo / bắt đầu thích (sở thích)",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "get into",
-       "type": "Phrasal verb",
-       "ipa": "/ˌɡet ˈɪntuː/",
-       "stress": "get‿IN-to",
-       "band": "5.5–6.5",
-       "grammar": "không tách được: + N / V-ing; QK got into",
-       "ex": "I got into badminton last year."
-      },
-      {
-       "w": "take up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌteɪk ˈʌp/",
-       "stress": "take‿UP",
-       "band": "5.5–6.5",
-       "grammar": "tách được: take up cycling / take it up; QK took up",
-       "ex": "He took up cycling to stay healthy."
-      }
-     ],
-     "note": "take up = bắt đầu tập · get into = bắt đầu mê; cả hai + N / V-ing"
-    },
-    {
-     "mean": "ở nhà thong thả, không làm gì",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "laze around",
-       "type": "Phrasal verb",
-       "ipa": "/ˌleɪz əˈraʊnd/",
-       "stress": "laze‿a-ROUND",
-       "band": "5.5–6.5",
-       "grammar": "không tân ngữ (+ nơi chốn); QK lazed around",
-       "ex": "On a rare day off, I just laze around at home."
-      },
-      {
-       "w": "chill out at home",
-       "type": "Collocation",
-       "ipa": "/ˌtʃɪl ˈaʊt ət ˈhoʊm/",
-       "stress": "chill‿OUT at HOME",
-       "band": "5.5–6.5",
-       "grammar": "chill out + at home / in + nơi chốn",
-       "ex": "Some people chill out at home."
-      },
-      {
-       "w": "a chilled-out day",
-       "type": "Collocation",
-       "ipa": "/ə ˌtʃɪld aʊt ˈdeɪ/",
-       "stress": "a chilled-out DAY",
-       "band": "7–8",
-       "grammar": "a + chilled-out + N",
-       "ex": "It's a chilled-out day in the park."
-      }
-     ],
-     "note": "laze around hơi ý chê (lười); chilled-out là tính từ đứng trước danh từ"
-    },
-    {
-     "mean": "ra ngoài chơi",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "go out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌɡoʊ ˈaʊt/",
-       "stress": "go‿OUT",
-       "band": "3–3.5",
-       "grammar": "không tân ngữ; for + N / to + nơi chốn; QK went out",
-       "ex": "We went out for ice cream after the picnic."
-      },
-      {
-       "w": "go out for coffee",
-       "type": "Collocation",
-       "ipa": "/ˌɡoʊ ˈaʊt fər ˈkɔːfi/",
-       "stress": "go‿OUT for COF-fee",
-       "band": "4–5",
-       "grammar": "go out + for + N",
-       "ex": "The couple went out for coffee."
-      }
-     ],
-     "note": "go out (không tân ngữ) + for N / to + nơi chốn; QK went out"
-    },
-    {
-     "mean": "chơi hết mình, xõa",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "live it up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌlɪv ɪt ˈʌp/",
-       "stress": "live‿it‿UP",
-       "band": "8.5–9",
-       "grammar": "cụm cố định, luôn có it",
-       "ex": "After graduation, we're going to live it up.",
-       "warn": true
-      },
-      {
-       "w": "paint the town red",
-       "type": "Idiom",
-       "ipa": "/ˌpeɪnt ðə ˌtaʊn ˈred/",
-       "stress": "paint the town RED",
-       "band": "8.5–9",
-       "grammar": "cụm cố định; QK painted the town red",
-       "ex": "After our thesis defense, we painted the town red.",
-       "warn": true
-      },
-      {
-       "w": "let my hair down",
-       "type": "Idiom",
-       "ipa": "/ˌlet maɪ ˈher daʊn/",
-       "stress": "let my HAIR down",
-       "band": "8.5–9",
-       "grammar": "let + my/your + hair down",
-       "ex": "At the year-end party, everyone let their hair down.",
-       "warn": true
-      }
-     ],
-     "note": "⚠ cả 3 đều thân mật, band rất cao: chỉ dùng khi kể chuyện vui với bạn bè"
-    },
-    {
-     "mean": "sắp xếp, chen thời gian",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "free up",
-       "type": "Phrasal verb",
-       "ipa": "/ˌfriː ˈʌp/",
-       "stress": "free‿UP",
-       "band": "5.5–6.5",
-       "grammar": "tách được: free up my Sunday / free it up",
-       "ex": "I freed up my Sunday for the park."
-      },
-      {
-       "w": "squeeze in",
-       "type": "Phrasal verb",
-       "ipa": "/ˌskwiːz ˈɪn/",
-       "stress": "squeeze‿IN",
-       "band": "7–8",
-       "grammar": "tách được: squeeze in a walk / squeeze it in",
-       "ex": "I try to squeeze in a short walk after dinner."
-      },
-      {
-       "w": "strike a balance (between … and …)",
-       "type": "Idiom",
-       "ipa": "/ˌstraɪk ə ˈbæləns/",
-       "stress": "strike‿a BAL-ance",
-       "band": "7–8",
-       "grammar": "strike a balance + between A and B",
-       "ex": "It's hard to strike a balance between work and free time."
-      }
-     ],
-     "note": "free up = dọn để có thời gian trống · squeeze in = chen vào lịch kín · strike a balance between A and B = cân bằng"
-    },
-    {
-     "mean": "bình tĩnh lại",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "calm down",
-       "type": "Phrasal verb",
-       "ipa": "/ˌkɑːm ˈdaʊn/",
-       "stress": "calm DOWN",
-       "band": "4–5",
-       "grammar": "không tân ngữ / calm sb down",
-       "ex": "Reading helps me calm down."
-      }
-     ]
-    },
-    {
-     "mean": "dành cả ngày",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "spend the whole day",
-       "type": "Collocation",
-       "ipa": "/ˌspend ðə hoʊl ˈdeɪ/",
-       "stress": "spend the whole DAY",
-       "band": "4–5",
-       "grammar": "+ V-ing / at + nơi chốn",
-       "ex": "They spent the whole day at the park."
-      }
-     ]
-    },
-    {
-     "mean": "không phải gu của mình",
-     "cat": "Alternatives",
-     "items": [
-      {
-       "w": "not my cup of tea",
-       "type": "Idiom",
-       "ipa": "/ˌnɑːt maɪ ˌkʌp əv ˈtiː/",
-       "stress": "not my CUP‿of TEA",
-       "band": "7–8",
-       "grammar": "sth + is not + my cup of tea",
-       "ex": "Video games are not my cup of tea."
-      }
-     ]
-    },
-    {
      "mean": "bận rộn, chịu áp lực",
-     "cat": "D. Học tập, áp lực, thời gian cho mình",
+     "cat": "Busy weeks · Tuần bận rộn",
      "items": [
       {
        "w": "under pressure",
@@ -16385,7 +16445,7 @@
     },
     {
      "mean": "lớp học thêm",
-     "cat": "D. Học tập, áp lực, thời gian cho mình",
+     "cat": "Busy weeks · Tuần bận rộn",
      "items": [
       {
        "w": "extra classes",
@@ -16399,68 +16459,8 @@
      ]
     },
     {
-     "mean": "lướt (mạng xã hội)",
-     "cat": "D. Học tập, áp lực, thời gian cho mình",
-     "items": [
-      {
-       "w": "scroll through",
-       "type": "Phrasal verb",
-       "ipa": "/ˌskroʊl ˈθruː/",
-       "stress": "scroll THROUGH",
-       "band": "5.5–6.5",
-       "grammar": "scroll through + N (TikTok, my phone)",
-       "ex": "I often scroll through TikTok to relax, but it wastes time."
-      }
-     ]
-    },
-    {
-     "mean": "một ngày nghỉ hiếm hoi",
-     "cat": "D. Học tập, áp lực, thời gian cho mình",
-     "items": [
-      {
-       "w": "a rare day off",
-       "type": "Collocation",
-       "ipa": "/ə ˌrer deɪ ˈɔːf/",
-       "stress": "a rare day‿OFF",
-       "band": "5.5–6.5",
-       "grammar": "on + a rare day off",
-       "ex": "On a rare day off, I just stay at home and sleep in."
-      }
-     ]
-    },
-    {
-     "mean": "thời gian cho bản thân",
-     "cat": "D. Học tập, áp lực, thời gian cho mình",
-     "items": [
-      {
-       "w": "me-time",
-       "type": "Vocab",
-       "ipa": "/ˈmiː taɪm/",
-       "stress": "ME-time",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được: need some me-time",
-       "ex": "I need some me-time after a long day at my internship."
-      }
-     ]
-    },
-    {
-     "mean": "xem liền nhiều tập phim",
-     "cat": "D. Học tập, áp lực, thời gian cho mình",
-     "items": [
-      {
-       "w": "binge-watch",
-       "type": "Vocab",
-       "ipa": "/ˈbɪndʒ wɑːtʃ/",
-       "stress": "BINGE-watch",
-       "band": "7–8",
-       "grammar": "binge-watch + a series / a show",
-       "ex": "After exams, I binge-watch my favorite series."
-      }
-     ]
-    },
-    {
      "mean": "đi dã ngoại",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "have a picnic",
@@ -16475,7 +16475,7 @@
     },
     {
      "mean": "thả diều",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "fly a kite",
@@ -16490,7 +16490,7 @@
     },
     {
      "mean": "chơi cầu lông",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "play badminton",
@@ -16505,7 +16505,7 @@
     },
     {
      "mean": "đạp xe",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "ride a bike",
@@ -16520,7 +16520,7 @@
     },
     {
      "mean": "đọc sách",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "read a book",
@@ -16535,7 +16535,7 @@
     },
     {
      "mean": "ngồi trên ghế đá",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "sit on a bench",
@@ -16550,7 +16550,7 @@
     },
     {
      "mean": "cầm ly cà phê",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "hold a cup of coffee",
@@ -16565,7 +16565,7 @@
     },
     {
      "mean": "chạy về phía",
-     "cat": "B. Hoạt động trong tranh",
+     "cat": "Outdoor activities · Hoạt động ngoài trời",
      "items": [
       {
        "w": "run toward",
@@ -16580,7 +16580,7 @@
     },
     {
      "mean": "tấm thảm",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "blanket",
@@ -16595,7 +16595,7 @@
     },
     {
      "mean": "cái giỏ",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "basket",
@@ -16610,7 +16610,7 @@
     },
     {
      "mean": "xe bán kem",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "ice cream cart",
@@ -16625,7 +16625,7 @@
     },
     {
      "mean": "hồ nước",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "lake",
@@ -16640,7 +16640,7 @@
     },
     {
      "mean": "lối đi",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "path",
@@ -16655,7 +16655,7 @@
     },
     {
      "mean": "cặp đôi",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "couple",
@@ -16670,7 +16670,7 @@
     },
     {
      "mean": "vợt / quả cầu",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "racket / shuttlecock",
@@ -16685,7 +16685,7 @@
     },
     {
      "mean": "nắng đẹp",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "sunny",
@@ -16700,7 +16700,7 @@
     },
     {
      "mean": "yên bình",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "peaceful",
@@ -16715,7 +16715,7 @@
     },
     {
      "mean": "nhộn nhịp",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "lively",
@@ -16730,7 +16730,7 @@
     },
     {
      "mean": "dưới gốc cây",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "under a tree",
@@ -16745,7 +16745,7 @@
     },
     {
      "mean": "phía sau, ở xa",
-     "cat": "C. Đồ vật, nơi chốn, tả chung",
+     "cat": "In the park · Ở công viên",
      "items": [
       {
        "w": "in the background",
@@ -16771,7 +16771,7 @@
    "cards": [
     {
      "mean": "món ăn, món đặc sản",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
      "items": [
       {
        "w": "dish",
@@ -16822,103 +16822,8 @@
      "note": "dish = 1 món cụ thể (đếm được) · specialty = đặc sản của 1 vùng (Anh: speciality) · signature dish = món tủ · cuisine = cả nền ẩm thực, trang trọng"
     },
     {
-     "mean": "nguyên liệu nấu ăn",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "ingredient",
-       "type": "Vocab",
-       "ipa": "/ɪnˈɡriːdiənt/",
-       "stress": "in-GRE-di-ent",
-       "band": "5.5–6.5",
-       "grammar": "đếm được: the ingredients of / for + dish",
-       "ex": "Fresh ingredients make a big difference."
-      },
-      {
-       "w": "fresh ingredients",
-       "type": "Collocation",
-       "ipa": "/ˌfreʃ ɪnˈɡriːdiənts/",
-       "stress": "fresh in-GRE-di-ents",
-       "band": "4–5",
-       "grammar": "use / buy + fresh ingredients (số nhiều)",
-       "ex": "This restaurant only uses fresh ingredients."
-      },
-      {
-       "w": "the main ingredient",
-       "type": "Collocation",
-       "ipa": "/ðə ˌmeɪn ɪnˈɡriːdiənt/",
-       "stress": "the MAIN in-GRE-di-ent",
-       "band": "4–5",
-       "grammar": "the main ingredient + of / in + dish",
-       "ex": "Rice is the main ingredient of this dish."
-      },
-      {
-       "w": "the secret ingredient",
-       "type": "Idiom",
-       "ipa": "/ðə ˌsiːkrət ɪnˈɡriːdiənt/",
-       "stress": "the SE-cret in-GRE-di-ent",
-       "band": "5.5–6.5",
-       "grammar": "the secret ingredient + of / in + sth",
-       "ex": "Teamwork is the secret ingredient of our project."
-      }
-     ],
-     "note": "ingredient đếm được: the ingredients of / for + món · the secret ingredient còn có nghĩa bóng: bí quyết thành công"
-    },
-    {
-     "mean": "công thức nấu ăn",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "recipe",
-       "type": "Vocab",
-       "ipa": "/ˈresəpi/",
-       "stress": "REC-i-pe",
-       "band": "4–5",
-       "grammar": "a recipe + for + dish",
-       "ex": "My mom gave me her recipe for fried rice."
-      },
-      {
-       "w": "follow a recipe",
-       "type": "Collocation",
-       "ipa": "/ˌfɑːloʊ ə ˈresəpi/",
-       "stress": "FOL-low‿a REC-i-pe",
-       "band": "4–5",
-       "grammar": "follow + a / my mom's + recipe",
-       "ex": "I always follow a recipe when I bake."
-      },
-      {
-       "w": "a family recipe",
-       "type": "Collocation",
-       "ipa": "/ə ˌfæməli ˈresəpi/",
-       "stress": "a FAM-i-ly REC-i-pe",
-       "band": "5.5–6.5",
-       "grammar": "đếm được",
-       "ex": "This fish sauce is a family recipe."
-      },
-      {
-       "w": "try out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌtraɪ ˈaʊt/",
-       "stress": "try‿OUT",
-       "band": "5.5–6.5",
-       "grammar": "tách được: try out a recipe / try it out",
-       "ex": "I want to try out a new recipe this weekend."
-      },
-      {
-       "w": "a recipe for disaster",
-       "type": "Idiom",
-       "ipa": "/ə ˌresəpi fər dɪˈzæstər/",
-       "stress": "a REC-i-pe for di-SAS-ter",
-       "band": "7–8",
-       "grammar": "be + a recipe for disaster",
-       "ex": "Starting my thesis one week before the deadline is a recipe for disaster."
-      }
-     ],
-     "note": "recipe đọc 3 âm tiết REC-i-pe · follow a recipe = làm theo · try out = thử làm món mới · a recipe for disaster = nghĩa bóng: chắc chắn hỏng"
-    },
-    {
      "mean": "bữa ăn",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
      "items": [
       {
        "w": "meal",
@@ -16988,7 +16893,7 @@
     },
     {
      "mean": "đồ ăn vặt",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
      "items": [
       {
        "w": "snack",
@@ -17048,60 +16953,8 @@
      "note": "snack đếm được · treat = món tự thưởng · a guilty pleasure = món biết là không tốt nhưng vẫn mê · eat in moderation = ăn có chừng mực"
     },
     {
-     "mean": "đồ ăn mua về, gọi về",
-     "cat": "A. Food & Cooking: từ cốt lõi",
-     "items": [
-      {
-       "w": "takeout",
-       "type": "Vocab",
-       "ipa": "/ˈteɪkaʊt/",
-       "stress": "TAKE-out",
-       "band": "4–5",
-       "grammar": "không đếm được (Mỹ): order / get takeout",
-       "ex": "We got takeout because we were too tired to cook."
-      },
-      {
-       "w": "takeaway",
-       "type": "Vocab",
-       "ipa": "/ˈteɪkəweɪ/",
-       "stress": "TAKE-a-way",
-       "band": "4–5",
-       "grammar": "Anh – Anh, đếm được: get a takeaway",
-       "ex": "In London, we got a takeaway every Friday."
-      },
-      {
-       "w": "delivery",
-       "type": "Vocab",
-       "ipa": "/dɪˈlɪvəri/",
-       "stress": "de-LIV-er-y",
-       "band": "4–5",
-       "grammar": "order / get + delivery (Mỹ, không đếm được)",
-       "ex": "It was raining, so we got delivery from a food app."
-      },
-      {
-       "w": "order in",
-       "type": "Phrasal verb",
-       "ipa": "/ˌɔːrdər ˈɪn/",
-       "stress": "or-der‿IN",
-       "band": "4–5",
-       "grammar": "không tân ngữ (Mỹ)",
-       "ex": "We were too busy, so we ordered in."
-      },
-      {
-       "w": "get food delivered",
-       "type": "Collocation",
-       "ipa": "/ˌɡet ˈfuːd dɪˌlɪvərd/",
-       "stress": "get FOOD de-LIV-ered",
-       "band": "4–5",
-       "grammar": "get + food / lunch + delivered",
-       "ex": "We get food delivered to the office on Fridays."
-      }
-     ],
-     "note": "takeout (Mỹ) = takeaway (Anh) · delivery = giao tận nơi · order in không có tân ngữ · get food delivered = gọi giao tận nơi"
-    },
-    {
      "mean": "cay",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
      "items": [
       {
        "w": "spicy",
@@ -17153,7 +17006,7 @@
     },
     {
      "mean": "ngon",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
      "items": [
       {
        "w": "delicious",
@@ -17213,60 +17066,176 @@
      "note": "absolutely delicious thay cho very delicious · dig in = mời ăn (mệnh lệnh) · to die for đứng sau danh từ / sau be, thân mật"
     },
     {
-     "mean": "tốt cho sức khỏe",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "mean": "món ăn quen, ăn vào thấy dễ chịu",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
      "items": [
       {
-       "w": "healthy",
-       "type": "Vocab",
-       "ipa": "/ˈhelθi/",
-       "stress": "HEAL-thy",
-       "band": "3–3.5",
-       "grammar": "healthy + food / snack / diet",
-       "ex": "Fruit is a healthy snack."
-      },
-      {
-       "w": "nutritious",
-       "type": "Vocab",
-       "ipa": "/nuˈtrɪʃəs/",
-       "stress": "nu-TRI-tious",
+       "w": "comfort food",
+       "type": "Collocation",
+       "ipa": "/ˈkʌmfərt fuːd/",
+       "stress": "COM-fort food",
        "band": "5.5–6.5",
-       "grammar": "nutritious + food / meal",
-       "ex": "Eggs are cheap and nutritious."
-      },
-      {
-       "w": "good for you",
-       "type": "Collocation",
-       "ipa": "/ˌɡʊd fər ˈjuː/",
-       "stress": "GOOD for you",
-       "band": "3–3.5",
-       "grammar": "be + good for you (không đứng trước danh từ)",
-       "ex": "Green tea is good for you."
-      },
-      {
-       "w": "healthy eating habits",
-       "type": "Collocation",
-       "ipa": "/ˌhelθi ˈiːtɪŋ ˌhæbɪts/",
-       "stress": "HEAL-thy EAT-ing hab-its",
-       "band": "5.5–6.5",
-       "grammar": "have / develop + healthy eating habits",
-       "ex": "Office workers need healthy eating habits."
-      },
-      {
-       "w": "a nutritious meal",
-       "type": "Collocation",
-       "ipa": "/ə nuˌtrɪʃəs ˈmiːl/",
-       "stress": "a nu-TRI-tious MEAL",
-       "band": "7–8",
-       "grammar": "eat / prepare + a nutritious meal",
-       "ex": "A bowl of pho can be a nutritious meal."
+       "grammar": "không đếm được: X is my comfort food",
+       "ex": "Instant noodles are my comfort food during exam week."
       }
      ],
-     "note": "healthy rộng nhất · nutritious = bổ dưỡng · good for you thân mật, đứng sau be · a nutritious meal = bữa ăn bổ dưỡng"
+     "note": "comfort food không đếm được; thường là món quen từ nhỏ"
+    },
+    {
+     "mean": "người kén ăn",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "a picky eater",
+       "type": "Collocation",
+       "ipa": "/ə ˌpɪki ˈiːtər/",
+       "stress": "a PICK-y EAT-er",
+       "band": "5.5–6.5",
+       "grammar": "be + a picky eater; used to be + a picky eater",
+       "ex": "I was a picky eater when I was a child."
+      },
+      {
+       "w": "a fussy eater",
+       "type": "Collocation",
+       "ipa": "/ə ˌfʌsi ˈiːtər/",
+       "stress": "a FUSS-y EAT-er",
+       "band": "5.5–6.5",
+       "grammar": "Anh – Anh: be + a fussy eater",
+       "ex": "My little brother is a fussy eater."
+      }
+     ],
+     "note": "a picky eater (Mỹ) = a fussy eater (Anh)"
+    },
+    {
+     "mean": "hảo ngọt",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "have a sweet tooth",
+       "type": "Idiom",
+       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
+       "stress": "have‿a SWEET TOOTH",
+       "band": "5.5–6.5",
+       "grammar": "have + a sweet tooth",
+       "ex": "I have a sweet tooth, so I can't say no to cake."
+      }
+     ],
+     "note": "have a sweet tooth (idiom) · love desserts = thích đồ tráng miệng (thường)"
+    },
+    {
+     "mean": "món ăn đường phố",
+     "cat": "Dishes & tastes · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "street food",
+       "type": "Collocation",
+       "ipa": "/ˈstriːt fuːd/",
+       "stress": "STREET food",
+       "band": "4–5",
+       "grammar": "không đếm được: try street food",
+       "ex": "Banh mi is famous street food in Vietnam."
+      }
+     ],
+     "note": "street food không đếm được"
+    },
+    {
+     "mean": "nguyên liệu nấu ăn",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "ingredient",
+       "type": "Vocab",
+       "ipa": "/ɪnˈɡriːdiənt/",
+       "stress": "in-GRE-di-ent",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: the ingredients of / for + dish",
+       "ex": "Fresh ingredients make a big difference."
+      },
+      {
+       "w": "fresh ingredients",
+       "type": "Collocation",
+       "ipa": "/ˌfreʃ ɪnˈɡriːdiənts/",
+       "stress": "fresh in-GRE-di-ents",
+       "band": "4–5",
+       "grammar": "use / buy + fresh ingredients (số nhiều)",
+       "ex": "This restaurant only uses fresh ingredients."
+      },
+      {
+       "w": "the main ingredient",
+       "type": "Collocation",
+       "ipa": "/ðə ˌmeɪn ɪnˈɡriːdiənt/",
+       "stress": "the MAIN in-GRE-di-ent",
+       "band": "4–5",
+       "grammar": "the main ingredient + of / in + dish",
+       "ex": "Rice is the main ingredient of this dish."
+      },
+      {
+       "w": "the secret ingredient",
+       "type": "Idiom",
+       "ipa": "/ðə ˌsiːkrət ɪnˈɡriːdiənt/",
+       "stress": "the SE-cret in-GRE-di-ent",
+       "band": "5.5–6.5",
+       "grammar": "the secret ingredient + of / in + sth",
+       "ex": "Teamwork is the secret ingredient of our project."
+      }
+     ],
+     "note": "ingredient đếm được: the ingredients of / for + món · the secret ingredient còn có nghĩa bóng: bí quyết thành công"
+    },
+    {
+     "mean": "công thức nấu ăn",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "recipe",
+       "type": "Vocab",
+       "ipa": "/ˈresəpi/",
+       "stress": "REC-i-pe",
+       "band": "4–5",
+       "grammar": "a recipe + for + dish",
+       "ex": "My mom gave me her recipe for fried rice."
+      },
+      {
+       "w": "follow a recipe",
+       "type": "Collocation",
+       "ipa": "/ˌfɑːloʊ ə ˈresəpi/",
+       "stress": "FOL-low‿a REC-i-pe",
+       "band": "4–5",
+       "grammar": "follow + a / my mom's + recipe",
+       "ex": "I always follow a recipe when I bake."
+      },
+      {
+       "w": "a family recipe",
+       "type": "Collocation",
+       "ipa": "/ə ˌfæməli ˈresəpi/",
+       "stress": "a FAM-i-ly REC-i-pe",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "This fish sauce is a family recipe."
+      },
+      {
+       "w": "try out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌtraɪ ˈaʊt/",
+       "stress": "try‿OUT",
+       "band": "5.5–6.5",
+       "grammar": "tách được: try out a recipe / try it out",
+       "ex": "I want to try out a new recipe this weekend."
+      },
+      {
+       "w": "a recipe for disaster",
+       "type": "Idiom",
+       "ipa": "/ə ˌresəpi fər dɪˈzæstər/",
+       "stress": "a REC-i-pe for di-SAS-ter",
+       "band": "7–8",
+       "grammar": "be + a recipe for disaster",
+       "ex": "Starting my thesis one week before the deadline is a recipe for disaster."
+      }
+     ],
+     "note": "recipe đọc 3 âm tiết REC-i-pe · follow a recipe = làm theo · try out = thử làm món mới · a recipe for disaster = nghĩa bóng: chắc chắn hỏng"
     },
     {
      "mean": "nhà làm, tự nấu",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
      "items": [
       {
        "w": "homemade",
@@ -17317,8 +17286,108 @@
      "note": "homemade + đồ ăn; home-cooked hay đi với meal / food · heat up = hâm · whip up = nấu nhanh"
     },
     {
+     "mean": "tự nấu từ nguyên liệu tươi",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "cook from scratch",
+       "type": "Collocation",
+       "ipa": "/ˌkʊk frəm ˈskrætʃ/",
+       "stress": "cook from SCRATCH",
+       "band": "5.5–6.5",
+       "grammar": "cook / make + sth + from scratch",
+       "ex": "On Sundays, I cook from scratch for my family."
+      }
+     ],
+     "note": "cook from scratch = không dùng đồ làm sẵn · whip up = nấu nhanh món đơn giản"
+    },
+    {
+     "mean": "lớp học nấu ăn",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "cooking class",
+       "type": "Collocation",
+       "ipa": "/ˈkʊkɪŋ klæs/",
+       "stress": "COOK-ing class",
+       "band": "3–3.5",
+       "grammar": "take / book + a cooking class",
+       "ex": "Our team booked a cooking class for Saturday."
+      }
+     ],
+     "note": "take / book + a cooking class"
+    },
+    {
+     "mean": "tự nấu ăn cho mình",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "cook for myself",
+       "type": "Collocation",
+       "ipa": "/ˌkʊk fər maɪˈself/",
+       "stress": "cook for my-SELF",
+       "band": "4–5",
+       "grammar": "cook for + myself / yourself",
+       "ex": "After I moved out, I started to cook for myself."
+      }
+     ],
+     "note": "cook for + myself / yourself"
+    },
+    {
+     "mean": "tốt cho sức khỏe",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
+     "items": [
+      {
+       "w": "healthy",
+       "type": "Vocab",
+       "ipa": "/ˈhelθi/",
+       "stress": "HEAL-thy",
+       "band": "3–3.5",
+       "grammar": "healthy + food / snack / diet",
+       "ex": "Fruit is a healthy snack."
+      },
+      {
+       "w": "nutritious",
+       "type": "Vocab",
+       "ipa": "/nuˈtrɪʃəs/",
+       "stress": "nu-TRI-tious",
+       "band": "5.5–6.5",
+       "grammar": "nutritious + food / meal",
+       "ex": "Eggs are cheap and nutritious."
+      },
+      {
+       "w": "good for you",
+       "type": "Collocation",
+       "ipa": "/ˌɡʊd fər ˈjuː/",
+       "stress": "GOOD for you",
+       "band": "3–3.5",
+       "grammar": "be + good for you (không đứng trước danh từ)",
+       "ex": "Green tea is good for you."
+      },
+      {
+       "w": "healthy eating habits",
+       "type": "Collocation",
+       "ipa": "/ˌhelθi ˈiːtɪŋ ˌhæbɪts/",
+       "stress": "HEAL-thy EAT-ing hab-its",
+       "band": "5.5–6.5",
+       "grammar": "have / develop + healthy eating habits",
+       "ex": "Office workers need healthy eating habits."
+      },
+      {
+       "w": "a nutritious meal",
+       "type": "Collocation",
+       "ipa": "/ə nuˌtrɪʃəs ˈmiːl/",
+       "stress": "a nu-TRI-tious MEAL",
+       "band": "7–8",
+       "grammar": "eat / prepare + a nutritious meal",
+       "ex": "A bowl of pho can be a nutritious meal."
+      }
+     ],
+     "note": "healthy rộng nhất · nutritious = bổ dưỡng · good for you thân mật, đứng sau be · a nutritious meal = bữa ăn bổ dưỡng"
+    },
+    {
      "mean": "ăn chay",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
      "items": [
       {
        "w": "vegetarian",
@@ -17379,7 +17448,7 @@
     },
     {
      "mean": "chế độ ăn",
-     "cat": "A. Food & Cooking: từ cốt lõi",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
      "items": [
       {
        "w": "diet",
@@ -17439,24 +17508,8 @@
      "note": "diet không chỉ là ăn kiêng · eating habits luôn số nhiều · go on a diet = ăn kiêng · slim down = giảm cân"
     },
     {
-     "mean": "ăn ngoài hàng",
-     "cat": "B. Thói quen ăn uống & ý kiến",
-     "items": [
-      {
-       "w": "eat out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌiːt ˈaʊt/",
-       "stress": "eat‿OUT",
-       "band": "3–3.5",
-       "grammar": "không tân ngữ; QK ate out",
-       "ex": "We eat out every Friday after work."
-      }
-     ],
-     "note": "eat out không tân ngữ; QK ate out · eat outside = ăn ngoài trời (khác nghĩa)"
-    },
-    {
      "mean": "đồ ăn không tốt cho sức khỏe",
-     "cat": "B. Thói quen ăn uống & ý kiến",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
      "items": [
       {
        "w": "junk food",
@@ -17480,33 +17533,8 @@
      "note": "junk food không đếm được · fast food = đồ ăn nhanh (gà rán, burger) · junk food rộng hơn (cả snack, nước ngọt)"
     },
     {
-     "mean": "gọi đồ ăn mang về",
-     "cat": "B. Thói quen ăn uống & ý kiến",
-     "items": [
-      {
-       "w": "order takeout",
-       "type": "Collocation",
-       "ipa": "/ˌɔːrdər ˈteɪkaʊt/",
-       "stress": "OR-der TAKE-out",
-       "band": "4–5",
-       "grammar": "order + takeout",
-       "ex": "We order takeout when we work late."
-      },
-      {
-       "w": "get takeout",
-       "type": "Collocation",
-       "ipa": "/ˌɡet ˈteɪkaʊt/",
-       "stress": "get TAKE-out",
-       "band": "4–5",
-       "grammar": "get + takeout + from + nơi",
-       "ex": "Let's get takeout from the noodle shop."
-      }
-     ],
-     "note": "order takeout có tân ngữ (Mỹ) · get takeout = mua mang về"
-    },
-    {
      "mean": "chế độ ăn cân bằng",
-     "cat": "B. Thói quen ăn uống & ý kiến",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
      "items": [
       {
        "w": "a balanced diet",
@@ -17522,7 +17550,7 @@
     },
     {
      "mean": "ăn / dùng ít đi",
-     "cat": "B. Thói quen ăn uống & ý kiến",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
      "items": [
       {
        "w": "cut down on",
@@ -17546,81 +17574,117 @@
      "note": "cut down on = cut back on (giảm bớt) · cut out = bỏ hẳn"
     },
     {
-     "mean": "tự nấu từ nguyên liệu tươi",
-     "cat": "B. Thói quen ăn uống & ý kiến",
+     "mean": "bị dị ứng với",
+     "cat": "Healthy eating · Ăn uống lành mạnh",
      "items": [
       {
-       "w": "cook from scratch",
+       "w": "be allergic to",
        "type": "Collocation",
-       "ipa": "/ˌkʊk frəm ˈskrætʃ/",
-       "stress": "cook from SCRATCH",
+       "ipa": "/bi əˈlɝːdʒɪk tə/",
+       "stress": "be al-LER-gic to",
        "band": "5.5–6.5",
-       "grammar": "cook / make + sth + from scratch",
-       "ex": "On Sundays, I cook from scratch for my family."
+       "grammar": "be allergic to + N (peanuts, seafood)",
+       "ex": "My friend is allergic to peanuts."
       }
      ],
-     "note": "cook from scratch = không dùng đồ làm sẵn · whip up = nấu nhanh món đơn giản"
+     "note": "be allergic to + N; danh từ: have an allergy to"
     },
     {
-     "mean": "món ăn quen, ăn vào thấy dễ chịu",
-     "cat": "B. Thói quen ăn uống & ý kiến",
+     "mean": "đồ ăn mua về, gọi về",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
-       "w": "comfort food",
-       "type": "Collocation",
-       "ipa": "/ˈkʌmfərt fuːd/",
-       "stress": "COM-fort food",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được: X is my comfort food",
-       "ex": "Instant noodles are my comfort food during exam week."
-      }
-     ],
-     "note": "comfort food không đếm được; thường là món quen từ nhỏ"
-    },
-    {
-     "mean": "người kén ăn",
-     "cat": "B. Thói quen ăn uống & ý kiến",
-     "items": [
-      {
-       "w": "a picky eater",
-       "type": "Collocation",
-       "ipa": "/ə ˌpɪki ˈiːtər/",
-       "stress": "a PICK-y EAT-er",
-       "band": "5.5–6.5",
-       "grammar": "be + a picky eater; used to be + a picky eater",
-       "ex": "I was a picky eater when I was a child."
+       "w": "takeout",
+       "type": "Vocab",
+       "ipa": "/ˈteɪkaʊt/",
+       "stress": "TAKE-out",
+       "band": "4–5",
+       "grammar": "không đếm được (Mỹ): order / get takeout",
+       "ex": "We got takeout because we were too tired to cook."
       },
       {
-       "w": "a fussy eater",
+       "w": "takeaway",
+       "type": "Vocab",
+       "ipa": "/ˈteɪkəweɪ/",
+       "stress": "TAKE-a-way",
+       "band": "4–5",
+       "grammar": "Anh – Anh, đếm được: get a takeaway",
+       "ex": "In London, we got a takeaway every Friday."
+      },
+      {
+       "w": "delivery",
+       "type": "Vocab",
+       "ipa": "/dɪˈlɪvəri/",
+       "stress": "de-LIV-er-y",
+       "band": "4–5",
+       "grammar": "order / get + delivery (Mỹ, không đếm được)",
+       "ex": "It was raining, so we got delivery from a food app."
+      },
+      {
+       "w": "order in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɔːrdər ˈɪn/",
+       "stress": "or-der‿IN",
+       "band": "4–5",
+       "grammar": "không tân ngữ (Mỹ)",
+       "ex": "We were too busy, so we ordered in."
+      },
+      {
+       "w": "get food delivered",
        "type": "Collocation",
-       "ipa": "/ə ˌfʌsi ˈiːtər/",
-       "stress": "a FUSS-y EAT-er",
-       "band": "5.5–6.5",
-       "grammar": "Anh – Anh: be + a fussy eater",
-       "ex": "My little brother is a fussy eater."
+       "ipa": "/ˌɡet ˈfuːd dɪˌlɪvərd/",
+       "stress": "get FOOD de-LIV-ered",
+       "band": "4–5",
+       "grammar": "get + food / lunch + delivered",
+       "ex": "We get food delivered to the office on Fridays."
       }
      ],
-     "note": "a picky eater (Mỹ) = a fussy eater (Anh)"
+     "note": "takeout (Mỹ) = takeaway (Anh) · delivery = giao tận nơi · order in không có tân ngữ · get food delivered = gọi giao tận nơi"
     },
     {
-     "mean": "hảo ngọt",
-     "cat": "B. Thói quen ăn uống & ý kiến",
+     "mean": "ăn ngoài hàng",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
-       "w": "have a sweet tooth",
-       "type": "Idiom",
-       "ipa": "/ˌhæv ə ˌswiːt ˈtuːθ/",
-       "stress": "have‿a SWEET TOOTH",
-       "band": "5.5–6.5",
-       "grammar": "have + a sweet tooth",
-       "ex": "I have a sweet tooth, so I can't say no to cake."
+       "w": "eat out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌiːt ˈaʊt/",
+       "stress": "eat‿OUT",
+       "band": "3–3.5",
+       "grammar": "không tân ngữ; QK ate out",
+       "ex": "We eat out every Friday after work."
       }
      ],
-     "note": "have a sweet tooth (idiom) · love desserts = thích đồ tráng miệng (thường)"
+     "note": "eat out không tân ngữ; QK ate out · eat outside = ăn ngoài trời (khác nghĩa)"
+    },
+    {
+     "mean": "gọi đồ ăn mang về",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
+     "items": [
+      {
+       "w": "order takeout",
+       "type": "Collocation",
+       "ipa": "/ˌɔːrdər ˈteɪkaʊt/",
+       "stress": "OR-der TAKE-out",
+       "band": "4–5",
+       "grammar": "order + takeout",
+       "ex": "We order takeout when we work late."
+      },
+      {
+       "w": "get takeout",
+       "type": "Collocation",
+       "ipa": "/ˌɡet ˈteɪkaʊt/",
+       "stress": "get TAKE-out",
+       "band": "4–5",
+       "grammar": "get + takeout + from + nơi",
+       "ex": "Let's get takeout from the noodle shop."
+      }
+     ],
+     "note": "order takeout có tân ngữ (Mỹ) · get takeout = mua mang về"
     },
     {
      "mean": "thực đơn",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
        "w": "menu",
@@ -17635,40 +17699,8 @@
      "note": "on the menu"
     },
     {
-     "mean": "lớp học nấu ăn",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
-     "items": [
-      {
-       "w": "cooking class",
-       "type": "Collocation",
-       "ipa": "/ˈkʊkɪŋ klæs/",
-       "stress": "COOK-ing class",
-       "band": "3–3.5",
-       "grammar": "take / book + a cooking class",
-       "ex": "Our team booked a cooking class for Saturday."
-      }
-     ],
-     "note": "take / book + a cooking class"
-    },
-    {
-     "mean": "món ăn đường phố",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
-     "items": [
-      {
-       "w": "street food",
-       "type": "Collocation",
-       "ipa": "/ˈstriːt fuːd/",
-       "stress": "STREET food",
-       "band": "4–5",
-       "grammar": "không đếm được: try street food",
-       "ex": "Banh mi is famous street food in Vietnam."
-      }
-     ],
-     "note": "street food không đếm được"
-    },
-    {
      "mean": "quầy hàng ăn",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
        "w": "food stall",
@@ -17684,7 +17716,7 @@
     },
     {
      "mean": "căng tin",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
        "w": "cafeteria",
@@ -17709,7 +17741,7 @@
     },
     {
      "mean": "hóa đơn ở nhà hàng",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
        "w": "check",
@@ -17725,7 +17757,7 @@
     },
     {
      "mean": "sự đặt chỗ trước",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
        "w": "reservation",
@@ -17740,24 +17772,24 @@
      "note": "reservation (Mỹ) = booking (Anh); make a reservation"
     },
     {
-     "mean": "bị dị ứng với",
-     "cat": "C. Nơi ăn uống & đặt chỗ",
+     "mean": "ứng dụng giao đồ ăn",
+     "cat": "Eating out & ordering · Ăn ngoài & gọi món",
      "items": [
       {
-       "w": "be allergic to",
+       "w": "food delivery app",
        "type": "Collocation",
-       "ipa": "/bi əˈlɝːdʒɪk tə/",
-       "stress": "be al-LER-gic to",
-       "band": "5.5–6.5",
-       "grammar": "be allergic to + N (peanuts, seafood)",
-       "ex": "My friend is allergic to peanuts."
+       "ipa": "/ˈfuːd dɪˌlɪvəri æp/",
+       "stress": "FOOD de-LIV-er-y app",
+       "band": "4–5",
+       "grammar": "order from + a food delivery app",
+       "ex": "Many office workers use a food delivery app every day."
       }
      ],
-     "note": "be allergic to + N; danh từ: have an allergy to"
+     "note": "use / order from + a food delivery app"
     },
     {
      "mean": "giờ nghỉ trưa",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "cat": "Eating at work · Ăn uống khi đi làm",
      "items": [
       {
        "w": "lunch break",
@@ -17773,7 +17805,7 @@
     },
     {
      "mean": "bỏ bữa sáng",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "cat": "Eating at work · Ăn uống khi đi làm",
      "items": [
       {
        "w": "skip breakfast",
@@ -17789,7 +17821,7 @@
     },
     {
      "mean": "ăn ngay tại bàn làm việc",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "cat": "Eating at work · Ăn uống khi đi làm",
      "items": [
       {
        "w": "eat at my desk",
@@ -17804,40 +17836,8 @@
      "note": "eat at + my / your desk"
     },
     {
-     "mean": "tự nấu ăn cho mình",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "cook for myself",
-       "type": "Collocation",
-       "ipa": "/ˌkʊk fər maɪˈself/",
-       "stress": "cook for my-SELF",
-       "band": "4–5",
-       "grammar": "cook for + myself / yourself",
-       "ex": "After I moved out, I started to cook for myself."
-      }
-     ],
-     "note": "cook for + myself / yourself"
-    },
-    {
-     "mean": "ứng dụng giao đồ ăn",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "food delivery app",
-       "type": "Collocation",
-       "ipa": "/ˈfuːd dɪˌlɪvəri æp/",
-       "stress": "FOOD de-LIV-er-y app",
-       "band": "4–5",
-       "grammar": "order from + a food delivery app",
-       "ex": "Many office workers use a food delivery app every day."
-      }
-     ],
-     "note": "use / order from + a food delivery app"
-    },
-    {
      "mean": "mang cơm hộp đi làm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "cat": "Eating at work · Ăn uống khi đi làm",
      "items": [
       {
        "w": "pack a lunch",
@@ -17853,7 +17853,7 @@
     },
     {
      "mean": "ăn vội chút gì đó",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "cat": "Eating at work · Ăn uống khi đi làm",
      "items": [
       {
        "w": "grab a bite",
@@ -17878,7 +17878,7 @@
     },
     {
      "mean": "ăn uống tiết kiệm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "cat": "Eating at work · Ăn uống khi đi làm",
      "items": [
       {
        "w": "eat on a budget",
@@ -17913,7 +17913,7 @@
    "cards": [
     {
      "mean": "con đường sự nghiệp",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "career path",
@@ -17947,7 +17947,7 @@
     },
     {
      "mean": "sự hài lòng với công việc",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "job satisfaction",
@@ -17990,7 +17990,7 @@
     },
     {
      "mean": "đáng công sức, cho nhiều niềm vui",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "rewarding",
@@ -18014,162 +18014,8 @@
      "note": "rewarding = mang lại niềm vui, ý nghĩa (không nói về tiền) · worthwhile = đáng bỏ công"
     },
     {
-     "mean": "công việc giờ hành chính",
-     "cat": "A. Work & careers",
-     "items": [
-      {
-       "w": "a nine-to-five job",
-       "type": "Collocation",
-       "ipa": "/ə ˌnaɪn tə ˈfaɪv ˈdʒɑb/",
-       "stress": "a nine-to-FIVE job",
-       "band": "5.5–6.5",
-       "grammar": "có gạch nối khi đứng trước danh từ",
-       "ex": "My dad has a nine-to-five job at a bank."
-      },
-      {
-       "w": "a full-time position",
-       "type": "Collocation",
-       "ipa": "/ə ˌfʊlˈtaɪm pəˈzɪʃən/",
-       "stress": "a full-TIME po-SI-tion",
-       "band": "5.5–6.5",
-       "grammar": "đếm được",
-       "ex": "After her internship, she got a full-time position."
-      },
-      {
-       "w": "a steady income",
-       "type": "Collocation",
-       "ipa": "/ə ˌstɛdi ˈɪnˌkʌm/",
-       "stress": "a STEAD-y IN-come",
-       "band": "5.5–6.5",
-       "grammar": "have + a steady income",
-       "ex": "A nine-to-five job gives you a steady income."
-      }
-     ],
-     "note": "a nine-to-five job = giờ hành chính, ổn định · a full-time position (trang trọng) · a steady income = thu nhập đều"
-    },
-    {
-     "mean": "việc làm thêm (bán thời gian)",
-     "cat": "A. Work & careers",
-     "items": [
-      {
-       "w": "a part-time job",
-       "type": "Collocation",
-       "ipa": "/ə ˌpɑrtˈtaɪm ˈdʒɑb/",
-       "stress": "a part-TIME job",
-       "band": "4–5",
-       "grammar": "have / get + a part-time job; ↔ a full-time job",
-       "ex": "Many seniors have a part-time job at a coffee shop."
-      },
-      {
-       "w": "help out",
-       "type": "Phrasal verb",
-       "ipa": "/ˌhɛlp ˈaʊt/",
-       "stress": "help_OUT",
-       "band": "4–5",
-       "grammar": "help out (at + nơi) / help sb out",
-       "ex": "I help out at my aunt’s clinic on Sundays."
-      },
-      {
-       "w": "fill in for",
-       "type": "Phrasal verb",
-       "ipa": "/ˌfɪl ˈɪn fɚ/",
-       "stress": "fill_IN for",
-       "band": "7–8",
-       "grammar": "fill in for + người",
-       "ex": "I filled in for my friend at the café."
-      },
-      {
-       "w": "lend a hand",
-       "type": "Idiom",
-       "ipa": "/ˌlɛnd ə ˈhænd/",
-       "stress": "lend_a HAND",
-       "band": "5.5–6.5",
-       "grammar": "lend (sb) a hand with + N",
-       "ex": "I lend a hand at my aunt’s clinic on Sundays."
-      }
-     ],
-     "note": "part-time job = việc làm thêm · help out = phụ giúp (không chính thức) · fill in for = làm thay tạm"
-    },
-    {
-     "mean": "kinh nghiệm làm việc",
-     "cat": "A. Work & careers",
-     "items": [
-      {
-       "w": "work experience",
-       "type": "Collocation",
-       "ipa": "/ˈwɝk ɪkˌspɪriəns/",
-       "stress": "WORK ex-PE-ri-ence",
-       "band": "4–5",
-       "grammar": "không đếm được: gain / get + work experience",
-       "ex": "I want to gain some work experience at a dental clinic this summer."
-      },
-      {
-       "w": "do volunteer work",
-       "type": "Collocation",
-       "ipa": "/ˌdu ˌvɑlənˈtɪr ˌwɝk/",
-       "stress": "do vol-un-TEER work",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được",
-       "ex": "I do volunteer work at a children’s hospital."
-      },
-      {
-       "w": "take a gap year",
-       "type": "Collocation",
-       "ipa": "/ˌteɪk ə ˈɡæp ˌjɪr/",
-       "stress": "take_a GAP year",
-       "band": "5.5–6.5",
-       "grammar": "QK took",
-       "ex": "Some students take a gap year to work and travel."
-      }
-     ],
-     "note": "work experience không đếm được · do volunteer work = làm không lương · take a gap year = nghỉ 1 năm trước đại học"
-    },
-    {
-     "mean": "kiếm được việc (tốt, sau nhiều cố gắng)",
-     "cat": "A. Work & careers",
-     "items": [
-      {
-       "w": "land a job",
-       "type": "Collocation",
-       "ipa": "/ˌlænd ə ˈdʒɑb/",
-       "stress": "land‿a JOB",
-       "band": "7–8",
-       "grammar": "land + a job / an internship; QK landed",
-       "ex": "My cousin landed a job at a big hospital right after graduation."
-      },
-      {
-       "w": "secure a position",
-       "type": "Collocation",
-       "ipa": "/sɪˌkjʊr ə pəˈzɪʃən/",
-       "stress": "se-CURE a po-SI-tion",
-       "band": "7–8",
-       "grammar": "trang trọng hơn land a job",
-       "ex": "She secured a position at a top hospital."
-      },
-      {
-       "w": "accept a job offer",
-       "type": "Collocation",
-       "ipa": "/əkˌsɛpt ə ˈdʒɑb ˌɔfɚ/",
-       "stress": "ac-CEPT a JOB of-fer",
-       "band": "5.5–6.5",
-       "grammar": "↔ turn down a job offer",
-       "ex": "She accepted a job offer from a big hospital."
-      },
-      {
-       "w": "get into",
-       "type": "Phrasal verb",
-       "ipa": "/ˌɡɛt ˈɪntu/",
-       "stress": "get_IN-to",
-       "band": "5.5–6.5",
-       "grammar": "không tách: + an industry / a university",
-       "ex": "It is hard to get into medical school."
-      }
-     ],
-     "note": "apply for = ứng tuyển (chưa chắc được) → land / secure = đã có việc · land thân mật, secure trang trọng"
-    },
-    {
      "mean": "hợp với, sinh ra để làm (nghề)",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "be cut out for",
@@ -18203,7 +18049,7 @@
     },
     {
      "mean": "công việc mơ ước",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "a dream job",
@@ -18228,7 +18074,7 @@
     },
     {
      "mean": "thăng tiến trong sự nghiệp",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "climb the career ladder",
@@ -18271,7 +18117,7 @@
     },
     {
      "mean": "cân bằng công việc – cuộc sống",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "work-life balance",
@@ -18305,7 +18151,7 @@
     },
     {
      "mean": "sự ổn định, ít lo mất việc",
-     "cat": "A. Work & careers",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "job security",
@@ -18338,384 +18184,8 @@
      "note": "job security = không lo mất việc · a decent salary / earn a living = chuyện tiền"
     },
     {
-     "mean": "đăng ký (khóa học, lớp)",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "sign up for",
-       "type": "Phrasal verb",
-       "ipa": "/ˌsaɪn ˈʌp fɚ/",
-       "stress": "sign‿UP for",
-       "band": "5.5–6.5",
-       "grammar": "không tách: sign up for + a course; QK signed up",
-       "ex": "I signed up for a first-aid course last summer."
-      }
-     ]
-    },
-    {
-     "mean": "buổi học thực hành ngắn",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "a workshop",
-       "type": "Vocab",
-       "ipa": "/ə ˈwɝkˌʃɑp/",
-       "stress": "a WORK-shop",
-       "band": "5.5–6.5",
-       "grammar": "đếm được: run / attend + a workshop",
-       "ex": "The university runs a free workshop on dental care."
-      }
-     ]
-    },
-    {
-     "mean": "học phí",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "tuition fees",
-       "type": "Collocation",
-       "ipa": "/tuˈɪʃən ˌfiz/",
-       "stress": "tu-I-tion fees",
-       "band": "5.5–6.5",
-       "grammar": "thường số nhiều: pay + tuition fees",
-       "ex": "Tuition fees at medical schools are quite high."
-      }
-     ]
-    },
-    {
-     "mean": "giới hạn ở (số người)",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "be limited to",
-       "type": "Collocation",
-       "ipa": "/bi ˈlɪmɪɾɪd tu/",
-       "stress": "be LIM-it-ed to",
-       "band": "5.5–6.5",
-       "grammar": "be limited to + số + N số nhiều",
-       "ex": "The class is limited to twelve participants."
-      }
-     ]
-    },
-    {
-     "mean": "người tham gia",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "participant",
-       "type": "Vocab",
-       "ipa": "/pɑrˈtɪsəpənt/",
-       "stress": "par-TIC-i-pant",
-       "band": "5.5–6.5",
-       "grammar": "đếm được; động từ participate in",
-       "ex": "Each participant gets a name card on the first day."
-      }
-     ]
-    },
-    {
-     "mean": "chứng chỉ, giấy chứng nhận",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "certificate",
-       "type": "Vocab",
-       "ipa": "/sɚˈtɪfɪkət/",
-       "stress": "cer-TIF-i-cate",
-       "band": "5.5–6.5",
-       "grammar": "get / receive + a certificate in + N; cuối đọc /kət/",
-       "ex": "I received a certificate in first aid."
-      }
-     ]
-    },
-    {
-     "mean": "đồ ăn nhẹ và nước uống (ở sự kiện)",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "refreshments",
-       "type": "Vocab",
-       "ipa": "/rɪˈfrɛʃmənts/",
-       "stress": "re-FRESH-ments",
-       "band": "7–8",
-       "grammar": "luôn số nhiều",
-       "ex": "Lunch and refreshments are included in the fee."
-      }
-     ]
-    },
-    {
-     "mean": "tại hiện trường thật (không ở lớp)",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "on location",
-       "type": "Collocation",
-       "ipa": "/ɑn loʊˈkeɪʃən/",
-       "stress": "on lo-CA-tion",
-       "band": "7–8",
-       "grammar": "spend + time + on location (at + nơi)",
-       "ex": "We spent the afternoon on location at a local hospital."
-      }
-     ]
-    },
-    {
-     "mean": "khóa học thực hành",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "a practical course",
-       "type": "Collocation",
-       "ipa": "/ə ˈpræktɪkəl ˈkɔrs/",
-       "stress": "a PRAC-ti-cal course",
-       "band": "5.5–6.5",
-       "grammar": "↔ a theoretical course",
-       "ex": "I prefer a practical course to a long lecture."
-      }
-     ]
-    },
-    {
-     "mean": "kiến thức cơ bản về",
-     "cat": "B. Courses & training",
-     "items": [
-      {
-       "w": "the basics of",
-       "type": "Collocation",
-       "ipa": "/ðə ˈbeɪsɪks əv/",
-       "stress": "the BA-sics of",
-       "band": "4–5",
-       "grammar": "learn / train sb in + the basics of + N",
-       "ex": "The course trains you in the basics of photography."
-      }
-     ]
-    },
-    {
-     "mean": "nhân viên bán hàng (Anh: shop assistant)",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "a store assistant",
-       "type": "Collocation",
-       "ipa": "/ə ˈstɔr əˌsɪstənt/",
-       "stress": "a STORE as-SIS-tant",
-       "band": "4–5",
-       "grammar": "đếm được; a store assistant (không phải an)",
-       "ex": "She works as a store assistant on weekends."
-      }
-     ]
-    },
-    {
-     "mean": "trung tâm thương mại, cửa hàng bách hóa",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "a department store",
-       "type": "Collocation",
-       "ipa": "/ə dɪˈpɑrtmənt ˌstɔr/",
-       "stress": "a de-PART-ment store",
-       "band": "4–5",
-       "grammar": "đếm được",
-       "ex": "The department store has a new computer section."
-      }
-     ]
-    },
-    {
-     "mean": "ngành bán lẻ",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "retail",
-       "type": "Vocab",
-       "ipa": "/ˈriˌteɪl/",
-       "stress": "RE-tail",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được: work in retail",
-       "ex": "My sister has worked in retail for three years."
-      }
-     ]
-    },
-    {
-     "mean": "ngành nhà hàng – khách sạn",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "hospitality",
-       "type": "Vocab",
-       "ipa": "/ˌhɑspɪˈtæləɾi/",
-       "stress": "hos-pi-TAL-i-ty",
-       "band": "7–8",
-       "grammar": "không đếm được; (sách: hotel and catering)",
-       "ex": "Many students get part-time jobs in hospitality."
-      }
-     ]
-    },
-    {
-     "mean": "ngành xây dựng",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "construction",
-       "type": "Vocab",
-       "ipa": "/kənˈstrʌkʃən/",
-       "stress": "con-STRUC-tion",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được: work in construction",
-       "ex": "My uncle is an engineer in construction."
-      }
-     ]
-    },
-    {
-     "mean": "nhà thiết kế đồ họa",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "a graphic designer",
-       "type": "Collocation",
-       "ipa": "/ə ˈɡræfɪk dɪˈzaɪnɚ/",
-       "stress": "a GRAPH-ic de-SIGN-er",
-       "band": "5.5–6.5",
-       "grammar": "đếm được; design không đọc âm g",
-       "ex": "A graphic designer made the logo for our school club."
-      }
-     ]
-    },
-    {
-     "mean": "công nghệ thông tin (IT)",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "information technology",
-       "type": "Collocation",
-       "ipa": "/ˌɪnfɚˌmeɪʃən tɛkˈnɑlədʒi/",
-       "stress": "in-for-MA-tion tech-NOL-o-gy",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được: ✗ informations",
-       "ex": "She has just finished a course in information technology."
-      }
-     ]
-    },
-    {
-     "mean": "lực lượng khẩn cấp (cấp cứu, cứu hỏa, cảnh sát)",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "the emergency services",
-       "type": "Collocation",
-       "ipa": "/ði ɪˈmɝdʒənsi ˌsɝvɪsɪz/",
-       "stress": "the e-MER-gen-cy SER-vic-es",
-       "band": "7–8",
-       "grammar": "số nhiều; work in + the emergency services",
-       "ex": "Nurses in the emergency services often work night shifts."
-      }
-     ]
-    },
-    {
-     "mean": "nghiên cứu và phát triển (R&D)",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "research and development",
-       "type": "Collocation",
-       "ipa": "/rɪˈsɝtʃ ən dɪˈvɛləpmənt/",
-       "stress": "re-SEARCH and de-VEL-op-ment",
-       "band": "7–8",
-       "grammar": "không đếm được",
-       "ex": "Some dentists work in research and development for toothpaste companies."
-      }
-     ]
-    },
-    {
-     "mean": "nhiều loại, đa dạng",
-     "cat": "C. Jobs & workplaces",
-     "items": [
-      {
-       "w": "a wide range of",
-       "type": "Collocation",
-       "ipa": "/ə ˌwaɪd ˈreɪndʒ əv/",
-       "stress": "a wide RANGE of",
-       "band": "5.5–6.5",
-       "grammar": "a wide range of + N số nhiều / không đếm được",
-       "ex": "The store sells a wide range of smart watches."
-      }
-     ]
-    },
-    {
-     "mean": "phòng khám nha khoa",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "a dental clinic",
-       "type": "Collocation",
-       "ipa": "/ə ˌdɛntəl ˈklɪnɪk/",
-       "stress": "a DEN-tal CLIN-ic",
-       "band": "5.5–6.5",
-       "grammar": "at + a dental clinic",
-       "ex": "There is a small dental clinic near my house."
-      }
-     ]
-    },
-    {
-     "mean": "bác sĩ chỉnh nha (niềng răng)",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "an orthodontist",
-       "type": "Vocab",
-       "ipa": "/ən ˌɔrθəˈdɑntɪst/",
-       "stress": "an or-tho-DON-tist",
-       "band": "7–8",
-       "grammar": "đếm được; dentist = nha sĩ chung",
-       "ex": "I saw an orthodontist when I got my braces."
-      }
-     ]
-    },
-    {
-     "mean": "điều trị cho bệnh nhân",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "treat patients",
-       "type": "Collocation",
-       "ipa": "/ˌtrit ˈpeɪʃənts/",
-       "stress": "treat PA-tients",
-       "band": "5.5–6.5",
-       "grammar": "treat + sb + for + bệnh; QK treated",
-       "ex": "Final-year students treat patients under a teacher’s eye."
-      }
-     ]
-    },
-    {
-     "mean": "kỳ thực tập",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "an internship",
-       "type": "Vocab",
-       "ipa": "/ən ˈɪnˌtɝnʃɪp/",
-       "stress": "an IN-tern-ship",
-       "band": "5.5–6.5",
-       "grammar": "do an internship at + nơi; người thực tập = an intern",
-       "ex": "Dental students do an internship at a hospital in their last year."
-      }
-     ],
-     "note": "internship = thực tập (có thể có lương) · shadow a dentist = chỉ đi theo quan sát"
-    },
-    {
-     "mean": "đi theo quan sát nha sĩ làm việc (để học nghề)",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "shadow a dentist",
-       "type": "Collocation",
-       "ipa": "/ˈʃædoʊ ə ˈdɛntɪst/",
-       "stress": "SHAD-ow a DEN-tist",
-       "band": "7–8",
-       "grammar": "shadow + sb; danh từ job shadowing",
-       "ex": "Last summer I spent a week shadowing a dentist."
-      }
-     ]
-    },
-    {
      "mean": "tạo ra thay đổi tốt",
-     "cat": "D. Dentistry, medical school & feelings",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "make a difference",
@@ -18740,7 +18210,7 @@
     },
     {
      "mean": "thiên hướng, nghề mình được \"gọi\" để làm",
-     "cat": "D. Dentistry, medical school & feelings",
+     "cat": "Careers & job satisfaction · Sự nghiệp",
      "items": [
       {
        "w": "a calling",
@@ -18764,139 +18234,235 @@
      "note": "a calling = nghề mình thấy được \"gọi\" để làm · occupation = từ trang trọng chỉ nghề (trong form)"
     },
     {
-     "mean": "có được bước đầu để bước chân vào (ngành)",
-     "cat": "D. Dentistry, medical school & feelings",
+     "mean": "công việc giờ hành chính",
+     "cat": "Types of jobs · Các loại công việc",
      "items": [
       {
-       "w": "get my foot in the door",
-       "type": "Idiom",
-       "ipa": "/ˌɡɛt maɪ ˈfʊt ɪn ðə ˈdɔr/",
-       "stress": "get my FOOT in the DOOR",
-       "band": "7–8",
-       "grammar": "get + my / your + foot in the door (of + N)",
-       "ex": "An internship can help me get my foot in the door."
-      }
-     ]
-    },
-    {
-     "mean": "cực kỳ vui, phấn khích (cảm xúc của người)",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "thrilled",
-       "type": "Vocab",
-       "ipa": "/θrɪld/",
-       "stress": "THRILLED",
-       "band": "7–8",
-       "grammar": "be thrilled to V / about N; ↔ thrilling (sự việc)",
-       "ex": "I was thrilled to get a place on the workshop."
-      }
-     ]
-    },
-    {
-     "mean": "kinh ngạc (người); ↔ amazing (sự việc)",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "amazed",
-       "type": "Vocab",
-       "ipa": "/əˈmeɪzd/",
-       "stress": "a-MAZED",
-       "band": "5.5–6.5",
-       "grammar": "be amazed at / by + N; đuôi -ed đọc /d/",
-       "ex": "I was amazed by how calm the dentist was."
-      }
-     ]
-    },
-    {
-     "mean": "khó nhưng thú vị, thử thách (sự việc)",
-     "cat": "D. Dentistry, medical school & feelings",
-     "items": [
-      {
-       "w": "challenging",
-       "type": "Vocab",
-       "ipa": "/ˈtʃælɪndʒɪŋ/",
-       "stress": "CHAL-leng-ing",
-       "band": "5.5–6.5",
-       "grammar": "↔ challenged (người); It is challenging to + V",
-       "ex": "Medical school is challenging, but I am ready."
-      },
-      {
-       "w": "no walk in the park",
-       "type": "Idiom",
-       "ipa": "/ˌnoʊ ˌwɔk ɪn ðə ˈpɑrk/",
-       "stress": "no WALK in the PARK",
-       "band": "7–8",
-       "grammar": "sth is no walk in the park",
-       "ex": "Dental school is no walk in the park."
-      },
-      {
-       "w": "a competitive industry",
+       "w": "a nine-to-five job",
        "type": "Collocation",
-       "ipa": "/ə kəmˌpɛtəɾɪv ˈɪndəstri/",
-       "stress": "a com-PET-i-tive IN-dus-try",
-       "band": "7–8",
-       "grammar": "đếm được",
-       "ex": "Design is a very competitive industry."
-      },
-      {
-       "w": "a high-pressure job",
-       "type": "Collocation",
-       "ipa": "/ə ˌhaɪˈprɛʃɚ ˈdʒɑb/",
-       "stress": "a high-PRES-sure job",
-       "band": "7–8",
+       "ipa": "/ə ˌnaɪn tə ˈfaɪv ˈdʒɑb/",
+       "stress": "a nine-to-FIVE job",
+       "band": "5.5–6.5",
        "grammar": "có gạch nối khi đứng trước danh từ",
-       "ex": "Working in an emergency room is a high-pressure job."
+       "ex": "My dad has a nine-to-five job at a bank."
+      },
+      {
+       "w": "a full-time position",
+       "type": "Collocation",
+       "ipa": "/ə ˌfʊlˈtaɪm pəˈzɪʃən/",
+       "stress": "a full-TIME po-SI-tion",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "After her internship, she got a full-time position."
+      },
+      {
+       "w": "a steady income",
+       "type": "Collocation",
+       "ipa": "/ə ˌstɛdi ˈɪnˌkʌm/",
+       "stress": "a STEAD-y IN-come",
+       "band": "5.5–6.5",
+       "grammar": "have + a steady income",
+       "ex": "A nine-to-five job gives you a steady income."
       }
      ],
-     "note": "challenging = khó nhưng hay (tích cực) · no walk in the park = idiom \"không dễ chút nào\" · a competitive industry = ngành cạnh tranh · a high-pressure job = áp lực cao"
+     "note": "a nine-to-five job = giờ hành chính, ổn định · a full-time position (trang trọng) · a steady income = thu nhập đều"
     },
     {
-     "mean": "làm kiệt sức (sự việc); ↔ exhausted (người)",
-     "cat": "D. Dentistry, medical school & feelings",
+     "mean": "việc làm thêm (bán thời gian)",
+     "cat": "Types of jobs · Các loại công việc",
      "items": [
       {
-       "w": "exhausting",
-       "type": "Vocab",
-       "ipa": "/ɪɡˈzɔstɪŋ/",
-       "stress": "ex-HAUST-ing",
-       "band": "5.5–6.5",
-       "grammar": "h không đọc: /ɪɡˈzɔ/",
-       "ex": "A twelve-hour shift at a hospital is exhausting."
+       "w": "a part-time job",
+       "type": "Collocation",
+       "ipa": "/ə ˌpɑrtˈtaɪm ˈdʒɑb/",
+       "stress": "a part-TIME job",
+       "band": "4–5",
+       "grammar": "have / get + a part-time job; ↔ a full-time job",
+       "ex": "Many seniors have a part-time job at a coffee shop."
       },
       {
-       "w": "drained",
-       "type": "Vocab",
-       "ipa": "/dreɪnd/",
-       "stress": "DRAINED",
-       "band": "7–8",
-       "grammar": "feel drained (người)",
-       "ex": "After a twelve-hour shift, she felt completely drained."
-      },
-      {
-       "w": "wear (sb) out",
+       "w": "help out",
        "type": "Phrasal verb",
-       "ipa": "/ˌwɛr ˈaʊt/",
-       "stress": "wear_OUT",
-       "band": "5.5–6.5",
-       "grammar": "tách được: wear me out",
-       "ex": "Night shifts really wear nurses out."
+       "ipa": "/ˌhɛlp ˈaʊt/",
+       "stress": "help_OUT",
+       "band": "4–5",
+       "grammar": "help out (at + nơi) / help sb out",
+       "ex": "I help out at my aunt’s clinic on Sundays."
       },
       {
-       "w": "be run off my feet",
-       "type": "Idiom",
-       "ipa": "/bi ˌrʌn ɔf maɪ ˈfit/",
-       "stress": "be run OFF my FEET",
+       "w": "fill in for",
+       "type": "Phrasal verb",
+       "ipa": "/ˌfɪl ˈɪn fɚ/",
+       "stress": "fill_IN for",
        "band": "7–8",
-       "grammar": "thân mật; be run off + my / her + feet",
-       "ex": "On Saturdays, the clinic staff are run off their feet."
+       "grammar": "fill in for + người",
+       "ex": "I filled in for my friend at the café."
+      },
+      {
+       "w": "lend a hand",
+       "type": "Idiom",
+       "ipa": "/ˌlɛnd ə ˈhænd/",
+       "stress": "lend_a HAND",
+       "band": "5.5–6.5",
+       "grammar": "lend (sb) a hand with + N",
+       "ex": "I lend a hand at my aunt’s clinic on Sundays."
       }
      ],
-     "note": "-ing = sự việc làm mệt ↔ drained (người, band 7–8) · wear sb out = phrasal verb · be run off my feet = bận tối mắt (thân mật)"
+     "note": "part-time job = việc làm thêm · help out = phụ giúp (không chính thức) · fill in for = làm thay tạm"
+    },
+    {
+     "mean": "nhân viên bán hàng (Anh: shop assistant)",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "a store assistant",
+       "type": "Collocation",
+       "ipa": "/ə ˈstɔr əˌsɪstənt/",
+       "stress": "a STORE as-SIS-tant",
+       "band": "4–5",
+       "grammar": "đếm được; a store assistant (không phải an)",
+       "ex": "She works as a store assistant on weekends."
+      }
+     ]
+    },
+    {
+     "mean": "trung tâm thương mại, cửa hàng bách hóa",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "a department store",
+       "type": "Collocation",
+       "ipa": "/ə dɪˈpɑrtmənt ˌstɔr/",
+       "stress": "a de-PART-ment store",
+       "band": "4–5",
+       "grammar": "đếm được",
+       "ex": "The department store has a new computer section."
+      }
+     ]
+    },
+    {
+     "mean": "ngành bán lẻ",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "retail",
+       "type": "Vocab",
+       "ipa": "/ˈriˌteɪl/",
+       "stress": "RE-tail",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: work in retail",
+       "ex": "My sister has worked in retail for three years."
+      }
+     ]
+    },
+    {
+     "mean": "ngành nhà hàng – khách sạn",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "hospitality",
+       "type": "Vocab",
+       "ipa": "/ˌhɑspɪˈtæləɾi/",
+       "stress": "hos-pi-TAL-i-ty",
+       "band": "7–8",
+       "grammar": "không đếm được; (sách: hotel and catering)",
+       "ex": "Many students get part-time jobs in hospitality."
+      }
+     ]
+    },
+    {
+     "mean": "ngành xây dựng",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "construction",
+       "type": "Vocab",
+       "ipa": "/kənˈstrʌkʃən/",
+       "stress": "con-STRUC-tion",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: work in construction",
+       "ex": "My uncle is an engineer in construction."
+      }
+     ]
+    },
+    {
+     "mean": "nhà thiết kế đồ họa",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "a graphic designer",
+       "type": "Collocation",
+       "ipa": "/ə ˈɡræfɪk dɪˈzaɪnɚ/",
+       "stress": "a GRAPH-ic de-SIGN-er",
+       "band": "5.5–6.5",
+       "grammar": "đếm được; design không đọc âm g",
+       "ex": "A graphic designer made the logo for our school club."
+      }
+     ]
+    },
+    {
+     "mean": "công nghệ thông tin (IT)",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "information technology",
+       "type": "Collocation",
+       "ipa": "/ˌɪnfɚˌmeɪʃən tɛkˈnɑlədʒi/",
+       "stress": "in-for-MA-tion tech-NOL-o-gy",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được: ✗ informations",
+       "ex": "She has just finished a course in information technology."
+      }
+     ]
+    },
+    {
+     "mean": "lực lượng khẩn cấp (cấp cứu, cứu hỏa, cảnh sát)",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "the emergency services",
+       "type": "Collocation",
+       "ipa": "/ði ɪˈmɝdʒənsi ˌsɝvɪsɪz/",
+       "stress": "the e-MER-gen-cy SER-vic-es",
+       "band": "7–8",
+       "grammar": "số nhiều; work in + the emergency services",
+       "ex": "Nurses in the emergency services often work night shifts."
+      }
+     ]
+    },
+    {
+     "mean": "nghiên cứu và phát triển (R&D)",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "research and development",
+       "type": "Collocation",
+       "ipa": "/rɪˈsɝtʃ ən dɪˈvɛləpmənt/",
+       "stress": "re-SEARCH and de-VEL-op-ment",
+       "band": "7–8",
+       "grammar": "không đếm được",
+       "ex": "Some dentists work in research and development for toothpaste companies."
+      }
+     ]
+    },
+    {
+     "mean": "nhiều loại, đa dạng",
+     "cat": "Types of jobs · Các loại công việc",
+     "items": [
+      {
+       "w": "a wide range of",
+       "type": "Collocation",
+       "ipa": "/ə ˌwaɪd ˈreɪndʒ əv/",
+       "stress": "a wide RANGE of",
+       "band": "5.5–6.5",
+       "grammar": "a wide range of + N số nhiều / không đếm được",
+       "ex": "The store sells a wide range of smart watches."
+      }
+     ]
     },
     {
      "mean": "tự kinh doanh, mở cơ sở riêng",
-     "cat": "E. Alternatives band 7–8",
+     "cat": "Types of jobs · Các loại công việc",
      "items": [
       {
        "w": "run my own business",
@@ -18938,8 +18504,100 @@
      "note": "run my own business = đang kinh doanh · set up = thành lập · take over = tiếp quản cơ sở của người khác · from the ground up = gây dựng từ đầu"
     },
     {
+     "mean": "kinh nghiệm làm việc",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
+     "items": [
+      {
+       "w": "work experience",
+       "type": "Collocation",
+       "ipa": "/ˈwɝk ɪkˌspɪriəns/",
+       "stress": "WORK ex-PE-ri-ence",
+       "band": "4–5",
+       "grammar": "không đếm được: gain / get + work experience",
+       "ex": "I want to gain some work experience at a dental clinic this summer."
+      },
+      {
+       "w": "do volunteer work",
+       "type": "Collocation",
+       "ipa": "/ˌdu ˌvɑlənˈtɪr ˌwɝk/",
+       "stress": "do vol-un-TEER work",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được",
+       "ex": "I do volunteer work at a children’s hospital."
+      },
+      {
+       "w": "take a gap year",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ə ˈɡæp ˌjɪr/",
+       "stress": "take_a GAP year",
+       "band": "5.5–6.5",
+       "grammar": "QK took",
+       "ex": "Some students take a gap year to work and travel."
+      }
+     ],
+     "note": "work experience không đếm được · do volunteer work = làm không lương · take a gap year = nghỉ 1 năm trước đại học"
+    },
+    {
+     "mean": "kiếm được việc (tốt, sau nhiều cố gắng)",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
+     "items": [
+      {
+       "w": "land a job",
+       "type": "Collocation",
+       "ipa": "/ˌlænd ə ˈdʒɑb/",
+       "stress": "land‿a JOB",
+       "band": "7–8",
+       "grammar": "land + a job / an internship; QK landed",
+       "ex": "My cousin landed a job at a big hospital right after graduation."
+      },
+      {
+       "w": "secure a position",
+       "type": "Collocation",
+       "ipa": "/sɪˌkjʊr ə pəˈzɪʃən/",
+       "stress": "se-CURE a po-SI-tion",
+       "band": "7–8",
+       "grammar": "trang trọng hơn land a job",
+       "ex": "She secured a position at a top hospital."
+      },
+      {
+       "w": "accept a job offer",
+       "type": "Collocation",
+       "ipa": "/əkˌsɛpt ə ˈdʒɑb ˌɔfɚ/",
+       "stress": "ac-CEPT a JOB of-fer",
+       "band": "5.5–6.5",
+       "grammar": "↔ turn down a job offer",
+       "ex": "She accepted a job offer from a big hospital."
+      },
+      {
+       "w": "get into",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡɛt ˈɪntu/",
+       "stress": "get_IN-to",
+       "band": "5.5–6.5",
+       "grammar": "không tách: + an industry / a university",
+       "ex": "It is hard to get into medical school."
+      }
+     ],
+     "note": "apply for = ứng tuyển (chưa chắc được) → land / secure = đã có việc · land thân mật, secure trang trọng"
+    },
+    {
+     "mean": "có được bước đầu để bước chân vào (ngành)",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
+     "items": [
+      {
+       "w": "get my foot in the door",
+       "type": "Idiom",
+       "ipa": "/ˌɡɛt maɪ ˈfʊt ɪn ðə ˈdɔr/",
+       "stress": "get my FOOT in the DOOR",
+       "band": "7–8",
+       "grammar": "get + my / your + foot in the door (of + N)",
+       "ex": "An internship can help me get my foot in the door."
+      }
+     ]
+    },
+    {
      "mean": "nghỉ việc",
-     "cat": "E. Alternatives band 7–8",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
      "items": [
       {
        "w": "resign",
@@ -18982,7 +18640,7 @@
     },
     {
      "mean": "chăm chỉ, dốc sức làm",
-     "cat": "E. Alternatives band 7–8",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
      "items": [
       {
        "w": "knuckle down",
@@ -19016,7 +18674,7 @@
     },
     {
      "mean": "cấp trên, hướng nghiệp",
-     "cat": "E. Alternatives band 7–8",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
      "items": [
       {
        "w": "report to",
@@ -19050,7 +18708,7 @@
     },
     {
      "mean": "tìm việc, ứng tuyển, phỏng vấn",
-     "cat": "E. Alternatives band 7–8",
+     "cat": "Getting a job · Tìm việc & nghỉ việc",
      "items": [
       {
        "w": "attend a job interview",
@@ -19090,6 +18748,348 @@
       }
      ],
      "note": "job hunting = quá trình tìm việc · apply for a position = nộp đơn · attend a job interview · look into = tìm hiểu kỹ trước khi quyết"
+    },
+    {
+     "mean": "đăng ký (khóa học, lớp)",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "sign up for",
+       "type": "Phrasal verb",
+       "ipa": "/ˌsaɪn ˈʌp fɚ/",
+       "stress": "sign‿UP for",
+       "band": "5.5–6.5",
+       "grammar": "không tách: sign up for + a course; QK signed up",
+       "ex": "I signed up for a first-aid course last summer."
+      }
+     ]
+    },
+    {
+     "mean": "buổi học thực hành ngắn",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "a workshop",
+       "type": "Vocab",
+       "ipa": "/ə ˈwɝkˌʃɑp/",
+       "stress": "a WORK-shop",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: run / attend + a workshop",
+       "ex": "The university runs a free workshop on dental care."
+      }
+     ]
+    },
+    {
+     "mean": "học phí",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "tuition fees",
+       "type": "Collocation",
+       "ipa": "/tuˈɪʃən ˌfiz/",
+       "stress": "tu-I-tion fees",
+       "band": "5.5–6.5",
+       "grammar": "thường số nhiều: pay + tuition fees",
+       "ex": "Tuition fees at medical schools are quite high."
+      }
+     ]
+    },
+    {
+     "mean": "giới hạn ở (số người)",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "be limited to",
+       "type": "Collocation",
+       "ipa": "/bi ˈlɪmɪɾɪd tu/",
+       "stress": "be LIM-it-ed to",
+       "band": "5.5–6.5",
+       "grammar": "be limited to + số + N số nhiều",
+       "ex": "The class is limited to twelve participants."
+      }
+     ]
+    },
+    {
+     "mean": "người tham gia",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "participant",
+       "type": "Vocab",
+       "ipa": "/pɑrˈtɪsəpənt/",
+       "stress": "par-TIC-i-pant",
+       "band": "5.5–6.5",
+       "grammar": "đếm được; động từ participate in",
+       "ex": "Each participant gets a name card on the first day."
+      }
+     ]
+    },
+    {
+     "mean": "chứng chỉ, giấy chứng nhận",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "certificate",
+       "type": "Vocab",
+       "ipa": "/sɚˈtɪfɪkət/",
+       "stress": "cer-TIF-i-cate",
+       "band": "5.5–6.5",
+       "grammar": "get / receive + a certificate in + N; cuối đọc /kət/",
+       "ex": "I received a certificate in first aid."
+      }
+     ]
+    },
+    {
+     "mean": "đồ ăn nhẹ và nước uống (ở sự kiện)",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "refreshments",
+       "type": "Vocab",
+       "ipa": "/rɪˈfrɛʃmənts/",
+       "stress": "re-FRESH-ments",
+       "band": "7–8",
+       "grammar": "luôn số nhiều",
+       "ex": "Lunch and refreshments are included in the fee."
+      }
+     ]
+    },
+    {
+     "mean": "tại hiện trường thật (không ở lớp)",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "on location",
+       "type": "Collocation",
+       "ipa": "/ɑn loʊˈkeɪʃən/",
+       "stress": "on lo-CA-tion",
+       "band": "7–8",
+       "grammar": "spend + time + on location (at + nơi)",
+       "ex": "We spent the afternoon on location at a local hospital."
+      }
+     ]
+    },
+    {
+     "mean": "khóa học thực hành",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "a practical course",
+       "type": "Collocation",
+       "ipa": "/ə ˈpræktɪkəl ˈkɔrs/",
+       "stress": "a PRAC-ti-cal course",
+       "band": "5.5–6.5",
+       "grammar": "↔ a theoretical course",
+       "ex": "I prefer a practical course to a long lecture."
+      }
+     ]
+    },
+    {
+     "mean": "kiến thức cơ bản về",
+     "cat": "Courses & training · Khóa học",
+     "items": [
+      {
+       "w": "the basics of",
+       "type": "Collocation",
+       "ipa": "/ðə ˈbeɪsɪks əv/",
+       "stress": "the BA-sics of",
+       "band": "4–5",
+       "grammar": "learn / train sb in + the basics of + N",
+       "ex": "The course trains you in the basics of photography."
+      }
+     ]
+    },
+    {
+     "mean": "phòng khám nha khoa",
+     "cat": "Medical school & dentistry · Ngành nha",
+     "items": [
+      {
+       "w": "a dental clinic",
+       "type": "Collocation",
+       "ipa": "/ə ˌdɛntəl ˈklɪnɪk/",
+       "stress": "a DEN-tal CLIN-ic",
+       "band": "5.5–6.5",
+       "grammar": "at + a dental clinic",
+       "ex": "There is a small dental clinic near my house."
+      }
+     ]
+    },
+    {
+     "mean": "bác sĩ chỉnh nha (niềng răng)",
+     "cat": "Medical school & dentistry · Ngành nha",
+     "items": [
+      {
+       "w": "an orthodontist",
+       "type": "Vocab",
+       "ipa": "/ən ˌɔrθəˈdɑntɪst/",
+       "stress": "an or-tho-DON-tist",
+       "band": "7–8",
+       "grammar": "đếm được; dentist = nha sĩ chung",
+       "ex": "I saw an orthodontist when I got my braces."
+      }
+     ]
+    },
+    {
+     "mean": "điều trị cho bệnh nhân",
+     "cat": "Medical school & dentistry · Ngành nha",
+     "items": [
+      {
+       "w": "treat patients",
+       "type": "Collocation",
+       "ipa": "/ˌtrit ˈpeɪʃənts/",
+       "stress": "treat PA-tients",
+       "band": "5.5–6.5",
+       "grammar": "treat + sb + for + bệnh; QK treated",
+       "ex": "Final-year students treat patients under a teacher’s eye."
+      }
+     ]
+    },
+    {
+     "mean": "kỳ thực tập",
+     "cat": "Medical school & dentistry · Ngành nha",
+     "items": [
+      {
+       "w": "an internship",
+       "type": "Vocab",
+       "ipa": "/ən ˈɪnˌtɝnʃɪp/",
+       "stress": "an IN-tern-ship",
+       "band": "5.5–6.5",
+       "grammar": "do an internship at + nơi; người thực tập = an intern",
+       "ex": "Dental students do an internship at a hospital in their last year."
+      }
+     ],
+     "note": "internship = thực tập (có thể có lương) · shadow a dentist = chỉ đi theo quan sát"
+    },
+    {
+     "mean": "đi theo quan sát nha sĩ làm việc (để học nghề)",
+     "cat": "Medical school & dentistry · Ngành nha",
+     "items": [
+      {
+       "w": "shadow a dentist",
+       "type": "Collocation",
+       "ipa": "/ˈʃædoʊ ə ˈdɛntɪst/",
+       "stress": "SHAD-ow a DEN-tist",
+       "band": "7–8",
+       "grammar": "shadow + sb; danh từ job shadowing",
+       "ex": "Last summer I spent a week shadowing a dentist."
+      }
+     ]
+    },
+    {
+     "mean": "cực kỳ vui, phấn khích (cảm xúc của người)",
+     "cat": "Feelings about work · Cảm xúc",
+     "items": [
+      {
+       "w": "thrilled",
+       "type": "Vocab",
+       "ipa": "/θrɪld/",
+       "stress": "THRILLED",
+       "band": "7–8",
+       "grammar": "be thrilled to V / about N; ↔ thrilling (sự việc)",
+       "ex": "I was thrilled to get a place on the workshop."
+      }
+     ]
+    },
+    {
+     "mean": "kinh ngạc (người); ↔ amazing (sự việc)",
+     "cat": "Feelings about work · Cảm xúc",
+     "items": [
+      {
+       "w": "amazed",
+       "type": "Vocab",
+       "ipa": "/əˈmeɪzd/",
+       "stress": "a-MAZED",
+       "band": "5.5–6.5",
+       "grammar": "be amazed at / by + N; đuôi -ed đọc /d/",
+       "ex": "I was amazed by how calm the dentist was."
+      }
+     ]
+    },
+    {
+     "mean": "khó nhưng thú vị, thử thách (sự việc)",
+     "cat": "Feelings about work · Cảm xúc",
+     "items": [
+      {
+       "w": "challenging",
+       "type": "Vocab",
+       "ipa": "/ˈtʃælɪndʒɪŋ/",
+       "stress": "CHAL-leng-ing",
+       "band": "5.5–6.5",
+       "grammar": "↔ challenged (người); It is challenging to + V",
+       "ex": "Medical school is challenging, but I am ready."
+      },
+      {
+       "w": "no walk in the park",
+       "type": "Idiom",
+       "ipa": "/ˌnoʊ ˌwɔk ɪn ðə ˈpɑrk/",
+       "stress": "no WALK in the PARK",
+       "band": "7–8",
+       "grammar": "sth is no walk in the park",
+       "ex": "Dental school is no walk in the park."
+      },
+      {
+       "w": "a competitive industry",
+       "type": "Collocation",
+       "ipa": "/ə kəmˌpɛtəɾɪv ˈɪndəstri/",
+       "stress": "a com-PET-i-tive IN-dus-try",
+       "band": "7–8",
+       "grammar": "đếm được",
+       "ex": "Design is a very competitive industry."
+      },
+      {
+       "w": "a high-pressure job",
+       "type": "Collocation",
+       "ipa": "/ə ˌhaɪˈprɛʃɚ ˈdʒɑb/",
+       "stress": "a high-PRES-sure job",
+       "band": "7–8",
+       "grammar": "có gạch nối khi đứng trước danh từ",
+       "ex": "Working in an emergency room is a high-pressure job."
+      }
+     ],
+     "note": "challenging = khó nhưng hay (tích cực) · no walk in the park = idiom \"không dễ chút nào\" · a competitive industry = ngành cạnh tranh · a high-pressure job = áp lực cao"
+    },
+    {
+     "mean": "làm kiệt sức (sự việc); ↔ exhausted (người)",
+     "cat": "Feelings about work · Cảm xúc",
+     "items": [
+      {
+       "w": "exhausting",
+       "type": "Vocab",
+       "ipa": "/ɪɡˈzɔstɪŋ/",
+       "stress": "ex-HAUST-ing",
+       "band": "5.5–6.5",
+       "grammar": "h không đọc: /ɪɡˈzɔ/",
+       "ex": "A twelve-hour shift at a hospital is exhausting."
+      },
+      {
+       "w": "drained",
+       "type": "Vocab",
+       "ipa": "/dreɪnd/",
+       "stress": "DRAINED",
+       "band": "7–8",
+       "grammar": "feel drained (người)",
+       "ex": "After a twelve-hour shift, she felt completely drained."
+      },
+      {
+       "w": "wear (sb) out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwɛr ˈaʊt/",
+       "stress": "wear_OUT",
+       "band": "5.5–6.5",
+       "grammar": "tách được: wear me out",
+       "ex": "Night shifts really wear nurses out."
+      },
+      {
+       "w": "be run off my feet",
+       "type": "Idiom",
+       "ipa": "/bi ˌrʌn ɔf maɪ ˈfit/",
+       "stress": "be run OFF my FEET",
+       "band": "7–8",
+       "grammar": "thân mật; be run off + my / her + feet",
+       "ex": "On Saturdays, the clinic staff are run off their feet."
+      }
+     ],
+     "note": "-ing = sự việc làm mệt ↔ drained (người, band 7–8) · wear sb out = phrasal verb · be run off my feet = bận tối mắt (thân mật)"
     }
    ]
   },
@@ -19103,8 +19103,240 @@
    ],
    "cards": [
     {
+     "mean": "phương tiện công cộng",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "public transportation",
+       "type": "Vocab",
+       "ipa": "/ˌpʌblɪk ˌtrænspərˈteɪʃn/",
+       "stress": "PUB-lic trans-por-TA-tion",
+       "band": "4–5",
+       "grammar": "không đếm được; take / use + public transportation",
+       "ex": "Public transportation in my city is cheap but slow."
+      },
+      {
+       "w": "public transit",
+       "type": "Vocab",
+       "ipa": "/ˌpʌblɪk ˈtrænzɪt/",
+       "stress": "PUB-lic TRAN-sit",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được (Mỹ)",
+       "ex": "Many people in New York use public transit."
+      },
+      {
+       "w": "take public transportation",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ˌpʌblɪk ˌtrænspərˈteɪʃn/",
+       "stress": "take PUB-lic trans-por-TA-tion",
+       "band": "4–5",
+       "grammar": "take / use + public transportation",
+       "ex": "More young people take public transportation now."
+      },
+      {
+       "w": "a reliable bus service",
+       "type": "Collocation",
+       "ipa": "/ə rɪˌlaɪəbl ˈbʌs ˌsɝːvɪs/",
+       "stress": "a re-LI-a-ble BUS ser-vice",
+       "band": "5.5–6.5",
+       "grammar": "have / need + a reliable bus service",
+       "ex": "My hometown doesn't have a reliable bus service."
+      },
+      {
+       "w": "hop on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhɑːp ˈɑːn/",
+       "stress": "hop‿ON",
+       "band": "5.5–6.5",
+       "grammar": "hop on + the bus / the subway",
+       "ex": "I just hop on the subway and I'm there in ten minutes."
+      }
+     ],
+     "note": "public transportation (Mỹ) = public transport (Anh), không đếm được · public transit = cách nói Mỹ khác · hop on = nhảy lên xe (thân mật)"
+    },
+    {
+     "mean": "xe máy",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "motorbike",
+       "type": "Vocab",
+       "ipa": "/ˈmoʊtərbaɪk/",
+       "stress": "MO-tor-bike",
+       "band": "3–3.5",
+       "grammar": "by motorbike (không có a)",
+       "ex": "Most students in Vietnam go to school by motorbike."
+      },
+      {
+       "w": "scooter",
+       "type": "Vocab",
+       "ipa": "/ˈskuːtər/",
+       "stress": "SCOO-ter",
+       "band": "4–5",
+       "grammar": "ride + a scooter (Mỹ)",
+       "ex": "My sister rides a pink scooter to school."
+      },
+      {
+       "w": "motorcycle",
+       "type": "Vocab",
+       "ipa": "/ˈmoʊtərsaɪkl/",
+       "stress": "MO-tor-cy-cle",
+       "band": "4–5",
+       "grammar": "ride + a motorcycle",
+       "ex": "My uncle rides a big motorcycle on weekends."
+      },
+      {
+       "w": "get on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡet ˈɑːn/",
+       "stress": "get‿ON",
+       "band": "3–3.5",
+       "grammar": "get on / off + the bus, the subway, a motorbike",
+       "ex": "I get on the bus at seven and get off near my office."
+      },
+      {
+       "w": "wear a helmet",
+       "type": "Collocation",
+       "ipa": "/ˌwer ə ˈhelmɪt/",
+       "stress": "wear‿a HEL-met",
+       "band": "4–5",
+       "grammar": "wear + a helmet",
+       "ex": "You must wear a helmet on a motorbike."
+      }
+     ],
+     "note": "motorbike quen dùng ở Việt Nam; Mỹ hay nói scooter (xe ga) hoặc motorcycle · get on / get off = lên / xuống xe · wear a helmet, không nói put a helmet"
+    },
+    {
+     "mean": "đi xe buýt",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "take the bus",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ðə ˈbʌs/",
+       "stress": "take the BUS",
+       "band": "3–3.5",
+       "grammar": "take + the bus / the subway / a taxi",
+       "ex": "I take the bus when it rains."
+      }
+     ],
+     "note": "take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus"
+    },
+    {
+     "mean": "đi xe máy (người lái)",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "ride a motorbike",
+       "type": "Collocation",
+       "ipa": "/ˌraɪd ə ˈmoʊtərbaɪk/",
+       "stress": "ride‿a MO-tor-bike",
+       "band": "3–3.5",
+       "grammar": "ride + a motorbike / a bike; QK rode",
+       "ex": "I learned to ride a motorbike when I was eighteen."
+      }
+     ],
+     "note": "ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác"
+    },
+    {
+     "mean": "đi bộ (tới đâu đó)",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "on foot",
+       "type": "Collocation",
+       "ipa": "/ɑːn ˈfʊt/",
+       "stress": "on FOOT",
+       "band": "3–3.5",
+       "grammar": "go / come + on foot",
+       "ex": "The market is close, so I go there on foot."
+      }
+     ],
+     "note": "on foot, không nói by foot · walk to + nơi chốn = go on foot"
+    },
+    {
+     "mean": "chở ai đi (bằng xe của mình)",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "give sb a ride",
+       "type": "Collocation",
+       "ipa": "/ˌɡɪv ə ˈraɪd/",
+       "stress": "give ... a RIDE",
+       "band": "4–5",
+       "grammar": "give + sb + a ride + to / home",
+       "ex": "My coworker gives me a ride home on Fridays."
+      }
+     ],
+     "note": "give sb a ride (Mỹ) = give sb a lift (Anh)"
+    },
+    {
+     "mean": "đi lại, di chuyển trong một nơi",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "get around",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡet əˈraʊnd/",
+       "stress": "get‿a-ROUND",
+       "band": "5.5–6.5",
+       "grammar": "get around + nơi chốn; by + phương tiện",
+       "ex": "The easiest way to get around Hanoi is by motorbike."
+      }
+     ],
+     "note": "get around + nơi chốn + by + phương tiện (↺ Buổi 3)"
+    },
+    {
+     "mean": "tàu điện ngầm",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "subway",
+       "type": "Vocab",
+       "ipa": "/ˈsʌbweɪ/",
+       "stress": "SUB-way",
+       "band": "4–5",
+       "grammar": "by subway / take the subway",
+       "ex": "The subway is the fastest way to get downtown."
+      }
+     ],
+     "note": "subway (Mỹ) = underground / tube (Anh) · by subway / take the subway"
+    },
+    {
+     "mean": "ứng dụng gọi xe (như Grab, Be)",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "a ride-hailing app",
+       "type": "Collocation",
+       "ipa": "/ə ˈraɪd ˌheɪlɪŋ æp/",
+       "stress": "a RIDE-hail-ing app",
+       "band": "5.5–6.5",
+       "grammar": "use / book a ride on + a ride-hailing app",
+       "ex": "I use a ride-hailing app when I'm running late."
+      }
+     ],
+     "note": "a ride-hailing app; book a ride on + app"
+    },
+    {
+     "mean": "đi chung xe với người khác",
+     "cat": "Getting around · Phương tiện đi lại",
+     "items": [
+      {
+       "w": "carpool",
+       "type": "Vocab",
+       "ipa": "/ˈkɑːrpuːl/",
+       "stress": "CAR-pool",
+       "band": "5.5–6.5",
+       "grammar": "carpool + with + sb / to + nơi chốn",
+       "ex": "Three of us carpool to the office to save money."
+      }
+     ],
+     "note": "carpool vừa là động từ vừa là danh từ"
+    },
+    {
      "mean": "đi lại hằng ngày giữa nhà và chỗ làm / trường",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
      "items": [
       {
        "w": "commute",
@@ -19156,7 +19388,7 @@
     },
     {
      "mean": "xe cộ, giao thông trên đường",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
      "items": [
       {
        "w": "traffic",
@@ -19216,60 +19448,120 @@
      "note": "traffic không đếm được (không nói a traffic, traffics) · heavy traffic, không nói big traffic · congestion trang trọng · bumper-to-bumper = xe nối đuôi"
     },
     {
-     "mean": "phương tiện công cộng",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "mean": "giờ cao điểm",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
      "items": [
       {
-       "w": "public transportation",
-       "type": "Vocab",
-       "ipa": "/ˌpʌblɪk ˌtrænspərˈteɪʃn/",
-       "stress": "PUB-lic trans-por-TA-tion",
-       "band": "4–5",
-       "grammar": "không đếm được; take / use + public transportation",
-       "ex": "Public transportation in my city is cheap but slow."
-      },
-      {
-       "w": "public transit",
-       "type": "Vocab",
-       "ipa": "/ˌpʌblɪk ˈtrænzɪt/",
-       "stress": "PUB-lic TRAN-sit",
-       "band": "5.5–6.5",
-       "grammar": "không đếm được (Mỹ)",
-       "ex": "Many people in New York use public transit."
-      },
-      {
-       "w": "take public transportation",
+       "w": "rush hour",
        "type": "Collocation",
-       "ipa": "/ˌteɪk ˌpʌblɪk ˌtrænspərˈteɪʃn/",
-       "stress": "take PUB-lic trans-por-TA-tion",
+       "ipa": "/ˈrʌʃ ˌaʊər/",
+       "stress": "RUSH hour",
        "band": "4–5",
-       "grammar": "take / use + public transportation",
-       "ex": "More young people take public transportation now."
-      },
-      {
-       "w": "a reliable bus service",
-       "type": "Collocation",
-       "ipa": "/ə rɪˌlaɪəbl ˈbʌs ˌsɝːvɪs/",
-       "stress": "a re-LI-a-ble BUS ser-vice",
-       "band": "5.5–6.5",
-       "grammar": "have / need + a reliable bus service",
-       "ex": "My hometown doesn't have a reliable bus service."
-      },
-      {
-       "w": "hop on",
-       "type": "Phrasal verb",
-       "ipa": "/ˌhɑːp ˈɑːn/",
-       "stress": "hop‿ON",
-       "band": "5.5–6.5",
-       "grammar": "hop on + the bus / the subway",
-       "ex": "I just hop on the subway and I'm there in ten minutes."
+       "grammar": "at / during + rush hour",
+       "ex": "Never drive downtown during rush hour."
       }
      ],
-     "note": "public transportation (Mỹ) = public transport (Anh), không đếm được · public transit = cách nói Mỹ khác · hop on = nhảy lên xe (thân mật)"
+     "note": "rush hour không có -s khi nói chung: at / during rush hour"
+    },
+    {
+     "mean": "bị kẹt xe",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
+     "items": [
+      {
+       "w": "be stuck in traffic",
+       "type": "Collocation",
+       "ipa": "/bi ˌstʌk ɪn ˈtræfɪk/",
+       "stress": "be STUCK‿in TRAF-fic",
+       "band": "4–5",
+       "grammar": "be / get + stuck in traffic",
+       "ex": "I was stuck in traffic for an hour yesterday."
+      }
+     ],
+     "note": "be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/"
+    },
+    {
+     "mean": "đến chỗ làm",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
+     "items": [
+      {
+       "w": "get to work",
+       "type": "Collocation",
+       "ipa": "/ˌɡet tə ˈwɝːk/",
+       "stress": "get to WORK",
+       "band": "3–3.5",
+       "grammar": "get to + work / school / the office",
+       "ex": "How do you get to work every day?"
+      }
+     ],
+     "note": "get to work / school nhưng get home (không to)"
+    },
+    {
+     "mean": "ra khỏi nhà để đi làm",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
+     "items": [
+      {
+       "w": "leave for work",
+       "type": "Collocation",
+       "ipa": "/ˌliːv fər ˈwɝːk/",
+       "stress": "LEAVE for work",
+       "band": "4–5",
+       "grammar": "leave for + work / school; QK left",
+       "ex": "I leave for work at seven fifteen."
+      }
+     ],
+     "note": "leave for + nơi đến · leave + nơi đi (leave home)"
+    },
+    {
+     "mean": "đang bị trễ, sắp muộn",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
+     "items": [
+      {
+       "w": "be running late",
+       "type": "Collocation",
+       "ipa": "/bi ˌrʌnɪŋ ˈleɪt/",
+       "stress": "be RUN-ning LATE",
+       "band": "5.5–6.5",
+       "grammar": "be + running late + for + N",
+       "ex": "Sorry, I'm running late. I'll be there in ten minutes."
+      }
+     ],
+     "note": "be running late dùng thì tiếp diễn; khác be late (đã muộn)"
+    },
+    {
+     "mean": "đi đường tắt",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
+     "items": [
+      {
+       "w": "take a shortcut",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ə ˈʃɔːrtkʌt/",
+       "stress": "take‿a SHORT-cut",
+       "band": "5.5–6.5",
+       "grammar": "take a shortcut + through + N; QK took",
+       "ex": "I take a shortcut through a small alley to avoid traffic."
+      }
+     ],
+     "note": "take a shortcut + through / to + nơi chốn"
+    },
+    {
+     "mean": "đi sớm để tránh kẹt xe",
+     "cat": "Traffic & commuting · Kẹt xe, đi làm",
+     "items": [
+      {
+       "w": "beat the traffic",
+       "type": "Idiom",
+       "ipa": "/ˌbiːt ðə ˈtræfɪk/",
+       "stress": "beat the TRAF-fic",
+       "band": "7–8",
+       "grammar": "leave early + to beat the traffic",
+       "ex": "I leave home at six thirty to beat the traffic."
+      }
+     ],
+     "note": "beat the traffic = đi trước giờ cao điểm"
     },
     {
      "mean": "khu phố, khu mình đang sống",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "neighborhood",
@@ -19321,7 +19613,7 @@
     },
     {
      "mean": "trung tâm thành phố",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "downtown",
@@ -19364,7 +19656,7 @@
     },
     {
      "mean": "quê nhà, nơi mình lớn lên",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "hometown",
@@ -19415,60 +19707,8 @@
      "note": "hometown = 1 từ, không viết home town · grow up in = lớn lên ở · go back to my hometown nhưng go back home (không to)"
     },
     {
-     "mean": "xe máy",
-     "cat": "A. Transport & My Town: từ cốt lõi",
-     "items": [
-      {
-       "w": "motorbike",
-       "type": "Vocab",
-       "ipa": "/ˈmoʊtərbaɪk/",
-       "stress": "MO-tor-bike",
-       "band": "3–3.5",
-       "grammar": "by motorbike (không có a)",
-       "ex": "Most students in Vietnam go to school by motorbike."
-      },
-      {
-       "w": "scooter",
-       "type": "Vocab",
-       "ipa": "/ˈskuːtər/",
-       "stress": "SCOO-ter",
-       "band": "4–5",
-       "grammar": "ride + a scooter (Mỹ)",
-       "ex": "My sister rides a pink scooter to school."
-      },
-      {
-       "w": "motorcycle",
-       "type": "Vocab",
-       "ipa": "/ˈmoʊtərsaɪkl/",
-       "stress": "MO-tor-cy-cle",
-       "band": "4–5",
-       "grammar": "ride + a motorcycle",
-       "ex": "My uncle rides a big motorcycle on weekends."
-      },
-      {
-       "w": "get on",
-       "type": "Phrasal verb",
-       "ipa": "/ˌɡet ˈɑːn/",
-       "stress": "get‿ON",
-       "band": "3–3.5",
-       "grammar": "get on / off + the bus, the subway, a motorbike",
-       "ex": "I get on the bus at seven and get off near my office."
-      },
-      {
-       "w": "wear a helmet",
-       "type": "Collocation",
-       "ipa": "/ˌwer ə ˈhelmɪt/",
-       "stress": "wear‿a HEL-met",
-       "band": "4–5",
-       "grammar": "wear + a helmet",
-       "ex": "You must wear a helmet on a motorbike."
-      }
-     ],
-     "note": "motorbike quen dùng ở Việt Nam; Mỹ hay nói scooter (xe ga) hoặc motorcycle · get on / get off = lên / xuống xe · wear a helmet, không nói put a helmet"
-    },
-    {
      "mean": "đông đúc, chật người",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "crowded",
@@ -19520,7 +19760,7 @@
     },
     {
      "mean": "tiện lợi",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "convenient",
@@ -19563,7 +19803,7 @@
     },
     {
      "mean": "ồn ào",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "noisy",
@@ -19606,7 +19846,7 @@
     },
     {
      "mean": "yên bình",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "peaceful",
@@ -19658,7 +19898,7 @@
     },
     {
      "mean": "ô nhiễm",
-     "cat": "A. Transport & My Town: từ cốt lõi",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "pollution",
@@ -19709,120 +19949,8 @@
      "note": "pollution không đếm được · smog = khói bụi mù · exhaust fumes = khói xe, luôn số nhiều · clean up = làm sạch"
     },
     {
-     "mean": "đi xe buýt",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "take the bus",
-       "type": "Collocation",
-       "ipa": "/ˌteɪk ðə ˈbʌs/",
-       "stress": "take the BUS",
-       "band": "3–3.5",
-       "grammar": "take + the bus / the subway / a taxi",
-       "ex": "I take the bus when it rains."
-      }
-     ],
-     "note": "take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus"
-    },
-    {
-     "mean": "đi xe máy (người lái)",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "ride a motorbike",
-       "type": "Collocation",
-       "ipa": "/ˌraɪd ə ˈmoʊtərbaɪk/",
-       "stress": "ride‿a MO-tor-bike",
-       "band": "3–3.5",
-       "grammar": "ride + a motorbike / a bike; QK rode",
-       "ex": "I learned to ride a motorbike when I was eighteen."
-      }
-     ],
-     "note": "ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác"
-    },
-    {
-     "mean": "đi bộ (tới đâu đó)",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "on foot",
-       "type": "Collocation",
-       "ipa": "/ɑːn ˈfʊt/",
-       "stress": "on FOOT",
-       "band": "3–3.5",
-       "grammar": "go / come + on foot",
-       "ex": "The market is close, so I go there on foot."
-      }
-     ],
-     "note": "on foot, không nói by foot · walk to + nơi chốn = go on foot"
-    },
-    {
-     "mean": "giờ cao điểm",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "rush hour",
-       "type": "Collocation",
-       "ipa": "/ˈrʌʃ ˌaʊər/",
-       "stress": "RUSH hour",
-       "band": "4–5",
-       "grammar": "at / during + rush hour",
-       "ex": "Never drive downtown during rush hour."
-      }
-     ],
-     "note": "rush hour không có -s khi nói chung: at / during rush hour"
-    },
-    {
-     "mean": "bị kẹt xe",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "be stuck in traffic",
-       "type": "Collocation",
-       "ipa": "/bi ˌstʌk ɪn ˈtræfɪk/",
-       "stress": "be STUCK‿in TRAF-fic",
-       "band": "4–5",
-       "grammar": "be / get + stuck in traffic",
-       "ex": "I was stuck in traffic for an hour yesterday."
-      }
-     ],
-     "note": "be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/"
-    },
-    {
-     "mean": "chở ai đi (bằng xe của mình)",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "give sb a ride",
-       "type": "Collocation",
-       "ipa": "/ˌɡɪv ə ˈraɪd/",
-       "stress": "give ... a RIDE",
-       "band": "4–5",
-       "grammar": "give + sb + a ride + to / home",
-       "ex": "My coworker gives me a ride home on Fridays."
-      }
-     ],
-     "note": "give sb a ride (Mỹ) = give sb a lift (Anh)"
-    },
-    {
-     "mean": "đi lại, di chuyển trong một nơi",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
-     "items": [
-      {
-       "w": "get around",
-       "type": "Phrasal verb",
-       "ipa": "/ˌɡet əˈraʊnd/",
-       "stress": "get‿a-ROUND",
-       "band": "5.5–6.5",
-       "grammar": "get around + nơi chốn; by + phương tiện",
-       "ex": "The easiest way to get around Hanoi is by motorbike."
-      }
-     ],
-     "note": "get around + nơi chốn + by + phương tiện (↺ Buổi 3)"
-    },
-    {
      "mean": "gần, đi bộ tới được",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
      "items": [
       {
        "w": "within walking distance",
@@ -19837,8 +19965,24 @@
      "note": "within walking distance + of + nơi chốn"
     },
     {
+     "mean": "sống gần chỗ làm",
+     "cat": "My neighborhood & hometown · Nơi mình sống",
+     "items": [
+      {
+       "w": "live close to work",
+       "type": "Collocation",
+       "ipa": "/ˌlɪv ˌkloʊs tə ˈwɝːk/",
+       "stress": "live CLOSE to work",
+       "band": "4–5",
+       "grammar": "live close to + work / the office",
+       "ex": "After I graduate, I want to live close to work."
+      }
+     ],
+     "note": "live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng)"
+    },
+    {
      "mean": "đi làm việc vặt (mua đồ, ra ngân hàng)",
-     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "run errands",
@@ -19854,7 +19998,7 @@
     },
     {
      "mean": "trung tâm thương mại",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "shopping mall",
@@ -19870,7 +20014,7 @@
     },
     {
      "mean": "trạm xe buýt",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "bus stop",
@@ -19886,7 +20030,7 @@
     },
     {
      "mean": "bãi đỗ xe",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "parking lot",
@@ -19901,24 +20045,8 @@
      "note": "parking lot (Mỹ) = car park (Anh)"
     },
     {
-     "mean": "tàu điện ngầm",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
-     "items": [
-      {
-       "w": "subway",
-       "type": "Vocab",
-       "ipa": "/ˈsʌbweɪ/",
-       "stress": "SUB-way",
-       "band": "4–5",
-       "grammar": "by subway / take the subway",
-       "ex": "The subway is the fastest way to get downtown."
-      }
-     ],
-     "note": "subway (Mỹ) = underground / tube (Anh) · by subway / take the subway"
-    },
-    {
      "mean": "hiệu thuốc",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "pharmacy",
@@ -19934,7 +20062,7 @@
     },
     {
      "mean": "cửa hàng bách hóa lớn",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "department store",
@@ -19950,7 +20078,7 @@
     },
     {
      "mean": "giờ mở cửa",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "opening hours",
@@ -19966,7 +20094,7 @@
     },
     {
      "mean": "đối diện",
-     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "cat": "Places in town · Nơi chốn trong thành phố",
      "items": [
       {
        "w": "opposite",
@@ -19979,134 +20107,6 @@
       }
      ],
      "note": "opposite + N (không có to) · Mỹ hay nói across from"
-    },
-    {
-     "mean": "đến chỗ làm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "get to work",
-       "type": "Collocation",
-       "ipa": "/ˌɡet tə ˈwɝːk/",
-       "stress": "get to WORK",
-       "band": "3–3.5",
-       "grammar": "get to + work / school / the office",
-       "ex": "How do you get to work every day?"
-      }
-     ],
-     "note": "get to work / school nhưng get home (không to)"
-    },
-    {
-     "mean": "ra khỏi nhà để đi làm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "leave for work",
-       "type": "Collocation",
-       "ipa": "/ˌliːv fər ˈwɝːk/",
-       "stress": "LEAVE for work",
-       "band": "4–5",
-       "grammar": "leave for + work / school; QK left",
-       "ex": "I leave for work at seven fifteen."
-      }
-     ],
-     "note": "leave for + nơi đến · leave + nơi đi (leave home)"
-    },
-    {
-     "mean": "sống gần chỗ làm",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "live close to work",
-       "type": "Collocation",
-       "ipa": "/ˌlɪv ˌkloʊs tə ˈwɝːk/",
-       "stress": "live CLOSE to work",
-       "band": "4–5",
-       "grammar": "live close to + work / the office",
-       "ex": "After I graduate, I want to live close to work."
-      }
-     ],
-     "note": "live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng)"
-    },
-    {
-     "mean": "đang bị trễ, sắp muộn",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "be running late",
-       "type": "Collocation",
-       "ipa": "/bi ˌrʌnɪŋ ˈleɪt/",
-       "stress": "be RUN-ning LATE",
-       "band": "5.5–6.5",
-       "grammar": "be + running late + for + N",
-       "ex": "Sorry, I'm running late. I'll be there in ten minutes."
-      }
-     ],
-     "note": "be running late dùng thì tiếp diễn; khác be late (đã muộn)"
-    },
-    {
-     "mean": "ứng dụng gọi xe (như Grab, Be)",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "a ride-hailing app",
-       "type": "Collocation",
-       "ipa": "/ə ˈraɪd ˌheɪlɪŋ æp/",
-       "stress": "a RIDE-hail-ing app",
-       "band": "5.5–6.5",
-       "grammar": "use / book a ride on + a ride-hailing app",
-       "ex": "I use a ride-hailing app when I'm running late."
-      }
-     ],
-     "note": "a ride-hailing app; book a ride on + app"
-    },
-    {
-     "mean": "đi chung xe với người khác",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "carpool",
-       "type": "Vocab",
-       "ipa": "/ˈkɑːrpuːl/",
-       "stress": "CAR-pool",
-       "band": "5.5–6.5",
-       "grammar": "carpool + with + sb / to + nơi chốn",
-       "ex": "Three of us carpool to the office to save money."
-      }
-     ],
-     "note": "carpool vừa là động từ vừa là danh từ"
-    },
-    {
-     "mean": "đi đường tắt",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "take a shortcut",
-       "type": "Collocation",
-       "ipa": "/ˌteɪk ə ˈʃɔːrtkʌt/",
-       "stress": "take‿a SHORT-cut",
-       "band": "5.5–6.5",
-       "grammar": "take a shortcut + through + N; QK took",
-       "ex": "I take a shortcut through a small alley to avoid traffic."
-      }
-     ],
-     "note": "take a shortcut + through / to + nơi chốn"
-    },
-    {
-     "mean": "đi sớm để tránh kẹt xe",
-     "cat": "D. Sinh viên năm cuối, mới đi làm",
-     "items": [
-      {
-       "w": "beat the traffic",
-       "type": "Idiom",
-       "ipa": "/ˌbiːt ðə ˈtræfɪk/",
-       "stress": "beat the TRAF-fic",
-       "band": "7–8",
-       "grammar": "leave early + to beat the traffic",
-       "ex": "I leave home at six thirty to beat the traffic."
-      }
-     ],
-     "note": "beat the traffic = đi trước giờ cao điểm"
     }
    ]
   }
