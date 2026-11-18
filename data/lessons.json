@@ -445,6 +445,64 @@
     "va-w20261121-thu",
     "va-w20261121-fri"
    ]
+  },
+  {
+   "id": "hw-dt-w20261119-duc-s",
+   "skill": "Speaking",
+   "session": 5,
+   "title": "Bài tập tuần · Speaking",
+   "deadline": "2026-11-26",
+   "deadlineAt": "15:30",
+   "note": "Thứ Năm, Thứ Sáu: mỗi ngày 2 câu Part 1 (A.R.E. + F) · Thứ Bảy: Shadowing Buổi 5 (My daily commute) (mở khi giáo viên đăng), shadow 3 lần. Ôn flashcard Transport & My Town trước.",
+   "lessons": [
+    "dt-w20261119-duc-thu",
+    "dt-w20261119-duc-fri"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261119-duc-l",
+   "skill": "Listening",
+   "session": 5,
+   "title": "Bài tập tuần · Listening",
+   "deadline": "2026-11-26",
+   "deadlineAt": "15:30",
+   "note": "Thứ Hai, Thứ Ba: nghe Part 1 form completion (5 câu/ngày) · Thứ Tư: nghe Part 2 note completion (8 câu). Nghe 1 lần như thi thật.",
+   "lessons": [
+    "dt-w20261119-duc-mon",
+    "dt-w20261119-duc-tue",
+    "dt-w20261119-duc-wed"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261119-thu-s",
+   "skill": "Speaking",
+   "session": 5,
+   "title": "Bài tập tuần · Speaking",
+   "deadline": "2026-11-26",
+   "deadlineAt": "15:30",
+   "note": "Mỗi ngày 1 câu Part 1: đọc 🧭 phân tích, ghi từ khóa A / R / E / F, ghi âm thử rồi nộp · Thứ Bảy thêm Shadowing Buổi 5 (My daily commute) (mở khi giáo viên đăng).",
+   "lessons": [
+    "dt-w20261119-thu-thu",
+    "dt-w20261119-thu-fri",
+    "dt-w20261119-thu-sat",
+    "dt-w20261119-thu-mon-s",
+    "dt-w20261119-thu-tue-s",
+    "dt-w20261119-thu-wed-s"
+   ]
+  },
+  {
+   "id": "hw-dt-w20261119-thu-l",
+   "skill": "Listening",
+   "session": 5,
+   "title": "Bài tập tuần · Listening",
+   "deadline": "2026-11-26",
+   "deadlineAt": "15:30",
+   "note": "Thứ Hai, Thứ Ba: nghe Part 1 form completion (bản hỗ trợ, 5 câu/ngày) · Thứ Tư: nghe Part 2 note completion câu 11–16. Nghe chậm 1 lần rồi làm thật.",
+   "lessons": [
+    "dt-w20261119-thu-mon-l",
+    "dt-w20261119-thu-tue-l",
+    "dt-w20261119-thu-wed-l"
+   ]
   }
  ],
  "lessons": [
@@ -10837,6 +10895,1968 @@
      "q": 37
     }
    ]
+  },
+  {
+   "id": "dt-w20261119-duc-thu",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-19",
+   "opensAt": "17:00",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Commute & ride-hailing apps",
+   "subtitle": "Part 1 A.R.E. + Feeling · ghi từ khóa → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Work or studies",
+     "q": "How long does it take you to get to your university or your internship?",
+     "hint": "commute, a long commute, leave for work, be running late",
+     "demo": {
+      "q": "How long does it take you to get to the nearest supermarket?",
+      "notes": {
+       "A": "about 10 minutes · by motorbike",
+       "R": "close · within walking distance? no · busy road",
+       "E": "last Sunday · ran errands · stuck at the traffic lights",
+       "F": "fine · not stressful"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Ride-hailing apps",
+     "q": "Do you often use ride-hailing apps like Grab?",
+     "hint": "a ride-hailing app, be running late, convenient, rush hour",
+     "demo": {
+      "q": "Do you often take taxis?",
+      "notes": {
+       "A": "not really · only at night",
+       "R": "expensive · motorbike cheaper",
+       "E": "last month · friend's party · rain · taxi home",
+       "F": "safe · but a bit expensive"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-duc-fri",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-20",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · City center & parking",
+   "subtitle": "Part 1 A.R.E. + Feeling · ghi từ khóa → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Living downtown",
+     "q": "Would you like to live in the city center in the future?",
+     "hint": "downtown, live close to work, the hustle and bustle, constant noise",
+     "demo": {
+      "q": "Would you like to live in the countryside in the future?",
+      "notes": {
+       "A": "maybe · when I retire",
+       "R": "fresh air · peace and quiet · but few jobs now",
+       "E": "last summer · grandparents' village · one week",
+       "F": "relaxed · slept well"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Parking",
+     "q": "Is it easy to find a parking place in your city?",
+     "hint": "parking lot, crowded, packed, take public transportation",
+     "demo": {
+      "q": "Is it easy to find a good café in your neighborhood?",
+      "notes": {
+       "A": "yes · very easy",
+       "R": "many small cafés · students",
+       "E": "yesterday · new café · opposite my house · finished CV",
+       "F": "lucky · love my neighborhood"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-duc-mon",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-23",
+   "title": "Nghe Part 1 · Renting a room near work (câu 1–5)",
+   "subtitle": "Form completion · 5 câu · 30 giây đọc đề → nghe 1 lần như thi thật → xem 🔑 từ khóa + giải thích",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261119-l1a.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Oakfield Rentals – Room Enquiry Form (Questions 1–5)",
+   "rows": [
+    "## Oakfield Rentals · Room enquiry",
+    "[[Name]]: Jake {1}",
+    "[[New job]]: accounting firm in the {2} district",
+    "[[Maximum rent]]: ${3} per month",
+    "## Moving details",
+    "[[Move-in date]]: {4} December",
+    "[[Must be within walking distance of]]: a {5} station"
+   ],
+   "transcript": [
+    {
+     "sp": "Emma",
+     "t": "Good morning, Oakfield Rentals. This is Emma speaking. How can I help you?",
+     "at": 19.56
+    },
+    {
+     "sp": "Jake",
+     "t": "Hi, Emma. I've just finished university, and I'm starting my first job next month. I'm looking for a room to rent close to work.",
+     "at": 26.55
+    },
+    {
+     "sp": "Emma",
+     "t": "Congratulations! Let me take some details. What's your [[name]], please?",
+     "at": 37.79
+    },
+    {
+     "sp": "Jake",
+     "t": "It's Jake Whitley.",
+     "at": 43.41
+    },
+    {
+     "sp": "Emma",
+     "t": "Could you [[spell your surname]], please?",
+     "at": 45.8
+    },
+    {
+     "sp": "Jake",
+     "t": "Sure. It's **W, H, I, T, L, E, Y.**",
+     "at": 49.43,
+     "q": 1
+    },
+    {
+     "sp": "Emma",
+     "t": "Thanks. And where is your [[new job]]?",
+     "at": 54.47
+    },
+    {
+     "sp": "Jake",
+     "t": "It's at an [[accounting firm]] downtown.",
+     "at": 57.37
+    },
+    {
+     "sp": "Emma",
+     "t": "Is that in the [[old town]]?",
+     "at": 60.83
+    },
+    {
+     "sp": "Jake",
+     "t": "[[No]], it's [[not in the old town]]. It's in the **business** [[district]], near all the big banks.",
+     "at": 63.32,
+     "q": 2
+    },
+    {
+     "sp": "Emma",
+     "t": "OK. And [[how much]] would you like to spend on [[rent]] each month?",
+     "at": 71.26
+    },
+    {
+     "sp": "Jake",
+     "t": "My friend pays three hundred dollars, [[but]] his room is tiny. I can pay [[up to]] **four hundred and fifty dollars** a month, [[but no more than that]].",
+     "at": 75.77,
+     "q": 3
+    },
+    {
+     "sp": "Emma",
+     "t": "Four hundred and fifty, [[maximum]]. And [[when]] would you like to [[move in]]?",
+     "at": 88.64
+    },
+    {
+     "sp": "Jake",
+     "t": "My job starts on the seventh of December, so I was thinking of the first. [[Actually]], the first is a bit early. [[Let's say]] **the fifth of December**.",
+     "at": 94.25,
+     "q": 4
+    },
+    {
+     "sp": "Emma",
+     "t": "**The fifth.** Fine. Is there anything important about the [[location]]?",
+     "at": 107.23,
+     "q": 4
+    },
+    {
+     "sp": "Jake",
+     "t": "Yes. I don't have a motorbike, and the buses here are always crowded, so [[a bus stop isn't enough]]. The room has to be [[within walking distance]] of a **subway** [[station]].",
+     "at": 112.96,
+     "q": 5
+    },
+    {
+     "sp": "Emma",
+     "t": "A **subway station**. That's very common now. No problem.",
+     "at": 127.28,
+     "q": 5
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 1"
+    },
+    {
+     "label": "Câu 2"
+    },
+    {
+     "label": "Câu 3"
+    },
+    {
+     "label": "Câu 4"
+    },
+    {
+     "label": "Câu 5"
+    }
+   ],
+   "strategy": [
+    "<b>Đọc trước 30 giây:</b> gạch từ khóa mỗi dòng và <b>đoán loại thông tin</b> (số? tên riêng? ngày? danh từ số ít?), chọn ở nút dưới ô.",
+    "<b>Linear thinking:</b> câu hỏi đi <b>theo thứ tự audio</b>. Mắt đặt ở câu đang nghe <b>và</b> từ khóa câu kế tiếp; nghe thấy từ khóa câu sau mà chưa có đáp án câu trước → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý / phủ định:</b> thông tin đầu thường sai. Chờ <i>but, actually, let's say, no, it's not …, last year … but this year</i>.",
+    "<b>Chính tả + giới hạn từ:</b> ONE WORD AND/OR A NUMBER → không viết lại chữ đã in sẵn ($, December, station, Park). Nộp xong đọc 🔑 từ khóa ⇄ synonym và nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Whitley"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Name",
+       "N",
+       "spell your surname"
+      ]
+     ],
+     "why": [
+      "Đề in sẵn <i>Jake</i> → chỉ cần <b>họ</b> (surname = last name).",
+      "Emma hỏi [[spell your surname]] → Jake đánh vần W‑H‑I‑T‑L‑E‑Y; nghe <i>Whitley</i> dễ viết thành <i>Witley</i> (thiếu H).",
+      "Chốt **Whitley**, viết hoa chữ đầu."
+     ]
+    },
+    "2": {
+     "ans": [
+      "business"
+     ],
+     "form": [
+      "Danh từ (đứng trước district)",
+      "Tên riêng"
+     ],
+     "kw": [
+      [
+       "New job",
+       "N",
+       "an accounting firm downtown"
+      ],
+      [
+       "district",
+       "N",
+       "the business district"
+      ]
+     ],
+     "why": [
+      "[[New job]] = <i>an accounting firm downtown</i> → câu 2 bắt đầu.",
+      "Emma đoán <i>old town</i> → Jake [[No, it's not in the old town]] → bẫy nhắc rồi phủ định.",
+      "It's in the **business** district → business (đề có sẵn <i>district</i>)."
+     ]
+    },
+    "3": {
+     "ans": [
+      "450",
+      "four hundred and fifty",
+      "four hundred fifty"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Maximum rent",
+       "N",
+       "up to … but no more than that"
+      ]
+     ],
+     "why": [
+      "Có 2 con số: $300 là tiền phòng <b>của bạn Jake</b> → bẫy (có thật nhưng không trả lời câu hỏi).",
+      "Maximum = [[up to]] … [[but no more than that]] → **four hundred and fifty**.",
+      "Emma nhắc lại <i>Four hundred and fifty, maximum</i> → 450 (đề có sẵn $)."
+     ]
+    },
+    "4": {
+     "ans": [
+      "5",
+      "5th",
+      "fifth",
+      "the fifth"
+     ],
+     "form": [
+      "Số (ngày)",
+      "Tháng"
+     ],
+     "kw": [
+      [
+       "Move-in date",
+       "N",
+       "when would you like to move in"
+      ]
+     ],
+     "why": [
+      "Có 3 ngày: 7 = ngày bắt đầu đi làm (bẫy), 1 = định chuyển nhưng [[Actually]] quá sớm (đổi ý).",
+      "[[Let's say]] **the fifth of December** → 5.",
+      "Emma xác nhận <i>The fifth. Fine.</i>"
+     ]
+    },
+    "5": {
+     "ans": [
+      "subway"
+     ],
+     "form": [
+      "Danh từ (loại ga / trạm)",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "within walking distance",
+       "Adj",
+       "within walking distance"
+      ],
+      [
+       "station",
+       "N",
+       "a subway station"
+      ]
+     ],
+     "why": [
+      "[[a bus stop isn't enough]] → bus là bẫy.",
+      "has to be [[within walking distance]] of a **subway** station → subway (đề có sẵn station).",
+      "Emma nhắc lại <i>A subway station</i>."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261119-duc-tue",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-24",
+   "title": "Nghe Part 1 · Renting a room near work (câu 6–10)",
+   "subtitle": "Form completion · 5 câu · 30 giây đọc đề → nghe 1 lần như thi thật → xem 🔑 từ khóa + giải thích",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261119-l1b.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Oakfield Rentals – Room Enquiry Form (Questions 6–10)",
+   "rows": [
+    "## Recommended room",
+    "[[Area]]: {6} Park",
+    "[[Rent now]]: ${7} per month",
+    "[[Rent includes]]: internet and {8}",
+    "[[Walk to the new station]]: {9} minutes",
+    "## Viewing: Saturday morning",
+    "[[Bring]]: a copy of your work {10}"
+   ],
+   "transcript": [
+    {
+     "sp": "Emma",
+     "t": "Right, Jake. I have two rooms for you. The first one is in Bayview. It's cheap, [[but]] it's above a karaoke bar, so it's [[really noisy]] at night.",
+     "at": 17.57
+    },
+    {
+     "sp": "Jake",
+     "t": "Hmm, I need to sleep well before work. What about the other one?",
+     "at": 28.93
+    },
+    {
+     "sp": "Emma",
+     "t": "The second one is in **Maple** Park. That's **M, A, P, L, E.** It's a [[quiet residential area]], and [[I'd really recommend it]].",
+     "at": 35.15,
+     "q": 6
+    },
+    {
+     "sp": "Jake",
+     "t": "**Maple** Park [[sounds good]]. [[How much is the rent]]?",
+     "at": 46.19,
+     "q": 6
+    },
+    {
+     "sp": "Emma",
+     "t": "[[Last year]], the owner asked for four hundred and eighty dollars a month. [[But this year]] she's reduced it, [[so now]] it's **four hundred and twenty**.",
+     "at": 51.42,
+     "q": 7
+    },
+    {
+     "sp": "Jake",
+     "t": "**Four twenty.** That's within my budget. Does that [[include]] the bills?",
+     "at": 62.31,
+     "q": 7
+    },
+    {
+     "sp": "Emma",
+     "t": "It [[includes]] the internet and **water**. [[Electricity isn't included]], so you pay for that yourself.",
+     "at": 68.69,
+     "q": 8
+    },
+    {
+     "sp": "Jake",
+     "t": "Fine. And [[how far]] is it from the [[subway]]?",
+     "at": 76.47
+    },
+    {
+     "sp": "Emma",
+     "t": "The [[old station]] is about twelve minutes on foot. [[But]] a [[new station]] opened in October, and that's [[only]] **six minutes** away.",
+     "at": 80.36,
+     "q": 9
+    },
+    {
+     "sp": "Jake",
+     "t": "**Six minutes.** Perfect. Can I see the room this weekend?",
+     "at": 90.52,
+     "q": 9
+    },
+    {
+     "sp": "Emma",
+     "t": "Yes, on Saturday morning. You [[don't need to bring]] any money to the viewing. [[But]] the owner would like to see [[a copy of]] your [[work]] **contract**, just to check that you have a job.",
+     "at": 96.27,
+     "q": 10
+    },
+    {
+     "sp": "Jake",
+     "t": "No problem. [[I'll bring]] my **contract**. Thanks, Emma!",
+     "at": 109.12,
+     "q": 10
+    },
+    {
+     "sp": "Emma",
+     "t": "You're welcome, Jake. See you on Saturday.",
+     "at": 114.65
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 6"
+    },
+    {
+     "label": "Câu 7"
+    },
+    {
+     "label": "Câu 8"
+    },
+    {
+     "label": "Câu 9"
+    },
+    {
+     "label": "Câu 10"
+    }
+   ],
+   "strategy": [
+    "<b>Đọc trước 30 giây:</b> gạch từ khóa mỗi dòng và <b>đoán loại thông tin</b> (số? tên riêng? ngày? danh từ số ít?), chọn ở nút dưới ô.",
+    "<b>Linear thinking:</b> câu hỏi đi <b>theo thứ tự audio</b>. Mắt đặt ở câu đang nghe <b>và</b> từ khóa câu kế tiếp; nghe thấy từ khóa câu sau mà chưa có đáp án câu trước → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý / phủ định:</b> thông tin đầu thường sai. Chờ <i>but, actually, let's say, no, it's not …, last year … but this year</i>.",
+    "<b>Chính tả + giới hạn từ:</b> ONE WORD AND/OR A NUMBER → không viết lại chữ đã in sẵn ($, December, station, Park). Nộp xong đọc 🔑 từ khóa ⇄ synonym và nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "6": {
+     "ans": [
+      "Maple"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Area",
+       "N",
+       "a quiet residential area"
+      ]
+     ],
+     "why": [
+      "Bayview: rẻ [[but]] [[really noisy]] → bẫy.",
+      "The second one is in **Maple** Park (M‑A‑P‑L‑E) + [[I'd really recommend it]] → Maple."
+     ]
+    },
+    "7": {
+     "ans": [
+      "420",
+      "four hundred and twenty",
+      "four hundred twenty"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Rent now",
+       "N",
+       "this year … so now"
+      ]
+     ],
+     "why": [
+      "$480 [[Last year]] → bẫy xưa – nay.",
+      "[[But this year]] … [[so now]] it's **four hundred and twenty** → 420."
+     ]
+    },
+    "8": {
+     "ans": [
+      "water"
+     ],
+     "form": [
+      "Danh từ không đếm được",
+      "Danh từ số nhiều"
+     ],
+     "kw": [
+      [
+       "Rent includes",
+       "V",
+       "it includes"
+      ]
+     ],
+     "why": [
+      "[[includes]] the internet and **water** → water.",
+      "[[Electricity isn't included]] → bẫy nhắc rồi phủ định."
+     ]
+    },
+    "9": {
+     "ans": [
+      "6",
+      "six"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Walk to the new station",
+       "N",
+       "a new station … only six minutes away"
+      ]
+     ],
+     "why": [
+      "12 phút là tới [[old station]] → bẫy.",
+      "[[new station]] … [[only]] **six minutes** away → 6."
+     ]
+    },
+    "10": {
+     "ans": [
+      "contract"
+     ],
+     "form": [
+      "Danh từ số ít",
+      "Danh từ số nhiều"
+     ],
+     "kw": [
+      [
+       "Bring",
+       "V",
+       "would like to see"
+      ],
+      [
+       "a copy of",
+       "N",
+       "a copy of"
+      ]
+     ],
+     "why": [
+      "[[don't need to bring]] any money → bẫy.",
+      "owner would like to see [[a copy of]] your work **contract** → contract."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261119-duc-wed",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "duc"
+   ],
+   "opens": "2026-11-25",
+   "title": "Nghe Part 2 · New metro line (note completion)",
+   "subtitle": "Part 2 · 8 câu điền notes · 30 giây đọc đề → nghe 1 lần → xem 🔑 từ khóa + phân tích",
+   "prep": 30,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 2",
+   "audio": "media/dt-w20261119-l2.mp3",
+   "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Westlake Metro Line · Questions 11–18",
+   "rows": [
+    "## Westlake Metro Line · Information for commuters",
+    "[[First passengers]]: in {11}",
+    "[[Stations open now]]: {12}",
+    "[[Rush hour]]: a train every {13} minutes",
+    "[[Monthly pass for students and interns]]: ${14}",
+    "[[Buy the monthly pass]]: only on the {15}",
+    "[[Free parking]] at stations for: {16}",
+    "[[Most crowded station]]: {17} Station",
+    "[[Not allowed]] on trains: food and {18}"
+   ],
+   "transcript": [
+    {
+     "sp": "Daniel",
+     "t": "Good morning, and thanks for having me. I'm Daniel from the City Transport Office, and today I'd like to tell your listeners about the new [[Westlake Metro Line]].",
+     "at": 20.57
+    },
+    {
+     "sp": "Daniel",
+     "t": "A lot of people think the line opened in September. [[In fact]], September was [[only the test month]]. The [[first passengers]] rode the trains in **October**, and since then, more than a million people have used it.",
+     "at": 33.47,
+     "q": 11
+    },
+    {
+     "sp": "Daniel",
+     "t": "The line will have fourteen stations [[in total]]. [[But]] two of them are [[still being built]], so [[right now]] there are **twelve** [[stations open]].",
+     "at": 49.73,
+     "q": 12
+    },
+    {
+     "sp": "Daniel",
+     "t": "[[How often]] do the trains come? At quiet times, there's a train every ten minutes. [[But during rush hour]], when most people go to work, there's one every **six minutes**.",
+     "at": 60.36,
+     "q": 13
+    },
+    {
+     "sp": "Daniel",
+     "t": "Now, tickets. A [[single ticket]] costs one dollar. If you're a regular commuter, a [[monthly pass]] is cheaper. The [[normal price]] is thirty dollars, [[but students and interns]] pay just **eighteen dollars** a month.",
+     "at": 74.17,
+     "q": 14
+    },
+    {
+     "sp": "Daniel",
+     "t": "Where can you [[buy the pass]]? You [[used to]] buy it at the ticket office, [[but]] we've closed those offices. [[Now you can only]] get the monthly pass on the **app**.",
+     "at": 91.8,
+     "q": 15
+    },
+    {
+     "sp": "Daniel",
+     "t": "Many people ride to the station first. The car parks at the stations are [[not free]], and motorbikes [[pay a small fee]]. [[But]] [[parking is free]] for **bicycles** at every station.",
+     "at": 104.31,
+     "q": 16
+    },
+    {
+     "sp": "Daniel",
+     "t": "Which station is [[the busiest]]? [[Most people guess]] University Station, because of all the students. [[Actually]], [[the most crowded station]] is **Lakeside**, which is right next to the new shopping mall.",
+     "at": 118.68,
+     "q": 17
+    },
+    {
+     "sp": "Daniel",
+     "t": "Finally, a few rules. You [[can]] drink water on the trains, and folding bikes [[are fine]]. [[But]] please [[don't eat]] on the trains, and **pets** [[are not allowed]].",
+     "at": 134.79,
+     "q": 18
+    },
+    {
+     "sp": "Daniel",
+     "t": "So, leave the motorbike at home, beat the traffic, and try the Westlake Line. Thank you.",
+     "at": 147.69
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 11"
+    },
+    {
+     "label": "Câu 12"
+    },
+    {
+     "label": "Câu 13"
+    },
+    {
+     "label": "Câu 14"
+    },
+    {
+     "label": "Câu 15"
+    },
+    {
+     "label": "Câu 16"
+    },
+    {
+     "label": "Câu 17"
+    },
+    {
+     "label": "Câu 18"
+    }
+   ],
+   "strategy": [
+    "<b>30 giây đọc đề:</b> đọc tiêu đề (tàu điện mới, thông tin cho người đi làm) → gạch từ khóa mỗi dòng → <b>đoán loại từ</b>: tháng? số? danh từ số ít / số nhiều? tên ga?",
+    "<b>Linear thinking:</b> 1 người nói, notes đi đúng thứ tự 11 → 18. Mắt ở câu đang nghe + từ khóa câu kế tiếp (<i>rush hour → monthly pass → buy → parking</i>); lỡ câu nào thì bỏ, đi tiếp.",
+    "<b>Paraphrase + bẫy:</b> <i>busiest ↔ most crowded</i> · <i>in total</i> ≠ <i>right now</i> · nhắc rồi phủ định (<i>A lot of people think … In fact …</i>, <i>Most people guess … Actually …</i>) · xưa – nay (<i>used to … Now</i>).",
+    "<b>Giới hạn từ:</b> ONE WORD AND/OR A NUMBER, không viết lại chữ in sẵn ($, minutes, Station, food). Nộp xong xem 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi nghe lại theo transcript chạy."
+   ],
+   "qs": {
+    "11": {
+     "ans": [
+      "October"
+     ],
+     "form": [
+      "Tháng (viết hoa)",
+      "Số"
+     ],
+     "kw": [
+      [
+       "First passengers",
+       "N",
+       "the first passengers rode the trains"
+      ]
+     ],
+     "why": [
+      "September = [[only the test month]] → bẫy nhắc rồi phủ định ([[In fact]]).",
+      "[[first passengers]] … in **October** → October."
+     ]
+    },
+    "12": {
+     "ans": [
+      "12",
+      "twelve"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Stations open now",
+       "N",
+       "right now there are … stations open"
+      ]
+     ],
+     "why": [
+      "fourteen = [[in total]] (cả tuyến) → bẫy.",
+      "[[right now]] there are **twelve** [[stations open]] → 12."
+     ]
+    },
+    "13": {
+     "ans": [
+      "6",
+      "six"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Rush hour",
+       "N",
+       "during rush hour"
+      ]
+     ],
+     "why": [
+      "every ten minutes = <i>quiet times</i> → bẫy.",
+      "[[But during rush hour]] … every **six minutes** → 6."
+     ]
+    },
+    "14": {
+     "ans": [
+      "18",
+      "eighteen"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Monthly pass",
+       "N",
+       "a monthly pass"
+      ],
+      [
+       "students and interns",
+       "N",
+       "students and interns"
+      ]
+     ],
+     "why": [
+      "$1 = [[single ticket]]; $30 = [[normal price]] → 2 bẫy.",
+      "[[but students and interns]] pay just **eighteen dollars** → 18."
+     ]
+    },
+    "15": {
+     "ans": [
+      "app"
+     ],
+     "form": [
+      "Danh từ số ít",
+      "Tên riêng"
+     ],
+     "kw": [
+      [
+       "Buy the monthly pass",
+       "V",
+       "buy the pass"
+      ],
+      [
+       "only",
+       "Adv",
+       "now you can only"
+      ]
+     ],
+     "why": [
+      "ticket office: [[used to]] … closed → bẫy xưa – nay.",
+      "[[Now you can only]] get the monthly pass on the **app** → app."
+     ]
+    },
+    "16": {
+     "ans": [
+      "bicycles",
+      "bikes",
+      "bicycle",
+      "bike"
+     ],
+     "form": [
+      "Danh từ số nhiều",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Free parking",
+       "N",
+       "parking is free"
+      ]
+     ],
+     "why": [
+      "car parks [[not free]]; motorbikes [[pay a small fee]] → 2 bẫy.",
+      "[[parking is free]] for **bicycles** → bicycles."
+     ]
+    },
+    "17": {
+     "ans": [
+      "Lakeside"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Most crowded station",
+       "Adj",
+       "the busiest · the most crowded station"
+      ]
+     ],
+     "why": [
+      "University Station = [[Most people guess]] → bẫy.",
+      "[[Actually]], [[the most crowded station]] is **Lakeside** → Lakeside."
+     ]
+    },
+    "18": {
+     "ans": [
+      "pets",
+      "pet"
+     ],
+     "form": [
+      "Danh từ số nhiều",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "Not allowed",
+       "Adj",
+       "are not allowed"
+      ],
+      [
+       "food",
+       "N",
+       "don't eat"
+      ]
+     ],
+     "why": [
+      "water, folding bikes = [[can]] / [[are fine]] → bẫy.",
+      "[[don't eat]] = food; **pets** [[are not allowed]] → pets."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261119-thu-thu",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-19",
+   "opensAt": "17:00",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · A park near home",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Parks",
+     "q": "Is there a park near your house?",
+     "hint": "neighborhood, within walking distance, peaceful, on foot",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>Is there</b> (có … không) · <b>a park</b> (công viên) · <b>near your house</b> (gần nhà). Hỏi sự thật bây giờ → <b>hiện tại đơn</b> (There is / There isn't).",
+      "<b>A – Answer:</b> khung: <i>Yes, there is a small park near my house.</i> / <i>No, there isn't, but there is one about … minutes away.</i>",
+      "<b>R – Reason:</b> vì sao em thích / tiếc? Chọn 1 hướng: công viên <b>yên bình</b> (peaceful), nhiều cây? <b>gần</b>, đi bộ được (within walking distance)? hay khu em ở <b>quá đông</b>, không có chỗ? Khung: <i>It's great because …</i> / <i>I wish there was one, because …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (tối qua, cuối tuần) · <b>Who with?</b> (bạn cùng phòng, mẹ) · <b>What did you do?</b> (đi bộ, chạy bộ). Khung quá khứ: <i>Last weekend, I walked there with … and we …</i>",
+      "<b>F – Feeling:</b> khung: <i>It makes me feel relaxed / calm.</i> / <i>I really love it.</i>",
+      "<b>Từ nên dùng:</b> <b>neighborhood</b>, <b>within walking distance</b>, <b>peaceful</b>, <b>on foot</b>. <b>Lỗi hay gặp:</b> <i><b>on</b> foot</i> (không nói <i>by foot</i>); <i>There <b>is</b> a park</i> (không nói <i>It has a park</i>); kể cuối tuần trước thì <i>I <b>walked</b></i> (đuôi -ed đọc /t/).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Is there a market near your house?",
+      "notes": {
+       "A": "yes · 5 minutes on foot",
+       "R": "fresh food · cheap",
+       "E": "last Saturday · with my mom · fruit",
+       "F": "convenient · happy"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-thu-fri",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-20",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Learning to ride a motorbike",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Riding a motorbike",
+     "q": "When did you learn to ride a motorbike?",
+     "hint": "ride a motorbike, wear a helmet, grow up, hometown",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>When</b> (khi nào) · <b>did you learn</b> (đã học) · <b>ride a motorbike</b>. Có <b>did</b> → chuyện <b>đã qua</b> → cả câu trả lời dùng <b>quá khứ đơn</b> (I learned, my dad taught, I rode).",
+      "<b>A – Answer:</b> nói thẳng lúc nào. Khung: <i>I learned to ride a motorbike when I was eighteen.</i> / <i>To be honest, I can't ride a motorbike yet.</i>",
+      "<b>R – Reason:</b> vì sao học lúc đó? Chọn 1 hướng: lên <b>đại học</b>, cần đi học xa? <b>bố / anh</b> dạy? hay em <b>sợ</b> nên chưa học? Khung: <i>because I needed to …</i> / <i>My … taught me because …</i>",
+      "<b>E – Example:</b> tự hỏi <b>Where?</b> (sân trường, đường quê) · <b>Who?</b> (ai dạy) · <b>What happened?</b> (ngã, sợ). Khung quá khứ: <i>I remember my first day. I practiced in … with …, and I …</i>",
+      "<b>F – Feeling:</b> khung: <i>I felt so scared / excited, but now …</i>",
+      "<b>Từ nên dùng:</b> <b>ride a motorbike</b>, <b>wear a helmet</b>, <b>grow up</b>, <b>hometown</b>. <b>Lỗi hay gặp:</b> <i>learn <b>to</b> ride</i> (không nói <i>learn riding</i>); quá khứ: <i>I <b>learned</b></i> (-ed đọc /d/), <i>my dad <b>taught</b></i>, <i>I <b>rode</b></i>; <i><b>ride</b> a motorbike</i> (không nói <i>drive a motorbike</i>).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "When did you learn to swim?",
+      "notes": {
+       "A": "at 10 · summer vacation",
+       "R": "my dad · river near home",
+       "E": "every afternoon · a month · drank water",
+       "F": "scared at first · proud"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-thu-sat",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-21",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Shopping malls",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Shopping malls",
+     "q": "Do you like going to shopping malls?",
+     "hint": "shopping mall, crowded, department store, on weekends",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>like</b> (thích không) · <b>going to shopping malls</b> (đi trung tâm thương mại). Hỏi sở thích → <b>hiện tại đơn</b> (I like / I love / I don't really like).",
+      "<b>A – Answer:</b> khung: <i>Yes, I love going to shopping malls.</i> / <i>Not really, I prefer small shops.</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: có <b>đủ thứ</b> (đồ ăn, rạp phim, quần áo)? <b>mát</b>, có điều hòa? hay quá <b>đông</b> (crowded), <b>đắt</b>? Khung: <i>because there are …</i> / <i>The main reason is that …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (cuối tuần trước) · <b>Which mall?</b> · <b>Who with?</b> · <b>What did you do?</b> (xem phim, mua giày). Khung quá khứ: <i>Last weekend, I went to … with … and we …</i>",
+      "<b>F – Feeling:</b> khung: <i>It was fun, and I felt …</i> / <i>That's why I …</i>",
+      "<b>Từ nên dùng:</b> <b>shopping mall</b>, <b>crowded</b>, <b>department store</b>, <b>on weekends</b>. <b>Lỗi hay gặp:</b> <i>go <b>to</b> the mall</i> nhưng <i>go shopping</i> (không có to); <i>crowd<b>ed</b></i> đọc /ɪd/; <i>I <b>went</b></i> (không nói <i>I go</i> khi kể cuối tuần trước).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Do you like going to the supermarket?",
+      "notes": {
+       "A": "yes · once a week",
+       "R": "everything in one place · cheaper",
+       "E": "last Sunday · with roommate · snacks for the week",
+       "F": "tired · but happy"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-thu-mon-s",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-23",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Work or studies: getting to class",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Work or studies",
+     "q": "Is your university or your workplace easy to get to?",
+     "hint": "easy to get to, bus stop, get to work, within walking distance",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>your university or your workplace</b> (trường hoặc chỗ thực tập / làm việc, chọn 1) · <b>easy to get to</b> (dễ đi tới). Hỏi sự thật bây giờ → <b>hiện tại đơn</b> (It is / It isn't).",
+      "<b>A – Answer:</b> khung: <i>Yes, my university is quite easy to get to.</i> / <i>Not really. My office is far from my house.</i>",
+      "<b>R – Reason:</b> chọn 1 hướng: có <b>trạm xe buýt</b> ngay cổng (bus stop)? <b>gần</b>, đi bộ được? hay đường <b>hay kẹt xe</b>, phải đổi 2 xe buýt? Khung: <i>because there is …</i> / <i>It takes me about … minutes because …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (sáng hôm qua, tuần trước) · <b>How?</b> (xe máy, xe buýt) · <b>What happened?</b> (kẹt xe, mưa, đi muộn). Khung quá khứ: <i>Yesterday, I took the bus and I got to class in … minutes.</i>",
+      "<b>F – Feeling:</b> khung: <i>It makes me feel lucky / tired …</i> / <i>I hope …</i>",
+      "<b>Từ nên dùng:</b> <b>easy to get to</b>, <b>bus stop</b>, <b>get to work</b> / <b>get to class</b>. <b>Lỗi hay gặp:</b> <i>get <b>to</b> work</i> nhưng <i>get home</i> (không có to); <i>It <b>takes</b> me 20 minutes</i> (không nói <i>I take 20 minutes</i>); <i>by bus</i> (không có <i>a</i>).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "Is the library easy to get to from your house?",
+      "notes": {
+       "A": "yes · 15 minutes",
+       "R": "one bus · no change",
+       "E": "last Tuesday · thesis books · rain",
+       "F": "convenient · glad"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-thu-mon-l",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-23",
+   "title": "Nghe Part 1 · Renting a room near work (câu 1–5, bản hỗ trợ)",
+   "subtitle": "Form completion · 5 câu · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261119-l1a.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Oakfield Rentals – Room Enquiry Form (Questions 1–5)",
+   "rows": [
+    "## Oakfield Rentals · Room enquiry",
+    "[[Name]]: Jake {1}",
+    "[[New job]]: accounting firm in the {2} district",
+    "[[Maximum rent]]: ${3} per month",
+    "## Moving details",
+    "[[Move-in date]]: {4} December",
+    "[[Must be within walking distance of]]: a {5} station"
+   ],
+   "transcript": [
+    {
+     "sp": "Emma",
+     "t": "Good morning, Oakfield Rentals. This is Emma speaking. How can I help you?",
+     "at": 19.56
+    },
+    {
+     "sp": "Jake",
+     "t": "Hi, Emma. I've just finished university, and I'm starting my first job next month. I'm looking for a room to rent close to work.",
+     "at": 26.55
+    },
+    {
+     "sp": "Emma",
+     "t": "Congratulations! Let me take some details. What's your [[name]], please?",
+     "at": 37.79
+    },
+    {
+     "sp": "Jake",
+     "t": "It's Jake Whitley.",
+     "at": 43.41
+    },
+    {
+     "sp": "Emma",
+     "t": "Could you [[spell your surname]], please?",
+     "at": 45.8
+    },
+    {
+     "sp": "Jake",
+     "t": "Sure. It's **W, H, I, T, L, E, Y.**",
+     "at": 49.43,
+     "q": 1
+    },
+    {
+     "sp": "Emma",
+     "t": "Thanks. And where is your [[new job]]?",
+     "at": 54.47
+    },
+    {
+     "sp": "Jake",
+     "t": "It's at an [[accounting firm]] downtown.",
+     "at": 57.37
+    },
+    {
+     "sp": "Emma",
+     "t": "Is that in the [[old town]]?",
+     "at": 60.83
+    },
+    {
+     "sp": "Jake",
+     "t": "[[No]], it's [[not in the old town]]. It's in the **business** [[district]], near all the big banks.",
+     "at": 63.32,
+     "q": 2
+    },
+    {
+     "sp": "Emma",
+     "t": "OK. And [[how much]] would you like to spend on [[rent]] each month?",
+     "at": 71.26
+    },
+    {
+     "sp": "Jake",
+     "t": "My friend pays three hundred dollars, [[but]] his room is tiny. I can pay [[up to]] **four hundred and fifty dollars** a month, [[but no more than that]].",
+     "at": 75.77,
+     "q": 3
+    },
+    {
+     "sp": "Emma",
+     "t": "Four hundred and fifty, [[maximum]]. And [[when]] would you like to [[move in]]?",
+     "at": 88.64
+    },
+    {
+     "sp": "Jake",
+     "t": "My job starts on the seventh of December, so I was thinking of the first. [[Actually]], the first is a bit early. [[Let's say]] **the fifth of December**.",
+     "at": 94.25,
+     "q": 4
+    },
+    {
+     "sp": "Emma",
+     "t": "**The fifth.** Fine. Is there anything important about the [[location]]?",
+     "at": 107.23,
+     "q": 4
+    },
+    {
+     "sp": "Jake",
+     "t": "Yes. I don't have a motorbike, and the buses here are always crowded, so [[a bus stop isn't enough]]. The room has to be [[within walking distance]] of a **subway** [[station]].",
+     "at": 112.96,
+     "q": 5
+    },
+    {
+     "sp": "Emma",
+     "t": "A **subway station**. That's very common now. No problem.",
+     "at": 127.28,
+     "q": 5
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 1"
+    },
+    {
+     "label": "Câu 2"
+    },
+    {
+     "label": "Câu 3"
+    },
+    {
+     "label": "Câu 4"
+    },
+    {
+     "label": "Câu 5"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢) để làm quen giọng: <b>Emma</b> (nhân viên cho thuê phòng, nữ) hỏi, <b>Jake</b> (sinh viên mới ra trường, nam) tìm phòng gần chỗ làm. Lần này chưa chấm.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô, gạch từ khóa và chọn <b>loại thông tin</b>. Vd. câu 1 có sẵn <i>Jake</i> → chỉ nghe <b>họ</b>; câu 3 có sẵn <i>$</i> → chỉ nghe <b>số</b>; câu 4 có sẵn <i>December</i> → chỉ nghe <b>ngày</b>.",
+    "<b>Linear thinking:</b> câu 1–5 đi <b>đúng thứ tự</b> audio. Vd. nghe <i>new job</i> là tới câu 2; nghe <i>how much … rent</i> là câu 3; nghe <i>move in</i> là sang câu 4. Lỡ câu nào thì bỏ, nhìn sang câu kế tiếp ngay.",
+    "<b>Thông tin đầu tiên thường là bẫy.</b> Vd. câu 2: Emma đoán <i>old town</i>, Jake nói <b>No</b>; câu 3: <i>My friend pays …</i> là tiền của bạn Jake; câu 4: <i>the first … <b>Actually</b> …</i> → đổi ý.",
+    "<b>Đề hỏi đúng chữ nào?</b> Vd. câu 5 hỏi Jake muốn ở gần <b>ga gì</b>; <i>a bus stop isn't enough</i> → không phải bus.",
+    "<b>Chính tả:</b> tên riêng ghi theo phần đánh vần; tên riêng, tháng viết hoa; nhớ đuôi -s khi cần. Nộp xong đọc 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi bấm phát audio: transcript chạy theo, bấm dòng để nghe lại chỗ có đáp án."
+   ],
+   "qs": {
+    "1": {
+     "ans": [
+      "Whitley"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Name",
+       "N",
+       "spell your surname"
+      ]
+     ],
+     "hint": "Đề có sẵn tên Jake. Chờ câu 'spell your surname', ghi từng chữ cái.",
+     "why": [
+      "Đề in sẵn <i>Jake</i> (tên) → ô trống là <b>họ</b>. <i>surname</i> = <i>last name</i> = họ.",
+      "Từ tín hiệu: Emma hỏi [[Could you spell your surname]] → câu ngay sau là đáp án.",
+      "Jake đánh vần W, H, I, T, L, E, Y. Ghi từng chữ cái lúc nghe: W đọc <i>double-you</i>, Y đọc <i>why</i>.",
+      "Chốt **Whitley**. Tên riêng viết hoa chữ đầu."
+     ]
+    },
+    "2": {
+     "ans": [
+      "business"
+     ],
+     "form": [
+      "Danh từ (đứng trước district)",
+      "Tên riêng"
+     ],
+     "kw": [
+      [
+       "New job",
+       "N",
+       "an accounting firm downtown"
+      ],
+      [
+       "district",
+       "N",
+       "the business district"
+      ]
+     ],
+     "hint": "Có 2 khu được nhắc. Khu nào Jake nói 'No' là bẫy. Nghe từ ngay trước 'district'.",
+     "why": [
+      "Đề <b>New job: accounting firm in the … district</b> → chờ cụm <i>accounting firm</i>.",
+      "Emma hỏi <i>Is that in the old town?</i> → Jake trả lời [[No, it's not in the old town]] → old town là bẫy.",
+      "Jake nói tiếp: <i>It's in the</i> **business** <i>district, near all the big banks</i> (khu văn phòng, ngân hàng).",
+      "Đề đã có <i>district</i> → chỉ viết **business**."
+     ]
+    },
+    "3": {
+     "ans": [
+      "450",
+      "four hundred and fifty",
+      "four hundred fifty"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Maximum rent",
+       "N",
+       "up to … but no more than that"
+      ]
+     ],
+     "hint": "Có 2 con số tiền. Một số là tiền phòng của bạn Jake. Nghe 'up to…'.",
+     "why": [
+      "Đề <b>Maximum rent</b> (tiền thuê <b>tối đa</b>) = Emma hỏi [[how much]] would you like to spend on [[rent]].",
+      "<i>My friend pays three hundred dollars</i> → tiền của <b>bạn</b> Jake → bẫy.",
+      "Từ [[but]] → Jake nói về mình: <i>I can pay</i> [[up to]] (tối đa) **four hundred and fifty dollars**.",
+      "Emma xác nhận: <i>Four hundred and fifty, [[maximum]]</i> → viết 450 (đề có sẵn $)."
+     ]
+    },
+    "4": {
+     "ans": [
+      "5",
+      "5th",
+      "fifth",
+      "the fifth"
+     ],
+     "form": [
+      "Số (ngày)",
+      "Tháng"
+     ],
+     "kw": [
+      [
+       "Move-in date",
+       "N",
+       "when would you like to move in"
+      ]
+     ],
+     "hint": "Có 3 ngày được nhắc. Jake đổi ý sau từ 'Actually'.",
+     "why": [
+      "Đề <b>Move-in date: … December</b> = Emma hỏi [[when would you like to move in]]. Đề có sẵn <i>December</i> → chỉ nghe <b>ngày</b>.",
+      "<i>the seventh</i> = ngày Jake <b>bắt đầu đi làm</b> (job starts) → không phải ngày chuyển vào.",
+      "<i>I was thinking of the first</i> → [[Actually]], the first is a bit early → đổi ý, loại ngày 1.",
+      "[[Let's say]] **the fifth of December**; Emma nhắc lại <i>The fifth</i> → 5."
+     ]
+    },
+    "5": {
+     "ans": [
+      "subway"
+     ],
+     "form": [
+      "Danh từ (loại ga / trạm)",
+      "Động từ"
+     ],
+     "kw": [
+      [
+       "within walking distance",
+       "Adj",
+       "within walking distance"
+      ],
+      [
+       "station",
+       "N",
+       "a subway station"
+      ]
+     ],
+     "hint": "Xe buýt được nhắc nhưng 'isn't enough'. Nghe từ trước 'station'.",
+     "why": [
+      "Đề <b>Must be within walking distance of: a … station</b> → chờ cụm [[within walking distance]].",
+      "Jake: không có xe máy, xe buýt đông (<i>crowded</i>) → [[a bus stop isn't enough]] → loại bus.",
+      "The room [[has to be]] (phải) within walking distance of a **subway** station.",
+      "Đề có sẵn <i>station</i> → chỉ viết **subway** (tàu điện ngầm, Anh: underground)."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261119-thu-tue-s",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-24",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Stuck in traffic",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Traffic jams",
+     "q": "What do you usually do when you are stuck in traffic?",
+     "hint": "be stuck in traffic, rush hour, be running late, listen to music",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>What do you usually do</b> (em thường làm gì) · <b>when you are stuck in traffic</b> (khi bị kẹt xe). Hỏi thói quen → <b>hiện tại đơn</b> (I usually …).",
+      "<b>A – Answer:</b> nói thẳng 1 việc. Khung: <i>I usually listen to music.</i> / <i>To be honest, I just wait and look around.</i>",
+      "<b>R – Reason:</b> vì sao làm việc đó? Chọn 1 hướng: cho <b>đỡ chán</b>, đỡ stress? <b>gọi điện báo</b> sẽ đến muộn (I'm running late)? hay tìm <b>đường tắt</b>? Khung: <i>because it helps me …</i> / <i>so that I …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (hôm qua, giờ cao điểm) · <b>Where?</b> (đường nào, gần trường) · <b>How long?</b> Khung quá khứ: <i>Yesterday, I was stuck in traffic for … minutes near …, so I …</i>",
+      "<b>F – Feeling:</b> khung: <i>I felt so annoyed / tired.</i> / <i>It makes me feel calmer.</i>",
+      "<b>Từ nên dùng:</b> <b>be stuck in traffic</b>, <b>rush hour</b>, <b>be running late</b>. <b>Lỗi hay gặp:</b> <i>I <b>was</b> stuck</i> (kể hôm qua; không nói <i>I stuck</i>); <i>traffic</i> không đếm được → không nói <i>a traffic</i>; <i>listen <b>to</b> music</i> (không bỏ <i>to</i>).",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "What do you usually do when you wait for the bus?",
+      "notes": {
+       "A": "check my phone · read news",
+       "R": "bus often late · 10 minutes",
+       "E": "this morning · read an article about jobs",
+       "F": "not bored · time goes fast"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-thu-tue-l",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-24",
+   "title": "Nghe Part 1 · Renting a room near work (câu 6–10, bản hỗ trợ)",
+   "subtitle": "Form completion · 5 câu · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 1",
+   "audio": "media/dt-w20261119-l1b.mp3",
+   "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "heading": "Oakfield Rentals – Room Enquiry Form (Questions 6–10)",
+   "rows": [
+    "## Recommended room",
+    "[[Area]]: {6} Park",
+    "[[Rent now]]: ${7} per month",
+    "[[Rent includes]]: internet and {8}",
+    "[[Walk to the new station]]: {9} minutes",
+    "## Viewing: Saturday morning",
+    "[[Bring]]: a copy of your work {10}"
+   ],
+   "transcript": [
+    {
+     "sp": "Emma",
+     "t": "Right, Jake. I have two rooms for you. The first one is in Bayview. It's cheap, [[but]] it's above a karaoke bar, so it's [[really noisy]] at night.",
+     "at": 17.57
+    },
+    {
+     "sp": "Jake",
+     "t": "Hmm, I need to sleep well before work. What about the other one?",
+     "at": 28.93
+    },
+    {
+     "sp": "Emma",
+     "t": "The second one is in **Maple** Park. That's **M, A, P, L, E.** It's a [[quiet residential area]], and [[I'd really recommend it]].",
+     "at": 35.15,
+     "q": 6
+    },
+    {
+     "sp": "Jake",
+     "t": "**Maple** Park [[sounds good]]. [[How much is the rent]]?",
+     "at": 46.19,
+     "q": 6
+    },
+    {
+     "sp": "Emma",
+     "t": "[[Last year]], the owner asked for four hundred and eighty dollars a month. [[But this year]] she's reduced it, [[so now]] it's **four hundred and twenty**.",
+     "at": 51.42,
+     "q": 7
+    },
+    {
+     "sp": "Jake",
+     "t": "**Four twenty.** That's within my budget. Does that [[include]] the bills?",
+     "at": 62.31,
+     "q": 7
+    },
+    {
+     "sp": "Emma",
+     "t": "It [[includes]] the internet and **water**. [[Electricity isn't included]], so you pay for that yourself.",
+     "at": 68.69,
+     "q": 8
+    },
+    {
+     "sp": "Jake",
+     "t": "Fine. And [[how far]] is it from the [[subway]]?",
+     "at": 76.47
+    },
+    {
+     "sp": "Emma",
+     "t": "The [[old station]] is about twelve minutes on foot. [[But]] a [[new station]] opened in October, and that's [[only]] **six minutes** away.",
+     "at": 80.36,
+     "q": 9
+    },
+    {
+     "sp": "Jake",
+     "t": "**Six minutes.** Perfect. Can I see the room this weekend?",
+     "at": 90.52,
+     "q": 9
+    },
+    {
+     "sp": "Emma",
+     "t": "Yes, on Saturday morning. You [[don't need to bring]] any money to the viewing. [[But]] the owner would like to see [[a copy of]] your [[work]] **contract**, just to check that you have a job.",
+     "at": 96.27,
+     "q": 10
+    },
+    {
+     "sp": "Jake",
+     "t": "No problem. [[I'll bring]] my **contract**. Thanks, Emma!",
+     "at": 109.12,
+     "q": 10
+    },
+    {
+     "sp": "Emma",
+     "t": "You're welcome, Jake. See you on Saturday.",
+     "at": 114.65
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 6"
+    },
+    {
+     "label": "Câu 7"
+    },
+    {
+     "label": "Câu 8"
+    },
+    {
+     "label": "Câu 9"
+    },
+    {
+     "label": "Câu 10"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢) để làm quen giọng: <b>Emma</b> (nữ) giới thiệu 2 phòng, <b>Jake</b> (nam) hỏi giá, đường đi, ngày xem phòng. Lần này chưa chấm.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô, gạch từ khóa và chọn <b>loại thông tin</b>. Vd. câu 6 có sẵn <i>Park</i> → nghe <b>tên</b> (có đánh vần); câu 9 có sẵn <i>minutes</i> → nghe <b>số</b>; câu 10 có sẵn <i>work</i> → 1 danh từ.",
+    "<b>Linear thinking:</b> câu 6–10 đi <b>đúng thứ tự</b> audio. Vd. nghe <i>rent</i> là câu 7; nghe <i>include the bills</i> là câu 8; nghe <i>how far … subway</i> là câu 9. Lỡ câu nào thì bỏ, nhìn sang câu kế tiếp ngay.",
+    "<b>Thông tin đầu tiên thường là bẫy.</b> Vd. câu 6: phòng ở <i>Bayview</i> ồn (<i>noisy</i>) → không chọn; câu 7: <i>last year … <b>but this year</b></i> → lấy giá bây giờ.",
+    "<b>Đề hỏi đúng chữ nào?</b> Vd. câu 8: <i>Electricity isn't included</i> → không phải điện; câu 9 hỏi ga <b>mới</b> (new), không phải ga cũ; câu 10: <i>money</i> là thứ KHÔNG cần mang.",
+    "<b>Chính tả:</b> tên riêng ghi theo phần đánh vần; tên riêng, tháng viết hoa; nhớ đuôi -s khi cần. Nộp xong đọc 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi bấm phát audio: transcript chạy theo, bấm dòng để nghe lại chỗ có đáp án."
+   ],
+   "qs": {
+    "6": {
+     "ans": [
+      "Maple"
+     ],
+     "form": [
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
+     ],
+     "kw": [
+      [
+       "Area",
+       "N",
+       "a quiet residential area"
+      ]
+     ],
+     "hint": "Có 2 khu. Khu có quán karaoke ồn là bẫy. Có đánh vần.",
+     "why": [
+      "Đề <b>Area: … Park</b> → đề có sẵn <i>Park</i>, chỉ nghe tên.",
+      "Phòng 1 ở <i>Bayview</i>: rẻ [[but]] trên quán karaoke, [[really noisy]] → Jake không chọn → bẫy.",
+      "Phòng 2: **Maple** Park, Emma đánh vần M, A, P, L, E, là [[quiet residential area]] (khu dân cư yên tĩnh).",
+      "Jake: <i>Maple Park [[sounds good]]</i> → **Maple**, viết hoa."
+     ]
+    },
+    "7": {
+     "ans": [
+      "420",
+      "four hundred and twenty",
+      "four hundred twenty"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Rent now",
+       "N",
+       "this year … so now"
+      ]
+     ],
+     "hint": "Có giá năm ngoái và giá bây giờ. Đề hỏi 'Rent now'.",
+     "why": [
+      "Đề <b>Rent now</b> (tiền thuê <b>bây giờ</b>) → chờ từ [[now]].",
+      "<i>four hundred and eighty</i> đi với [[Last year]] → giá cũ → bẫy xưa – nay.",
+      "[[But this year]] she's reduced it (giảm) → [[so now]] it's **four hundred and twenty**.",
+      "Jake nhắc lại <i>Four twenty</i> → viết 420 (đề có sẵn $)."
+     ]
+    },
+    "8": {
+     "ans": [
+      "water"
+     ],
+     "form": [
+      "Danh từ không đếm được",
+      "Danh từ số nhiều"
+     ],
+     "kw": [
+      [
+       "Rent includes",
+       "V",
+       "it includes"
+      ]
+     ],
+     "hint": "Đề có sẵn 'internet'. Nghe từ sau 'internet and…'. Thứ 'isn't included' là bẫy.",
+     "why": [
+      "Đề <b>Rent includes: internet and …</b> = Jake hỏi <i>Does that [[include]] the bills?</i> (tiền điện nước…).",
+      "Emma: <i>It [[includes]] the internet and</i> **water** → đề có sẵn internet → đáp án đứng sau <i>and</i>.",
+      "<i>Electricity</i> (điện) → [[isn't included]] (không bao gồm) → bẫy.",
+      "Chốt **water** (không đếm được, không thêm -s)."
+     ]
+    },
+    "9": {
+     "ans": [
+      "6",
+      "six"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Walk to the new station",
+       "N",
+       "a new station … only six minutes away"
+      ]
+     ],
+     "hint": "Có 2 ga. Đề hỏi ga MỚI.",
+     "why": [
+      "Đề <b>Walk to the new station: … minutes</b> → từ khóa quan trọng là <b>new</b>.",
+      "<i>twelve minutes on foot</i> là tới [[old station]] (ga cũ) → bẫy.",
+      "[[But]] a [[new station]] opened in October → [[only]] **six minutes** away.",
+      "Jake nhắc lại <i>Six minutes</i> → 6. <i>October</i> là tháng ga mở, không phải đáp án."
+     ]
+    },
+    "10": {
+     "ans": [
+      "contract"
+     ],
+     "form": [
+      "Danh từ số ít",
+      "Danh từ số nhiều"
+     ],
+     "kw": [
+      [
+       "Bring",
+       "V",
+       "would like to see"
+      ],
+      [
+       "a copy of",
+       "N",
+       "a copy of"
+      ]
+     ],
+     "hint": "Có thứ KHÔNG cần mang. Nghe sau 'a copy of your work…'.",
+     "why": [
+      "Đề <b>Bring: a copy of your work …</b> → đề có sẵn <i>a copy of your work</i>, chờ cụm này.",
+      "<i>money</i> → [[don't need to bring]] (không cần mang) → bẫy.",
+      "Owner would like to see [[a copy of]] your work **contract** (hợp đồng lao động) → để kiểm tra Jake có việc làm.",
+      "Jake: <i>[[I'll bring]] my contract</i> → **contract** (số ít)."
+     ]
+    }
+   }
+  },
+  {
+   "id": "dt-w20261119-thu-wed-s",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-25",
+   "type": "speak",
+   "skill": "Speaking",
+   "title": "Part 1 · Going back to your hometown",
+   "subtitle": "đọc 🧭 phân tích → ghi từ khóa A / R / E / F → ghi âm thử → nộp",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Hometown visits",
+     "q": "How often do you go back to your hometown?",
+     "hint": "go back to my hometown, peaceful, peace and quiet, there's no place like home",
+     "guide": [
+      "<b>Câu hỏi hỏi gì?</b> Từ khóa: <b>How often</b> (bao lâu một lần) · <b>go back to your hometown</b> (về quê). Hỏi tần suất → <b>hiện tại đơn</b> + cụm tần suất: <i>once a month, twice a year, every Tet</i>.",
+      "<b>A – Answer:</b> khung: <i>I go back to my hometown about once a month.</i> / <i>Not very often, only at Tet.</i> (Hà Nội là quê thì: <i>I live in my hometown, so …</i>)",
+      "<b>R – Reason:</b> chọn 1 hướng: quê <b>gần / xa</b>? <b>bận</b> khóa luận, thực tập? <b>nhớ</b> bố mẹ, cần chút yên tĩnh (peace and quiet)? Khung: <i>because it's only … hours by bus.</i> / <i>The main reason is that …</i>",
+      "<b>E – Example:</b> tự hỏi <b>When?</b> (lần gần nhất) · <b>How?</b> (xe khách, xe máy) · <b>What did you do?</b> Khung quá khứ: <i>Last month, I went back by bus, and my mom cooked …</i>",
+      "<b>F – Feeling:</b> khung: <i>I always feel relaxed there.</i> / <i>There's no place like home.</i>",
+      "<b>Từ nên dùng:</b> <b>go back to my hometown</b>, <b>peaceful</b>, <b>peace and quiet</b>. <b>Lỗi hay gặp:</b> <i>go back <b>to</b> my hometown</i> nhưng <i>go back home</i> (không có to); <i>once a month</i> (không nói <i>one time a month</i>); <i>hometown</i> viết liền 1 từ.",
+      "<b>Mục tiêu:</b> 4 câu (A · R · E · F), nói <b>20–25 giây</b>."
+     ],
+     "demo": {
+      "q": "How often do you visit your grandparents?",
+      "notes": {
+       "A": "twice a month",
+       "R": "live near · miss them",
+       "E": "last Sunday · grandma cooked · garden",
+       "F": "warm · loved"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dt-w20261119-thu-wed-l",
+   "session": 5,
+   "topic": "Transport & My Town",
+   "deck": "dt5",
+   "for": [
+    "thu"
+   ],
+   "opens": "2026-11-25",
+   "title": "Nghe Part 2 · New metro line (note completion, bản hỗ trợ)",
+   "subtitle": "Part 2 · 6 câu điền notes (câu 11–16) · nghe chậm 1 lần để làm quen, rồi làm thật",
+   "prep": 45,
+   "slowFirst": true,
+   "type": "gap",
+   "skill": "Listening",
+   "part": "Part 2",
+   "audio": "media/dt-w20261119-l2.mp3",
+   "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer. (Em làm câu 11–16; đoạn cuối audio nói về câu 17–18, em nghe để quen.)",
+   "heading": "Westlake Metro Line · Questions 11–16",
+   "rows": [
+    "## Westlake Metro Line · Information for commuters",
+    "[[First passengers]]: in {11}",
+    "[[Stations open now]]: {12}",
+    "[[Rush hour]]: a train every {13} minutes",
+    "[[Monthly pass for students and interns]]: ${14}",
+    "[[Buy the monthly pass]]: only on the {15}",
+    "[[Free parking]] at stations for: {16}"
+   ],
+   "transcript": [
+    {
+     "sp": "Daniel",
+     "t": "Good morning, and thanks for having me. I'm Daniel from the City Transport Office, and today I'd like to tell your listeners about the new [[Westlake Metro Line]].",
+     "at": 20.57
+    },
+    {
+     "sp": "Daniel",
+     "t": "A lot of people think the line opened in September. [[In fact]], September was [[only the test month]]. The [[first passengers]] rode the trains in **October**, and since then, more than a million people have used it.",
+     "at": 33.47,
+     "q": 11
+    },
+    {
+     "sp": "Daniel",
+     "t": "The line will have fourteen stations [[in total]]. [[But]] two of them are [[still being built]], so [[right now]] there are **twelve** [[stations open]].",
+     "at": 49.73,
+     "q": 12
+    },
+    {
+     "sp": "Daniel",
+     "t": "[[How often]] do the trains come? At quiet times, there's a train every ten minutes. [[But during rush hour]], when most people go to work, there's one every **six minutes**.",
+     "at": 60.36,
+     "q": 13
+    },
+    {
+     "sp": "Daniel",
+     "t": "Now, tickets. A [[single ticket]] costs one dollar. If you're a regular commuter, a [[monthly pass]] is cheaper. The [[normal price]] is thirty dollars, [[but students and interns]] pay just **eighteen dollars** a month.",
+     "at": 74.17,
+     "q": 14
+    },
+    {
+     "sp": "Daniel",
+     "t": "Where can you [[buy the pass]]? You [[used to]] buy it at the ticket office, [[but]] we've closed those offices. [[Now you can only]] get the monthly pass on the **app**.",
+     "at": 91.8,
+     "q": 15
+    },
+    {
+     "sp": "Daniel",
+     "t": "Many people ride to the station first. The car parks at the stations are [[not free]], and motorbikes [[pay a small fee]]. [[But]] [[parking is free]] for **bicycles** at every station.",
+     "at": 104.31,
+     "q": 16
+    },
+    {
+     "sp": "Daniel",
+     "t": "Which station is [[the busiest]]? [[Most people guess]] University Station, because of all the students. [[Actually]], [[the most crowded station]] is **Lakeside**, which is right next to the new shopping mall.",
+     "at": 118.68,
+     "q": 17
+    },
+    {
+     "sp": "Daniel",
+     "t": "Finally, a few rules. You [[can]] drink water on the trains, and folding bikes [[are fine]]. [[But]] please [[don't eat]] on the trains, and **pets** [[are not allowed]].",
+     "at": 134.79,
+     "q": 18
+    },
+    {
+     "sp": "Daniel",
+     "t": "So, leave the motorbike at home, beat the traffic, and try the Westlake Line. Thank you.",
+     "at": 147.69
+    }
+   ],
+   "sentences": [
+    {
+     "label": "Câu 11"
+    },
+    {
+     "label": "Câu 12"
+    },
+    {
+     "label": "Câu 13"
+    },
+    {
+     "label": "Câu 14"
+    },
+    {
+     "label": "Câu 15"
+    },
+    {
+     "label": "Câu 16"
+    }
+   ],
+   "strategy": [
+    "<b>Nghe chậm 0.75× 1 lần trước</b> (nút 🐢): chỉ 1 người nói, <b>Daniel</b> (sở giao thông) giới thiệu tuyến tàu điện mới trên radio. Lần này chưa chấm.",
+    "<b>Đọc đề 45 giây:</b> đọc 💡 gợi ý dưới mỗi ô. Vd. câu 11 nghe <b>tháng</b>; câu 12, 13, 14 nghe <b>số</b>; câu 15, 16 nghe <b>danh từ</b>.",
+    "<b>Linear thinking:</b> nghe <i>first passengers</i> = câu 11 · <i>stations</i> = 12 · <i>rush hour</i> = 13 · <i>monthly pass</i> = 14 · <i>buy the pass</i> = 15 · <i>parking</i> = 16. Lỡ câu nào thì bỏ, nhìn câu sau.",
+    "<b>Thông tin đầu thường là bẫy.</b> Vd. câu 11: <i>people think … September. <b>In fact</b> …</i> → không phải September. Câu 12: <i>fourteen in total</i>, <b>but</b> … → nghe tiếp.",
+    "<b>Nhiều con số:</b> câu 13 có 2 số (giờ vắng / giờ cao điểm), câu 14 có 3 số tiền → chọn số đi với từ khóa trong đề (<i>rush hour</i>, <i>students and interns</i>).",
+    "<b>Chính tả:</b> tháng viết hoa (October); câu 16 nhớ đuôi -s. Nộp xong đọc 🔑 từ khóa ⇄ synonym + các bước giải thích, rồi bấm phát audio: transcript chạy theo."
+   ],
+   "qs": {
+    "11": {
+     "ans": [
+      "October"
+     ],
+     "form": [
+      "Tháng (viết hoa)",
+      "Số"
+     ],
+     "kw": [
+      [
+       "First passengers",
+       "N",
+       "the first passengers rode the trains"
+      ]
+     ],
+     "hint": "Có 2 tháng. Tháng chạy thử là bẫy. Nghe 'first passengers'.",
+     "why": [
+      "Đề <b>First passengers: in …</b> → đáp án là 1 <b>tháng</b>.",
+      "<i>A lot of people think</i> … <i>September</i> → nhiều người nghĩ vậy nhưng sai.",
+      "[[In fact]], September was [[only the test month]] (chỉ chạy thử) → loại.",
+      "The [[first passengers]] rode the trains in **October** → October, viết hoa."
+     ]
+    },
+    "12": {
+     "ans": [
+      "12",
+      "twelve"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Stations open now",
+       "N",
+       "right now there are … stations open"
+      ]
+     ],
+     "hint": "Có 2 con số. Đề hỏi số ga đang mở BÂY GIỜ.",
+     "why": [
+      "Đề <b>Stations open now</b> → từ khóa <b>now</b>.",
+      "<i>fourteen stations</i> [[in total]] (tổng cộng, cả khi xây xong) → bẫy.",
+      "2 ga [[still being built]] (đang xây) → 14 − 2.",
+      "[[right now]] there are **twelve** [[stations open]] → 12."
+     ]
+    },
+    "13": {
+     "ans": [
+      "6",
+      "six"
+     ],
+     "form": [
+      "Số",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Rush hour",
+       "N",
+       "during rush hour"
+      ]
+     ],
+     "hint": "Có 2 con số phút. Đề hỏi giờ cao điểm (rush hour).",
+     "why": [
+      "Đề <b>Rush hour: a train every … minutes</b> → chờ [[rush hour]].",
+      "<i>At quiet times</i> (giờ vắng) → every ten minutes → bẫy.",
+      "[[But during rush hour]], when most people go to work → every **six minutes**.",
+      "Chốt 6 (đề có sẵn <i>minutes</i>)."
+     ]
+    },
+    "14": {
+     "ans": [
+      "18",
+      "eighteen"
+     ],
+     "form": [
+      "Số",
+      "Chữ"
+     ],
+     "kw": [
+      [
+       "Monthly pass",
+       "N",
+       "a monthly pass"
+      ],
+      [
+       "students and interns",
+       "N",
+       "students and interns"
+      ]
+     ],
+     "hint": "Có 3 con số tiền: vé lượt, giá thường, giá cho sinh viên.",
+     "why": [
+      "Đề <b>Monthly pass for students and interns: $…</b> → 2 từ khóa: <b>monthly pass</b> + <b>students and interns</b>.",
+      "<i>one dollar</i> = [[single ticket]] (vé 1 lượt) → bẫy.",
+      "<i>thirty dollars</i> = [[normal price]] (giá thường) → bẫy.",
+      "[[but students and interns]] pay just **eighteen dollars** a month → 18 (đề có sẵn $)."
+     ]
+    },
+    "15": {
+     "ans": [
+      "app"
+     ],
+     "form": [
+      "Danh từ số ít",
+      "Tên riêng"
+     ],
+     "kw": [
+      [
+       "Buy the monthly pass",
+       "V",
+       "buy the pass"
+      ],
+      [
+       "only",
+       "Adv",
+       "now you can only"
+      ]
+     ],
+     "hint": "Có cách mua cũ và cách mua bây giờ. Nghe sau 'Now you can only…'.",
+     "why": [
+      "Đề <b>Buy the monthly pass: only on the …</b> → chờ [[buy the pass]] + <b>only</b>.",
+      "<i>ticket office</i> đi với [[used to]] (trước đây) và <i>we've closed those offices</i> → bẫy.",
+      "[[Now you can only]] get the monthly pass on the **app** → app (ứng dụng điện thoại).",
+      "Đề có sẵn <i>on the</i> → chỉ viết **app**."
+     ]
+    },
+    "16": {
+     "ans": [
+      "bicycles",
+      "bikes",
+      "bicycle",
+      "bike"
+     ],
+     "form": [
+      "Danh từ số nhiều",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Free parking",
+       "N",
+       "parking is free"
+      ]
+     ],
+     "hint": "Có 3 loại xe. Chỉ 1 loại gửi miễn phí.",
+     "why": [
+      "Đề <b>Free parking at stations for: …</b> → chờ [[free]].",
+      "Ô tô: car parks are [[not free]] → loại. Xe máy: [[pay a small fee]] (trả phí nhỏ) → loại.",
+      "[[But]] [[parking is free]] for **bicycles** at every station.",
+      "Viết <b>bicycles</b> (hoặc bikes)."
+     ]
+    }
+   }
   }
  ],
  "ipa": {
@@ -16911,6 +18931,1023 @@
       }
      ],
      "note": "job hunting = quá trình tìm việc · apply for a position = nộp đơn · attend a job interview · look into = tìm hiểu kỹ trước khi quyết"
+    }
+   ]
+  },
+  {
+   "id": "dt5",
+   "title": "Transport & My Town",
+   "session": 5,
+   "for": [
+    "duc",
+    "thu"
+   ],
+   "cards": [
+    {
+     "mean": "đi lại hằng ngày giữa nhà và chỗ làm / trường",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "commute",
+       "type": "Vocab",
+       "ipa": "/kəˈmjuːt/",
+       "stress": "com-MUTE",
+       "band": "5.5–6.5",
+       "grammar": "commute + to / from + nơi chốn; my commute (danh từ)",
+       "ex": "I commute forty minutes to my internship every day."
+      },
+      {
+       "w": "a long commute",
+       "type": "Collocation",
+       "ipa": "/ə ˌlɔːŋ kəˈmjuːt/",
+       "stress": "a LONG com-MUTE",
+       "band": "4–5",
+       "grammar": "have + a long / short commute",
+       "ex": "I have a long commute, about an hour each way."
+      },
+      {
+       "w": "a daily commute",
+       "type": "Collocation",
+       "ipa": "/ə ˌdeɪli kəˈmjuːt/",
+       "stress": "a DAI-ly com-MUTE",
+       "band": "5.5–6.5",
+       "grammar": "my daily commute + takes + time",
+       "ex": "My daily commute takes forty minutes."
+      },
+      {
+       "w": "pick sb up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpɪk ˈʌp/",
+       "stress": "pick‿UP",
+       "band": "4–5",
+       "grammar": "tách được: pick me up / pick my sister up",
+       "ex": "My dad picks me up after work when it rains."
+      },
+      {
+       "w": "drop sb off",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdrɑːp ˈɔːf/",
+       "stress": "drop‿OFF",
+       "band": "4–5",
+       "grammar": "tách được: drop me off at + nơi chốn",
+       "ex": "My roommate dropped me off at the bus stop."
+      }
+     ],
+     "note": "commute = động từ và danh từ · a long / daily commute = quãng đi lại · pick sb up = đón · drop sb off = thả xuống, chở tới"
+    },
+    {
+     "mean": "xe cộ, giao thông trên đường",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "traffic",
+       "type": "Vocab",
+       "ipa": "/ˈtræfɪk/",
+       "stress": "TRAF-fic",
+       "band": "3–3.5",
+       "grammar": "không đếm được: a lot of traffic",
+       "ex": "The traffic is terrible after five p.m."
+      },
+      {
+       "w": "a traffic jam",
+       "type": "Collocation",
+       "ipa": "/ə ˈtræfɪk dʒæm/",
+       "stress": "a TRAF-fic jam",
+       "band": "3–3.5",
+       "grammar": "đếm được: get caught in + a traffic jam",
+       "ex": "We got caught in a traffic jam on the way home."
+      },
+      {
+       "w": "heavy traffic",
+       "type": "Collocation",
+       "ipa": "/ˌhevi ˈtræfɪk/",
+       "stress": "HEAV-y TRAF-fic",
+       "band": "4–5",
+       "grammar": "there is + heavy traffic",
+       "ex": "There is always heavy traffic at eight a.m."
+      },
+      {
+       "w": "congestion",
+       "type": "Vocab",
+       "ipa": "/kənˈdʒestʃən/",
+       "stress": "con-GES-tion",
+       "band": "7–8",
+       "grammar": "không đếm được; traffic congestion",
+       "ex": "Congestion downtown is worse every year."
+      },
+      {
+       "w": "pile up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpaɪl ˈʌp/",
+       "stress": "pile‿UP",
+       "band": "7–8",
+       "grammar": "không tân ngữ: traffic piles up",
+       "ex": "Traffic piles up near the bridge after five."
+      },
+      {
+       "w": "bumper-to-bumper",
+       "type": "Idiom",
+       "ipa": "/ˌbʌmpər tə ˈbʌmpər/",
+       "stress": "BUMP-er to BUMP-er",
+       "band": "7–8",
+       "grammar": "bumper-to-bumper traffic",
+       "ex": "The cars were bumper-to-bumper all the way home."
+      }
+     ],
+     "note": "traffic không đếm được (không nói a traffic, traffics) · heavy traffic, không nói big traffic · congestion trang trọng · bumper-to-bumper = xe nối đuôi"
+    },
+    {
+     "mean": "phương tiện công cộng",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "public transportation",
+       "type": "Vocab",
+       "ipa": "/ˌpʌblɪk ˌtrænspərˈteɪʃn/",
+       "stress": "PUB-lic trans-por-TA-tion",
+       "band": "4–5",
+       "grammar": "không đếm được; take / use + public transportation",
+       "ex": "Public transportation in my city is cheap but slow."
+      },
+      {
+       "w": "public transit",
+       "type": "Vocab",
+       "ipa": "/ˌpʌblɪk ˈtrænzɪt/",
+       "stress": "PUB-lic TRAN-sit",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được (Mỹ)",
+       "ex": "Many people in New York use public transit."
+      },
+      {
+       "w": "take public transportation",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ˌpʌblɪk ˌtrænspərˈteɪʃn/",
+       "stress": "take PUB-lic trans-por-TA-tion",
+       "band": "4–5",
+       "grammar": "take / use + public transportation",
+       "ex": "More young people take public transportation now."
+      },
+      {
+       "w": "a reliable bus service",
+       "type": "Collocation",
+       "ipa": "/ə rɪˌlaɪəbl ˈbʌs ˌsɝːvɪs/",
+       "stress": "a re-LI-a-ble BUS ser-vice",
+       "band": "5.5–6.5",
+       "grammar": "have / need + a reliable bus service",
+       "ex": "My hometown doesn't have a reliable bus service."
+      },
+      {
+       "w": "hop on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhɑːp ˈɑːn/",
+       "stress": "hop‿ON",
+       "band": "5.5–6.5",
+       "grammar": "hop on + the bus / the subway",
+       "ex": "I just hop on the subway and I'm there in ten minutes."
+      }
+     ],
+     "note": "public transportation (Mỹ) = public transport (Anh), không đếm được · public transit = cách nói Mỹ khác · hop on = nhảy lên xe (thân mật)"
+    },
+    {
+     "mean": "khu phố, khu mình đang sống",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "neighborhood",
+       "type": "Vocab",
+       "ipa": "/ˈneɪbərhʊd/",
+       "stress": "NEIGH-bor-hood",
+       "band": "4–5",
+       "grammar": "in my neighborhood; đếm được",
+       "ex": "My neighborhood has a lot of small coffee shops."
+      },
+      {
+       "w": "a quiet neighborhood",
+       "type": "Collocation",
+       "ipa": "/ə ˌkwaɪət ˈneɪbərhʊd/",
+       "stress": "a QUI-et NEIGH-bor-hood",
+       "band": "4–5",
+       "grammar": "live in + a quiet neighborhood",
+       "ex": "I want to live in a quiet neighborhood with trees."
+      },
+      {
+       "w": "a residential area",
+       "type": "Collocation",
+       "ipa": "/ə ˌrezɪˈdenʃl ˈeriə/",
+       "stress": "a res-i-DEN-tial AR-e-a",
+       "band": "5.5–6.5",
+       "grammar": "live in + a residential area",
+       "ex": "I live in a residential area, far from the main road."
+      },
+      {
+       "w": "move in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌmuːv ˈɪn/",
+       "stress": "move‿IN",
+       "band": "4–5",
+       "grammar": "không tân ngữ; move into + nơi chốn",
+       "ex": "A young couple moved in next door last month."
+      },
+      {
+       "w": "in my neck of the woods",
+       "type": "Idiom",
+       "ipa": "/ɪn maɪ ˌnek əv ðə ˈwʊdz/",
+       "stress": "in my NECK of the WOODS",
+       "band": "7–8",
+       "grammar": "đứng cuối câu, thân mật",
+       "ex": "There aren't many good gyms in my neck of the woods."
+      }
+     ],
+     "note": "neighborhood (Mỹ) = neighbourhood (Anh) · area chung chung · a residential area = khu dân cư, ít cửa hàng · in my neck of the woods = thân mật"
+    },
+    {
+     "mean": "trung tâm thành phố",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "downtown",
+       "type": "Vocab",
+       "ipa": "/ˌdaʊnˈtaʊn/",
+       "stress": "down-TOWN",
+       "band": "4–5",
+       "grammar": "go / work + downtown (không có to)",
+       "ex": "My office is downtown, so parking is expensive."
+      },
+      {
+       "w": "city center",
+       "type": "Vocab",
+       "ipa": "/ˌsɪti ˈsentər/",
+       "stress": "CI-ty CEN-ter",
+       "band": "3–3.5",
+       "grammar": "in the city center (Anh: city centre)",
+       "ex": "The museum is in the city center."
+      },
+      {
+       "w": "the business district",
+       "type": "Collocation",
+       "ipa": "/ðə ˈbɪznəs ˌdɪstrɪkt/",
+       "stress": "the BUS-i-ness dis-trict",
+       "band": "5.5–6.5",
+       "grammar": "in + the business district",
+       "ex": "Most banks are in the business district."
+      },
+      {
+       "w": "the hustle and bustle",
+       "type": "Idiom",
+       "ipa": "/ðə ˌhʌsl ən ˈbʌsl/",
+       "stress": "the HUS-tle and BUS-tle",
+       "band": "7–8",
+       "grammar": "the hustle and bustle + of city life",
+       "ex": "I love the hustle and bustle of Hanoi at night."
+      }
+     ],
+     "note": "downtown (Mỹ) = city centre (Anh) · go downtown, không nói go to downtown · the business district = khu văn phòng · the hustle and bustle = sự náo nhiệt"
+    },
+    {
+     "mean": "quê nhà, nơi mình lớn lên",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "hometown",
+       "type": "Vocab",
+       "ipa": "/ˈhoʊmtaʊn/",
+       "stress": "HOME-town",
+       "band": "3–3.5",
+       "grammar": "my hometown; come from + my hometown",
+       "ex": "My hometown is a small city in the north."
+      },
+      {
+       "w": "birthplace",
+       "type": "Vocab",
+       "ipa": "/ˈbɝːθpleɪs/",
+       "stress": "BIRTH-place",
+       "band": "5.5–6.5",
+       "grammar": "sb's birthplace = nơi sinh",
+       "ex": "Hue is my mother's birthplace."
+      },
+      {
+       "w": "grow up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡroʊ ˈʌp/",
+       "stress": "grow‿UP",
+       "band": "3–3.5",
+       "grammar": "grow up + in + nơi chốn; QK grew up",
+       "ex": "I grew up in a small town near the sea."
+      },
+      {
+       "w": "go back to my hometown",
+       "type": "Collocation",
+       "ipa": "/ˌɡoʊ ˈbæk tə maɪ ˈhoʊmtaʊn/",
+       "stress": "go BACK to my HOME-town",
+       "band": "3–3.5",
+       "grammar": "go back to + nơi chốn",
+       "ex": "I go back to my hometown twice a year."
+      },
+      {
+       "w": "there's no place like home",
+       "type": "Idiom",
+       "ipa": "/ðerz ˌnoʊ ˌpleɪs laɪk ˈhoʊm/",
+       "stress": "there's NO PLACE like HOME",
+       "band": "7–8",
+       "grammar": "câu cố định, dùng ở Feeling",
+       "ex": "After a month abroad, I knew there's no place like home."
+      }
+     ],
+     "note": "hometown = 1 từ, không viết home town · grow up in = lớn lên ở · go back to my hometown nhưng go back home (không to)"
+    },
+    {
+     "mean": "xe máy",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "motorbike",
+       "type": "Vocab",
+       "ipa": "/ˈmoʊtərbaɪk/",
+       "stress": "MO-tor-bike",
+       "band": "3–3.5",
+       "grammar": "by motorbike (không có a)",
+       "ex": "Most students in Vietnam go to school by motorbike."
+      },
+      {
+       "w": "scooter",
+       "type": "Vocab",
+       "ipa": "/ˈskuːtər/",
+       "stress": "SCOO-ter",
+       "band": "4–5",
+       "grammar": "ride + a scooter (Mỹ)",
+       "ex": "My sister rides a pink scooter to school."
+      },
+      {
+       "w": "motorcycle",
+       "type": "Vocab",
+       "ipa": "/ˈmoʊtərsaɪkl/",
+       "stress": "MO-tor-cy-cle",
+       "band": "4–5",
+       "grammar": "ride + a motorcycle",
+       "ex": "My uncle rides a big motorcycle on weekends."
+      },
+      {
+       "w": "get on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡet ˈɑːn/",
+       "stress": "get‿ON",
+       "band": "3–3.5",
+       "grammar": "get on / off + the bus, the subway, a motorbike",
+       "ex": "I get on the bus at seven and get off near my office."
+      },
+      {
+       "w": "wear a helmet",
+       "type": "Collocation",
+       "ipa": "/ˌwer ə ˈhelmɪt/",
+       "stress": "wear‿a HEL-met",
+       "band": "4–5",
+       "grammar": "wear + a helmet",
+       "ex": "You must wear a helmet on a motorbike."
+      }
+     ],
+     "note": "motorbike quen dùng ở Việt Nam; Mỹ hay nói scooter (xe ga) hoặc motorcycle · get on / get off = lên / xuống xe · wear a helmet, không nói put a helmet"
+    },
+    {
+     "mean": "đông đúc, chật người",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "crowded",
+       "type": "Vocab",
+       "ipa": "/ˈkraʊdɪd/",
+       "stress": "CROWD-ed",
+       "band": "4–5",
+       "grammar": "be crowded with + N",
+       "ex": "The buses are always crowded in the morning."
+      },
+      {
+       "w": "busy",
+       "type": "Vocab",
+       "ipa": "/ˈbɪzi/",
+       "stress": "BUS-y",
+       "band": "3–3.5",
+       "grammar": "a busy street / road",
+       "ex": "My office is on a very busy street."
+      },
+      {
+       "w": "packed",
+       "type": "Vocab",
+       "ipa": "/pækt/",
+       "stress": "PACKED",
+       "band": "5.5–6.5",
+       "grammar": "-ed đọc /t/",
+       "ex": "The mall was packed on Saturday."
+      },
+      {
+       "w": "packed with people",
+       "type": "Collocation",
+       "ipa": "/ˌpækt wɪð ˈpiːpl/",
+       "stress": "PACKED with PEO-ple",
+       "band": "5.5–6.5",
+       "grammar": "be + packed with + N",
+       "ex": "The subway is packed with people at rush hour."
+      },
+      {
+       "w": "packed like sardines",
+       "type": "Idiom",
+       "ipa": "/ˌpækt laɪk sɑːrˈdiːnz/",
+       "stress": "PACKED like sar-DINES",
+       "band": "7–8",
+       "grammar": "be packed like sardines",
+       "ex": "We were packed like sardines on the bus."
+      }
+     ],
+     "note": "crowded đọc /ɪd/ ở cuối · packed mạnh hơn crowded · packed with + N · packed like sardines = chật như nêm (thân mật)"
+    },
+    {
+     "mean": "tiện lợi",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "convenient",
+       "type": "Vocab",
+       "ipa": "/kənˈviːniənt/",
+       "stress": "con-VEN-ient",
+       "band": "5.5–6.5",
+       "grammar": "more / the most convenient",
+       "ex": "Living near a subway station is very convenient."
+      },
+      {
+       "w": "handy",
+       "type": "Vocab",
+       "ipa": "/ˈhændi/",
+       "stress": "HAN-dy",
+       "band": "5.5–6.5",
+       "grammar": "it's handy + to V",
+       "ex": "It's handy to have a pharmacy next door."
+      },
+      {
+       "w": "easy to get to",
+       "type": "Collocation",
+       "ipa": "/ˌiːzi tə ˈɡet tuː/",
+       "stress": "EAS-y to GET to",
+       "band": "4–5",
+       "grammar": "S + be + easy to get to",
+       "ex": "The new mall is easy to get to by subway."
+      },
+      {
+       "w": "conveniently located",
+       "type": "Collocation",
+       "ipa": "/kənˌviːniəntli ˈloʊkeɪtɪd/",
+       "stress": "con-VEN-ient-ly LO-cat-ed",
+       "band": "7–8",
+       "grammar": "be + conveniently located + near / next to",
+       "ex": "My office is conveniently located next to a subway station."
+      }
+     ],
+     "note": "convenient đọc con-VEN-ient (3 âm tiết) · handy thân mật hơn · easy to get to = dễ đi tới · conveniently located = trang trọng, ở vị trí thuận tiện"
+    },
+    {
+     "mean": "ồn ào",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "noisy",
+       "type": "Vocab",
+       "ipa": "/ˈnɔɪzi/",
+       "stress": "NOI-sy",
+       "band": "3–3.5",
+       "grammar": "noisier / the noisiest",
+       "ex": "My street is noisy because of the motorbikes."
+      },
+      {
+       "w": "loud",
+       "type": "Vocab",
+       "ipa": "/laʊd/",
+       "stress": "LOUD",
+       "band": "3–3.5",
+       "grammar": "loud music / voice",
+       "ex": "The music in the mall is too loud."
+      },
+      {
+       "w": "constant noise",
+       "type": "Collocation",
+       "ipa": "/ˌkɑːnstənt ˈnɔɪz/",
+       "stress": "CON-stant NOISE",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được",
+       "ex": "I can't sleep because of the constant noise."
+      },
+      {
+       "w": "drown out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdraʊn ˈaʊt/",
+       "stress": "drown‿OUT",
+       "band": "7–8",
+       "grammar": "tách được: drown out the music / drown it out",
+       "ex": "The motorbikes drown out our conversation."
+      }
+     ],
+     "note": "noisy → noisier → the noisiest · loud dùng cho âm thanh, nhạc, giọng · constant noise = tiếng ồn liên tục · drown out = át tiếng"
+    },
+    {
+     "mean": "yên bình",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "peaceful",
+       "type": "Vocab",
+       "ipa": "/ˈpiːsfl/",
+       "stress": "PEACE-ful",
+       "band": "4–5",
+       "grammar": "more peaceful than / the most peaceful",
+       "ex": "My hometown is more peaceful than Hanoi."
+      },
+      {
+       "w": "quiet",
+       "type": "Vocab",
+       "ipa": "/ˈkwaɪət/",
+       "stress": "QUI-et",
+       "band": "3–3.5",
+       "grammar": "quieter / the quietest",
+       "ex": "The streets are quiet after ten p.m."
+      },
+      {
+       "w": "tranquil",
+       "type": "Vocab",
+       "ipa": "/ˈtræŋkwɪl/",
+       "stress": "TRAN-quil",
+       "band": "7–8",
+       "grammar": "a tranquil lake / village",
+       "ex": "We stayed in a tranquil village in the mountains."
+      },
+      {
+       "w": "a peaceful atmosphere",
+       "type": "Collocation",
+       "ipa": "/ə ˌpiːsfl ˈætməsfɪr/",
+       "stress": "a PEACE-ful AT-mos-phere",
+       "band": "5.5–6.5",
+       "grammar": "have / enjoy + a peaceful atmosphere",
+       "ex": "The old town has a peaceful atmosphere in the morning."
+      },
+      {
+       "w": "peace and quiet",
+       "type": "Idiom",
+       "ipa": "/ˌpiːs ən ˈkwaɪət/",
+       "stress": "PEACE and QUI-et",
+       "band": "5.5–6.5",
+       "grammar": "enjoy / need + some peace and quiet",
+       "ex": "I go back home for some peace and quiet."
+      }
+     ],
+     "note": "peaceful dùng cho nơi chốn · quiet = yên tĩnh, ít tiếng · tranquil trang trọng · peace and quiet = sự yên tĩnh (danh từ)"
+    },
+    {
+     "mean": "ô nhiễm",
+     "cat": "A. Transport & My Town: từ cốt lõi",
+     "items": [
+      {
+       "w": "pollution",
+       "type": "Vocab",
+       "ipa": "/pəˈluːʃn/",
+       "stress": "pol-LU-tion",
+       "band": "4–5",
+       "grammar": "không đếm được; air / noise pollution",
+       "ex": "Air pollution is a big problem in big cities."
+      },
+      {
+       "w": "air pollution",
+       "type": "Collocation",
+       "ipa": "/ˈer pəˌluːʃn/",
+       "stress": "AIR pol-lu-tion",
+       "band": "4–5",
+       "grammar": "không đếm được",
+       "ex": "Air pollution is worse in the winter."
+      },
+      {
+       "w": "smog",
+       "type": "Vocab",
+       "ipa": "/smɑːɡ/",
+       "stress": "SMOG",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được",
+       "ex": "You can't see the buildings because of the smog."
+      },
+      {
+       "w": "exhaust fumes",
+       "type": "Collocation",
+       "ipa": "/ɪɡˈzɔːst fjuːmz/",
+       "stress": "ex-HAUST fumes",
+       "band": "7–8",
+       "grammar": "luôn số nhiều",
+       "ex": "The exhaust fumes at rush hour give me a headache."
+      },
+      {
+       "w": "clean up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkliːn ˈʌp/",
+       "stress": "clean‿UP",
+       "band": "4–5",
+       "grammar": "tách được: clean up the river / clean it up",
+       "ex": "The city is trying to clean up the lakes."
+      }
+     ],
+     "note": "pollution không đếm được · smog = khói bụi mù · exhaust fumes = khói xe, luôn số nhiều · clean up = làm sạch"
+    },
+    {
+     "mean": "đi xe buýt",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "take the bus",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ðə ˈbʌs/",
+       "stress": "take the BUS",
+       "band": "3–3.5",
+       "grammar": "take + the bus / the subway / a taxi",
+       "ex": "I take the bus when it rains."
+      }
+     ],
+     "note": "take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus"
+    },
+    {
+     "mean": "đi xe máy (người lái)",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "ride a motorbike",
+       "type": "Collocation",
+       "ipa": "/ˌraɪd ə ˈmoʊtərbaɪk/",
+       "stress": "ride‿a MO-tor-bike",
+       "band": "3–3.5",
+       "grammar": "ride + a motorbike / a bike; QK rode",
+       "ex": "I learned to ride a motorbike when I was eighteen."
+      }
+     ],
+     "note": "ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác"
+    },
+    {
+     "mean": "đi bộ (tới đâu đó)",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "on foot",
+       "type": "Collocation",
+       "ipa": "/ɑːn ˈfʊt/",
+       "stress": "on FOOT",
+       "band": "3–3.5",
+       "grammar": "go / come + on foot",
+       "ex": "The market is close, so I go there on foot."
+      }
+     ],
+     "note": "on foot, không nói by foot · walk to + nơi chốn = go on foot"
+    },
+    {
+     "mean": "giờ cao điểm",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "rush hour",
+       "type": "Collocation",
+       "ipa": "/ˈrʌʃ ˌaʊər/",
+       "stress": "RUSH hour",
+       "band": "4–5",
+       "grammar": "at / during + rush hour",
+       "ex": "Never drive downtown during rush hour."
+      }
+     ],
+     "note": "rush hour không có -s khi nói chung: at / during rush hour"
+    },
+    {
+     "mean": "bị kẹt xe",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "be stuck in traffic",
+       "type": "Collocation",
+       "ipa": "/bi ˌstʌk ɪn ˈtræfɪk/",
+       "stress": "be STUCK‿in TRAF-fic",
+       "band": "4–5",
+       "grammar": "be / get + stuck in traffic",
+       "ex": "I was stuck in traffic for an hour yesterday."
+      }
+     ],
+     "note": "be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/"
+    },
+    {
+     "mean": "chở ai đi (bằng xe của mình)",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "give sb a ride",
+       "type": "Collocation",
+       "ipa": "/ˌɡɪv ə ˈraɪd/",
+       "stress": "give ... a RIDE",
+       "band": "4–5",
+       "grammar": "give + sb + a ride + to / home",
+       "ex": "My coworker gives me a ride home on Fridays."
+      }
+     ],
+     "note": "give sb a ride (Mỹ) = give sb a lift (Anh)"
+    },
+    {
+     "mean": "đi lại, di chuyển trong một nơi",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "get around",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡet əˈraʊnd/",
+       "stress": "get‿a-ROUND",
+       "band": "5.5–6.5",
+       "grammar": "get around + nơi chốn; by + phương tiện",
+       "ex": "The easiest way to get around Hanoi is by motorbike."
+      }
+     ],
+     "note": "get around + nơi chốn + by + phương tiện (↺ Buổi 3)"
+    },
+    {
+     "mean": "gần, đi bộ tới được",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "within walking distance",
+       "type": "Collocation",
+       "ipa": "/wɪˌðɪn ˈwɔːkɪŋ ˌdɪstəns/",
+       "stress": "with-in WALK-ing dis-tance",
+       "band": "5.5–6.5",
+       "grammar": "be within walking distance + of + N",
+       "ex": "My apartment is within walking distance of my office."
+      }
+     ],
+     "note": "within walking distance + of + nơi chốn"
+    },
+    {
+     "mean": "đi làm việc vặt (mua đồ, ra ngân hàng)",
+     "cat": "B. Đi lại hằng ngày & ý kiến",
+     "items": [
+      {
+       "w": "run errands",
+       "type": "Collocation",
+       "ipa": "/ˌrʌn ˈerəndz/",
+       "stress": "run ER-rands",
+       "band": "5.5–6.5",
+       "grammar": "run + errands; QK ran",
+       "ex": "I run errands on Saturday mornings."
+      }
+     ],
+     "note": "errand đếm được: run errands / run an errand"
+    },
+    {
+     "mean": "trung tâm thương mại",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "shopping mall",
+       "type": "Collocation",
+       "ipa": "/ˈʃɑːpɪŋ mɔːl/",
+       "stress": "SHOP-ping mall",
+       "band": "3–3.5",
+       "grammar": "at / in + the shopping mall",
+       "ex": "A new shopping mall opened near my house."
+      }
+     ],
+     "note": "shopping mall (Mỹ) = shopping centre (Anh); department store = 1 cửa hàng lớn nhiều tầng"
+    },
+    {
+     "mean": "trạm xe buýt",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "bus stop",
+       "type": "Collocation",
+       "ipa": "/ˈbʌs stɑːp/",
+       "stress": "BUS stop",
+       "band": "3–3.5",
+       "grammar": "at + the bus stop",
+       "ex": "The bus stop is right in front of my school."
+      }
+     ],
+     "note": "at the bus stop · bus station = bến xe lớn"
+    },
+    {
+     "mean": "bãi đỗ xe",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "parking lot",
+       "type": "Collocation",
+       "ipa": "/ˈpɑːrkɪŋ lɑːt/",
+       "stress": "PARK-ing lot",
+       "band": "4–5",
+       "grammar": "in + the parking lot",
+       "ex": "The parking lot is free for customers."
+      }
+     ],
+     "note": "parking lot (Mỹ) = car park (Anh)"
+    },
+    {
+     "mean": "tàu điện ngầm",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "subway",
+       "type": "Vocab",
+       "ipa": "/ˈsʌbweɪ/",
+       "stress": "SUB-way",
+       "band": "4–5",
+       "grammar": "by subway / take the subway",
+       "ex": "The subway is the fastest way to get downtown."
+      }
+     ],
+     "note": "subway (Mỹ) = underground / tube (Anh) · by subway / take the subway"
+    },
+    {
+     "mean": "hiệu thuốc",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "pharmacy",
+       "type": "Vocab",
+       "ipa": "/ˈfɑːrməsi/",
+       "stress": "PHAR-ma-cy",
+       "band": "4–5",
+       "grammar": "at + the pharmacy",
+       "ex": "There's a pharmacy next to the bus stop."
+      }
+     ],
+     "note": "pharmacy; Mỹ cũng nói drugstore; Anh: chemist's"
+    },
+    {
+     "mean": "cửa hàng bách hóa lớn",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "department store",
+       "type": "Collocation",
+       "ipa": "/dɪˈpɑːrtmənt stɔːr/",
+       "stress": "de-PART-ment store",
+       "band": "4–5",
+       "grammar": "in + a department store",
+       "ex": "You can buy clothes and furniture in a department store."
+      }
+     ],
+     "note": "department store bán quần áo, đồ gia dụng, nội thất trong 1 tòa nhà"
+    },
+    {
+     "mean": "giờ mở cửa",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "opening hours",
+       "type": "Collocation",
+       "ipa": "/ˈoʊpənɪŋ ˌaʊərz/",
+       "stress": "O-pen-ing hours",
+       "band": "4–5",
+       "grammar": "luôn số nhiều",
+       "ex": "The opening hours are ten a.m. to ten p.m."
+      }
+     ],
+     "note": "opening hours; Mỹ hay nói business hours / store hours"
+    },
+    {
+     "mean": "đối diện",
+     "cat": "C. Nơi chốn trong thành phố (dùng ở Listening)",
+     "items": [
+      {
+       "w": "opposite",
+       "type": "Vocab",
+       "ipa": "/ˈɑːpəzɪt/",
+       "stress": "OP-po-site",
+       "band": "4–5",
+       "grammar": "opposite + nơi chốn",
+       "ex": "The bank is opposite the post office."
+      }
+     ],
+     "note": "opposite + N (không có to) · Mỹ hay nói across from"
+    },
+    {
+     "mean": "đến chỗ làm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "get to work",
+       "type": "Collocation",
+       "ipa": "/ˌɡet tə ˈwɝːk/",
+       "stress": "get to WORK",
+       "band": "3–3.5",
+       "grammar": "get to + work / school / the office",
+       "ex": "How do you get to work every day?"
+      }
+     ],
+     "note": "get to work / school nhưng get home (không to)"
+    },
+    {
+     "mean": "ra khỏi nhà để đi làm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "leave for work",
+       "type": "Collocation",
+       "ipa": "/ˌliːv fər ˈwɝːk/",
+       "stress": "LEAVE for work",
+       "band": "4–5",
+       "grammar": "leave for + work / school; QK left",
+       "ex": "I leave for work at seven fifteen."
+      }
+     ],
+     "note": "leave for + nơi đến · leave + nơi đi (leave home)"
+    },
+    {
+     "mean": "sống gần chỗ làm",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "live close to work",
+       "type": "Collocation",
+       "ipa": "/ˌlɪv ˌkloʊs tə ˈwɝːk/",
+       "stress": "live CLOSE to work",
+       "band": "4–5",
+       "grammar": "live close to + work / the office",
+       "ex": "After I graduate, I want to live close to work."
+      }
+     ],
+     "note": "live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng)"
+    },
+    {
+     "mean": "đang bị trễ, sắp muộn",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "be running late",
+       "type": "Collocation",
+       "ipa": "/bi ˌrʌnɪŋ ˈleɪt/",
+       "stress": "be RUN-ning LATE",
+       "band": "5.5–6.5",
+       "grammar": "be + running late + for + N",
+       "ex": "Sorry, I'm running late. I'll be there in ten minutes."
+      }
+     ],
+     "note": "be running late dùng thì tiếp diễn; khác be late (đã muộn)"
+    },
+    {
+     "mean": "ứng dụng gọi xe (như Grab, Be)",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "a ride-hailing app",
+       "type": "Collocation",
+       "ipa": "/ə ˈraɪd ˌheɪlɪŋ æp/",
+       "stress": "a RIDE-hail-ing app",
+       "band": "5.5–6.5",
+       "grammar": "use / book a ride on + a ride-hailing app",
+       "ex": "I use a ride-hailing app when I'm running late."
+      }
+     ],
+     "note": "a ride-hailing app; book a ride on + app"
+    },
+    {
+     "mean": "đi chung xe với người khác",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "carpool",
+       "type": "Vocab",
+       "ipa": "/ˈkɑːrpuːl/",
+       "stress": "CAR-pool",
+       "band": "5.5–6.5",
+       "grammar": "carpool + with + sb / to + nơi chốn",
+       "ex": "Three of us carpool to the office to save money."
+      }
+     ],
+     "note": "carpool vừa là động từ vừa là danh từ"
+    },
+    {
+     "mean": "đi đường tắt",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "take a shortcut",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ə ˈʃɔːrtkʌt/",
+       "stress": "take‿a SHORT-cut",
+       "band": "5.5–6.5",
+       "grammar": "take a shortcut + through + N; QK took",
+       "ex": "I take a shortcut through a small alley to avoid traffic."
+      }
+     ],
+     "note": "take a shortcut + through / to + nơi chốn"
+    },
+    {
+     "mean": "đi sớm để tránh kẹt xe",
+     "cat": "D. Sinh viên năm cuối, mới đi làm",
+     "items": [
+      {
+       "w": "beat the traffic",
+       "type": "Idiom",
+       "ipa": "/ˌbiːt ðə ˈtræfɪk/",
+       "stress": "beat the TRAF-fic",
+       "band": "7–8",
+       "grammar": "leave early + to beat the traffic",
+       "ex": "I leave home at six thirty to beat the traffic."
+      }
+     ],
+     "note": "beat the traffic = đi trước giờ cao điểm"
     }
    ]
   }
