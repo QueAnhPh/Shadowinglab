@@ -59,6 +59,7 @@ function colWidths(header) {
   else if (h.startsWith('Thẻ|Từ cần đoán')) pct = [8, 24, 26, 42];
   else if (h.startsWith('Loại · từ gốc')) pct = [26, 30, 44];
   else if (h.startsWith('Bậc|Thêm gì')) pct = [8, 24, 34, 34];
+  else if (h === '#|Câu hỏi|Câu trả lời mẫu') pct = [5, 25, 70];
   else if (h.startsWith('#|Câu hỏi|A|R|E|F')) pct = [6, 52, 7, 7, 7, 7, 14];
   else if (h.startsWith('#|Câu hỏi|A|R|E')) pct = [6, 58, 8, 8, 8, 12];
   else if (h.startsWith('Ngày|Đức|Thư')) pct = [24, 36, 40];
@@ -196,8 +197,19 @@ function convert(md) {
   return out;
 }
 
-const student = convert(fs.readFileSync(require('path').join(DIR, 'student.md'), 'utf8'));
-const alts = convert(fs.readFileSync(require('path').join(DIR, 'alternatives.md'), 'utf8'));
+// [[ALTERNATIVES]] trong student.md = chèn alternatives.md vào đúng chỗ đó (Word HS: Vocab → Alternatives → Speaking → Listening → Homework, 1 section, mục lục đúng thứ tự)
+const SMD = fs.readFileSync(require('path').join(DIR, 'student.md'), 'utf8');
+const AMD = fs.readFileSync(require('path').join(DIR, 'alternatives.md'), 'utf8');
+const INLINE = SMD.includes('[[ALTERNATIVES]]');
+let student, alts;
+if (INLINE) {
+  const [p1, p2] = SMD.split('[[ALTERNATIVES]]');
+  student = [...convert(p1), ...convert(AMD), ...convert(p2)];
+  alts = [];
+} else {
+  student = convert(SMD);
+  alts = convert(AMD);
+}
 function tocBlock() {
   const out = [new Paragraph({ spacing: { after: 60 }, children: [new TextRun({ text: 'Mục lục', bold: true, size: 24, color: NAVY, font: FONT })] })];
   TOC.forEach(e => out.push(new Paragraph({ indent: { left: e.lvl === 1 ? 0 : 360 }, spacing: { after: 20 },
@@ -230,7 +242,7 @@ const doc = new Document({
   ] }] },
   sections: [
     { properties: pageProps, footers: footer, children: fill(student) },
-    { properties: pageProps, footers: footer, children: alts },
+    ...(alts.length ? [{ properties: pageProps, footers: footer, children: alts }] : []),
   ],
 });
 
