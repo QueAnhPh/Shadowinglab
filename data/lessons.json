@@ -19218,9 +19218,27 @@
        "band": "3–3.5",
        "grammar": "take + the bus / the subway / a taxi",
        "ex": "I take the bus when it rains."
+      },
+      {
+       "w": "catch the bus",
+       "type": "Collocation",
+       "ipa": "/ˌkætʃ ðə ˈbʌs/",
+       "stress": "CATCH the BUS",
+       "band": "4–5",
+       "grammar": "catch + the bus / the train; QK caught",
+       "ex": "I ran to catch the bus at seven."
+      },
+      {
+       "w": "miss the bus",
+       "type": "Collocation",
+       "ipa": "/ˌmɪs ðə ˈbʌs/",
+       "stress": "MISS the BUS",
+       "band": "3–3.5",
+       "grammar": "miss + the bus / the train",
+       "ex": "I missed the bus, so I was late for my interview."
       }
      ],
-     "note": "take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus"
+     "note": "take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus · catch the bus = kịp lên xe · miss the bus = lỡ xe"
     },
     {
      "mean": "đi xe máy (người lái)",
@@ -19234,9 +19252,18 @@
        "band": "3–3.5",
        "grammar": "ride + a motorbike / a bike; QK rode",
        "ex": "I learned to ride a motorbike when I was eighteen."
+      },
+      {
+       "w": "ride to work",
+       "type": "Collocation",
+       "ipa": "/ˌraɪd tə ˈwɝːk/",
+       "stress": "RIDE to WORK",
+       "band": "3–3.5",
+       "grammar": "ride + to work / to school",
+       "ex": "I ride to work every day, even in the rain."
       }
      ],
-     "note": "ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác"
+     "note": "ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác · ride to work = chạy xe đi làm (xe máy, xe đạp)"
     },
     {
      "mean": "đi bộ (tới đâu đó)",
@@ -19250,9 +19277,27 @@
        "band": "3–3.5",
        "grammar": "go / come + on foot",
        "ex": "The market is close, so I go there on foot."
+      },
+      {
+       "w": "walk to work",
+       "type": "Collocation",
+       "ipa": "/ˌwɔːk tə ˈwɝːk/",
+       "stress": "WALK to WORK",
+       "band": "3–3.5",
+       "grammar": "walk + to + nơi chốn",
+       "ex": "I walk to work because my office is close."
+      },
+      {
+       "w": "stretch my legs",
+       "type": "Idiom",
+       "ipa": "/ˌstretʃ maɪ ˈleɡz/",
+       "stress": "STRETCH my LEGS",
+       "band": "5.5–6.5",
+       "grammar": "stretch + my / your + legs",
+       "ex": "I walk around the block to stretch my legs after work."
       }
      ],
-     "note": "on foot, không nói by foot · walk to + nơi chốn = go on foot"
+     "note": "on foot, không nói by foot · walk to + nơi chốn = go on foot · walk to work = đi bộ đi làm · stretch my legs = đi bộ cho giãn gân cốt, thư giãn"
     },
     {
      "mean": "chở ai đi (bằng xe của mình)",
@@ -19266,9 +19311,27 @@
        "band": "4–5",
        "grammar": "give + sb + a ride + to / home",
        "ex": "My coworker gives me a ride home on Fridays."
+      },
+      {
+       "w": "give sb a lift",
+       "type": "Collocation",
+       "ipa": "/ˌɡɪv ə ˈlɪft/",
+       "stress": "give ... a LIFT",
+       "band": "4–5",
+       "grammar": "Anh; give + sb + a lift + to",
+       "ex": "Can you give me a lift to the station?"
+      },
+      {
+       "w": "get a ride",
+       "type": "Collocation",
+       "ipa": "/ˌɡet ə ˈraɪd/",
+       "stress": "get‿a RIDE",
+       "band": "4–5",
+       "grammar": "get a ride + from sb / to + nơi chốn",
+       "ex": "I got a ride home from my coworker."
       }
      ],
-     "note": "give sb a ride (Mỹ) = give sb a lift (Anh)"
+     "note": "give sb a ride (Mỹ) = give sb a lift (Anh) · get a ride = được người khác chở (ngược chiều với give)"
     },
     {
      "mean": "đi lại, di chuyển trong một nơi",
@@ -19282,9 +19345,27 @@
        "band": "5.5–6.5",
        "grammar": "get around + nơi chốn; by + phương tiện",
        "ex": "The easiest way to get around Hanoi is by motorbike."
+      },
+      {
+       "w": "get from A to B",
+       "type": "Collocation",
+       "ipa": "/ˌɡet frəm ˌeɪ tə ˈbiː/",
+       "stress": "get from A to B",
+       "band": "5.5–6.5",
+       "grammar": "get from + nơi + to + nơi",
+       "ex": "A motorbike is the fastest way to get from A to B in Saigon."
+      },
+      {
+       "w": "find my way around",
+       "type": "Collocation",
+       "ipa": "/ˌfaɪnd maɪ ˌweɪ əˈraʊnd/",
+       "stress": "FIND my WAY a-ROUND",
+       "band": "5.5–6.5",
+       "grammar": "find + my / your + way around + nơi chốn",
+       "ex": "Google Maps helps me find my way around a new city."
       }
      ],
-     "note": "get around + nơi chốn + by + phương tiện (↺ Buổi 3)"
+     "note": "get around + nơi chốn + by + phương tiện (↺ Buổi 3) · get from A to B = đi từ chỗ này tới chỗ kia · find my way around = tự biết đường đi"
     },
     {
      "mean": "tàu điện ngầm",
@@ -19298,9 +19379,27 @@
        "band": "4–5",
        "grammar": "by subway / take the subway",
        "ex": "The subway is the fastest way to get downtown."
+      },
+      {
+       "w": "metro",
+       "type": "Vocab",
+       "ipa": "/ˈmetroʊ/",
+       "stress": "MET-ro",
+       "band": "4–5",
+       "grammar": "the metro; by metro",
+       "ex": "The metro is cheaper than a taxi."
+      },
+      {
+       "w": "take the subway",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ðə ˈsʌbweɪ/",
+       "stress": "take the SUB-way",
+       "band": "3–3.5",
+       "grammar": "take + the subway / the metro",
+       "ex": "I take the subway to my internship."
       }
      ],
-     "note": "subway (Mỹ) = underground / tube (Anh) · by subway / take the subway"
+     "note": "subway (Mỹ) = underground / tube (Anh) · by subway / take the subway · metro = cách gọi ở nhiều nước, kể cả Việt Nam"
     },
     {
      "mean": "ứng dụng gọi xe (như Grab, Be)",
@@ -19314,9 +19413,27 @@
        "band": "5.5–6.5",
        "grammar": "use / book a ride on + a ride-hailing app",
        "ex": "I use a ride-hailing app when I'm running late."
+      },
+      {
+       "w": "book a ride",
+       "type": "Collocation",
+       "ipa": "/ˌbʊk ə ˈraɪd/",
+       "stress": "BOOK‿a RIDE",
+       "band": "4–5",
+       "grammar": "book a ride + on + app",
+       "ex": "I booked a ride on Grab because it was raining."
+      },
+      {
+       "w": "hail a taxi",
+       "type": "Collocation",
+       "ipa": "/ˌheɪl ə ˈtæksi/",
+       "stress": "HAIL‿a TAX-i",
+       "band": "5.5–6.5",
+       "grammar": "hail + a taxi / a cab",
+       "ex": "It's hard to hail a taxi at rush hour."
       }
      ],
-     "note": "a ride-hailing app; book a ride on + app"
+     "note": "a ride-hailing app; book a ride on + app · hail a taxi = vẫy taxi ngoài đường, khác book a ride trên app"
     },
     {
      "mean": "đi chung xe với người khác",
@@ -19330,9 +19447,27 @@
        "band": "5.5–6.5",
        "grammar": "carpool + with + sb / to + nơi chốn",
        "ex": "Three of us carpool to the office to save money."
+      },
+      {
+       "w": "share a ride",
+       "type": "Collocation",
+       "ipa": "/ˌʃer ə ˈraɪd/",
+       "stress": "SHARE‿a RIDE",
+       "band": "5.5–6.5",
+       "grammar": "share a ride + with sb",
+       "ex": "I share a ride with two coworkers who live nearby."
+      },
+      {
+       "w": "ride-sharing",
+       "type": "Vocab",
+       "ipa": "/ˈraɪd ˌʃerɪŋ/",
+       "stress": "RIDE-shar-ing",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được; a ride-sharing service",
+       "ex": "Ride-sharing helps us save money on gas."
       }
      ],
-     "note": "carpool vừa là động từ vừa là danh từ"
+     "note": "carpool vừa là động từ vừa là danh từ · share a ride = đi chung 1 chuyến · ride-sharing = dịch vụ / thói quen đi chung xe"
     },
     {
      "mean": "đi lại hằng ngày giữa nhà và chỗ làm / trường",
@@ -19459,9 +19594,27 @@
        "band": "4–5",
        "grammar": "at / during + rush hour",
        "ex": "Never drive downtown during rush hour."
+      },
+      {
+       "w": "peak hours",
+       "type": "Collocation",
+       "ipa": "/ˈpiːk ˌaʊərz/",
+       "stress": "PEAK hours",
+       "band": "5.5–6.5",
+       "grammar": "at / during + peak hours",
+       "ex": "The subway is packed during peak hours."
+      },
+      {
+       "w": "the morning rush",
+       "type": "Collocation",
+       "ipa": "/ðə ˌmɔːrnɪŋ ˈrʌʃ/",
+       "stress": "the MORN-ing RUSH",
+       "band": "5.5–6.5",
+       "grammar": "the morning / evening + rush",
+       "ex": "I leave early to avoid the morning rush."
       }
      ],
-     "note": "rush hour không có -s khi nói chung: at / during rush hour"
+     "note": "rush hour không có -s khi nói chung: at / during rush hour · peak hours luôn số nhiều · the morning / evening rush = đợt cao điểm sáng / chiều"
     },
     {
      "mean": "bị kẹt xe",
@@ -19475,9 +19628,27 @@
        "band": "4–5",
        "grammar": "be / get + stuck in traffic",
        "ex": "I was stuck in traffic for an hour yesterday."
+      },
+      {
+       "w": "get caught in traffic",
+       "type": "Collocation",
+       "ipa": "/ˌɡet ˌkɔːt ɪn ˈtræfɪk/",
+       "stress": "get CAUGHT‿in TRAF-fic",
+       "band": "4–5",
+       "grammar": "get caught in + traffic / the rain; QK got caught",
+       "ex": "I got caught in traffic and missed the first meeting."
+      },
+      {
+       "w": "be held up",
+       "type": "Phrasal verb",
+       "ipa": "/bi ˌheld ˈʌp/",
+       "stress": "be HELD‿UP",
+       "band": "5.5–6.5",
+       "grammar": "be held up + in traffic / at work",
+       "ex": "Sorry, I was held up in traffic."
       }
      ],
-     "note": "be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/"
+     "note": "be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/ · get caught in = bị kẹt (bất ngờ) · be held up = bị giữ chân, trễ (lý do lịch sự khi xin lỗi)"
     },
     {
      "mean": "đến chỗ làm",
@@ -19491,9 +19662,27 @@
        "band": "3–3.5",
        "grammar": "get to + work / school / the office",
        "ex": "How do you get to work every day?"
+      },
+      {
+       "w": "arrive at work",
+       "type": "Collocation",
+       "ipa": "/əˌraɪv ət ˈwɝːk/",
+       "stress": "ar-RIVE at WORK",
+       "band": "3–3.5",
+       "grammar": "arrive at + work / the office; arrive in + thành phố",
+       "ex": "I usually arrive at work at eight."
+      },
+      {
+       "w": "clock in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌklɑːk ˈɪn/",
+       "stress": "clock‿IN",
+       "band": "5.5–6.5",
+       "grammar": "clock in / clock out",
+       "ex": "I clock in at eight thirty every morning."
       }
      ],
-     "note": "get to work / school nhưng get home (không to)"
+     "note": "get to work / school nhưng get home (không to) · arrive at work (tới nơi) · clock in = chấm công vào (clock out = chấm công ra)"
     },
     {
      "mean": "ra khỏi nhà để đi làm",
@@ -19507,9 +19696,27 @@
        "band": "4–5",
        "grammar": "leave for + work / school; QK left",
        "ex": "I leave for work at seven fifteen."
+      },
+      {
+       "w": "leave home",
+       "type": "Collocation",
+       "ipa": "/ˌliːv ˈhoʊm/",
+       "stress": "leave HOME",
+       "band": "3–3.5",
+       "grammar": "leave + home (không có for / to)",
+       "ex": "I leave home at seven."
+      },
+      {
+       "w": "head out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhed ˈaʊt/",
+       "stress": "head‿OUT",
+       "band": "5.5–6.5",
+       "grammar": "head out + for / to + nơi chốn",
+       "ex": "I head out for work at seven fifteen."
       }
      ],
-     "note": "leave for + nơi đến · leave + nơi đi (leave home)"
+     "note": "leave for + nơi đến · leave + nơi đi (leave home) · head out = thân mật hơn leave"
     },
     {
      "mean": "đang bị trễ, sắp muộn",
@@ -19523,9 +19730,27 @@
        "band": "5.5–6.5",
        "grammar": "be + running late + for + N",
        "ex": "Sorry, I'm running late. I'll be there in ten minutes."
+      },
+      {
+       "w": "be late for",
+       "type": "Collocation",
+       "ipa": "/bi ˈleɪt fər/",
+       "stress": "be LATE for",
+       "band": "3–3.5",
+       "grammar": "be late for + work / class / a meeting",
+       "ex": "I was late for class because of the rain."
+      },
+      {
+       "w": "be behind schedule",
+       "type": "Collocation",
+       "ipa": "/bi bɪˌhaɪnd ˈskedʒuːl/",
+       "stress": "be be-HIND SCHED-ule",
+       "band": "5.5–6.5",
+       "grammar": "be + behind schedule",
+       "ex": "The bus is ten minutes behind schedule."
       }
      ],
-     "note": "be running late dùng thì tiếp diễn; khác be late (đã muộn)"
+     "note": "be running late dùng thì tiếp diễn; khác be late (đã muộn) · be late for + N = đã trễ · be behind schedule = chậm so với lịch (xe, dự án)"
     },
     {
      "mean": "đi đường tắt",
@@ -19539,9 +19764,27 @@
        "band": "5.5–6.5",
        "grammar": "take a shortcut + through + N; QK took",
        "ex": "I take a shortcut through a small alley to avoid traffic."
+      },
+      {
+       "w": "cut through",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈθruː/",
+       "stress": "cut THROUGH",
+       "band": "5.5–6.5",
+       "grammar": "cut through + a park / an alley",
+       "ex": "I cut through the park to save five minutes."
+      },
+      {
+       "w": "take back roads",
+       "type": "Collocation",
+       "ipa": "/ˌteɪk ˈbæk ˌroʊdz/",
+       "stress": "take BACK roads",
+       "band": "5.5–6.5",
+       "grammar": "take + back roads / a back road",
+       "ex": "I take back roads to avoid the main street."
       }
      ],
-     "note": "take a shortcut + through / to + nơi chốn"
+     "note": "take a shortcut + through / to + nơi chốn · cut through = đi xuyên qua (công viên, hẻm) · back roads = đường nhỏ, ít xe"
     },
     {
      "mean": "đi sớm để tránh kẹt xe",
@@ -19555,9 +19798,27 @@
        "band": "7–8",
        "grammar": "leave early + to beat the traffic",
        "ex": "I leave home at six thirty to beat the traffic."
+      },
+      {
+       "w": "avoid the traffic",
+       "type": "Collocation",
+       "ipa": "/əˌvɔɪd ðə ˈtræfɪk/",
+       "stress": "a-VOID the TRAF-fic",
+       "band": "4–5",
+       "grammar": "avoid + the traffic / rush hour",
+       "ex": "I work from home on Fridays to avoid the traffic."
+      },
+      {
+       "w": "get a head start",
+       "type": "Idiom",
+       "ipa": "/ˌɡet ə ˌhed ˈstɑːrt/",
+       "stress": "get‿a HEAD START",
+       "band": "7–8",
+       "grammar": "get a head start + on + N",
+       "ex": "I leave at six to get a head start on the day."
       }
      ],
-     "note": "beat the traffic = đi trước giờ cao điểm"
+     "note": "beat the traffic = đi trước giờ cao điểm · avoid the traffic = trung tính · get a head start = bắt đầu sớm hơn người khác"
     },
     {
      "mean": "khu phố, khu mình đang sống",
@@ -19960,9 +20221,27 @@
        "band": "5.5–6.5",
        "grammar": "be within walking distance + of + N",
        "ex": "My apartment is within walking distance of my office."
+      },
+      {
+       "w": "nearby",
+       "type": "Vocab",
+       "ipa": "/ˌnɪrˈbaɪ/",
+       "stress": "near-BY",
+       "band": "3–3.5",
+       "grammar": "a nearby park / a park nearby",
+       "ex": "There's a nice park nearby."
+      },
+      {
+       "w": "a stone's throw",
+       "type": "Idiom",
+       "ipa": "/ə ˌstoʊnz ˈθroʊ/",
+       "stress": "a STONE'S THROW",
+       "band": "7–8",
+       "grammar": "a stone's throw + from + nơi chốn",
+       "ex": "My office is just a stone's throw from the subway station."
       }
      ],
-     "note": "within walking distance + of + nơi chốn"
+     "note": "within walking distance + of + nơi chốn · nearby = gần (đứng trước hoặc sau danh từ) · a stone's throw = rất gần, thân mật"
     },
     {
      "mean": "sống gần chỗ làm",
@@ -19976,9 +20255,18 @@
        "band": "4–5",
        "grammar": "live close to + work / the office",
        "ex": "After I graduate, I want to live close to work."
+      },
+      {
+       "w": "move closer to work",
+       "type": "Collocation",
+       "ipa": "/ˌmuːv ˌkloʊsər tə ˈwɝːk/",
+       "stress": "MOVE CLOS-er to WORK",
+       "band": "4–5",
+       "grammar": "move closer to + work / the office",
+       "ex": "I want to move closer to work to save time."
       }
      ],
-     "note": "live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng)"
+     "note": "live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng) · move closer to = chuyển nhà tới gần hơn"
     },
     {
      "mean": "đi làm việc vặt (mua đồ, ra ngân hàng)",
@@ -19992,9 +20280,18 @@
        "band": "5.5–6.5",
        "grammar": "run + errands; QK ran",
        "ex": "I run errands on Saturday mornings."
+      },
+      {
+       "w": "do the grocery shopping",
+       "type": "Collocation",
+       "ipa": "/ˌduː ðə ˈɡroʊsəri ˌʃɑːpɪŋ/",
+       "stress": "do the GRO-cer-y shop-ping",
+       "band": "4–5",
+       "grammar": "do + the shopping / the grocery shopping",
+       "ex": "I do the grocery shopping on Sunday mornings."
       }
      ],
-     "note": "errand đếm được: run errands / run an errand"
+     "note": "errand đếm được: run errands / run an errand · do the grocery shopping = đi chợ, mua đồ ăn (1 loại việc vặt)"
     },
     {
      "mean": "trung tâm thương mại",
@@ -20008,9 +20305,27 @@
        "band": "3–3.5",
        "grammar": "at / in + the shopping mall",
        "ex": "A new shopping mall opened near my house."
+      },
+      {
+       "w": "shopping center",
+       "type": "Vocab",
+       "ipa": "/ˈʃɑːpɪŋ ˌsentər/",
+       "stress": "SHOP-ping cen-ter",
+       "band": "3–3.5",
+       "grammar": "at + the shopping center",
+       "ex": "The shopping center has a big food court."
+      },
+      {
+       "w": "hang out at the mall",
+       "type": "Collocation",
+       "ipa": "/ˌhæŋ aʊt ət ðə ˈmɔːl/",
+       "stress": "hang OUT at the MALL",
+       "band": "4–5",
+       "grammar": "hang out at + the mall",
+       "ex": "We hang out at the mall on rainy weekends."
       }
      ],
-     "note": "shopping mall (Mỹ) = shopping centre (Anh); department store = 1 cửa hàng lớn nhiều tầng"
+     "note": "shopping mall (Mỹ) = shopping centre (Anh); department store = 1 cửa hàng lớn nhiều tầng · shopping center (Mỹ) = shopping centre (Anh) · hang out at the mall = đi chơi ở trung tâm thương mại"
     },
     {
      "mean": "trạm xe buýt",
@@ -20024,9 +20339,27 @@
        "band": "3–3.5",
        "grammar": "at + the bus stop",
        "ex": "The bus stop is right in front of my school."
+      },
+      {
+       "w": "bus station",
+       "type": "Collocation",
+       "ipa": "/ˈbʌs ˌsteɪʃn/",
+       "stress": "BUS sta-tion",
+       "band": "3–3.5",
+       "grammar": "at + the bus station",
+       "ex": "I take the night bus from the bus station."
+      },
+      {
+       "w": "wait for the bus",
+       "type": "Collocation",
+       "ipa": "/ˌweɪt fər ðə ˈbʌs/",
+       "stress": "WAIT for the BUS",
+       "band": "3–3.5",
+       "grammar": "wait for + the bus",
+       "ex": "I wait for the bus for ten minutes every morning."
       }
      ],
-     "note": "at the bus stop · bus station = bến xe lớn"
+     "note": "at the bus stop · bus station = bến xe lớn · wait for the bus, không nói wait the bus"
     },
     {
      "mean": "bãi đỗ xe",
@@ -20040,9 +20373,27 @@
        "band": "4–5",
        "grammar": "in + the parking lot",
        "ex": "The parking lot is free for customers."
+      },
+      {
+       "w": "parking space",
+       "type": "Collocation",
+       "ipa": "/ˈpɑːrkɪŋ ˌspeɪs/",
+       "stress": "PARK-ing space",
+       "band": "4–5",
+       "grammar": "find + a parking space",
+       "ex": "It's hard to find a parking space downtown."
+      },
+      {
+       "w": "park",
+       "type": "Vocab",
+       "ipa": "/pɑːrk/",
+       "stress": "PARK",
+       "band": "3–3.5",
+       "grammar": "park + the car / my motorbike + in / at",
+       "ex": "I park my motorbike in the basement."
       }
      ],
-     "note": "parking lot (Mỹ) = car park (Anh)"
+     "note": "parking lot (Mỹ) = car park (Anh) · parking space = 1 chỗ đỗ · park = đỗ xe (động từ)"
     },
     {
      "mean": "hiệu thuốc",
@@ -20056,9 +20407,27 @@
        "band": "4–5",
        "grammar": "at + the pharmacy",
        "ex": "There's a pharmacy next to the bus stop."
+      },
+      {
+       "w": "drugstore",
+       "type": "Vocab",
+       "ipa": "/ˈdrʌɡstɔːr/",
+       "stress": "DRUG-store",
+       "band": "4–5",
+       "grammar": "at + the drugstore (Mỹ)",
+       "ex": "I bought some cold medicine at the drugstore."
+      },
+      {
+       "w": "pharmacist",
+       "type": "Vocab",
+       "ipa": "/ˈfɑːrməsɪst/",
+       "stress": "PHAR-ma-cist",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "The pharmacist told me to take it after meals."
       }
      ],
-     "note": "pharmacy; Mỹ cũng nói drugstore; Anh: chemist's"
+     "note": "pharmacy; Mỹ cũng nói drugstore; Anh: chemist's · pharmacist = dược sĩ (người)"
     },
     {
      "mean": "cửa hàng bách hóa lớn",
@@ -20072,9 +20441,27 @@
        "band": "4–5",
        "grammar": "in + a department store",
        "ex": "You can buy clothes and furniture in a department store."
+      },
+      {
+       "w": "a convenience store",
+       "type": "Collocation",
+       "ipa": "/ə kənˈviːniəns ˌstɔːr/",
+       "stress": "a con-VEN-ience store",
+       "band": "4–5",
+       "grammar": "at + a convenience store",
+       "ex": "There's a convenience store at the end of my street."
+      },
+      {
+       "w": "browse",
+       "type": "Vocab",
+       "ipa": "/braʊz/",
+       "stress": "BROWSE",
+       "band": "5.5–6.5",
+       "grammar": "browse + in a store / online",
+       "ex": "I like to browse in department stores on weekends."
       }
      ],
-     "note": "department store bán quần áo, đồ gia dụng, nội thất trong 1 tòa nhà"
+     "note": "department store bán quần áo, đồ gia dụng, nội thất trong 1 tòa nhà · a convenience store = cửa hàng tiện lợi nhỏ (Circle K, 7-Eleven) · browse = xem đồ, chưa chắc mua"
     },
     {
      "mean": "giờ mở cửa",
@@ -20088,9 +20475,27 @@
        "band": "4–5",
        "grammar": "luôn số nhiều",
        "ex": "The opening hours are ten a.m. to ten p.m."
+      },
+      {
+       "w": "open 24/7",
+       "type": "Collocation",
+       "ipa": "/ˌoʊpən ˌtwentiˌfɔːr ˈsevən/",
+       "stress": "O-pen twen-ty-four SEV-en",
+       "band": "4–5",
+       "grammar": "be + open 24/7",
+       "ex": "The convenience store is open 24/7."
+      },
+      {
+       "w": "closing time",
+       "type": "Collocation",
+       "ipa": "/ˈkloʊzɪŋ ˌtaɪm/",
+       "stress": "CLOS-ing time",
+       "band": "4–5",
+       "grammar": "at / near + closing time",
+       "ex": "The mall gets quiet near closing time."
       }
      ],
-     "note": "opening hours; Mỹ hay nói business hours / store hours"
+     "note": "opening hours; Mỹ hay nói business hours / store hours · open 24/7 = mở cả ngày đêm · closing time = giờ đóng cửa"
     },
     {
      "mean": "đối diện",
@@ -20104,9 +20509,27 @@
        "band": "4–5",
        "grammar": "opposite + nơi chốn",
        "ex": "The bank is opposite the post office."
+      },
+      {
+       "w": "across from",
+       "type": "Collocation",
+       "ipa": "/əˈkrɔːs frəm/",
+       "stress": "a-CROSS from",
+       "band": "3–3.5",
+       "grammar": "across from + nơi chốn",
+       "ex": "The pharmacy is across from the bus stop."
+      },
+      {
+       "w": "next to",
+       "type": "Collocation",
+       "ipa": "/ˈnekst tə/",
+       "stress": "NEXT to",
+       "band": "3–3.5",
+       "grammar": "next to + nơi chốn",
+       "ex": "There's a coffee shop next to my office."
       }
      ],
-     "note": "opposite + N (không có to) · Mỹ hay nói across from"
+     "note": "opposite + N (không có to) · Mỹ hay nói across from · across from = đối diện (Mỹ) · next to = ngay bên cạnh, không phải đối diện"
     }
    ]
   }

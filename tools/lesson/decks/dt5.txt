@@ -15,22 +15,37 @@ scooter|Vocab|/ˈskuːtər/|SCOO-ter|4–5|ride + a scooter (Mỹ)|My sister rid
 motorcycle|Vocab|/ˈmoʊtərsaɪkl/|MO-tor-cy-cle|4–5|ride + a motorcycle|My uncle rides a big motorcycle on weekends.
 get on|Phrasal verb|/ˌɡet ˈɑːn/|get‿ON|3–3.5|get on / off + the bus, the subway, a motorbike|I get on the bus at seven and get off near my office.
 wear a helmet|Collocation|/ˌwer ə ˈhelmɪt/|wear‿a HEL-met|4–5|wear + a helmet|You must wear a helmet on a motorbike.
-= đi xe buýt | take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus
+= đi xe buýt | take the bus = go by bus · get on / off the bus = lên / xuống · không nói by a bus · catch the bus = kịp lên xe · miss the bus = lỡ xe
 take the bus|Collocation|/ˌteɪk ðə ˈbʌs/|take the BUS|3–3.5|take + the bus / the subway / a taxi|I take the bus when it rains.
-= đi xe máy (người lái) | ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác
+catch the bus|Collocation|/ˌkætʃ ðə ˈbʌs/|CATCH the BUS|4–5|catch + the bus / the train; QK caught|I ran to catch the bus at seven.
+miss the bus|Collocation|/ˌmɪs ðə ˈbʌs/|MISS the BUS|3–3.5|miss + the bus / the train|I missed the bus, so I was late for my interview.
+= đi xe máy (người lái) | ride a motorbike / a bike nhưng drive a car · give sb a ride = chở người khác · ride to work = chạy xe đi làm (xe máy, xe đạp)
 ride a motorbike|Collocation|/ˌraɪd ə ˈmoʊtərbaɪk/|ride‿a MO-tor-bike|3–3.5|ride + a motorbike / a bike; QK rode|I learned to ride a motorbike when I was eighteen.
-= đi bộ (tới đâu đó) | on foot, không nói by foot · walk to + nơi chốn = go on foot
+ride to work|Collocation|/ˌraɪd tə ˈwɝːk/|RIDE to WORK|3–3.5|ride + to work / to school|I ride to work every day, even in the rain.
+= đi bộ (tới đâu đó) | on foot, không nói by foot · walk to + nơi chốn = go on foot · walk to work = đi bộ đi làm · stretch my legs = đi bộ cho giãn gân cốt, thư giãn
 on foot|Collocation|/ɑːn ˈfʊt/|on FOOT|3–3.5|go / come + on foot|The market is close, so I go there on foot.
-= chở ai đi (bằng xe của mình) | give sb a ride (Mỹ) = give sb a lift (Anh)
+walk to work|Collocation|/ˌwɔːk tə ˈwɝːk/|WALK to WORK|3–3.5|walk + to + nơi chốn|I walk to work because my office is close.
+stretch my legs|Idiom|/ˌstretʃ maɪ ˈleɡz/|STRETCH my LEGS|5.5–6.5|stretch + my / your + legs|I walk around the block to stretch my legs after work.
+= chở ai đi (bằng xe của mình) | give sb a ride (Mỹ) = give sb a lift (Anh) · get a ride = được người khác chở (ngược chiều với give)
 give sb a ride|Collocation|/ˌɡɪv ə ˈraɪd/|give ... a RIDE|4–5|give + sb + a ride + to / home|My coworker gives me a ride home on Fridays.
-= đi lại, di chuyển trong một nơi | get around + nơi chốn + by + phương tiện (↺ Buổi 3)
+give sb a lift|Collocation|/ˌɡɪv ə ˈlɪft/|give ... a LIFT|4–5|Anh; give + sb + a lift + to|Can you give me a lift to the station?
+get a ride|Collocation|/ˌɡet ə ˈraɪd/|get‿a RIDE|4–5|get a ride + from sb / to + nơi chốn|I got a ride home from my coworker.
+= đi lại, di chuyển trong một nơi | get around + nơi chốn + by + phương tiện (↺ Buổi 3) · get from A to B = đi từ chỗ này tới chỗ kia · find my way around = tự biết đường đi
 get around|Phrasal verb|/ˌɡet əˈraʊnd/|get‿a-ROUND|5.5–6.5|get around + nơi chốn; by + phương tiện|The easiest way to get around Hanoi is by motorbike.
-= tàu điện ngầm | subway (Mỹ) = underground / tube (Anh) · by subway / take the subway
+get from A to B|Collocation|/ˌɡet frəm ˌeɪ tə ˈbiː/|get from A to B|5.5–6.5|get from + nơi + to + nơi|A motorbike is the fastest way to get from A to B in Saigon.
+find my way around|Collocation|/ˌfaɪnd maɪ ˌweɪ əˈraʊnd/|FIND my WAY a-ROUND|5.5–6.5|find + my / your + way around + nơi chốn|Google Maps helps me find my way around a new city.
+= tàu điện ngầm | subway (Mỹ) = underground / tube (Anh) · by subway / take the subway · metro = cách gọi ở nhiều nước, kể cả Việt Nam
 subway|Vocab|/ˈsʌbweɪ/|SUB-way|4–5|by subway / take the subway|The subway is the fastest way to get downtown.
-= ứng dụng gọi xe (như Grab, Be) | a ride-hailing app; book a ride on + app
+metro|Vocab|/ˈmetroʊ/|MET-ro|4–5|the metro; by metro|The metro is cheaper than a taxi.
+take the subway|Collocation|/ˌteɪk ðə ˈsʌbweɪ/|take the SUB-way|3–3.5|take + the subway / the metro|I take the subway to my internship.
+= ứng dụng gọi xe (như Grab, Be) | a ride-hailing app; book a ride on + app · hail a taxi = vẫy taxi ngoài đường, khác book a ride trên app
 a ride-hailing app|Collocation|/ə ˈraɪd ˌheɪlɪŋ æp/|a RIDE-hail-ing app|5.5–6.5|use / book a ride on + a ride-hailing app|I use a ride-hailing app when I'm running late.
-= đi chung xe với người khác | carpool vừa là động từ vừa là danh từ
+book a ride|Collocation|/ˌbʊk ə ˈraɪd/|BOOK‿a RIDE|4–5|book a ride + on + app|I booked a ride on Grab because it was raining.
+hail a taxi|Collocation|/ˌheɪl ə ˈtæksi/|HAIL‿a TAX-i|5.5–6.5|hail + a taxi / a cab|It's hard to hail a taxi at rush hour.
+= đi chung xe với người khác | carpool vừa là động từ vừa là danh từ · share a ride = đi chung 1 chuyến · ride-sharing = dịch vụ / thói quen đi chung xe
 carpool|Vocab|/ˈkɑːrpuːl/|CAR-pool|5.5–6.5|carpool + with + sb / to + nơi chốn|Three of us carpool to the office to save money.
+share a ride|Collocation|/ˌʃer ə ˈraɪd/|SHARE‿a RIDE|5.5–6.5|share a ride + with sb|I share a ride with two coworkers who live nearby.
+ride-sharing|Vocab|/ˈraɪd ˌʃerɪŋ/|RIDE-shar-ing|5.5–6.5|không đếm được; a ride-sharing service|Ride-sharing helps us save money on gas.
 @Traffic & commuting · Kẹt xe, đi làm
 = đi lại hằng ngày giữa nhà và chỗ làm / trường | commute = động từ và danh từ · a long / daily commute = quãng đi lại · pick sb up = đón · drop sb off = thả xuống, chở tới
 commute|Vocab|/kəˈmjuːt/|com-MUTE|5.5–6.5|commute + to / from + nơi chốn; my commute (danh từ)|I commute forty minutes to my internship every day.
@@ -45,20 +60,34 @@ heavy traffic|Collocation|/ˌhevi ˈtræfɪk/|HEAV-y TRAF-fic|4–5|there is + h
 congestion|Vocab|/kənˈdʒestʃən/|con-GES-tion|7–8|không đếm được; traffic congestion|Congestion downtown is worse every year.
 pile up|Phrasal verb|/ˌpaɪl ˈʌp/|pile‿UP|7–8|không tân ngữ: traffic piles up|Traffic piles up near the bridge after five.
 bumper-to-bumper|Idiom|/ˌbʌmpər tə ˈbʌmpər/|BUMP-er to BUMP-er|7–8|bumper-to-bumper traffic|The cars were bumper-to-bumper all the way home.
-= giờ cao điểm | rush hour không có -s khi nói chung: at / during rush hour
+= giờ cao điểm | rush hour không có -s khi nói chung: at / during rush hour · peak hours luôn số nhiều · the morning / evening rush = đợt cao điểm sáng / chiều
 rush hour|Collocation|/ˈrʌʃ ˌaʊər/|RUSH hour|4–5|at / during + rush hour|Never drive downtown during rush hour.
-= bị kẹt xe | be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/
+peak hours|Collocation|/ˈpiːk ˌaʊərz/|PEAK hours|5.5–6.5|at / during + peak hours|The subway is packed during peak hours.
+the morning rush|Collocation|/ðə ˌmɔːrnɪŋ ˈrʌʃ/|the MORN-ing RUSH|5.5–6.5|the morning / evening + rush|I leave early to avoid the morning rush.
+= bị kẹt xe | be / get stuck in traffic · stuck là quá khứ phân từ của stick, đọc /stʌk/ · get caught in = bị kẹt (bất ngờ) · be held up = bị giữ chân, trễ (lý do lịch sự khi xin lỗi)
 be stuck in traffic|Collocation|/bi ˌstʌk ɪn ˈtræfɪk/|be STUCK‿in TRAF-fic|4–5|be / get + stuck in traffic|I was stuck in traffic for an hour yesterday.
-= đến chỗ làm | get to work / school nhưng get home (không to)
+get caught in traffic|Collocation|/ˌɡet ˌkɔːt ɪn ˈtræfɪk/|get CAUGHT‿in TRAF-fic|4–5|get caught in + traffic / the rain; QK got caught|I got caught in traffic and missed the first meeting.
+be held up|Phrasal verb|/bi ˌheld ˈʌp/|be HELD‿UP|5.5–6.5|be held up + in traffic / at work|Sorry, I was held up in traffic.
+= đến chỗ làm | get to work / school nhưng get home (không to) · arrive at work (tới nơi) · clock in = chấm công vào (clock out = chấm công ra)
 get to work|Collocation|/ˌɡet tə ˈwɝːk/|get to WORK|3–3.5|get to + work / school / the office|How do you get to work every day?
-= ra khỏi nhà để đi làm | leave for + nơi đến · leave + nơi đi (leave home)
+arrive at work|Collocation|/əˌraɪv ət ˈwɝːk/|ar-RIVE at WORK|3–3.5|arrive at + work / the office; arrive in + thành phố|I usually arrive at work at eight.
+clock in|Phrasal verb|/ˌklɑːk ˈɪn/|clock‿IN|5.5–6.5|clock in / clock out|I clock in at eight thirty every morning.
+= ra khỏi nhà để đi làm | leave for + nơi đến · leave + nơi đi (leave home) · head out = thân mật hơn leave
 leave for work|Collocation|/ˌliːv fər ˈwɝːk/|LEAVE for work|4–5|leave for + work / school; QK left|I leave for work at seven fifteen.
-= đang bị trễ, sắp muộn | be running late dùng thì tiếp diễn; khác be late (đã muộn)
+leave home|Collocation|/ˌliːv ˈhoʊm/|leave HOME|3–3.5|leave + home (không có for / to)|I leave home at seven.
+head out|Phrasal verb|/ˌhed ˈaʊt/|head‿OUT|5.5–6.5|head out + for / to + nơi chốn|I head out for work at seven fifteen.
+= đang bị trễ, sắp muộn | be running late dùng thì tiếp diễn; khác be late (đã muộn) · be late for + N = đã trễ · be behind schedule = chậm so với lịch (xe, dự án)
 be running late|Collocation|/bi ˌrʌnɪŋ ˈleɪt/|be RUN-ning LATE|5.5–6.5|be + running late + for + N|Sorry, I'm running late. I'll be there in ten minutes.
-= đi đường tắt | take a shortcut + through / to + nơi chốn
+be late for|Collocation|/bi ˈleɪt fər/|be LATE for|3–3.5|be late for + work / class / a meeting|I was late for class because of the rain.
+be behind schedule|Collocation|/bi bɪˌhaɪnd ˈskedʒuːl/|be be-HIND SCHED-ule|5.5–6.5|be + behind schedule|The bus is ten minutes behind schedule.
+= đi đường tắt | take a shortcut + through / to + nơi chốn · cut through = đi xuyên qua (công viên, hẻm) · back roads = đường nhỏ, ít xe
 take a shortcut|Collocation|/ˌteɪk ə ˈʃɔːrtkʌt/|take‿a SHORT-cut|5.5–6.5|take a shortcut + through + N; QK took|I take a shortcut through a small alley to avoid traffic.
-= đi sớm để tránh kẹt xe | beat the traffic = đi trước giờ cao điểm
+cut through|Phrasal verb|/ˌkʌt ˈθruː/|cut THROUGH|5.5–6.5|cut through + a park / an alley|I cut through the park to save five minutes.
+take back roads|Collocation|/ˌteɪk ˈbæk ˌroʊdz/|take BACK roads|5.5–6.5|take + back roads / a back road|I take back roads to avoid the main street.
+= đi sớm để tránh kẹt xe | beat the traffic = đi trước giờ cao điểm · avoid the traffic = trung tính · get a head start = bắt đầu sớm hơn người khác
 beat the traffic|Idiom|/ˌbiːt ðə ˈtræfɪk/|beat the TRAF-fic|7–8|leave early + to beat the traffic|I leave home at six thirty to beat the traffic.
+avoid the traffic|Collocation|/əˌvɔɪd ðə ˈtræfɪk/|a-VOID the TRAF-fic|4–5|avoid + the traffic / rush hour|I work from home on Fridays to avoid the traffic.
+get a head start|Idiom|/ˌɡet ə ˌhed ˈstɑːrt/|get‿a HEAD START|7–8|get a head start + on + N|I leave at six to get a head start on the day.
 @My neighborhood & hometown · Nơi mình sống
 = khu phố, khu mình đang sống | neighborhood (Mỹ) = neighbourhood (Anh) · area chung chung · a residential area = khu dân cư, ít cửa hàng · in my neck of the woods = thân mật
 neighborhood|Vocab|/ˈneɪbərhʊd/|NEIGH-bor-hood|4–5|in my neighborhood; đếm được|My neighborhood has a lot of small coffee shops.
@@ -105,24 +134,42 @@ air pollution|Collocation|/ˈer pəˌluːʃn/|AIR pol-lu-tion|4–5|không đế
 smog|Vocab|/smɑːɡ/|SMOG|5.5–6.5|không đếm được|You can't see the buildings because of the smog.
 exhaust fumes|Collocation|/ɪɡˈzɔːst fjuːmz/|ex-HAUST fumes|7–8|luôn số nhiều|The exhaust fumes at rush hour give me a headache.
 clean up|Phrasal verb|/ˌkliːn ˈʌp/|clean‿UP|4–5|tách được: clean up the river / clean it up|The city is trying to clean up the lakes.
-= gần, đi bộ tới được | within walking distance + of + nơi chốn
+= gần, đi bộ tới được | within walking distance + of + nơi chốn · nearby = gần (đứng trước hoặc sau danh từ) · a stone's throw = rất gần, thân mật
 within walking distance|Collocation|/wɪˌðɪn ˈwɔːkɪŋ ˌdɪstəns/|with-in WALK-ing dis-tance|5.5–6.5|be within walking distance + of + N|My apartment is within walking distance of my office.
-= sống gần chỗ làm | live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng)
+nearby|Vocab|/ˌnɪrˈbaɪ/|near-BY|3–3.5|a nearby park / a park nearby|There's a nice park nearby.
+a stone's throw|Idiom|/ə ˌstoʊnz ˈθroʊ/|a STONE'S THROW|7–8|a stone's throw + from + nơi chốn|My office is just a stone's throw from the subway station.
+= sống gần chỗ làm | live close to + N · close đọc /kloʊs/ (tính từ), khác close /kloʊz/ (đóng) · move closer to = chuyển nhà tới gần hơn
 live close to work|Collocation|/ˌlɪv ˌkloʊs tə ˈwɝːk/|live CLOSE to work|4–5|live close to + work / the office|After I graduate, I want to live close to work.
+move closer to work|Collocation|/ˌmuːv ˌkloʊsər tə ˈwɝːk/|MOVE CLOS-er to WORK|4–5|move closer to + work / the office|I want to move closer to work to save time.
 @Places in town · Nơi chốn trong thành phố
-= đi làm việc vặt (mua đồ, ra ngân hàng) | errand đếm được: run errands / run an errand
+= đi làm việc vặt (mua đồ, ra ngân hàng) | errand đếm được: run errands / run an errand · do the grocery shopping = đi chợ, mua đồ ăn (1 loại việc vặt)
 run errands|Collocation|/ˌrʌn ˈerəndz/|run ER-rands|5.5–6.5|run + errands; QK ran|I run errands on Saturday mornings.
-= trung tâm thương mại | shopping mall (Mỹ) = shopping centre (Anh); department store = 1 cửa hàng lớn nhiều tầng
+do the grocery shopping|Collocation|/ˌduː ðə ˈɡroʊsəri ˌʃɑːpɪŋ/|do the GRO-cer-y shop-ping|4–5|do + the shopping / the grocery shopping|I do the grocery shopping on Sunday mornings.
+= trung tâm thương mại | shopping mall (Mỹ) = shopping centre (Anh); department store = 1 cửa hàng lớn nhiều tầng · shopping center (Mỹ) = shopping centre (Anh) · hang out at the mall = đi chơi ở trung tâm thương mại
 shopping mall|Collocation|/ˈʃɑːpɪŋ mɔːl/|SHOP-ping mall|3–3.5|at / in + the shopping mall|A new shopping mall opened near my house.
-= trạm xe buýt | at the bus stop · bus station = bến xe lớn
+shopping center|Vocab|/ˈʃɑːpɪŋ ˌsentər/|SHOP-ping cen-ter|3–3.5|at + the shopping center|The shopping center has a big food court.
+hang out at the mall|Collocation|/ˌhæŋ aʊt ət ðə ˈmɔːl/|hang OUT at the MALL|4–5|hang out at + the mall|We hang out at the mall on rainy weekends.
+= trạm xe buýt | at the bus stop · bus station = bến xe lớn · wait for the bus, không nói wait the bus
 bus stop|Collocation|/ˈbʌs stɑːp/|BUS stop|3–3.5|at + the bus stop|The bus stop is right in front of my school.
-= bãi đỗ xe | parking lot (Mỹ) = car park (Anh)
+bus station|Collocation|/ˈbʌs ˌsteɪʃn/|BUS sta-tion|3–3.5|at + the bus station|I take the night bus from the bus station.
+wait for the bus|Collocation|/ˌweɪt fər ðə ˈbʌs/|WAIT for the BUS|3–3.5|wait for + the bus|I wait for the bus for ten minutes every morning.
+= bãi đỗ xe | parking lot (Mỹ) = car park (Anh) · parking space = 1 chỗ đỗ · park = đỗ xe (động từ)
 parking lot|Collocation|/ˈpɑːrkɪŋ lɑːt/|PARK-ing lot|4–5|in + the parking lot|The parking lot is free for customers.
-= hiệu thuốc | pharmacy; Mỹ cũng nói drugstore; Anh: chemist's
+parking space|Collocation|/ˈpɑːrkɪŋ ˌspeɪs/|PARK-ing space|4–5|find + a parking space|It's hard to find a parking space downtown.
+park|Vocab|/pɑːrk/|PARK|3–3.5|park + the car / my motorbike + in / at|I park my motorbike in the basement.
+= hiệu thuốc | pharmacy; Mỹ cũng nói drugstore; Anh: chemist's · pharmacist = dược sĩ (người)
 pharmacy|Vocab|/ˈfɑːrməsi/|PHAR-ma-cy|4–5|at + the pharmacy|There's a pharmacy next to the bus stop.
-= cửa hàng bách hóa lớn | department store bán quần áo, đồ gia dụng, nội thất trong 1 tòa nhà
+drugstore|Vocab|/ˈdrʌɡstɔːr/|DRUG-store|4–5|at + the drugstore (Mỹ)|I bought some cold medicine at the drugstore.
+pharmacist|Vocab|/ˈfɑːrməsɪst/|PHAR-ma-cist|5.5–6.5|đếm được|The pharmacist told me to take it after meals.
+= cửa hàng bách hóa lớn | department store bán quần áo, đồ gia dụng, nội thất trong 1 tòa nhà · a convenience store = cửa hàng tiện lợi nhỏ (Circle K, 7-Eleven) · browse = xem đồ, chưa chắc mua
 department store|Collocation|/dɪˈpɑːrtmənt stɔːr/|de-PART-ment store|4–5|in + a department store|You can buy clothes and furniture in a department store.
-= giờ mở cửa | opening hours; Mỹ hay nói business hours / store hours
+a convenience store|Collocation|/ə kənˈviːniəns ˌstɔːr/|a con-VEN-ience store|4–5|at + a convenience store|There's a convenience store at the end of my street.
+browse|Vocab|/braʊz/|BROWSE|5.5–6.5|browse + in a store / online|I like to browse in department stores on weekends.
+= giờ mở cửa | opening hours; Mỹ hay nói business hours / store hours · open 24/7 = mở cả ngày đêm · closing time = giờ đóng cửa
 opening hours|Collocation|/ˈoʊpənɪŋ ˌaʊərz/|O-pen-ing hours|4–5|luôn số nhiều|The opening hours are ten a.m. to ten p.m.
-= đối diện | opposite + N (không có to) · Mỹ hay nói across from
+open 24/7|Collocation|/ˌoʊpən ˌtwentiˌfɔːr ˈsevən/|O-pen twen-ty-four SEV-en|4–5|be + open 24/7|The convenience store is open 24/7.
+closing time|Collocation|/ˈkloʊzɪŋ ˌtaɪm/|CLOS-ing time|4–5|at / near + closing time|The mall gets quiet near closing time.
+= đối diện | opposite + N (không có to) · Mỹ hay nói across from · across from = đối diện (Mỹ) · next to = ngay bên cạnh, không phải đối diện
 opposite|Vocab|/ˈɑːpəzɪt/|OP-po-site|4–5|opposite + nơi chốn|The bank is opposite the post office.
+across from|Collocation|/əˈkrɔːs frəm/|a-CROSS from|3–3.5|across from + nơi chốn|The pharmacy is across from the bus stop.
+next to|Collocation|/ˈnekst tə/|NEXT to|3–3.5|next to + nơi chốn|There's a coffee shop next to my office.
