@@ -1850,7 +1850,8 @@ async function listenWhisper(L, i, card, btn) {
   const resumed = ctx.resume().catch(() => {});
   let stream;
   try {
-    stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
+    /* rawMic: máy từng thu im lặng với bộ lọc ồn → lấy micro thô */
+    stream = await navigator.mediaDevices.getUserMedia({ audio: store.get("rawMic", false) ? true : { echoCancellation: true, noiseSuppression: true, channelCount: 1 } });
   } catch (e) {
     window.__lastErr = (e && e.name) || "mic";
     try { ctx.close(); } catch {}
@@ -1888,6 +1889,7 @@ async function listenWhisper(L, i, card, btn) {
     clipP.finally(() => stream.getTracks().forEach(t => t.stop()));
     const rate = ctx.sampleRate; try { ctx.close(); } catch {}
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
+    if (keep && !spoke && peak < 0.004 && !store.get("rawMic", false)) { store.set("rawMic", true); live.textContent = "Micro thu được rất nhỏ. Em bấm Bấm để nói lại, nói to và gần micro nha (máy đã đổi cách thu âm)."; return; }
     if (!keep || (!spoke && peak < 0.004)) { live.textContent = "Máy chưa nghe thấy giọng em. Em bấm lại, nói to và gần micro hơn. Lần nào cũng vậy thì: tắt tai nghe Bluetooth, kiểm tra quyền Micrô của trình duyệt, đóng app khác đang dùng micro (Zalo, Messenger gọi điện)."; return; }
     const audio = resample(bufs, rate);
     btn.disabled = true;
@@ -2064,16 +2066,21 @@ function listen(L, i, card, btn) {
 /* Web Speech trả về rỗng (hay gặp trên Android khi trình duyệt vừa nhận giọng vừa ghi âm: 2 bên tranh micro):
    nghe lại bản ghi bằng Whisper trên máy; nghe được thì từ lần sau máy này dùng luôn Whisper */
 async function srFallback(L, i, card, chunks, exp, clipP, live, btn) {
-  const NOHEAR = "Máy chưa nghe thấy giọng em. Em bấm lại, nói to và gần micro hơn. Lần nào cũng vậy thì: tắt tai nghe Bluetooth, kiểm tra quyền Micrô của trình duyệt, đóng app khác đang dùng micro (Zalo, Messenger gọi điện).";
   const blob = await clipP.catch(() => null);
-  if (!blob) { live.textContent = NOHEAR; if (!store.get("srEmpty", 0)) store.set("srEmpty", 1); else store.set("engine", "whisper"); return; }
+  /* Web Speech rỗng + bản ghi rỗng / im lặng = trình duyệt giữ micro cho Web Speech (hay gặp trên Android, nhất là Samsung):
+     chuyển hẳn sang bộ nghe Whisper (chỉ 1 bên dùng micro), tải sẵn mô hình, HS bấm lại là chấm được */
+  const toWhisper = () => {
+    store.set("engine", "whisper"); store.set("micOK", true); loadWhisper();
+    live.textContent = "Máy em không cho trình duyệt vừa nghe vừa ghi âm. Em đã được chuyển sang bộ nghe khác: em bấm Bấm để nói lại nha (lần đầu chờ tải vài giây).";
+  };
+  if (!blob) { toWhisper(); return; }
   try {
     btn.disabled = true; live.textContent = "Đang nghe lại bản ghi của em…";
     const ac = new (window.AudioContext || window.webkitAudioContext)();
     const dec = await ac.decodeAudioData(await blob.arrayBuffer()); try { ac.close(); } catch {}
     const ch = dec.getChannelData(0); let peak = 0;
     for (let k = 0; k + 4096 <= ch.length; k += 4096) { let s2 = 0; for (let j = k; j < k + 4096; j += 4) s2 += ch[j] * ch[j]; peak = Math.max(peak, Math.sqrt(s2 / 1024)); }
-    if (peak < 0.004) { live.textContent = NOHEAR; return; }
+    if (peak < 0.004) { toWhisper(); return; }
     loadWhisper();
     live.textContent = whisperState === "ready" ? "Đang chấm…" : "Đang tải bộ chấm giọng (lần đầu hơi lâu), chờ chút nha…";
     const text = await window.Whisper.transcribe(resample([ch], dec.sampleRate));
@@ -2081,7 +2088,7 @@ async function srFallback(L, i, card, chunks, exp, clipP, live, btn) {
     store.set("engine", "whisper");   // máy này nhận giọng bằng Web Speech không ổn: lần sau dùng Whisper luôn
     live.textContent = "";
     grade(L, i, card, chunks, exp, text, [[text]], Promise.resolve(blob));
-  } catch (e) { console.error(e); live.textContent = NOHEAR; }
+  } catch (e) { console.error(e); window.__lastErr = "srFallback · " + ((e && e.name) || e); toWhisper(); }
   finally { btn.disabled = false; }
 }
 
