@@ -1698,6 +1698,10 @@ player.addEventListener("pause", () => { if (stopAt == null && playingEl) playin
 
 let rec = null;
 /* engine: browser speech recognition (Android/desktop Chrome) or on-device Whisper (iPhone, or fallback) */
+/* micro trả về im lặng tuyệt đối (peak = 0): Android đang tắt "Truy cập micrô" hoặc Chrome chưa có quyền Micrô trong Cài đặt máy,
+   nói to cũng vô ích → hướng dẫn bật, kèm mã để giáo viên đọc từ ảnh chụp màn hình */
+const MIC_OFF = "⚠️ Micro của máy đang bị tắt nên web chỉ nhận được im lặng. Em bật lại rồi bấm nói: (1) vuốt thanh thông báo xuống, bật ô “Truy cập micrô” / “Micrô”; (2) Cài đặt › Ứng dụng › Chrome › Quyền › Micrô › Cho phép; (3) tắt tai nghe Bluetooth.";
+const micCode = (tag, peak) => ` [Mã: ${tag} · ${peak === 0 ? "0" : peak.toFixed(4)} · ${store.get("engine", "") || "sr"}${store.get("rawMic", false) ? "·raw" : ""} · ${(navigator.userAgent.match(/(SamsungBrowser|EdgA|OPR|Firefox|Chrome|Version)\/[\d.]+/) || ["?"])[0]} · ${(navigator.userAgent.match(/Android [\d.]+|iPhone OS [\d_]+|Mac OS X [\d_]+|Windows NT [\d.]+/) || ["?"])[0]}]`;
 function useWhisper() { return !SR || /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) || store.get("engine", "") === "whisper"; }
 let whisperState = "idle";
 function setEngineStatus(t) { const el = document.getElementById("engineStatus"); if (el) el.textContent = t; }
@@ -1889,8 +1893,9 @@ async function listenWhisper(L, i, card, btn) {
     clipP.finally(() => stream.getTracks().forEach(t => t.stop()));
     const rate = ctx.sampleRate; try { ctx.close(); } catch {}
     btn.textContent = "Bấm để nói"; btn.classList.remove("rec", "pulse"); btn.classList.add("primary");
+    if (keep && !spoke && peak < 1e-6) { live.textContent = MIC_OFF + micCode("W0", peak); return; }
     if (keep && !spoke && peak < 0.004 && !store.get("rawMic", false)) { store.set("rawMic", true); live.textContent = "Micro thu được rất nhỏ. Em bấm Bấm để nói lại, nói to và gần micro nha (máy đã đổi cách thu âm)."; return; }
-    if (!keep || (!spoke && peak < 0.004)) { live.textContent = "Máy chưa nghe thấy giọng em. Em bấm lại, nói to và gần micro hơn. Lần nào cũng vậy thì: tắt tai nghe Bluetooth, kiểm tra quyền Micrô của trình duyệt, đóng app khác đang dùng micro (Zalo, Messenger gọi điện)."; return; }
+    if (!keep || (!spoke && peak < 0.004)) { live.textContent = "Máy chưa nghe thấy giọng em. Em bấm lại, nói to và gần micro hơn. Lần nào cũng vậy thì: tắt tai nghe Bluetooth, kiểm tra quyền Micrô của trình duyệt, đóng app khác đang dùng micro (Zalo, Messenger gọi điện)." + micCode(keep ? "W" : "W-stop", peak); return; }
     const audio = resample(bufs, rate);
     btn.disabled = true;
     let azNote = "";
@@ -2080,6 +2085,8 @@ async function srFallback(L, i, card, chunks, exp, clipP, live, btn) {
     const dec = await ac.decodeAudioData(await blob.arrayBuffer()); try { ac.close(); } catch {}
     const ch = dec.getChannelData(0); let peak = 0;
     for (let k = 0; k + 4096 <= ch.length; k += 4096) { let s2 = 0; for (let j = k; j < k + 4096; j += 4) s2 += ch[j] * ch[j]; peak = Math.max(peak, Math.sqrt(s2 / 1024)); }
+    if (peak < 1e-6 && store.get("srZero", 0)) { live.textContent = MIC_OFF + micCode("S0", peak); return; }
+    if (peak < 1e-6) store.set("srZero", 1);
     if (peak < 0.004) { toWhisper(); return; }
     loadWhisper();
     live.textContent = whisperState === "ready" ? "Đang chấm…" : "Đang tải bộ chấm giọng (lần đầu hơi lâu), chờ chút nha…";
@@ -2141,7 +2148,7 @@ async function recordFree(L, i, card, btn, forSubmit) {
   const tick = setInterval(() => {
     const r = level(), el = Math.round((Date.now() - t0) / 1000), bars = "▮".repeat(Math.min(5, Math.round(r * 120))) || "▯";
     if (el >= capS - 15) { live.textContent = `🎙 ${bars} ${el} giây · còn ${Math.max(0, capS - el)} giây là máy tự dừng (tối đa ${fmtSec(capS)}). Chốt ý đi em!`; return; }
-    live.textContent = el >= 4 && lvPeak < 0.004 ? "⚠️ Micro chưa thu được tiếng. Kiểm tra: tắt tai nghe Bluetooth, cho phép Micrô, đóng app đang gọi điện; rồi bấm dừng và ghi lại."
+    live.textContent = el >= 4 && lvPeak < 1e-6 ? MIC_OFF : el >= 4 && lvPeak < 0.004 ? "⚠️ Micro chưa thu được tiếng. Kiểm tra: tắt tai nghe Bluetooth, cho phép Micrô, đóng app đang gọi điện; rồi bấm dừng và ghi lại."
       : `🎙 ${bars} Đang ghi ${el} giây · ${partOf(L.sentences[i]) === 2 ? "nói 1'30–2'" : partOf(L.sentences[i]) === 3 ? "nói 30–45 giây" : "nói 20–30 giây"} rồi bấm dừng.`;
   }, 250);
   const session = { done: false, stop: async () => {
@@ -2153,7 +2160,7 @@ async function recordFree(L, i, card, btn, forSubmit) {
     btn.textContent = forSubmit ? label0 : "🎙 Ghi âm thử lại"; btn.classList.remove("rec", "pulse"); if (wasPrimary) btn.classList.add("primary");
     const sec = Math.round((Date.now() - t0) / 1000);
     if (!blob || sec < 3) { live.textContent = "Chưa ghi được (dưới 3 giây). Em bấm ghi lại nha."; return; }
-    if (an && lvPeak < 0.004) { live.textContent = "⚠️ Bản ghi không có tiếng (micro không thu được giọng), nên chưa lưu và chưa tính lượt. Tắt tai nghe Bluetooth, kiểm tra quyền Micrô rồi ghi lại nha."; return; }
+    if (an && lvPeak < 0.004) { live.textContent = (lvPeak < 1e-6 ? MIC_OFF + " Bản ghi chưa lưu, chưa tính lượt." : "⚠️ Bản ghi không có tiếng (micro không thu được giọng), nên chưa lưu và chưa tính lượt. Tắt tai nghe Bluetooth, kiểm tra quyền Micrô rồi ghi lại nha.") + micCode("F", lvPeak); return; }
     live.textContent = (session.capped ? `⏱ Hết thời gian tối đa ${fmtSec(capSec)}, máy đã tự dừng. ` : "") + (forSubmit ? `Đã ghi bài nộp ${sec} giây. Đang nộp…` : `Đã ghi thử ${sec} giây. Nghe lại ở dưới, tập bao nhiêu lần cũng được. Thấy ổn thì bấm 📤 Nộp bản ghi thử này, chưa ổn thì ghi lại.`);
     card.querySelector(".best").textContent = forSubmit ? "Đã nộp" : "Đã ghi thử";
     await recordTake(L, i, card, 100, `${sec} giây`, [], Promise.resolve(blob));
