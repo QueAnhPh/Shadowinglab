@@ -20803,6 +20803,15 @@
        "band": "5.5–6.5",
        "grammar": "tách được",
        "ex": "I cut out soda completely."
+      },
+      {
+       "w": "reduce",
+       "type": "Vocab",
+       "ipa": "/rɪˈdus/",
+       "stress": "re-DUCE",
+       "band": "5.5–6.5",
+       "grammar": "+ N; danh từ reduction",
+       "ex": "I want to reduce the sugar in my diet."
       }
      ],
      "note": "cut down on = cut back on = giảm bớt · cut out = bỏ hẳn"
@@ -20920,6 +20929,117 @@
        "ex": "Instant noodles are my comfort food before exams."
       }
      ]
+    },
+    {
+     "mean": "thích (món ăn)",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "be into",
+       "type": "Collocation",
+       "ipa": "/bi ˈɪntu/",
+       "stress": "be IN-to",
+       "band": "5.5–6.5",
+       "grammar": "+ N / V-ing",
+       "ex": "I'm really into Korean food."
+      },
+      {
+       "w": "be fond of",
+       "type": "Collocation",
+       "ipa": "/bi ˈfɑnd əv/",
+       "stress": "be FOND of",
+       "band": "5.5–6.5",
+       "grammar": "+ N / V-ing",
+       "ex": "My grandma is fond of sticky rice."
+      },
+      {
+       "w": "have a soft spot for",
+       "type": "Idiom",
+       "ipa": "/ˌhæv ə ˈsɔft ˌspɑt fɚ/",
+       "stress": "have_a SOFT spot for",
+       "band": "7–8",
+       "grammar": "+ N",
+       "ex": "I have a soft spot for my mom's fish soup."
+      }
+     ],
+     "note": "be into = rất thích · be fond of = khá thích · have a soft spot for = có cảm tình đặc biệt"
+    },
+    {
+     "mean": "ăn nhiều",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "overeat",
+       "type": "Vocab",
+       "ipa": "/ˌoʊvɚˈit/",
+       "stress": "o-ver-EAT",
+       "band": "5.5–6.5",
+       "grammar": "QK overate",
+       "ex": "I always overeat at Tet."
+      },
+      {
+       "w": "eat like a horse",
+       "type": "Idiom",
+       "ipa": "/ˌit laɪk ə ˈhɔrs/",
+       "stress": "eat like_a HORSE",
+       "band": "7–8",
+       "grammar": "chủ ngữ là người",
+       "ex": "My brother eats like a horse after football."
+      },
+      {
+       "w": "stuff my face",
+       "type": "Idiom",
+       "ipa": "/ˌstʌf maɪ ˈfeɪs/",
+       "stress": "stuff my FACE",
+       "band": "7–8",
+       "grammar": "⚠ thân mật, chỉ dùng khi nói; + with + N",
+       "ex": "I stuffed my face with pizza after the mock test."
+      },
+      {
+       "w": "a healthy appetite",
+       "type": "Collocation",
+       "ipa": "/ə ˌhɛlθi ˈæpəˌtaɪt/",
+       "stress": "a HEAL-thy AP-pe-tite",
+       "band": "7–8",
+       "grammar": "have + a healthy appetite",
+       "ex": "Teenagers usually have a healthy appetite."
+      }
+     ],
+     "note": "overeat = ăn quá nhiều · eat like a horse = ăn rất khỏe · stuff my face = ăn lấy ăn để (⚠ thân mật) · a healthy appetite = ăn khỏe"
+    },
+    {
+     "mean": "bữa ăn nhẹ / nặng",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "a light meal",
+       "type": "Collocation",
+       "ipa": "/ə ˌlaɪt ˈmil/",
+       "stress": "a light MEAL",
+       "band": "5.5–6.5",
+       "grammar": "↔ a heavy meal",
+       "ex": "I have a light meal before swimming."
+      },
+      {
+       "w": "a heavy meal",
+       "type": "Collocation",
+       "ipa": "/ə ˌhɛvi ˈmil/",
+       "stress": "a heavy MEAL",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "A heavy meal makes me sleepy."
+      },
+      {
+       "w": "a staple food",
+       "type": "Collocation",
+       "ipa": "/ə ˈsteɪpəl ˌfud/",
+       "stress": "a STA-ple food",
+       "band": "7–8",
+       "grammar": "rice is a staple food",
+       "ex": "Rice is a staple food in Vietnam."
+      }
+     ],
+     "note": "a light meal ↔ a heavy meal · a staple food = lương thực chính"
     },
     {
      "mean": "nguyên liệu",
@@ -21292,8 +21412,27 @@
        "band": "7–8",
        "grammar": "không đếm được; cause / prevent + tooth decay",
        "ex": "Sugary drinks are a major cause of tooth decay."
+      },
+      {
+       "w": "harmful",
+       "type": "Vocab",
+       "ipa": "/ˈhɑrmfəl/",
+       "stress": "HARM-ful",
+       "band": "5.5–6.5",
+       "grammar": "harmful to + N",
+       "ex": "Sugary drinks are harmful to your teeth."
+      },
+      {
+       "w": "cause tooth decay",
+       "type": "Collocation",
+       "ipa": "/ˌkɔz ˈtuθ dɪˌkeɪ/",
+       "stress": "cause TOOTH de-cay",
+       "band": "7–8",
+       "grammar": "cause + N",
+       "ex": "Sticky candy can cause tooth decay."
       }
-     ]
+     ],
+     "note": "tooth decay = sâu răng · cause tooth decay = gây sâu răng · harmful = có hại"
     },
     {
      "mean": "lỗ sâu răng",
@@ -21537,6 +21676,99 @@
       }
      ],
      "note": "starving = đói cồn cào · lose my appetite = mất cảm giác thèm ăn"
+    },
+    {
+     "mean": "đồ ăn không lành mạnh",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "junk food",
+       "type": "Collocation",
+       "ipa": "/ˈdʒʌŋk ˌfud/",
+       "stress": "JUNK food",
+       "band": "4–5",
+       "grammar": "không đếm được",
+       "ex": "I try not to eat junk food before exams."
+      },
+      {
+       "w": "processed food",
+       "type": "Collocation",
+       "ipa": "/ˌprɑsɛst ˈfud/",
+       "stress": "PRO-cessed FOOD",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được",
+       "ex": "Processed food is high in salt."
+      }
+     ],
+     "note": "junk food = đồ ăn vặt kém dinh dưỡng · processed food = đồ chế biến sẵn"
+    },
+    {
+     "mean": "ăn ở nhà, hâm nóng, bắt đầu ăn",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "eat in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌit ˈɪn/",
+       "stress": "eat_IN",
+       "band": "5.5–6.5",
+       "grammar": "↔ eat out",
+       "ex": "Let's eat in tonight."
+      },
+      {
+       "w": "heat up",
+       "type": "Phrasal verb",
+       "ipa": "/ˌhit ˈʌp/",
+       "stress": "heat_UP",
+       "band": "4–5",
+       "grammar": "tách được: heat it up",
+       "ex": "I heat up leftovers for lunch."
+      },
+      {
+       "w": "dig in",
+       "type": "Phrasal verb",
+       "ipa": "/ˌdɪɡ ˈɪn/",
+       "stress": "dig_IN",
+       "band": "7–8",
+       "grammar": "câu mệnh lệnh, thân mật",
+       "ex": "Dinner's ready, dig in!"
+      }
+     ],
+     "note": "eat in ↔ eat out · heat up = hâm nóng · dig in = ăn thôi"
+    },
+    {
+     "mean": "hết, mua trữ, bị hỏng",
+     "cat": "Cooking at home · Nấu ăn ở nhà",
+     "items": [
+      {
+       "w": "run out of",
+       "type": "Phrasal verb",
+       "ipa": "/ˌrʌn ˈaʊt əv/",
+       "stress": "run_OUT_of",
+       "band": "5.5–6.5",
+       "grammar": "+ N",
+       "ex": "We ran out of rice."
+      },
+      {
+       "w": "stock up on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌstɑk ˈʌp ɑn/",
+       "stress": "stock_UP_on",
+       "band": "7–8",
+       "grammar": "+ N",
+       "ex": "Mom stocks up on noodles before Tet."
+      },
+      {
+       "w": "go off",
+       "type": "Phrasal verb",
+       "ipa": "/ˌɡoʊ ˈɔf/",
+       "stress": "go_OFF",
+       "band": "7–8",
+       "grammar": "Mỹ hay nói go bad",
+       "ex": "The milk has gone off."
+      }
+     ],
+     "note": "run out of = hết · stock up on = mua trữ · go off = (đồ ăn) hỏng"
     }
    ]
   }

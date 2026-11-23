@@ -26,6 +26,7 @@ wholesome|Vocab|/ˈhoʊlsəm/|WHOLE-some|7–8|wholesome food / meals|Grandma on
 cut down on|Phrasal verb|/ˌkʌt ˈdaʊn ɑn/|cut DOWN_on|5.5–6.5|không tách: cut down on + N; QK cut|I'm trying to cut down on bubble tea.
 cut back on|Phrasal verb|/ˌkʌt ˈbæk ɑn/|cut BACK_on|5.5–6.5|không tách|My dad cut back on coffee.
 cut out|Phrasal verb|/ˌkʌt ˈaʊt/|cut_OUT|5.5–6.5|tách được|I cut out soda completely.
+reduce|Vocab|/rɪˈdus/|re-DUCE|5.5–6.5|+ N; danh từ reduction|I want to reduce the sugar in my diet.
 = nhìn / ngửi là thèm | mouth-watering = nhìn là thèm · flavorful / full of flavor = đậm đà · to die for = ngon tuyệt
 mouth-watering|Vocab|/ˈmaʊθˌwɔɾərɪŋ/|MOUTH-wa-ter-ing|7–8|đứng trước N: a mouth-watering dish|The smell of grilled pork near my school is mouth-watering.
 flavorful|Vocab|/ˈfleɪvɚfəl/|FLA-vor-ful|5.5–6.5|Anh: flavourful|This broth is really flavorful.
@@ -40,6 +41,19 @@ crave|Vocab|/kreɪv/|CRAVE|7–8|crave + N|I crave sweets when I'm stressed.
 eat on the go|Idiom|/ˌit ɑn ðə ˈɡoʊ/|eat_on the GO|7–8|—|Many students in big cities eat on the go.
 = món ăn cho dễ chịu, "chữa lành"
 comfort food|Collocation|/ˈkʌmfɚt ˌfud/|COM-fort food|5.5–6.5|không đếm được|Instant noodles are my comfort food before exams.
+= thích (món ăn) | be into = rất thích · be fond of = khá thích · have a soft spot for = có cảm tình đặc biệt
+be into|Collocation|/bi ˈɪntu/|be IN-to|5.5–6.5|+ N / V-ing|I'm really into Korean food.
+be fond of|Collocation|/bi ˈfɑnd əv/|be FOND of|5.5–6.5|+ N / V-ing|My grandma is fond of sticky rice.
+have a soft spot for|Idiom|/ˌhæv ə ˈsɔft ˌspɑt fɚ/|have_a SOFT spot for|7–8|+ N|I have a soft spot for my mom's fish soup.
+= ăn nhiều | overeat = ăn quá nhiều · eat like a horse = ăn rất khỏe · stuff my face = ăn lấy ăn để (⚠ thân mật) · a healthy appetite = ăn khỏe
+overeat|Vocab|/ˌoʊvɚˈit/|o-ver-EAT|5.5–6.5|QK overate|I always overeat at Tet.
+eat like a horse|Idiom|/ˌit laɪk ə ˈhɔrs/|eat like_a HORSE|7–8|chủ ngữ là người|My brother eats like a horse after football.
+stuff my face|Idiom|/ˌstʌf maɪ ˈfeɪs/|stuff my FACE|7–8|⚠ thân mật, chỉ dùng khi nói; + with + N|I stuffed my face with pizza after the mock test.
+a healthy appetite|Collocation|/ə ˌhɛlθi ˈæpəˌtaɪt/|a HEAL-thy AP-pe-tite|7–8|have + a healthy appetite|Teenagers usually have a healthy appetite.
+= bữa ăn nhẹ / nặng | a light meal ↔ a heavy meal · a staple food = lương thực chính
+a light meal|Collocation|/ə ˌlaɪt ˈmil/|a light MEAL|5.5–6.5|↔ a heavy meal|I have a light meal before swimming.
+a heavy meal|Collocation|/ə ˌhɛvi ˈmil/|a heavy MEAL|5.5–6.5|đếm được|A heavy meal makes me sleepy.
+a staple food|Collocation|/ə ˈsteɪpəl ˌfud/|a STA-ple food|7–8|rice is a staple food|Rice is a staple food in Vietnam.
 @Dishes & taste · Món ăn & hương vị
 = nguyên liệu | ingredient = nguyên liệu · fresh produce = rau củ quả tươi
 ingredient|Vocab|/ɪnˈɡridiənt/|in-GRE-di-ent|5.5–6.5|đếm được: the main ingredients|The main ingredients are rice, eggs and fish sauce.
@@ -89,8 +103,10 @@ make a reservation|Collocation|/ˌmeɪk ə ˌrɛzɚˈveɪʃən/|make_a res-er-VA
 = căng tin
 a cafeteria|Vocab|/ə ˌkæfəˈtɪriə/|a caf-e-TE-ri-a|4–5|Anh: canteen|Our school cafeteria opens at six thirty.
 @Teeth & health · Răng & sức khỏe
-= sâu răng (quá trình)
+= sâu răng (quá trình) | tooth decay = sâu răng · cause tooth decay = gây sâu răng · harmful = có hại
 tooth decay|Collocation|/ˈtuθ dɪˌkeɪ/|TOOTH de-cay|7–8|không đếm được; cause / prevent + tooth decay|Sugary drinks are a major cause of tooth decay.
+harmful|Vocab|/ˈhɑrmfəl/|HARM-ful|5.5–6.5|harmful to + N|Sugary drinks are harmful to your teeth.
+cause tooth decay|Collocation|/ˌkɔz ˈtuθ dɪˌkeɪ/|cause TOOTH de-cay|7–8|cause + N|Sticky candy can cause tooth decay.
 = lỗ sâu răng
 a cavity|Vocab|/ə ˈkævəɾi/|a CAV-i-ty|5.5–6.5|đếm được: get / fill + a cavity|I got my first cavity when I was eight.
 = nhiều đường | sugary = nhiều đường · high in sugar · a sugar rush
@@ -121,3 +137,15 @@ fill up (on)|Phrasal verb|/ˌfɪl ˈʌp/|fill_UP|5.5–6.5|+ on + N|Don't fill u
 = đói cồn cào (thân mật) | starving = đói cồn cào · lose my appetite = mất cảm giác thèm ăn
 starving|Vocab|/ˈstɑrvɪŋ/|STARV-ing|5.5–6.5|I'm starving = rất đói|I'm always starving after extra classes.
 lose my appetite|Collocation|/ˌluz maɪ ˈæpəˌtaɪt/|lose my AP-pe-tite|5.5–6.5|QK lost|I lose my appetite before big exams.
+= đồ ăn không lành mạnh | junk food = đồ ăn vặt kém dinh dưỡng · processed food = đồ chế biến sẵn
+junk food|Collocation|/ˈdʒʌŋk ˌfud/|JUNK food|4–5|không đếm được|I try not to eat junk food before exams.
+processed food|Collocation|/ˌprɑsɛst ˈfud/|PRO-cessed FOOD|5.5–6.5|không đếm được|Processed food is high in salt.
+@Cooking at home · Nấu ăn ở nhà
+= ăn ở nhà, hâm nóng, bắt đầu ăn | eat in ↔ eat out · heat up = hâm nóng · dig in = ăn thôi
+eat in|Phrasal verb|/ˌit ˈɪn/|eat_IN|5.5–6.5|↔ eat out|Let's eat in tonight.
+heat up|Phrasal verb|/ˌhit ˈʌp/|heat_UP|4–5|tách được: heat it up|I heat up leftovers for lunch.
+dig in|Phrasal verb|/ˌdɪɡ ˈɪn/|dig_IN|7–8|câu mệnh lệnh, thân mật|Dinner's ready, dig in!
+= hết, mua trữ, bị hỏng | run out of = hết · stock up on = mua trữ · go off = (đồ ăn) hỏng
+run out of|Phrasal verb|/ˌrʌn ˈaʊt əv/|run_OUT_of|5.5–6.5|+ N|We ran out of rice.
+stock up on|Phrasal verb|/ˌstɑk ˈʌp ɑn/|stock_UP_on|7–8|+ N|Mom stocks up on noodles before Tet.
+go off|Phrasal verb|/ˌɡoʊ ˈɔf/|go_OFF|7–8|Mỹ hay nói go bad|The milk has gone off.
