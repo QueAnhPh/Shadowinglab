@@ -20532,6 +20532,940 @@
      "note": "opposite + N (không có to) · Mỹ hay nói across from · across from = đối diện (Mỹ) · next to = ngay bên cạnh, không phải đối diện"
     }
    ]
+  },
+  {
+   "id": "va4",
+   "title": "Food & Drink",
+   "session": 4,
+   "for": [
+    "vananh"
+   ],
+   "opens": "2026-11-23",
+   "cards": [
+    {
+     "mean": "bữa cơm nhà nấu",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "a home-cooked meal",
+       "type": "Collocation",
+       "ipa": "/ə ˌhoʊmˈkʊkt ˈmil/",
+       "stress": "a home-COOKED MEAL",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: have / enjoy + a home-cooked meal",
+       "ex": "Nothing beats a home-cooked meal after a long day at school."
+      },
+      {
+       "w": "homemade",
+       "type": "Vocab",
+       "ipa": "/ˌhoʊmˈmeɪd/",
+       "stress": "home-MADE",
+       "band": "4–5",
+       "grammar": "đứng trước N",
+       "ex": "I love my mom's homemade yogurt."
+      }
+     ],
+     "note": "a home-cooked meal = cơm nhà nấu · homemade = tự làm (tính từ)"
+    },
+    {
+     "mean": "ăn vội, ăn nhanh",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "grab a bite (to eat)",
+       "type": "Idiom",
+       "ipa": "/ˌɡræb ə ˈbaɪt/",
+       "stress": "grab_a BITE",
+       "band": "5.5–6.5",
+       "grammar": "QK grabbed; + at / near + nơi",
+       "ex": "I usually grab a bite near my tutoring center before class."
+      },
+      {
+       "w": "a quick bite",
+       "type": "Collocation",
+       "ipa": "/ə ˌkwɪk ˈbaɪt/",
+       "stress": "a quick BITE",
+       "band": "5.5–6.5",
+       "grammar": "grab + a quick bite",
+       "ex": "Let's grab a quick bite before class."
+      },
+      {
+       "w": "wolf down",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwʊlf ˈdaʊn/",
+       "stress": "wolf DOWN",
+       "band": "7–8",
+       "grammar": "tách được: wolf it down",
+       "ex": "I wolfed down my lunch in five minutes."
+      }
+     ],
+     "note": "grab a bite = ăn vội · a quick bite = bữa ăn vội · wolf down = ăn ngấu nghiến"
+    },
+    {
+     "mean": "bỏ bữa",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "skip a meal",
+       "type": "Collocation",
+       "ipa": "/ˌskɪp ə ˈmil/",
+       "stress": "skip_a MEAL",
+       "band": "5.5–6.5",
+       "grammar": "skip breakfast / lunch (không có a); QK skipped /t/",
+       "ex": "I often skip breakfast when I have a mock test."
+      }
+     ]
+    },
+    {
+     "mean": "rất mê đồ ngọt",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "have a sweet tooth",
+       "type": "Idiom",
+       "ipa": "/ˌhæv ə ˌswit ˈtuθ/",
+       "stress": "have_a sweet TOOTH",
+       "band": "7–8",
+       "grammar": "luôn số ít: a sweet tooth",
+       "ex": "I have a sweet tooth, which is funny for a future dentist."
+      },
+      {
+       "w": "can't resist",
+       "type": "Collocation",
+       "ipa": "/ˌkænt rɪˈzɪst/",
+       "stress": "can't re-SIST",
+       "band": "5.5–6.5",
+       "grammar": "+ N / V-ing",
+       "ex": "I can't resist fried chicken."
+      }
+     ],
+     "note": "have a sweet tooth = mê đồ ngọt · can't resist = không cưỡng lại được"
+    },
+    {
+     "mean": "không thích lắm (nói lịch sự)",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "not a big fan of",
+       "type": "Collocation",
+       "ipa": "/ˌnɑt ə ˌbɪɡ ˈfæn əv/",
+       "stress": "not_a big FAN of",
+       "band": "5.5–6.5",
+       "grammar": "+ N / V-ing; Anh: not keen on",
+       "ex": "I'm not a big fan of raw fish."
+      },
+      {
+       "w": "can't stand",
+       "type": "Collocation",
+       "ipa": "/ˌkænt ˈstænd/",
+       "stress": "can't STAND",
+       "band": "5.5–6.5",
+       "grammar": "+ N / V-ing",
+       "ex": "I can't stand bitter melon."
+      },
+      {
+       "w": "not my cup of tea",
+       "type": "Idiom",
+       "ipa": "/ˌnɑt maɪ ˌkʌp əv ˈti/",
+       "stress": "not my CUP_of TEA",
+       "band": "7–8",
+       "grammar": "sth is not my cup of tea",
+       "ex": "Spicy food is not my cup of tea."
+      }
+     ],
+     "note": "not a big fan of = lịch sự · can't stand = ghét hẳn · not my cup of tea = không hợp gu"
+    },
+    {
+     "mean": "chế độ ăn cân bằng",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "a balanced diet",
+       "type": "Collocation",
+       "ipa": "/ə ˌbælənst ˈdaɪət/",
+       "stress": "a BAL-anced DI-et",
+       "band": "5.5–6.5",
+       "grammar": "eat / have + a balanced diet; -ed đọc /t/",
+       "ex": "A balanced diet keeps your body and your teeth strong."
+      },
+      {
+       "w": "wholesome",
+       "type": "Vocab",
+       "ipa": "/ˈhoʊlsəm/",
+       "stress": "WHOLE-some",
+       "band": "7–8",
+       "grammar": "wholesome food / meals",
+       "ex": "Grandma only cooks wholesome food."
+      }
+     ],
+     "note": "a balanced diet = ăn cân bằng · wholesome = lành, tốt cho sức khỏe"
+    },
+    {
+     "mean": "ăn / dùng ít lại",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "cut down on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈdaʊn ɑn/",
+       "stress": "cut DOWN_on",
+       "band": "5.5–6.5",
+       "grammar": "không tách: cut down on + N; QK cut",
+       "ex": "I'm trying to cut down on bubble tea."
+      },
+      {
+       "w": "cut back on",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈbæk ɑn/",
+       "stress": "cut BACK_on",
+       "band": "5.5–6.5",
+       "grammar": "không tách",
+       "ex": "My dad cut back on coffee."
+      },
+      {
+       "w": "cut out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌkʌt ˈaʊt/",
+       "stress": "cut_OUT",
+       "band": "5.5–6.5",
+       "grammar": "tách được",
+       "ex": "I cut out soda completely."
+      }
+     ],
+     "note": "cut down on = cut back on = giảm bớt · cut out = bỏ hẳn"
+    },
+    {
+     "mean": "nhìn / ngửi là thèm",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "mouth-watering",
+       "type": "Vocab",
+       "ipa": "/ˈmaʊθˌwɔɾərɪŋ/",
+       "stress": "MOUTH-wa-ter-ing",
+       "band": "7–8",
+       "grammar": "đứng trước N: a mouth-watering dish",
+       "ex": "The smell of grilled pork near my school is mouth-watering."
+      },
+      {
+       "w": "flavorful",
+       "type": "Vocab",
+       "ipa": "/ˈfleɪvɚfəl/",
+       "stress": "FLA-vor-ful",
+       "band": "5.5–6.5",
+       "grammar": "Anh: flavourful",
+       "ex": "This broth is really flavorful."
+      },
+      {
+       "w": "to die for",
+       "type": "Idiom",
+       "ipa": "/tə ˈdaɪ fɔr/",
+       "stress": "to DIE for",
+       "band": "7–8",
+       "grammar": "sth is to die for",
+       "ex": "Her mango cake is to die for."
+      }
+     ],
+     "note": "mouth-watering = nhìn là thèm · flavorful / full of flavor = đậm đà · to die for = ngon tuyệt"
+    },
+    {
+     "mean": "bổ dưỡng",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "nutritious",
+       "type": "Vocab",
+       "ipa": "/nuˈtrɪʃəs/",
+       "stress": "nu-TRI-tious",
+       "band": "5.5–6.5",
+       "grammar": "danh từ nutrition; -tious đọc /ʃəs/",
+       "ex": "Brown rice is more nutritious than white rice."
+      },
+      {
+       "w": "empty calories",
+       "type": "Collocation",
+       "ipa": "/ˌɛmpti ˈkæləriz/",
+       "stress": "EMP-ty CAL-o-ries",
+       "band": "7–8",
+       "grammar": "số nhiều",
+       "ex": "Soda is full of empty calories."
+      }
+     ],
+     "note": "nutritious = bổ dưỡng · ↔ empty calories = calo rỗng"
+    },
+    {
+     "mean": "thèm (một món)",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "have a craving for",
+       "type": "Collocation",
+       "ipa": "/ˌhæv ə ˈkreɪvɪŋ fɚ/",
+       "stress": "have_a CRAV-ing for",
+       "band": "7–8",
+       "grammar": "+ N; động từ crave",
+       "ex": "During exam season, I always have a craving for something sweet."
+      },
+      {
+       "w": "crave",
+       "type": "Vocab",
+       "ipa": "/kreɪv/",
+       "stress": "CRAVE",
+       "band": "7–8",
+       "grammar": "crave + N",
+       "ex": "I crave sweets when I'm stressed."
+      }
+     ],
+     "note": "have a craving for = thèm · crave = động từ"
+    },
+    {
+     "mean": "vừa đi vừa ăn, ăn vội khi bận",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "eat on the go",
+       "type": "Idiom",
+       "ipa": "/ˌit ɑn ðə ˈɡoʊ/",
+       "stress": "eat_on the GO",
+       "band": "7–8",
+       "grammar": "—",
+       "ex": "Many students in big cities eat on the go."
+      }
+     ]
+    },
+    {
+     "mean": "món ăn cho dễ chịu, \"chữa lành\"",
+     "cat": "Eating habits · Thói quen ăn uống",
+     "items": [
+      {
+       "w": "comfort food",
+       "type": "Collocation",
+       "ipa": "/ˈkʌmfɚt ˌfud/",
+       "stress": "COM-fort food",
+       "band": "5.5–6.5",
+       "grammar": "không đếm được",
+       "ex": "Instant noodles are my comfort food before exams."
+      }
+     ]
+    },
+    {
+     "mean": "nguyên liệu",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "ingredient",
+       "type": "Vocab",
+       "ipa": "/ɪnˈɡridiənt/",
+       "stress": "in-GRE-di-ent",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: the main ingredients",
+       "ex": "The main ingredients are rice, eggs and fish sauce."
+      },
+      {
+       "w": "fresh produce",
+       "type": "Collocation",
+       "ipa": "/ˌfrɛʃ ˈproʊdus/",
+       "stress": "fresh PRO-duce",
+       "band": "7–8",
+       "grammar": "không đếm được",
+       "ex": "Buy fresh produce at the market."
+      }
+     ],
+     "note": "ingredient = nguyên liệu · fresh produce = rau củ quả tươi"
+    },
+    {
+     "mean": "ẩm thực (của một nước, vùng)",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "cuisine",
+       "type": "Vocab",
+       "ipa": "/kwɪˈzin/",
+       "stress": "cui-SINE",
+       "band": "5.5–6.5",
+       "grammar": "Korean / Japanese cuisine",
+       "ex": "Korean cuisine is famous for its spicy dishes."
+      },
+      {
+       "w": "a local specialty",
+       "type": "Collocation",
+       "ipa": "/ə ˌloʊkəl ˈspɛʃəlti/",
+       "stress": "a LO-cal SPE-cial-ty",
+       "band": "7–8",
+       "grammar": "Anh: speciality",
+       "ex": "Hu tieu is a local specialty of the south."
+      }
+     ],
+     "note": "cuisine = ẩm thực một nước · a local specialty = đặc sản"
+    },
+    {
+     "mean": "món ăn",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "a dish",
+       "type": "Vocab",
+       "ipa": "/ə ˈdɪʃ/",
+       "stress": "a DISH",
+       "band": "4–5",
+       "grammar": "đếm được; số nhiều dishes đọc /ɪz/",
+       "ex": "Pho is a dish from northern Vietnam."
+      },
+      {
+       "w": "a signature dish",
+       "type": "Collocation",
+       "ipa": "/ə ˈsɪɡnətʃɚ ˌdɪʃ/",
+       "stress": "a SIG-na-ture dish",
+       "band": "7–8",
+       "grammar": "of + nhà hàng / người",
+       "ex": "My mom's signature dish is caramelized pork."
+      }
+     ],
+     "note": "a dish = món · a signature dish = món tủ"
+    },
+    {
+     "mean": "chay; người ăn chay",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "vegetarian",
+       "type": "Vocab",
+       "ipa": "/ˌvɛdʒəˈtɛriən/",
+       "stress": "veg-e-TAR-i-an",
+       "band": "5.5–6.5",
+       "grammar": "a vegetarian dish / restaurant",
+       "ex": "The cafeteria has two vegetarian dishes every day."
+      }
+     ]
+    },
+    {
+     "mean": "kết cấu món ăn (mềm, giòn, dai)",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "texture",
+       "type": "Vocab",
+       "ipa": "/ˈtɛkstʃɚ/",
+       "stress": "TEX-ture",
+       "band": "5.5–6.5",
+       "grammar": "—",
+       "ex": "I love the crunchy texture of fried spring rolls."
+      }
+     ]
+    },
+    {
+     "mean": "dai",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "chewy",
+       "type": "Vocab",
+       "ipa": "/ˈtʃui/",
+       "stress": "CHEW-y",
+       "band": "5.5–6.5",
+       "grammar": "too chewy = dai quá",
+       "ex": "Some people find squid too chewy."
+      }
+     ]
+    },
+    {
+     "mean": "mặn, đậm vị (không ngọt)",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "savory",
+       "type": "Vocab",
+       "ipa": "/ˈseɪvəri/",
+       "stress": "SA-vor-y",
+       "band": "7–8",
+       "grammar": "Anh: savoury",
+       "ex": "I prefer savory snacks to sweet ones."
+      }
+     ]
+    },
+    {
+     "mean": "nhạt nhẽo",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "bland",
+       "type": "Vocab",
+       "ipa": "/blænd/",
+       "stress": "BLAND",
+       "band": "5.5–6.5",
+       "grammar": "↔ flavorful",
+       "ex": "Hospital food is often quite bland."
+      }
+     ]
+    },
+    {
+     "mean": "sống (chưa nấu)",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "raw",
+       "type": "Vocab",
+       "ipa": "/rɑ/",
+       "stress": "RAW",
+       "band": "4–5",
+       "grammar": "raw fish / vegetables",
+       "ex": "Sushi often uses raw fish."
+      }
+     ]
+    },
+    {
+     "mean": "hấp",
+     "cat": "Dishes & taste · Món ăn & hương vị",
+     "items": [
+      {
+       "w": "steamed",
+       "type": "Vocab",
+       "ipa": "/stimd/",
+       "stress": "STEAMED",
+       "band": "4–5",
+       "grammar": "-ed đọc /d/",
+       "ex": "Steamed vegetables are healthy but a bit boring."
+      }
+     ]
+    },
+    {
+     "mean": "quầy / sạp đồ ăn",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "a food stall",
+       "type": "Collocation",
+       "ipa": "/ə ˈfud ˌstɔl/",
+       "stress": "a FOOD stall",
+       "band": "5.5–6.5",
+       "grammar": "đếm được",
+       "ex": "There are lots of food stalls outside my school gate."
+      }
+     ]
+    },
+    {
+     "mean": "đồ ăn đường phố",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "street food",
+       "type": "Collocation",
+       "ipa": "/ˈstrit ˌfud/",
+       "stress": "STREET food",
+       "band": "4–5",
+       "grammar": "không đếm được",
+       "ex": "Saigon is famous for its street food."
+      },
+      {
+       "w": "eat out",
+       "type": "Phrasal verb",
+       "ipa": "/ˌit ˈaʊt/",
+       "stress": "eat_OUT",
+       "band": "4–5",
+       "grammar": "không có tân ngữ",
+       "ex": "We eat out once a week."
+      }
+     ],
+     "note": "street food = đồ ăn đường phố · eat out = ăn ngoài"
+    },
+    {
+     "mean": "đồ ăn mua mang về",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "takeout",
+       "type": "Vocab",
+       "ipa": "/ˈteɪkˌaʊt/",
+       "stress": "TAKE-out",
+       "band": "4–5",
+       "grammar": "Anh: takeaway; order takeout",
+       "ex": "We order takeout when Mom works late."
+      }
+     ]
+    },
+    {
+     "mean": "phải tiết kiệm, ít tiền",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "on a budget",
+       "type": "Collocation",
+       "ipa": "/ɑn ə ˈbʌdʒɪt/",
+       "stress": "on_a BUD-get",
+       "band": "5.5–6.5",
+       "grammar": "be on a (tight) budget",
+       "ex": "Students on a budget often eat at the cafeteria."
+      }
+     ]
+    },
+    {
+     "mean": "giá phải chăng",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "reasonably priced",
+       "type": "Collocation",
+       "ipa": "/ˈriznəbli ˌpraɪst/",
+       "stress": "REA-son-a-bly PRICED",
+       "band": "5.5–6.5",
+       "grammar": "-ed đọc /t/",
+       "ex": "The food there is tasty and reasonably priced."
+      },
+      {
+       "w": "affordable",
+       "type": "Vocab",
+       "ipa": "/əˈfɔrdəbəl/",
+       "stress": "af-FORD-a-ble",
+       "band": "5.5–6.5",
+       "grammar": "an affordable restaurant",
+       "ex": "The cafeteria is very affordable."
+      },
+      {
+       "w": "budget-friendly",
+       "type": "Collocation",
+       "ipa": "/ˈbʌdʒɪt ˌfrɛndli/",
+       "stress": "BUD-get FRIEND-ly",
+       "band": "7–8",
+       "grammar": "đứng trước N",
+       "ex": "It's a budget-friendly café."
+      }
+     ],
+     "note": "reasonably priced = affordable = budget-friendly = giá hợp lý"
+    },
+    {
+     "mean": "hợp mốt, đang \"hot\"",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "trendy",
+       "type": "Vocab",
+       "ipa": "/ˈtrɛndi/",
+       "stress": "TREN-dy",
+       "band": "5.5–6.5",
+       "grammar": "= fashionable",
+       "ex": "It's a trendy coffee shop where students study after school."
+      }
+     ]
+    },
+    {
+     "mean": "chuyên về",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "specialize in",
+       "type": "Collocation",
+       "ipa": "/ˈspɛʃəˌlaɪz ɪn/",
+       "stress": "SPE-cial-ize_in",
+       "band": "5.5–6.5",
+       "grammar": "Anh: specialise; + N / V-ing",
+       "ex": "The restaurant specializes in seafood."
+      }
+     ]
+    },
+    {
+     "mean": "rất nhiều loại",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "a wide variety of",
+       "type": "Collocation",
+       "ipa": "/ə ˌwaɪd vəˈraɪəɾi əv/",
+       "stress": "a wide va-RI-e-ty of",
+       "band": "5.5–6.5",
+       "grammar": "+ N số nhiều",
+       "ex": "The food court offers a wide variety of dishes."
+      }
+     ]
+    },
+    {
+     "mean": "đặt bàn",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "make a reservation",
+       "type": "Collocation",
+       "ipa": "/ˌmeɪk ə ˌrɛzɚˈveɪʃən/",
+       "stress": "make_a res-er-VA-tion",
+       "band": "5.5–6.5",
+       "grammar": "Anh: book a table",
+       "ex": "You should make a reservation on weekends."
+      }
+     ]
+    },
+    {
+     "mean": "căng tin",
+     "cat": "Eating out · Ăn ngoài",
+     "items": [
+      {
+       "w": "a cafeteria",
+       "type": "Vocab",
+       "ipa": "/ə ˌkæfəˈtɪriə/",
+       "stress": "a caf-e-TE-ri-a",
+       "band": "4–5",
+       "grammar": "Anh: canteen",
+       "ex": "Our school cafeteria opens at six thirty."
+      }
+     ]
+    },
+    {
+     "mean": "sâu răng (quá trình)",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "tooth decay",
+       "type": "Collocation",
+       "ipa": "/ˈtuθ dɪˌkeɪ/",
+       "stress": "TOOTH de-cay",
+       "band": "7–8",
+       "grammar": "không đếm được; cause / prevent + tooth decay",
+       "ex": "Sugary drinks are a major cause of tooth decay."
+      }
+     ]
+    },
+    {
+     "mean": "lỗ sâu răng",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "a cavity",
+       "type": "Vocab",
+       "ipa": "/ə ˈkævəɾi/",
+       "stress": "a CAV-i-ty",
+       "band": "5.5–6.5",
+       "grammar": "đếm được: get / fill + a cavity",
+       "ex": "I got my first cavity when I was eight."
+      }
+     ]
+    },
+    {
+     "mean": "nhiều đường",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "sugary",
+       "type": "Vocab",
+       "ipa": "/ˈʃʊɡəri/",
+       "stress": "SU-gar-y",
+       "band": "5.5–6.5",
+       "grammar": "sugary drinks / snacks",
+       "ex": "Sugary snacks stick to your teeth."
+      },
+      {
+       "w": "high in sugar",
+       "type": "Collocation",
+       "ipa": "/ˌhaɪ ɪn ˈʃʊɡɚ/",
+       "stress": "high_in SU-gar",
+       "band": "5.5–6.5",
+       "grammar": "↔ low in sugar",
+       "ex": "Bubble tea is very high in sugar."
+      },
+      {
+       "w": "a sugar rush",
+       "type": "Collocation",
+       "ipa": "/ə ˈʃʊɡɚ ˌrʌʃ/",
+       "stress": "a SU-gar rush",
+       "band": "7–8",
+       "grammar": "get + a sugar rush",
+       "ex": "Kids get a sugar rush at parties."
+      }
+     ],
+     "note": "sugary = nhiều đường · high in sugar · a sugar rush"
+    },
+    {
+     "mean": "có tính axit",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "acidic",
+       "type": "Vocab",
+       "ipa": "/əˈsɪdɪk/",
+       "stress": "a-CID-ic",
+       "band": "7–8",
+       "grammar": "acidic food / drinks",
+       "ex": "Acidic drinks like lemon tea can damage your teeth."
+      }
+     ]
+    },
+    {
+     "mean": "nước có ga",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "carbonated drinks",
+       "type": "Collocation",
+       "ipa": "/ˈkɑrbəˌneɪɾɪd ˌdrɪŋks/",
+       "stress": "CAR-bon-at-ed DRINKS",
+       "band": "7–8",
+       "grammar": "Mỹ nói thường: soda; Anh: fizzy drinks",
+       "ex": "My dentist told me to stay away from carbonated drinks."
+      }
+     ]
+    },
+    {
+     "mean": "sức khỏe răng miệng",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "oral health",
+       "type": "Collocation",
+       "ipa": "/ˈɔrəl ˌhɛlθ/",
+       "stress": "O-ral HEALTH",
+       "band": "7–8",
+       "grammar": "không đếm được",
+       "ex": "Good oral health affects your whole body."
+      }
+     ]
+    },
+    {
+     "mean": "dùng chỉ nha khoa",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "floss",
+       "type": "Vocab",
+       "ipa": "/flɑs/",
+       "stress": "FLOSS",
+       "band": "5.5–6.5",
+       "grammar": "V: floss your teeth · N: dental floss",
+       "ex": "Dentists say we should floss once a day."
+      },
+      {
+       "w": "a dental checkup",
+       "type": "Collocation",
+       "ipa": "/ə ˌdɛntəl ˈtʃɛkˌʌp/",
+       "stress": "a DEN-tal CHECK-up",
+       "band": "5.5–6.5",
+       "grammar": "Anh: check-up",
+       "ex": "I have a dental checkup every six months."
+      }
+     ],
+     "note": "floss = chỉ nha khoa · brush and floss · a dental checkup"
+    },
+    {
+     "mean": "men răng",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "tooth enamel",
+       "type": "Collocation",
+       "ipa": "/ˈtuθ ɪˌnæməl/",
+       "stress": "TOOTH e-NAM-el",
+       "band": "7–8",
+       "grammar": "không đếm được; wear down + tooth enamel",
+       "ex": "Acidic food can slowly wear down tooth enamel."
+      },
+      {
+       "w": "wear down",
+       "type": "Phrasal verb",
+       "ipa": "/ˌwɛr ˈdaʊn/",
+       "stress": "wear DOWN",
+       "band": "7–8",
+       "grammar": "tách được",
+       "ex": "Soda can wear down your enamel."
+      }
+     ],
+     "note": "tooth enamel = men răng · wear down = bào mòn"
+    },
+    {
+     "mean": "ăn vặt giữa các bữa",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "snack between meals",
+       "type": "Collocation",
+       "ipa": "/ˈsnæk bɪˌtwin ˈmilz/",
+       "stress": "SNACK be-tween MEALS",
+       "band": "5.5–6.5",
+       "grammar": "snack là động từ",
+       "ex": "Try not to snack between meals if you want healthy teeth."
+      },
+      {
+       "w": "snack on",
+       "type": "Phrasal verb",
+       "ipa": "/ˈsnæk ɑn/",
+       "stress": "SNACK_on",
+       "band": "5.5–6.5",
+       "grammar": "+ N",
+       "ex": "I snack on nuts while I study."
+      }
+     ],
+     "note": "snack between meals = ăn vặt · snack on + N"
+    },
+    {
+     "mean": "thấy áy náy, có lỗi",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "feel guilty (about)",
+       "type": "Collocation",
+       "ipa": "/ˌfil ˈɡɪlti/",
+       "stress": "feel GUIL-ty",
+       "band": "5.5–6.5",
+       "grammar": "+ about + N / V-ing; chữ u không đọc",
+       "ex": "I feel guilty about eating cake at midnight."
+      }
+     ]
+    },
+    {
+     "mean": "no căng bụng (thân mật)",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "stuffed",
+       "type": "Vocab",
+       "ipa": "/stʌft/",
+       "stress": "STUFFED",
+       "band": "5.5–6.5",
+       "grammar": "-ed đọc /t/",
+       "ex": "After Tet dinner, I'm always stuffed."
+      },
+      {
+       "w": "pig out (on)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌpɪɡ ˈaʊt/",
+       "stress": "pig_OUT",
+       "band": "7–8",
+       "grammar": "+ on + N",
+       "ex": "We pigged out on pizza after the mock test."
+      },
+      {
+       "w": "fill up (on)",
+       "type": "Phrasal verb",
+       "ipa": "/ˌfɪl ˈʌp/",
+       "stress": "fill_UP",
+       "band": "5.5–6.5",
+       "grammar": "+ on + N",
+       "ex": "Don't fill up on bread before dinner."
+      }
+     ],
+     "note": "stuffed = no căng · pig out = ăn thả ga · fill up on = ăn cho no"
+    },
+    {
+     "mean": "đói cồn cào (thân mật)",
+     "cat": "Teeth & health · Răng & sức khỏe",
+     "items": [
+      {
+       "w": "starving",
+       "type": "Vocab",
+       "ipa": "/ˈstɑrvɪŋ/",
+       "stress": "STARV-ing",
+       "band": "5.5–6.5",
+       "grammar": "I'm starving = rất đói",
+       "ex": "I'm always starving after extra classes."
+      },
+      {
+       "w": "lose my appetite",
+       "type": "Collocation",
+       "ipa": "/ˌluz maɪ ˈæpəˌtaɪt/",
+       "stress": "lose my AP-pe-tite",
+       "band": "5.5–6.5",
+       "grammar": "QK lost",
+       "ex": "I lose my appetite before big exams."
+      }
+     ],
+     "note": "starving = đói cồn cào · lose my appetite = mất cảm giác thèm ăn"
+    }
+   ]
   }
  ],
  "feedback": {
