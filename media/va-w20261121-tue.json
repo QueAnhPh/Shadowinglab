@@ -1,158 +1,134 @@
 [
  {
-  "text": "To be 'honest, / I'd 'rather work in a 'team. //",
-  "start": 102.26,
-  "end": 105.59,
+  "text": "I have to ad'mit, / I have !!a 'real sweet 'tooth!!. //",
+  "start": 81.31,
+  "end": 84.81,
   "chunks": [
    [
     2.8,
-    3.93
+    4.12
    ],
    [
-    5.65,
-    7.28
+    6.05,
+    7.75
    ]
   ],
-  "label": "Bài 1 · Do you prefer working alone or in a team?"
+  "label": "My sweet tooth"
  },
  {
-  "text": "The 'main reason is / that I'm !!not 'really 'cut ‿ out for!! / 'working a'lone for 'hours. //",
-  "start": 105.59,
-  "end": 110.9,
+  "text": "After 'extra 'classes, / I'm 'usually =='starving==, / so I 'grab ‿ a bubble 'tea / and a 'cake / !!on the 'go!!. //",
+  "start": 84.81,
+  "end": 92.36,
   "chunks": [
    [
-    9.91,
-    11.31
+    10.45,
+    12.15
    ],
    [
-    13.3,
-    14.96
+    14.46,
+    15.89
    ],
    [
-    17.21,
-    18.94
+    17.93,
+    19.68
+   ],
+   [
+    22.03,
+    22.96
+   ],
+   [
+    24.49,
+    25.48
    ]
   ],
-  "label": "Bài 1 · Do you prefer working alone or in a team?"
+  "label": "My sweet tooth"
  },
  {
-  "text": "For ex'ample, / in our bi'ology project ‿ last 'month, / my 'group 'split the 'tasks, / and 'everyone !!went the 'extra 'mile!!. //",
-  "start": 110.9,
-  "end": 118.44,
+  "text": "But 'last month, / I got ‿ a =='cavity==, / and my 'dentist 'showed me / how =='sugary== 'drinks / cause ++'tooth de'cay++. //",
+  "start": 92.36,
+  "end": 99.94,
   "chunks": [
    [
-    21.68,
-    22.7
+    27.46,
+    28.62
    ],
    [
-    24.32,
-    26.59
+    30.39,
+    31.63
    ],
    [
-    29.45,
-    31.14
+    33.47,
+    35.21
    ],
    [
-    33.43,
-    35.37
+    37.55,
+    38.9
+   ],
+   [
+    40.85,
+    42.21
    ]
   ],
-  "label": "Bài 1 · Do you prefer working alone or in a team?"
+  "label": "My sweet tooth"
  },
  {
-  "text": "It 'gave me ++a 'real 'sense of a'chievement++, / and I 'think ==den'tistry== is 'teamwork too. //",
-  "start": 118.44,
-  "end": 123.75,
+  "text": "'Now I'm 'trying / to ++cut 'down ‿ on++ 'sweets / and eat ‿ a more ++'balanced 'diet++. //",
+  "start": 99.94,
+  "end": 104.92,
   "chunks": [
    [
-    38.3,
-    40.7
+    44.57,
+    45.68
    ],
    [
-    43.7,
-    46.24
+    47.38,
+    48.89
+   ],
+   [
+    51.01,
+    52.97
    ]
   ],
-  "label": "Bài 1 · Do you prefer working alone or in a team?"
+  "label": "My sweet tooth"
  },
  {
-  "text": "'Definitely my 'aunt, / who's a 'nurse at a 'big 'hospital. //",
-  "start": 123.75,
-  "end": 127.85,
+  "text": "'Honestly, / I still ==feel 'guilty== / when I eat 'cake ‿ at 'midnight. //",
+  "start": 104.92,
+  "end": 109.74,
   "chunks": [
    [
-    49.77,
-    51.16
+    55.93,
+    56.87
    ],
    [
-    53.15,
-    55.41
+    58.4,
+    59.91
+   ],
+   [
+    62.01,
+    63.75
    ]
   ],
-  "label": "Bài 2 · Who would you ask for advice about your future career?"
+  "label": "My sweet tooth"
  },
  {
-  "text": "She !!'climbed the ca'reer 'ladder!! / 'quite 'quickly, / so she 'knows how to ++'land a 'job++ ‿ in 'healthcare. //",
-  "start": 127.85,
-  "end": 133.77,
+  "text": "But as ‿ a 'future 'dentist, / I want my 'own 'teeth / to be 'perfect! //",
+  "start": 109.74,
+  "end": 114.64,
   "chunks": [
    [
-    58.67,
-    60.3
+    66.49,
+    68.25
    ],
    [
-    62.54,
-    63.6
+    70.6,
+    72.0
    ],
    [
-    65.27,
-    68.0
+    74.01,
+    75.17
    ]
   ],
-  "label": "Bài 2 · Who would you ask for advice about your future career?"
- },
- {
-  "text": "Last 'weekend, / she 'told me that ==an 'internship== / is the 'best way / to !!get my 'foot in the 'door!!. //",
-  "start": 133.77,
-  "end": 140.09,
-  "chunks": [
-   [
-    71.72,
-    72.97
-   ],
-   [
-    74.82,
-    76.5
-   ],
-   [
-    78.78,
-    80.0
-   ],
-   [
-    81.82,
-    83.38
-   ]
-  ],
-  "label": "Bài 2 · Who would you ask for advice about your future career?"
- },
- {
-  "text": "'Honestly, / 'talking to her made me 'feel / that den'tistry could 'really be ==my 'calling==. //",
-  "start": 140.09,
-  "end": 145.7,
-  "chunks": [
-   [
-    85.94,
-    86.87
-   ],
-   [
-    88.41,
-    90.02
-   ],
-   [
-    92.23,
-    94.75
-   ]
-  ],
-  "label": "Bài 2 · Who would you ask for advice about your future career?"
+  "label": "My sweet tooth"
  }
 ]

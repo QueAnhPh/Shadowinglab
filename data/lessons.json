@@ -420,26 +420,27 @@
   {
    "id": "hw-vananh-week-20261121-s",
    "skill": "Speaking",
-   "session": 3,
+   "session": 4,
    "title": "Bài tập tuần · Speaking",
-   "topic": "📅 Tuần 23–27/11 · Work & Careers",
+   "topic": "📅 Tuần 23–27/11 · Food & Drink",
    "deadline": "2026-11-28",
    "deadlineAt": "17:30",
-   "note": "T2: 2 câu Part 1 tự trả lời (Work & Careers) · T3: shadowing 2 câu trả lời Part 1 mẫu band 7–8 (nghe từng câu rồi nói lại). Thứ Bảy, Chủ nhật nghỉ. Ôn flashcard Work & Careers trước khi nói.",
+   "note": "T2: 2 câu Part 1 (Work & Careers) · T3: 2 câu Part 1 Food & Drink + shadowing My sweet tooth (nghe từng câu rồi nói lại). Thứ Bảy, Chủ nhật nghỉ. Ôn flashcard trước khi nói.",
    "lessons": [
     "va-w20261121-mon",
+    "va-w20261121-tue-s",
     "va-w20261121-tue"
    ]
   },
   {
    "id": "hw-vananh-week-20261121-l",
    "skill": "Listening",
-   "session": 3,
+   "session": 4,
    "title": "Bài tập tuần · Listening",
-   "topic": "📅 Tuần 23–27/11 · Work & Careers",
+   "topic": "📅 Tuần 23–27/11 · Food & Drink",
    "deadline": "2026-11-28",
    "deadlineAt": "17:30",
-   "note": "T4: Part 1 điền form (10 câu) · T5: Part 2 + T6: Part 4 sentence completion (dạng vừa học 21/11). Nghe 1 lần, xong xem 🔑 từ khóa ⇄ synonym và phân tích từng câu.",
+   "note": "T4: Part 1 điền form (10 câu, đặt bánh sinh nhật) · T5: Part 2 + T6: Part 3 matching (dạng vừa học 21/11). Nghe 1 lần, xong xem 🔑 từ khóa ⇄ synonym và phân tích từng câu.",
    "lessons": [
     "va-w20261121-wed",
     "va-w20261121-thu",
@@ -9787,181 +9788,222 @@
    ]
   },
   {
-   "session": 3,
-   "deck": "va3",
-   "topic": "Work & Careers",
+   "session": 4,
+   "deck": "va4",
+   "topic": "Food & Drink",
    "for": [
     "vananh"
    ],
    "id": "va-w20261121-tue",
-   "title": "Shadowing – Part 1 band 7–8 · Work & Careers (2)",
+   "title": "Shadowing – My sweet tooth",
    "opens": "2026-11-24",
    "skill": "Speaking",
-   "subtitle": "Listen & repeat: Nghe mẫu từng câu → nói lại · rồi shadow cả bài 2–3 lần (2 câu trả lời Part 1 mẫu band 7–8)",
+   "subtitle": "Listen & repeat: Nghe mẫu từng câu → nói lại · rồi shadow cả bài 2–3 lần (bài shadowing trên lớp 21/11)",
    "video": "media/va-w20261121-tue.mp4",
    "sentences": [
     {
-     "text": "To be 'honest, / I'd 'rather work in a 'team. //",
-     "start": 102.26,
-     "end": 105.59,
+     "text": "I have to ad'mit, / I have !!a 'real sweet 'tooth!!. //",
+     "start": 81.31,
+     "end": 84.81,
      "chunks": [
       [
        2.8,
-       3.93
+       4.12
       ],
       [
-       5.65,
-       7.28
+       6.05,
+       7.75
       ]
      ],
-     "label": "Bài 1 · Do you prefer working alone or in a team?"
+     "label": "My sweet tooth"
     },
     {
-     "text": "The 'main reason is / that I'm !!not 'really 'cut ‿ out for!! / 'working a'lone for 'hours. //",
-     "start": 105.59,
-     "end": 110.9,
+     "text": "After 'extra 'classes, / I'm 'usually =='starving==, / so I 'grab ‿ a bubble 'tea / and a 'cake / !!on the 'go!!. //",
+     "start": 84.81,
+     "end": 92.36,
      "chunks": [
       [
-       9.91,
-       11.31
+       10.45,
+       12.15
       ],
       [
-       13.3,
-       14.96
+       14.46,
+       15.89
       ],
       [
-       17.21,
-       18.94
+       17.93,
+       19.68
+      ],
+      [
+       22.03,
+       22.96
+      ],
+      [
+       24.49,
+       25.48
       ]
      ],
-     "label": "Bài 1 · Do you prefer working alone or in a team?"
+     "label": "My sweet tooth"
     },
     {
-     "text": "For ex'ample, / in our bi'ology project ‿ last 'month, / my 'group 'split the 'tasks, / and 'everyone !!went the 'extra 'mile!!. //",
-     "start": 110.9,
-     "end": 118.44,
+     "text": "But 'last month, / I got ‿ a =='cavity==, / and my 'dentist 'showed me / how =='sugary== 'drinks / cause ++'tooth de'cay++. //",
+     "start": 92.36,
+     "end": 99.94,
      "chunks": [
       [
-       21.68,
-       22.7
+       27.46,
+       28.62
       ],
       [
-       24.32,
-       26.59
+       30.39,
+       31.63
       ],
       [
-       29.45,
-       31.14
+       33.47,
+       35.21
       ],
       [
-       33.43,
-       35.37
+       37.55,
+       38.9
+      ],
+      [
+       40.85,
+       42.21
       ]
      ],
-     "label": "Bài 1 · Do you prefer working alone or in a team?"
+     "label": "My sweet tooth"
     },
     {
-     "text": "It 'gave me ++a 'real 'sense of a'chievement++, / and I 'think ==den'tistry== is 'teamwork too. //",
-     "start": 118.44,
-     "end": 123.75,
+     "text": "'Now I'm 'trying / to ++cut 'down ‿ on++ 'sweets / and eat ‿ a more ++'balanced 'diet++. //",
+     "start": 99.94,
+     "end": 104.92,
      "chunks": [
       [
-       38.3,
-       40.7
+       44.57,
+       45.68
       ],
       [
-       43.7,
-       46.24
+       47.38,
+       48.89
+      ],
+      [
+       51.01,
+       52.97
       ]
      ],
-     "label": "Bài 1 · Do you prefer working alone or in a team?"
+     "label": "My sweet tooth"
     },
     {
-     "text": "'Definitely my 'aunt, / who's a 'nurse at a 'big 'hospital. //",
-     "start": 123.75,
-     "end": 127.85,
+     "text": "'Honestly, / I still ==feel 'guilty== / when I eat 'cake ‿ at 'midnight. //",
+     "start": 104.92,
+     "end": 109.74,
      "chunks": [
       [
-       49.77,
-       51.16
+       55.93,
+       56.87
       ],
       [
-       53.15,
-       55.41
+       58.4,
+       59.91
+      ],
+      [
+       62.01,
+       63.75
       ]
      ],
-     "label": "Bài 2 · Who would you ask for advice about your future career?"
+     "label": "My sweet tooth"
     },
     {
-     "text": "She !!'climbed the ca'reer 'ladder!! / 'quite 'quickly, / so she 'knows how to ++'land a 'job++ ‿ in 'healthcare. //",
-     "start": 127.85,
-     "end": 133.77,
+     "text": "But as ‿ a 'future 'dentist, / I want my 'own 'teeth / to be 'perfect! //",
+     "start": 109.74,
+     "end": 114.64,
      "chunks": [
       [
-       58.67,
-       60.3
+       66.49,
+       68.25
       ],
       [
-       62.54,
-       63.6
+       70.6,
+       72.0
       ],
       [
-       65.27,
-       68.0
+       74.01,
+       75.17
       ]
      ],
-     "label": "Bài 2 · Who would you ask for advice about your future career?"
-    },
-    {
-     "text": "Last 'weekend, / she 'told me that ==an 'internship== / is the 'best way / to !!get my 'foot in the 'door!!. //",
-     "start": 133.77,
-     "end": 140.09,
-     "chunks": [
-      [
-       71.72,
-       72.97
-      ],
-      [
-       74.82,
-       76.5
-      ],
-      [
-       78.78,
-       80.0
-      ],
-      [
-       81.82,
-       83.38
-      ]
-     ],
-     "label": "Bài 2 · Who would you ask for advice about your future career?"
-    },
-    {
-     "text": "'Honestly, / 'talking to her made me 'feel / that den'tistry could 'really be ==my 'calling==. //",
-     "start": 140.09,
-     "end": 145.7,
-     "chunks": [
-      [
-       85.94,
-       86.87
-      ],
-      [
-       88.41,
-       90.02
-      ],
-      [
-       92.23,
-       94.75
-      ]
-     ],
-     "label": "Bài 2 · Who would you ask for advice about your future career?"
+     "label": "My sweet tooth"
     }
    ]
   },
   {
-   "session": 3,
-   "deck": "va3",
-   "topic": "Work & Careers",
+   "session": 4,
+   "deck": "va4",
+   "topic": "Food & Drink",
+   "for": [
+    "vananh"
+   ],
+   "id": "va-w20261121-tue-s",
+   "skill": "Speaking",
+   "opens": "2026-11-24",
+   "title": "Part 1 – Lunch at school & street food",
+   "subtitle": "2 câu Part 1 · đọc 🧭 phân tích câu hỏi → ghi từ khóa A.R.E. + Feeling → 🎙 ghi âm thử → 📤 nộp bài",
+   "sentences": [
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 1 (Work or studies)",
+     "q": "Do you usually have lunch at school?",
+     "hint": "grab a bite · a home-cooked meal · on a budget · a cafeteria · reasonably priced",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>Do you usually…</i> → thói quen → <b>hiện tại đơn</b> + trạng từ tần suất (<i>usually, most days, hardly ever</i>).",
+      "<b>A – Answer:</b> trả lời thẳng: <i>Yes, most days I eat in the school cafeteria.</i> / <i>Not really, I usually go home for lunch.</i>",
+      "<b>R – Reason:</b> 2–3 hướng: tiện (<i>no time to go home</i>) · rẻ (<i>reasonably priced, I'm on a budget</i>) · ngon / chán.",
+      "<b>E – Example:</b> 1 hôm cụ thể (quá khứ đơn): <i>Yesterday, I grabbed a bite at a food stall outside the gate before my extra class.</i>",
+      "<b>F – Feeling:</b> <i>Honestly, I still miss a home-cooked meal…</i>",
+      "<b>Từ nên dùng:</b> <i>grab a bite, a home-cooked meal, on a budget</i>. <b>Lỗi hay gặp:</b> <i>canteen</i> là Anh – Anh, giọng Mỹ dùng <i>cafeteria</i>; <i>have lunch</i> không có <i>a</i>.",
+      "<b>Nói 20–30 giây</b>, ghi <b>từ khóa</b> vào ô A / R / E / F. Tập bằng 🎙 Ghi âm thử rồi mới 📤 nộp (tối đa 3 lần)."
+     ],
+     "demo": {
+      "q": "Do you usually eat breakfast at home?",
+      "notes": {
+       "A": "no · on the way",
+       "R": "wake up late · extra classes",
+       "E": "this morning · sticky rice · eat on the go",
+       "F": "a bit guilty"
+      }
+     }
+    },
+    {
+     "free": true,
+     "part": "Part 1",
+     "label": "Part 1 · Câu 2",
+     "q": "How often do you eat street food?",
+     "hint": "street food · mouth-watering · a food stall · cut down on · have a craving for",
+     "guide": [
+      "<b>Đọc câu hỏi:</b> <i>How often…</i> → phải nói <b>tần suất cụ thể</b> (<i>two or three times a week, almost every day</i>), không trả lời <i>Yes</i>.",
+      "<b>A – Answer:</b> <i>Probably three or four times a week.</i>",
+      "<b>R – Reason:</b> tiện, rẻ, ngon (<i>mouth-watering</i>) · hoặc vì sao ít ăn (<i>trying to cut down on fried food</i>).",
+      "<b>E – Example:</b> 1 món / 1 lần cụ thể: <i>Last Friday, I had a craving for banh trang nuong, so I went to a food stall near my school.</i>",
+      "<b>F – Feeling:</b> <i>It always cheers me up after a long day.</i>",
+      "<b>Từ nên dùng:</b> <i>a food stall, mouth-watering, have a craving for</i>. <b>Lỗi hay gặp:</b> <i>street foods</i> → <i>street food</i> (không đếm được); <i>many times a week</i> → <i>several times a week</i>.",
+      "<b>Nói 20–30 giây</b>, ghi từ khóa vào ô A / R / E / F, 🎙 thử → 📤 nộp."
+     ],
+     "demo": {
+      "q": "How often do you order takeout?",
+      "notes": {
+       "A": "once a week · Friday",
+       "R": "Mom works late",
+       "E": "last week · fried chicken · stuffed",
+       "F": "happy · but guilty"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "session": 4,
+   "deck": "va4",
+   "topic": "Food & Drink",
    "for": [
     "vananh"
    ],
@@ -9971,36 +10013,35 @@
    "part": "Part 1",
    "opens": "2026-11-25",
    "prep": 30,
-   "title": "Nghe Part 1 – Medical University Open Day (form completion, 10 câu)",
+   "title": "Nghe Part 1 – Ordering a birthday cake (form completion, 10 câu)",
    "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe",
    "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
-   "heading": "Saigon Medical University – Open Day Registration Form",
+   "heading": "Sweet Moments Bakery – Cake Order Form",
    "strategy": [
-    "<b>30 giây đọc đề:</b> gạch từ khóa trước mỗi ô (<i>surname, phone, school, date, faculty…</i>) và đoán loại thông tin: tên đánh vần, số, ngày, giờ, ngành.",
-    "<b>Chọn dạng từ</b> cho mỗi ô: có <i>December</i> in sẵn → chỉ ghi ngày; sau <i>a</i> → danh từ số ít; trước <i>High School</i> → tên riêng, viết hoa.",
-    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio. Nghe xong câu 4 thì mắt nhìn ngay câu 5; lỡ 1 câu thì bỏ, đi tiếp.",
-    "<b>Bẫy đổi ý</b> (Part 1 rất hay có): <i>actually, no · used to · at first … but · not … actually</i>. Đáp án là thông tin <b>sau</b> tín hiệu.",
-    "<b>Số điện thoại:</b> <i>oh</i> = 0 · đọc theo cụm 3 số. <b>ONE WORD</b> → không ghi <i>a motorbike</i>, chỉ <i>motorbike</i>."
+    "<b>Form completion – đọc đề 30 giây:</b> gạch từ khóa từng dòng (<i>name, phone, date, price</i>), đoán <b>loại thông tin</b>: tên đánh vần · số · ngày · giá · danh từ.",
+    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio; mắt ở câu đang nghe + từ khóa câu kế tiếp; nghe thấy từ khóa câu sau mà chưa có đáp án → bỏ, đi tiếp.",
+    "<b>Bẫy đổi ý:</b> <i>at first · actually · I'm afraid · instead · usually … but</i> → đáp án là thông tin <b>sau</b> tín hiệu.",
+    "<b>ONE WORD AND/OR A NUMBER:</b> tối đa 1 từ + 1 số; viết số bằng chữ số (<i>12, 520,000</i>), đánh vần đúng từng chữ cái."
    ],
    "rows": [
-    "## Personal details",
-    "Name: Kevin [[surname]] {1}",
+    "## Customer",
+    "Name: Ngoc [[family name]] {1}",
     "[[Phone]] number: {2}",
-    "[[School]]: {3} High School",
-    "## Open Day",
-    "[[Date]]: Saturday, December {4}",
-    "[[Faculty]] to visit: {5}",
-    "Number of [[people]] (including Kevin): {6}",
-    "Campus [[tour]] starts at: {7} a.m.",
-    "## Other requests",
-    "[[Parking]]: a space for a {8}",
-    "Would like to [[talk to]] a current {9}",
-    "[[Heard about]] the Open Day from his {10}"
+    "## Order",
+    "[[Pick-up]] date: Sunday {3}",
+    "Cake size: for {4} [[people]]",
+    "[[Flavor]]: {5}",
+    "Recipe: {6}-sugar version",
+    "[[Message]] on the cake: Happy 70th Birthday, {7}",
+    "## Payment",
+    "[[Price]]: {8} dong",
+    "[[Deposit]]: pay by bank {9}",
+    "[[Collect]] from the branch on {10} Street"
    ],
    "qs": {
     "1": {
      "ans": [
-      "Walsh"
+      "Tran"
      ],
      "form": [
       "Tên riêng (viết hoa)",
@@ -10009,27 +10050,21 @@
      "hint": "Tên được đánh vần",
      "kw": [
       [
-       "surname",
+       "family name",
        "N",
-       "last name"
-      ],
-      [
-       "spell",
-       "V",
-       "W, A, L, S, H"
+       "my family name"
       ]
      ],
      "why": [
-      "Đọc đề: ô sau <i>Kevin</i> + [[surname]] → chờ <b>họ</b>, thường được đánh vần.",
-      "Audio: [[my last name]] = surname → **Walsh**, đánh vần W-A-L-S-H.",
-      "Viết hoa chữ đầu, đúng từng chữ cái (không viết <i>Welsh</i>)."
+      "Đọc đề: [[family name]] → chờ <b>họ</b>, thường đánh vần.",
+      "Audio: [[my family name is]] **Tran**, đánh vần T-R-A-N.",
+      "Viết hoa chữ đầu, đúng từng chữ cái."
      ]
     },
     "2": {
      "ans": [
-      "0908361742",
-      "0908 361 742",
-      "090 836 1742"
+      "0938271645",
+      "0938 271 645"
      ],
      "form": [
       "Số",
@@ -10037,87 +10072,47 @@
      ],
      "kw": [
       [
-       "Phone number",
+       "Phone",
        "N",
-       "mobile"
+       "a phone number"
       ]
      ],
      "why": [
-      "Đọc đề: [[Phone number]] → chờ dãy số.",
-      "Bẫy đổi ý: <i>home number 283 915</i> → [[Actually, no]] … [[my mobile]].",
-      "<i>oh nine oh eight, three six one, seven four two</i> → **0908 361 742** (<i>oh</i> = 0)."
+      "Đọc đề: [[Phone number]] → <b>dãy số</b>.",
+      "Audio: <i>oh nine three eight, two seven one, six four five</i>; <i>oh</i> = 0.",
+      "Ghi **0938271645**, kiểm lại khi người bán nhắc lại."
      ]
     },
     "3": {
      "ans": [
-      "Riverside"
+      "6 December",
+      "6th December",
+      "December 6",
+      "December 6th",
+      "6 Dec",
+      "6"
      ],
      "form": [
-      "Tên riêng",
-      "Danh từ thường"
+      "Ngày",
+      "Giờ"
      ],
      "kw": [
       [
-       "School",
+       "Pick-up",
        "N",
-       "which high school do you go to"
+       "pick it up / collect it"
       ]
      ],
      "why": [
-      "Đọc đề: ô đứng trước <i>High School</i> → <b>tên trường</b>, viết hoa.",
-      "Bẫy xưa – nay: [[I used to go to]] Lincoln … [[but]] … [[now I'm at]] **Riverside**.",
-      "Đề hỏi trường hiện tại → Riverside."
+      "Đọc đề: <i>Sunday ___</i> → <b>ngày</b>.",
+      "Bẫy đổi ý: Saturday the fifth → [[I'm afraid we're fully booked]].",
+      "[[Could you pick it up on]] **Sunday the sixth?** → 6 December."
      ]
     },
     "4": {
      "ans": [
-      "5",
-      "5th",
-      "fifth"
-     ],
-     "form": [
-      "Số (ngày)",
-      "Tháng"
-     ],
-     "kw": [
-      [
-       "Date",
-       "N",
-       "Saturday the fifth of December"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>Saturday, December ___</i> → tháng in sẵn, chỉ ghi <b>ngày</b>.",
-      "Bẫy có thật nhưng không trả lời câu hỏi: <i>28th of November</i> chỉ cho <b>engineering</b>.",
-      "[[the other one]] … Saturday **the fifth** of December → 5."
-     ]
-    },
-    "5": {
-     "ans": [
-      "dentistry",
-      "Dentistry"
-     ],
-     "form": [
-      "Danh từ (ngành)",
-      "Tính từ"
-     ],
-     "kw": [
-      [
-       "Faculty to visit",
-       "N",
-       "which faculty would you like to visit"
-      ]
-     ],
-     "why": [
-      "Đọc đề: [[Faculty]] → tên <b>ngành / khoa</b>.",
-      "Bẫy: [[My second choice]] is pharmacy → không phải lựa chọn chính.",
-      "[[but mainly]] I'm interested in **dentistry** → dentistry."
-     ]
-    },
-    "6": {
-     "ans": [
-      "3",
-      "three"
+      "12",
+      "twelve"
      ],
      "form": [
       "Số",
@@ -10125,249 +10120,290 @@
      ],
      "kw": [
       [
-       "people (including Kevin)",
+       "people",
        "N",
-       "how many people are coming, including you"
+       "twelve people"
       ]
      ],
      "why": [
-      "Đọc đề: <i>Number of people</i> → <b>số</b>.",
-      "Bẫy đổi ý: [[At first]] … four → [[But]] my sister has an exam.",
-      "[[so it'll be]] **three** → 3."
+      "Đọc đề: <i>for ___ people</i> → <b>số</b>.",
+      "Bẫy đổi ý: [[At first I thought ten]], [[but now]] some cousins are coming.",
+      "big enough for **twelve** people → 12."
+     ]
+    },
+    "5": {
+     "ans": [
+      "mango"
+     ],
+     "form": [
+      "Danh từ (hương vị)",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Flavor",
+       "N",
+       "What flavor"
+      ]
+     ],
+     "why": [
+      "Đọc đề: [[Flavor]] → <b>danh từ</b> (một loại vị).",
+      "Bẫy: chocolate = <i>most popular</i>, nhưng bà [[isn't a big fan of chocolate]].",
+      "[[could we have]] **mango**? → Of course."
+     ]
+    },
+    "6": {
+     "ans": [
+      "low"
+     ],
+     "form": [
+      "Tính từ",
+      "Số"
+     ],
+     "kw": [
+      [
+       "Recipe",
+       "N",
+       "the normal recipe or our low-sugar version"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>___-sugar version</i> → <b>tính từ</b> ghép với <i>sugar</i>.",
+      "Hai lựa chọn: <i>normal recipe</i> hoặc <i>low-sugar version</i>.",
+      "[[The low-sugar one, please]] → **low**; lý do: bà <i>cut down on sweets</i>."
      ]
     },
     "7": {
      "ans": [
-      "10.15",
-      "10:15",
-      "ten fifteen"
+      "Grandma"
      ],
      "form": [
-      "Giờ",
-      "Số lượng"
-     ],
-     "kw": [
-      [
-       "Campus tour starts",
-       "N+V",
-       "the campus tour starts at"
-      ]
-     ],
-     "why": [
-      "Đọc đề: [[tour]] + <i>starts at ___ a.m.</i> → <b>giờ</b>, <i>a.m.</i> in sẵn.",
-      "Bẫy: <i>welcome talk at nine thirty</i> = buổi nói chuyện, không phải tour.",
-      "[[the campus tour]] starts at **ten fifteen** → 10.15."
-     ]
-    },
-    "8": {
-     "ans": [
-      "motorbike",
-      "motorcycle"
-     ],
-     "form": [
-      "Danh từ số ít",
-      "Danh từ số nhiều"
-     ],
-     "kw": [
-      [
-       "Parking",
-       "N",
-       "a parking space"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>a space for a ___</i> → <b>danh từ số ít</b> (phương tiện).",
-      "Bẫy nhắc rồi phủ định: <i>for a car?</i> → [[Not a car]].",
-      "a space for a **motorbike** → motorbike."
-     ]
-    },
-    "9": {
-     "ans": [
-      "student"
-     ],
-     "form": [
-      "Danh từ số ít (người)",
+      "Danh từ (người)",
       "Động từ"
      ],
      "kw": [
       [
-       "talk to",
-       "V",
-       "I'd love to talk to"
-      ],
-      [
-       "current",
-       "Adj",
-       "current"
+       "Message",
+       "N",
+       "what would you like us to write"
       ]
      ],
      "why": [
-      "Đọc đề: <i>talk to a current ___</i> → <b>người</b>, danh từ số ít.",
-      "Audio: [[I'd love to talk to]] a current **student**.",
-      "ONE WORD → chỉ <i>student</i> (không ghi <i>dental student</i>)."
+      "Đọc đề: [[Message]] <i>Happy 70th Birthday, ___</i> → <b>người</b>.",
+      "[[What would you like us to write]] = message.",
+      "<i>Happy seventieth birthday,</i> **Grandma** → viết hoa vì là cách gọi."
+     ]
+    },
+    "8": {
+     "ans": [
+      "520,000",
+      "520000",
+      "520 000"
+     ],
+     "form": [
+      "Số (giá)",
+      "Danh từ"
+     ],
+     "kw": [
+      [
+       "Price",
+       "N",
+       "the price … costs"
+      ]
+     ],
+     "why": [
+      "Đọc đề: [[Price]] … dong → <b>số tiền</b>.",
+      "Bẫy: [[usually]] 480,000, [[but]] the low-sugar version [[costs a little more]].",
+      "so that's **five hundred and twenty thousand** → 520,000."
+     ]
+    },
+    "9": {
+     "ans": [
+      "transfer"
+     ],
+     "form": [
+      "Danh từ",
+      "Tính từ"
+     ],
+     "kw": [
+      [
+       "Deposit",
+       "N",
+       "deposits"
+      ],
+      [
+       "pay by",
+       "V",
+       "please pay by"
+      ]
+     ],
+     "why": [
+      "Đọc đề: <i>pay by bank ___</i> → <b>danh từ</b>.",
+      "Bẫy: [[We don't take cash]] for deposits.",
+      "please pay by bank **transfer**."
      ]
     },
     "10": {
      "ans": [
-      "teacher",
-      "biology teacher"
+      "Lotus"
      ],
      "form": [
-      "Danh từ (người)",
-      "Nơi chốn"
+      "Tên riêng (viết hoa)",
+      "Danh từ thường"
      ],
      "kw": [
       [
-       "Heard about",
+       "Collect",
        "V",
-       "how did you hear about"
-      ],
-      [
-       "from his",
-       "Det",
-       "my … told me"
+       "collect it from"
       ]
      ],
      "why": [
-      "Đọc đề: <i>from his ___</i> → 1 <b>người</b> (vì có <i>his</i>).",
-      "Bẫy: <i>On our website?</i> → [[Not the website, actually]].",
-      "My biology **teacher** told me → teacher (ONE WORD)."
+      "Đọc đề: [[Collect]] … <i>___ Street</i> → <b>tên đường</b>.",
+      "Bẫy: <i>main shop is on Market Street</i>, [[but]] very busy on Sundays.",
+      "[[collect it from our smaller branch on]] **Lotus** Street."
      ]
     }
    },
    "audio": "media/va-w20261121-wed.mp3",
    "transcript": [
     {
-     "sp": "Officer",
-     "t": "Good morning, Saigon Medical University, Open Day bookings. How can I help you?",
-     "at": 45.2
+     "sp": "Shop assistant",
+     "t": "Good afternoon, Sweet Moments Bakery. How can I help you?",
+     "at": 6.5
     },
     {
-     "sp": "Kevin",
-     "t": "Hi. I'm in my senior year, and I'd like to register for the Open Day, please.",
-     "at": 52.2
+     "sp": "Ngoc",
+     "t": "Hi. I'd like to order a birthday cake for my grandmother. It's her seventieth birthday this weekend.",
+     "at": 12.4
     },
     {
-     "sp": "Officer",
-     "t": "Of course. Can I have your name?",
-     "at": 59.7
+     "sp": "Shop assistant",
+     "t": "Lovely. Can I take your name, please?",
+     "at": 20.1
     },
     {
-     "sp": "Kevin",
-     "t": "It's Kevin. My last name is **Walsh**. That's W, A, L, S, H.",
-     "at": 62.5,
+     "sp": "Ngoc",
+     "t": "Yes, it's Ngoc. And [[my family name is Tran]]. That's **T, R, A, N**.",
+     "at": 24.3,
      "q": 1
     },
     {
-     "sp": "Officer",
-     "t": "Thank you, Kevin. And a phone number?",
-     "at": 69.7
+     "sp": "Shop assistant",
+     "t": "**T, R, A, N**. Thank you. And a phone number?",
+     "at": 30.0,
+     "q": 1
     },
     {
-     "sp": "Kevin",
-     "t": "My home number is two eight three, nine one five. [[Actually, no]], it's better to use [[my mobile]]. It's **oh nine oh eight, three six one, seven four two**.",
-     "at": 72.8,
+     "sp": "Ngoc",
+     "t": "It's **oh nine three eight, two seven one, six four five**.",
+     "at": 34.6,
      "q": 2
     },
     {
-     "sp": "Officer",
-     "t": "Got it. Which high school do you go to?",
-     "at": 86.8
+     "sp": "Shop assistant",
+     "t": "Oh nine three eight, two seven one, six four five. When would you like to pick it up?",
+     "at": 39.6
     },
     {
-     "sp": "Kevin",
-     "t": "[[I used to go to]] Lincoln High School, [[but]] I moved this year, so [[now I'm at]] **Riverside** High School.",
-     "at": 89.8,
+     "sp": "Ngoc",
+     "t": "The party is on Saturday the fifth of December, so could I collect it that morning?",
+     "at": 46.8
+    },
+    {
+     "sp": "Shop assistant",
+     "t": "[[I'm afraid we're fully booked on Saturday]]. Could you pick it up on **Sunday the sixth**?",
+     "at": 53.2,
      "q": 3
     },
     {
-     "sp": "Officer",
-     "t": "Lovely. Now, we have two Open Days. The one on the twenty-eighth of November is only for the engineering faculty, so I think you want [[the other one]], on Saturday **the fifth** of December.",
-     "at": 98.9,
+     "sp": "Ngoc",
+     "t": "Oh, OK. Actually, we can have the party on Sunday instead. The sixth is fine.",
+     "at": 60.2
+    },
+    {
+     "sp": "Shop assistant",
+     "t": "Great. And how many people is the cake for?",
+     "at": 67.0
+    },
+    {
+     "sp": "Ngoc",
+     "t": "[[At first I thought ten]], but now some cousins are coming too, so it needs to be **big enough for twelve people**.",
+     "at": 70.7,
      "q": 4
     },
     {
-     "sp": "Kevin",
-     "t": "Yes, the fifth, please. I want to see the dental school.",
-     "at": 113.3
+     "sp": "Shop assistant",
+     "t": "Twelve people. What flavor would you like? Chocolate is our most popular.",
+     "at": 78.6
     },
     {
-     "sp": "Officer",
-     "t": "So which faculty would you like to visit?",
-     "at": 118.7
-    },
-    {
-     "sp": "Kevin",
-     "t": "[[My second choice]] is pharmacy, [[but mainly]] I'm interested in **dentistry**.",
-     "at": 122.1,
+     "sp": "Ngoc",
+     "t": "My grandmother [[isn't a big fan of chocolate]]. She loves fruit, so **could we have mango**?",
+     "at": 85.0,
      "q": 5
     },
     {
-     "sp": "Officer",
-     "t": "I'll put dentistry. How many people are coming, including you?",
-     "at": 129.1
+     "sp": "Shop assistant",
+     "t": "Of course. Mango is delicious at this time of year. Would you like the normal recipe or our low-sugar version?",
+     "at": 91.8
     },
     {
-     "sp": "Kevin",
-     "t": "[[At first]] I said my parents and my sister would come, so four. [[But]] my sister has an exam that day, [[so it'll be]] **three**.",
-     "at": 134.4,
+     "sp": "Ngoc",
+     "t": "**The low-sugar one, please**. She's trying to cut down on sweets.",
+     "at": 100.9,
      "q": 6
     },
     {
-     "sp": "Officer",
-     "t": "Three people. There's a welcome talk at nine thirty, and then the campus [[tour]] starts at **ten fifteen**.",
-     "at": 145.6,
+     "sp": "Shop assistant",
+     "t": "No problem. And what would you like us to write on the cake?",
+     "at": 105.9
+    },
+    {
+     "sp": "Ngoc",
+     "t": "**Happy seventieth birthday, Grandma**.",
+     "at": 110.6,
      "q": 7
     },
     {
-     "sp": "Kevin",
-     "t": "We can't get there for the talk, but the tour at ten fifteen is perfect.",
-     "at": 153.3
-    },
-    {
-     "sp": "Officer",
-     "t": "Will you need a parking space for a car?",
-     "at": 159.8
-    },
-    {
-     "sp": "Kevin",
-     "t": "[[Not a car]]. My dad and I will come by **motorbike**, so a space for a motorbike, please.",
-     "at": 163.1,
+     "sp": "Shop assistant",
+     "t": "Lovely. So the price for a twelve-person mango cake is [[usually four hundred and eighty thousand dong]], but the low-sugar version costs a little more, so that's **five hundred and twenty thousand**.",
+     "at": 114.0,
      "q": 8
     },
     {
-     "sp": "Officer",
-     "t": "No problem. Is there anything else you'd like to do on the day?",
-     "at": 171.7
+     "sp": "Ngoc",
+     "t": "That's fine. How do I pay the deposit?",
+     "at": 129.8
     },
     {
-     "sp": "Kevin",
-     "t": "Yes. [[I'd love to talk to]] a current **student** about what dental school is really like.",
-     "at": 176.5,
+     "sp": "Shop assistant",
+     "t": "[[We don't take cash for deposits]], so please **pay by bank transfer**. I'll send you our account details by text message.",
+     "at": 133.3,
      "q": 9
     },
     {
-     "sp": "Officer",
-     "t": "We can arrange that. And just for our records, how did you hear about the Open Day? On our website?",
-     "at": 184.0
+     "sp": "Ngoc",
+     "t": "Great. And which shop do I pick it up from?",
+     "at": 143.6
     },
     {
-     "sp": "Kevin",
-     "t": "[[Not the website, actually]]. My biology **teacher** told me about it.",
-     "at": 192.3,
+     "sp": "Shop assistant",
+     "t": "[[Our main shop is on Market Street]], but it's very busy on Sundays. You can collect it from **our smaller branch on Lotus Street**.",
+     "at": 147.0,
      "q": 10
     },
     {
-     "sp": "Officer",
-     "t": "Great. You're all booked, Kevin. See you on the fifth.",
-     "at": 198.6
+     "sp": "Ngoc",
+     "t": "Lotus Street is much closer to my house. Thank you so much.",
+     "at": 157.6
     }
    ]
   },
   {
-   "session": 3,
-   "deck": "va3",
-   "topic": "Work & Careers",
+   "session": 4,
+   "deck": "va4",
+   "topic": "Food & Drink",
    "for": [
     "vananh"
    ],
@@ -10377,524 +10413,561 @@
    "part": "Part 2",
    "opens": "2026-11-26",
    "prep": 30,
-   "title": "Nghe Part 2 – Summer Assistant Program (sentence completion)",
-   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe · dạng vừa học 21/11: sentence completion",
-   "instructions": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
-   "heading": "Bright Smile Dental Clinic – Summer Assistant Program · Questions 11–17",
+   "title": "Nghe Part 2 – Street food market (matching)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · dạng vừa học 21/11: matching",
+   "instructions": "What does the speaker say about each dish? Choose SIX answers from the list, A–H. There are two extra options.",
+   "heading": "Saigon Food Notes – a day at the street food market · Questions 11–16",
    "strategy": [
-    "<b>Sentence completion – đọc đề 30 giây:</b> đọc <b>cả câu</b>, gạch 2–4 từ khóa và <b>từ điều kiện</b> (<i>most, every, never, best</i>). Câu trong đề là bản <b>paraphrase</b> của lời nói.",
-    "<b>Đoán loại thông tin + dạng từ:</b> trước <i>weeks</i> → số · sau <i>at … a.m.</i> → giờ · sau <i>a</i> → danh từ số ít · sau <i>to</i> → động từ nguyên mẫu.",
-    "<b>Giới hạn số từ:</b> NO MORE THAN TWO WORDS AND/OR A NUMBER → tối đa 2 từ (+ 1 số); từ điền phải vừa ngữ pháp câu.",
-    "<b>Linear thinking:</b> câu hỏi theo thứ tự audio; nghe thấy từ khóa câu <b>kế tiếp</b> mà chưa có đáp án → bỏ, đi tiếp.",
-    "<b>Bẫy đổi ý:</b> <i>used to · when we started · some people think · however · instead</i> → lấy thông tin <b>sau</b> tín hiệu."
+    "<b>Matching – đọc đề 30 giây:</b> đọc danh sách lựa chọn A–H trước, <b>Simplify</b> mỗi lựa chọn còn 2–3 từ (vd. <i>only in the evening</i> → <i>tối mới bán</i>). Danh sách <b>dài hơn</b> số câu → có lựa chọn thừa.",
+    "<b>Nghe theo tuyến:</b> tên món / người trong đề xuất hiện đúng thứ tự audio; nghe tới tên câu kế tiếp mà chưa có đáp án → đoán, đi tiếp.",
+    "<b>Distractor:</b> người nói hay nhắc cả lựa chọn sai rồi phủ định: <i>people say … but actually · it used to be … · some assume … but</i> → bỏ phần trước tín hiệu.",
+    "<b>Đánh dấu ✓ ✗ ?</b> cạnh từng lựa chọn khi nghe; lựa chọn đã dùng thì gạch đi (mỗi lựa chọn dùng 1 lần)."
    ],
    "rows": [
-    "The program now [[lasts]] {11} weeks.",
-    "Assistants [[start each day]] at {12} a.m.",
-    "[[Most of the time]], assistants work at the {13}.",
-    "[[Before the first day]], every assistant must complete a {14} course.",
-    "Assistants are [[never allowed]] to {15} patients' teeth.",
-    "[[At the end]], each assistant gives a short {16}.",
-    "The [[best]] assistant [[receives]] a {17} from the head dentist."
+    "{11} the [[crispy pancakes]]",
+    "{12} the [[broken rice]]",
+    "{13} the [[grilled pork]] with noodles",
+    "{14} the [[fresh spring rolls]]",
+    "{15} the [[sweet soup]]",
+    "{16} the [[sandwiches]]"
    ],
    "qs": {
     "11": {
+     "opts": {
+      "A": "It is too spicy for most people.",
+      "B": "It is the best value.",
+      "C": "It is only sold in the evening.",
+      "D": "It is the healthiest option.",
+      "E": "It sells out early.",
+      "F": "It always has a long line.",
+      "G": "Its recipe has recently changed.",
+      "H": "It is suitable for vegetarians."
+     },
      "ans": [
-      "6",
-      "six"
-     ],
-     "form": [
-      "Số",
-      "Danh từ"
+      "C"
      ],
      "kw": [
       [
-       "lasts",
-       "V",
-       "lasts"
-      ],
-      [
-       "now",
+       "only sold in the evening",
        "Adv",
-       "So now"
+       "only get them after six in the evening"
       ]
      ],
      "why": [
-      "Đọc đề: <i>now lasts ___ weeks</i> → <b>số</b>; từ điều kiện <b>now</b>.",
-      "Bẫy xưa – nay: [[When we started]] … four weeks.",
-      "[[So now]] the program lasts **six** weeks → 6."
-     ]
+      "Simplify C = <i>tối mới bán</i>.",
+      "Bẫy A: [[Lots of people say they're too spicy]], [[but actually]] chili is on the side.",
+      "[[What surprised me]] … **only get them after six in the evening** → C."
+     ],
+     "optWhy": {
+      "A": "Nhắc rồi phủ định: <i>too spicy</i> → [[but actually]] … not a problem.",
+      "C": "**after six in the evening** = only sold in the evening."
+     }
     },
     "12": {
+     "opts": {
+      "A": "It is too spicy for most people.",
+      "B": "It is the best value.",
+      "C": "It is only sold in the evening.",
+      "D": "It is the healthiest option.",
+      "E": "It sells out early.",
+      "F": "It always has a long line.",
+      "G": "Its recipe has recently changed.",
+      "H": "It is suitable for vegetarians."
+     },
      "ans": [
-      "7.30",
-      "7:30",
-      "seven thirty"
-     ],
-     "form": [
-      "Giờ",
-      "Số lượng"
+      "F"
      ],
      "kw": [
       [
-       "start each day",
-       "V",
-       "you'll start each day"
+       "a long line",
+       "N",
+       "a line of about twenty people"
+      ],
+      [
+       "always",
+       "Adv",
+       "always"
       ]
      ],
      "why": [
-      "Đọc đề: <i>at ___ a.m.</i> → <b>giờ</b>.",
-      "Bẫy có thật nhưng không trả lời câu hỏi: <i>opens to patients at eight</i> = giờ mở cửa.",
-      "[[you'll start each day]] at **seven thirty** → 7.30."
-     ]
+      "Simplify F = <i>luôn xếp hàng dài</i>.",
+      "Bẫy B (xưa – nay): [[It used to be the cheapest]], [[but]] they raised their prices.",
+      "**always a line of about twenty people** → F."
+     ],
+     "optWhy": {
+      "B": "Xưa – nay: <i>used to be the cheapest</i> → now no longer true.",
+      "F": "**always a line of about twenty people waiting** = always has a long line."
+     }
     },
     "13": {
+     "opts": {
+      "A": "It is too spicy for most people.",
+      "B": "It is the best value.",
+      "C": "It is only sold in the evening.",
+      "D": "It is the healthiest option.",
+      "E": "It sells out early.",
+      "F": "It always has a long line.",
+      "G": "Its recipe has recently changed.",
+      "H": "It is suitable for vegetarians."
+     },
      "ans": [
-      "reception desk",
-      "reception"
-     ],
-     "form": [
-      "Danh từ (nơi chốn)",
-      "Động từ"
+      "G"
      ],
      "kw": [
       [
-       "Most of the time",
-       "Det+N",
-       "most of your time"
+       "recipe",
+       "N",
+       "the recipe"
       ],
       [
-       "work at",
+       "recently changed",
        "V",
-       "will be at"
+       "In September … changed"
       ]
      ],
      "why": [
-      "Đọc đề: <i>work at the ___</i> → <b>nơi chốn</b>; từ điều kiện <b>Most</b>.",
-      "Bẫy: <i>a few hours … in the sterilization room</i> → không phải <b>most</b>.",
-      "[[However, most of your time]] will be at the **reception desk**."
-     ]
+      "Simplify G = <i>mới đổi công thức</i>.",
+      "[[In September]], the owner **changed the recipe** → less sugar.",
+      "Khách quen không thích = chi tiết phụ, không phải lựa chọn nào → G."
+     ],
+     "optWhy": {
+      "G": "**changed the recipe** in September = recently changed.",
+      "D": "Ít đường hơn nhưng người nói không nói là <i>healthiest</i> (đó là món 14)."
+     }
     },
     "14": {
+     "opts": {
+      "A": "It is too spicy for most people.",
+      "B": "It is the best value.",
+      "C": "It is only sold in the evening.",
+      "D": "It is the healthiest option.",
+      "E": "It sells out early.",
+      "F": "It always has a long line.",
+      "G": "Its recipe has recently changed.",
+      "H": "It is suitable for vegetarians."
+     },
      "ans": [
-      "first-aid",
-      "first aid"
-     ],
-     "form": [
-      "Danh từ làm tính từ",
-      "Số"
+      "D"
      ],
      "kw": [
       [
-       "Before the first day",
-       "Prep+N",
-       "Before your first day"
-      ],
-      [
-       "must complete",
-       "V",
-       "must complete"
+       "healthiest",
+       "Adj",
+       "the most nutritious"
       ]
      ],
      "why": [
-      "Đọc đề: <i>a ___ course</i> → loại khóa học (từ đứng trước <i>course</i>).",
-      "Audio: [[Before your first day]], every assistant [[must complete]] a **first-aid** course.",
-      "Không cần kinh nghiệm y khoa (<i>no medical experience</i>) – không phải đáp án."
-     ]
+      "Simplify D = <i>lành mạnh nhất</i>.",
+      "Bẫy H: [[Some people assume they're vegetarian]], [[but]] there's shrimp and pork.",
+      "**easily the most nutritious thing** = healthiest → D."
+     ],
+     "optWhy": {
+      "H": "Nhắc rồi phủ định: <i>assume they're vegetarian</i> → có tôm, thịt.",
+      "D": "**the most nutritious thing I ate all day** = the healthiest option."
+     }
     },
     "15": {
+     "opts": {
+      "A": "It is too spicy for most people.",
+      "B": "It is the best value.",
+      "C": "It is only sold in the evening.",
+      "D": "It is the healthiest option.",
+      "E": "It sells out early.",
+      "F": "It always has a long line.",
+      "G": "Its recipe has recently changed.",
+      "H": "It is suitable for vegetarians."
+     },
      "ans": [
-      "touch"
-     ],
-     "form": [
-      "Động từ nguyên mẫu",
-      "Danh từ"
+      "B"
      ],
      "kw": [
       [
-       "never allowed",
-       "Adv+V",
-       "are never allowed to"
+       "best value",
+       "N",
+       "the best value"
+      ],
+      [
+       "value",
+       "N",
+       "seven toppings for just fifteen thousand"
       ]
      ],
      "why": [
-      "Đọc đề: <i>allowed to ___</i> → <b>động từ nguyên mẫu</b>.",
-      "Bẫy: <i>hand them their tools</i> = được phép.",
-      "[[But]] assistants are [[never allowed to]] **touch** patients' teeth."
-     ]
+      "Simplify B = <i>đáng tiền nhất</i>.",
+      "Món 12 đã mất danh hiệu rẻ nhất → B vẫn còn trống.",
+      "7 toppings for just 15,000 → **the best value I found** → B."
+     ],
+     "optWhy": {
+      "B": "**the best value I found anywhere in the market**.",
+      "A": "Không nhắc vị cay; <i>sweet tooth</i> là chuyện người nói."
+     }
     },
     "16": {
+     "opts": {
+      "A": "It is too spicy for most people.",
+      "B": "It is the best value.",
+      "C": "It is only sold in the evening.",
+      "D": "It is the healthiest option.",
+      "E": "It sells out early.",
+      "F": "It always has a long line.",
+      "G": "Its recipe has recently changed.",
+      "H": "It is suitable for vegetarians."
+     },
      "ans": [
-      "presentation"
-     ],
-     "form": [
-      "Danh từ số ít",
-      "Tính từ"
+      "E"
      ],
      "kw": [
       [
-       "At the end",
-       "Prep+N",
-       "At the end of the program"
-      ],
-      [
-       "gives",
+       "sells out early",
        "V",
-       "gives"
+       "sold out by nine in the morning"
       ]
      ],
      "why": [
-      "Đọc đề: <i>a short ___</i> → <b>danh từ số ít</b>.",
-      "Bẫy xưa – nay: [[we used to]] ask everyone to write a report.",
-      "[[This year, instead]], each assistant gives a short **presentation**."
-     ]
-    },
-    "17": {
-     "ans": [
-      "reference letter",
-      "letter of reference"
+      "Simplify E = <i>hết sớm</i>.",
+      "Bẫy F: [[The line there is usually short]] → không phải long line.",
+      "[[get there early]] … **normally sold out by nine in the morning** → E."
      ],
-     "form": [
-      "Danh từ (2 từ)",
-      "Số tiền"
-     ],
-     "kw": [
-      [
-       "best",
-       "Adj",
-       "the best assistant"
-      ],
-      [
-       "receives",
-       "V",
-       "receives"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>receives a ___ from the head dentist</i> → 1 <b>vật</b>, danh từ.",
-      "Bẫy nhắc rồi phủ định: <i>gets money</i> → [[that's not the case]].",
-      "The best assistant **receives a reference letter** → reference letter (2 từ)."
-     ]
+     "optWhy": {
+      "F": "Ngược lại: <i>the line is usually short</i>.",
+      "E": "**sold out by nine in the morning** = sells out early."
+     }
     }
    },
    "audio": "media/va-w20261121-thu.mp3",
    "transcript": [
     {
-     "sp": "Manager",
-     "t": "Good afternoon, everyone, and welcome to Bright Smile Dental Clinic. I'm the clinic manager, and I'm going to tell you about our Summer Assistant Program.",
-     "at": 45.4
+     "sp": "Lily",
+     "t": "Hi everyone, and welcome back to Saigon Food Notes. Last weekend I spent a whole day at the street food market near Ben Thanh, and I tried six dishes, so here's what you need to know.",
+     "at": 9.3
     },
     {
-     "sp": "Manager",
-     "t": "[[When we started]] the program, it only lasted four weeks, but students told us that wasn't enough time to learn anything. [[So now]] the program lasts **six** weeks, from the end of June to the beginning of August.",
-     "at": 57.0,
+     "sp": "Lily",
+     "t": "Let's start with the crispy pancakes. [[Lots of people say they're too spicy, but actually]], the chili is served on the side, so that's not a problem at all. What surprised me is that **you can only get them after six in the evening**, because the owner works another job during the day.",
+     "at": 24.1,
      "q": 11
     },
     {
-     "sp": "Manager",
-     "t": "The clinic opens to patients at eight o'clock, but assistants need to be ready before that, so [[you'll start each day]] at **seven thirty**.",
-     "at": 72.0,
+     "sp": "Lily",
+     "t": "Next, the broken rice stall. [[It used to be the cheapest place in the market]], but they raised their prices last month, so that's no longer true. It's still incredibly popular, though. At lunchtime **there's always a line of about twenty people waiting**.",
+     "at": 45.0,
      "q": 12
     },
     {
-     "sp": "Manager",
-     "t": "What will you actually do? You'll spend a few hours each week in the sterilization room, cleaning tools. [[However, most of your time]] will be at the **reception desk**, where you'll welcome patients and help them fill in forms.",
-     "at": 81.6,
+     "sp": "Lily",
+     "t": "Then there's the grilled pork with noodles. In September, **the owner changed the recipe** and started using less sugar in the sauce. Some regular customers weren't happy about it, but honestly, I think it tastes cleaner now.",
+     "at": 64.0,
      "q": 13
     },
     {
-     "sp": "Manager",
-     "t": "[[Before your first day]], every assistant [[must complete]] a **first-aid** course. It's free, and it only takes one Saturday. You don't need any medical experience at all.",
-     "at": 97.0,
+     "sp": "Lily",
+     "t": "The fresh spring rolls were my favorite. [[Some people assume they're vegetarian]], but the classic version has shrimp and pork inside, so be careful. They're low in fat and full of vegetables, so they're **easily the most nutritious thing I ate all day**.",
+     "at": 80.6,
      "q": 14
     },
     {
-     "sp": "Manager",
-     "t": "Now, one important rule. You'll watch our dentists treat patients, and you can hand them their tools. [[But]] assistants are [[never allowed to]] **touch** a patient's teeth. Only qualified dentists can do that.",
-     "at": 109.0,
+     "sp": "Lily",
+     "t": "For dessert, I had the sweet soup. You get seven toppings for just fifteen thousand dong, which is **the best value I found anywhere in the market**. As someone who has a sweet tooth, I loved it, but your dentist might not.",
+     "at": 98.9,
      "q": 15
     },
     {
-     "sp": "Manager",
-     "t": "At the end of the program, [[we used to]] ask everyone to write a report. [[This year, instead]], each assistant gives a short **presentation** to our team about what they've learned.",
-     "at": 123.6,
+     "sp": "Lily",
+     "t": "And finally, the sandwiches. [[The line there is usually short]], because the staff work really fast. But if you want one, get there early, because **they're normally sold out by nine in the morning**.",
+     "at": 115.6,
      "q": 16
     },
     {
-     "sp": "Manager",
-     "t": "Finally, the prize. Some people think the best assistant gets money, but [[that's not the case]]. The best assistant **receives a reference letter** from our head dentist, which is very useful when you apply to dental school.",
-     "at": 136.1,
-     "q": 17
+     "sp": "Lily",
+     "t": "So that's my day at the market. Let me know in the comments which dish you want to try first.",
+     "at": 130.2
     }
    ]
   },
   {
-   "session": 3,
-   "deck": "va3",
-   "topic": "Work & Careers",
+   "session": 4,
+   "deck": "va4",
+   "topic": "Food & Drink",
    "for": [
     "vananh"
    ],
    "id": "va-w20261121-fri",
    "type": "gap",
    "skill": "Listening",
-   "part": "Part 4",
+   "part": "Part 3",
    "opens": "2026-11-27",
    "prep": 30,
-   "title": "Nghe Part 4 – History of dentistry (sentence completion)",
-   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · chọn dạng từ cho mỗi ô trước khi nghe · dạng vừa học 21/11: sentence completion",
-   "instructions": "Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer.",
-   "heading": "Lecture: How dentistry became a profession · Questions 31–37",
+   "title": "Nghe Part 3 – Choosing a restaurant for the class dinner (matching)",
+   "subtitle": "30 giây đọc đề → nghe 1 lần như thi thật → nộp → xem 🔑 từ khóa ⇄ synonym, phân tích từng câu và transcript · dạng vừa học 21/11: matching (2 người nói, có ý kiến trái nhau)",
+   "instructions": "What do the students say about each restaurant? Choose FIVE answers from the list, A–G. There are two extra options.",
+   "heading": "Class dinner after the graduation exam · Questions 21–25",
    "strategy": [
-    "<b>Part 4 = bài giảng 1 người nói</b>, không có nghỉ giữa chừng → đọc trước <b>cả 7 câu</b> trong 30 giây, gạch từ khóa + <b>thời gian</b> (<i>Middle Ages, 1840, 1938, today, future</i>) để biết mình đang ở đâu.",
-    "<b>ONE WORD AND/OR A NUMBER</b> → chỉ 1 từ (+ 1 số). Số lớn viết bằng chữ số: <i>9,000</i>.",
-    "<b>Đoán dạng từ:</b> <i>made from ___</i> → chất liệu · <i>pulled by ___</i> → người, số nhiều · <i>more time on ___</i> → danh từ.",
-    "<b>Linear thinking:</b> mốc thời gian là tín hiệu chuyển câu; nghe thấy mốc của câu sau → bỏ câu trước.",
-    "<b>Bẫy:</b> <i>people often say · not … but · in the past · however · already</i> → đáp án là thông tin người giảng <b>khẳng định</b>."
+    "<b>Matching – đọc đề 30 giây:</b> đọc danh sách lựa chọn A–H trước, <b>Simplify</b> mỗi lựa chọn còn 2–3 từ (vd. <i>only in the evening</i> → <i>tối mới bán</i>). Danh sách <b>dài hơn</b> số câu → có lựa chọn thừa.",
+    "<b>Nghe theo tuyến:</b> tên món / người trong đề xuất hiện đúng thứ tự audio; nghe tới tên câu kế tiếp mà chưa có đáp án → đoán, đi tiếp.",
+    "<b>Part 3 – 2 người nói:</b> 1 người nêu ý, người kia <b>phản bác</b> (<i>Actually · Not really · I don't think so</i>) hoặc <b>đồng ý</b> (<i>That's true · You're right · Good point</i>). Đáp án = điều <b>cả hai</b> chốt lại.",
+    "<b>Đánh dấu ✓ ✗ ?</b> cạnh từng lựa chọn khi nghe; lựa chọn đã dùng thì gạch đi (mỗi lựa chọn dùng 1 lần)."
    ],
    "rows": [
-    "The oldest evidence of dental work comes from teeth about {31} years old.",
-    "The [[first drills]] were made of {32}.",
-    "In the [[Middle Ages]], teeth were usually pulled by {33}.",
-    "In 1840, the world's first dental {34} opened in Baltimore.",
-    "In 1938, toothbrushes with [[nylon]] {35} appeared.",
-    "[[Today]], dentists spend more time on {36} than on treatment.",
-    "Future dentists will need strong {37} skills."
+    "{21} [[Hotpot House]]",
+    "{22} [[The Green Leaf]]",
+    "{23} [[Seoul BBQ]]",
+    "{24} [[Ocean Seafood]]",
+    "{25} [[Mama's Kitchen]]"
    ],
    "qs": {
-    "31": {
+    "21": {
+     "opts": {
+      "A": "It is too far from school.",
+      "B": "It is too expensive.",
+      "C": "The food is too oily.",
+      "D": "It is fully booked.",
+      "E": "It is good for a big group.",
+      "F": "It has food for vegetarians.",
+      "G": "It is too noisy."
+     },
      "ans": [
-      "9000",
-      "9,000",
-      "nine thousand"
-     ],
-     "form": [
-      "Số",
-      "Danh từ"
+      "G"
      ],
      "kw": [
       [
-       "oldest evidence",
-       "Adj+N",
-       "scientists have found holes"
-      ],
-      [
-       "years old",
-       "N",
-       "around … years old"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>about ___ years old</i> → <b>số</b>.",
-      "Bẫy: [[People often say]] two thousand years → [[In fact]] …",
-      "teeth that are [[around]] **nine thousand** years old → 9,000."
-     ]
-    },
-    "32": {
-     "ans": [
-      "stone"
-     ],
-     "form": [
-      "Danh từ (chất liệu)",
-      "Tính từ"
-     ],
-     "kw": [
-      [
-       "first drills",
-       "Adj+N",
-       "the first drills"
-      ],
-      [
-       "made of",
-       "V",
-       "made of"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>made of ___</i> → <b>chất liệu</b>.",
-      "Bẫy nhắc rồi phủ định: [[not made of metal]].",
-      "The first drills were … made of **stone** → stone."
-     ]
-    },
-    "33": {
-     "ans": [
-      "barbers"
-     ],
-     "form": [
-      "Danh từ số nhiều (người)",
-      "Danh từ số ít"
-     ],
-     "kw": [
-      [
-       "Middle Ages",
-       "N",
-       "In the Middle Ages"
-      ],
-      [
-       "pulled by",
-       "V",
-       "pulled by"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>pulled by ___</i> → <b>người</b>, không có <i>a</i> → số nhiều.",
-      "Bẫy: <i>you would not go to a doctor</i>.",
-      "Teeth were usually pulled by **barbers** (nhớ <i>-s</i>)."
-     ]
-    },
-    "34": {
-     "ans": [
-      "college"
-     ],
-     "form": [
-      "Danh từ (nơi chốn)",
-      "Tính từ"
-     ],
-     "kw": [
-      [
-       "1840",
-       "Num",
-       "In eighteen forty"
-      ],
-      [
-       "opened",
-       "V",
-       "opened"
-      ]
-     ],
-     "why": [
-      "Đọc đề: <i>first dental ___ opened</i> → 1 <b>nơi</b> (trường, phòng khám…).",
-      "Mốc <b>1840</b> = tín hiệu chuyển sang câu 34.",
-      "the world's first dental **college** opened in Baltimore → college."
-     ]
-    },
-    "35": {
-     "ans": [
-      "bristles"
-     ],
-     "form": [
-      "Danh từ số nhiều",
-      "Tính từ"
-     ],
-     "kw": [
-      [
-       "1938",
-       "Num",
-       "in nineteen thirty-eight"
-      ],
-      [
-       "nylon",
+       "too noisy",
        "Adj",
-       "nylon"
+       "so loud · way too noisy"
       ]
      ],
      "why": [
-      "Đọc đề: <i>with nylon ___</i> → <b>danh từ</b>, phần của bàn chải.",
-      "Bẫy: <i>animal hair</i> = bàn chải đời đầu.",
-      "toothbrushes with nylon **bristles** appeared → bristles (số nhiều)."
-     ]
-    },
-    "36": {
-     "ans": [
-      "prevention"
+      "Simplify G = <i>ồn quá</i>.",
+      "Bẫy B: [[reasonably priced]] / [[It's cheap, yes]] → không đắt.",
+      "**so loud that we couldn't hear each other** → [[That's true]] (cả hai đồng ý) → G."
      ],
-     "form": [
-      "Danh từ",
-      "Động từ"
+     "optWhy": {
+      "B": "Ngược lại: <i>really reasonably priced · It's cheap</i>.",
+      "G": "**so loud** … **way too noisy for speeches**; Khoa đồng ý [[That's true]]."
+     }
+    },
+    "22": {
+     "opts": {
+      "A": "It is too far from school.",
+      "B": "It is too expensive.",
+      "C": "The food is too oily.",
+      "D": "It is fully booked.",
+      "E": "It is good for a big group.",
+      "F": "It has food for vegetarians.",
+      "G": "It is too noisy."
+     },
+     "ans": [
+      "F"
      ],
      "kw": [
       [
-       "Today",
-       "Adv",
-       "Today, however"
-      ],
-      [
-       "more time on",
+       "vegetarians",
        "N",
-       "spend more time on"
+       "don't eat meat · a whole vegetarian menu"
       ]
      ],
      "why": [
-      "Đọc đề: <i>more time on ___ than on treatment</i> → <b>danh từ</b> đối lập với treatment.",
-      "Bẫy xưa – nay: [[In the past]] … pulling teeth.",
-      "[[Today, however]], dentists spend more time on **prevention** → prevention."
-     ]
-    },
-    "37": {
-     "ans": [
-      "communication"
+      "Simplify F = <i>có đồ chay</i>.",
+      "Bẫy A: [[Some people say it's too far]] → [[Actually]], only ten minutes by bus.",
+      "**they have a whole vegetarian menu** → F."
      ],
-     "form": [
-      "Danh từ làm tính từ",
-      "Tính từ"
+     "optWhy": {
+      "A": "Nhắc rồi phủ định: <i>too far</i> → [[Actually]] only ten minutes.",
+      "F": "Linh and Bao <i>don't eat meat</i> → **a whole vegetarian menu**."
+     }
+    },
+    "23": {
+     "opts": {
+      "A": "It is too far from school.",
+      "B": "It is too expensive.",
+      "C": "The food is too oily.",
+      "D": "It is fully booked.",
+      "E": "It is good for a big group.",
+      "F": "It has food for vegetarians.",
+      "G": "It is too noisy."
+     },
+     "ans": [
+      "D"
      ],
      "kw": [
       [
-       "Future dentists",
-       "N",
-       "dentists of the future"
-      ],
-      [
-       "strong … skills",
-       "Adj+N",
-       "strong … skills"
+       "fully booked",
+       "Adj",
+       "fully booked that Saturday"
       ]
      ],
      "why": [
-      "Đọc đề: <i>strong ___ skills</i> → loại <b>kỹ năng</b>.",
-      "Bẫy: [[Technical skills are already taught]] → không phải điều cần thêm.",
-      "[[In my opinion]] … strong **communication** skills → communication."
-     ]
+      "Simplify D = <i>hết chỗ</i>.",
+      "Bẫy C: Mai hỏi [[isn't the meat a bit oily?]] → Khoa: [[I don't think it's that greasy]].",
+      "[[The real problem]] is … **fully booked that Saturday** → D."
+     ],
+     "optWhy": {
+      "C": "Chỉ Mai nghĩ vậy, Khoa phản đối (<i>I don't think it's that greasy</i>).",
+      "D": "**they're fully booked that Saturday**."
+     }
+    },
+    "24": {
+     "opts": {
+      "A": "It is too far from school.",
+      "B": "It is too expensive.",
+      "C": "The food is too oily.",
+      "D": "It is fully booked.",
+      "E": "It is good for a big group.",
+      "F": "It has food for vegetarians.",
+      "G": "It is too noisy."
+     },
+     "ans": [
+      "A"
+     ],
+     "kw": [
+      [
+       "too far",
+       "Adj",
+       "on the other side of the river · almost an hour"
+      ]
+     ],
+     "why": [
+      "Simplify A = <i>xa trường</i>.",
+      "Bẫy B (xưa – nay): [[It used to be really expensive]], [[but now]] student set menu → price OK.",
+      "**almost an hour to get there from school** → [[you're right … too far]] → A."
+     ],
+     "optWhy": {
+      "B": "Xưa – nay: <i>used to be expensive</i> → now the price is OK.",
+      "A": "**on the other side of the river … almost an hour** = too far from school."
+     }
+    },
+    "25": {
+     "opts": {
+      "A": "It is too far from school.",
+      "B": "It is too expensive.",
+      "C": "The food is too oily.",
+      "D": "It is fully booked.",
+      "E": "It is good for a big group.",
+      "F": "It has food for vegetarians.",
+      "G": "It is too noisy."
+     },
+     "ans": [
+      "E"
+     ],
+     "kw": [
+      [
+       "a big group",
+       "N",
+       "a big group like ours"
+      ],
+      [
+       "good for",
+       "Adj",
+       "perfect for"
+      ]
+     ],
+     "why": [
+      "Simplify E = <i>hợp nhóm đông</i>.",
+      "Bẫy C: Khoa hỏi [[Isn't the food there quite oily?]] → Mai: [[Not really]].",
+      "private room for up to forty people → **perfect for a big group like ours** → E."
+     ],
+     "optWhy": {
+      "C": "Bị phủ định: [[Not really]], it's home-cooked style.",
+      "E": "**a private room for up to forty people … perfect for a big group**."
+     }
     }
    },
    "audio": "media/va-w20261121-fri.mp3",
    "transcript": [
     {
-     "sp": "Lecturer",
-     "t": "Good morning. Today I want to look at how dentistry developed into the profession we know today.",
-     "at": 44.1
+     "sp": "Mai",
+     "t": "Khoa, we need to make a reservation for the class dinner this week. There are about thirty of us.",
+     "at": 12.4
     },
     {
-     "sp": "Lecturer",
-     "t": "[[People often say]] that dental treatment began about two thousand years ago. [[In fact]], scientists have found holes drilled into human teeth that are [[around]] **nine thousand** years old, in what is now Pakistan.",
-     "at": 50.5,
-     "q": 31
+     "sp": "Khoa",
+     "t": "Right. What about Hotpot House? [[It's really reasonably priced]].",
+     "at": 19.1
     },
     {
-     "sp": "Lecturer",
-     "t": "Those early drills were [[not made of metal]]. Metal tools came much later. The first drills were simple tools made of **stone**, and they were probably turned by hand.",
-     "at": 64.7,
-     "q": 32
+     "sp": "Mai",
+     "t": "It's cheap, yes. But do you remember last time? **It was so loud that we couldn't hear each other**.",
+     "at": 24.7,
+     "q": 21
     },
     {
-     "sp": "Lecturer",
-     "t": "For many centuries, there was no such thing as a dentist. In the Middle Ages in Europe, if you had a bad tooth, you would not go to a doctor. Teeth were usually pulled by **barbers**, the same people who cut your hair.",
-     "at": 75.6,
-     "q": 33
+     "sp": "Khoa",
+     "t": "That's true. **It's way too noisy for speeches**. OK, not Hotpot House.",
+     "at": 31.3,
+     "q": 21
     },
     {
-     "sp": "Lecturer",
-     "t": "Things changed in the nineteenth century. In eighteen forty, the world's first dental **college** opened in Baltimore, in the United States, and dentistry became a separate profession with its own training.",
-     "at": 90.1,
-     "q": 34
+     "sp": "Mai",
+     "t": "What about The Green Leaf? [[Some people say it's too far from school]].",
+     "at": 37.8
     },
     {
-     "sp": "Lecturer",
-     "t": "Everyday tools changed too. Early toothbrushes used animal hair, but in nineteen thirty-eight, the first toothbrushes with nylon **bristles** appeared, and they quickly became popular.",
-     "at": 103.5,
-     "q": 35
+     "sp": "Khoa",
+     "t": "Actually, it's only ten minutes by bus, so that's fine. The best thing is that Linh and Bao don't eat meat, and **they have a whole vegetarian menu**.",
+     "at": 42.8,
+     "q": 22
     },
     {
-     "sp": "Lecturer",
-     "t": "[[In the past]], a dentist's main job was pulling teeth and repairing damage. [[Today, however]], dentists spend more time on **prevention** than on treatment, teaching patients how to keep their teeth healthy.",
-     "at": 116.1,
-     "q": 36
+     "sp": "Mai",
+     "t": "Good point. Let's keep it on the list.",
+     "at": 54.7
     },
     {
-     "sp": "Lecturer",
-     "t": "So what will dentists of the future need? [[Technical skills are already taught]] very well in dental schools. [[In my opinion]], the biggest challenge will be **communication**, so future dentists will need strong communication skills to help nervous patients.",
-     "at": 129.2,
-     "q": 37
+     "sp": "Khoa",
+     "t": "And Seoul BBQ? Everyone loves Korean barbecue.",
+     "at": 57.8
+    },
+    {
+     "sp": "Mai",
+     "t": "I love it too, but [[isn't the meat a bit oily]]?",
+     "at": 62.8
+    },
+    {
+     "sp": "Khoa",
+     "t": "[[I don't think it's that greasy]], to be honest. The real problem is that I called them yesterday, and **they're fully booked that Saturday**.",
+     "at": 66.4,
+     "q": 23
+    },
+    {
+     "sp": "Mai",
+     "t": "Oh, that's a shame. What about Ocean Seafood? It specializes in seafood.",
+     "at": 77.1
+    },
+    {
+     "sp": "Khoa",
+     "t": "[[It used to be really expensive, but now]] they have a student set menu, so the price is OK.",
+     "at": 83.4
+    },
+    {
+     "sp": "Mai",
+     "t": "Maybe, but it's on the other side of the river. **It takes almost an hour to get there from school**.",
+     "at": 91.8,
+     "q": 24
+    },
+    {
+     "sp": "Khoa",
+     "t": "Hmm, you're right. That's too far for most people.",
+     "at": 98.4
+    },
+    {
+     "sp": "Mai",
+     "t": "And the last one is Mama's Kitchen.",
+     "at": 102.2
+    },
+    {
+     "sp": "Khoa",
+     "t": "[[Isn't the food there quite oily]]?",
+     "at": 105.1
+    },
+    {
+     "sp": "Mai",
+     "t": "[[Not really]], it's home-cooked style. And they have a private room for up to forty people, so **it's perfect for a big group like ours**.",
+     "at": 108.1,
+     "q": 25
+    },
+    {
+     "sp": "Khoa",
+     "t": "Then I think Mama's Kitchen is the best choice. I'll call them tonight.",
+     "at": 117.7
     }
    ]
   },
