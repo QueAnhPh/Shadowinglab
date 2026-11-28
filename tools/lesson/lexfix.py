@@ -6,10 +6,17 @@ for l in open(M,encoding='utf-8'):
     if len(p)==2: lex.setdefault(p[0].lower(),p[1])
 manual={'kevin':'k ˈ ɛ v ə n','hannah':'h ˈ æ n ə','quy':'k w ˈ i','nhon':'n j ˈ ɑ n',
  'activities':'æ k t ˈ ɪ v ə ɾ i z','bottles':'b ˈ ɑ ɾ ə l z','that\'s':'ð ˈ æ t s','webber':'w ˈ ɛ b ə ɹ','what\'s':'w ˌ ʌ t s','wanted':'w ˈ ɑ n t ə d',
- 'roommates':'ɹ ˈ u m m ˌ A t s','sundays':'s ˈ ʌ n d ˌ A z','nang':'n ˈ ɑ ŋ','da':'d ˈ ɑ','hoi':'h ˈ ɔ I','tet':'t ˈ ɛ t'}
+ 'roommates':'ɹ ˈ u m m ˌ A t s','sundays':'s ˈ ʌ n d ˌ A z','nang':'n ˈ ɑ ŋ','da':'d ˈ ɑ','hoi':'h ˈ ɔ I','tet':'t ˈ ɛ t',
+ 'minh':'m ˈ ɪ n','anh':'ˈ ɑ n','doan':'d ˈ O ə n','duc':'d ˈ ʊ k','thu':'t ˈ u','khoa':'k w ˈ ɑ','mai':'m ˈ I','ay':'ˈ A','dee':'d ˈ i','en':'ˈ ɛ n',
+ 'here\'s':'h ˈ ɪ ɹ z','aunt\'s':'ˈ æ n t s','nurse\'s':'n ˈ ɜ ɹ s ə z','everyone\'s':'ˈ ɛ v ɹ i w ə n z'}
 VL=set('p t k f θ'.split()); SIB=set('s z ʃ ʒ ʧ ʤ'.split())
 def derive(w):
     if w in manual: return manual[w]
+    if "'" in w:
+        b,t=w.split("'",1)
+        if t=='s' and b in lex:
+            last=lex[b].split()[-1]; return lex[b]+' '+('ə z' if last in SIB else ('s' if last in VL else 'z'))
+        return None
     cands=[]
     if w.endswith('ies'): cands.append((w[:-3]+'y','z'))
     if w.endswith('es'): cands.append((w[:-2],'es'))
@@ -28,9 +35,10 @@ def derive(w):
             return ph+' '+add
     return None
 text=open(sys.argv[1],encoding='utf-8').read()
+contr={w.lower() for w in re.findall(r"\b[A-Za-z]+'[a-z]+\b",text.replace("’","'"))}  # that's, aunt's (dấu ' = nhấn âm bị xoá bên dưới)
 text=re.sub(r"[‿/'ˈ=+!*\[\]]"," ",text.replace("’","'"))
 words={w.lower().strip("'") for w in re.findall(r"[A-Za-z][A-Za-z']*",text)}
-miss=[w for w in sorted(words) if w not in lex and w not in ("s",)]
+miss=[w for w in sorted(words|contr) if w not in lex and w not in ("s",)]
 added,fail=[],[]
 with open(M,'a',encoding='utf-8') as f:
     for w in miss:
